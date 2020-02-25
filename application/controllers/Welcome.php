@@ -6,7 +6,7 @@ class Welcome extends MY_RootController {
 	public function __construct() {
         parent::__construct();
     }
-	
+
 	public function index()
 	{
 		$this->_initialPage();
@@ -14,3 +14,4 @@ class Welcome extends MY_RootController {
 		$this->_finalPage();
 	}
 }
+ 
