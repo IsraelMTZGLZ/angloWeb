@@ -18,4 +18,14 @@ class MY_RootController extends CI_Controller {
         $this->load->view('Dashboard_esential/footer');
     }
 
+    public function _initialInformativa()
+    {
+        $this->load->view('Informativa_esential/head');
+        $this->load->view('Informativa_esential/nav');
+    }
+
+    public function _finalInformativa(){
+        $this->load->view('Informativa_esential/footer');
+    }
+
 }
