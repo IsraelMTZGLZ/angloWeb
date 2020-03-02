@@ -13,5 +13,4 @@ class Welcome extends MY_RootController {
 		$this->load->view('welcome_message');
 		$this->_finalPage();
 	}
-}
- 
+} 

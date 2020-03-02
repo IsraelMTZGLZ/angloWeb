@@ -6,8 +6,15 @@
             <img src="<?=base_url('resources/assets/Informativa/images/loader.gif');?>" id="preloader_image" alt="loader">
         </div>
     </div>
-    <div class="cursor"></div>
-	<!-- Top Scroll Start --><a href="javascript:" id="return-to-top"><img src="<?=base_url('resources/assets/Informativa/images/scroll.png');?>" alt="img"></a>
+    <div  class="cursor"></div>
+    <!-- Top Scroll Start -->
+<a href="javascript:" id="return-to-top"><img src="<?=base_url('resources/assets/Informativa/images/scroll.png');?>" alt="img"></a>
+
+
+<div class="">
+	<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"   class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a>
+
+</div>
     <!-- Top Scroll End -->
     <!-- cp navi wrapper Start -->
 	<nav class="cd-dropdown">
@@ -18,24 +25,24 @@
                      <form class="cd-search">
                       <input type="search" placeholder="Search...">
                     </form>
-               </li>                                    
+               </li>
 				<li class="has-children">
                 <a href="#">home</a>
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                    <li class="go-back"><a href="#0">Menu</a></li>                    
+                    <li class="go-back"><a href="#0">Menu</a></li>
                     <li><a href="index.html">home I</a></li>
                     <li><a href="index_2.html">home II</a></li>
-                    <li><a href="index_3.html">home III</a></li>                 
+                    <li><a href="index_3.html">home III</a></li>
                 </ul>
             </li>
 			<li class="has-children">
                 <a href="#">services</a>
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                    <li class="go-back"><a href="#0">Menu</a></li>                    
+                    <li class="go-back"><a href="#0">Menu</a></li>
                     <li><a href="services.html">services </a></li>
-                    <li><a href="services_2.html">services II</a></li>                
+                    <li><a href="services_2.html">services II</a></li>
                 </ul>
-            </li>                                     
+            </li>
                <!-- .has-children -->
             <li class="has-children">
                 <a href="#">pages</a>
@@ -50,7 +57,7 @@
                     <li><a href="comming_soon_2.html">comming soon II</a></li>
                     <li><a href="about_us.html">about us</a></li>
                     <li><a href="services.html">services</a></li>
-                  
+
                 </ul>
             </li>
 			<li class="has-children">
@@ -58,7 +65,7 @@
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
                     <li class="go-back"><a href="#0">Menu</a></li>
                     <li><a href="about_us.html">about us</a></li>
-                    <li><a href="about_us_2.html">about us II</a></li>  
+                    <li><a href="about_us_2.html">about us II</a></li>
                 </ul>
             </li>
 			<li class="has-children">
@@ -66,10 +73,10 @@
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
                     <li class="go-back"><a href="#0">Menu</a></li>
                     <li><a href="portfolio_2column.html">portfolio II column</a></li>
-                    <li><a href="portfolio_3column.html">portfolio III column </a></li>  
-                    <li><a href="portfolio_4column.html">portfolio IV column </a></li>  
-                    <li><a href="portfolio_masonry_grid.html">portfolio masonry </a></li>  
-                    <li><a href="portfolio_single.html">portfolio single </a></li>  
+                    <li><a href="portfolio_3column.html">portfolio III column </a></li>
+                    <li><a href="portfolio_4column.html">portfolio IV column </a></li>
+                    <li><a href="portfolio_masonry_grid.html">portfolio masonry </a></li>
+                    <li><a href="portfolio_single.html">portfolio single </a></li>
                 </ul>
             </li>
 			<li class="has-children">
@@ -77,10 +84,10 @@
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
                     <li class="go-back"><a href="#0">Menu</a></li>
                     <li><a href="blog_width_sidebar.html">blog width sidebar</a></li>
-                    <li><a href="blog_without_sidebar.html">blog full width</a></li>                                         
-                    <li><a href="blog_without_sidebar.html">blog III column</a></li>                                         
+                    <li><a href="blog_without_sidebar.html">blog full width</a></li>
+                    <li><a href="blog_without_sidebar.html">blog III column</a></li>
                     <li><a href="blog_2column.html">blog II column</a></li>
-					<li><a href="blog_single.html">blog single</a></li>					
+					<li><a href="blog_single.html">blog single</a></li>
                 </ul>
             </li>
 			<li class="has-children">
@@ -88,9 +95,9 @@
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
                     <li class="go-back"><a href="#0">Menu</a></li>
                     <li><a href="contact_us.html">contact us</a></li>
-                    <li><a href="contact_us_2.html">contact us II</a></li>			
+                    <li><a href="contact_us_2.html">contact us II</a></li>
                 </ul>
-            </li>											        
+            </li>
         </ul>
         <!-- .cd-dropdown-content -->
     </nav>
@@ -184,7 +191,7 @@
                                 </li>
                                 <li class="parent">
                                     <a href="services_2.html"><i class="fas fa-caret-right"></i> services II</a>
-                                </li>								
+                                </li>
                             </ul>
                         </li>
                         <li class="has-mega gc_main_navigation kv_sub_menu">
@@ -206,7 +213,7 @@
                                                             </li>
                                                             <li>
                                                                 <a href="about_us_2.html"> <i class="fas fa-caret-right"></i>about us II</a>
-                                                            </li>                        
+                                                            </li>
                                                             <li>
                                                                 <a href="services.html"> <i class="fas fa-caret-right"></i>services I</a>
                                                             </li>
@@ -301,7 +308,7 @@
                                </li>
                               <li>
                                   <a href="about_us_2.html"> <i class="fas fa-caret-right"></i>about us II</a>
-                               </li>  							
+                               </li>
                             </ul>
                         </li>
 
@@ -343,7 +350,7 @@
 										</li>
                                         <li>
                                           <a href="comming_soon_2.html"> <i class="fas fa-caret-right"></i>comming soon II</a>
-                                        </li>            
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -376,7 +383,7 @@
                                 </li>
                                 <li class="parent">
                                     <a href="contact_us_2.html"><i class="fas fa-caret-right"></i> contact us II</a>
-                                </li>								
+                                </li>
                             </ul>
                         </li>
 
