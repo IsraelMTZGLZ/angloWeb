@@ -13,5 +13,7 @@ class Informativa extends MY_RootController {
 		$this->load->view('informativa');
 		$this->_finalInformativa();
 	}
+
+	
 }
  
