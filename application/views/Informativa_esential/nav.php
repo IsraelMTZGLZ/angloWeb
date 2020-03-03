@@ -10,7 +10,6 @@
     <!-- Top Scroll Start -->
 <a href="javascript:" id="return-to-top"><img src="<?=base_url('resources/assets/Informativa/images/scroll.png');?>" alt="img"></a>
 
-
 <!-- <iframe id="forPostyouradd"
      allow="microphone;"
      width="350"
@@ -438,5 +437,3 @@
      </div>
    </div>
  </div>
-
- 
