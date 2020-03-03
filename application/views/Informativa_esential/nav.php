@@ -3,7 +3,7 @@
     <!-- preloader Start -->
     <div id="preloader">
         <div id="status">
-            <img src="<?=base_url('resources/assets/Informativa/images/loader.gif');?>" id="preloader_image" alt="loader">
+            <img src="https://media.giphy.com/media/nXQZ2BQ2VtbZC/giphy.gif" id="preloader_image" alt="loader">
         </div>
     </div>
     <div  class="cursor"></div>

@@ -1,5 +1,5 @@
     <!-- navi wrapper End -->
-    
+
     <!-- slider wrapper start -->
     <div class="banner_top_wrapper float_left">
         <div class="main_slider_wrapper slider-area">
@@ -741,7 +741,7 @@ Built With Crorpo</h2>
                                 </div>
 								<div class="portfolio_overlay"></div>
                             </div>
-                        </div>                    
+                        </div>
                     </div>
 					<div class="header_btn dark_btn gallery_btn float_left">
                         <a href="#">all projects</a>
@@ -895,7 +895,7 @@ Built With Crorpo</h2>
 
                         </div>
                         <!-- /.entry-footer -->
-                        </div>                      
+                        </div>
                         <!-- /.post-thumbnail -->
 
                         <div class="blog-content">
@@ -956,7 +956,7 @@ Built With Crorpo</h2>
 
                         </div>
                         <!-- /.entry-footer -->
-                        </div>                      
+                        </div>
                         <!-- /.post-thumbnail -->
 
                         <div class="blog-content">
@@ -997,7 +997,7 @@ Built With Crorpo</h2>
 
                         </div>
                         <!-- /.entry-footer -->
-                        </div>                       
+                        </div>
                         <!-- /.post-thumbnail -->
 
                         <div class="blog-content">
@@ -1112,6 +1112,3 @@ Built With Crorpo</h2>
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f">
     </iframe>
-
-    
-
