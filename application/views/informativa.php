@@ -1106,9 +1106,3 @@ Built With Crorpo</h2>
     </div>
 
     <!--newsletter wrapper end-->
-   <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f">
-    </iframe>
