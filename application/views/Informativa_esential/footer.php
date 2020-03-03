@@ -262,6 +262,7 @@ Deltona, FL 32725, US </a> </p>
         $('.chat-popup').removeClass("active");
         $('.chat-open-dialog').removeClass("active");
         $(this).removeClass("active");
+        $('.chat-popup').toggleClass("chat-init");
         });
     });
 
