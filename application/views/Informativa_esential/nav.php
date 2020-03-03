@@ -10,17 +10,20 @@
     <!-- Top Scroll Start -->
 <a href="javascript:" id="return-to-top"><img src="<?=base_url('resources/assets/Informativa/images/scroll.png');?>" alt="img"></a>
 
-<iframe id="forPostyouradd"
- allow="microphone;"
- width="350"
- height="430"
- src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f">
- </iframe>
+
+<!-- <iframe id="forPostyouradd"
+     allow="microphone;"
+     width="350"
+     height="430"
+     src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f">
+     </iframe> -->
 
 <div class="">
+  <div id="iframeHolder"></div>
 	<!-- <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a> -->
-<button id="postYourAdd" onclick="postYourAdd()" class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button>
-
+<!-- <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> -->
+<button class="chat-open-dialog"> <span class="fa fa-question"></span> </button>
+<button class="chat-button-destroy"> <span class="fa fa-close"></span> </button>
 </div>
     <!-- Top Scroll End -->
     <!-- cp navi wrapper Start -->
@@ -400,10 +403,196 @@
             </div>
         </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    function postYourAdd () {
-        var iframe = $("#forPostyouradd");
-        iframe.attr("src", iframe.data("src"));
-    }
-    </script>
+
+
+     <!-- chat start-->
+    <div class="chat-popup">
+   <div class="chat-windows">
+     <div class="chat-window-one">
+       <div class="chat-header">
+         <h4>Need Help?</h4>
+         <form id="chatForm">
+           <table class="webchat-config">
+             <tbody>
+             <tr>
+               <td><input type="text" id="firstName" value="" placeholder="Your Name"/></td>
+             </tr>
+             <tr>
+               <td><input type="text" id="agentEmail" value="" placeholder="Your Email"/></td>
+             </tr>
+             </tbody>
+           </table>
+         </form>
+         <button class="chat-button-start fa-commenting-o fa" type="button" onclick="startEmbeddedChat()"> <span>Chat Now</span> </button>
+       </div>
+       <div class="chat-phone-number">
+         <small>Available Mon-Fri <br>
+         10pm-5pm EST</small>
+         646-491-6500
+       </div>
+     </div>
+     <div class="chat-window-two">
+       <div id="chatContainer" style="height: 600px;">
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://apps.mypurecloud.com/webchat/jsapi-v1.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+
+   $(function() {
+     $(".chat-open-dialog").click(function() {
+       $(this).toggleClass("active");
+       $('.chat-popup').toggleClass("active");
+       $('.chat-button-destroy').toggleClass("active");
+     });
+   });
+
+   $(function() {
+     $(".chat-button-start").click(function() {
+       $(this).toggleClass("active");
+       $('.chat-popup').toggleClass("chat-init");
+     });
+   });
+
+   $(function() {
+     $(".chat-button-destroy").click(function() {
+       $('.chat-popup').removeClass("active");
+       $('.chat-open-dialog').removeClass("active");
+       $(this).removeClass("active");
+     });
+   });
+
+
+   var chatConfig = {};
+   function createChatConfig(){
+     if (document.getElementById('firstName').value == '') {
+       document.getElementById('firstName').value = "Customer";
+     }
+     var firstName = document.getElementById('firstName').value;
+     var agentEmail = document.getElementById('agentEmail').value;
+
+
+
+     chatConfig = {
+       // Web chat application URL
+       "webchatAppUrl": "https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f",
+
+       // Web chat service URL
+       "webchatServiceUrl": "https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f",
+
+       // Numeric organization ID
+       "orgId": 14685,
+       //"orgId": "3b17c007-e31c-44de-a3e3-805ed380e833",
+       //"orgId": "ca1cfce4-d807-46ef-82a2-4354931c8ea2",
+
+       // Organization name
+       "orgName": "mohawkgroup",
+
+       // Requested agent language skill (Agent must have this language skill to receive chat)
+       //"language": "English - Written",
+
+       // Requested agent skills (Agent must have these skills to receive chat)
+       //"skills": ["Computers", "Printers"],
+       // OR
+       "skills": [],
+
+       // Priority
+       //"priority": 0,
+
+       // Queue Name
+       "queueName" : "Customer Service",
+
+       // Target agent email (OPTIONAL)
+       //"agentEmail": agentEmail,
+
+       // Log level
+       "logLevel": "DEBUG",
+
+       // Locale code
+       "locale": "en",
+
+       // Data that will be included with interaction
+       "data": {
+         "firstName": firstName,
+         "addressStreet": "64472 Brown Street",
+         "addressCity": "Lindgrenmouth",
+         "addressPostalCode": "50163-2735",
+         "addressState": "FL",
+         "phoneNumber": "1-916-892-2045 x293",
+         "phoneType": "Cell",
+         "customerId": 59606
+       },
+
+       // Logo used at the top of the chat window
+       "companyLogo": {
+         "width": 600,
+         "height": 149,
+         "url": "https://dhqbrvplips7x.cloudfront.net/webchat/1.0.23/company-logo-large-cea5ee47.png"
+       },
+
+       // Logo used within the chat window
+       "companyLogoSmall": {
+         "width": 149,
+         "height": 149,
+         "url": "https://dhqbrvplips7x.cloudfront.net/webchat/1.0.23/company-logo-small-9c9fe09b.png"
+       },
+
+       // Image used for agent
+       "agentAvatar": {
+         "width": 462,
+         "height": 462,
+         "url": "https://dhqbrvplips7x.cloudfront.net/webchat/1.0.23/agent-e202505f.png"
+       },
+
+       // Text displayed with chat window is displayed
+       // "welcomeMessage": "Thanks for chatting.",
+
+       // CSS class applied to the chat window
+       "cssClass": "webchat-frame",
+
+       // Custom style applied to the chat window
+       "css": {
+         "width": "100%",
+         "height": "100%"
+       }
+
+
+     };
+   }
+
+
+   function startEmbeddedChat() {
+     createChatConfig();
+     ININ.webchat.create(chatConfig, function(err, webchat) {
+       if (err) {
+         throw err;
+       }
+
+       // Render to frame
+       webchat.renderFrame({
+         containerEl: 'chatContainer'
+       });
+     });
+   }
+
+   function startPopupChat() {
+     createChatConfig();
+     ININ.webchat.create(chatConfig, function(err, webchat) {
+       if (err) {
+         throw err;
+       }
+       // Render to popup
+       webchat.renderPopup({
+         width: 400,
+         height: 400,
+         title: 'Chat'
+       });
+     });
+   }
+ </script>

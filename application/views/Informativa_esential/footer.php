@@ -96,14 +96,14 @@
                         <ul>
                             <li> <span> Santa Cruz
 Office: </span>
-                                <p><a href="#">Crorpo Technologies, 
-9860 Mill Road, 
+                                <p><a href="#">Crorpo Technologies,
+9860 Mill Road,
 Deltona, FL 32725, US</a></p>
 
                             </li>
                             <li> <span>Florida
 Office: </span>
-                                <p><a href="#"> Crorpo,  Mill Road, 
+                                <p><a href="#"> Crorpo,  Mill Road,
 Deltona, FL 32725, US </a> </p>
 
                             </li>
@@ -166,6 +166,11 @@ Deltona, FL 32725, US </a> </p>
     <script src="<?=base_url('resources/assets/Informativa/js/isotope.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/custom.js');?>"></script>
     <!-- custom js-->
+    <!--chat files-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://apps.mypurecloud.com/webchat/jsapi-v1.js" type="text/javascript"></script> -->
+    <!--chat files-->
+
     <script>
         var $circleCursor = $('.cursor');
 
