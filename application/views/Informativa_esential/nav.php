@@ -23,7 +23,7 @@
 	<!-- <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a> -->
 <!-- <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> -->
 <button class="chat-open-dialog"> <span class="fa fa-question"></span> </button>
-<button class="chat-button-destroy"> <span class="fa fa-close"></span> </button>
+<button class="chat-button-destroy"> <span class="fas fa-window-close"></span> </button>
 </div>
     <!-- Top Scroll End -->
     <!-- cp navi wrapper Start -->
@@ -433,6 +433,7 @@
      </div>
      <div class="chat-window-two">
        <div id="chatContainer" style="height: 600px;">
+       <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
        </div>
      </div>
    </div>
@@ -564,21 +565,6 @@
 
 
      };
-   }
-
-
-   function startEmbeddedChat() {
-     createChatConfig();
-     ININ.webchat.create(chatConfig, function(err, webchat) {
-       if (err) {
-         throw err;
-       }
-
-       // Render to frame
-       webchat.renderFrame({
-         containerEl: 'chatContainer'
-       });
-     });
    }
 
    function startPopupChat() {

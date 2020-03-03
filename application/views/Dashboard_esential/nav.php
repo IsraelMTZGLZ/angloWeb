@@ -17,7 +17,7 @@
         <i class="icon wb-more-horizontal" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-        <img class="navbar-brand-logo" src="<?=base_url('resources/assets/Dashboard/center/assets/images/logo.png');?>" title="Remark">
+        <img class="navbar-brand-logo" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" title="Anglo Latino Education Partnership" style="height: 40px;">
       </div>
       <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
         data-toggle="collapse">
@@ -225,19 +225,13 @@
           <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
               aria-expanded="false" role="button">
-              <span class="flag-icon flag-icon-us"></span>
+              <span class="flag-icon flag-icon-gb"></span>
             </a>
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
                 <span class="flag-icon flag-icon-gb"></span> English</a>
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                <span class="flag-icon flag-icon-fr"></span> French</a>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                <span class="flag-icon flag-icon-cn"></span> Chinese</a>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                <span class="flag-icon flag-icon-de"></span> German</a>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
-                <span class="flag-icon flag-icon-nl"></span> Dutch</a>
+                <span class="flag-icon flag-icon-mx"></span> Spanish</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -446,10 +440,10 @@
 
         <div class="navbar-brand navbar-brand-center">
           <a href="index.html">
-            <img class="navbar-brand-logo navbar-brand-logo-normal" src="<?=base_url('resources/assets/Dashboard/center/assets/images/logo.png');?>"
-              title="Remark">
-            <img class="navbar-brand-logo navbar-brand-logo-special" src="<?=base_url('resources/assets/Dashboard/center/assets/images/logo-colored.png');?>"
-              title="Remark">
+            <img class="navbar-brand-logo navbar-brand-logo-normal" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>"
+              title="Anglo Latino Education Partnership" style="height: 100px;margin-top: -13px;">
+            <img class="navbar-brand-logo navbar-brand-logo-special" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>"
+              title="Anglo Latino Education Partnership">
           </a>
         </div>
       </div>

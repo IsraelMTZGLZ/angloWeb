@@ -11,7 +11,7 @@
   <title>Anglo Latino Education Partnership</title>
 
   <link rel="apple-touch-icon" href="<?=base_url('resources/assets/Dashboard/center/assets/images/apple-touch-icon.png');?>">
-  <link rel="shortcut icon" href="<?=base_url('resources/assets/Dashboard/center/assets/images/favicon.ico');?>">
+  <link rel="shortcut icon" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/css/bootstrap.min599c.css?v4.0.2');?>">
