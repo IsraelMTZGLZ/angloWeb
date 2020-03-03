@@ -31,8 +31,11 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/owl.theme.default.css');?>">
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/reset.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/style.css');?>" />
-        <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/chat.css');?>" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/chat.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/responsive.css');?>" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/sociales.css');?>" />
+
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="<?=base_url('resources/assets/Informativa/images/favicon.png');?>" />
+    
 </head>
