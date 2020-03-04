@@ -1,30 +1,4 @@
 
-        <div class="page_title_section float_left">
-
-            <div class="page_header">
-                <div class="container">
-                    <div class="row">
-                        <!-- section_heading start -->
-                        <div class="col-lg-12 col-md-12 col-12 col-sm-12">
-
-                            <h1>About us II</h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-12 col-sm-12">
-                            <div class="sub_title_section">
-                                <ul class="sub_title">
-                                    <li> <a href="#"> Home </a> &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp; </li>
-
-                                    <li> About us</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- navi wrapper End -->
     <!-- work Wrapper Start -->
     <div class="iner_about_II float_left">
         <div class="container">

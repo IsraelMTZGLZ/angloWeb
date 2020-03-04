@@ -33,15 +33,15 @@
                         </div>
                         <div class="abotus_content">
                             <p>
-                                ¿Te interesa estudiar en Reino Unido? Te asesoramos de manera GRATUITA y apoyamos en tu educación en instituciones y colegios británicos de excelencia.
+                                <?=$this->lang->line('te_interesa_estudiar');?>
                             </p>
                         </div>
-                        <a href="#" class="blog_read">Leer mas<i class="flaticon-arrow"></i></a>
+                        <a href="#" class="blog_read"><?=$this->lang->line('leer_mas');?><i class="flaticon-arrow"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
                     <div class="footer_widget footer_blog_wrapper float_left">
-                        <h4>Eventos Recientes</h4>
+                        <h4> <?=$this->lang->line('eventos_recientes');?></h4>
                         <div class="ft_blog_wrapper1">
                             <div class="ft_blog_image">
                                 <img src="<?=base_url('resources/assets/Informativa/images/blg1.jpg');?>" class="img-responsive" alt="img" />
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
                     <div class="footer_widget footer_useful_wrapper float_left">
-                        <h4>Suscribete</h4>
+                        <h4><?=$this->lang->line('subcribete');?></h4>
                         <div class="abotus_content">
                             <p>Déjanos tu correo electrónico para estar informado de nuestros eventos.
                         </div>
@@ -71,11 +71,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
                     <div class="footer_widget footer_contact_wrapper float_left">
-                        <h4>Contactanos </h4>
+                        <h4><?=$this->lang->line('contactanos');?> </h4>
                         <ul>
                             <li> 
                                 <span> Quer&eacutetaro
-                                       Oficina: 
+                                    <?=$this->lang->line('oficina');?>: 
                                 </span>
                                 <p>
                                     <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank">
@@ -84,14 +84,14 @@
                                         76230, Santiago de Querétaro, Qro.
                                     </a>
                                 </p>
-                                <span>Telefono: </span>
+                                <span><?=$this->lang->line('telefono');?>: </span>
                                 <p> 
                                     <a href="tel:4422609090">442 260 9090</a>
                                 </p>
                             </li>
                             <li> 
                                 <span> CDMX
-                                       Oficina: 
+                                    <?=$this->lang->line('oficina');?>: 
                                 </span>
                                 <p>
                                     <a href="#" target="_blank">
@@ -100,7 +100,7 @@
                                     C.P. 06010, México DF
                                     </a>
                                 </p>
-                                <span>Telefono: </span>
+                                <span><?=$this->lang->line('telefono');?>: </span>
                                 <p> 
                                     <a href="tel:5536874477">55 3687 4477</a>
                                 </p>
