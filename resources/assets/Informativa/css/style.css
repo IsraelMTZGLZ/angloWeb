@@ -1142,7 +1142,7 @@ a:hover {
 .main_slider_wrapper{
 	float:left;
 	width:75%;
-	background:url('../images/banner.jpg') 50% 0 repeat-y;
+	background:url('../../Anglo/estudia-en-universidad-britanicas2.jpg') 50% 0 repeat-y;
 	background-position:center 0;
 	background-size:cover;
 	height:100%;
@@ -1154,7 +1154,7 @@ a:hover {
     right: 0;
     top: 0;
     bottom: 0;
-    background:rgba(12, 16, 22, 0.86);
+    background:rgba(1, 1, 1, 0.46);
 }
 .slider-area .carousel-inner .carousel-item .caption-1, .slider-area .carousel-inner .carousel-item .caption-2, .slider-area .carousel-inner .carousel-item .caption-3 {
   width:100%;
@@ -5932,7 +5932,7 @@ a:hover {
     margin-top: 35px;
 }
 .check_box_anchr {
-    color: ##002398 !important;
+    color: #002398 !important;
 }
 .login_tab_top_wrap{
 	box-shadow:0px 4px 25px rgba(0,0,0,0.06);
