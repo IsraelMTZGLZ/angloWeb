@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
                     <div class="footer_widget footer_blog_wrapper float_left">
-                        <h4>recent posts</h4>
+                        <h4>Eventos Recientes</h4>
                         <div class="ft_blog_wrapper1">
                             <div class="ft_blog_image">
                                 <img src="<?=base_url('resources/assets/Informativa/images/blg1.jpg');?>" class="img-responsive" alt="img" />
@@ -51,37 +51,16 @@
                                 <div class="ft_blog_date">22 april, 2019</div>
                             </div>
                         </div>
-                        <div class="ft_blog_wrapper1">
-                            <div class="ft_blog_image">
-                                <img src="<?=base_url('resources/assets/Informativa/images/blg3.jpg');?>" class="img-responsive" alt="img" />
-                            </div>
-                            <div class="ft_blog_text">
-                                <p><a href="#">elit non mi porta  Donec id gravida </a></p>
-                                <div class="ft_blog_date">11 april, 2019</div>
-                            </div>
-                        </div>
-                        <div class="ft_blog_wrapper2">
-                            <div class="ft_blog_image">
-                                <img src="<?=base_url('resources/assets/Informativa/images/blg2.jpg');?>" class="img-responsive" alt="img" />
-                            </div>
-                            <div class="ft_blog_text">
-                                <p><a href="#">Donec id elit non elit non mi porta </a></p>
-                                <div class="ft_blog_date">12 april, 2019</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
                     <div class="footer_widget footer_useful_wrapper float_left">
-                        <h4>get in touch</h4>
-                        <div class="contect_form_footer float_left">
-                            <input type="text" name="name" placeholder="joahn doe"><i class="fas fa-user-alt"></i>
+                        <h4>Suscribete</h4>
+                        <div class="abotus_content">
+                            <p>Déjanos tu correo electrónico para estar informado de nuestros eventos.
                         </div>
                         <div class="contect_form_footer float_left">
                             <input type="text" name="Email" placeholder="Email ID"><i class="fas fa-comment"></i>
-                        </div>
-                        <div class="contect_form_footer float_left">
-                            <textarea name="message" rows="4" placeholder="Your Message..."></textarea>
                         </div>
                         <div class="header_btn dark_btn footer_btn float_left">
 
@@ -92,36 +71,54 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
                     <div class="footer_widget footer_contact_wrapper float_left">
-                        <h4>contact info </h4>
+                        <h4>Contactanos </h4>
                         <ul>
-                            <li> <span> Santa Cruz
-Office: </span>
-                                <p><a href="#">Crorpo Technologies,
-9860 Mill Road,
-Deltona, FL 32725, US</a></p>
-
+                            <li> 
+                                <span> Quer&eacutetaro
+                                       Oficina: 
+                                </span>
+                                <p>
+                                    <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank">
+                                        Anillo Vial II Junipero Serra #2450
+                                        Valle de Juriquilla II
+                                        76230, Santiago de Querétaro, Qro.
+                                    </a>
+                                </p>
+                                <span>Telefono: </span>
+                                <p> 
+                                    <a href="tel:4422609090">442 260 9090</a>
+                                </p>
                             </li>
-                            <li> <span>Florida
-Office: </span>
-                                <p><a href="#"> Crorpo,  Mill Road,
-Deltona, FL 32725, US </a> </p>
-
-                            </li>
-                            <li> <span>phone: </span>
-                                <p> +1-202-555-0175 +1-202-555-0107 </p>
-
-                            </li>
-                            <li> <span>email: </span>
-                                <p><a href="#"> crorpo@example.com</a> <br>
-<a href="#"> support@example.com
-</a> </p>
-
+                            <li> 
+                                <span> CDMX
+                                       Oficina: 
+                                </span>
+                                <p>
+                                    <a href="#" target="_blank">
+                                    Paseo de la Reforma No 42, Piso 1, Oficina A-145 Col Centro,
+                                    Del Cuauhtemoc,
+                                    C.P. 06010, México DF
+                                    </a>
+                                </p>
+                                <span>Telefono: </span>
+                                <p> 
+                                    <a href="tel:5536874477">55 3687 4477</a>
+                                </p>
                             </li>
 
                         </ul>
                     </div>
                 </div>
 
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 col-sm-12" style="text-align: center;">
+                    <span> Todos los Derechos Reservados © Anglo Latino. </span>
+                    <br>*Las imágenes visuales/fotografías, logotipos/símbolos, conceptos, descripciones, etc., de las universidades, organizaciones, institutos, escuelas, etc., expuestas en esta página web, son propiedad intelectual única de cada una de ellas; por lo que deben ser tratadas como exclusivas y confidenciales. La reproducción e implantación parcial o total o uso por cualquier medio sin expreso consentimiento por escrito de alguna de dichas entidades educativas, es una directa violación a las Leyes de Propiedad Intelectual y Derechos de Autor a nivel internacional.
+                    
+                    <p style="margin-top: 20px;"><a style="color: #30a3f0;" href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blanck">Aviso de Privacidad para la Protección de Datos Personales.</a></p>
+                </div>
+                
             </div>
         </div>
     </div>

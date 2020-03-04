@@ -36,6 +36,6 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/sociales.css');?>" />
 
     <!--favicon-->
-    <link rel="shortcut icon" type="image/png" href="<?=base_url('resources/assets/Informativa/images/favicon.png');?>" />
+    <link rel="shortcut icon" type="image/png" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" />
     
 </head>
