@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Informativa extends MY_RootController {
+class Home extends MY_RootController {
 
 	public function __construct() {
         parent::__construct();
@@ -10,10 +10,9 @@ class Informativa extends MY_RootController {
 	public function index()
 	{
 		$this->_initialInformativa();
-		$this->load->view('informativa');
+		$this->load->view('Informativa_pages/home_view');
 		$this->_finalInformativa();
 	}
 
-	
 }
  

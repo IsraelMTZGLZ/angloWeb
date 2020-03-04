@@ -3,27 +3,29 @@
     <!-- preloader Start -->
     <div id="preloader">
         <div id="status">
-            <img src="https://media.giphy.com/media/nXQZ2BQ2VtbZC/giphy.gif" id="preloader_image" alt="loader">
+            <img src="https://pa1.narvii.com/6557/19b849c62b3f8e6ef9413f4fe9ac214ae6b99657_hq.gif" id="preloader_image" alt="loader">
         </div>
     </div>
     <div  class="cursor"></div>
     <!-- Top Scroll Start -->
 <a href="javascript:" id="return-to-top"><img src="<?=base_url('resources/assets/Informativa/images/scroll.png');?>" alt="img"></a>
 
+<!--Redes sociales bar-->
 
-<!-- <iframe id="forPostyouradd"
-     allow="microphone;"
-     width="350"
-     height="430"
-     src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f">
-     </iframe> -->
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> 
+  <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a> 
+  <a href="#" class="google"><i class="fab fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> 
+</div>
 
 <div class="">
   <div id="iframeHolder"></div>
 	<!-- <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a> -->
 <!-- <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> -->
 <button class="chat-open-dialog"> <span class="fa fa-question"></span> </button>
-<button class="chat-button-destroy"> <span class="fas fa-window-close"></span> </button>
+<button class="chat-button-destroy"> <span class="fas fa-window-close fa-2x" style="color: white;"></span> </button>
 </div>
     <!-- Top Scroll End -->
     <!-- cp navi wrapper Start -->
