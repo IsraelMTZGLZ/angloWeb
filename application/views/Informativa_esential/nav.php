@@ -20,6 +20,28 @@
   <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> 
 </div>
 
+
+<!--bar idioma-->
+<div class="share-bar right"><!-- Set position: top,left,right,bottom -->
+  <ul>
+    <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
+      <a href="<?php echo base_url(); ?>LanguageSwitcher/switchLang/spanish">
+        <i class="flag-icon flag-icon-mx" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="<?php echo ($this->session->userdata('site_lang') == 'english') ? 'englishActivo' : 'english'; ?>">
+      <a href="<?php echo base_url(); ?>LanguageSwitcher/switchLang/english">
+        <i class="flag-icon flag-icon-gb" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="idioma">
+      <a target="_self">
+      <i class="fas fa-language fa-2x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
 <div class="">
   <div id="iframeHolder"></div>
 	<!-- <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a> -->
@@ -31,7 +53,7 @@
     <!-- cp navi wrapper Start -->
 	<nav class="cd-dropdown">
         <h2><a href="index.html"><span><img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" alt="img"></span>Anglo</a></h2>
-            <a href="#0" class="cd-close">Close</a>
+            <a href="#0" class="cd-close"><?=$this->lang->line('close');?></a>
               <ul class="cd-dropdown-content">
                   <li>
                      <form class="cd-search">
@@ -39,29 +61,29 @@
                     </form>
                </li>
             <li class="">
-                <a href="home">Inicio</a>
+                <a href="home"><?=$this->lang->line('home');?></a>
             </li>  
                 
 			<li class="">
-                <a href="#">Oferta Educativa</a>
+                <a href="#"><?=$this->lang->line('oferta_educativa');?></a>
             </li>
                <!-- .has-children -->
             <li class="has-children">
-                <a href="#">Acerca De Nosotros</a>
+                <a href="#"><?=$this->lang->line('acerca_de_nosotros');?></a>
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                    <li class="go-back"><a href="#0">Menu</a></li>
-                    <li><a href="our_team.html">Nosotros</a></li>
-                    <li><a href="pricing_plans.html">Servicios</a></li>
+                    <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
+                    <li><a href="our_team.html"><?=$this->lang->line('nosotros');?></a></li>
+                    <li><a href="pricing_plans.html"><?=$this->lang->line('servicios');?></a></li>
                 </ul>
             </li>
 			<li class="">
-                <a href="#">Becas y Apoyos</a>
+                <a href="#"><?=$this->lang->line('becasy_apoyos');?></a>
             </li>
 			<li class="">
-                <a href="#">Blog</a>
+                <a href="#"><?=$this->lang->line('blog');?></a>
             </li>
 			<li class="">
-                <a href="#">Contacto</a>
+                <a href="#"><?=$this->lang->line('contacto');?></a>
             </li>
         </ul>
         <!-- .cd-dropdown-content -->
@@ -111,7 +133,7 @@
             </header>
             <div class="header_btn top_btn float_left">
 
-                <a href="login_register.html">ingresar</a>
+                <a href="login_register.html"><?=$this->lang->line('ingresar');?></a>
 
             </div>
 
@@ -135,26 +157,26 @@
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <ul class="main_nav_ul">
-                         <li class="has-mega gc_main_navigation"><a href="home" class="gc_main_navigation">Inicio</a>
+                         <li class="has-mega gc_main_navigation"><a href="home" class="gc_main_navigation"><?=$this->lang->line('home');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">Oferta Educativa</a>
+                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">Acerca de nosotros</a>
+                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                             <ul class="navi_2_dropdown">
                                 <li>
-                                   <a href="pricing_plans.html"> <i class="fas fa-caret-right"></i>Nosotros</a>
+                                   <a href="pricing_plans.html"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
                                 </li>
                                 <li class="parent">
-                                    <a href="login_register.html"> <i class="fas fa-caret-right"></i>Servicios</a>
+                                    <a href="login_register.html"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
                                 </li>
                             </ul>
                         </li>
 
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">Becas y Apoyos</a>
+                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">Blog</a>
+                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">Contacto</a>
+                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
                         </li>
 
                     </ul>

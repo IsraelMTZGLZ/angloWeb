@@ -32,11 +32,11 @@
                             <a href="index.html"><img src="<?=base_url('resources/assets/Informativa/images/logo.png');?>" class="img-responsive" alt="logo" /></a>
                         </div>
                         <div class="abotus_content">
-                            <p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.
-                                <br>
-                                <br> Vestibulum id ligula porta felis euismod semper. pharetra augue. Maecenas faucibus interdum...</p>
+                            <p>
+                                ¿Te interesa estudiar en Reino Unido? Te asesoramos de manera GRATUITA y apoyamos en tu educación en instituciones y colegios británicos de excelencia.
+                            </p>
                         </div>
-                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="#" class="blog_read">Leer mas<i class="flaticon-arrow"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
@@ -129,17 +129,8 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                     <div class="btm_foter_box">
 
-                        <p>Copyright © 2019 <a href="index.html"> Crorpo</a> Template by <a href="#"> Webstrot</a></p>
-                         <ul class="aboutus_social_icons">
-                            <li><a href="index.html">home</a>
-                            </li>
-                            <li><a href="about_us.html">about</a>
-                            </li>
-                            <li><a href="our_team.html">team</a>
-                            </li>
-                            <li> <a href="blog_width_sidebar.html">blog</a> </li>
-                            <li> <a href="portfolio_2column.html">works</a> </li>
-                        </ul>
+                        <p>Anglo Latino Education Pathership by <a href="#"> Maxei code</a></p>
+                         
                     </div>
                 </div>
             </div>

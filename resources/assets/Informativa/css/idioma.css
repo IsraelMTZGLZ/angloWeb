@@ -1,0 +1,98 @@
+
+.share-bar li {
+  min-width: 30px; /* Set minimum width of each cube */
+  min-height: 30px; /* Set minimum height of each cube */
+}
+
+.share-bar .left, .share-bar .right {
+  min-height: 400px;
+}
+
+.share-bar i {
+  font-size: 20px; 
+}
+
+.share-bar li {
+  padding: 0.8em;
+  line-height: 105%; /* set same as min-height */
+  vertical-align: middle;
+}
+
+
+/* DO NOT EDIT BELOW THIS LINE */
+
+.share-bar {
+  position: fixed;
+  height: auto;
+  width: auto;
+  margin: auto 0;
+  z-index: 9999;
+}
+
+.right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 200px;
+}
+
+.share-bar ul {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.share-bar li {
+  list-style-type: none;
+}
+
+.share-bar.right a, .share-bar.left a {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+
+.share-bar .right a {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+
+.share-bar i {
+  line-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+.share-bar fa {
+  width: 100%;
+  height: auto;
+}
+
+.share-bar li {
+  background-color: rgba(9,9,8,0.8);
+  display: block;
+}
+
+.share-bar .english:hover {
+  background-color: #3b5998;
+}
+.share-bar .idioma {
+  background-color: #cd201f;
+}
+
+.share-bar .spanish:hover {
+  background-color: #34bf49;
+}
+
+.share-bar .spanishActivo {
+  background-color: #34bf49;
+}
+
+.share-bar .englishActivo {
+  background-color: #3b5998;
+}

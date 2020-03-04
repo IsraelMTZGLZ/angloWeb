@@ -1104,5 +1104,3 @@ Built With Crorpo</h2>
 
         </div>
     </div>
-
-    <!--newsletter wrapper end-->
