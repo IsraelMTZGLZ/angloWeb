@@ -544,61 +544,7 @@
     </div>
     <!--team wrapper end-->
     <!--partner wrapper start-->
-    <div class="partner_wrapper float_left">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
-                    <div class="cp_heading_wraper">
-
-                        <h3>our partners</h3>
-
-                        <p>sly foster exceptional initiatives mindshare through extensible after
-                            <br>cross-unit infrastructures. .
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="pn_slider_wraper float_left">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p1.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p2.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p3.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p4.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p5.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p6.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!--partners wrapper end-->
     <!--newsletter wrapper start-->
 
