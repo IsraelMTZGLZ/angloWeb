@@ -544,7 +544,7 @@
     </div>
     <!--team wrapper end-->
     <!--partner wrapper start-->
-  
+
     <!--partners wrapper end-->
     <!--newsletter wrapper start-->
 
