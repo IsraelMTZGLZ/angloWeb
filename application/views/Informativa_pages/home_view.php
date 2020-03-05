@@ -499,25 +499,7 @@
     </div>
 
     <!-- testimonial wrapper end-->
-    <!-- video section Start -->
-    <div class="prs_video_section_main_wrapper float_left">
-        <div class="counter_overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="prs_video_sec_icon_wrapper">
-                        <ul>
-                            <li>
-                                <a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/8fQNkXEZXZ8' title='title'><img src="<?=base_url('resources/assets/Informativa/images/play.png');?>" class="img-responsive" alt="img"></a>
-                            </li>
-                        </ul>
-                        <h1>video player</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- video section End -->
+    
     <!--blog wrapper start-->
     <div class="blog_wrapper float_left">
         <div class="container">
