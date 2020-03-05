@@ -10,11 +10,13 @@ class LanguageLoader
             $ci->lang->load('nav_informativo',$siteLang);
             $ci->lang->load('footer_informativa',$siteLang);
             $ci->lang->load('home_informativo',$siteLang);
+            $ci->lang->load('about_informativo',$siteLang);
         } else {
             $ci->lang->load('general_messages','spanish');
             $ci->lang->load('nav_informativo','spanish');
             $ci->lang->load('footer_informativa','spanish');
             $ci->lang->load('home_informativo','spanish');
+            $ci->lang->load('about_informativo','spanish');
         }
     }
 }

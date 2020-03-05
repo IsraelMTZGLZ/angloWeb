@@ -184,14 +184,12 @@
                     <!-- section_heading start -->
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
 
-                        <h1>About us II</h1>
+                        <h1><?=$this->lang->line('about_us');?></h1>
                     </div>
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
                         <div class="sub_title_section">
                             <ul class="sub_title">
-                                <li> <a href="#"> Home </a> &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp; </li>
 
-                                <li> About us</li>
                             </ul>
                         </div>
                     </div>
@@ -209,7 +207,7 @@
                     <div class="about_bg_II">
                         <img src="<?=base_url('resources/assets/Informativa/images/abt_bg.jpg');?>" alt="">
                     </div>
-                    <div class="video_bg_II">
+                    <!-- <div class="video_bg_II">
                         <div class="video_img_box">
                             <img src="<?=base_url('resources/assets/Informativa/images/vedio_bg2.jpg');?>" alt="video_bg">
                             <a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'>
@@ -218,15 +216,15 @@
 								</span>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                <div class="col-lg-6 col-md-12 col-12">
                     <div class="about_text_wrapper">
                       <div class="cp_heading_wraper left_heading abt_head">
-                        <h3>introduction</h3>
+                        <h3><?=$this->lang->line('introduccion');?></h3>
                     </div>
                         <div class="section_content">
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus. Nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                            <p><?=$this->lang->line('descripcion');?></p>
                         </div>
                         <ul>
                             <li>
