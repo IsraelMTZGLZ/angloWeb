@@ -151,10 +151,14 @@
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
                                             <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Informativa/images/slider1.png');?>" alt="img"></div>
-                                            <h2 data-animation="animated fadeInUp">Great Companies <br>
-Built With Crorpo</h2>
+                                            <h2 data-animation="animated fadeInUp">Bienvenido <br>
+                                            </h2>
 
-                                            <p data-animation="animated fadeInUp">Create own online store and start earning money. Your customers will love design and usability.</p>
+                                            <p data-animation="animated fadeInUp">
+                                                Te asesoramos para que puedas solicitar
+                                                una Beca CONACYT para estudiar en el
+                                                Reino Unido este 2020
+                                            </p>
                                             <div class="header_btn slider_btn float_left">
                                                 <ul>
                                                     <li data-animation="animated flipInX">
@@ -179,14 +183,17 @@ Built With Crorpo</h2>
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
                                             <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Informativa/images/slider1.png');?>" alt="img"></div>
-                                            <h2 data-animation="animated fadeInUp">Great Companies <br>
-Built With Crorpo</h2>
+                                            <h2 data-animation="animated fadeInUp">Conocenos
+                                            </h2>
 
-                                            <p data-animation="animated fadeInUp">Create own online store and start earning money. Your customers will love design and usability.</p>
+                                            <p data-animation="animated fadeInUp">
+                                                Te asesoramos de manera GRATUITA y apoyamos en tu educaci&oacute;n en instituciones y colegios brit&aacute;nicos de excelencia.
+
+                                            </p>
                                             <div class="header_btn slider_btn float_left">
                                                 <ul>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="#">read more</a>
+                                                        <a href="About"><?=$this->lang->line('leer_mas');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
                                                         <a href="#">purchase</a>
@@ -207,10 +214,10 @@ Built With Crorpo</h2>
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
                                             <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Informativa/images/slider1.png');?>" alt="img"></div>
-                                            <h2 data-animation="animated fadeInUp">Great Companies <br>
-Built With Crorpo</h2>
+                                            <h2 data-animation="animated fadeInUp">Convenios <br>
+                                            </h2>
 
-                                            <p data-animation="animated fadeInUp">Create own online store and start earning money. Your customers will love design and usability.</p>
+                                            <p data-animation="animated fadeInUp">Todas las universidades con las que tenemos convenio cuentan con becas internas para estudiantes extranjeros.</p>
                                             <div class="header_btn slider_btn float_left">
                                                 <ul>
                                                     <li data-animation="animated flipInX">
