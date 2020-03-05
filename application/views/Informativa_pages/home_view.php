@@ -345,15 +345,15 @@
                 </div>
             </div>
         </div>
-        <div class="girl_shape_top">
+        <!-- <div class="girl_shape_top">
             <img src="<?=base_url('resources/assets/Informativa/images/girl.png');?>" alt="shape">
-        </div>
+        </div> -->
     </div>
     <!--services wrapper start-->
     <!--story wrapper start-->
     <div class="story_wrapper float_left">
         <div class="story_left_Wrapper">
-            <img src="<?=base_url('resources/assets/Informativa/images/mockup.png');?>" alt="shape">
+            <img src="<?=base_url('resources/assets/Informativa/images/uk_student_Two.jpg');?>" alt="shape">
         </div>
         <div class="story_right_Wrapper">
             <div class="container container_cp">
@@ -452,8 +452,8 @@
 
     </div>
     <!-- counter wrapper end-->
-    
-    
+
+
     <!-- testimonial wrapper start-->
     <div class="testimonial_wrapper float_left">
         <div class="counter_overlay"></div>
@@ -499,7 +499,7 @@
     </div>
 
     <!-- testimonial wrapper end-->
-    
+
     <!--blog wrapper start-->
     <div class="blog_wrapper float_left">
         <div class="container">
@@ -551,7 +551,7 @@
 
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
