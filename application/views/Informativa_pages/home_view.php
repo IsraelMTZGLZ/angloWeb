@@ -151,21 +151,19 @@
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
                                             <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Informativa/images/slider1.png');?>" alt="img"></div>
-                                            <h2 data-animation="animated fadeInUp">Bienvenido <br>
+                                            <h2 data-animation="animated fadeInUp"><?=$this->lang->line('bienvenido');?> <br>
                                             </h2>
 
                                             <p data-animation="animated fadeInUp">
-                                                Te asesoramos para que puedas solicitar
-                                                una Beca CONACYT para estudiar en el
-                                                Reino Unido este 2020
+                                                <?=$this->lang->line('beca_asesoria');?>
                                             </p>
                                             <div class="header_btn slider_btn float_left">
                                                 <ul>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="#">read more</a>
+                                                        <a href="Becas"><?=$this->lang->line('leer_mas');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="#">purchase</a>
+                                                        <a href="#"><?=$this->lang->line('ingresar');?></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -183,11 +181,11 @@
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
                                             <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Informativa/images/slider1.png');?>" alt="img"></div>
-                                            <h2 data-animation="animated fadeInUp">Conocenos
+                                            <h2 data-animation="animated fadeInUp"><?=$this->lang->line('conocenos');?>
                                             </h2>
 
                                             <p data-animation="animated fadeInUp">
-                                                Te asesoramos de manera GRATUITA y apoyamos en tu educaci&oacute;n en instituciones y colegios brit&aacute;nicos de excelencia.
+                                            <?=$this->lang->line('beca_gratuita');?>
 
                                             </p>
                                             <div class="header_btn slider_btn float_left">
@@ -196,35 +194,7 @@
                                                         <a href="About"><?=$this->lang->line('leer_mas');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="#">purchase</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-captions caption-3">
-                            <div class="container jn_container">
-                                <div class="row">
-                                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                                        <div class="content">
-                                            <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Informativa/images/slider1.png');?>" alt="img"></div>
-                                            <h2 data-animation="animated fadeInUp">Convenios <br>
-                                            </h2>
-
-                                            <p data-animation="animated fadeInUp">Todas las universidades con las que tenemos convenio cuentan con becas internas para estudiantes extranjeros.</p>
-                                            <div class="header_btn slider_btn float_left">
-                                                <ul>
-                                                    <li data-animation="animated flipInX">
-                                                        <a href="#">read more</a>
-                                                    </li>
-                                                    <li data-animation="animated flipInX">
-                                                        <a href="#">purchase</a>
+                                                        <a href="#"><?=$this->lang->line('ingresar');?></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -239,8 +209,6 @@
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><span class="number"></span>
                         </li>
                         <li data-target="#carousel-example-generic" data-slide-to="1" class=""><span class="number"></span>
-                        </li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2" class=""><span class="number"></span>
                         </li>
                     </ol>
                     <div class="carousel-nevigation">
@@ -270,10 +238,11 @@
 
                     <div class="cp_heading_wraper">
 
-                        <h3>Our Awesome Core Services</h3>
+                        <h3><?=$this->lang->line('nuestros_servicios');?></h3>
 
-                        <p> Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                            <br>lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                        <p><?=$this->lang->line('ayudar1');?>
+                            <br><?=$this->lang->line('ayudar2');?>
+                        </p>
                     </div>
 
                 </div>
@@ -375,14 +344,17 @@
             <div class="container container_cp">
                 <div class="cp_heading_wraper left_heading">
 
-                    <h3>Our story</h3>
+                    <h3><?=$this->lang->line('acerca_de_nosotros');?></h3>
 
-                    <p> ynamically envisioneer inexpensive niche markets whereas maintainable ratives. Objectively facilitate diverse solutions before top-line experiences. Uniquelyilize end-to-end mindshare without cutting-edge total linkage. Synergistically ndicate backend opportunities without prospective interfaces. Competently leve other's focused users for long-term value.
+                    <p> <?=$this->lang->line('about1_home');?>
                         <br>
-                        <br> Continually supply timely infomediaries vis-a-vis value-added functionalitieually leverage existing market-driven paradigms through one-to-one paradigms. letely productivate e-business via market positioning action items. Infomediaries and vis-a-vis value-added functionalitieually.</p>
+                        <br> <?=$this->lang->line('about2_home');?>
+                        <br>
+                        <br>Todas las Universidades están ranqueadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.
+                    </p>
                     <div class="header_btn dark_btn float_left">
 
-                        <a href="#">reading</a>
+                        <a href="About">reading</a>
 
                     </div>
                 </div>
