@@ -157,12 +157,12 @@
                     </li>
                     <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                         <ul class="navi_2_dropdown">
-                            <li>
-                               <a href="About"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
-                            </li>
-                            <li class="parent">
-                                <a href="login_register.html"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
-                            </li>
+                          <li>
+                             <a href="About"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
+                          </li>
+                          <li class="parent">
+                              <a href="Services"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
+                          </li>
                         </ul>
                     </li>
 

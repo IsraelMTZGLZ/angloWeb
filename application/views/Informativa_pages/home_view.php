@@ -117,7 +117,7 @@
                                    <a href="About"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
                                 </li>
                                 <li class="parent">
-                                    <a href="login_register.html"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
+                                    <a href="Services"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
                                 </li>
                             </ul>
                         </li>
