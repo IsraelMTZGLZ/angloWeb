@@ -230,6 +230,52 @@
         </div>
     </div>
     <!-- slider wrapper End -->
+    <!--process wrapper start-->
+    <div class="process_wrapper float_left">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
+                    <div class="cp_heading_wraper">
+
+                        <h3><?=$this->lang->line('oferta_educativa');?></h3>
+                    </div>
+
+                </div>
+                <div class="work_process_main_wrapper float_left">
+                <div class="work_process_wrapper p2">
+                        <div class="work_box float_left">
+                            <div class="work_img"><img src="<?=base_url('resources/assets/Anglo/universidades.jpg');?>" alt="img" /></div>
+                            <h1 class="numbering numbering">1</h1>
+                            <h2><a href="#">Universidades</a></h2>
+                            <p>Las universidades dentro del convenio cuentan con becas para estudiantes extranjeros.</p>
+                        </div>
+                    </div>
+                    <div class="work_process_wrapper p2">
+                        <div class="work_box float_left">
+                            <div class="work_img"><img src="<?=base_url('resources/assets/Anglo/preparatorias.jpg');?>" alt="img" /></div>
+                            <h1 class="numbering numbering2">2</h1>
+                            <h2><a href="#">Preparatorias</a></h2>
+                            <p>Todas estas instituciones ofrecen becas internas para estudiantes extranjeros.</p>
+                        </div>
+                    </div>
+                    <div class="work_process_wrapper p2">
+                        <div class="work_box float_left">
+                            <div class="work_img"><img src="<?=base_url('resources/assets/Anglo/cursos_ingles.jpg');?>" alt="img" /></div>
+                            <h1 class="numbering numbering3">3</h1>
+                            <h2><a href="#">Cursos de ingles</a></h2>
+                            <p>Conveniently customize customized work expertise</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="header_btn dark_btn gallery_btn float_left">
+                        <a href="#">All Ofertas</a>
+                   </div>
+            </div>
+        </div>
+    </div>
+    <!--process wrapper end-->
     <!--services wrapper start-->
     <div class="service_wrapper topper float_left">
         <div class="container">
@@ -250,83 +296,52 @@
 
                     <div class="service_cntnt de float_left">
                         <div class="service_main">
-                            <i class="flaticon-eye-open"></i>
-                            <h2> <a href="#">retina ready</a></h2>
+                            <i class="fas fa-heart"></i>
+                            <h2> <a href="#"><?=$this->lang->line('fiabilidad');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
 
                     <div class="service_cntnt de resp_boerder float_left">
                         <div class="service_main">
-                            <i class="flaticon-diamond"></i>
-                            <h2> <a href="#">amazing platform</a></h2>
+                            <i class="fas fa-universal-access"></i>
+                            <h2> <a href="#"><?=$this->lang->line('accesibilidad');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
 
                     <div class="service_cntnt de float_left">
                         <div class="service_main">
-                            <i class="flaticon-shopping-cart"></i>
-                            <h2> <a href="#">woocommerece</a></h2>
+                            <i class="fas fa-headset"></i>
+                            <h2> <a href="#"><?=$this->lang->line('servicio');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
 
                     <div class="service_cntnt de resp_boerder float_left">
                         <div class="service_main">
-                            <i class="flaticon-star"></i>
-                            <h2> <a href="#">multi purpose</a></h2>
+                            <i class="fas fa-comments"></i>
+                            <h2> <a href="#"><?=$this->lang->line('comunicacion');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
 
                     <div class="service_cntnt main_without_border  de float_left">
                         <div class="service_main">
-                            <i class="flaticon-man-user"></i>
-                            <h2> <a href="#">user friendly</a></h2>
+                            <i class="fas fa-user-check"></i>
+                            <h2> <a href="#"><?=$this->lang->line('eficacia');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
 
                     <div class="service_cntnt resp_boerder float_left">
                         <div class="service_main">
-                            <i class="flaticon-flask"></i>
-                            <h2> <a href="#">Visualize Strategies</a></h2>
+                            <i class="fas fa-star"></i>
+                            <h2> <a href="#"><?=$this->lang->line('calidad');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
 
-                    <div class="service_cntnt float_left">
-                        <div class="service_main">
-                            <i class="flaticon-triangular-arrows-sign-for-recycle"></i>
-                            <h2> <a href="#">Fast Interaction</a></h2>
-                        </div>
-                        <div class="service_overlay"></div>
-                    </div>
-
-                    <div class="service_cntnt resp_boerder float_left">
-                        <div class="service_main">
-                            <i class="flaticon-trophy"></i>
-                            <h2> <a href="#">Award Winning</a></h2>
-                        </div>
-                        <div class="service_overlay"></div>
-                    </div>
-
-                    <div class="service_cntnt resp_border_2 float_left">
-                        <div class="service_main">
-                            <i class="flaticon-portfolio"></i>
-                            <h2> <a href="#">best portfolio</a></h2>
-                        </div>
-                        <div class="service_overlay"></div>
-                    </div>
-
-                    <div class="service_cntnt main_without_border resp_border_2 resp_boerder float_left">
-                        <div class="service_main">
-                            <i class="flaticon-graduate-cap"></i>
-                            <h2> <a href="#">best trainers</a></h2>
-                        </div>
-                        <div class="service_overlay"></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -350,11 +365,11 @@
                         <br>
                         <br> <?=$this->lang->line('about2_home');?>
                         <br>
-                        <br>Todas las Universidades están ranqueadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.
+                        <br><?=$this->lang->line('about3_home');?>
                     </p>
                     <div class="header_btn dark_btn float_left">
 
-                        <a href="About">reading</a>
+                        <a href="About"><?=$this->lang->line('reading');?></a>
 
                     </div>
                 </div>
@@ -437,255 +452,8 @@
 
     </div>
     <!-- counter wrapper end-->
-    <!--process wrapper start-->
-    <div class="process_wrapper float_left">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
-                    <div class="cp_heading_wraper">
-
-                        <h3>Creative Work Process</h3>
-
-                        <p> Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                            <br>lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                    </div>
-
-                </div>
-                <div class="work_process_main_wrapper float_left">
-                    <div class="work_process_wrapper">
-                        <div class="work_box float_left">
-                            <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk1.png');?>" alt="img" /></div>
-                            <h1 class="numbering">1</h1>
-                            <h2><a href="#">planning</a></h2>
-                            <p>Holisticly unleash enterprise process improvements.</p>
-                        </div>
-                    </div>
-                    <div class="work_process_wrapper p2">
-                        <div class="work_box float_left">
-                            <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk2.png');?>" alt="img" /></div>
-                            <h1 class="numbering numbering2">2</h1>
-                            <h2><a href="#">designing</a></h2>
-                            <p>Synergistically incubate high impact data via cros.</p>
-                        </div>
-                    </div>
-                    <div class="work_process_wrapper p3">
-                        <div class="work_box float_left">
-                            <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk3.png');?>" alt="img" /></div>
-                            <h1 class="numbering numbering3">3</h1>
-                            <h2><a href="#">programing</a></h2>
-                            <p>Conveniently customize customized work expertise</p>
-                        </div>
-
-                    </div>
-                    <div class="work_process_wrapper">
-                        <div class="work_box float_left">
-                            <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk4.png');?>" alt="img" /></div>
-                            <h1 class="numbering numbering4">4</h1>
-                            <h2><a href="#">presentation</a></h2>
-                            <p>Engage goal oriented channels via leveraged best practices. </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--process wrapper end-->
-    <!--team wrapper start-->
-    <div class="team_wrapper float_left">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
-                    <div class="cp_heading_wraper">
-
-                        <h3>meet our team</h3>
-
-                        <p>sly foster exceptional initiatives mindshare through extensible after
-                            <br>cross-unit infrastructures. .
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="team_slider_wrapper float_left">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="team_slider_main float_left">
-
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team1.png');?>" class="img-responsive" alt="img" />
-                                    </div>
-
-                                    <div class="team_info_wrapper">
-                                        <h4><a href="#">Arnold Oliver</a></h4>
-                                        <h5>founder</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="team_slider_main float_left">
-
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
-                                    </div>
-
-                                    <div class="team_info_wrapper">
-                                        <h4><a href="#">jannifer doe</a></h4>
-                                        <h5>founder</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="team_slider_main float_left">
-
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team1.png');?>" class="img-responsive" alt="img" />
-                                    </div>
-
-                                    <div class="team_info_wrapper">
-                                        <h4><a href="#">Arnold Oliver</a></h4>
-                                        <h5>founder</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="team_slider_main float_left">
-
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
-                                    </div>
-
-                                    <div class="team_info_wrapper">
-                                        <h4><a href="#">jannifer doe</a></h4>
-                                        <h5>founder</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--team wrapper end-->
+    
+    
     <!-- testimonial wrapper start-->
     <div class="testimonial_wrapper float_left">
         <div class="counter_overlay"></div>
@@ -731,240 +499,6 @@
     </div>
 
     <!-- testimonial wrapper end-->
-    <!--gallery wrapper start-->
-    <div class="gallery_wrapper float_left">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
-                    <div class="cp_heading_wraper">
-
-                        <h3>our work</h3>
-
-                        <p>Lorem Ipsum. Proin Gravida Nibh Vel Velit Auctor Aliquet. Aenean Sollicitudin,
-                            <br> Lorem Quis Bibendum Auctor, Nisi Elit Consequat Ipsum .
-                        </p>
-                    </div>
-
-                    <ul class="protfoli_filter">
-                        <li class="active" data-filter="*"><a href="#"> all</a></li>
-
-                        <li data-filter=".website"><a href="#">web design</a></li>
-                        <li data-filter=".design"><a href="#">graphic</a></li>
-                        <li data-filter=".ux_ui"><a href="#">logo</a></li>
-                        <li data-filter=".ux_uy"><a href="#">wordpress</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
-                    <div class="row portfoli_inner">
-
-                        <!-- Items -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 website ux_ui">
-                            <div class="portfolio_item">
-                                <img src="<?=base_url('resources/assets/Informativa/images/g1.jpg');?>" alt="">
-                                <div class="portfolio_hover">
-                                    <a href="#">  company branding <span>(mockup, branding) </span></a>
-                                    <p></p>
-                                    <div class="zoom_popup">
-                                        <a class="img-link" href="<?=base_url('resources/assets/Informativa/images/g1.jpg');?>"> <i class="flaticon-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-								<div class="portfolio_overlay"></div>
-                            </div>
-                        </div>
-                        <!-- Items -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 website design ux_uy">
-                            <div class="portfolio_item">
-                                <img src="<?=base_url('resources/assets/Informativa/images/g2.jpg');?>" alt="">
-                                <div class="portfolio_hover">
-                                    <a href="#">  company branding <span>(mockup, branding) </span></a>
-                                    <div class="zoom_popup">
-                                        <a class="img-link" href="<?=base_url('resources/assets/Informativa/images/g2.jpg');?>"> <i class="flaticon-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-								<div class="portfolio_overlay"></div>
-                            </div>
-                        </div>
-                        <!-- Items -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 design ux_ui">
-                            <div class="portfolio_item">
-                                <img src="<?=base_url('resources/assets/Informativa/images/g3.jpg');?>" alt="">
-                                <div class="portfolio_hover">
-                                    <a href="#">  company branding <span>(mockup, branding) </span></a>
-                                    <div class="zoom_popup">
-                                        <a class="img-link" href="<?=base_url('resources/assets/Informativa/images/g3.jpg');?>"> <i class="flaticon-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-								<div class="portfolio_overlay"></div>
-                            </div>
-                        </div>
-                        <!-- Items -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 website ux_uy">
-                            <div class="portfolio_item">
-                                <img src="<?=base_url('resources/assets/Informativa/images/g4.jpg');?>" alt="">
-                                <div class="portfolio_hover">
-                                    <a href="#">  company branding <span>(mockup, branding) </span></a>
-                                    <div class="zoom_popup">
-                                        <a class="img-link" href="<?=base_url('resources/assets/Informativa/images/g4.jpg');?>"> <i class="flaticon-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-								<div class="portfolio_overlay"></div>
-                            </div>
-                        </div>
-                        <!-- Items -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 website ux_uy">
-                            <div class="portfolio_item">
-                                <img src="<?=base_url('resources/assets/Informativa/images/g5.jpg');?>" alt="">
-                                <div class="portfolio_hover">
-                                    <a href="#">  company branding <span>(mockup, branding) </span></a>
-                                    <div class="zoom_popup">
-                                        <a class="img-link" href="<?=base_url('resources/assets/Informativa/images/g5.jpg');?>"> <i class="flaticon-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-								<div class="portfolio_overlay"></div>
-                            </div>
-                        </div>
-                        <!-- Items -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 website design ux_ui">
-                            <div class="portfolio_item">
-                                <img src="<?=base_url('resources/assets/Informativa/images/g6.jpg');?>" alt="">
-                                <div class="portfolio_hover">
-                                    <a href="#">  company branding <span>(mockup, branding) </span></a>
-                                    <div class="zoom_popup">
-                                        <a class="img-link" href="<?=base_url('resources/assets/Informativa/images/g6.jpg');?>"> <i class="flaticon-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-								<div class="portfolio_overlay"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ux_uy website design ux_ui">
-                            <div class="portfolio_item">
-                                <img src="<?=base_url('resources/assets/Informativa/images/g7.jpg');?>" alt="">
-                                <div class="portfolio_hover">
-                                    <a href="#">  company branding b <span>(mockup, branding) </span></a>
-                                    <div class="zoom_popup">
-                                        <a class="img-link" href="<?=base_url('resources/assets/Informativa/images/g7.jpg');?>"> <i class="flaticon-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-								<div class="portfolio_overlay"></div>
-                            </div>
-                        </div>
-                    </div>
-					<div class="header_btn dark_btn gallery_btn float_left">
-                        <a href="#">all projects</a>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--gallery wrapper end-->
-    <!--pricing wrapper start-->
-    <div class="pricing_wrapper float_left">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
-                    <div class="cp_heading_wraper">
-
-                        <h3>pricing table</h3>
-
-                        <p>sly foster exceptional initiatives mindshare through extensible after
-                            <br>cross-unit infrastructures. .
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="pricing_box_wrapper float_left">
-                        <h1>basic plan</h1>
-                        <div class="main_pdet float_left">
-
-                            <h2><span class="dollarr"> $ </span> 29  <br> <span> / per month</span></h2>
-                        </div>
-                        <ul class="pricing_list22">
-                            <li>10 upload per month</li>
-                            <li>02 free download</li>
-                            <li>
-                                05 GB Server Space
-                            </li>
-                            <li>60 Hit Per Day</li>
-                            <li>Author Page
-
-                            </li>
-                            <li>24/7 Customer Support
-                            </li>
-                            <li>Unlimited staff</li>
-
-                        </ul>
-                        <a href="#" class="price_btn">buy now!</a>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="pricing_box_wrapper float_left">
-                        <h1>premium plan</h1>
-                        <div class="main_pdet float_left">
-
-                            <h2><span class="dollarr"> $ </span> 59 <br> <span> / per month</span></h2>
-                        </div>
-                        <ul class="pricing_list22">
-                            <li>10 upload per month</li>
-                            <li>02 free download</li>
-                            <li>
-                                05 GB Server Space
-                            </li>
-                            <li>60 Hit Per Day</li>
-                            <li>Author Page
-
-                            </li>
-                            <li>24/7 Customer Support
-                            </li>
-                            <li>Unlimited staff</li>
-
-                        </ul>
-                        <a href="#" class="price_btn">buy now!</a>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="pricing_box_wrapper float_left">
-                        <h1>pro plan</h1>
-                        <div class="main_pdet float_left">
-
-                            <h2><span class="dollarr"> $ </span> 99  <br> <span> / per month</span></h2>
-                        </div>
-                        <ul class="pricing_list22">
-                            <li>10 upload per month</li>
-                            <li>02 free download</li>
-                            <li>
-                                05 GB Server Space
-                            </li>
-                            <li>60 Hit Per Day</li>
-                            <li>Author Page
-
-                            </li>
-                            <li>24/7 Customer Support
-                            </li>
-                            <li>Unlimited staff</li>
-
-                        </ul>
-                        <a href="#" class="price_btn">buy now!</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--pricing wrapper end-->
     <!-- video section Start -->
     <div class="prs_video_section_main_wrapper float_left">
         <div class="counter_overlay"></div>
@@ -974,7 +508,7 @@
                     <div class="prs_video_sec_icon_wrapper">
                         <ul>
                             <li>
-                                <a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'><img src="<?=base_url('resources/assets/Informativa/images/play.png');?>" class="img-responsive" alt="img"></a>
+                                <a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/8fQNkXEZXZ8' title='title'><img src="<?=base_url('resources/assets/Informativa/images/play.png');?>" class="img-responsive" alt="img"></a>
                             </li>
                         </ul>
                         <h1>video player</h1>
@@ -992,11 +526,7 @@
 
                     <div class="cp_heading_wraper">
 
-                        <h3>blog posts</h3>
-
-                        <p>Lorem Ipsum. Proin Gravida Nibh Vel Velit Auctor Aliquet. Aenean Sollicitudin,
-                            <br> Lorem Quis Bibendum Auctor, Nisi Elit Consequat Ipsum .
-                        </p>
+                        <h3>blog posts y eventos</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -1039,108 +569,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                    <div class="blog-post-wrapper">
-                        <div class="post-thumbnail">
-                            <div id="blogoneSlider" class="carousel slide" data-ride="carousel">
-
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/blog2.jpg');?>" class="img-responsive " alt="Image">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
-                                    </div>
-                                </div>
-
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#blogoneSlider" role="button" data-slide="prev">
-                                    <span class="flaticon-left-arrow" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="right carousel-control" href="#blogoneSlider" role="button" data-slide="next">
-                                    <span class="flaticon-right-arrow" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-							  <div class="entry-footer float_left">
-                            <ul class="entry-meta pull-left">
-                                <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                                <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                            </ul>
-
-                        </div>
-                        <!-- /.entry-footer -->
-                        </div>
-                        <!-- /.post-thumbnail -->
-
-                        <div class="blog-content">
-                            <header class="entry-header">
-                                <h4 class="entry-title"><a href="#">slider blog post</a></h4>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><span class="author">By <a href="#">Admin</a></span>
-                                        </li>
-                                        <li><span class="posted-in">sept 19, 2019</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.entry-meta -->
-                            </header>
-                            <!-- /.entry-header -->
-
-                            <div class="entry-content">
-                                <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
-                                <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
-                            </div>
-                            <!-- /.entry-content -->
-                        </div>
-                        <!-- /.blog-content -->
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                    <div class="blog-post-wrapper">
-                        <div class="post-thumbnail">
-                            <img src="<?=base_url('resources/assets/Informativa/images/blog3.jpg');?>" alt="Image" />
-                            <a href="https://www.youtube.com/watch?v=b9krhARsAHU" class="test-popup-link vedie_img"><span><img src="<?=base_url('resources/assets/Informativa/images/play2.png');?>" alt="img"></span></a>
-							 <div class="entry-footer float_left">
-                            <ul class="entry-meta pull-left">
-                                <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                                <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                            </ul>
-
-                        </div>
-                        <!-- /.entry-footer -->
-                        </div>
-                        <!-- /.post-thumbnail -->
-
-                        <div class="blog-content">
-                            <header class="entry-header">
-                                <h4 class="entry-title"><a href="#">video blog post</a></h4>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><span class="author">By <a href="#">Admin</a></span>
-                                        </li>
-                                        <li><span class="posted-in">sept 19, 2019</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.entry-meta -->
-                            </header>
-                            <!-- /.entry-header -->
-
-                            <div class="entry-content">
-                                <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
-                                <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
-                            </div>
-                            <!-- /.entry-content -->
-                        </div>
-                        <!-- /.blog-content -->
-
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -1153,10 +582,9 @@
 
                     <div class="cp_heading_wraper">
 
-                        <h3>our partners</h3>
+                        <h3>Becas y Financiamientos</h3>
 
-                        <p>sly foster exceptional initiatives mindshare through extensible after
-                            <br>cross-unit infrastructures. .
+                        <p>Te asesoramos en todo el proceso
                         </p>
                     </div>
 
@@ -1166,35 +594,39 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p1.png');?>" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p2.png');?>" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/conacyt.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p3.png');?>" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p4.png');?>" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/senescyt.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p5.png');?>" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/banco-de-mexico.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Informativa/images/p6.png');?>" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
-
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/Logo-funed.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1202,21 +634,3 @@
         </div>
     </div>
     <!--partners wrapper end-->
-    <!--newsletter wrapper start-->
-
-    <div class="news_letter_wrapper float_left">
-
-        <div class="container">
-
-            <div class="lr_nl_heading_wrapper">
-                <h2> Newsletter</h2>
-                <p>Don’t miss to subscribe to our new feeds, kindly fill the form </p>
-            </div>
-
-            <div class="lr_nl_form_wrapper">
-                <input type="text" placeholder=" Email">
-                <button type="submit">Subscribe</button>
-            </div>
-
-        </div>
-    </div>
