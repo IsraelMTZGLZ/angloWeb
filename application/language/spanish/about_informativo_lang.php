@@ -15,12 +15,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $lang['about_us'] = "Acerca de Nosotros";
 $lang['home']="Inicio";
 $lang['introduccion'] = "¿Quiénes somos?";
-$lang['descripcion'] = "Representamos a un grupo selecto de Universidades y Colegios Británicos con una amplia oferta académica. Nuestras universidades cuentan con alto reconocimiento internacional tanto en la investigación como en la docencia.
+$lang['descripcion_one'] = "Representamos a un grupo selecto de Universidades y Colegios Británicos con una amplia oferta académica. Nuestras universidades cuentan con alto reconocimiento internacional tanto en la investigación como en la docencia.
 
 Estamos constituidos como un consorcio de instituciones educativas británicas, ofrecemos asesoría, apoyo e información de manera gratuita a candidatos que desean estudiar en nuestras instituciones.
+";
 
+$lang['descripcion_two'] = "
 La mayoría de las Universidades de la red están calificadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.
 Las escuelas, facultades y universidades del Reino Unido te ofrecen una educación de primer nivel internacional, la oportunidad de cumplir tus objetivos al estudiar y obtener titulaciones valoradas por empleadores y académicos de todo el mundo.
 La educación británica te brinda inspiración para desarrollar tus conocimientos y habilidades, libertad para ser creativo y apoyo para utilizar lo mejor de ti mismo.";
+$lang['mision_titulo']="Misión";
+$lang['mision_contenido']="Ofrecer información y asesoría a estudiantes mexicanos y
+latinoamericanos de alto nivel académico para que se
+inscriban en nuestras universidades, preparatorias y
+escuelas de inglés con el fin de alcanzar sus metas
+educativas, profesionales y personales; y así, por esta
+asesoría individualizada, maximizar el número de
+estudiantes registrándose en nuestras instituciones
+socios.";
 $lang['english']="Ingles";
 $lang['spanish']="Español";

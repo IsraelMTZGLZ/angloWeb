@@ -205,7 +205,7 @@
             <div class="row">
 				<div class="col-lg-6 col-md-12 col-12">
                     <div class="about_bg_II">
-                        <img src="<?=base_url('resources/assets/Informativa/images/abt_bg.jpg');?>" alt="">
+                        <img src="<?=base_url('resources/assets/Informativa/images/anglo-latino-quienes-somos.jpg');?>" alt="">
                     </div>
                     <!-- <div class="video_bg_II">
                         <div class="video_img_box">
@@ -224,7 +224,9 @@
                         <h3><?=$this->lang->line('introduccion');?></h3>
                     </div>
                         <div class="section_content">
-                            <p><?=$this->lang->line('descripcion');?></p>
+                            <p><?=$this->lang->line('descripcion_one');?></p>
+                            <br>
+                              <p><?=$this->lang->line('descripcion_two');?></p>
                         </div>
                         <ul>
                             <li>
@@ -328,11 +330,9 @@
                 <div class="col-lg-6 col-md-12 col-12 col-sm-12">
                     <div class="cp_heading_wraper left_heading">
 
-                        <h3>Our story</h3>
+                        <h3><?=$this->lang->line('mision_titulo');?></h3>
 
-                        <p> ynamically envisioneer inexpensive niche markets whereas maintainable ratives. Objectively facilitate diverse solutions before top-line experiences. Uniquelyilize end-to-end mindshare without cutting-edge total linkage. Synergistically ndicate backend opportunities without prospective interfaces. Competently leve other's focused users for long-term value.
-                            <br>
-                            <br> Continually supply timely infomediaries vis-a-vis value-added functionalitieually leverage existing market-driven paradigms through one-to-one paradigms. letely productivate e-business via market positioning action items. Infomediaries and vis-a-vis value-added functionalitieually.</p>
+                        <p><?=$this->lang->line('mision_contenido');?></p>
                         <div class="header_btn dark_btn float_left">
 
                             <a href="#">reading</a>
@@ -342,7 +342,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-12 col-sm-12">
                     <div class="inner_story_left_Wrapper float_left">
-                        <img src="<?=base_url('resources/assets/Informativa/images/mockup2.png');?>" alt="shape">
+                        <img src="<?=base_url('resources/assets/Informativa/images/student_UK_One.jpg');?>" alt="shape">
                     </div>
                 </div>
             </div>
