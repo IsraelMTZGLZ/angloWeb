@@ -28,9 +28,23 @@ $lang['asesoria_servicio_contenido']="We are waiting for your request at every s
 $lang['analisis_servicio']="Analysis";
 $lang['analisis_servicio_contenido']="Detection and analysis of all application documentation before submitting applications.";
 
+$lang['step_title_service']="Follow these simple steps";
+$lang['step_title_service_detail']="Your dream, our goal";
+
 $lang['gratis_servicio']="Free services";
 $lang['gratis_servicio_contenido']="All our services are free with personnel ready to provide the best experience.";
 
+$lang['step_one_service']="Contact us";
+$lang['step_one_service_detail']="We have different forms of contact such as social networks, website, mail, Fairs...";
+
+$lang['step_two_service']="We help you";
+$lang['step_two_service_detail']="Free tracking service.";
+
+$lang['step_three_service']="We train you";
+$lang['step_three_service_detail']="Receive personalized follow-up according to your request.";
+
+$lang['step_four_service']="Travel to UK";
+$lang['step_four_service_detail']="We make your dream of traveling and studying in the United Kingdom come true.";
 
 
 $lang['english']="English";

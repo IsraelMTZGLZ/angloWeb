@@ -277,10 +277,9 @@
 
                   <div class="cp_heading_wraper">
 
-                      <h3>Creative Work Process</h3>
+                      <h3><?=$this->lang->line('step_title_service');?></h3>
 
-                      <p> Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                          <br>lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                      <p> <?=$this->lang->line('step_title_service_detail');?></p>
                   </div>
 
               </div>
@@ -289,24 +288,24 @@
                       <div class="work_box float_left">
                           <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk1.png');?>" alt="img" /></div>
                           <h1 class="numbering">1</h1>
-                          <h2><a href="#">planning</a></h2>
-                          <p>Holisticly unleash enterprise process improvements.</p>
+                          <h2><a href="#"><?=$this->lang->line('step_one_service');?></a></h2>
+                          <p><?=$this->lang->line('step_one_service_detail');?></p>
                       </div>
                   </div>
                   <div class="work_process_wrapper p2">
                       <div class="work_box float_left">
                           <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk2.png');?>" alt="img" /></div>
                           <h1 class="numbering numbering2">2</h1>
-                          <h2><a href="#">designing</a></h2>
-                          <p>Synergistically incubate high impact data via cros.</p>
+                          <h2><a href="#"><?=$this->lang->line('step_two_service');?></a></h2>
+                          <p><?=$this->lang->line('step_two_service_detail');?></p>
                       </div>
                   </div>
                   <div class="work_process_wrapper p3">
                       <div class="work_box float_left">
                           <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk3.png');?>" alt="img" /></div>
                           <h1 class="numbering numbering3">3</h1>
-                          <h2><a href="#">programing</a></h2>
-                          <p>Conveniently customize customized work expertise</p>
+                          <h2><a href="#"><?=$this->lang->line('step_three_service');?></a></h2>
+                          <p><?=$this->lang->line('step_three_service_detail');?></p>
                       </div>
 
                   </div>
@@ -314,8 +313,8 @@
                       <div class="work_box float_left">
                           <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk4.png');?>" alt="img" /></div>
                           <h1 class="numbering numbering4">4</h1>
-                          <h2><a href="#">presentation</a></h2>
-                          <p>Engage goal oriented channels via leveraged best practices. </p>
+                          <h2><a href="#"><?=$this->lang->line('step_four_service');?></a></h2>
+                          <p><?=$this->lang->line('step_four_service_detail');?> </p>
                       </div>
 
                   </div>
