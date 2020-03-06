@@ -311,7 +311,7 @@
                   </div>
                   <div class="work_process_wrapper">
                       <div class="work_box float_left">
-                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/london_travelplace.jpg');?>" alt="img" /></div>
+                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/london_travelk.png');?>" alt="img" /></div>
                           <h1 class="numbering numbering4">4</h1>
                           <h2><a href="#"><?=$this->lang->line('step_four_service');?></a></h2>
                           <p><?=$this->lang->line('step_four_service_detail');?> </p>

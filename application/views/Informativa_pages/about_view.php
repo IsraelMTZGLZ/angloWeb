@@ -226,9 +226,9 @@
                         <div class="section_content">
                             <p><?=$this->lang->line('descripcion_one');?></p>
                             <br>
-                              <p><?=$this->lang->line('descripcion_two');?></p>
+                              <!-- <p><?=$this->lang->line('descripcion_two');?></p> -->
                         </div>
-                        <ul>
+                        <!-- <ul>
                             <li>
                                 <span class="security-story-number-text">1</span> Our History Scince 1993
                             </li>
@@ -242,12 +242,33 @@
                         </ul>
 						<div class="header_btn dark_btn float_left">
 							<a href="#">read more</a>
-					   </div>
+					   </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+                    <div class="cp_heading_wraper left_heading">
+
+                        <h3>Example</h3>
+
+                        <p><?=$this->lang->line('descripcion_two');?></p>
+                        <div class="header_btn dark_btn float_left">
+
+                            <a href="#">reading</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+                    <div class="inner_story_left_Wrapper float_left">
+                        <img src="<?=base_url('resources/assets/Informativa/images/student_UK_One.jpg');?>" alt="shape">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- work Wrapper end -->
 	   <!-- counter wrapper start-->
     <div class="counter_section float_left">
