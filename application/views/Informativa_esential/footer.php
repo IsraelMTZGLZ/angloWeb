@@ -153,6 +153,46 @@
     <script src="<?=base_url('resources/assets/Informativa/js/imagesloaded.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/isotope.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/custom.js');?>"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+    <script src="<?=base_url('resources/assets/mapa/')?>js/jquery.mapael.js" charset="utf-8"></script>
+    <script src="<?=base_url('resources/assets/mapa/')?>js/maps/france_departments.js" charset="utf-8"></script>
+    <script src="<?=base_url('resources/assets/mapa/')?>js/maps/world_countries.js" charset="utf-8"></script>
+    <script src="<?=base_url('resources/assets/mapa/')?>js/maps/usa_states.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".containerMap").mapael({
+                map: {
+                    // Set the name of the map to display
+                    name: "world_countries"
+                    , zoom: {
+                        enabled: true,
+                        maxLevel: 20,
+                    },
+                     defaultArea: {
+                        attrs: {
+                            fill: "#f4f4e8"
+                            , stroke: "#ced8d0"
+                        }
+                        , attrsHover: {
+                            fill: "#a4e100"
+                        }
+                        , text: {
+                            attrs: {
+                                fill: "#505444"
+                            }
+                            , attrsHover: {
+                                fill: "#000"
+                            }
+                        }
+                    }
+                },
+                
+            });
+        });
+    </script>
     <!-- custom js-->
     <!--chat files-->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

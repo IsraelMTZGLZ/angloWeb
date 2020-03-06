@@ -616,3 +616,16 @@
         </div>
     </div>
     <!--partners wrapper end-->
+    <div class="containerMap">
+
+<h1>Minimal example</h1>
+
+<div class="mapcontainer">
+    <div class="map">
+        <span>Alternative content for the map</span>
+    </div>
+</div>
+
+<p><b>All example for jQuery Mapael are available <a href="https://www.vincentbroute.fr/mapael/">here</a>.</b></p>
+
+</div>
