@@ -286,7 +286,7 @@
               <div class="work_process_main_wrapper float_left">
                   <div class="work_process_wrapper">
                       <div class="work_box float_left">
-                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk1.png');?>" alt="img" /></div>
+                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/London_TRABELTHREE.png');?>" alt="img" /></div>
                           <h1 class="numbering">1</h1>
                           <h2><a href="#"><?=$this->lang->line('step_one_service');?></a></h2>
                           <p><?=$this->lang->line('step_one_service_detail');?></p>
@@ -294,7 +294,7 @@
                   </div>
                   <div class="work_process_wrapper p2">
                       <div class="work_box float_left">
-                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk2.png');?>" alt="img" /></div>
+                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/London_travelTwo.jpg');?>" alt="img" /></div>
                           <h1 class="numbering numbering2">2</h1>
                           <h2><a href="#"><?=$this->lang->line('step_two_service');?></a></h2>
                           <p><?=$this->lang->line('step_two_service_detail');?></p>
@@ -302,7 +302,7 @@
                   </div>
                   <div class="work_process_wrapper p3">
                       <div class="work_box float_left">
-                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk3.png');?>" alt="img" /></div>
+                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/london_travelOne.jpg');?>" alt="img" /></div>
                           <h1 class="numbering numbering3">3</h1>
                           <h2><a href="#"><?=$this->lang->line('step_three_service');?></a></h2>
                           <p><?=$this->lang->line('step_three_service_detail');?></p>
@@ -311,7 +311,7 @@
                   </div>
                   <div class="work_process_wrapper">
                       <div class="work_box float_left">
-                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/wrk4.png');?>" alt="img" /></div>
+                          <div class="work_img"><img src="<?=base_url('resources/assets/Informativa/images/london_travelplace.jpg');?>" alt="img" /></div>
                           <h1 class="numbering numbering4">4</h1>
                           <h2><a href="#"><?=$this->lang->line('step_four_service');?></a></h2>
                           <p><?=$this->lang->line('step_four_service_detail');?> </p>
@@ -374,102 +374,7 @@
   </div>
   <!--offer wrapper end-->
   <!--pricing wrapper start-->
-  <div class="pricing_wrapper float_left">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
 
-                  <div class="cp_heading_wraper">
-
-                      <h3>pricing table</h3>
-
-                      <p>sly foster exceptional initiatives mindshare through extensible after
-                          <br>cross-unit infrastructures. .
-                      </p>
-                  </div>
-
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                  <div class="pricing_box_wrapper float_left">
-                      <h1>basic plan</h1>
-                      <div class="main_pdet float_left">
-
-                          <h2><span class="dollarr"> $ </span> 29  <br> <span> / per month</span></h2>
-                      </div>
-                      <ul class="pricing_list22">
-                          <li>10 upload per month</li>
-                          <li>02 free download</li>
-                          <li>
-                              05 GB Server Space
-                          </li>
-                          <li>60 Hit Per Day</li>
-                          <li>Author Page
-
-                          </li>
-                          <li>24/7 Customer Support
-                          </li>
-                          <li>Unlimited staff</li>
-
-                      </ul>
-                      <a href="#" class="price_btn">buy now!</a>
-                  </div>
-
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                  <div class="pricing_box_wrapper float_left">
-                      <h1>premium plan</h1>
-                      <div class="main_pdet float_left">
-
-                          <h2><span class="dollarr"> $ </span> 59 <br> <span> / per month</span></h2>
-                      </div>
-                      <ul class="pricing_list22">
-                          <li>10 upload per month</li>
-                          <li>02 free download</li>
-                          <li>
-                              05 GB Server Space
-                          </li>
-                          <li>60 Hit Per Day</li>
-                          <li>Author Page
-
-                          </li>
-                          <li>24/7 Customer Support
-                          </li>
-                          <li>Unlimited staff</li>
-
-                      </ul>
-                      <a href="#" class="price_btn">buy now!</a>
-                  </div>
-
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                  <div class="pricing_box_wrapper float_left">
-                      <h1>pro plan</h1>
-                      <div class="main_pdet float_left">
-
-                          <h2><span class="dollarr"> $ </span> 99  <br> <span> / per month</span></h2>
-                      </div>
-                      <ul class="pricing_list22">
-                          <li>10 upload per month</li>
-                          <li>02 free download</li>
-                          <li>
-                              05 GB Server Space
-                          </li>
-                          <li>60 Hit Per Day</li>
-                          <li>Author Page
-
-                          </li>
-                          <li>24/7 Customer Support
-                          </li>
-                          <li>Unlimited staff</li>
-
-                      </ul>
-                      <a href="#" class="price_btn">buy now!</a>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-  </div>
   <!--pricing wrapper end-->
   <!--newsletter wrapper start-->
 
