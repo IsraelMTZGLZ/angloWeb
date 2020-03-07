@@ -205,7 +205,7 @@
             <div class="row">
 				<div class="col-lg-6 col-md-12 col-12">
                     <div class="about_bg_II">
-                        <img src="<?=base_url('resources/assets/Informativa/images/anglo-latino-quienes-somos.jpg');?>" alt="">
+                        <img src="<?=base_url('resources/assets/Informativa/images/London_imagenOne.jpg');?>" alt="">
                     </div>
                     <!-- <div class="video_bg_II">
                         <div class="video_img_box">
@@ -246,26 +246,76 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 col-sm-12">
                     <div class="cp_heading_wraper left_heading">
-
-                        <h3>Example</h3>
+                        <br>
+                        <br>
+                        <h3><?=$this->lang->line('introduccion_one');?></h3>
 
                         <p><?=$this->lang->line('descripcion_two');?></p>
-                        <div class="header_btn dark_btn float_left">
+                        <!-- <div class="header_btn dark_btn float_left">
 
                             <a href="#">reading</a>
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
+
                 <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+                  <br>
+                  <br>
                     <div class="inner_story_left_Wrapper float_left">
-                        <img src="<?=base_url('resources/assets/Informativa/images/student_UK_One.jpg');?>" alt="shape">
+                        <img src="<?=base_url('resources/assets/Informativa/images/Longo_imagefour.jpg');?>" alt="shape">
                     </div>
                 </div>
             </div>
+            <div class="row">
+        <div class="col-lg-6 col-md-12 col-12">
+                    <div class="about_bg_II">
+                        <img src="<?=base_url('resources/assets/Informativa/images/LOndon_imagenSeven.jpg');?>" alt="">
+                    </div>
+                    <!-- <div class="video_bg_II">
+                        <div class="video_img_box">
+                            <img src="<?=base_url('resources/assets/Informativa/images/vedio_bg2.jpg');?>" alt="video_bg">
+                            <a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'>
+                                <span>
+                  <i class="fa fa-play"></i>
+                </span>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+               <div class="col-lg-6 col-md-12 col-12">
+                    <div class="about_text_wrapper">
+                      <div class="cp_heading_wraper left_heading abt_head">
+                        <h3><?=$this->lang->line('introduccion_two');?></h3>
+                    </div>
+                        <div class="section_content">
+                            <p><?=$this->lang->line('descripcion_one');?></p>
+                            <br>
+                              <!-- <p><?=$this->lang->line('descripcion_three');?></p> -->
+                        </div>
+                        <!-- <ul>
+                            <li>
+                                <span class="security-story-number-text">1</span> Our History Scince 1993
+                            </li>
+                            <li>
+                                <span class="security-story-number-text">2</span> Our Agency is one of the best
+
+                            </li>
+                            <li>
+                                <span class="security-story-number-text">3</span>Ready to Boost Your Business
+                            </li>
+                        </ul>
+            <div class="header_btn dark_btn float_left">
+              <a href="#">read more</a>
+             </div> -->
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
