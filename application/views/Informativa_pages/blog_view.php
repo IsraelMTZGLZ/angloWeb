@@ -384,14 +384,14 @@
                     <!-- section_heading start -->
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
 
-                        <h1>blog II column</h1>
+                        <h1><?=$this->lang->line('blog');?></h1>
                     </div>
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
                         <div class="sub_title_section">
                             <ul class="sub_title">
-                                <li> <a href="#"> Home </a> &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp; </li>
+                                <li> </li>
 
-                                <li> blog
+                                <li>
                             </ul>
                         </div>
                     </div>
