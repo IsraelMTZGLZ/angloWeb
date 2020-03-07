@@ -12,6 +12,7 @@ class LanguageLoader
             $ci->lang->load('home_informativo',$siteLang);
             $ci->lang->load('about_informativo',$siteLang);
             $ci->lang->load('service_informativo',$siteLang);
+            $ci->lang->load('blog_informativo',$siteLang);
         } else {
             $ci->lang->load('general_messages','spanish');
             $ci->lang->load('nav_informativo','spanish');
@@ -19,6 +20,7 @@ class LanguageLoader
             $ci->lang->load('home_informativo','spanish');
             $ci->lang->load('about_informativo','spanish');
             $ci->lang->load('service_informativo','spanish');
+            $ci->lang->load('blog_informativo','spanish');
         }
     }
 }
