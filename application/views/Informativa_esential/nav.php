@@ -15,9 +15,9 @@
 <div class="icon-bar">
   <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
   <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-  <a href="#" class="google"><i class="fab fa-google"></i></a>
   <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+  <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>
+  <a href="tel:4422609090" class="google"><i class="fas fa-phone-volume"></i></a>
 </div>
 
      <!-- chat start-->
