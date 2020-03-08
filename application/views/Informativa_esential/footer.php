@@ -94,7 +94,7 @@
                                     <?=$this->lang->line('oficina');?>: 
                                 </span>
                                 <p>
-                                    <a href="#" target="_blank">
+                                    <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank">
                                     Paseo de la Reforma No 42, Piso 1, Oficina A-145 Col Centro,
                                     Del Cuauhtemoc,
                                     C.P. 06010, México DF
@@ -102,7 +102,7 @@
                                 </p>
                                 <span><?=$this->lang->line('telefono');?>: </span>
                                 <p> 
-                                    <a href="tel:5536874477">55 3687 4477</a>
+                                    <a href="tel:4422609090">55 3687 4477</a>
                                 </p>
                             </li>
 
@@ -160,6 +160,7 @@
     <script src="<?=base_url('resources/assets/mapa/')?>js/maps/france_departments.js" charset="utf-8"></script>
     <script src="<?=base_url('resources/assets/mapa/')?>js/maps/world_countries.js" charset="utf-8"></script>
     <script src="<?=base_url('resources/assets/mapa/')?>js/maps/usa_states.js" charset="utf-8"></script>
+    <script src="<?=base_url('resources/assets/mapa/')?>js/maps/mexico.js" charset="utf-8"></script>
 
     <script type="text/javascript">
         $(function () {
@@ -171,13 +172,13 @@
                         enabled: true,
                         maxLevel: 20,
                     },
-                     defaultArea: {
+                    defaultArea: {
                         attrs: {
                             fill: "#f4f4e8"
                             , stroke: "#ced8d0"
                         }
                         , attrsHover: {
-                            fill: "#a4e100"
+                            fill: "#42BCF5"
                         }
                         , text: {
                             attrs: {
@@ -187,9 +188,35 @@
                                 fill: "#000"
                             }
                         }
-                    }
+                    },
                 },
-                
+                areas:{
+                    "MX": {
+                        tooltip: {content : "Mexico, Guadalajara y Ciudad de mexico"},
+                        attrs : {
+							fill : "#F54242"
+                        }
+                        , attrsHover: {
+                            fill: "#FE901A"
+                        }
+                    },
+                },
+                plots : {
+                    'queretaro' : {
+                        type: "circule",
+                        size: 5,
+                        attrs: {
+                            opacity: 1
+                        },
+                        attrsHover: {
+                            transform: "s1.5"
+                        },
+                        latitude : 20.5931, 
+                        longitude: -100.392, 
+                        tooltip: {content : "Queretaro"},
+
+			        }
+			    }
             });
         });
     </script>

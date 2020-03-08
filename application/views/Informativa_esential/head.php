@@ -45,7 +45,7 @@
         
 
         .containerMap {
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
         }
         /* Specific mapael css class are below
