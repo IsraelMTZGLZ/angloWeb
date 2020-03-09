@@ -4,85 +4,38 @@
       <nav class="cd-dropdown">
     <h2><a href="index.html">cror <span><img src="<?=base_url('resources/assets/Informativa/images/LOndon_imagenSeven.jpg');?>images/favicon.png" alt="img"></span>po</a></h2>
         <a href="#0" class="cd-close">Close</a>
-          <ul class="cd-dropdown-content">
-              <li>
-                 <form class="cd-search">
-                  <input type="search" placeholder="Search...">
-                </form>
-           </li>
-    <li class="has-children">
-            <a href="#">home</a>
-            <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                <li class="go-back"><a href="#0">Menu</a></li>
-                <li><a href="index.html">home I</a></li>
-                <li><a href="index_2.html">home II</a></li>
-                <li><a href="index_3.html">home III</a></li>
-            </ul>
-        </li>
-  <li class="has-children">
-            <a href="#">services</a>
-            <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                <li class="go-back"><a href="#0">Menu</a></li>
-                <li><a href="services.html">services </a></li>
-                <li><a href="services_2.html">services II</a></li>
-            </ul>
-        </li>
-           <!-- .has-children -->
-        <li class="has-children">
-            <a href="#">pages</a>
-            <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                <li class="go-back"><a href="#0">Menu</a></li>
-                <li><a href="our_team.html">our team</a></li>
-                <li><a href="pricing_plans.html">pricing plans</a></li>
-                <li><a href="login_register.html">login / register</a></li>
-                <li><a href="error_404.html">error 404</a></li>
-                <li><a href="error_404_2.html">error 404 II</a></li>
-                <li><a href="comming_soon.html">comming soon</a></li>
-                <li><a href="comming_soon_2.html">comming soon II</a></li>
-                <li><a href="about_us.html">about us</a></li>
-                <li><a href="services.html">services</a></li>
+        <ul class="cd-dropdown-content">
+            <li>
+               <form class="cd-search">
+                <input type="search" placeholder="Search...">
+              </form>
+         </li>
+      <li class="">
+          <a href="home"><?=$this->lang->line('home_nav');?></a>
+      </li>
 
-            </ul>
-        </li>
-  <li class="has-children">
-            <a href="#">about us</a>
-            <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                <li class="go-back"><a href="#0">Menu</a></li>
-                <li><a href="about_us.html">about us</a></li>
-                <li><a href="about_us_2.html">about us II</a></li>
-            </ul>
-        </li>
-  <li class="has-children">
-            <a href="#">portfolio</a>
-            <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                <li class="go-back"><a href="#0">Menu</a></li>
-                <li><a href="portfolio_2column.html">portfolio II column</a></li>
-                <li><a href="portfolio_3column.html">portfolio III column </a></li>
-                <li><a href="portfolio_4column.html">portfolio IV column </a></li>
-                <li><a href="portfolio_masonry_grid.html">portfolio masonry </a></li>
-                <li><a href="portfolio_single.html">portfolio single </a></li>
-            </ul>
-        </li>
-  <li class="has-children">
-            <a href="#">blog</a>
-            <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                <li class="go-back"><a href="#0">Menu</a></li>
-                <li><a href="blog_width_sidebar.html">blog width sidebar</a></li>
-                <li><a href="blog_without_sidebar.html">blog full width</a></li>
-                <li><a href="blog_without_sidebar.html">blog III column</a></li>
-                <li><a href="blog_2column.html">blog II column</a></li>
-      <li><a href="blog_single.html">blog single</a></li>
-            </ul>
-        </li>
-  <li class="has-children">
-            <a href="#">contact us</a>
-            <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                <li class="go-back"><a href="#0">Menu</a></li>
-                <li><a href="contact_us.html">contact us</a></li>
-                <li><a href="contact_us_2.html">contact us II</a></li>
-            </ul>
-        </li>
-    </ul>
+<li class="">
+          <a href="#"><?=$this->lang->line('oferta_educativa');?></a>
+      </li>
+         <!-- .has-children -->
+      <li class="has-children">
+          <a href="#"><?=$this->lang->line('acerca_de_nosotros');?></a>
+          <ul class="cd-secondary-dropdown icon_menu is-hidden">
+              <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
+              <li><a href="our_team.html"><?=$this->lang->line('nosotros');?></a></li>
+              <li><a href="pricing_plans.html"><?=$this->lang->line('servicios');?></a></li>
+          </ul>
+      </li>
+<li class="">
+          <a href="#"><?=$this->lang->line('becasy_apoyos');?></a>
+      </li>
+<li class="">
+          <a href="#"><?=$this->lang->line('blog');?></a>
+      </li>
+<li class="">
+          <a href="Contato"><?=$this->lang->line('contacto');?></a>
+      </li>
+  </ul>
     <!-- .cd-dropdown-content -->
 </nav>
     <div class="cp_navi_main_wrapper float_left">
@@ -152,225 +105,30 @@
 
             <div class="cp_navigation_wrapper">
             <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
-                <ul class="main_nav_ul">
-                     <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">home</a>
-                        <ul class="navi_2_dropdown">
-                            <li class="parent">
-                                <a href="index.html"><i class="fas fa-caret-right"></i>home I </a>
-                            </li>
-                            <li class="parent">
-                                <a href="index_2.html"><i class="fas fa-caret-right"></i> home II</a>
-                            </li>
-            <li class="parent">
-                                <a href="index_3.html"><i class="fas fa-caret-right"></i> home III</a>
-                            </li>
+              <ul class="main_nav_ul">
+                   <li class="has-mega gc_main_navigation"><a href="home" class="gc_main_navigation"><?=$this->lang->line('home');?></a>
+                  </li>
+                  <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
+                  </li>
+                  <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
+                      <ul class="navi_2_dropdown">
+                        <li>
+                           <a href="About"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
+                        </li>
+                        <li class="parent">
+                            <a href="Services"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
+                        </li>
+                      </ul>
+                  </li>
 
-                        </ul>
-                    </li>
-                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">services</a>
-                        <ul class="navi_2_dropdown">
-                            <li class="parent">
-                                <a href="services.html"><i class="fas fa-caret-right"></i>services</a>
-                            </li>
-                            <li class="parent">
-                                <a href="services_2.html"><i class="fas fa-caret-right"></i> services II</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-mega gc_main_navigation kv_sub_menu">
-                        <a href="#" class="gc_main_navigation">  pages</a>
-                        <!-- mega menu start -->
-                        <ul class="kv_mega_menu">
+                  <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
+                  </li>
+                  <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
+                  </li>
+                  <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
+                  </li>
 
-                            <li class="kv_mega_menu_width">
-                                <div class="container">
-
-                                    <div class="jn_menu_partion_div">
-                                        <div class="row">
-                                            <div class="col-md-3 col-lg-3">
-                                                <div class="jen_tabs_conent_list float_left">
-                                                    <h1>information</h1>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="about_us.html"> <i class="fas fa-caret-right"></i>about us I</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="about_us_2.html"> <i class="fas fa-caret-right"></i>about us II</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="services.html"> <i class="fas fa-caret-right"></i>services I</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="services_2.html"> <i class="fas fa-caret-right"></i>services II</a>
-                                                        </li>
-                           <li>
-                                                            <a href="our_team.html"> <i class="fas fa-caret-right"></i>our team</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-lg-3">
-                                                <div class="jen_tabs_conent_list   float_left">
-                                                    <h1>Miscellaneous</h1>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="error_404.html"> <i class="fas fa-caret-right"></i>404 error</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="error_404_2.html"> <i class="fas fa-caret-right"></i>404 error II</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pricing_plans.html"> <i class="fas fa-caret-right"></i>pricing tables</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="comming_soon.html"> <i class="fas fa-caret-right"></i>comming soon</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="comming_soon_2.html"> <i class="fas fa-caret-right"></i>comming soon II</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-lg-3">
-                                                <div class="jen_tabs_conent_list   float_left">
-                                                    <h1>portfolio</h1>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="portfolio_2column.html"> <i class="fas fa-caret-right"></i>portfolio II column</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio_3column.html"> <i class="fas fa-caret-right"></i>portfolio III column</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio_4column.html"> <i class="fas fa-caret-right"></i>portfolio IV column</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio_masonry_grid.html"> <i class="fas fa-caret-right"></i>portfolio masonry grid</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="portfolio_single.html"> <i class="fas fa-caret-right"></i>portfolio details</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-lg-3">
-                                                <div class="jen_tabs_conent_list   float_left">
-                                                    <h1>blog pages</h1>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="blog_width_sidebar.html"> <i class="fas fa-caret-right"></i>blog width sidebar</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="blog_without_sidebar.html"> <i class="fas fa-caret-right"></i>blog full width</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="blog_without_sidebar.html"> <i class="fas fa-caret-right"></i>blog III column</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="blog_2column.html"> <i class="fas fa-caret-right"></i>blog II column</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="blog_single.html"> <i class="fas fa-caret-right"></i>blog single</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                   <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">about us</a>
-                        <ul class="navi_2_dropdown">
-                           <li>
-              <a href="about_us.html"> <i class="fas fa-caret-right"></i>about us I</a>
-                           </li>
-                          <li>
-                              <a href="about_us_2.html"> <i class="fas fa-caret-right"></i>about us II</a>
-                           </li>
-                        </ul>
-                    </li>
-
-                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">features</a>
-                        <ul class="navi_2_dropdown">
-                            <li>
-                               <a href="pricing_plans.html"> <i class="fas fa-caret-right"></i>pricing table</a>
-                            </li>
-                            <li class="parent">
-                                <a href="#"> <i class="fas fa-caret-right"></i>portfolio <span><i class="fas fa-caret-right"></i>
-              </span></a>
-                                <ul class="dropdown-menu-right">
-                                   <li>
-                                       <a href="portfolio_2column.html"> <i class="fas fa-caret-right"></i>portfolio II column</a>
-                </li>
-                                    <li>
-                                      <a href="portfolio_3column.html"> <i class="fas fa-caret-right"></i>portfolio III column</a>
-                                    </li>
-                                     <li>
-                                        <a href="portfolio_4column.html"> <i class="fas fa-caret-right"></i>portfolio IV column</a>
-                                     </li>
-                                     <li>
-                                          <a href="portfolio_masonry_grid.html"> <i class="fas fa-caret-right"></i>portfolio masonry</a>
-                                     </li>
-                                     <li>
-                                         <a href="portfolio_single.html"> <i class="fas fa-caret-right"></i>portfolio details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="parent">
-                                <a href="login_register.html"> <i class="fas fa-caret-right"></i>login/register</a>
-                            </li>
-            <li class="parent">
-                                <a href="#"> <i class="fas fa-caret-right"></i>comming soon <span><i class="fas fa-caret-right"></i>
-              </span></a>
-                                <ul class="dropdown-menu-right">
-                                   <li>
-                                       <a href="comming_soon.html"> <i class="fas fa-caret-right"></i>comming soon</a>
-                </li>
-                                    <li>
-                                      <a href="comming_soon_2.html"> <i class="fas fa-caret-right"></i>comming soon II</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">blog</a>
-                        <ul class="navi_2_dropdown">
-                            <li class="parent">
-                                <a href="blog_width_sidebar.html"> <i class="fas fa-caret-right"></i>blog width sidebar</a>
-                            </li>
-                            <li class="parent">
-                                 <a href="blog_without_sidebar.html"> <i class="fas fa-caret-right"></i>blog full width</a>
-                            </li>
-             <li class="parent">
-                                <a href="blog_without_sidebar.html"> <i class="fas fa-caret-right"></i>blog III column</a>
-                            </li>
-             <li class="parent">
-                                <a href="blog_2column.html"> <i class="fas fa-caret-right"></i>blog II column</a>
-                            </li>
-            <li class="parent">
-                                 <a href="blog_single.html"> <i class="fas fa-caret-right"></i>blog single</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                     <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">contact</a>
-                        <ul class="navi_2_dropdown">
-                            <li class="parent">
-                                <a href="contact_us.html"><i class="fas fa-caret-right"></i>contact us</a>
-                            </li>
-                            <li class="parent">
-                                <a href="contact_us_2.html"><i class="fas fa-caret-right"></i> contact us II</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                </ul>
+              </ul>
             </div>
             <!-- mainmenu end -->
     </div>
