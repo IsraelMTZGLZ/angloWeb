@@ -409,7 +409,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog_bexit.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
@@ -448,7 +448,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog_benefits.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
@@ -487,7 +487,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog_eassy.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
@@ -526,7 +526,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog_certificado.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
@@ -565,7 +565,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog_studyUk.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
