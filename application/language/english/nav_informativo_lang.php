@@ -9,7 +9,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$lang['home'] = "Home";
+$lang['home_nav'] = "Home";
 $lang['oferta_educativa'] = "Educative Offer";
 $lang['acerca_de_nosotros'] = "About Us";
 $lang['becasy_apoyos'] = "Scholarships & Supports";

@@ -9,9 +9,11 @@ class Contacto extends MY_RootController {
 
 	public function index()
 	{
-		$this->_initialInformativa();
+        $this->_initialInformativa();
+        $this->load->view('Informativa_pages/contacto_extras/contacto_librarias_view');
 		$this->load->view('Informativa_pages/contacto_view');
-		$this->_finalInformativa();
+        $this->_finalInformativa();
+        $this->load->view('Informativa_pages/contacto_extras/contactoJS');
 	}
 
 }

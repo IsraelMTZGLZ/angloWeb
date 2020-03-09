@@ -11,7 +11,7 @@
                     </form>
                </li>
             <li class="">
-                <a href="home"><?=$this->lang->line('home');?></a>
+                <a href="home"><?=$this->lang->line('home_nav');?></a>
             </li>
 
 			<li class="">
@@ -33,7 +33,7 @@
                 <a href="#"><?=$this->lang->line('blog');?></a>
             </li>
 			<li class="">
-                <a href="#"><?=$this->lang->line('contacto');?></a>
+                <a href="Contato"><?=$this->lang->line('contacto');?></a>
             </li>
         </ul>
         <!-- .cd-dropdown-content -->
@@ -107,7 +107,7 @@
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <ul class="main_nav_ul">
-                         <li class="has-mega gc_main_navigation"><a href="home" class="gc_main_navigation"><?=$this->lang->line('home');?></a>
+                         <li class="has-mega gc_main_navigation"><a href="home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
@@ -126,7 +126,7 @@
                         </li>
                         <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
+                        <li class="has-mega gc_main_navigation"><a href="Contacto" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
                         </li>
 
                     </ul>
@@ -500,16 +500,4 @@
         </div>
     </div>
     <!--partners wrapper end-->
-    <div class="containerMap">
-
-<h1>Minimal example</h1>
-
-<div class="mapcontainer">
-    <div class="map">
-        <span>Alternative content for the map</span>
-    </div>
-</div>
-
-<p><b>All example for jQuery Mapael are available <a href="https://www.vincentbroute.fr/mapael/">here</a>.</b></p>
-
-</div>
+    
