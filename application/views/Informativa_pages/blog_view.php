@@ -422,7 +422,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">Blog image post</a></h4>
+                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_one');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <li><span class="author">By <a href="#">Admin</a></span>
@@ -436,7 +436,7 @@
                         <!-- /.entry-header -->
 
                         <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
+                            <p><?=$this->lang->line('answer_question_one');?>.</p>
                         </div>
                         <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
@@ -448,154 +448,12 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <div id="blogoneSlider" class="carousel slide" data-ride="carousel">
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/blog2.jpg');?>" class="img-responsive " alt="Image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
-                                </div>
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#blogoneSlider" role="button" data-slide="prev">
-                                <span class="flaticon-left-arrow" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#blogoneSlider" role="button" data-slide="next">
-                                <span class="flaticon-right-arrow" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-            <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
-
-                    </div>
-                    <!-- /.entry-footer -->
-                    </div>
-                    <!-- /.post-thumbnail -->
-
-                    <div class="blog-content">
-                        <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">slider blog post</a></h4>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
-                                    </li>
-                                    <li><span class="posted-in">sept 11, 2019</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.entry-meta -->
-                        </header>
-                        <!-- /.entry-header -->
-
-                        <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
-                            <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
-                        </div>
-                        <!-- /.entry-content -->
-                    </div>
-                    <!-- /.blog-content -->
-
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="blog-post-wrapper iner_blog">
-                    <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog3.jpg');?>" alt="Image" />
-                        <a href="https://www.youtube.com/watch?v=b9krhARsAHU" class="test-popup-link vedie_img"><span><img src="<?=base_url('resources/assets/Informativa/images/play2.png');?>" alt="img"></span></a>
-
-                    <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
-
-                    </div>
-                    <!-- /.entry-footer -->
-                    </div>
-                    <!-- /.post-thumbnail -->
-
-                    <div class="blog-content">
-                        <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">video blog post</a></h4>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
-                                    </li>
-                                    <li><span class="posted-in">Dec 22, 2019</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.entry-meta -->
-                        </header>
-                        <!-- /.entry-header -->
-
-                        <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
-                            <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
-                        </div>
-                        <!-- /.entry-content -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="blog-post-wrapper iner_blog">
-                    <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog4.jpg');?>" alt="Image" />
-                        <a href="https://www.youtube.com/watch?v=b9krhARsAHU" class="test-popup-link vedie_img"><span><img src="<?=base_url('resources/assets/Informativa/images/play2.png');?>" alt="img"></span></a>
-              <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
-
-                    </div>
-                    <!-- /.entry-footer -->
-                    </div>
-
-                    <!-- /.post-thumbnail -->
-
-                    <div class="blog-content">
-                        <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">video blog post</a></h4>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
-                                    </li>
-                                    <li><span class="posted-in">Dec 12, 2019</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.entry-meta -->
-                        </header>
-                        <!-- /.entry-header -->
-
-                        <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
-                            <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
-                        </div>
-                        <!-- /.entry-content -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="blog-post-wrapper iner_blog">
-                    <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog5.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
                             <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
                         </ul>
-
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -603,7 +461,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">Blog image post</a></h4>
+                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_two');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <li><span class="author">By <a href="#">Admin</a></span>
@@ -617,7 +475,7 @@
                         <!-- /.entry-header -->
 
                         <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
+                            <p><?=$this->lang->line('answer_question_two');?>.</p>
                         </div>
                         <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
@@ -629,74 +487,12 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <div id="blogtwoSlider" class="carousel slide" data-ride="carousel">
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/blog6.jpg');?>" class="img-responsive " alt="Image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/blog4.jpg');?>" class="img-responsive " alt="Image">
-                                </div>
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#blogtwoSlider" role="button" data-slide="prev">
-                                <span class="flaticon-left-arrow" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#blogtwoSlider" role="button" data-slide="next">
-                                <span class="flaticon-right-arrow" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-            <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
-
-                    </div>
-                    <!-- /.entry-footer -->
-                    </div>
-                    <!-- /.post-thumbnail -->
-
-                    <div class="blog-content">
-                        <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">slider blog post</a></h4>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
-                                    </li>
-                                    <li><span class="posted-in">sept 11, 2019</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.entry-meta -->
-                        </header>
-                        <!-- /.entry-header -->
-
-                        <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
-                            <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
-                        </div>
-                        <!-- /.entry-content -->
-                    </div>
-                    <!-- /.blog-content -->
-
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="blog-post-wrapper iner_blog">
-                    <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog7.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
                             <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
                         </ul>
-
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -704,7 +500,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">Blog image post</a></h4>
+                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_three');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <li><span class="author">By <a href="#">Admin</a></span>
@@ -718,7 +514,7 @@
                         <!-- /.entry-header -->
 
                         <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
+                            <p><?=$this->lang->line('answer_question_three');?>.</p>
                         </div>
                         <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
@@ -730,14 +526,12 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog8.jpg');?>" alt="Image" />
-                        <a href="https://www.youtube.com/watch?v=b9krhARsAHU" class="test-popup-link vedie_img"><span><img src="<?=base_url('resources/assets/Informativa/images/play2.png');?>" alt="img"></span></a>
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         <ul class="entry-meta pull-left">
                             <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
                             <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
                         </ul>
-
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -745,12 +539,12 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#">video blog post</a></h4>
+                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_four');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <li><span class="author">By <a href="#">Admin</a></span>
                                     </li>
-                                    <li><span class="posted-in">Jan 12, 2019</span>
+                                    <li><span class="posted-in">sept 19, 2019</span>
                                     </li>
                                 </ul>
                             </div>
@@ -759,13 +553,55 @@
                         <!-- /.entry-header -->
 
                         <div class="entry-content">
-                            <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
-                            <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                            <p><?=$this->lang->line('answer_question_four');?>.</p>
                         </div>
+                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
+                    <!-- /.blog-content -->
+
                 </div>
             </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog-post-wrapper iner_blog">
+                    <div class="post-thumbnail">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
+             <div class="entry-footer float_left">
+                        <ul class="entry-meta pull-left">
+                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
+                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
+                        </ul>
+                    </div>
+                    <!-- /.entry-footer -->
+                    </div>
+                    <!-- /.post-thumbnail -->
+
+                    <div class="blog-content">
+                        <header class="entry-header">
+                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_five');?></a></h4>
+                            <div class="entry-meta">
+                                <ul>
+                                    <li><span class="author">By <a href="#">Admin</a></span>
+                                    </li>
+                                    <li><span class="posted-in">sept 19, 2019</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.entry-meta -->
+                        </header>
+                        <!-- /.entry-header -->
+
+                        <div class="entry-content">
+                            <p><?=$this->lang->line('answer_question_five');?>.</p>
+                        </div>
+                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <!-- /.entry-content -->
+                    </div>
+                    <!-- /.blog-content -->
+
+                </div>
+            </div>
+
             <div class="prev_porto blog_prev">
                 <div class="header_btn dark_btn prev_btn float_left">
 
