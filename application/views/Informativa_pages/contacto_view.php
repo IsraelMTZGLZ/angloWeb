@@ -347,7 +347,7 @@ function initMap() {
     * The callback parameter executes the initMap() function
     -->
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMGY3nfUXc6Z291mUWvPElpg60gdbFTek&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
     </script>
                 <canvas id="wave" style="height: unset !important;"></canvas>
             
