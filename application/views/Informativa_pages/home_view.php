@@ -124,7 +124,7 @@
 
                         <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
+                        <li class="has-mega gc_main_navigation"><a href="blog" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation"><a href="Contacto" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
                         </li>
@@ -339,7 +339,7 @@
                         </div>
                         <div class="service_overlay"></div>
                     </div>
-                    
+
                     <div class="service_cntnt main_without_border  de float_left">
                         <div class="service_main">
                             <i class="fas fa-star"></i>
@@ -500,4 +500,3 @@
         </div>
     </div>
     <!--partners wrapper end-->
-    

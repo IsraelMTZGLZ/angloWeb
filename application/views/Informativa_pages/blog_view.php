@@ -360,36 +360,152 @@
                 </div>
             </div>
 
-            <div class="prev_porto blog_prev">
-                <div class="header_btn dark_btn prev_btn float_left">
+            <div class="comments_wrapper float_left">
+                <div class="widget_heading">
+                    <h2>comments (04)</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                        <div class="comments_Box">
+                            <div class="img_wrapper">
+                                <img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" class="" alt="author_img" />
+                            </div>
+                            <div class="text_wrapper">
+                                <div class="author_detail">
+                                    <span class="author_name"> Jhon Doe <i class="fa fa-circle"></i> </span>
+                                    <span class="publish_date"> July 1, 2019 - <a href="#">Reply</a> </span>
+                                </div>
+                                <div class="author_content">
+                                    <p>Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <a href="#">previous</a>
+                    <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                        <div class="comments_Box">
+                            <div class="row">
+                                <div class="col-lg-11 col-md-12 col-12 col-sm-12 offset-lg-1">
+                                    <div class="img_wrapper">
+                                        <img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" class="" alt="author_img" />
+                                    </div>
+                                    <div class="text_wrapper">
+                                        <div class="author_detail">
+                                            <span class="author_name"> Steffa Ferello  <i class="fa fa-circle"></i> </span>
+                                            <span class="publish_date"> July 4, 2019 - <a href="#">Reply</a> </span>
+                                        </div>
+                                        <div class="author_content">
+                                            <p>Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                        <div class="comments_Box">
+                            <div class="img_wrapper">
+                                <img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" class="" alt="author_img" />
+                            </div>
+                            <div class="text_wrapper">
+                                <div class="author_detail">
+                                    <span class="author_name"> Matin Lauran <i class="fa fa-circle"></i> </span>
+                                    <span class="publish_date"> March 1, 2019 - <a href="#">Reply</a> </span>
+                                </div>
+                                <div class="author_content">
+                                    <p>Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                        <div class="comments_Box last_comment_box">
+                            <div class="img_wrapper">
+                                <img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" class="" alt="author_img" />
+                            </div>
+                            <div class="text_wrapper">
+                                <div class="author_detail">
+                                    <span class="author_name"> Eva Marilla <i class="fa fa-circle"></i></span>
+
+                                    <span class="publish_date"> July 10, 2019 - <a href="#">Reply</a> </span>
+                                </div>
+                                <div class="author_content">
+                                    <p>Integer porttitor fringilla vestibulum. Phasellus curs our tinnt nulla, ut mattis augue finibus ac. Vivamus elementum enim ac enim ultrices rhoncus. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments_form float_left">
+                <div class="widget_heading">
+                    <h2>leave a comment</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="formsix-pos">
+                            <div class="form-group i-name">
+                                <label class="sr-only">Name</label>
+                                <input type="text" class="form-control" required="" id="namTen-first" placeholder="Full Name *">
+                                <i class="fas fa-user-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="formsix-e">
+                            <div class="form-group i-email">
+                                <label class="sr-only">Email</label>
+                                <input type="email" class="form-control" required="" id="emailTen" placeholder="Email Address *">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-12 col-sm-12">
+                        <div class="formsix-m">
+                            <div class="form-group i-message">
+                                <label class="sr-only">Message</label>
+                                <textarea class="form-control" required="" rows="4" id="messageTen" placeholder="Message"></textarea>
+                                <i class="fas fa-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row-->
+                <div class="header_btn dark_btn cntnt_form float_left">
+
+                    <a href="#">send now!</a>
 
                 </div>
             </div>
-            <div class="gc_blog_pagination blog_prev">
-                <ul class="pagination">
 
-                    <li><a href="#">1</a>
-                    </li>
-                    <li class="third_pagger"><a href="#">2</a>
-                    </li>
-                    <li><a href="#">3</a>
-                    </li>
-                    <li><a href="#" class="d-none d-sm-block d-md-block d-lg-block d-xl-block">4</a>
-                    </li>
-                    <li><a href="#" class="d-none d-sm-none d-md-block d-lg-block d-xl-block">5</a>
-                    </li>
+            <div class="comments_form float_left">
 
-                </ul>
-            </div>
-            <div class="next_porto blog_prev">
-                <div class="header_btn dark_btn prev_btn next_btn float_left">
-
-                    <a href="#">next</a>
-
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                    <div class="event-entry">
+                      <div class="desc">
+                        <p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
+                        <p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
+                        <h2><a href="event.html">We Held Free Training for Basic Programming</a></h2>
+                      </div>
+                      <div class="location">
+                        <span class="icon"><i class="icon-map"></i></span>
+                        <p>291 South 21th Street, Suite 721 New York NY 10016</p>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- /.col-md-12 -->
                 </div>
+                <!-- /.row-->
+
             </div>
+
+
         </div>
     </div>
 </div>
