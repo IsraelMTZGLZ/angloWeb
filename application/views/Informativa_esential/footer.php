@@ -154,7 +154,9 @@
     <script src="<?=base_url('resources/assets/Informativa/js/isotope.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/custom.js');?>"></script>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- custom js-->
     <!--chat files-->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -234,9 +236,9 @@
 
     $(function() {
         $(".chat-open-dialog").click(function() {
-        $(this).toggleClass("active");
-        $('.chat-popup').toggleClass("active");
-        $('.chat-button-destroy').toggleClass("active");
+            $(this).toggleClass("active");
+            $('.chat-popup').toggleClass("active");
+            $('.chat-button-destroy').toggleClass("active");
         });
     });
 
@@ -369,6 +371,32 @@
         });
         });
     }
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover({
+                placement : 'right',
+                html:true
+            });
+            setTimeout(function(){
+                $("[data-toggle='popover']").popover('show');
+            }, 5000);
+            setTimeout(function(){
+                $("[data-toggle='popover']").popover('hide');
+            }, 30000);
+        });
+        $(document).on('click','.chat-open-dialog',function(){
+            $("[data-toggle='popover']").popover('hide');
+        });
+        $(document).on('click','.chat-button-destroy',function(){
+            setTimeout(function(){
+                $("[data-toggle='popover']").popover('show');
+            }, 15000);
+            setTimeout(function(){
+                $("[data-toggle='popover']").popover('hide');
+            }, 30000);
+        });
     </script>
 </body>
 

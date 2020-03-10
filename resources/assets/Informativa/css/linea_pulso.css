@@ -1,0 +1,50 @@
+hr.lines {
+    margin: auto;
+    width: 100px;
+    position: relative;
+    border-top: 2px solid #0071bc;
+    margin-top: 15px;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+hr.lines:before {
+position: absolute;
+content: "";
+display: inline-block;
+margin-left: 10px;
+height: 10px;
+width: 10px;
+top: -8px;
+border: 6px solid #D6D8FF;
+border-radius: 60%;
+background: #0071bc;
+left: 35px;
+animation: pulse 2s infinite;
+}
+/* pules effect */
+@-webkit-keyframes pulse {
+0% {
+-webkit-box-shadow: 0 0 0 0 rgba(70,118,250, 0.4);
+}
+70% {
+  -webkit-box-shadow: 0 0 0 20px rgba(70,118,250, 0);
+}
+100% {
+  -webkit-box-shadow: 0 0 0 0 rgba(70,118,250, 0);
+}
+}
+@keyframes pulse {
+0% {
+-moz-box-shadow: 0 0 0 0 rgba(70,118,250, 0.4);
+box-shadow: 0 0 0 0 rgba(70,118,250, 0.4);
+}
+70% {
+  -moz-box-shadow: 0 0 0 20px rgba(70,118,250, 0);
+  box-shadow: 0 0 0 20px rgba(70,118,250, 0);
+}
+100% {
+  -moz-box-shadow: 0 0 0 0 rgba(70,118,250, 0);
+  box-shadow: 0 0 0 0 rgba(70,118,250, 0);
+}
+}

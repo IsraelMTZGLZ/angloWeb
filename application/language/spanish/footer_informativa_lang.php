@@ -16,3 +16,5 @@ $lang['subcribete'] = "Subscribete";
 $lang['contactanos'] = "Contactanos";
 $lang['oficina'] = "Oficina";
 $lang['telefono'] = "Tel&eacute;fono";
+$lang['ayudar'] = "¿Necesitas ayuda?";
+$lang['escribenos'] = "Escribenos";

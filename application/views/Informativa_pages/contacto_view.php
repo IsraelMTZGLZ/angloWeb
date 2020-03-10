@@ -319,36 +319,116 @@
         </div>
     </div>
 </div>
+<!--solution wrapper start-->
+<div class="solution_wrapper float_left" style="margin-top: -100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
 
-<style>
-       /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
-    </style>
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <script>
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 20.690310, lng: -100.445980};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 17, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map,title: 'Anglo Latino'});
-}
-    </script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
-    </script>
-                <canvas id="wave" style="height: unset !important;"></canvas>
+                    <div class="cp_heading_wraper">
+
+                        <h3>best solution in one place</h3>
+
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-md-12">
+
+                    <h3><a href="#">Anglo Latino Education Partnership</a></h3>
+                    <hr class="lines">
+                    <div class="text_wrapper_left">
+                        <div class="icon_wrapper_list" style="margin-top: 20px;">
+                            <div class="icon_content_left">
+                                <h4 style="color: black;"><?=$this->lang->line('oficina')?>:</h4>
+                                <p  style="color: black;">
+                                    Anillo Vial II Junipero Serra #2450
+                                    Valle de Juriquilla II
+                                    76230, Santiago de Querétaro, Qro.
+                                </p>
+                            </div>
+                            <div class="icon_img_effect">
+                                <div class="icon_img_list">
+                                    <a href="https://goo.gl/maps/fxTFLW3M2qGq3gQE8" style="color: white;" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon_wrapper_list" style="margin-top: -10px;">
+                            <div class="icon_content_left">
+                                <h4 style="color: black;"><?=$this->lang->line('telefono')?>:</h4>
+                                <p  style="color: black;">
+                                    442 260 9090
+                                </p>
+                            </div>
+                            <div class="icon_img_effect">
+                                <div class="icon_img_list">
+                                    <a href="tel:4422609090" style="color: white;"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.4948816012047!2d-100.44657848601318!3d20.690119386182705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b398f7ef431%3A0x86cfea4b064a72d8!2sAnglo%20Latino%20Education%20Partnership!5e0!3m2!1ses-419!2smx!4v1583722645909!5m2!1ses-419!2smx" width="800" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--solution wrapper end-->
+
+<!-- contact_icon_section start-->
+<div class="contact_icon_section float_left">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
+                <div class="cp_heading_wraper">
+
+                    <h3>Formas de contacto</h3>
+
+                </div>
+
+            </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="contact_main">
+                        <div class="contact_rotate">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4><a class="chat-open-dialog">AngloBot</a></h4>
+                        <p>Agente que te ayuda a encontrar el mejor programa adecuado a ti</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="contact_main">
+                        <div class="contact_rotate">
+                           <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank">Email</a></h4>
+                        <p><a>Envianos un correo a: info@anglolatinoedu.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="contact_main">
+                        <div class="contact_rotate">
+                           <i class="fas fa-phone"></i>
+                        </div>
+                        <h4><a href="tel:4422609090">Phone</a></h4>
+                        <p>Comunicate con nosotros: 4422609090</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="contact_main">
+                        <div class="contact_rotate">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h4><a href="#">Pagina</a></h4>
+                        <p>Registrate en la pagina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- contact info section end -->    
+<canvas id="wave" style="height: unset !important;"></canvas>
             
-    

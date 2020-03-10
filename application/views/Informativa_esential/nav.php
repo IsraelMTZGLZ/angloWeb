@@ -21,35 +21,13 @@
 </div>
 
      <!-- chat start-->
-     <div class="chat-popup">
+  <div class="chat-popup">
    <div class="chat-windows">
      <div class="chat-window-one">
-       <div class="chat-header">
-         <h4>Need Help?</h4>
-         <form id="chatForm">
-           <table class="webchat-config">
-             <tbody>
-             <tr>
-               <td><input type="text" id="firstName" value="" placeholder="Your Name"/></td>
-             </tr>
-             <tr>
-               <td><input type="text" id="agentEmail" value="" placeholder="Your Email"/></td>
-             </tr>
-             </tbody>
-           </table>
-         </form>
-         <button class="chat-button-start fa-commenting-o fa" type="button" onclick="startEmbeddedChat()"> <span>Chat Now</span> </button>
-       </div>
-       <div class="chat-phone-number">
-         <small>Available Mon-Fri <br>
-         10pm-5pm EST</small>
-         646-491-6500
-       </div>
-     </div>
-     <div class="chat-window-two">
-       <div id="chatContainer" style="height: 600px;">
+     <div id="chatContainer" style="height: 600px;">
        <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
-       </div>
+       </div>   
+       
      </div>
    </div>
  </div>
@@ -79,7 +57,7 @@
   <div id="iframeHolder"></div>
 	<!-- <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a> -->
 <!-- <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> -->
-<button class="chat-open-dialog"> <span class="fa fa-question"></span> </button>
+<button type="button" class="chat-open-dialog" data-toggle="popover" data-content="<?=$this->lang->line('ayudar')?> </br><?=$this->lang->line('escribenos')?>"> <span class="fa fa-question"></span> </button>
 <button class="chat-button-destroy"> <span class="fas fa-window-close fa-2x" style="color: white;"></span> </button>
 </div>
     
