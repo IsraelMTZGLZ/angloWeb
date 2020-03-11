@@ -187,7 +187,7 @@
         <p><?=$this->lang->line('sin_cuenta')?> <a href="register-v2.html"><?=$this->lang->line('registrate')?></a></p>
 
         <footer class="page-copyright">
-          <p><?=$this->lang->line('WEBSITE_BY')?></p>
+          <p><?=$this->lang->line('WEBSITE_BY')?> Maxei Code</p>
           <div class="social">
             <a class="btn btn-icon btn-round btn-success mx-5" href="javascript:void(0)">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
