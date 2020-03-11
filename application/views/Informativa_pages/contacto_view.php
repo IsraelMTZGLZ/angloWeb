@@ -421,7 +421,7 @@
                         <div class="contact_rotate">
                             <i class="fas fa-laptop"></i>
                         </div>
-                        <h4><a href="#">Pagina</a></h4>
+                        <h4><a href="../Login/Login">Pagina</a></h4>
                         <p>Registrate en la pagina</p>
                     </div>
                 </div>

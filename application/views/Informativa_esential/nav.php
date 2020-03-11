@@ -1,7 +1,7 @@
 <body>
     <!-- preloader Start -->
     <!-- preloader Start -->
-    <div id="preloader">
+    <div id="preloader" style="background-color: #30a3f0;">
         <div id="status">
             <img src="https://pa1.narvii.com/6557/19b849c62b3f8e6ef9413f4fe9ac214ae6b99657_hq.gif" id="preloader_image" alt="loader">
         </div>
