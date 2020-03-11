@@ -1,3 +1,6 @@
+
+<link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/timeline.css');?>" />
+
 <div class="inner_top_header">
     <div class="counter_overlay"></div>
     <!-- cp navi wrapper Start -->
@@ -183,10 +186,10 @@
                             <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_one');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
+                                    <!-- <li><span class="author">By <a href="#">Admin</a></span>
                                     </li>
                                     <li><span class="posted-in">sept 19, 2019</span>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <!-- /.entry-meta -->
@@ -222,10 +225,10 @@
                             <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_two');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
+                                    <!-- <li><span class="author">By <a href="#">Admin</a></span>
                                     </li>
                                     <li><span class="posted-in">sept 19, 2019</span>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <!-- /.entry-meta -->
@@ -261,10 +264,10 @@
                             <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_three');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
+                                    <!-- <li><span class="author">By <a href="#">Admin</a></span>
                                     </li>
                                     <li><span class="posted-in">sept 19, 2019</span>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <!-- /.entry-meta -->
@@ -300,10 +303,10 @@
                             <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_four');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
+                                    <!-- <li><span class="author">By <a href="#">Admin</a></span>
                                     </li>
                                     <li><span class="posted-in">sept 19, 2019</span>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <!-- /.entry-meta -->
@@ -339,10 +342,10 @@
                             <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_five');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
-                                    <li><span class="author">By <a href="#">Admin</a></span>
+                                    <!-- <li><span class="author">By <a href="#">Admin</a></span>
                                     </li>
                                     <li><span class="posted-in">sept 19, 2019</span>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <!-- /.entry-meta -->
@@ -485,23 +488,66 @@
 
             <div class="comments_form float_left">
 
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-12 col-sm-12">
-                    <div class="event-entry">
-                      <div class="desc">
-                        <p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-                        <p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-                        <h2><a href="event.html">We Held Free Training for Basic Programming</a></h2>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="main-timeline">
+                          <a href="#" class="timeline">
+                              <div class="timeline-icon"><i class="far fa-calendar-plus" aria-hidden="true"></i></div>
+                              <div class="timeline-content">
+                                  <h3 class="title">Feria Lunes 14 de noviembre </h3>
+                                  <p class="description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                  </p>
+                              </div>
+                          </a>
+                          <a href="#" class="timeline">
+                              <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                              <div class="timeline-content">
+                                  <h3 class="title">Web Developer</h3>
+                                  <p class="description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                  </p>
+                              </div>
+                          </a>
+                          <a href="#" class="timeline">
+                              <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
+                              <div class="timeline-content">
+                                  <h3 class="title">Web Designer</h3>
+                                  <p class="description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                  </p>
+                              </div>
+                          </a>
+                          <a href="#" class="timeline">
+                              <div class="timeline-icon"><i class="fa fa-mobile"></i></div>
+                              <div class="timeline-content">
+                                  <h3 class="title">Web Developer</h3>
+                                  <p class="description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                  </p>
+                              </div>
+                          </a>
+                          <a href="#" class="timeline">
+                              <div class="timeline-icon"><i class="fa fa-calendar-plus"></i></div>
+                              <div class="timeline-content">
+                                  <h3 class="title">Web Developer</h3>
+                                  <p class="description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                  </p>
+                              </div>
+                          </a>
+                          <a href="#" class="timeline">
+                              <div class="timeline-icon"><i class="fa fa-calendar-plus"></i></div>
+                              <div class="timeline-content">
+                                  <h3 class="title">Web Developer</h3>
+                                  <p class="description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                  </p>
+                              </div>
+                          </a>
                       </div>
-                      <div class="location">
-                        <span class="icon"><i class="icon-map"></i></span>
-                        <p>291 South 21th Street, Suite 721 New York NY 10016</p>
-                      </div>
-                    </div>
                   </div>
-                    <!-- /.col-md-12 -->
-                </div>
-                <!-- /.row-->
+              </div>
 
             </div>
 
