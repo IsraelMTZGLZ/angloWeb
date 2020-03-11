@@ -142,16 +142,16 @@
     <div class="page-content">
       <div class="page-brand-info">
         <div class="brand">
-          <img class="brand-img" src="<?=base_url('resources/assets/Dashboard/center/assets/images/logo%402x.png');?>" alt="...">
-          <h2 class="brand-text font-size-40">Anglo Latino</h2>
+          <img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="...">
+          <a href="../Informativa/Home"><h2 class="brand-text font-size-40">Anglo Latino</h2></a>
         </div>
         <p class="font-size-20"><?=$this->lang->line('te_interesa_estudiar');?></p>
       </div>
 
       <div class="page-login-main animation-slide-right animation-duration-1">
         <div class="brand hidden-md-up">
-          <img class="brand-img" src="<?=base_url('resources/assets/Dashboard/center/assets/images/logo-colored%402x.png');?>" alt="...">
-          <h3 class="brand-text font-size-30">Anglo Latino</h3>
+          <img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" width="20%">
+          <a href="../Informativa/Home"><h3 class="brand-text font-size-30">Anglo Latino</h3></a>
         </div>
         <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
