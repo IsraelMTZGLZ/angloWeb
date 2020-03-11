@@ -73,9 +73,9 @@
                     <div class="footer_widget footer_contact_wrapper float_left">
                         <h4><?=$this->lang->line('contactanos');?> </h4>
                         <ul>
-                            <li> 
+                            <li>
                                 <span> Quer&eacutetaro
-                                    <?=$this->lang->line('oficina');?>: 
+                                    <?=$this->lang->line('oficina');?>:
                                 </span>
                                 <p>
                                     <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank">
@@ -85,13 +85,13 @@
                                     </a>
                                 </p>
                                 <span><?=$this->lang->line('telefono');?>: </span>
-                                <p> 
+                                <p>
                                     <a href="tel:4422609090">442 260 9090</a>
                                 </p>
                             </li>
-                            <li> 
+                            <li>
                                 <span> CDMX
-                                    <?=$this->lang->line('oficina');?>: 
+                                    <?=$this->lang->line('oficina');?>:
                                 </span>
                                 <p>
                                     <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank">
@@ -101,7 +101,7 @@
                                     </a>
                                 </p>
                                 <span><?=$this->lang->line('telefono');?>: </span>
-                                <p> 
+                                <p>
                                     <a href="tel:4422609090">55 3687 4477</a>
                                 </p>
                             </li>
@@ -115,10 +115,10 @@
                 <div class="col-lg-12 col-md-12 col-12 col-sm-12" style="text-align: center;">
                     <span> Todos los Derechos Reservados © Anglo Latino. </span>
                     <br>*Las imágenes visuales/fotografías, logotipos/símbolos, conceptos, descripciones, etc., de las universidades, organizaciones, institutos, escuelas, etc., expuestas en esta página web, son propiedad intelectual única de cada una de ellas; por lo que deben ser tratadas como exclusivas y confidenciales. La reproducción e implantación parcial o total o uso por cualquier medio sin expreso consentimiento por escrito de alguna de dichas entidades educativas, es una directa violación a las Leyes de Propiedad Intelectual y Derechos de Autor a nivel internacional.
-                    
+
                     <p style="margin-top: 20px;"><a style="color: #30a3f0;" href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blanck">Aviso de Privacidad para la Protección de Datos Personales.</a></p>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -130,7 +130,7 @@
                     <div class="btm_foter_box">
 
                         <p>Anglo Latino Education Pathership by <a href="#"> Maxei code</a></p>
-                         
+
                     </div>
                 </div>
             </div>
@@ -153,6 +153,7 @@
     <script src="<?=base_url('resources/assets/Informativa/js/imagesloaded.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/isotope.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/custom.js');?>"></script>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -255,7 +256,7 @@
         $('.chat-open-dialog').removeClass("active");
         $(this).removeClass("active");
         $('.chat-popup').removeClass("chat-init");
-    
+
         });
     });
 
@@ -372,7 +373,7 @@
         });
     }
     </script>
-    
+
     <script>
         $(document).ready(function(){
             $('[data-toggle="popover"]').popover({
