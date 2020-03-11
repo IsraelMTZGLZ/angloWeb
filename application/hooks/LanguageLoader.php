@@ -14,6 +14,7 @@ class LanguageLoader
             $ci->lang->load('service_informativo',$siteLang);
             $ci->lang->load('blog_informativo',$siteLang);
             $ci->lang->load('contacto_informativa',$siteLang);
+            $ci->lang->load('login',$siteLang);
         } else {
             $ci->lang->load('general_messages','spanish');
             $ci->lang->load('nav_informativo','spanish');
@@ -22,7 +23,8 @@ class LanguageLoader
             $ci->lang->load('about_informativo','spanish');
             $ci->lang->load('service_informativo','spanish');
             $ci->lang->load('blog_informativo','spanish');
-            $ci->lang->load('contacto_informativa',$siteLang);
+            $ci->lang->load('contacto_informativa','spanish');
+            $ci->lang->load('login','spanish');
         }
     }
 }

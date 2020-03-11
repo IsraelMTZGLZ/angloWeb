@@ -98,6 +98,8 @@
     Breakpoints();
   </script>
 
+  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/idioma.css');?>" />
+
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
     <!--[if lt IE 9]>
@@ -115,6 +117,26 @@
       background: transparent;
     }
   </style>
+  <!--bar idioma-->
+  <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
+    <ul>
+      <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
+        <a href="<?php echo base_url(); ?>LanguageSwitcher/switchLang/spanish">
+          <i class="flag-icon flag-icon-mx" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="<?php echo ($this->session->userdata('site_lang') == 'english') ? 'englishActivo' : 'english'; ?>">
+        <a href="<?php echo base_url(); ?>LanguageSwitcher/switchLang/english">
+          <i class="flag-icon flag-icon-gb" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="idioma">
+        <a target="_self">
+        <i class="fas fa-language fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
   <!-- Page -->
   <div class="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
     <div class="page-content">
@@ -131,8 +153,8 @@
           <img class="brand-img" src="<?=base_url('resources/assets/Dashboard/center/assets/images/logo-colored%402x.png');?>" alt="...">
           <h3 class="brand-text font-size-30">Anglo Latino</h3>
         </div>
-        <h3 class="font-size-34 text-center">Login in</h3>
-        <p class="text-center mt-2">Ingresa con tu red social favorita:</p>
+        <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
+        <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
         <div class="social-btns">
             <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="#"><i class="fa fa-google"></i></a>
@@ -155,17 +177,17 @@
             </div>
           </div>
           <div class="form-group clearfix">
-            <a class="float-right" href="forgot-password.html">Forgot password?</a>
+            <a class="float-right" href="forgot-password.html"><?=$this->lang->line('forgot_password')?></a>
           </div>
           <div class="animation-example animation-hover hover">
-            <button type="submit" class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200">iniciar sesión</button>
+            <button type="submit" class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('login')?></button>
           </div>
         </form>
 
-        <p>No account? <a href="register-v2.html">Sign Up</a></p>
+        <p><?=$this->lang->line('sin_cuenta')?> <a href="register-v2.html"><?=$this->lang->line('registrate')?></a></p>
 
         <footer class="page-copyright">
-          <p>WEBSITE BY Maxei Code</p>
+          <p><?=$this->lang->line('WEBSITE_BY')?></p>
           <div class="social">
             <a class="btn btn-icon btn-round btn-success mx-5" href="javascript:void(0)">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
