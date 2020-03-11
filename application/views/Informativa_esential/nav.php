@@ -13,7 +13,7 @@
 <!--Redes sociales bar-->
 
 <div class="icon-bar">
-  <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.facebook.com/AngloLatino/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
   <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
   <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
   <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>

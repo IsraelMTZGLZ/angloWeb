@@ -10,7 +10,7 @@
                       <input type="search" placeholder="Search...">
                     </form>
                </li>
-            <li class="">
+            <li class="active">
                 <a href="home"><?=$this->lang->line('home_nav');?></a>
             </li>
 
@@ -83,7 +83,7 @@
             </header>
             <div class="header_btn top_btn float_left">
 
-                <a href="login_register.html"><?=$this->lang->line('ingresar');?></a>
+                <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
 
             </div>
 
@@ -107,7 +107,7 @@
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <ul class="main_nav_ul">
-                         <li class="has-mega gc_main_navigation"><a href="home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
+                         <li class="has-mega gc_main_navigation active"><a href="home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
@@ -163,7 +163,7 @@
                                                         <a href="Becas"><?=$this->lang->line('leer_mas');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="#"><?=$this->lang->line('ingresar');?></a>
+                                                        <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -194,7 +194,7 @@
                                                         <a href="About"><?=$this->lang->line('leer_mas');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="#"><?=$this->lang->line('ingresar');?></a>
+                                                        <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
                                                     </li>
                                                 </ul>
                                             </div>

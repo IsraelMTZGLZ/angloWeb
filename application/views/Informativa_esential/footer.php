@@ -2,7 +2,7 @@
  <div class="foter_top_wrapper float_left">
         <div class="container">
             <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                <li><a href="https://www.facebook.com/AngloLatino/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a>
                 </li>
