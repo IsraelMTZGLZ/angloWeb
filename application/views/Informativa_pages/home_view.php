@@ -2,7 +2,7 @@
     <!-- Top Scroll End -->
     <!-- cp navi wrapper Start -->
 	<nav class="cd-dropdown">
-        <h2><a href="index.html"><span><img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" alt="img"></span>Anglo</a></h2>
+        <h2><a href="Home"><span><img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" alt="img"></span>Anglo</a></h2>
             <a href="#0" class="cd-close"><?=$this->lang->line('close');?></a>
               <ul class="cd-dropdown-content">
                   <li>
@@ -10,31 +10,48 @@
                       <input type="search" placeholder="Search...">
                     </form>
                </li>
-            <li class="active">
-                <a href="home"><?=$this->lang->line('home_nav');?></a>
+            <li class="javascript:;">
+                <a href="Home"><?=$this->lang->line('home_nav');?></a>
             </li>
 
-			<li class="">
-                <a href="#"><?=$this->lang->line('oferta_educativa');?></a>
+			<li class="javascript:;">
+                <a href="Oferta"><?=$this->lang->line('oferta_educativa');?></a>
             </li>
                <!-- .has-children -->
             <li class="has-children">
-                <a href="#"><?=$this->lang->line('acerca_de_nosotros');?></a>
+                <a href="javascript:;"><?=$this->lang->line('acerca_de_nosotros');?></a>
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
                     <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
-                    <li><a href="our_team.html"><?=$this->lang->line('nosotros');?></a></li>
-                    <li><a href="pricing_plans.html"><?=$this->lang->line('servicios');?></a></li>
+                    <li><a href="About"><?=$this->lang->line('nosotros');?></a></li>
+                    <li><a href="Services"><?=$this->lang->line('servicios');?></a></li>
                 </ul>
             </li>
-			<li class="">
-                <a href="#"><?=$this->lang->line('becasy_apoyos');?></a>
+			<li class="javascript:;">
+                <a href="Becas"><?=$this->lang->line('becasy_apoyos');?></a>
             </li>
-			<li class="">
-                <a href="#"><?=$this->lang->line('blog');?></a>
+			<li class="has-children">
+                <a href="javascript:;"><?=$this->lang->line('blog');?></a>
+                <ul class="cd-secondary-dropdown icon_menu is-hidden">
+                    <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
+                    <li><a href="Blog"><?=$this->lang->line('blog');?></a></li>
+                    <li><a href="Event"><?=$this->lang->line('event_nav');?></a></li>
+                </ul>
             </li>
-			<li class="">
-                <a href="Contato"><?=$this->lang->line('contacto');?></a>
+			<li class="javascript:;">
+                <a href="Contacto"><?=$this->lang->line('contacto');?></a>
             </li>
+            <li class="has-children">
+                <a href="javascript:;"><?=$this->lang->line('chage_idioma');?></a>
+                <ul class="cd-secondary-dropdown icon_menu is-hidden">
+                    <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
+                    <li><a href="../LanguageSwitcher/switchLang/spanish"><?=$this->lang->line('chage_idioma_esp');?></a></li>
+                    <li><a href="../LanguageSwitcher/switchLang/english"><?=$this->lang->line('chage_idioma_ing');?></a></li>
+                </ul>
+            </li>
+            <li class="javascript:;">
+                <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
+            </li>
+
         </ul>
         <!-- .cd-dropdown-content -->
     </nav>
@@ -107,11 +124,11 @@
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <ul class="main_nav_ul">
-                         <li class="has-mega gc_main_navigation active"><a href="home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
+                         <li class="has-mega gc_main_navigation active"><a href="Home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
+                        <li class="has-mega gc_main_navigation"><a href="Oferta" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
+                        <li class="has-mega gc_main_navigation"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                             <ul class="navi_2_dropdown">
                                 <li>
                                    <a href="About"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
@@ -122,9 +139,17 @@
                             </ul>
                         </li>
 
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
+                        <li class="has-mega gc_main_navigation"><a href="Becas" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="blog" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
+                        <li class="has-mega gc_main_navigation"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
+                            <ul class="navi_2_dropdown">
+                                <li>
+                                   <a href="Blog"> <i class="fas fa-caret-right"></i><?=$this->lang->line('blog');?></a>
+                                </li>
+                                <li class="parent">
+                                    <a href="Event"> <i class="fas fa-caret-right"></i><?=$this->lang->line('event_nav');?></a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="has-mega gc_main_navigation"><a href="Contacto" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
                         </li>

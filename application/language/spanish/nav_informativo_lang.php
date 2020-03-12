@@ -20,3 +20,7 @@ $lang['blog'] = "Blog";
 $lang['contacto'] = "Contacto";
 $lang['close'] = "Cerrar";
 $lang['ingresar'] = "Ingresar";
+$lang['event_nav'] = "Evento";
+$lang['chage_idioma'] = "Cambiar Idioma";
+$lang['chage_idioma_esp'] = "Espa&ntilde;ol";
+$lang['chage_idioma_ing'] = "Ingl&eacute;s";
