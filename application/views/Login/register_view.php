@@ -145,7 +145,7 @@
         <a href="../Informativa/Home" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
           <a href="../Informativa/Home"><h2 class="brand-text font-size-40">Anglo Latino</h2></a>
         </div>
-        <p class="font-size-20"><?=$this->lang->line('te_interesa_estudiar');?></p>
+        <p class="font-size-20"><?=$this->lang->line('leyenda_registro_page');?></p>
       </div>
 
       <div class="page-login-main animation-slide-right animation-duration-1">
@@ -153,8 +153,8 @@
           <a href="../Informativa/Home"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" width="20%"></a>
           <a href="../Informativa/Home"><h3 class="brand-text font-size-30">Anglo Latino</h3></a>
         </div>
-        <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
-        <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
+        <h3 class="font-size-34 text-center"><?=$this->lang->line('registrate');?></h3>
+        <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social_registro');?>:</p>
         <div class="social-btns">
             <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="#"><i class="fa fa-google"></i></a>
@@ -176,15 +176,23 @@
               <input type="password" class="form-control" placeholder="Password" id="inputPassword" name="password">
             </div>
           </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+              <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
+              </span>
+              <input type="password" class="form-control" placeholder="<?=$this->lang->line('repetir_password')?>" id="inputPassword" name="password">
+            </div>
+          </div>
           <div class="form-group clearfix">
-            <a class="float-right" href="forgot-password.html"><?=$this->lang->line('forgot_password')?></a>
+            <p class="ml-40"><?=$this->lang->line('leyenda_terminos');?><a href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blank"><?=$this->lang->line('terminos_registro')?></a>.</p>
           </div>
           <div class="animation-example animation-hover hover">
-            <button type="submit" class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('login')?></button>
+            <button type="submit" class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('registrate')?></button>
           </div>
         </form>
 
-        <p><?=$this->lang->line('sin_cuenta')?> <a href="Registro"><?=$this->lang->line('registrate')?></a></p>
+        <p><?=$this->lang->line('leyenda_registro_ya_existente')?> <a href="Login"><?=$this->lang->line('login')?></a></p>
 
         <footer class="page-copyright">
           <p><?=$this->lang->line('WEBSITE_BY')?> Maxei Code</p>
