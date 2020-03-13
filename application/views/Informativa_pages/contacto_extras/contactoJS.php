@@ -44,6 +44,177 @@
                         fill: "#FE901A"
                     }
                 },
+                "PE": {
+                    tooltip: {content : "Peru"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "BO": {
+                    tooltip: {content : "Bolivia"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "CO": {
+                    tooltip: {content : "Colombia"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "BR": {
+                    tooltip: {content : "Brazil"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "AR": {
+                    tooltip: {content : "Argentina"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "UY": {
+                    tooltip: {content : "Uruguay"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "CR": {
+                    tooltip: {content : "Costa Rica"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "CL": {
+                    tooltip: {content : "Chile"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "CU": {
+                    tooltip: {content : "Cuba"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "EC": {
+                    tooltip: {content : "Ecuador"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "SV": {
+                    tooltip: {content : "El Salvador"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "GT": {
+                    tooltip: {content : "Guatemala"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "GY": {
+                    tooltip: {content : "Guyana"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "HN": {
+                    tooltip: {content : "Honduras"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "JM": {
+                    tooltip: {content : "Jamaica"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "NI": {
+                    tooltip: {content : "Nicaragua"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "PA": {
+                    tooltip: {content : "Panama"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "PY": {
+                    tooltip: {content : "Paraguay"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
+                "VE": {
+                    tooltip: {content : "Venezuela"},
+                    attrs : {
+                        fill : "#F54242"
+                    }
+                    , attrsHover: {
+                        fill: "#FE901A"
+                    }
+                },
             },
             plots : {
                 'queretaro' : {

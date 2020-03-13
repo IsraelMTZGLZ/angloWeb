@@ -189,8 +189,8 @@
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="cp_heading_wraper contact_wrap">
-            <h3>Nos Ubicamos</h3>
-            <p style="margin-top: -20px;margin-bottom: 10px;">El mapa muestra los paises en color rojo que indican los paises en los que estamos ubicados</p>
+            <h3><?=$this->lang->line('titule_paises_contact')?></h3>
+            <p style="margin-top: -20px;margin-bottom: 10px;"><?=$this->lang->line('paises_contacto')?></p>
         </div>
     </div>
     <div class="col-lg-3 col-md-12 col-sm-12">
@@ -254,13 +254,14 @@
                                 <div class="abt_tab_heading float_left">
                                     <h1>Paises en Mexico</h1>
                                     <ul class="list-group list-group-flush tb_left_heading_wraper" style="color: black;">
-                                        <li class="list-group-item">Queretaro</li>
-                                        <li class="list-group-item">Ciudad De Mexico</li>
-                                        <li class="list-group-item">Guadalajara</li>
+                                        <li class="list-group-item">Queretaro &nbsp;&nbsp;<span class="badge badge-pill badge-success">Oficinas</span></li>
+                                        <li class="list-group-item">Ciudad De Mexico &nbsp;&nbsp;<span class="badge badge-pill badge-success">Oficinas</span></li>
+                                        <li class="list-group-item">Guadalajara&nbsp;&nbsp;<span class="badge badge-pill badge-info">Oficinas Virtuales</span></li>
+                                        <li class="list-group-item">Monterrey</li>
                                     </ul>                                        
                                     <div class="header_btn dark_btn tab_btn float_left">
 
-                                        <a href="tel:4422609090">Llamar</a>
+                                        <a href="tel:4422609090"><?=$this->lang->line('llamar_contact_page')?></a>
 
                                     </div>
                                 </div>
@@ -416,36 +417,36 @@
             </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
-                        <div class="contact_rotate">
+                        <a class="chat-open-dialog"><div class="contact_rotate">
                             <i class="fas fa-robot"></i>
-                        </div>
+                        </div></a>
                         <h4><a class="chat-open-dialog">AngloBot</a></h4>
                         <p>Agente que te ayuda a encontrar el mejor programa adecuado a ti</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
-                        <div class="contact_rotate">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank"><div class="contact_rotate">
                            <i class="fas fa-envelope"></i>
-                        </div>
+                        </div></a>
                         <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank">Email</a></h4>
                         <p><a>Envianos un correo a: info@anglolatinoedu.com</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
-                        <div class="contact_rotate">
+                        <a href="tel:4422609090"><div class="contact_rotate">
                            <i class="fas fa-phone"></i>
-                        </div>
+                        </div></a>
                         <h4><a href="tel:4422609090">Phone</a></h4>
                         <p>Comunicate con nosotros: 4422609090</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
-                        <div class="contact_rotate">
+                        <a href="../Login/Login"><div class="contact_rotate">
                             <i class="fas fa-laptop"></i>
-                        </div>
+                        </div></a>
                         <h4><a href="../Login/Login">Pagina</a></h4>
                         <p>Registrate en la pagina</p>
                     </div>
