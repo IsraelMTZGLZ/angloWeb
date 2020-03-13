@@ -13,11 +13,12 @@
 <!--Redes sociales bar-->
 
 <div class="icon-bar">
-  <a href="https://www.facebook.com/AngloLatino/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-  <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-  <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>
-  <a href="tel:4422609090" class="google"><i class="fas fa-phone-volume"></i></a>
+  <a href="https://www.facebook.com/AngloLatino/" target="_blank" class="facebook d-none d-sm-block"><i class="fab fa-facebook-f"></i></a>
+  <a href="fb://www.facebook.com/AngloLatino/" target="_blank" class="facebook d-block d-sm-none"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero-informacion-para-estudiar-en-Reino-Unido" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+  <!--<a href="https://www.linkedin.com/company/anglo-latino-education-partnership-limited" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>-->
+  <a href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank"sss class="instagram"><i class="fab fa-instagram"></i></i></a>
+  <a href="tel:4422609090" class="google"><i class="fas fa-phone"></i></a>
 </div>
 
      <!-- chat start-->

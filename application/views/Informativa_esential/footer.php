@@ -2,23 +2,34 @@
  <div class="foter_top_wrapper float_left">
         <div class="container">
             <ul>
-                <li><a href="https://www.facebook.com/AngloLatino/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <li>
+                    <a href="https://www.facebook.com/AngloLatino/" target="_blank" class="d-none d-sm-block">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="fb://www.facebook.com/AngloLatino/" class="d-block d-sm-none">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
                 </li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a>
+                <li>
+                    <a href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a>
+                <li>
+                    <a href="https://twitter.com/angloedu" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a> 
                 </li>
-                <li> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
-
-                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <li> 
+                    <a href="https://www.linkedin.com/company/anglo-latino-education-partnership-limited" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a> 
                 </li>
-                <li><a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <li> 
+                    <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero-informacion-para-estudiar-en-Reino-Unido" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a> 
                 </li>
-                <li><a href="#"><i class="fab fa-tumblr"></i></a>
-                </li>
-                <li> <a href="#"><i class="fab fa-behance"></i></a> </li>
-                <li> <a href="#"><i class="fab fa-dribbble"></i></a> </li>
-                <li> <a href="#"><i class="fab fa-whatsapp"></i></a> </li>
             </ul>
         </div>
     </div>
@@ -29,14 +40,14 @@
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
                     <div class="footer_widget footer_about_wrapper float_left">
                         <div class="wrapper_first_image">
-                            <a href="index.html"><img src="<?=base_url('resources/assets/Informativa/images/logo.png');?>" class="img-responsive" alt="logo" /></a>
+                            <a href="Home"><img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" class="img-responsive" alt="logo" /></a>
                         </div>
                         <div class="abotus_content">
                             <p>
                                 <?=$this->lang->line('te_interesa_estudiar');?>
                             </p>
                         </div>
-                        <a href="#" class="blog_read"><?=$this->lang->line('leer_mas');?><i class="flaticon-arrow"></i></a>
+                        <a href="About" class="blog_read"><?=$this->lang->line('leer_mas_footer');?><i class="flaticon-arrow"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 col-sm-12">
@@ -57,15 +68,10 @@
                     <div class="footer_widget footer_useful_wrapper float_left">
                         <h4><?=$this->lang->line('subcribete');?></h4>
                         <div class="abotus_content">
-                            <p>Déjanos tu correo electrónico para estar informado de nuestros eventos.
-                        </div>
-                        <div class="contect_form_footer float_left">
-                            <input type="text" name="Email" placeholder="Email ID"><i class="fas fa-comment"></i>
+                            <p><?=$this->lang->line('email_info_footer');?>
                         </div>
                         <div class="header_btn dark_btn footer_btn float_left">
-
-                            <a href="#">send message</a>
-
+                            <a href="../Login/Login"><?=$this->lang->line('email_escribir_footer');?></a>
                         </div>
                     </div>
                 </div>

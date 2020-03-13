@@ -176,7 +176,7 @@
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
                                             <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Anglo/anglo_text_latino.png');?>" alt="img"></div>
-                                            <h2 data-animation="animated fadeInUp"><?=$this->lang->line('bienvenido');?> <br>
+                                            <h2 data-animation="animated fadeInUp"><?=$this->lang->line('bienvenido_home');?> <br>
                                             </h2>
 
                                             <p data-animation="animated fadeInUp">
@@ -185,7 +185,7 @@
                                             <div class="header_btn slider_btn float_left">
                                                 <ul>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="Becas"><?=$this->lang->line('leer_mas');?></a>
+                                                        <a href="Becas"><?=$this->lang->line('leer_mas_home');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
                                                         <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
@@ -216,7 +216,7 @@
                                             <div class="header_btn slider_btn float_left">
                                                 <ul>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="About"><?=$this->lang->line('leer_mas');?></a>
+                                                        <a href="About"><?=$this->lang->line('leer_mas_home');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
                                                         <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
@@ -239,7 +239,7 @@
                     <div class="carousel-nevigation">
                         <a class="prev" href="#carousel-example-generic" role="button" data-slide="prev"> <span> prev</span> <i class="flaticon-arrow-1"></i>
                         </a>
-                        <a class="next" href="#carousel-example-generic" role="button" data-slide="next"> <span> next</span> <i class="flaticon-arrow"></i>
+                        <a class="next" href="#carousel-example-generic" role="button" data-slide="next"> <span> <?=$this->lang->line('next_home')?></span> <i class="flaticon-arrow"></i>
                         </a>
                     </div>
                 </div>
@@ -315,7 +315,7 @@
 
                     <div class="cp_heading_wraper">
 
-                        <h3><?=$this->lang->line('nuestros_servicios');?></h3>
+                        <h3><?=$this->lang->line('nuestros_servicios_home');?></h3>
 
                         <p><?=$this->lang->line('ayudar1');?>
                             <br><?=$this->lang->line('ayudar2');?>
