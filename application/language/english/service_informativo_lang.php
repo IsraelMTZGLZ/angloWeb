@@ -34,17 +34,18 @@ $lang['step_title_service_detail']="Your dream, our goal";
 $lang['gratis_servicio']="Free services";
 $lang['gratis_servicio_contenido']="All our services are free with personnel ready to provide the best experience.";
 
-$lang['step_one_service']="Contact us";
-$lang['step_one_service_detail']="We have different forms of contact such as social networks, website, mail, Fairs...";
+$lang['step_one_service']="Choose a program of interest and / or career to study in the UK";
+$lang['step_one_service_detail']="a).Summer courses, English course, high school, undergraduate, postgraduate or doctorate";
+$lang['step_one_service_detail_two']=" b) In case you want to study postgraduate or doctorate; identify the specialty.";
 
-$lang['step_two_service']="We help you";
-$lang['step_two_service_detail']="Free tracking service.";
+$lang['step_two_service']="Contact us";
+$lang['step_two_service_detail']="To give you study options and scholarships to which you can participate.";
 
-$lang['step_three_service']="We train you";
-$lang['step_three_service_detail']="Receive personalized follow-up according to your request.";
+$lang['step_three_service']="We advise you";
+$lang['step_three_service_detail']="For your application to the university, scholarship and visa (if applicable).";
 
-$lang['step_four_service']="Travel to UK";
-$lang['step_four_service_detail']="We make your dream of traveling and studying in the United Kingdom come true.";
+$lang['step_four_service']="Travel to the UK";
+$lang['step_four_service_detail']="Enjoy and live the experience of studying in the UK.";
 
 
 $lang['english']="English";

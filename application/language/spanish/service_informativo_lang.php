@@ -35,17 +35,18 @@ $lang['gratis_servicio_contenido']="Todos nuestros servicios son gratuitos con p
 $lang['step_title_service']="Sigue estos simples pasos";
 $lang['step_title_service_detail']="Tu sueño, nuestro objetivo";
 
-$lang['step_one_service']="Contactanos";
-$lang['step_one_service_detail']="Tenemos diferentes formas de contacto como redes sociales, sitio web, correo, ferias.";
+$lang['step_one_service']="Elige un programa de interés y/o carrera para estudiar en Reino Unido";
+$lang['step_one_service_detail']="a) Cursos de verano, curso de inglés, preparatoria, licenciatura, posgrado o doctorado.";
+$lang['step_one_service_detail_two']=" b) En caso de querer estudiar posgrado o doctorado; identifica la especialidad.";
 
-$lang['step_two_service']="Te asesoramos";
-$lang['step_two_service_detail']="Servicio de seguimiento gratuito.";
+$lang['step_two_service']="Contáctanos";
+$lang['step_two_service_detail']="Para darte las opciones de estudio y becas a las que puedes participar.";
 
-$lang['step_three_service']="Te preparamos";
-$lang['step_three_service_detail']="Recibe un seguimiento personalizado de acuerdo a tu solicitud.";
+$lang['step_three_service']="Te asesoramos";
+$lang['step_three_service_detail']="Para tu aplicación a la universidad, beca y visa (en caso de que aplique).";
 
 $lang['step_four_service']="Viaja a Reino Unido";
-$lang['step_four_service_detail']="Hacemos realidad tu sueño de viajar y estudiar en Reino Unido.";
+$lang['step_four_service_detail']="Disfruta y vive la experiencia de estudiar en UK.";
 
 
 
