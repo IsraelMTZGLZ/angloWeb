@@ -320,8 +320,8 @@
                                     <div class="btc_step_overlay"></div>
                                 </div>
                             </div>
-                            <div class="count-description"><span class="timer">2846</span>
-                                <h5 class="con1"> <a href="#"> happy customers </a></h5>
+                            <div class="count-description"><span class="timer">5000</span>
+                                <h5 class="con1"> <a href="#">  Hemos atendido a más de 5000 personas en México y Latinoamerica </a></h5>
                             </div>
                         </div>
                     </div>
@@ -332,47 +332,48 @@
                                     <div class="btc_step_overlay"></div>
                                 </div>
                             </div>
-                            <div class="count-description"> <span class="timer">425</span>
-                                <h5 class="con2"> <a href="#"> successfull projects  </a></h5>
+                            <div class="count-description"> <span class="timer">18</span>
+                                <h5 class="con2"> <a href="#"> Más de 18 becas aplicables en México y Latinoamerica cada año  </a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="counter_width">
                         <div class="counter_cntnt_box">
                             <div class="tb_icon">
-                                <div class="icon"><i class="flaticon-search"></i>
+                                <div class="icon"><i class="fas fa-school"></i>
                                     <div class="btc_step_overlay"></div>
                                 </div>
                             </div>
-                            <div class="count-description"> <span class="timer">7660</span>
-                                <h5 class="con2"> <a href="#"> blog posts </a></h5>
+                            <div class="count-description"> <span class="timer">25</span>
+                                <h5 class="con2"> <a href="#"> Tenemos convenio con más 25 universidades, colegios e institutos en Reino Unido </a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="counter_width">
                         <div class="counter_cntnt_box">
                             <div class="tb_icon">
-                                <div class="icon"><i class="flaticon-server"></i>
+                                <div class="icon"><i class="fas fa-calendar-alt"></i>
                                     <div class="btc_step_overlay"></div>
                                 </div>
                             </div>
-                            <div class="count-description"> <span class="timer">2347</span>
-                                <h5 class="con4"> <a href="#"> web pages </a></h5>
+                            <div class="count-description"> <span class="timer">25</span>
+                                <h5 class="con2"> <a href="#"> Eventos al año </a></h5>
                             </div>
                         </div>
                     </div>
                     <div class="counter_width">
                         <div class="counter_cntnt_box">
                             <div class="tb_icon">
-                                <div class="icon"><i class="flaticon-trophy"></i>
+                                <div class="icon"><i class="fas fa-globe-americas"></i>
                                     <div class="btc_step_overlay"></div>
                                 </div>
                             </div>
-                            <div class="count-description"> <span class="timer">627</span>
-                                <h5 class="con5"> <a href="#">design awards</a></h5>
+                            <div class="count-description"> <span class="timer">20</span>
+                                <h5 class="con2"> <a href="#"> Ubicados en mas de 20 paises en Latinoamerica </a></h5>
                             </div>
                         </div>
                     </div>
+                    
 
                 </div>
             </div>
@@ -433,8 +434,8 @@
                                     </div>
 
                                     <div class="team_info_wrapper">
-                                        <h4><a href="#">Arnold Oliver</a></h4>
-                                        <h5>founder</h5>
+                                        <h4><a href="#">Orina Togores</a></h4>
+                                        <h5>Senior</h5>
                                         <p>
                                             Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
                                         </p>
@@ -475,8 +476,8 @@
                                     </div>
 
                                     <div class="team_info_wrapper">
-                                        <h4><a href="#">jannifer doe</a></h4>
-                                        <h5>founder</h5>
+                                        <h4><a href="#">Maria Fernanda</a></h4>
+                                        <h5>Team Leader</h5>
                                         <p>
                                             Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
                                         </p>
@@ -517,8 +518,8 @@
                                     </div>
 
                                     <div class="team_info_wrapper">
-                                        <h4><a href="#">Arnold Oliver</a></h4>
-                                        <h5>founder</h5>
+                                        <h4><a href="#">Paola Díaz</a></h4>
+                                        <h5>Ejecutivo de cuenta</h5>
                                         <p>
                                             Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
                                         </p>
@@ -559,8 +560,92 @@
                                     </div>
 
                                     <div class="team_info_wrapper">
-                                        <h4><a href="#">jannifer doe</a></h4>
-                                        <h5>founder</h5>
+                                        <h4><a href="#">Grecia Ignacio</a></h4>
+                                        <h5>Ejecutivo de cuenta</h5>
+                                        <p>
+                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
+                                        </p>
+                                        <div class="team_info_social_icons">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-google-plus-g"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team_slider_main float_left">
+
+                                    <div class="team_img_wrapper">
+                                        <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
+                                    </div>
+
+                                    <div class="team_info_wrapper">
+                                        <h4><a href="#">Christian Segura</a></h4>
+                                        <h5>Ejecutivo de cuenta</h5>
+                                        <p>
+                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
+                                        </p>
+                                        <div class="team_info_social_icons">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-google-plus-g"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team_slider_main float_left">
+
+                                    <div class="team_img_wrapper">
+                                        <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
+                                    </div>
+
+                                    <div class="team_info_wrapper">
+                                        <h4><a href="#">Lizbeth Pérez</a></h4>
+                                        <h5>Ejecutivo de cuenta</h5>
                                         <p>
                                             Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
                                         </p>
@@ -610,12 +695,11 @@
         <div class="container">
 
             <div class="lr_nl_heading_wrapper">
-                <h2> Newsletter</h2>
-                <p>Don’t miss to subscribe to our new feeds, kindly fill the form </p>
+                <h2>Nuevo con nosotros</h2>
+                <p>No olvides subscribirte para tener una sesoria personalizada </p>
             </div>
 
             <div class="lr_nl_form_wrapper">
-                <input type="text" placeholder=" Email">
                 <button type="submit">Subscribe</button>
             </div>
 
