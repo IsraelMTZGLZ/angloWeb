@@ -6,7 +6,7 @@
                     <a href="https://www.facebook.com/AngloLatino/" target="_blank" class="d-none d-sm-block">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="fb://www.facebook.com/AngloLatino/" class="d-block d-sm-none">
+                    <a href="fb://page/6623204789" class="d-block d-sm-none">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
@@ -26,7 +26,7 @@
                     </a> 
                 </li>
                 <li> 
-                    <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero-informacion-para-estudiar-en-Reino-Unido" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a> 
                 </li>

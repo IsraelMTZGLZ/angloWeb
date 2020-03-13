@@ -121,12 +121,12 @@
   <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
     <ul>
       <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
-        <a href="<?php echo base_url(); ?>LanguageSwitcher/switchLang/spanish">
+        <a href="../LanguageSwitcher/switchLang/spanish">
           <i class="flag-icon flag-icon-mx" aria-hidden="true"></i>
         </a>
       </li>
       <li class="<?php echo ($this->session->userdata('site_lang') == 'english') ? 'englishActivo' : 'english'; ?>">
-        <a href="<?php echo base_url(); ?>LanguageSwitcher/switchLang/english">
+        <a href="../LanguageSwitcher/switchLang/english">
           <i class="flag-icon flag-icon-gb" aria-hidden="true"></i>
         </a>
       </li>
