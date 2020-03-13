@@ -38,3 +38,11 @@ students registering in our institutions
 partners";
 $lang['english']="English";
 $lang['spanish']="Spanish";
+$lang['nuevo_about']="New with Us?";
+$lang['nuevo_leyenda_about']="Do not forget to subscribe to have personalized advice.";
+$lang['suscribete_about']="subscribe";
+$lang['leyenda1_about']="We have served more than 5000 people in Mexico and Latin America.";
+$lang['leyenda2_about']="More than 18 scholarships applicable in Mexico and Latin America each year.";
+$lang['leyenda3_about']="We have an agreement with more than 25 universities, colleges and institutes in the United Kingdom.";
+$lang['leyenda4_about']="More than 25 events a year.";
+$lang['leyenda5_about']="Located in more than 20 countries in Latin America.";

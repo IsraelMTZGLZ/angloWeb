@@ -321,7 +321,7 @@
                                 </div>
                             </div>
                             <div class="count-description"><span class="timer">5000</span>
-                                <h5 class="con1"> <a href="#">  Hemos atendido a más de 5000 personas en México y Latinoamerica </a></h5>
+                                <h5 class="con1"> <a href="#">  <?=$this->lang->line('leyenda1_about')?> </a></h5>
                             </div>
                         </div>
                     </div>
@@ -333,7 +333,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">18</span>
-                                <h5 class="con2"> <a href="#"> Más de 18 becas aplicables en México y Latinoamerica cada año  </a></h5>
+                                <h5 class="con2"> <a href="#"> <?=$this->lang->line('leyenda2_about')?>  </a></h5>
                             </div>
                         </div>
                     </div>
@@ -345,7 +345,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">25</span>
-                                <h5 class="con2"> <a href="#"> Tenemos convenio con más 25 universidades, colegios e institutos en Reino Unido </a></h5>
+                                <h5 class="con2"> <a href="#"> <?=$this->lang->line('leyenda3_about')?> </a></h5>
                             </div>
                         </div>
                     </div>
@@ -357,7 +357,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">25</span>
-                                <h5 class="con2"> <a href="#"> Eventos al año </a></h5>
+                                <h5 class="con2"> <a href="#"> <?=$this->lang->line('leyenda4_about')?></a></h5>
                             </div>
                         </div>
                     </div>
@@ -369,7 +369,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">20</span>
-                                <h5 class="con2"> <a href="#"> Ubicados en mas de 20 paises en Latinoamerica </a></h5>
+                                <h5 class="con2"> <a href="#">  <?=$this->lang->line('leyenda5_about')?></a></h5>
                             </div>
                         </div>
                     </div>
@@ -695,12 +695,12 @@
         <div class="container">
 
             <div class="lr_nl_heading_wrapper">
-                <h2>Nuevo con nosotros</h2>
-                <p>No olvides subscribirte para tener una sesoria personalizada </p>
+                <h2><?=$this->lang->line('nuevo_about')?></h2>
+                <p><?=$this->lang->line('nuevo_leyenda_about')?></p>
             </div>
 
             <div class="lr_nl_form_wrapper">
-                <button type="submit">Subscribe</button>
+                <button type="submit"><?=$this->lang->line('suscribete_about')?></button>
             </div>
 
         </div>

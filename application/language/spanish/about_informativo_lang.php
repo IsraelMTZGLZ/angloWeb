@@ -40,3 +40,11 @@ estudiantes registrándose en nuestras instituciones
 socios.";
 $lang['english']="Ingles";
 $lang['spanish']="Español";
+$lang['nuevo_about']="Nuevo con nosotros?";
+$lang['nuevo_leyenda_about']="No olvides suscribirte para tener una aseso&iacute;a personalizada.";
+$lang['suscribete_about']="suscribete";
+$lang['leyenda1_about']="Hemos atendido a más de 5000 personas en México y Latinoamerica.";
+$lang['leyenda2_about']="M&aacute;s de 18 becas aplicables en M&eacute;xico y Latinoamerica cada a&ntilde;o.";
+$lang['leyenda3_about']="Tenemos convenio con m&aacute;s 25 universidades, colegios e institutos en Reino Unido.";
+$lang['leyenda4_about']="Mas de 25 eventos al a&ntilde;o.";
+$lang['leyenda5_about']="Ubicados en mas de 20 paises en Latinoamerica.";
