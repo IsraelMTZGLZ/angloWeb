@@ -196,7 +196,7 @@
 
                 <div class="blog-post-wrapper iner_blog">
                   <div class="post-thumbnail">
-                      <img src="<?=base_url('resources/assets/Informativa/images/benefits.jpg');?>" class="img-responsive " alt="Image">
+                      <img src="<?=base_url('resources/assets/Informativa/images/more_easy.jpg');?>" class="img-responsive " alt="Image">
                       <div class="entry-footer float_left">
                           <ul class="entry-meta pull-left">
 
@@ -207,7 +207,7 @@
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('benefits_question_one');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('study_question_twoo');?></a></h4>
                           <div class="entry-meta">
                               <ul>
                                   <li><span class="author">By <a href="#">Admin</a></span>
@@ -221,24 +221,38 @@
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><?=$this->lang->line('benefits_answer_one');?>
+                          <p><?=$this->lang->line('study_answer_two');?></p>
                               <br>
+                              <p><?=$this->lang->line('study_answer_two_two');?></p>
                               <br>
 
                       <!-- /.entry-content -->
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('benefits_question_two');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('study_question_threee');?></a></h4>
 
                           <!-- /.entry-meta -->
                       </header>
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><?=$this->lang->line('benefits_answer_two');?>
+                          <p><b><?=$this->lang->line('study_answer_three');?></b><?=$this->lang->line('study_answer_three_three');?>
                               <br>
                               <br>  </p>
+                              <br>
+                              <p><?=$this->lang->line('study_answer_four');?><b><?=$this->lang->line('study_answer_four_four');?></b><?=$this->lang->line('study_answer_four_six');?></p>
+                              <br>
+                              <p><?=$this->lang->line('study_answer_five');?></p>
+                              <br>
+                              <p><?=$this->lang->line('study_answer_six');?></p>
+                              <br>
+                              <p><?=$this->lang->line('study_answer_seven');?></p>
+                              <br>
+                              <p><?=$this->lang->line('study_answer_eight');?></p>
+
+                              <h4 class="entry-title"><a href="#"><?=$this->lang->line('study_answer_nine');?></a></h4>
+
                       </div>
 
                       <!-- /.entry-content -->

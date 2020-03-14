@@ -38,7 +38,7 @@ $lang['brexit_answer_five_three'] = "Reino Unido se caracteriza por su oferta ac
 
 
 
-$lang['benefits_question_one'] = "¿Beneficios de estudiar en el Reino Unido?";
+$lang['benefits_question_one'] = "Beneficios de estudiar en el Reino Unido";
 $lang['benefits_answer_one'] = "Si tu meta es continuar tus estudios en el extranjero o perfeccionar el idioma inglés, probablemente no ha sido fácil distinguir las ventajas que presenta un país frente a otro. ¿Cuál tiene las mejores universidades? ¿Dónde se darán mayores facilidades? ¿Cuál me dará las mejores oportunidades para el futuro? El Reino Unido se presenta como la mejor alternativa, descubre qué lo hace tan especial.";
 
 $lang['benefits_question_two'] = "1. Del top 10 de universidades en el mundo, tres son del Reino Unido";
@@ -64,23 +64,30 @@ $lang['benefits_answer_seven'] = "El Reino Unido tiene una larga historia de inn
 $lang['benefits_question_eight'] = "¿Necesitas más razones para decidirte? Con Anglo Latino tu proceso será más fácil, pues ofrecemos asesoría, apoyo e información de manera gratuita a los candidatos que deseen estudiar en nuestro grupo selecto de Universidades y Colegios Británicos.";
 $lang['benefits_answer_eight'] = "Con la educación británica podrás desarrollar tus conocimientos y habilidades, comienza a cumplir tus metas hoy.";
 
-$lang['study_question_one'] = "¡Sí!, ahora es mucho más accesible estudiar en el Reino Unido
-";
+$lang['study_question_one'] = "¡Sí!, ahora es mucho más accesible estudiar en el Reino Unido";
 
-$lang['study_question_one'] = "Educación en el extranjero, tu futuro de manera alcanzable";
-$lang['study_answer_one'] = "Hasta hace pocos años, la mayoría de los estudiantes que deseaban realizar un diplomado, carrera o un posgrado en el extranjero se desilusionaban al conocer la cantidad que tenían que desembolsar para poder concretar su sueño.";
-$lang['study_answer_one_two'] = "Al día de hoy, la globalización ha impactado también el ámbito educativo y las ofertas de educación internacional han aumentado considerablemente, impactando de forma positiva este panorama. Podemos precisar que las matrículas para poder cursar toda clase de diplomados, licenciaturas y posgrados son accesible en términos monetarios y también al considerar otro factor importante: la duración de los mismos y la implementación de becas.";
+$lang['study_question_twoo'] = "Educación en el extranjero, tu futuro de manera alcanzable";
+$lang['study_answer_two'] = "Hasta hace pocos años, la mayoría de los estudiantes que deseaban realizar un diplomado, carrera o un posgrado en el extranjero se desilusionaban al conocer la cantidad que tenían que desembolsar para poder concretar su sueño.";
+$lang['study_answer_two_two'] = "Al día de hoy, la globalización ha impactado también el ámbito educativo y las ofertas de educación internacional han aumentado considerablemente, impactando de forma positiva este panorama. Podemos precisar que las matrículas para poder cursar toda clase de diplomados, licenciaturas y posgrados son accesible en términos monetarios y también al considerar otro factor importante: la duración de los mismos y la implementación de becas.";
 
 
-$lang['certe_question_one'] = "El idioma que te abre las puertas";
-$lang['study_answer_one'] = "Hablemos claro: el inglés es el idioma dominante a nivel mundial actualmente; estudiarlo y dominarlo es un plus, una inversión y una plataforma que puede llevarte muy lejos en el ámbito en el que desees desenvolverte. De acuerdo con información de la Asociación Nacional de Universidades e Instituciones de Educación Superior (ANUIES), 92 % de los estudiantes mexicanos que desean emigrar con fines académicos lo hacen a Estados Unidos o a países localizados en Europa Occidental como lo es Gran Bretaña.";
-$lang['study_answer_one'] = "La herencia y tradición de este país le han hecho ganar a pulso una reputación de un destino de muy alta calidad para emprender una travesía hacia un futuro prometedor. La estadística lo confirma, pues uno de cada siete líderes mundiales tiene como alma matter una institución británica, incluso en carreras de alta demanda como medicina.";
-$lang['study_answer_one'] = "Los comparativos llevados a cabo en los últimos tres años entre las universidades del Reino Unido contras las estadounidenses indican que las matrículas en las más de quince instituciones británicas de alto prestigio tienden a ser más económicas.";
-$lang['study_answer_one'] = "Destacan, además, que todas las demás ventajas intangibles que ofrece este país son invaluables, como las oportunidades de obtener una pasantía mientras estudias o el hecho de ser instruido por investigadores especialistas en cada materia y no por otros estudiantes, como tiende a suceder en los Estados Unidos.";
-$lang['study_answer_one'] = "La movilidad en el continente europeo es incomparable, pues sus vías de comunicación han permitido travesías cortas a precios accesibles a muchas naciones que tienen un patrimonio histórico que debes conocer. Además, los programas académicos de Reino Unido ofrecen la posibilidad de estudiar un semestre en alguno de ellos.";
-$lang['study_answer_one'] = "Otra de las ventajas de los programas británicos es la duración, pues estamos conscientes de todos los demás gastos que implica el estudiar en otro país, como el alojamiento y los alimentos. Tú tienes la libertad de elegir cursar un verano o un semestre, hasta másters con duración de tres años.";
+$lang['study_question_threee'] = "El idioma que te abre las puertas";
+$lang['study_answer_three'] = "Hablemos claro: el inglés es el idioma dominante a nivel mundial actualmente; ";
 
-$lang['study_question_one'] = "El mercado educativo indudablemente ha evolucionado también y un ambiente cultural con perspectiva internacional es absolutamente accesible el día de hoy en el Reino Unido.";
+$lang['study_answer_three_three'] = "estudiarlo y dominarlo es un plus, una inversión y una plataforma que puede llevarte muy lejos en el ámbito en el que desees desenvolverte. De acuerdo con información de la Asociación Nacional de Universidades e Instituciones de Educación Superior (ANUIES), 92 % de los estudiantes mexicanos que desean emigrar con fines académicos lo hacen a Estados Unidos o a países localizados en Europa Occidental como lo es Gran Bretaña.";
+
+$lang['study_answer_four'] = "La herencia y tradición de este país le han hecho ganar a pulso una reputación de un destino de muy alta calidad para emprender una travesía hacia un futuro prometedor.";
+
+$lang['study_answer_four_four'] = "La estadística lo confirma, pues uno de cada siete líderes mundiales tiene como alma matter una institución británica, ";
+
+$lang['study_answer_four_six'] = "incluso en carreras de alta demanda como medicina.";
+
+$lang['study_answer_five'] = "Los comparativos llevados a cabo en los últimos tres años entre las universidades del Reino Unido contras las estadounidenses indican que las matrículas en las más de quince instituciones británicas de alto prestigio tienden a ser más económicas.";
+$lang['study_answer_six'] = "Destacan, además, que todas las demás ventajas intangibles que ofrece este país son invaluables, como las oportunidades de obtener una pasantía mientras estudias o el hecho de ser instruido por investigadores especialistas en cada materia y no por otros estudiantes, como tiende a suceder en los Estados Unidos.";
+$lang['study_answer_seven'] = "La movilidad en el continente europeo es incomparable, pues sus vías de comunicación han permitido travesías cortas a precios accesibles a muchas naciones que tienen un patrimonio histórico que debes conocer. Además, los programas académicos de Reino Unido ofrecen la posibilidad de estudiar un semestre en alguno de ellos.";
+$lang['study_answer_eight'] = "Otra de las ventajas de los programas británicos es la duración, pues estamos conscientes de todos los demás gastos que implica el estudiar en otro país, como el alojamiento y los alimentos. Tú tienes la libertad de elegir cursar un verano o un semestre, hasta másters con duración de tres años.";
+
+$lang['study_answer_nine'] = "El mercado educativo indudablemente ha evolucionado también y un ambiente cultural con perspectiva internacional es absolutamente accesible el día de hoy en el Reino Unido.";
 
 
 $lang['certeficate_question_one'] = "Estudiar en Reino Unido: ¿qué certificado de inglés necesito?";
