@@ -22,3 +22,10 @@ $lang['leyenda_terminos'] = "Al hacer clic en Registrarse, aceptas nuestros";
 $lang['terminos_registro'] = "T&eacute;rminos";
 $lang['leyenda_registro_ya_existente'] = "¿Ya tienes cuenta? Por favor ve a";
 $lang['ir_a_home'] = "Ir al inicio";
+$lang['problema_facebook_message'] = "Lo sentimos hubo un problema,intenta mas tarde, si persiste comunicate con nosotros.";
+
+//forgotPassword
+$lang['frogot_password_page'] = "Olvidaste tu contrase&ntilde;a ?";
+$lang['frogot_password_page_leyenda'] = "Ingrese su correo electr&oacute;nico registrado para restablecer su contrase&ntilde;a";
+$lang['tu_email'] = "Tu correo electrónico";
+$lang['resetear_password'] = "Restablecer su contrase&ntilde;a";
