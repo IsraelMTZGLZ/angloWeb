@@ -27,12 +27,12 @@
      <div class="chat-window-one">
      <div id="chatContainer" style="height: 600px;">
        <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
-       </div>   
-       
+       </div>
+
      </div>
    </div>
  </div>
- 
+
 <!--bar idioma-->
 <div class="share-bar right d-none d-sm-block"><!-- Set position: top,left,right,bottom -->
   <ul>
@@ -61,4 +61,3 @@
 <button type="button" class="chat-open-dialog" data-toggle="popover" data-content="<?=$this->lang->line('ayudar')?> </br><?=$this->lang->line('escribenos')?>"> <span class="fa fa-question"></span> </button>
 <button class="chat-button-destroy"> <span class="fas fa-window-close fa-2x" style="color: white;"></span> </button>
 </div>
-    
