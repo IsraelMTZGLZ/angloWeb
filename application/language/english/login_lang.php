@@ -22,3 +22,9 @@ $lang['leyenda_terminos'] = "By clicking Sign Up, you agree to our";
 $lang['terminos_registro'] = "Terms";
 $lang['leyenda_registro_ya_existente'] = "Have account already? Please go to";
 $lang['ir_a_home'] = "Go to home";
+
+//forgotPassword
+$lang['frogot_password_page'] = "Forgot Your Password ?";
+$lang['frogot_password_page_leyenda'] = "Input your registered email to reset your password";
+$lang['tu_email'] = "Your Email";
+$lang['resetear_password'] = "Reset Your Password";

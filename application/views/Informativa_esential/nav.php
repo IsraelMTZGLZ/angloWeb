@@ -22,12 +22,22 @@
 </div>
 
      <!-- chat start-->
-  <div class="chat-popup">
+  <div class="chat-popup d-none d-sm-block d-sm-none d-md-block" style="margin-left: 20px;margin-bottom: 10px;">
    <div class="chat-windows">
      <div class="chat-window-one">
-     <div id="chatContainer" style="height: 600px;">
-       <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
-       </div>   
+      <div id="chatContainer" style="height: 600px;">
+        <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
+        </div>   
+       
+     </div>
+   </div>
+ </div>
+ <div class="chat-popup d-block d-sm-none d-none" style="max-height: 480px !important;width: 269px !important;margin-left: 20px;margin-bottom: 10px;">
+   <div class="chat-windows">
+     <div class="chat-window-one">
+      <div id="chatContainer" style="height: 200px;">
+        <iframe width="270" height="470" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
+        </div>   
        
      </div>
    </div>

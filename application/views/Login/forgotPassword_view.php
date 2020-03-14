@@ -81,7 +81,7 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/advanced/toastr.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/forms/advanced.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/tables/datatable.min599c.css?v4.0.2');?>">
-
+  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/pages/forgot-password.min.css?v4.0.2');?>">
   <!-- Fonts -->
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/fonts/web-icons/web-icons.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/fonts/brand-icons/brand-icons.min599c.css?v4.0.2');?>">
@@ -111,12 +111,8 @@
       <script src=".<?=base_url('resources/assets/Dashboard/global/vendor/respond/respond.min.js?v4.0.2');?>"></script>
       <![endif]-->
 </head>
-<body class="animsition page-login-v2 layout-full page-dark">
-  <style>
-    body {
-      background: transparent;
-    }
-  </style>
+<body class="animsition page-forgot-password layout-full">
+  
   <!--bar idioma-->
   <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
     <ul>
@@ -138,91 +134,59 @@
     </ul>
   </div>
   <!-- Page -->
-  <div class="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
-    <div class="page-content">
-      <div class="page-brand-info">
+  <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">
+    <div class="page-content vertical-align-middle animation-slide-top animation-duration-1">
+    <div class="page-brand-info">
         <div class="brand">
-        <a href="../Informativa/Home" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
-          <a href="../Informativa/Home"><h2 class="brand-text font-size-40">Anglo Latino</h2></a>
+        <a href="Login" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
         </div>
-        <p class="font-size-20"><?=$this->lang->line('te_interesa_estudiar');?></p>
       </div>
+      <h2><?=$this->lang->line('frogot_password_page');?></h2>
+      <p><?=$this->lang->line('frogot_password_page_leyenda');?></p>
 
-      <div class="page-login-main animation-slide-right animation-duration-1">
-        <div class="brand hidden-md-up">
-          <a href="../Informativa/Home"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" width="20%"></a>
-          <a href="../Informativa/Home"><h3 class="brand-text font-size-30">Anglo Latino</h3></a>
+      <form method="post" role="form">
+        <div class="form-group">
+          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="<?=$this->lang->line('tu_email');?>">
         </div>
-        <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
-        <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
-        <div class="social-btns">
-            <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="btn google" href="#"><i class="fa fa-google"></i></a>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block"><?=$this->lang->line('resetear_password');?></button>
         </div>
-        <form method="post" action="">
-          <div class="form-group">
-            <div class="input-group input-group-icon">
-              <span class="input-group-addon" style="background-color: white;">
-                <span class="icon wb-envelope" aria-hidden="true" style="color: #0bb2d4"></span>
-              </span>
-              <input type="email" class="form-control" placeholder="Email" id="inputPassword" name="password">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group input-group-icon">
-              <span class="input-group-addon" style="background-color: white;">
-              <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
-              </span>
-              <input type="password" class="form-control" placeholder="Password" id="inputPassword" name="password">
-            </div>
-          </div>
-          <div class="form-group clearfix">
-            <a class="float-right" href="ForgotPassword"><?=$this->lang->line('forgot_password')?></a>
-          </div>
-          <div class="animation-example animation-hover hover">
-            <button type="submit" class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('login')?></button>
-          </div>
-        </form>
+      </form>
 
-        <p><?=$this->lang->line('sin_cuenta')?> <a href="Registro"><?=$this->lang->line('registrate')?></a></p>
-
-        <footer class="page-copyright">
-          <p><?=$this->lang->line('WEBSITE_BY')?> Maxei Code</p>
+      <footer class="page-copyright">
+      <p><?=$this->lang->line('WEBSITE_BY')?> Maxei Code</p>
           <div class="social d-none d-sm-block">
-            <a class="btn btn-icon btn-round btn-success mx-5" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <a class="btn btn-icon btn-pure" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
+                <i class="fab fa-whatsapp" aria-hidden="true" style="color: #25d366;"></i>
             </a>
-            <a class="btn btn-icon btn-round social-facebook mx-5" href="https://www.facebook.com/AngloLatino/" target="_blank">
-                <i class="icon bd-facebook" aria-hidden="true"></i>
+            <a class="btn btn-icon btn-pure" href="https://www.facebook.com/AngloLatino/" target="_blank">
+                <i class="icon bd-facebook" aria-hidden="true" style="color: #1877f2;"></i>
             </a>
-            <a class="btn btn-icon btn-round social-instagram mx-5" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
-                <i class="icon bd-instagram" aria-hidden="true"></i>
+            <a class="btn btn-icon btn-pure" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                <i class="icon bd-instagram" aria-hidden="true" style="color: #c32aa3;"></i>
             </a>
           </div>
           <div class="social d-block d-sm-none">
-            <a class="btn btn-icon btn-round btn-success mx-5" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <a class="btn btn-icon btn-pure" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
+                <i class="fab fa-whatsapp" aria-hidden="true" style="color: #25d366;"></i>
             </a>
-            <a class="btn btn-icon btn-round social-facebook mx-5" href="fb://page/6623204789" target="_blank">
-                <i class="icon bd-facebook" aria-hidden="true"></i>
+            <a class="btn btn-icon btn-pure" href="fb://page/6623204789" target="_blank">
+                <i class="icon bd-facebook" aria-hidden="true" style="color: #1877f2;"></i>
             </a>
-            <a class="btn btn-icon btn-round social-instagram mx-5" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
-                <i class="icon bd-instagram" aria-hidden="true"></i>
+            <a class="btn btn-icon btn-pure" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                <i class="icon bd-instagram" aria-hidden="true" style="color: #c32aa3;"></i>
             </a>
           </div>
-        </footer>
-      </div>
-
+      </footer>
     </div>
   </div>
-<!-- Example Basic Animation -->
-                  
+  <!-- End Page -->           
                   
                   
                   
                   
               
-              <!-- End Example Basic Animation -->
+  <!-- End Example Basic Animation -->
   <script data-cfasync="false" src="<?=base_url('resources/assets/Dashboard/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js');?>"></script><script src="<?=base_url('resources/assets/Dashboard/global/vendor/babel-external-helpers/babel-external-helpers599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery/jquery.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/popper-js/umd/popper.min599c.js?v4.0.2');?>"></script>

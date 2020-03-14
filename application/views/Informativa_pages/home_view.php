@@ -328,7 +328,7 @@
                     <div class="service_cntnt de float_left">
                         <div class="service_main">
                             <i class="fas fa-heart"></i>
-                            <h2> <a href="#"><?=$this->lang->line('fiabilidad');?></a></h2>
+                            <h2> <a href="Services"><?=$this->lang->line('fiabilidad');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
@@ -336,7 +336,7 @@
                     <div class="service_cntnt de resp_boerder float_left">
                         <div class="service_main">
                             <i class="fas fa-universal-access"></i>
-                            <h2> <a href="#"><?=$this->lang->line('accesibilidad');?></a></h2>
+                            <h2> <a href="Services"><?=$this->lang->line('accesibilidad');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
@@ -344,7 +344,7 @@
                     <div class="service_cntnt de float_left">
                         <div class="service_main">
                             <i class="fas fa-headset"></i>
-                            <h2> <a href="#"><?=$this->lang->line('servicio');?></a></h2>
+                            <h2> <a href="Services"><?=$this->lang->line('servicio');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
@@ -352,7 +352,7 @@
                     <div class="service_cntnt de resp_boerder float_left">
                         <div class="service_main">
                             <i class="fas fa-comments"></i>
-                            <h2> <a href="#"><?=$this->lang->line('comunicacion');?></a></h2>
+                            <h2> <a href="Services"><?=$this->lang->line('comunicacion');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
@@ -360,7 +360,7 @@
                     <div class="service_cntnt de resp_boerder float_left">
                         <div class="service_main">
                             <i class="fas fa-user-check"></i>
-                            <h2> <a href="#"><?=$this->lang->line('eficacia');?></a></h2>
+                            <h2> <a href="Services"><?=$this->lang->line('eficacia');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
@@ -368,7 +368,7 @@
                     <div class="service_cntnt main_without_border  de float_left">
                         <div class="service_main">
                             <i class="fas fa-star"></i>
-                            <h2> <a href="#"><?=$this->lang->line('calidad');?></a></h2>
+                            <h2> <a href="Services"><?=$this->lang->line('calidad');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
                     </div>
@@ -424,7 +424,7 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="blog-post-wrapper">
                         <div class="post-thumbnail">
-                            <img src="<?=base_url('resources/assets/Informativa/images/blog1.jpg');?>" class="img-responsive " alt="Image">
+                            <img src="<?=base_url('resources/assets/Informativa/images/blog_benefits.jpg');?>" class="img-responsive " alt="Image">
 							  <div class="entry-footer float_left">
                             <ul class="entry-meta pull-left">
                                 <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
@@ -438,23 +438,16 @@
 
                         <div class="blog-content">
                             <header class="entry-header">
-                                <h4 class="entry-title"><a href="#">Blog image post</a></h4>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><span class="author">By <a href="#">Admin</a></span>
-                                        </li>
-                                        <li><span class="posted-in">sept 19, 2019</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_two');?></a></h4>
+                                
                                 <!-- /.entry-meta -->
                             </header>
                             <!-- /.entry-header -->
 
                             <div class="entry-content">
-                                <p>Sollicitudin, lorem quis bibe u auctor, nisi elit conat ipsu, nec sagittis sem ni id elit. Duis sed odio sit amet nibh vulpute cursus. Proin gravida nibh vel velit auctor aliquet.</p>
+                                <p><?=$this->lang->line('answer_question_two');?>.</p>
                             </div>
-                            <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                            <a href="#" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
                             <!-- /.entry-content -->
                         </div>
                         <!-- /.blog-content -->
