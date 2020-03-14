@@ -67,20 +67,31 @@ $lang['benefits_answer_eight'] = "With British education you can develop your kn
 
 $lang['study_question_one'] = "Yes !, studying in the UK is much more accessible now";
 
-$lang['study_question_one'] = "Education abroad, your future in an achievable way";
-$lang['study_answer_one'] = "Until a few years ago, most of the students who want to pursue a diploma, career or postgraduate abroad were disappointed to learn the amount they have to symbolize in order to achieve their dream..";
-$lang['study_answer_one_two'] = "As of today, globalization has also impacted the educational field and international education offerings have increased considerably, positively impacting this panorama. We can specify the enrollments to be able to study all kinds of diplomas, licenses and postgraduate courses are accessible in monetary terms and also when considering another important factor: their duration and the implementation of scholarships.";
+$lang['study_question_twoo'] = "Education abroad, your future in an achievable way";
+$lang['study_answer_two'] = "Until a few years ago, most of the students who want to pursue a diploma, career or postgraduate abroad were disappointed to learn the amount they have to symbolize in order to achieve their dream..";
+$lang['study_answer_two_two'] = "As of today, globalization has also impacted the educational field and international education offerings have increased considerably, positively impacting this panorama. We can specify the enrollments to be able to study all kinds of diplomas, licenses and postgraduate courses are accessible in monetary terms and also when considering another important factor: their duration and the implementation of scholarships.";
 
 
-$lang['certe_question_one'] = "The language that opens the doors";
-$lang['study_answer_one'] = "Let's be clear: English is the dominant language worldwide today; Studying and mastering it is a plus, an investment and a platform that can take you very far in the field in which you want to operate. According to information from the National Association of Universities and Institutions of Higher Education (ANUIES), 92% of Mexican students who want to emigrate for academic purposes do so to the United States or to countries located in Western Europe such as Great Britain.";
-$lang['study_answer_one'] = "The heritage and tradition of this country have earned him a reputation for a very high-quality destination to embark on a journey to a promising future. The statistics confirmed it, since one of every seven world leaders has a British institution as its soul, even in careers in high demand as medicine.";
-$lang['study_answer_one'] = "Comparisons carried out in the last three years between UK universities against Americans indicate that tuition at more than fifteen prestigious British institutions is becoming cheaper.";
-$lang['study_answer_one'] = "They also highlight all the other intangible advantages that this country offers are invaluable, such as the opportunities to obtain an internship while you study or the fact of being instructed by researchers specialized in each subject and not by other students, as can happen in the United States.";
-$lang['study_answer_one'] = "Mobility on the European continent is incomparable, as its communication routes have allowed short trips at affordable prices in many nations that have a historical heritage that you must know. In addition, UK academic programs offer the possibility of studying a semester in some of them.";
-$lang['study_answer_one'] = "Another advantage of the British programs is the duration, since we are affected by all the other expenses involved in studying in another country, such as accommodation and food. You have the freedom to choose to take a summer or a semester, up to masters with a duration of three years.";
+$lang['study_question_threee'] = "The language that opens the doors";
+$lang['study_answer_three'] = "Let's be clear: English is the dominant language worldwide today; ";
 
-$lang['study_question_one'] = "The educational market has undoubtedly evolved as well and a cultural environment with an international perspective is absolutely accessible today in the UK.";
+$lang['study_answer_three_three'] = "Studying and mastering it is a plus, an investment and a platform that can take you very far in the field in which you want to operate. According to information from the National Association of Universities and Institutions of Higher Education (ANUIES), 92% of Mexican students who want to emigrate for academic purposes do so to the United States or to countries located in Western Europe such as Great Britain.";
+
+$lang['study_answer_four'] = "The heritage and tradition of this country have earned him a reputation for a very high-quality destination to embark on a journey to a promising future.";
+
+$lang['study_answer_four_four'] = "The statistics confirmed it, since one of every seven world leaders has a British institution, ";
+
+$lang['study_answer_four_six'] = "as its soul, even in careers in high demand as medicine.";
+
+
+$lang['study_answer_five'] = "Comparisons carried out in the last three years between UK universities against Americans indicate that tuition at more than fifteen prestigious British institutions is becoming cheaper.";
+$lang['study_answer_six'] = "They also highlight all the other intangible advantages that this country offers are invaluable, such as the opportunities to obtain an internship while you study or the fact of being instructed by researchers specialized in each subject and not by other students, as can happen in the United States.";
+$lang['study_answer_seven'] = "Mobility on the European continent is incomparable, as its communication routes have allowed short trips at affordable prices in many nations that have a historical heritage that you must know. In addition, UK academic programs offer the possibility of studying a semester in some of them.";
+$lang['study_answer_eight'] = "Another advantage of the British programs is the duration, since we are affected by all the other expenses involved in studying in another country, such as accommodation and food. You have the freedom to choose to take a summer or a semester, up to masters with a duration of three years.";
+
+$lang['study_answer_nine'] = "The educational market has undoubtedly evolved as well and a cultural environment with an international perspective is absolutely accessible today in the UK.";
+
+
 
 
 $lang['certeficate_question_one'] = "Study in the UK: what English certificate do I need?";

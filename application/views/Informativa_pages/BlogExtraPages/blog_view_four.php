@@ -196,7 +196,7 @@
 
                 <div class="blog-post-wrapper iner_blog">
                   <div class="post-thumbnail">
-                      <img src="<?=base_url('resources/assets/Informativa/images/more_easy.jpg');?>" class="img-responsive " alt="Image">
+                      <img src="<?=base_url('resources/assets/Informativa/images/certific.jpg');?>" class="img-responsive " alt="Image">
                       <div class="entry-footer float_left">
                           <ul class="entry-meta pull-left">
 
@@ -207,7 +207,7 @@
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('study_question_twoo');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_one');?></a></h4>
                           <div class="entry-meta">
                               <ul>
                                   <li><span class="author">By <a href="#">Admin</a></span>
@@ -221,42 +221,75 @@
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><?=$this->lang->line('study_answer_two');?></p>
+                          <p><?=$this->lang->line('certeficate_answer_one');?>
                               <br>
-                              <p><?=$this->lang->line('study_answer_two_two');?></p>
-                              <br>
+                              <br></p>
+                              <p><b><?=$this->lang->line('certeficate_answer_one_extra');?></b><?=$this->lang->line('certeficate_answer_one_two');?></p>
 
                       <!-- /.entry-content -->
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('study_question_threee');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_two');?></a></h4>
 
                           <!-- /.entry-meta -->
                       </header>
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><b><?=$this->lang->line('study_answer_three');?></b><?=$this->lang->line('study_answer_three_three');?>
+                          <p><?=$this->lang->line('certeficate_answer_two');?> <i><?=$this->lang->line('certeficate_answer_two_two');?></i> <?=$this->lang->line('certeficate_answer_two_three');?>
+                            <b><?=$this->lang->line('certeficate_answer_two_four');?></b>
                               <br>
                               <br>  </p>
-                              <br>
-                              <p><?=$this->lang->line('study_answer_four');?><b><?=$this->lang->line('study_answer_four_four');?></b><?=$this->lang->line('study_answer_four_six');?></p>
-                              <br>
-                              <p><?=$this->lang->line('study_answer_five');?></p>
-                              <br>
-                              <p><?=$this->lang->line('study_answer_six');?></p>
-                              <br>
-                              <p><?=$this->lang->line('study_answer_seven');?></p>
-                              <br>
-                              <p><?=$this->lang->line('study_answer_eight');?></p>
+                              <p><?=$this->lang->line('certeficate_answer_two_five');?> <b ><?=$this->lang->line('certeficate_answer_two_six');?></b>
+                                <?=$this->lang->line('certeficate_answer_two_seven');?><i><?=$this->lang->line('certeficate_answer_two_eight');?></i> <?=$this->lang->line('certeficate_answer_two_nine');?>
+                                 <i><?=$this->lang->line('certeficate_answer_two_ten');?></i> <?=$this->lang->line('certeficate_answer_two_eleven');?> </p>
+                                 <br>
+                                 <p><?=$this->lang->line('certeficate_answer_two_twelve');?></p>
+                      </div>
 
-                              <h4 class="entry-title"><a href="#"><?=$this->lang->line('study_answer_nine');?></a></h4>
+                      <!-- /.entry-content -->
+                  </div>
+                  <div class="blog-content">
+                      <header class="entry-header">
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_three');?></a></h4>
+
+                          <!-- /.entry-meta -->
+                      </header>
+                      <!-- /.entry-header -->
+
+                      <div class="entry-content">
+                          <p><?=$this->lang->line('certeficate_answer_three');?><i><?=$this->lang->line('certeficate_answer_three_two');?></i>
+                            <?=$this->lang->line('certeficate_answer_three_three');?> <b><?=$this->lang->line('certeficate_answer_three_four');?></b> <?=$this->lang->line('certeficate_answer_three_five');?>
+                              <br>
+                              <br> </p>
+                          <p><?=$this->lang->line('certeficate_answer_three_six');?> <b><?=$this->lang->line('certeficate_answer_three_seven');?> <?=$this->lang->line('certeficate_answer_three_eight');?></b></p>
+                          <br>
+                          <p><?=$this->lang->line('certeficate_answer_three_nine');?></p>
+                      </div>
+
+                      <!-- /.entry-content -->
+                  </div>
+                  <div class="blog-content">
+                      <header class="entry-header">
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_four');?></a></h4>
+
+                          <!-- /.entry-meta -->
+                      </header>
+                      <!-- /.entry-header -->
+
+                      <div class="entry-content">
+                          <p><?=$this->lang->line('certeficate_answer_four');?></p>
+                              <br>
+                          <p> <?=$this->lang->line('certeficate_answer_four_two');?> <i><?=$this->lang->line('certeficate_answer_four_three');?></i> <?=$this->lang->line('certeficate_answer_four_four');?> </p>
+                          <br>
+                          <p><b> <?=$this->lang->line('certeficate_answer_four_five');?>  </b> <?=$this->lang->line('certeficate_answer_four_six');?> </p>
 
                       </div>
 
                       <!-- /.entry-content -->
                   </div>
+
 
 
                   <!-- /.blog-content -->
@@ -271,16 +304,7 @@
 
 
                             <!-- Items -->
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
-                                <div class="">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/becas_apoyos.jpg');?>" alt="">
-                                    <div class="portfolio_hover">
-                                        <a href="#"> strot template <span>(web design) </span></a>
-                                        <p></p>
-                                    </div>
 
-                                </div>
-                            </div>
 
 
 
@@ -288,6 +312,21 @@
 
 
 
+            </div>
+            <div class="comments_form float_left">
+          <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+              <div class=" formsix-pos">
+                  <img src="<?=base_url('resources/assets/Informativa/images/becas_apoyos.jpg');?>" alt="">
+                  <div class="portfolio_hover">
+                      <a href="#"> strot template <span>(web design) </span></a>
+                      <p></p>
+                  </div>
+
+              </div>
+          </div>
+
+          </div>
             </div>
 
             <div class="comments_form float_left">
@@ -404,26 +443,5 @@
        </div>
 
      </div>
-   </div>
- </div>
-
-
- <div id="myModal" class="modal fade" role="dialog">
-   <div class="modal-dialog">
-
-     <!-- Modal content-->
-     <div class="modal-content">
-       <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <h4 class="modal-title">Modal Header</h4>
-       </div>
-       <div class="modal-body">
-                             <img src="<?=base_url('resources/assets/Informativa/images/blog_eassy.jpg');?>" class="img-responsive " alt="Image">
-       </div>
-       <div class="modal-footer">
-         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-       </div>
-     </div>
-
    </div>
  </div>
