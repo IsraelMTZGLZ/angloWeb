@@ -156,9 +156,17 @@
         <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
         <div class="social-btns">
-            <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn facebook" href="<?=$this->facebook->login_url('login');?>"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="#"><i class="fa fa-google"></i></a>
         </div>
+        <?php if ($this->session->flashdata('facebook')=="Error") { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=$this->lang->line('problema_facebook_message')?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
         <form method="post" action="">
           <div class="form-group">
             <div class="input-group input-group-icon">
@@ -383,6 +391,10 @@
     ga('create', 'UA-65522665-1', 'auto');
     ga('send', 'pageview');
   </script>
-
+  <script type="text/javascript">
+    $(function(){
+      
+    });
+  </script>
 </body>
 </html>

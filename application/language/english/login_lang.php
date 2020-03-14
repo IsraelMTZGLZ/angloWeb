@@ -22,6 +22,7 @@ $lang['leyenda_terminos'] = "By clicking Sign Up, you agree to our";
 $lang['terminos_registro'] = "Terms";
 $lang['leyenda_registro_ya_existente'] = "Have account already? Please go to";
 $lang['ir_a_home'] = "Go to home";
+$lang['problema_facebook_message'] = "Sorry there was a problem, try later, if it persists contact us.";
 
 //forgotPassword
 $lang['frogot_password_page'] = "Forgot Your Password ?";
