@@ -129,7 +129,7 @@ $lang['certeficate_answer_four_four'] = "indicados para medir tu competencia en 
 $lang['certeficate_answer_four_five'] = "Opta por el certificado que mejor se acomode tanto a tus necesidades como a la institución a la que deseas ingresar.";
 $lang['certeficate_answer_four_six'] = "Considera costos, duración, tiempo de notificación de resultados, lugar para realizar el examen y validez.";
 
-$lang['uk_question_one'] = "Por qué estudiar en el Reino Unido en 2020";
+$lang['uk_question_one'] = "¿Por qué estudiar en el Reino Unido en 2020?";
 $lang['uk_answer_one'] = "Contar con la experiencia de haber vivido y estudiado un tiempo en el extranjero es uno de los caminos más aconsejables para";
 $lang['uk_answer_one_two'] = "enfrentarte al mundo con las mejores herramientas posibles.";
 $lang['uk_answer_one_three'] = "No solo por el aprendizaje y el desarrollo personal derivado de atreverte a vivir cosas nuevas en un entorno diferente, también porque es una manera de consolidarte profesionalmente con éxito.";

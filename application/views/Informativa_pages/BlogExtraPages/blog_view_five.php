@@ -198,7 +198,7 @@
 
                 <div class="blog-post-wrapper iner_blog">
                   <div class="post-thumbnail">
-                      <img src="<?=base_url('resources/assets/Informativa/images/certific.jpg');?>" class="img-responsive " alt="Image">
+                      <img src="<?=base_url('resources/assets/Informativa/images/whay.jpg');?>" class="img-responsive " alt="Image">
                       <div class="entry-footer float_left">
                           <ul class="entry-meta pull-left">
 
@@ -209,7 +209,7 @@
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_one');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('uk_question_one');?></a></h4>
                           <div class="entry-meta">
                               <ul>
                                   <li><span class="author">By <a href="#">Admin</a></span>
@@ -223,70 +223,71 @@
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><?=$this->lang->line('certeficate_answer_one');?>
+                          <p><?=$this->lang->line('uk_answer_one');?><b><?=$this->lang->line('uk_answer_one_two');?></b><?=$this->lang->line('uk_answer_one_three');?>
                               <br>
                               <br></p>
-                              <p><b><?=$this->lang->line('certeficate_answer_one_extra');?></b><?=$this->lang->line('certeficate_answer_one_two');?></p>
-
+                              <p><b><?=$this->lang->line('uk_answer_one_four');?></b><?=$this->lang->line('uk_answer_one_five');?><b><?=$this->lang->line('uk_answer_one_six');?></b><?=$this->lang->line('uk_answer_one_seven');?></p>
+                              <br>
+                              <p><?=$this->lang->line('uk_answer_one_eight');?></p>
+                              <br>
+                              <p><b><?=$this->lang->line('uk_answer_one_nine');?></b><?=$this->lang->line('uk_answer_one_ten');?><b><?=$this->lang->line('uk_answer_one_eleven');?></b><?=$this->lang->line('uk_answer_one_twelve');?><b><?=$this->lang->line('uk_answer_one_thirteen');?></b></p>
                       <!-- /.entry-content -->
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_two');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('uk_question_two');?></a></h4>
 
                           <!-- /.entry-meta -->
                       </header>
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><?=$this->lang->line('certeficate_answer_two');?> <i><?=$this->lang->line('certeficate_answer_two_two');?></i> <?=$this->lang->line('certeficate_answer_two_three');?>
-                            <b><?=$this->lang->line('certeficate_answer_two_four');?></b>
+                          <p><?=$this->lang->line('uk_answer_two');?>
                               <br>
-                              <br>  </p>
-                              <p><?=$this->lang->line('certeficate_answer_two_five');?> <b ><?=$this->lang->line('certeficate_answer_two_six');?></b>
-                                <?=$this->lang->line('certeficate_answer_two_seven');?><i><?=$this->lang->line('certeficate_answer_two_eight');?></i> <?=$this->lang->line('certeficate_answer_two_nine');?>
-                                 <i><?=$this->lang->line('certeficate_answer_two_ten');?></i> <?=$this->lang->line('certeficate_answer_two_eleven');?> </p>
-                                 <br>
-                                 <p><?=$this->lang->line('certeficate_answer_two_twelve');?></p>
+                              <br> <b><?=$this->lang->line('uk_answer_two_two');?></b> <?=$this->lang->line('uk_answer_two_three');?></p>
+                              <br>
+                              <p> <?=$this->lang->line('uk_answer_two_four');?></p>
+                              <br>
+                              <p><?=$this->lang->line('uk_answer_two_five');?></p>
                       </div>
 
                       <!-- /.entry-content -->
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_three');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('uk_question_three');?></a></h4>
 
                           <!-- /.entry-meta -->
                       </header>
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><?=$this->lang->line('certeficate_answer_three');?><i><?=$this->lang->line('certeficate_answer_three_two');?></i>
-                            <?=$this->lang->line('certeficate_answer_three_three');?> <b><?=$this->lang->line('certeficate_answer_three_four');?></b> <?=$this->lang->line('certeficate_answer_three_five');?>
-                              <br>
-                              <br> </p>
-                          <p><?=$this->lang->line('certeficate_answer_three_six');?> <b><?=$this->lang->line('certeficate_answer_three_seven');?> <?=$this->lang->line('certeficate_answer_three_eight');?></b></p>
+                          <p><?=$this->lang->line('uk_answer_three');?>
                           <br>
-                          <p><?=$this->lang->line('certeficate_answer_three_nine');?></p>
+                          </p>
+                          <br>
+                          <p><?=$this->lang->line('uk_answer_three_one');?> </p>
+
                       </div>
 
                       <!-- /.entry-content -->
                   </div>
                   <div class="blog-content">
                       <header class="entry-header">
-                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_four');?></a></h4>
+                          <h4 class="entry-title"><a href="#"><?=$this->lang->line('uk_question_four');?></a></h4>
 
                           <!-- /.entry-meta -->
                       </header>
                       <!-- /.entry-header -->
 
                       <div class="entry-content">
-                          <p><?=$this->lang->line('certeficate_answer_four');?></p>
+                          <p><?=$this->lang->line('uk_answer_four');?></p>
                               <br>
-                          <p> <?=$this->lang->line('certeficate_answer_four_two');?> <i><?=$this->lang->line('certeficate_answer_four_three');?></i> <?=$this->lang->line('certeficate_answer_four_four');?> </p>
+                          <p><b> <?=$this->lang->line('uk_answer_four_two');?>  </b>  <?=$this->lang->line('uk_answer_four_three');?> </p>
                           <br>
-                          <p><b> <?=$this->lang->line('certeficate_answer_four_five');?>  </b> <?=$this->lang->line('certeficate_answer_four_six');?> </p>
-
+                          <p><?=$this->lang->line('uk_answer_four_four');?><b> <?=$this->lang->line('uk_answer_four_five');?>  </b> <?=$this->lang->line('uk_answer_four_six');?> </p>
+                          <br>
+                            <p><?=$this->lang->line('uk_answer_four_seven');?></p>
                       </div>
 
                       <!-- /.entry-content -->
