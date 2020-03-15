@@ -9,6 +9,7 @@ class ForgotPassword extends MY_RootController {
 
 	public function index()
 	{
+		unset($_SESSION['blog']);
 		$this->load->view('Login/forgotPassword_view');
 	}
 

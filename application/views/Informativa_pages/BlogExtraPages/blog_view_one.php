@@ -47,8 +47,8 @@
                   <a href="javascript:;"><?=$this->lang->line('chage_idioma');?></a>
                   <ul class="cd-secondary-dropdown icon_menu is-hidden">
                       <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
-                      <li><a href="../LanguageSwitcher/switchLang/spanish"><?=$this->lang->line('chage_idioma_esp');?></a></li>
-                      <li><a href="../LanguageSwitcher/switchLang/english"><?=$this->lang->line('chage_idioma_ing');?></a></li>
+                      <li><a href="../../LanguageSwitcher/switchLang/spanish"><?=$this->lang->line('chage_idioma_esp');?></a></li>
+                      <li><a href="../../LanguageSwitcher/switchLang/english"><?=$this->lang->line('chage_idioma_ing');?></a></li>
                   </ul>
               </li>
               <li class="javascript:;">

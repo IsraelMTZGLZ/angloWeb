@@ -12,6 +12,7 @@ class Registro extends MY_RootController {
 
 	public function index()
 	{
+		unset($_SESSION['blog']);
 		$this->load->view('Login/register_view');
 	}
 

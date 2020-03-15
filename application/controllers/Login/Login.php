@@ -12,6 +12,7 @@ class Login extends MY_RootController {
 
 	public function index()
 	{
+		unset($_SESSION['blog']);
 		$this->load->view('Login/login_view');
 	}
 

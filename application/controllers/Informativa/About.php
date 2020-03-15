@@ -9,6 +9,7 @@ class About extends MY_RootController {
 
 	public function index()
 	{
+		unset($_SESSION['blog']);
 		$this->_initialInformativa();
 		$this->load->view('Informativa_pages/about_view');
 		$this->_finalInformativa();

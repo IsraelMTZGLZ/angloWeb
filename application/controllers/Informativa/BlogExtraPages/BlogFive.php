@@ -9,6 +9,7 @@ class BlogFive extends MY_RootController {
 
 	public function index()
 	{
+		$this->session->set_flashdata('blog','idioma');
 		$this->_initialInformativa();
 		$this->load->view('Informativa_pages/BlogExtraPages/blog_view_five');
 		$this->_finalInformativa();

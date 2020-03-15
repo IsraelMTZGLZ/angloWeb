@@ -10,7 +10,5 @@ class Show404 extends MY_RootController {
 	public function index()
 	{
 		$this->load->view('esential_errors/page_404');
-		
-		
 	}
 }
