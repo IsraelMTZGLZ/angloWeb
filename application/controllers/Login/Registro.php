@@ -61,9 +61,7 @@ class Registro extends MY_RootController {
 		
 		if ($gClient->getAccessToken()) {
             $userProfile = $google_oauthV2->userinfo->get();
-			echo "<pre>";
-			print_r($userProfile);
-			die;
+			
         } 
 		else 
 		{
