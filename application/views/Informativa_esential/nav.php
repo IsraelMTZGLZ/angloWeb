@@ -202,11 +202,11 @@
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <ul class="main_nav_ul">
-                         <li class="has-mega gc_main_navigation"><a href="Home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
+                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'home') ? 'active' : '';?>"><a href="Home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="Oferta" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'oferta') ? 'active' : '';?>"><a href="Oferta" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'about') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                             <ul class="navi_2_dropdown">
                                 <li>
                                    <a href="About"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
@@ -217,9 +217,9 @@
                             </ul>
                         </li>
 
-                        <li class="has-mega gc_main_navigation"><a href="Becas" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'becas') ? 'active' : '';?>"><a href="Becas" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'blog') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
                             <ul class="navi_2_dropdown">
                                 <li>
                                    <a href="Blog"> <i class="fas fa-caret-right"></i><?=$this->lang->line('blog');?></a>
@@ -229,7 +229,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-mega gc_main_navigation active"><a href="Contacto" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'contacto') ? 'active' : '';?>"><a href="Contacto" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
                         </li>
 
                     </ul>
