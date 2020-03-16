@@ -117,12 +117,12 @@
   <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
     <ul>
       <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
-        <a href="../LanguageSwitcher/switchLang/spanish">
+        <a href="../Language/spanish">
           <i class="flag-icon flag-icon-mx" aria-hidden="true"></i>
         </a>
       </li>
       <li class="<?php echo ($this->session->userdata('site_lang') == 'english') ? 'englishActivo' : 'english'; ?>">
-        <a href="../LanguageSwitcher/switchLang/english">
+        <a href="../Language/english">
           <i class="flag-icon flag-icon-gb" aria-hidden="true"></i>
         </a>
       </li>
@@ -138,7 +138,7 @@
     <div class="page-content vertical-align-middle animation-slide-top animation-duration-1">
     <div class="page-brand-info">
         <div class="brand">
-        <a href="Login" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
+        <a href="../Login" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
         </div>
       </div>
       <h2><?=$this->lang->line('frogot_password_page');?></h2>
