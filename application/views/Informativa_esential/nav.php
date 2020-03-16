@@ -202,17 +202,17 @@
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <ul class="main_nav_ul">
-                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'home') ? 'active' : '';?>"><a href="Home" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
+                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'home') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'oferta') ? 'active' : '';?>"><a href="Oferta" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'oferta') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Oferta' : 'Oferta' ;?>" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'about') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                             <ul class="navi_2_dropdown">
                                 <li>
-                                   <a href="About"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
+                                   <a href="<?= ($this->session->flashdata('blog')) ? '../About' : 'About' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
                                 </li>
                                 <li class="parent">
-                                    <a href="Services"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
+                                    <a href="<?= ($this->session->flashdata('blog')) ? '../Services' : 'Services' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
                                 </li>
                             </ul>
                         </li>
@@ -222,14 +222,14 @@
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'blog') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
                             <ul class="navi_2_dropdown">
                                 <li>
-                                   <a href="Blog"> <i class="fas fa-caret-right"></i><?=$this->lang->line('blog');?></a>
+                                   <a href="<?= ($this->session->flashdata('blog')) ? '../Blog' : 'Blog' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('blog');?></a>
                                 </li>
                                 <li class="parent">
-                                    <a href="Event"> <i class="fas fa-caret-right"></i><?=$this->lang->line('event_nav');?></a>
+                                    <a href="<?= ($this->session->flashdata('blog')) ? '../Event' : 'Event' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('event_nav');?></a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'contacto') ? 'active' : '';?>"><a href="Contacto" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'contacto') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Contacto' : 'Contacto' ;?>" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
                         </li>
 
                     </ul>
