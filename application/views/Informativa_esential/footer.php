@@ -58,7 +58,7 @@
                                 <img src="<?=base_url('resources/assets/Informativa/images/blg1.jpg');?>" class="img-responsive" alt="img" />
                             </div>
                             <div class="ft_blog_text">
-                                <p><a href="#">Donec id elit non mi porta gravida </a></p>
+                                <p><a href="javascript:;">Donec id elit non mi porta gravida </a></p>
                                 <div class="ft_blog_date">22 april, 2019</div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                             <p><?=$this->lang->line('email_info_footer');?>
                         </div>
                         <div class="header_btn dark_btn footer_btn float_left">
-                            <a href="../Login/Login"><?=$this->lang->line('email_escribir_footer');?></a>
+                            <a href="Login"><?=$this->lang->line('email_escribir_footer');?></a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                     <div class="btm_foter_box">
 
-                        <p>Anglo Latino Education Pathership by <a href="#"> Maxei code</a></p>
+                        <p>Anglo Latino Education Pathership by <a href="javascript:;"> Maxei code</a></p>
 
                     </div>
                 </div>
