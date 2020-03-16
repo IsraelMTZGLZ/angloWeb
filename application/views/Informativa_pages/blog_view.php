@@ -48,7 +48,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="BlogExtraPages/BlogOne"><?=$this->lang->line('title_question_one');?></a></h4>
+                            <h4 class="entry-title"><a href="Blog/Brexit"><?=$this->lang->line('title_question_one');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -64,7 +64,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_one');?>.</p>
                         </div>
-                        <a href="BlogExtraPages/BlogOne" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Brexit" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -87,7 +87,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="BlogExtraPages/BlogTwo"><?=$this->lang->line('title_question_two');?></a></h4>
+                            <h4 class="entry-title"><a href="Blog/Beneficios"><?=$this->lang->line('title_question_two');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -103,7 +103,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_two');?>.</p>
                         </div>
-                        <a href="BlogExtraPages/BlogTwo" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Beneficios" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -126,7 +126,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="BlogExtraPages/BlogThree"><?=$this->lang->line('title_question_three');?></a></h4>
+                            <h4 class="entry-title"><a href="Blog/Accesible"><?=$this->lang->line('title_question_three');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
 
@@ -143,7 +143,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_three');?>.</p>
                         </div>
-                        <a href="BlogExtraPages/BlogThree" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Accesible" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -166,7 +166,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="BlogExtraPages/BlogFour"><?=$this->lang->line('title_question_four');?></a></h4>
+                            <h4 class="entry-title"><a href="Blog/Certificado"><?=$this->lang->line('title_question_four');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -182,7 +182,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_four');?>.</p>
                         </div>
-                        <a href="BlogExtraPages/BlogFour" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Certificado" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -205,7 +205,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="BlogExtraPages/BlogFive"><?=$this->lang->line('title_question_five');?></a></h4>
+                            <h4 class="entry-title"><a href="Blog/Why"><?=$this->lang->line('title_question_five');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -221,7 +221,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_five');?>.</p>
                         </div>
-                        <a href="BlogExtraPages/BlogFive" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Why" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
