@@ -225,7 +225,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_one');?>.</p>
                         </div>
-                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="BlogExtraPages/BlogOne" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -245,11 +245,10 @@
                     <!-- /.entry-footer -->
                     </div>
                     <!-- /.post-thumbnail -->
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_two');?></a></h4>
+                            <h4 class="entry-title"><a href="BlogExtraPages/BlogTwo"><?=$this->lang->line('title_question_two');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -265,7 +264,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_two');?>.</p>
                         </div>
-                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="BlogExtraPages/BlogTwo" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -288,7 +287,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_three');?></a></h4>
+                            <h4 class="entry-title"><a href="BlogExtraPages/BlogThree"><?=$this->lang->line('title_question_three');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
 
@@ -305,7 +304,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_three');?>.</p>
                         </div>
-                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="BlogExtraPages/BlogThree" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -328,7 +327,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_four');?></a></h4>
+                            <h4 class="entry-title"><a href="BlogExtraPages/BlogFour"><?=$this->lang->line('title_question_four');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -344,7 +343,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_four');?>.</p>
                         </div>
-                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="BlogExtraPages/BlogFour" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -367,7 +366,7 @@
 
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_five');?></a></h4>
+                            <h4 class="entry-title"><a href="BlogExtraPages/BlogFive"><?=$this->lang->line('title_question_five');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -383,7 +382,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_five');?>.</p>
                         </div>
-                        <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="BlogExtraPages/BlogFive" class="blog_read">read more <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
