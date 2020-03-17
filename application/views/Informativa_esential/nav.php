@@ -106,7 +106,7 @@
                 </ul>
             </li>
 			<li class="javascript:;">
-                <a href="Becas"><?=$this->lang->line('becasy_apoyos');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Becas' : 'Becas' ;?>"><?=$this->lang->line('becasy_apoyos');?></a>
             </li>
 			<li class="has-children">
                 <a href="javascript:;"><?=$this->lang->line('blog');?></a>
@@ -117,7 +117,7 @@
                 </ul>
             </li>
 			<li class="javascript:;">
-                <a href="Contacto"><?=$this->lang->line('contacto');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Contacto' : 'Contacto' ;?>"><?=$this->lang->line('contacto');?></a>
             </li>
             <li class="has-children">
                 <a href="javascript:;"><?=$this->lang->line('chage_idioma');?></a>
@@ -217,7 +217,7 @@
                             </ul>
                         </li>
 
-                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'becas') ? 'active' : '';?>"><a href="Becas" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'becas') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Becas' : 'Becas' ;?>" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'blog') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
                             <ul class="navi_2_dropdown">
