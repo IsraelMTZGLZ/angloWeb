@@ -27,7 +27,7 @@
                                                         <a href="Becas"><?=$this->lang->line('leer_mas_home');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
+                                                        <a href="Login"><?=$this->lang->line('ingresar');?></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -58,7 +58,7 @@
                                                         <a href="About"><?=$this->lang->line('leer_mas_home');?></a>
                                                     </li>
                                                     <li data-animation="animated flipInX">
-                                                        <a href="../Login/Login"><?=$this->lang->line('ingresar');?></a>
+                                                        <a href="Login"><?=$this->lang->line('ingresar');?></a>
                                                     </li>
                                                 </ul>
                                             </div>
