@@ -40,3 +40,8 @@ $lang['becas_desc_home'] = "We advise you throughout the process";
 $lang['bienvenido_home'] = "Welcome";
 $lang['leer_mas_home'] = "Reed More";
 $lang['next_home'] = "next";
+
+//becas
+$lang['initial_beca_message'] = "Scholarships and Financial Supports";
+$lang['initial_beca_message_two'] ="All the universities with which we have agreements have internal scholarships for foreign students. In addition to offering internal scholarships specifically for Mexicans and Latin Americans, we have collaboration agreements with the following Mexican institutions.";
+$lang['initial_beca_paises'] = "Other scholarships in other countries.";

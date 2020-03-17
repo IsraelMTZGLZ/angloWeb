@@ -41,3 +41,8 @@ $lang['becas_desc_home'] = "Te asesoramos en todo el proceso";
 $lang['bienvenido_home'] = "Bienvenido";
 $lang['leer_mas_home'] = "Leer Mas";
 $lang['next_home'] = "sig";
+
+//becas
+$lang['initial_beca_message'] = "Becas y Apoyos Financieros";
+$lang['initial_beca_paises'] = "Otras becas en otros pa&iacute;ses.";
+$lang['initial_beca_message_two'] ="Todas las universidades con las que tenemos convenio cuentan con becas internas para estudiantes extranjeros.Además de ofrecer becas internas destinadas específicamente para mexicanos y latinoamericanos, manejamos convenios de colaboración con las siguientes instituciones mexicanas.";

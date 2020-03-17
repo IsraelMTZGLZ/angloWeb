@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
 * 404 errors
 */
-$lang['nuestros_servicios'] = "Nuestros Servicios";
+$lang['nuestros_servicios'] = "Our Services";
 $lang['home']="Home";
 $lang['ayuda_servicio']="Help";
 $lang['ayudar_servicio_contenido']="Help Mexicans and Latino Americans of high academic level to get enrolled in the best British universities and colleges in order to achieve their educational, professional and personal goals.";

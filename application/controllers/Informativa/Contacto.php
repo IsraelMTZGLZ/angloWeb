@@ -10,6 +10,7 @@ class Contacto extends MY_RootController {
 	public function index()
 	{
         unset($_SESSION['blog']);
+        $this->session->set_flashdata('nav_active','contacto');
         $this->_initialInformativa();
         $this->load->view('Informativa_pages/contacto_extras/contacto_librarias_view');
 		$this->load->view('Informativa_pages/contacto_view');

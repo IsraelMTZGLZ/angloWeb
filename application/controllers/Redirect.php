@@ -9,6 +9,6 @@ class Redirect extends CI_Controller {
 
 	public function index()
 	{
-	  redirect('/Informativa/Home');
+	  redirect('Home');
 	}
 }
