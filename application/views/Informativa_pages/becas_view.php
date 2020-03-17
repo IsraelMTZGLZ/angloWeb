@@ -235,7 +235,7 @@
                                     <img src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png')?>" alt="" style="margin-top:-15px;filter: brightness(16);height: 100px;">
                                 </div>
                                 <div class="col-6">
-                                    
+
                                 </div>
                             </div>
                         </div>
