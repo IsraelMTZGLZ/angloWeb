@@ -263,7 +263,7 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="blog-post-wrapper">
                         <div class="post-thumbnail">
-                            <img src="<?=base_url('resources/assets/Informativa/images/blog_benefits.jpg');?>" class="img-responsive " alt="Image">
+                            <img src="<?=base_url('resources/assets/Informativa/images/blog_bexit.jpg');?>" class="img-responsive " alt="Image">
 							  <div class="entry-footer float_left">
                             <ul class="entry-meta pull-left">
                                 <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
@@ -277,16 +277,16 @@
 
                         <div class="blog-content">
                             <header class="entry-header">
-                                <h4 class="entry-title"><a href="#"><?=$this->lang->line('title_question_two');?></a></h4>
+                                <h4 class="entry-title"><a href="Blog"><?=$this->lang->line('title_question_one');?></a></h4>
                                 
                                 <!-- /.entry-meta -->
                             </header>
                             <!-- /.entry-header -->
 
                             <div class="entry-content">
-                                <p><?=$this->lang->line('answer_question_two');?>.</p>
+                                <p><?=$this->lang->line('answer_question_one');?>.</p>
                             </div>
-                            <a href="#" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
+                            <a href="Blog" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
                             <!-- /.entry-content -->
                         </div>
                         <!-- /.blog-content -->

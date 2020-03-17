@@ -90,19 +90,19 @@
                     </form>
                </li>
             <li class="javascript:;">
-                <a href="Home"><?=$this->lang->line('home_nav');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>"><?=$this->lang->line('home_nav');?></a>
             </li>
 
 			<li class="javascript:;">
-                <a href="Oferta"><?=$this->lang->line('oferta_educativa');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Oferta' : 'Oferta' ;?>"><?=$this->lang->line('oferta_educativa');?></a>
             </li>
                <!-- .has-children -->
             <li class="has-children">
                 <a href="javascript:;"><?=$this->lang->line('acerca_de_nosotros');?></a>
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
                     <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
-                    <li><a href="About"><?=$this->lang->line('nosotros');?></a></li>
-                    <li><a href="Services"><?=$this->lang->line('servicios');?></a></li>
+                    <li><a href="<?= ($this->session->flashdata('blog')) ? '../About' : 'About' ;?>"><?=$this->lang->line('nosotros');?></a></li>
+                    <li><a href="<?= ($this->session->flashdata('blog')) ? '../Services' : 'Services' ;?>"><?=$this->lang->line('servicios');?></a></li>
                 </ul>
             </li>
 			<li class="javascript:;">
@@ -112,8 +112,8 @@
                 <a href="javascript:;"><?=$this->lang->line('blog');?></a>
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
                     <li class="go-back"><a href="#0"><?=$this->lang->line('menu');?></a></li>
-                    <li><a href="Blog"><?=$this->lang->line('blog');?></a></li>
-                    <li><a href="Event"><?=$this->lang->line('event_nav');?></a></li>
+                    <li><a href="<?= ($this->session->flashdata('blog')) ? '../Blog' : 'Blog' ;?>"><?=$this->lang->line('blog');?></a></li>
+                    <li><a href="<?= ($this->session->flashdata('blog')) ? '../Event' : 'Event' ;?>"><?=$this->lang->line('event_nav');?></a></li>
                 </ul>
             </li>
 			<li class="javascript:;">
@@ -128,7 +128,7 @@
                 </ul>
             </li>
             <li class="javascript:;">
-                <a href="Login"><?=$this->lang->line('ingresar');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Login' : 'Login' ;?>"><?=$this->lang->line('ingresar');?></a>
             </li>
 
         </ul>
@@ -137,7 +137,7 @@
     <div class="cp_navi_main_wrapper float_left">
         <div class="container-fluid">
             <div class="cp_logo_wrapper">
-                <a href="Home">
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>">
                     <img src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="" style="height: 50px !important">
                 </a>
             </div>
@@ -178,7 +178,7 @@
             </header>
             <div class="header_btn top_btn float_left">
 
-                <a href="Login"><?=$this->lang->line('ingresar');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Login' : 'Login' ;?>"><?=$this->lang->line('ingresar');?></a>
 
             </div>
 

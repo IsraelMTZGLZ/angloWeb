@@ -60,6 +60,7 @@ $route['Event'] = 'Informativa/Event';
 $route['Contacto'] = 'Informativa/Contacto';
 $route['Becas'] = 'Informativa/Becas';
 $route['Login'] = 'Login/Login';
+$route['Login/Facebook'] = 'Login/Login/llamarFacebook';
 $route['Login/google_login'] = 'Login/Login/google_login';
 $route['Login/forgotPassword'] = 'Login/ForgotPassword';
 $route['Registro'] = 'Login/Registro';
