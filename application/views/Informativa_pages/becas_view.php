@@ -32,7 +32,7 @@
                         <div class="card-img-overlay">
                             <div class="row">
                                 <div class="col-6" style="margin-top: 2%;margin-left: 10px;">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logotipo_de_la_CONACYT.png" alt="" style="height: 4.5%;filter: brightness(16)">
+                                    <img src="<?=base_url('resources/assets/Anglo/Logotipo_de_la_CONACYT.png')?>" alt="" style="height: 4.5%;filter: brightness(16)">
                                 </div>
                                 <div class="col-6">
                                     
@@ -144,7 +144,7 @@
                         <div class="card-img-overlay">
                             <div class="row">
                                 <div class="col-6" style="margin-top: 2%;margin-left: 10px;">
-                                    <img src="https://fonca.cultura.gob.mx/wp-content/uploads/2020/02/cultura_fonca_negro.png" alt="" style="margin-top:40px;filter: brightness(16);height: 50px;">
+                                    <img src="<?=base_url('resources/assets/Anglo/cultura_fonca_negro.png')?>" alt="" style="margin-top:40px;filter: brightness(16);height: 50px;">
                                 </div>
                                 <div class="col-6">
                                     
@@ -168,7 +168,7 @@
                         <div class="card-img-overlay">
                             <div class="row">
                                 <div class="col-6" style="margin-top: 2%;margin-left: 10px;">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logotipo_de_la_CONACYT.png" alt="" style="height: 2.5%;filter: brightness(16)">
+                                    <img src="<?=base_url('resources/assets/Anglo/Logotipo_de_la_CONACYT.png')?>" alt="" style="height: 2.5%;filter: brightness(16)">
                                 </div>
                                 <div class="col-6">
                                     
@@ -280,7 +280,7 @@
                         <div class="card-img-overlay">
                             <div class="row">
                                 <div class="col-6" style="margin-top: 2%;margin-left: 10px;">
-                                    <img src="https://fonca.cultura.gob.mx/wp-content/uploads/2020/02/cultura_fonca_negro.png" alt="" style="margin-top:20px;filter: brightness(16);height: 30px;">
+                                    <img src="<?=base_url('resources/assets/Anglo/cultura_fonca_negro.png')?>" alt="" style="margin-top:20px;filter: brightness(16);height: 30px;">
                                 </div>
                                 <div class="col-6">
                                     
@@ -305,7 +305,7 @@
                         <div class="card-img-overlay">
                             <div class="row">
                                 <div class="col-6" style="margin-top: 2%;margin-left: 10px;">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logotipo_de_la_CONACYT.png" alt="" style="height:80px;filter: brightness(16)">
+                                    <img src="<?=base_url('resources/assets/Anglo/Logotipo_de_la_CONACYT.png')?>" alt="" style="height:80px;filter: brightness(16)">
                                 </div>
                                 <div class="col-6">
                                     
@@ -417,7 +417,7 @@
                         <div class="card-img-overlay">
                             <div class="row">
                                 <div class="col-6" style="margin-top: 2%;margin-left: 10px;">
-                                    <img src="https://fonca.cultura.gob.mx/wp-content/uploads/2020/02/cultura_fonca_negro.png" alt="" style="margin-top:20px;filter: brightness(16);height: 30px;">
+                                    <img src="<?=base_url('resources/assets/Anglo/cultura_fonca_negro.png')?>" alt="" style="margin-top:20px;filter: brightness(16);height: 30px;">
                                 </div>
                                 <div class="col-6">
                                     
@@ -457,42 +457,42 @@
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://becashonduras2020.gob.hn/wp-content/uploads/2017/11/logo-Programa-Presidencial-BECAS-HONDURAS-2020.png" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/BECAS-HONDURAS.png');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://www.autonoma.edu.co/sites/default/files/pagina-internas/cabezote/colfuturo.jpg" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/colfuturo.jpg');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://www.ucc.edu.co/prensa/2014/PublishingImages/Paginas/resultados-definitivos-convocatoria-640-colciencias-ano-2013/colciencias_1.jpg" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/colciencias_1.jpg');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://portal.concytec.gob.pe/images/noticias/logo_50_a%C3%B1os_horizontal.png" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/logo_50_años_horizontal.png');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://pbs.twimg.com/profile_images/439771736226009088/12WpHA8H.png" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/12WpHA8H.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://www.ifarhu.gob.pa/wp-content/uploads/2020/01/LOGO-GOB-E-IFARHU-PARA-ENVIAR-03-300x187.png" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/IFARHU.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://pbs.twimg.com/profile_images/913838703969230848/JR0CGJut_400x400.jpg" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/mescyt.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="https://yt3.ggpht.com/a/AGF-l79wCYix1iHl6nwW-PfaXw9j-sfKLO3L_07Uhg=s900-c-k-c0xffffffff-no-rj-mo" alt="patner_img"></a>
+                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/pronabec.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                         </div>
