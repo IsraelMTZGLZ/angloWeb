@@ -189,14 +189,14 @@
 
 <!-- navi wrapper End -->
 <!--blog wrapper start-->
-<div class="blog_wrapper float_left">
+<div class="iner_about_II float_left">
     <div class="container">
         <div class="row">
 
-   <div class="">
 
 
-                <div class="blog-post-wrapper iner_blog">
+
+                <div class="col-lg-12 col-md-12 col-12">
                   <div class="post-thumbnail">
                       <img src="<?=base_url('resources/assets/Informativa/images/certific.jpg');?>" class="img-responsive " alt="Image">
                       <div class="entry-footer float_left">
@@ -207,15 +207,14 @@
                       </div>
                       <!-- /.entry-footer -->
                   </div>
+
+            <div class=" col-lg-12 col-md-12 col-12">
                   <div class="blog-content">
                       <header class="entry-header">
                           <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_one');?></a></h4>
                           <div class="entry-meta">
                               <ul>
-                                  <li><span class="author">By <a href="#">Admin</a></span>
-                                  </li>
-                                  <li><span class="posted-in">sept 19, 2019</span>
-                                  </li>
+
                               </ul>
                           </div>
                           <!-- /.entry-meta -->
@@ -227,10 +226,27 @@
                               <br>
                               <br></p>
                               <p><b><?=$this->lang->line('certeficate_answer_one_extra');?></b><?=$this->lang->line('certeficate_answer_one_two');?></p>
-
+                          <br>
                       <!-- /.entry-content -->
                   </div>
-                  <div class="blog-content">
+                  </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-12">
+                              <div class="about_bg_II">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/abt_bg.jpg');?>" alt="">
+                              </div>
+                              <div class="video_bg_II">
+                                  <div class="video_img_box">
+                                      <img src="<?=base_url('resources/assets/Informativa/images/vedio_bg2.jpg');?>" alt="video_bg">
+                                      <a class="test-popup-link button" rel='external' href='https://www.youtube.com/embed/ryzOXAO0Ss0' title='title'>
+                                          <span>
+                            <i class="fa fa-play"></i>
+                          </span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                  <div class="col-lg-12 col-md-12 col-12">
                       <header class="entry-header">
                           <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_two');?></a></h4>
 
@@ -248,10 +264,12 @@
                                  <i><?=$this->lang->line('certeficate_answer_two_ten');?></i> <?=$this->lang->line('certeficate_answer_two_eleven');?> </p>
                                  <br>
                                  <p><?=$this->lang->line('certeficate_answer_two_twelve');?></p>
+                                 <br>
                       </div>
 
                       <!-- /.entry-content -->
                   </div>
+
                   <div class="blog-content">
                       <header class="entry-header">
                           <h4 class="entry-title"><a href="#"><?=$this->lang->line('certeficate_question_three');?></a></h4>
@@ -296,7 +314,7 @@
 
                   <!-- /.blog-content -->
               <br>
-              </div>
+
 
               <div class="post-thumbnail">
                   <img src="<?=base_url('resources/assets/Informativa/images/becas_apoyos.jpg');?>" class="img-responsive " alt="Image">
@@ -313,7 +331,7 @@
                 </div>
 
 
-                 </div>
+
                     <!-- /.post-thumbnail -->
 
 
