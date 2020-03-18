@@ -317,37 +317,37 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/conacyt.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/conacyt.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/senescyt.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/senescyt.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/banco-de-mexico.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/banco-de-mexico.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/Logo-funed.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/Logo-funed.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                         </div>

@@ -447,52 +447,52 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/anii.png');?>" alt="patner_img"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Uruguay"><img src="<?=base_url('resources/assets/Anglo/anii.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/becal.png');?>" alt="patner_img" style="height: 170px;width: 170px;"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Paraguay"><img src="<?=base_url('resources/assets/Anglo/becal.png');?>" alt="patner_img" style="height: 170px;width: 170px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/BECAS-HONDURAS.png');?>" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Honduras"><img src="<?=base_url('resources/assets/Anglo/BECAS-HONDURAS.png');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/colfuturo.jpg');?>" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Colombia"><img src="<?=base_url('resources/assets/Anglo/colfuturo.jpg');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/colciencias_1.jpg');?>" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Colombia"><img src="<?=base_url('resources/assets/Anglo/colciencias_1.jpg');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/logo_50_años_horizontal.png');?>" alt="patner_img" style="height: 150px;"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Perú"><img src="<?=base_url('resources/assets/Anglo/logo_50_años_horizontal.png');?>" alt="patner_img" style="height: 150px;"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/12WpHA8H.png');?>" alt="patner_img"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Honduras"><img src="<?=base_url('resources/assets/Anglo/12WpHA8H.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/IFARHU.png');?>" alt="patner_img"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Panamá"><img src="<?=base_url('resources/assets/Anglo/IFARHU.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/mescyt.jpg');?>" alt="patner_img"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="República Dominicana"><img src="<?=base_url('resources/assets/Anglo/mescyt.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="#"><img src="<?=base_url('resources/assets/Anglo/pronabec.jpg');?>" alt="patner_img"></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Perú"><img src="<?=base_url('resources/assets/Anglo/pronabec.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                         </div>
