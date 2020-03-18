@@ -16,6 +16,7 @@ class LanguageLoader
             $ci->lang->load('contacto_informativa',$siteLang);
             $ci->lang->load('event_informativo',$siteLang);
             $ci->lang->load('blogpages_informativo',$siteLang);
+            $ci->lang->load('offer_informativo',$siteLang);
             $ci->lang->load('login',$siteLang);
         } else {
             $ci->lang->load('general_messages','spanish');
@@ -28,6 +29,7 @@ class LanguageLoader
             $ci->lang->load('contacto_informativa','spanish');
             $ci->lang->load('event_informativo','spanish');
             $ci->lang->load('blogpages_informativo','spanish');
+            $ci->lang->load('offer_informativo','spanish');
             $ci->lang->load('login','spanish');
         }
     }
