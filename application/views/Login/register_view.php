@@ -173,7 +173,23 @@
               <span class="input-group-addon" style="background-color: white;">
                 <span class="icon wb-envelope" aria-hidden="true" style="color: #0bb2d4"></span>
               </span>
-              <input type="email" class="form-control" placeholder="Email" id="inputPassword" name="password">
+              <input type="email" class="form-control" placeholder="<?=$this->lang->line('correo_registro')?>" id="inputPassword" name="password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+              <i class="fas fa-user" aria-hidden="true" style="color: #0bb2d4"></i>
+              </span>
+              <input type="text" class="form-control" placeholder="<?=$this->lang->line('nombre_registro')?>" id="inputPassword" name="password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+              <i class="fas fa-user" aria-hidden="true" style="color: #0bb2d4"></i>
+              </span>
+              <input type="text" class="form-control" placeholder="<?=$this->lang->line('apellidos_registro')?>" id="inputPassword" name="password">
             </div>
           </div>
           <div class="form-group">
@@ -181,7 +197,7 @@
               <span class="input-group-addon" style="background-color: white;">
               <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
               </span>
-              <input type="password" class="form-control" placeholder="Password" id="inputPassword" name="password">
+              <input type="password" class="form-control" placeholder="<?=$this->lang->line('contrasenia_registro')?>" id="inputPassword" name="password">
             </div>
           </div>
           <div class="form-group">
@@ -189,7 +205,7 @@
               <span class="input-group-addon" style="background-color: white;">
               <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
               </span>
-              <input type="password" class="form-control" placeholder="<?=$this->lang->line('repetir_password')?>" id="inputPassword" name="password">
+              <input type="password" class="form-control" placeholder="<?=$this->lang->line('repetir_contrasenia_registro')?>" id="inputPassword" name="password">
             </div>
           </div>
           <div class="form-group clearfix">

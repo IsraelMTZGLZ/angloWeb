@@ -29,3 +29,13 @@ $lang['frogot_password_page'] = "Olvidaste tu contrase&ntilde;a ?";
 $lang['frogot_password_page_leyenda'] = "Ingrese su correo electr&oacute;nico registrado para restablecer su contrase&ntilde;a";
 $lang['tu_email'] = "Tu correo electrónico";
 $lang['resetear_password'] = "Restablecer su contrase&ntilde;a";
+
+//registro
+$lang['correo_registro']="Correo";
+$lang['nombre_registro']="Nombre(s)";
+$lang['apellidos_registro']="Apellidos";
+$lang['contrasenia_registro']="Contrase&ntilde;a";
+$lang['repetir_contrasenia_registro']="Repetir contrase&ntilde;a";
+
+
+

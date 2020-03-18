@@ -29,3 +29,12 @@ $lang['frogot_password_page'] = "Forgot Your Password ?";
 $lang['frogot_password_page_leyenda'] = "Input your registered email to reset your password";
 $lang['tu_email'] = "Your Email";
 $lang['resetear_password'] = "Reset Your Password";
+
+//registro
+$lang['correo_registro']="Email";
+$lang['nombre_registro']="Name(s)";
+$lang['apellidos_registro']="Surnames";
+$lang['contrasenia_registro']="Password";
+$lang['repetir_contrasenia_registro']="Repeat password";
+
+
