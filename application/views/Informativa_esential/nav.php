@@ -33,8 +33,8 @@
 
       <div id="chatContainer" style="height: 600px;">
         <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
-        </div>   
-       
+        </div>
+
      </div>
    </div>
  </div>
@@ -43,7 +43,7 @@
      <div class="chat-window-one">
       <div id="chatContainer" style="height: 200px;">
         <iframe width="270" height="470" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
-        </div>   
+        </div>
      </div>
    </div>
  </div>
@@ -204,7 +204,7 @@
                     <ul class="main_nav_ul">
                          <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'home') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'oferta') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Oferta' : 'Oferta' ;?>" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'oferta') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa/Universidades' : 'OfertaEducativa/Universidades' ;?>" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'about') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                             <ul class="navi_2_dropdown">
@@ -238,5 +238,3 @@
             </div>
         </div>
     </div>
-    
-   

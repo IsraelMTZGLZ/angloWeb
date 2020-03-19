@@ -31,23 +31,22 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <ul class="protfoli_filter">
-                    <li class="active" data-filter="*"><a href="#"> all</a></li>
+                    <li  class="active" data-filter="*"><a href="#"> Todos</a></li>
 
-                    <li data-filter=".website"><a href="#">web design</a></li>
-                    <li data-filter=".design"><a href="#">graphic</a></li>
-                    <li data-filter=".ux_ui"><a href="#">logo</a></li>
-                    <li data-filter=".ux_uy"><a href="#">wordpress</a></li>
+                    <li data-filter=".website"><a href="#">Universidades</a></li>
+                    <li data-filter=".design"><a href="#">Preparatorias</a></li>
+                    <li data-filter=".ux_ui"><a href="#">Escuela de inglés</a></li>
                 </ul>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="row portfoli_inner">
 
                     <!-- Items -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ux_ui">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website">
                         <div class="portfolio_item">
-                            <img src="images/pc1.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_bathh.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> strot template <span>(web design) </span></a>
+                                <a href="#"> University of Bath <span>LEER MÁS </span></a>
                                 <p></p>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc1.jpg"> <i class="flaticon-add"></i>
@@ -58,11 +57,11 @@
                         </div>
                     </div>
                     <!-- Items -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website design ux_uy">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website">
                         <div class="portfolio_item">
-                            <img src="images/pc2.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_bristool.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                 <a href="#"> strot template <span>(web design) </span></a>
+                                 <a href="#"> University of Bristol <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc2.jpg"> <i class="flaticon-add"></i>
                                     </a>
@@ -72,11 +71,11 @@
                         </div>
                     </div>
                     <!-- Items -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 design ux_ui">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
                         <div class="portfolio_item">
-                            <img src="images/pc3.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_cats.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                               <a href="#"> strot template <span>(web design) </span></a>
+                               <a href="#"> CATS College <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc3.jpg"> <i class="flaticon-add"></i>
                                     </a>
@@ -86,11 +85,11 @@
                         </div>
                     </div>
                     <!-- Items -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ux_uy">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
                         <div class="portfolio_item">
-                            <img src="images/pc4.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> strot template <span>(web design) </span></a>
+                                <a href="#"> Cambridge School of Visual & Performing Arts <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc4.jpg"> <i class="flaticon-add"></i>
                                     </a>
@@ -100,38 +99,38 @@
                         </div>
                     </div>
                     <!-- Items -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ux_uy">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
                         <div class="portfolio_item">
-                            <img src="images/pc5.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_queen-mary.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                 <a href="#"> strot template <span>(web design) </span></a>
+                                 <a href="#"> Queen Mary University of London <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc5.jpg"> <i class="flaticon-add"></i>
                                     </a>
                                 </div>
                             </div>
-            <div class="portfolio_overlay"></div>
+                         <div class="portfolio_overlay"></div>
                         </div>
                     </div>
                     <!-- Items -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website design ux_ui">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website  ">
                         <div class="portfolio_item">
-                            <img src="images/pc6.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_east-anglia.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> strot template <span>(web design) </span></a>
+                                <a href="#"> University of East Anglia <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc6.jpg"> <i class="flaticon-add"></i>
                                     </a>
                                 </div>
                             </div>
-            <div class="portfolio_overlay"></div>
+                       <div class="portfolio_overlay"></div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ux_uy website design ux_ui">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website  ">
                         <div class="portfolio_item">
-                            <img src="images/pc7.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_west-of-england.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> strot template <span>(web design) </span></a>
+                                <a href="#"> University of the West of England <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc7.jpg"> <i class="flaticon-add"></i>
                                     </a>
@@ -140,21 +139,73 @@
             <div class="portfolio_overlay"></div>
                         </div>
                     </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ux_uy website">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
                         <div class="portfolio_item">
-                            <img src="images/pc8.jpg" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_into.png');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> strot template <span>(web design) </span></a>
+                                <a href="#"> Coventry University <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
                                     <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
                                     </a>
                                 </div>
                             </div>
-            <div class="portfolio_overlay"></div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_crandfiel.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Cranfield University <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
+                                    </a>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_new-castle.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Newcastle University<span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
+                                    </a>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_st-andrews.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> University of St Andrews <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
+                                    </a>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_collyers.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> University of St Andrews <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
+                                    </a>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
                         </div>
                     </div>
                 </div>
-      <div class="header_btn dark_btn gallery_btn float_left">
+              <div class="header_btn dark_btn gallery_btn float_left">
                         <a href="#">load more</a>
                 </div>
             </div>
