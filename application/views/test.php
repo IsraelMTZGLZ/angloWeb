@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Minimal example</title>
     <style type="text/css">
-        
-        
+
+
 
         .containerMap {
             max-width: 800px;
