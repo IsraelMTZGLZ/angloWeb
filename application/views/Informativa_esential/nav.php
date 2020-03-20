@@ -199,7 +199,7 @@
                     <ul class="main_nav_ul">
                          <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'home') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'oferta') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa/Universidades' : 'OfertaEducativa/Universidades' ;?>" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'Universidades') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa/Universidades' : 'OfertaEducativa/Universidades' ;?>" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'about') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                             <ul class="navi_2_dropdown">
@@ -207,6 +207,7 @@
                                    <a href="<?= ($this->session->flashdata('blog')) ? '../About' : 'About' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('nosotros');?></a>
                                 </li>
                                 <li class="parent">
+
                                     <a href="<?= ($this->session->flashdata('blog')) ? '../Services' : 'Services' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('servicios');?></a>
                                 </li>
                             </ul>

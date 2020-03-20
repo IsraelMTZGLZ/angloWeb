@@ -2,11 +2,11 @@
 <html class="no-js css-menubar" lang="en">
 
 <head>
-  
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Anglo Latino Education Partnership</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta name="description" content="¿Te interesa estudiar en Reino Unido? Te asesoramos de manera GRATUITA y apoyamos en tu educación en instituciones y colegios británicos de excelencia." />
   <meta name="keywords" content="Anglo,Latino,Estudiar,Reino Unido,Asesores,Gratuita,Britanicos " />
@@ -156,7 +156,7 @@
         <h3 class="font-size-34 text-center"><?=$this->lang->line('registrate');?></h3>
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social_registro');?>:</p>
         <div class="social-btns">
-            <a class="btn facebook" href="<?=$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a>
+            <a class="btn facebook" href="<?=@$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="Registro/googleRegister"><i class="fa fa-google"></i></a>
         </div>
         <?php if ($this->session->flashdata('facebook')=="Error") { ;?>
@@ -248,12 +248,12 @@
     </div>
   </div>
 <!-- Example Basic Animation -->
-                  
-                  
-                  
-                  
-                  
-              
+
+
+
+
+
+
               <!-- End Example Basic Animation -->
   <script data-cfasync="false" src="<?=base_url('resources/assets/Dashboard/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js');?>"></script><script src="<?=base_url('resources/assets/Dashboard/global/vendor/babel-external-helpers/babel-external-helpers599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery/jquery.min599c.js?v4.0.2');?>"></script>
@@ -348,7 +348,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/asscrollable.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/slidepanel.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/switchery.min599c.js?v4.0.2');?>"></script>
-  
+
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/matchheight.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jvectormap.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-appear.min599c.js')?>"></script>
@@ -396,7 +396,7 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-  
+
   <!-- Google Analytics -->
   <script>
     (function(i, s, o, g, r, a, m) {
