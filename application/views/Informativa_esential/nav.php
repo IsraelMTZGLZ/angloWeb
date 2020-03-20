@@ -13,12 +13,12 @@
 <!--Redes sociales bar-->
 
 <div class="icon-bar">
-  <a href="https://www.facebook.com/AngloLatino/" target="_blank" class="facebook d-none d-sm-block"><i class="fab fa-facebook-f"></i></a>
-  <a href="fb://page/6623204789" target="_blank" class="facebook d-block d-sm-none"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/AngloLatino/" target="_blank"  rel="noopener" class="facebook d-none d-sm-block"><i class="fab fa-facebook-f"></i></a>
+  <a href="fb://page/6623204789" aria-label="Ir al facebook de anglo" target="_blank"  rel="noopener" class="facebook d-block d-sm-none"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" aria-label="Mandar mensaje whatsapp anglo" target="_blank" rel="noopener" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
   <!--<a href="https://www.linkedin.com/company/anglo-latino-education-partnership-limited" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>-->
-  <a href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank" class="instagram"><i class="fab fa-instagram"></i></i></a>
-  <a href="tel:4422609090" class="google"><i class="fas fa-phone"></i></a>
+  <a href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank"  rel="noopener" class="instagram" aria-label="Ir a instagram de anglo"><i class="fab fa-instagram"></i></i></a>
+  <a href="tel:4422609090" class="google" aria-label="Llamar a anglo"><i class="fas fa-phone"></i></a>
 </div>
 
      <!-- chat start-->
@@ -27,13 +27,8 @@
      <div class="chat-window-one">
 
      <div id="chatContainer" style="height: 600px;">
-       <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
+       <iframe title="Asistente de anglo virtual" width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
        </div>
-
-
-      <div id="chatContainer" style="height: 600px;">
-        <iframe width="370" height="455" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
-        </div>
 
      </div>
    </div>
@@ -73,8 +68,8 @@
   <div id="iframeHolder"></div>
 	<!-- <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a> -->
 <!-- <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> -->
-<button type="button" class="chat-open-dialog" data-toggle="popover" data-content="<?=$this->lang->line('ayudar')?> </br><?=$this->lang->line('escribenos')?>"> <span class="fa fa-question"></span> </button>
-<button class="chat-button-destroy"> <span class="fas fa-window-close fa-2x" style="color: white;"></span> </button>
+<button type="button" aria-label="Abrir chat agente anglo" class="chat-open-dialog" data-toggle="popover" data-content="<?=$this->lang->line('ayudar')?> </br><?=$this->lang->line('escribenos')?>"> <span class="fa fa-question"></span> </button>
+<button class="chat-button-destroy" aria-label="Cerrar chat agente anglo"> <span class="fas fa-window-close fa-2x" style="color: white;"></span> </button>
 </div>
 
 <div class="inner_top_header">
@@ -137,7 +132,7 @@
     <div class="cp_navi_main_wrapper float_left">
         <div class="container-fluid">
             <div class="cp_logo_wrapper">
-                <a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>">
+                <a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>" aria-label="Ir al inicio de la pagina">
                     <img src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="" style="height: 50px !important">
                 </a>
             </div>
@@ -147,7 +142,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="cd-dropdown-wrapper">
-                                <a class="house_toggle" href="#0">
+                                <a class="house_toggle" href="#0" aria-label="Abrir menu de opciones">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px">
                                         <g>
                                             <g>
