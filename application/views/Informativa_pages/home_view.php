@@ -7,7 +7,7 @@
             <div class="main_slider_overly"></div>
 
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-captions caption-1">
                             <div class="container jn_container">

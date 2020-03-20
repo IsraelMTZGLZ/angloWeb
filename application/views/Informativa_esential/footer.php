@@ -3,30 +3,30 @@
         <div class="container">
             <ul>
                 <li>
-                    <a href="https://www.facebook.com/AngloLatino/" target="_blank" class="d-none d-sm-block">
+                    <a href="https://www.facebook.com/AngloLatino/" target="_blank"  rel="noopener" class="d-none d-sm-block">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="fb://page/6623204789" class="d-block d-sm-none">
+                    <a href="fb://page/6623204789" class="d-block d-sm-none" aria-label="Ir al facebook de anglo">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                    <a href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank"  rel="noopener" aria-label="Ir a instagram de anglo">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/angloedu" target="_blank">
+                    <a href="https://twitter.com/angloedu" target="_blank"  rel="noopener" aria-label="Ir a twitter de anglo">
                         <i class="fab fa-twitter"></i>
                     </a> 
                 </li>
                 <li> 
-                    <a href="https://www.linkedin.com/company/anglo-latino-education-partnership-limited" target="_blank">
+                    <a href="https://www.linkedin.com/company/anglo-latino-education-partnership-limited" target="_blank"  rel="noopener" aria-label="Ir al linkedin de anglo">
                         <i class="fab fa-linkedin-in"></i>
                     </a> 
                 </li>
                 <li> 
-                    <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank"  rel="noopener" aria-label="Mandar mensaje whatsapp anglo">
                         <i class="fab fa-whatsapp"></i>
                     </a> 
                 </li>
@@ -79,33 +79,39 @@
                     <div class="footer_widget footer_contact_wrapper float_left">
                         <h4><?=$this->lang->line('contactanos');?> </h4>
                         <ul>
-                            <li>
+                            <li style="border-bottom: none;">
                                 <span> Quer&eacutetaro
                                     <?=$this->lang->line('oficina');?>:
                                 </span>
                                 <p>
-                                    <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank">
+                                    <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank"  rel="noopener">
                                         Anillo Vial II Junipero Serra #2450
                                         Valle de Juriquilla II
                                         76230, Santiago de Querétaro, Qro.
                                     </a>
                                 </p>
+                                
+                            </li>
+                            <li>
                                 <span><?=$this->lang->line('telefono');?>: </span>
                                 <p>
                                     <a href="tel:4422609090">442 260 9090</a>
                                 </p>
                             </li>
-                            <li>
+                            <li style="border-bottom: none;">
                                 <span> CDMX
                                     <?=$this->lang->line('oficina');?>:
                                 </span>
                                 <p>
-                                    <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank">
+                                    <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank" rel="noopener">
                                     Paseo de la Reforma No 42, Piso 1, Oficina A-145 Col Centro,
                                     Del Cuauhtemoc,
                                     C.P. 06010, México DF
                                     </a>
                                 </p>
+                                
+                            </li>
+                            <li>
                                 <span><?=$this->lang->line('telefono');?>: </span>
                                 <p>
                                     <a href="tel:4422609090">55 3687 4477</a>
@@ -122,7 +128,7 @@
                     <span> Todos los Derechos Reservados © Anglo Latino. </span>
                     <br>*Las imágenes visuales/fotografías, logotipos/símbolos, conceptos, descripciones, etc., de las universidades, organizaciones, institutos, escuelas, etc., expuestas en esta página web, son propiedad intelectual única de cada una de ellas; por lo que deben ser tratadas como exclusivas y confidenciales. La reproducción e implantación parcial o total o uso por cualquier medio sin expreso consentimiento por escrito de alguna de dichas entidades educativas, es una directa violación a las Leyes de Propiedad Intelectual y Derechos de Autor a nivel internacional.
 
-                    <p style="margin-top: 20px;"><a style="color: #30a3f0;" href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blanck">Aviso de Privacidad para la Protección de Datos Personales.</a></p>
+                    <p style="margin-top: 20px;"><a style="color: #30a3f0;" href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blanck"  rel="noopener">Aviso de Privacidad para la Protección de Datos Personales.</a></p>
                 </div>
 
             </div>
