@@ -89,7 +89,7 @@
             </li>
 
 			<li class="javascript:;">
-                <a href="<?= ($this->session->flashdata('blog')) ? '../Oferta' : 'Oferta' ;?>"><?=$this->lang->line('oferta_educativa');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa/Universidades' : 'OfertaEducativa/Universidades' ;?>"><?=$this->lang->line('oferta_educativa');?></a>
             </li>
                <!-- .has-children -->
             <li class="has-children">
