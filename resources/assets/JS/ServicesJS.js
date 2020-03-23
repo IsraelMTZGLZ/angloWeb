@@ -1,5 +1,8 @@
 function _principalURL(){
+  //local api
   return "http://localhost/angloApi/";
+  //api web
+  //return "http://angloapi.anglopageone.com/";
 }
     
 function clearForm(_id){

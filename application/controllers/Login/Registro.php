@@ -92,9 +92,7 @@ class Registro extends MY_RootController {
                     "token"=>$userProfile['id'],
                     "urlFoto"=>$userProfile['picture']
 				);
-				//$myJSON = json_encode($data);
 				$responseApi = $this->_callApiRest('User/api/registro/',$data,"POST",null);
-				//var_dump($responseApi);
 				if ($responseApi['status']=='error') {
 					$this->session->set_flashdata('error',$responseApi);
 					return redirect('Login/Registro');
