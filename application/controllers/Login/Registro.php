@@ -94,11 +94,9 @@ class Registro extends MY_RootController {
 				//var_dump($responseApi);
 				if ($responseApi['status']=='error') {
 					$this->session->set_flashdata('error',$responseApi);
-					$this->facebook->destroy_session();
 					return redirect('Login/Registro');
 				}else{
 					$this->session->set_flashdata('facebookRegistro','yes');
-					$this->facebook->destroy_session();
 					return redirect('Login/Login');
 				}
 			}elseif($userProfile['error']){
