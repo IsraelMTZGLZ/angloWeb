@@ -28,9 +28,9 @@ class Registro extends MY_RootController {
                     "token"=>$userProfile['id'],
                     "urlFoto"=>$userProfile['picture']['data']['url']
 				);
-				$myJSON = json_encode($data);
+				//$myJSON = json_encode($data);
 				$responseApi = $this->_callApiRest('User/api/registro/',$data,"POST",null);
-				var_dump($responseApi);
+				//var_dump($responseApi);
 				if ($responseApi['status']=='error') {
 					$this->session->set_flashdata('error',$responseApi);
 					$this->facebook->destroy_session();
@@ -53,9 +53,9 @@ class Registro extends MY_RootController {
 	}
 
 	public function googleRegister(){
-		$clientId = '1'; //Google client ID
-		$clientSecret = '1'; //Google client secret
-		$redirectURL = 'http://localhost/angloWeb/Login/Registro/google_login/';
+		$clientId = '846059479473-nk4bq494i4lhb247j1rd3b6v8ltkj95s.apps.googleusercontent.com'; //Google client ID
+		$clientSecret = 'BrIhlAOnVDeC7QZ7G5dhlbib'; //Google client secret
+		$redirectURL = 'http://localhost/angloWeb/Login/Registro/googleRegister/';
 		
 		//Call Google API
 		$gClient = new Google_Client();
@@ -80,7 +80,36 @@ class Registro extends MY_RootController {
 		
 		if ($gClient->getAccessToken()) {
             $userProfile = $google_oauthV2->userinfo->get();
-			
+			if ($userProfile['id']) {
+				$data=array(
+					"nombres"=>$userProfile['given_name'],
+                    "apellidos"=>$userProfile['family_name'],
+                    "email"=>$userProfile['email'],
+                    "typeOauth"=>'Google',
+                    "token"=>$userProfile['id'],
+                    "urlFoto"=>$userProfile['picture']
+				);
+				//$myJSON = json_encode($data);
+				$responseApi = $this->_callApiRest('User/api/registro/',$data,"POST",null);
+				//var_dump($responseApi);
+				if ($responseApi['status']=='error') {
+					$this->session->set_flashdata('error',$responseApi);
+					$this->facebook->destroy_session();
+					return redirect('Login/Registro');
+				}else{
+					$this->session->set_flashdata('facebookRegistro','yes');
+					$this->facebook->destroy_session();
+					return redirect('Login/Login');
+				}
+			}elseif($userProfile['error']){
+				$this->session->set_flashdata('facebook','Error');
+				$this->facebook->destroy_session();
+				return redirect('Login/Registro');
+			}else{
+				$this->session->set_flashdata('facebook','Error');
+				$this->facebook->destroy_session();
+				return redirect('Login/Registro');
+			}
         } 
 		else 
 		{
