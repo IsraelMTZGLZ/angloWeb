@@ -20,8 +20,26 @@ class Registro extends MY_RootController {
 		if($this->facebook->is_authenticated()){
 			$userProfile = $this->facebook->request('get', '/me?fields=id,first_name,last_name,email,gender,locale,picture.width(600).height(600)');
 			if ($userProfile['id']) {
-				$this->facebook->destroy_session();
-				return redirect('Login/Registro');
+				$data=array(
+					"nombres"=>$userProfile['first_name'],
+                    "apellidos"=>$userProfile['last_name'],
+                    "email"=>$userProfile['email'],
+                    "typeOauth"=>'Facebook',
+                    "token"=>$userProfile['id'],
+                    "urlFoto"=>$userProfile['picture']['data']['url']
+				);
+				$myJSON = json_encode($data);
+				$responseApi = $this->_callApiRest('User/api/registro/',$data,"POST",null);
+				var_dump($responseApi);
+				if ($responseApi['status']=='error') {
+					$this->session->set_flashdata('error',$responseApi);
+					$this->facebook->destroy_session();
+					return redirect('Login/Registro');
+				}else{
+					$this->session->set_flashdata('facebookRegistro','yes');
+					$this->facebook->destroy_session();
+					return redirect('Login/Login');
+				}
 			}elseif($userProfile['error']){
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();

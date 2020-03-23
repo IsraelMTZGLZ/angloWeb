@@ -36,5 +36,9 @@ $lang['nombre_registro']="Name(s)";
 $lang['apellidos_registro']="Surnames";
 $lang['contrasenia_registro']="Password";
 $lang['repetir_contrasenia_registro']="Repeat password";
+$lang['select_registro']="Choose one option";
+$lang['selectM_registro']="Male";
+$lang['selectF_registro']="Female";
+
 
 

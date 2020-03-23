@@ -46,7 +46,6 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/asrange/asRange.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/nprogress/nprogress.min599c.css');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/ladda/ladda.min599c.css?v4.0.2');?>">
-  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/toastr/toastr.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/select2/select2.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css"href="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min599c.css?v4.0.2');?>">
@@ -78,7 +77,6 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/uikit/icon.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/advanced/animation.min599c.css');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/uikit/buttons.min599c.css?v4.0.2');?>">
-  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/advanced/toastr.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/forms/advanced.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/tables/datatable.min599c.css?v4.0.2');?>">
 
@@ -167,13 +165,27 @@
             </button>
           </div>
         <?php } ;?>
-        <form method="post" action="">
+        <?php if ($this->session->flashdata('error')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=$this->session->flashdata('error')['message']?>
+            <?php foreach ($this->session->flashdata('error')['validations'] as $value) { ;?>
+                <p> <?= $value ?></p>
+            <?php  } ;?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <div id="responseText" style="margin-top: 20px;margin-bottom: -5px;">
+        </div>
+        <form id="registroForm">
+          <input type="hidden" value="Registro" name="typeOauth" id="typeOauth">
           <div class="form-group">
             <div class="input-group input-group-icon">
               <span class="input-group-addon" style="background-color: white;">
                 <span class="icon wb-envelope" aria-hidden="true" style="color: #0bb2d4"></span>
               </span>
-              <input type="email" class="form-control" placeholder="<?=$this->lang->line('correo_registro')?>" id="inputPassword" name="password">
+              <input type="email" class="form-control" placeholder="<?=$this->lang->line('correo_registro')?>" id="email" name="email">
             </div>
           </div>
           <div class="form-group">
@@ -181,7 +193,7 @@
               <span class="input-group-addon" style="background-color: white;">
               <i class="fas fa-user" aria-hidden="true" style="color: #0bb2d4"></i>
               </span>
-              <input type="text" class="form-control" placeholder="<?=$this->lang->line('nombre_registro')?>" id="inputPassword" name="password">
+              <input type="text" class="form-control" placeholder="<?=$this->lang->line('nombre_registro')?>" id="nombres" name="nombres">
             </div>
           </div>
           <div class="form-group">
@@ -189,23 +201,19 @@
               <span class="input-group-addon" style="background-color: white;">
               <i class="fas fa-user" aria-hidden="true" style="color: #0bb2d4"></i>
               </span>
-              <input type="text" class="form-control" placeholder="<?=$this->lang->line('apellidos_registro')?>" id="inputPassword" name="password">
+              <input type="text" class="form-control" placeholder="<?=$this->lang->line('apellidos_registro')?>" id="apellidos" name="apellidos">
             </div>
           </div>
           <div class="form-group">
             <div class="input-group input-group-icon">
               <span class="input-group-addon" style="background-color: white;">
-              <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
+              <i class="icon fa-mars-stroke " aria-hidden="true" style="color: #0bb2d4"></i>
               </span>
-              <input type="password" class="form-control" placeholder="<?=$this->lang->line('contrasenia_registro')?>" id="inputPassword" name="password">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group input-group-icon">
-              <span class="input-group-addon" style="background-color: white;">
-              <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
-              </span>
-              <input type="password" class="form-control" placeholder="<?=$this->lang->line('repetir_contrasenia_registro')?>" id="inputPassword" name="password">
+              <select id="genero" name="genero" class="form-control">
+                <option value="" disabled="disabled" selected="selected"><?=$this->lang->line('select_registro')?></option>
+                <option value="Masculino"><?=$this->lang->line('selectM_registro')?></option>
+                <option value="Femenino"><?=$this->lang->line('selectF_registro')?></option>
+              </select>
             </div>
           </div>
           <div class="form-group clearfix">
@@ -396,24 +404,69 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
+  
+  
+  <script type="text/javascript">
+    $(function(){
 
-  <!-- Google Analytics -->
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '<?=base_url('resources/assets/Dashboard/www.google-analytics.com/analytics.js')?>',
-      'ga');
+      let response="";
+      $(document).on('submit','#registroForm',function(event){
+        event.preventDefault();
 
-    ga('create', 'UA-65522665-1', 'auto');
-    ga('send', 'pageview');
+        clearFormIcons('registroForm');
+        _url = "";
+        _url = _principalURL()+"User/api/registro/";
+        _method = "POST";
+      
+      
+        $.ajax({
+          url: _url,
+          method : _method,
+          headers : {
+            'X-API-KEY':'ANGLOKEY'
+          },
+          data: $(document).find('#registroForm').serialize(),
+          success : function(_response){
+          response = JSON.stringify(_response);
+
+          if (_response.status=="error") {
+            $.each(_response.validations,function(key,message){
+              $(document).find('#'+key).addClass('is-invalid').closest('div').after('<div class="invalid-feedback" style="display:inline;">'+message+'</div>');
+            });
+
+            setTimeout(function(){
+            
+              $(document).find('#responseText').html('<div class="summary-errors alert alert-danger alert-dismissible fade show" role="alert">'+
+                '<strong>Error!</strong> '+_response.message+
+                '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                '<span aria-hidden="true">&times;</span>'+
+                '</button>'+
+                '</div>'
+              );
+            },2000);
+          }
+          if (_response.status=="success") {
+            $(document).find('#responseText').html(
+              '<div class="alert alert-success fade show" role="alert">'+
+              '<h4 class="alert-heading">Revisa tu correo!</h4>'+
+              'En tu correo se mando la contraseña temporal para<br/>'+
+              'ingresar al sistema,Ve a iniciar sesion<br/>'+
+              'e ingresa tu contraseña y usuario<br/>'+
+              '</div>'
+            );
+          }
+          
+          tostada(_response.status,_response.message);
+          
+
+          },error : function(err){
+            
+          }
+        });
+      });
+    });
+    
   </script>
 
 </body>
