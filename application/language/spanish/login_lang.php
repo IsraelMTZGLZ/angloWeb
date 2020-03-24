@@ -36,6 +36,11 @@ $lang['nombre_registro']="Nombre(s)";
 $lang['apellidos_registro']="Apellidos";
 $lang['contrasenia_registro']="Contrase&ntilde;a";
 $lang['repetir_contrasenia_registro']="Repetir contrase&ntilde;a";
+$lang['select_registro']="Elige una opcion";
+$lang['selectM_registro']="Masculino";
+$lang['selectF_registro']="Femenino";
+
+
 
 
 

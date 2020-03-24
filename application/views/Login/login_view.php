@@ -167,6 +167,14 @@
             </button>
           </div>
         <?php } ;?>
+        <?php if ($this->session->flashdata('facebookRegistro')=="yes") { ;?>
+          <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Bienvenido!</strong> Ya tienes una cuenta ahora ingresa desde la red social que elegiste
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
         <form method="post" action="">
           <div class="form-group">
             <div class="input-group input-group-icon">

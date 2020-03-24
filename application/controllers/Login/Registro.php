@@ -20,8 +20,26 @@ class Registro extends MY_RootController {
 		if($this->facebook->is_authenticated()){
 			$userProfile = $this->facebook->request('get', '/me?fields=id,first_name,last_name,email,gender,locale,picture.width(600).height(600)');
 			if ($userProfile['id']) {
-				$this->facebook->destroy_session();
-				return redirect('Login/Registro');
+				$data=array(
+					"nombres"=>$userProfile['first_name'],
+                    "apellidos"=>$userProfile['last_name'],
+                    "email"=>$userProfile['email'],
+                    "typeOauth"=>'Facebook',
+                    "token"=>$userProfile['id'],
+                    "urlFoto"=>$userProfile['picture']['data']['url']
+				);
+				//$myJSON = json_encode($data);
+				$responseApi = $this->_callApiRest('User/api/registro/',$data,"POST",null);
+				//var_dump($responseApi);
+				if ($responseApi['status']=='error') {
+					$this->session->set_flashdata('error',$responseApi);
+					$this->facebook->destroy_session();
+					return redirect('Login/Registro');
+				}else{
+					$this->session->set_flashdata('facebookRegistro','yes');
+					$this->facebook->destroy_session();
+					return redirect('Login/Login');
+				}
 			}elseif($userProfile['error']){
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();
@@ -37,7 +55,10 @@ class Registro extends MY_RootController {
 	public function googleRegister(){
 		$clientId = '1'; //Google client ID
 		$clientSecret = '1'; //Google client secret
-		$redirectURL = 'http://localhost/angloWeb/Login/Registro/google_login/';
+		//pagina
+		//$redirectURL = 'http://anglopageone.com/Login/Registro/googleRegister/';
+		//interno
+		$redirectURL = 'http://localhost/angloWeb/Login/Registro/googleRegister/';
 		
 		//Call Google API
 		$gClient = new Google_Client();
@@ -62,7 +83,32 @@ class Registro extends MY_RootController {
 		
 		if ($gClient->getAccessToken()) {
             $userProfile = $google_oauthV2->userinfo->get();
-			
+			if ($userProfile['id']) {
+				$data=array(
+					"nombres"=>$userProfile['given_name'],
+                    "apellidos"=>$userProfile['family_name'],
+                    "email"=>$userProfile['email'],
+                    "typeOauth"=>'Google',
+                    "token"=>$userProfile['id'],
+                    "urlFoto"=>$userProfile['picture']
+				);
+				$responseApi = $this->_callApiRest('User/api/registro/',$data,"POST",null);
+				if ($responseApi['status']=='error') {
+					$this->session->set_flashdata('error',$responseApi);
+					return redirect('Login/Registro');
+				}else{
+					$this->session->set_flashdata('facebookRegistro','yes');
+					return redirect('Login/Login');
+				}
+			}elseif($userProfile['error']){
+				$this->session->set_flashdata('facebook','Error');
+				$this->facebook->destroy_session();
+				return redirect('Login/Registro');
+			}else{
+				$this->session->set_flashdata('facebook','Error');
+				$this->facebook->destroy_session();
+				return redirect('Login/Registro');
+			}
         } 
 		else 
 		{

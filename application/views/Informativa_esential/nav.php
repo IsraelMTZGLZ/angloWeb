@@ -37,7 +37,7 @@
    <div class="chat-windows">
      <div class="chat-window-one">
       <div id="chatContainer" style="height: 200px;">
-        <iframe width="270" height="470" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
+        <iframe title="Asistente de anglo virtual" width="270" height="470" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/88670589-0d1c-4d08-9ca8-0df56768162f"></iframe>
         </div>
      </div>
    </div>

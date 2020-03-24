@@ -38,6 +38,9 @@ class Login extends MY_RootController {
 	{
 		$clientId = '1'; //Google client ID
 		$clientSecret = '1'; //Google client secret
+		//google
+		//$redirectURL = 'http://anglopageone.com/Login/Login/google_login/';
+		//local
 		$redirectURL = 'http://localhost/angloWeb/Login/Login/google_login/';
 		
 		//Call Google API
