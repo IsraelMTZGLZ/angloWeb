@@ -56,10 +56,10 @@
                                 <p></p>
                                 <div class="zoom_popup">
 
-                                    <a> <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscribeModal">
+                                    <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscribeModal">
 </button></i>
 
-                                    </a>
+
 
 
                                 </div>
@@ -73,10 +73,10 @@
                             <img src="<?=base_url('resources/assets/Informativa/images/u_bristool.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                  <a href="#"> University of Bristol <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc2.jpg"> <i class="flaticon-add"></i>
-                                    </a>
-                                </div>
+                                 <div class="zoom_popup">
+                                      <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bristolModal"></button></i>
+
+                                 </div>
                             </div>
             <div class="portfolio_overlay"></div>
                         </div>
@@ -87,10 +87,9 @@
                             <img src="<?=base_url('resources/assets/Informativa/images/u_cats.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                <a href="#"> CATS College <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc3.jpg"> <i class="flaticon-add"></i>
-                                    </a>
-                                </div>
+                               <div class="zoom_popup">
+                                    <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catsModal"></button></i>
+                               </div>
                             </div>
             <div class="portfolio_overlay"></div>
                         </div>
@@ -102,11 +101,10 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Cambridge School of Visual & Performing Arts <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc4.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#artsModal"></button></i>
                                 </div>
                             </div>
-            <div class="portfolio_overlay"></div>
+                          <div class="portfolio_overlay"></div>
                         </div>
                     </div>
                     <!-- Items -->
@@ -115,10 +113,9 @@
                             <img src="<?=base_url('resources/assets/Informativa/images/u_queen-mary.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                  <a href="#"> Queen Mary University of London <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc5.jpg"> <i class="flaticon-add"></i>
-                                    </a>
-                                </div>
+                                 <div class="zoom_popup">
+                                      <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#queenModal"></button></i>
+                                 </div>
                             </div>
                          <div class="portfolio_overlay"></div>
                         </div>
@@ -130,13 +127,13 @@
                             <div class="portfolio_hover">
                                 <a href="#"> University of East Anglia <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc6.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ueaModal"></button></i>
                                 </div>
                             </div>
                        <div class="portfolio_overlay"></div>
                         </div>
                     </div>
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website  ">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_west-of-england.jpg');?>" alt="">
@@ -446,32 +443,40 @@
             <h3 class="col-md-4 "></h3> -->
 
         	</div>
-          <div class="modal-body d-none d-lg-block d-xl-block">
+          <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4">Fundación: 1966</div>
-                <div class="col-md-4 ">Ciudad de Bath (1hr 50 mins de Londres).</div>
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1966 Ciudad de Bath (1hr 50 mins de Londres).</div>
               </div>
               <div class="row">
                 <hr>
+
               </div>
               <div class="row">
-                <div class="col-md-4">Ranking:</div>
-                <div class="col-md-4">Ranking Mundial QS 172 The Guardian University Guide Top 10.</div>
-                <div class="col-md-4">Ocupa el 4º lugar general de 122 en la encuesta de satisfacción estudiantil 2018.</div>
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">Ranking Mundial QS 172 The Guardian University Guide Top 10.</div>
+                <div class="col-md-6">Ocupa el 4º lugar general de 122 en la encuesta de satisfacción estudiantil 2018.</div>
                 <br>
               </div>
 
-
               <div class="row">
-                <div class="col-md-4">
-                  Facultades:
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
 
                     <ul>
-                      <li class="col-md-9 ml-auto" type="disc">Ingeniería y Diseño</li>
-                      <li class="col-md-9 ml-auto" type="disc">Humanidades y Ciencias Sociales</li>
-                      <li class="col-md-9 ml-auto" type="disc">Negocios</li>
-                      <li class="col-md-9 ml-auto" type="disc">Ciencias</li>
+                      <li class="col-md-12 ml-auto">Ingeniería y Diseño</li>
+                      <li class="col-md-12 ml-auto">Humanidades y Ciencias Sociales</li>
+                      <li class="col-md-12 ml-auto">Negocios</li>
+                      <li class="col-md-12 ml-auto">Ciencias</li>
                     </ul>
 
                 </div>
@@ -480,9 +485,401 @@
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-4">Ciudad romana, patrimonio mundial de la Humanidad por la UNESCO.</div>
+                <div class="col-md-12">Ciudad romana, patrimonio mundial de la Humanidad por la UNESCO.</div>
               </div>
             </div>
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bristolModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -60px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_bristol.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_bristol.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1876 Bristol (1h 40min de Londres)..</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">Empleabilidad: los egresados de la Universidad ranqueados en el 6º lugar a nivel nacional, 47º lugar a nivel mundial.</div>
+                <div class="col-md-6">Ranking Mundial QS 49; 9ª  en el Reino Unido; 4ª  por su investigación: RAE.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Artes</li>
+                      <li class="col-md-12 ml-auto">Ingeniería</li>
+                      <li class="col-md-12 ml-auto">Ciencias de la Salud</li>
+                      <li class="col-md-12 ml-auto">Ciencias Sociales y Derecho</li>
+                      <li class="col-md-12 ml-auto">Ciencias de la vida</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Bristol nombrada la mejor ciudad para vivir en UK (Sunday Times 2017).</div>
+              </div>
+            </div>
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="artsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1985 A 50 min de Londres.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">Está asociada con la revista Hearst Magazines UK (Editora de Elle y Cosmopolitan).</div>
+                <div class="col-md-6">Programas acreditados por la Universidad de los Artes, Londres.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Arte y Diseño</li>
+                      <li class="col-md-12 ml-auto">Moda</li>
+                      <li class="col-md-12 ml-auto">Drama y Danza</li>
+                      <li class="col-md-12 ml-auto">Música</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.csvpa.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="catsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1952.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">3a en el ranking de las mejores preparatorias del UK.</div>
+                <div class="col-md-6">6ª en el Ranking de Escuelas Independientes de Internado. La mejor para estudiantes internacionales.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Ofrece cursos de secundaria y de preparatoria para entrar en las mejores universidades del UK.</li>
+                      <li class="col-md-12 ml-auto">36% de los profesores son egresados de las Universidades de Oxford y Cambridge.</li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <!-- <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div> -->
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="queenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1785 Centro de Londres.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">QS Ranking Mundial de Universidades (2018) 119.</div>
+                <div class="col-md-6">Times Higher Education 46 a nivel europeo. </div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Humanidades y Ciencias Sociales</li>
+                      <li class="col-md-12 ml-auto">Ciencia e Ingeniería</li>
+                      <li class="col-md-12 ml-auto">Medicina y Odontología</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">En 1785 fundó la primera escuela de Medicina de Inglaterra en el Royal London Hospital.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.qmul.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9y6eeEK1oM"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="ueaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> Norwich  (90 mins) de Londres.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">THE Ranking Mundial 2020: 192.</div>
+                <div class="col-md-6">Ranqueada 10ª en UK por la calidad de su investigación.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Artes y Humanidades</li>
+                      <li class="col-md-12 ml-auto">Medicina y Ciencias de la Salud</li>
+                      <li class="col-md-12 ml-auto">Ciencia</li>
+                      <li class="col-md-12 ml-auto">Ciencias Sociales</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Norwich es la primera ciudad Patrimonio Mundial de la Literatura.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="http://www.uea.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTF9EOqy9L8"></iframe>
+            </div>
+            </div>
+
           </div>
             <div class="bottom-strip"></div>
         </div>
