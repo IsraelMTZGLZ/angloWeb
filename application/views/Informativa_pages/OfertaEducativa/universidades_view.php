@@ -10,14 +10,12 @@
                     <!-- section_heading start -->
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
 
-                        <h1> portfolio II column</h1>
+                        <h1> <?=$this->lang->line('offer_edictiva_us');?></h1>
                     </div>
                     <div class="col-lg-12 col-md-12 col-12 col-sm-12">
                         <div class="sub_title_section">
                             <ul class="sub_title">
-                                <li> <a href="#"> Home </a> &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp; </li>
 
-                                <li>portfolio</li>
                             </ul>
                         </div>
                     </div>
@@ -140,11 +138,10 @@
                             <div class="portfolio_hover">
                                 <a href="#"> University of the West of England <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc7.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uweModal"></button></i>
                                 </div>
                             </div>
-            <div class="portfolio_overlay"></div>
+                          <div class="portfolio_overlay"></div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
@@ -153,8 +150,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Coventry University <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#coventryModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -166,8 +162,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Cranfield University <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cranfieldModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -179,8 +174,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Newcastle University<span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#castleModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -192,8 +186,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> University of St Andrews <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#andrewModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -641,7 +634,7 @@
           </div>
             <div class="bottom-strip"></div>
         </div>
-    </div>
+
 </div>
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="catsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -720,7 +713,7 @@
           </div>
             <div class="bottom-strip"></div>
         </div>
-    </div>
+
 </div>
 
 
@@ -801,7 +794,7 @@
           </div>
             <div class="bottom-strip"></div>
         </div>
-    </div>
+
 </div>
 
 
@@ -883,5 +876,441 @@
           </div>
             <div class="bottom-strip"></div>
         </div>
-    </div>
+
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="uweModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">Guardian University Guide 28 en Reino Unido.</div>
+                <div class="col-md-6">11vo en el UK según encuesta de satisfacción estudiantil.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Artes</li>
+                      <li class="col-md-12 ml-auto">Industrias creativas y Educación</li>
+                      <li class="col-md-12 ml-auto">Informática</li>
+                      <li class="col-md-12 ml-auto">Negocios y Derecho</li>
+                      <li class="col-md-12 ml-auto">Medio Ambiente y Tecnología</li>
+                      <li class="col-md-12 ml-auto">Salud y Ciencias aplicadas</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">The Guardian nombro a Bristol como una de las 10 ciudades más felices para vivir y trabajar en el Reino Unido.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.uwe.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/scLpnIm-XZo"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+
+
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="coventryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_conventru.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_coventry.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.1843 declarada universidad en 1987.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">Calidad de enseñanza calificada como GOLD.</div>
+                <div class="col-md-6">Ranking de universidades del Reino Unido 15.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Ingeniería</li>
+                      <li class="col-md-12 ml-auto">Medio Ambiente e Informática</li>
+                      <li class="col-md-12 ml-auto">Artes y Humanidades</li>
+                      <li class="col-md-12 ml-auto">Salud y Ciencias de la Vida</li>
+                      <li class="col-md-12 ml-auto">Escuela de Negocios</li>
+                      <li class="col-md-12 ml-auto">Facultad de Derecho</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.coventry.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ULS0FN2kjqg"></iframe>
+            </div>
+            <hr>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_neMHKZo1AI"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cranfieldModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cranfield.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_crandfiel.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1946 Cranfield (1 hr de Londres)..</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">Clasificación mundial de QS: 39 Universidad exclusivamente de estudios de posgrado.</div>
+                <div class="col-md-6">El ratio estudiantes: profesores es de 5:1, el segundo mejor en el UK. </div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Aeroespacial</li>
+                      <li class="col-md-12 ml-auto">Defensa y Seguridad</li>
+                      <li class="col-md-12 ml-auto">Energía</li>
+                      <li class="col-md-12 ml-auto">Medioambiental y Agroalimentario</li>
+                      <li class="col-md-12 ml-auto">Manufactura</li>
+                      <li class="col-md-12 ml-auto">Sistema de Transporte</li>
+                      <li class="col-md-12 ml-auto">Agua</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">La única universidad con su propio aeropuerto operativo; se utiliza para la investigación y el diseño aeroespacial.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.cranfield.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FpdZKWHX-7g"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+
+  <div class="modal fade text-center py-5 subscribeModal-lg "  id="castleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_newcastle.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_new-castle.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1834 4 h de Londres. Campus en London.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">QS Ranking Mundial de Universidades 146..</div>
+                <div class="col-md-6">9a en Times Higher Education Europe Teaching Rankings 2018. </div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Humanidades y Ciencias Sociales</li>
+                      <li class="col-md-12 ml-auto">Ciencias Médicas</li>
+                      <li class="col-md-12 ml-auto">Ciencias y Física</li>
+                      <li class="col-md-12 ml-auto">Agricultura e Ingeniería</li>
+                      <li class="col-md-12 ml-auto">Ciencias Biológicas</li>
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">En la ciudad de Newcastle, se encuentra el Center of Life (centro de investigación biomédica)..</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="http://www.ncl.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/An1TyEODZ2Y"></iframe>
+            </div>
+            <hr>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DcP4YPY7N9g"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="andrewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1413 1hr 30 mins de Londres en avión.</div>
+            </div>
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">QS Ranking Mundial de Universidades 100.</div>
+              <div class="col-md-6">No 1 en Escocia y No 2 en UK: Guardian University Guide 2020.  </div>
+              <br>
+            </div>
+
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+              <b>  Facultades:</b>
+
+                  <ul>
+                    <li class="col-md-12 ml-auto">Biología</li>
+                    <li class="col-md-12 ml-auto">Medicina</li>
+                    <li class="col-md-12 ml-auto">Física y Astronomía</li>
+                    <li class="col-md-12 ml-auto">Química</li>
+                    <li class="col-md-12 ml-auto">Informática</li>
+                    <li class="col-md-12 ml-auto">Matemáticas y Estadísticas</li>
+                    <li class="col-md-12 ml-auto">Dirección de Empresas</li>
+                    <li class="col-md-12 ml-auto">Economía</li>
+                    <li class="col-md-12 ml-auto">Inglés</li>
+                  </ul>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Los Duques de Cambridge, el Príncipe William y Kate, se conocieron mientras estudiaban.</div>
+
+                <div class="header_btn dark_btn footer_btn float_left">
+                    <a href="https://www.st-andrews.ac.uk/" target="_blank">Web Page</a>
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x8O5kv47zn8"></iframe>
+          </div>
+
+          <hr>
+
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
 </div>

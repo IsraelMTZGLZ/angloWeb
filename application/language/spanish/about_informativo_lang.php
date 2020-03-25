@@ -27,7 +27,7 @@ La educación británica te brinda inspiración para desarrollar tus conocimient
 
 
 
-
+$lang['offer_edictiva_us'] = "Oferta educativa";
 
 $lang['mision_titulo']="Misión";
 $lang['mision_contenido']="Ofrecer información y asesoría a estudiantes mexicanos y

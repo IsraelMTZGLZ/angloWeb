@@ -36,6 +36,9 @@ educational, professional and personal; and so, for this
 individualized advice, maximize the number of
 students registering in our institutions
 partners";
+
+$lang['offer_edictiva_us'] = "Educative offer";
+
 $lang['english']="English";
 $lang['spanish']="Spanish";
 $lang['nuevo_about']="New with Us?";
