@@ -37,7 +37,6 @@
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/asrange/asRange.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/nprogress/nprogress.min599c.css');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/ladda/ladda.min599c.css?v4.0.2');?>">
-  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/toastr/toastr.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/select2/select2.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min599c.css?v4.0.2');?>">
@@ -69,7 +68,6 @@
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/uikit/icon.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/advanced/animation.min599c.css');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/uikit/buttons.min599c.css?v4.0.2');?>">
-  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/advanced/toastr.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/forms/advanced.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/tables/datatable.min599c.css?v4.0.2');?>">
 

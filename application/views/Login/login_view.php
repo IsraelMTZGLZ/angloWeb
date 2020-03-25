@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
 
 
-  <link rel="apple-touch-icon" href="<?=base_url('resources/assets/Dashboard/center/assets/images/apple-touch-icon.png');?>">
+  <link rel="apple-touch-icon" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>">
   <link rel="shortcut icon" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>">
 
   <!-- Stylesheets -->
@@ -175,13 +175,40 @@
             </button>
           </div>
         <?php } ;?>
-        <form method="post" action="">
+        <?php if ($this->session->flashdata('message')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=@$this->session->flashdata('message')->message?>
+            <br>
+            <ul>
+            <?php foreach (isset($this->session->flashdata('message')->validations) ? $this->session->flashdata('message')->validations : array() as $value) { ;?>
+                <li type="circle"> <?= $value ?> </li>
+            <?php  } ;?>
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <?php if ($this->session->flashdata('error')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=$this->session->flashdata('error')['message']?>
+            <ul>
+            <?php foreach (isset($this->session->flashdata('error')['validations']) ? $this->session->flashdata('message')->validations : array() as $value) { ;?>
+                <li type="circle"> <?= $value ?> </li>
+            <?php  } ;?>
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <form action="<?=base_url('/Login/Login/autenticar');?>" method="post" id="formLogin">
           <div class="form-group">
             <div class="input-group input-group-icon">
               <span class="input-group-addon" style="background-color: white;">
                 <span class="icon wb-envelope" aria-hidden="true" style="color: #0bb2d4"></span>
               </span>
-              <input type="email" class="form-control" placeholder="Email" id="inputPassword" name="password">
+              <input type="email" class="form-control <?=@ ($this->session->flashdata('message')->validations->email) ? 'is-invalid' : '';  ?>" placeholder="Email" id="email" name="email" required>
             </div>
           </div>
           <div class="form-group">
@@ -189,14 +216,14 @@
               <span class="input-group-addon" style="background-color: white;">
               <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
               </span>
-              <input type="password" class="form-control" placeholder="Password" id="inputPassword" name="password">
+              <input type="password" class="form-control <?=@ ($this->session->flashdata('message')->validations->email) ? 'is-invalid' : '';  ?><?=@ ($this->session->flashdata('message')->validations->password) ? 'is-invalid' : '';  ?>" placeholder="Password" id="password" name="password" required minlength="5">
             </div>
           </div>
           <div class="form-group clearfix">
             <a class="float-right" href="Login/forgotPassword"><?=$this->lang->line('forgot_password')?></a>
           </div>
           <div class="animation-example animation-hover hover">
-            <button type="submit" class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('login')?></button>
+            <button class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('login')?></button>
           </div>
         </form>
 
@@ -381,24 +408,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   
-  <!-- Google Analytics -->
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '<?=base_url('resources/assets/Dashboard/www.google-analytics.com/analytics.js')?>',
-      'ga');
-
-    ga('create', 'UA-65522665-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  
   <script type="text/javascript">
     $(function(){
       

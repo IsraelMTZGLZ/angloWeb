@@ -12,6 +12,9 @@ class Login extends MY_RootController {
 
 	public function index()
 	{
+		if (@$this->session->userdata('user_sess')->email) {
+			redirect('Dashboard/Home');
+		}
 		unset($_SESSION['blog']);
 		$this->load->view('Login/login_view');
 	}
@@ -21,23 +24,23 @@ class Login extends MY_RootController {
 			$userProfile = $this->facebook->request('get', '/me?fields=id,first_name,last_name,email,gender,locale,picture.width(600).height(600)');
 			if ($userProfile['id']) {
 				$this->facebook->destroy_session();
-				redirect('Login/Login');
+				redirect('Login');
 			}elseif($userProfile['error']){
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();
-				redirect('Login/Login');
+				redirect('Login');
 			}else{
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();
-				redirect('Login/Login');
+				redirect('Login');
 			}
 		}	
 	}
 
 	public function google_login()
 	{
-		$clientId = '1'; //Google client ID
-		$clientSecret = '1'; //Google client secret
+		$clientId = '846059479473-nk4bq494i4lhb247j1rd3b6v8ltkj95s.apps.googleusercontent.com'; //Google client ID
+		$clientSecret = 'BrIhlAOnVDeC7QZ7G5dhlbib'; //Google client secret
 		//google
 		//$redirectURL = 'http://anglopageone.com/Login/Login/google_login/';
 		//local
@@ -67,9 +70,49 @@ class Login extends MY_RootController {
 		
 		if ($gClient->getAccessToken()) {
             $userProfile = $google_oauthV2->userinfo_v2_me->get();
-			echo "<pre>";
-			print_r($userProfile);
-			die;
+			if ($userProfile['id']) {
+				$data=array(
+                    "email"=>$userProfile['email'],
+                    "token"=>$userProfile['id']
+				);
+				$data_to_string=json_encode($data);
+			//peticiones http
+			$curl_request = curl_init("http://localhost/angloApi/User/api/loginPlus");
+
+			curl_setopt($curl_request,CURLOPT_CUSTOMREQUEST,"POST");
+			curl_setopt($curl_request,CURLOPT_HTTPHEADER,array(
+				"x-api-key: ANGLOKEY",
+				"Content-Type: application/json"
+			));
+			curl_setopt($curl_request,CURLOPT_RETURNTRANSFER,TRUE);
+			curl_setopt($curl_request,CURLOPT_POSTFIELDS,$data_to_string);
+
+			$response = curl_exec($curl_request);
+			if (!$response) {
+				$response= json_encode(array(
+					"status"=>curl_error($curl_request),
+					"message"=>curl_errno($curl_request)
+				));
+			}
+
+			curl_close($curl_request);
+			$response =json_decode($response);
+			//echo var_dump($response);
+
+			if ($response->status=="success") {
+				$this->session->set_userdata('user_sess',$response->data);
+				redirect("Dashboard/Home");
+			}else{
+				$this->session->set_flashdata('message',$response);
+				redirect('Login');
+			}	
+			}elseif($userProfile['error']){
+				$this->session->set_flashdata('facebook','Error');
+				return redirect('Login');
+			}else{
+				$this->session->set_flashdata('facebook','Error');
+				return redirect('Login');
+			}
         } 
 		else 
 		{
@@ -77,6 +120,60 @@ class Login extends MY_RootController {
 		    header("Location: $url");
             exit;
         }
+	}
+
+	public function autenticar()
+	{
+		if ($this->input->post('email') && $this->input->post('password')) {
+			$data= array(
+				"email"=>$this->input->post('email'),
+				"password"=>$this->input->post('password')
+			);
+			//decodificar
+			$data_to_string=json_encode($data);
+			//peticiones http
+			$curl_request = curl_init("http://localhost/angloApi/User/api/loginNativo");
+
+			curl_setopt($curl_request,CURLOPT_CUSTOMREQUEST,"POST");
+			curl_setopt($curl_request,CURLOPT_HTTPHEADER,array(
+				"x-api-key: ANGLOKEY",
+				"Content-Type: application/json"
+			));
+			curl_setopt($curl_request,CURLOPT_RETURNTRANSFER,TRUE);
+			curl_setopt($curl_request,CURLOPT_POSTFIELDS,$data_to_string);
+
+			$response = curl_exec($curl_request);
+			if (!$response) {
+				$response= json_encode(array(
+					"status"=>curl_error($curl_request),
+					"message"=>curl_errno($curl_request)
+				));
+			}
+
+			curl_close($curl_request);
+			$response =json_decode($response);
+			//echo var_dump($response);
+
+			if ($response->status=="success") {
+				$this->session->set_userdata('user_sess',$response->data);
+				redirect("Dashboard/Home");
+			}else{
+				$this->session->set_flashdata('message',$response);
+				redirect('Login');
+			}	
+
+		}else{
+			//flashdata
+			$this->session->set_flashdata('message',"No se envio parametros");
+			redirect('Login');
+		}
+		
+	}
+
+	function logout()
+	{
+		$this->session->sess_destroy();
+		redirect('Login');
 	}
 
 	

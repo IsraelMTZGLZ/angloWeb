@@ -8,20 +8,20 @@ class MY_RootController extends CI_Controller {
         parent::__construct();
     }
 
-    public function _initialPage() {
+    public function _initialPage($data=null) {
     	$this->load->view('Dashboard_esential/head');
-        $this->load->view('Dashboard_esential/nav');
-        $this->load->view('Dashboard_esential/menu');
+        $this->load->view('Dashboard_esential/nav',$data);
+        $this->load->view('Dashboard_esential/menu',$data);
     }
 
     public function _finalPage(){
         $this->load->view('Dashboard_esential/footer');
     }
 
-    public function _initialInformativa()
+    public function _initialInformativa($data=null)
     {
         $this->load->view('Informativa_esential/head');
-        $this->load->view('Informativa_esential/nav');
+        $this->load->view('Informativa_esential/nav',$data);
     }
 
     public function _finalInformativa(){
@@ -70,7 +70,7 @@ class MY_RootController extends CI_Controller {
                 $curlRequest = curl_init("http://localhost/angloApi/".$endPoint."?".$queryString);
                 curl_setopt($curlRequest, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($curlRequest, CURLOPT_HTTPHEADER, array(
-                        'X-API-KEY: QWERTY' ,
+                        'X-API-KEY: ANGLOKEY' ,
                         'Content-Type: application/json')
                 );
 
