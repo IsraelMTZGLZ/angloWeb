@@ -17,7 +17,7 @@
         <i class="icon wb-more-horizontal" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-        <img class="navbar-brand-logo" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" title="Anglo Latino Education Partnership" style="height: 40px;">
+        <img class="navbar-brand-logo" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" title="Anglo Latino Education Partnership" style="height: 40px;">
       </div>
       <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
         data-toggle="collapse">
@@ -238,7 +238,7 @@
             <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
               data-animation="scale-up" role="button">
               <span class="avatar avatar-online">
-                <img src="<?=base_url('resources/assets/Dashboard/global/portraits/5.jpg');?>" alt="...">
+                <img src="<?=@ ($user->photoUrl!='NULL') ? $user->photoUrl : base_url("resources/assets/Anglo/AngloLatino-sintexto.png") ;?>" alt="...">
                 <i></i>
               </span>
             </a>
@@ -247,7 +247,7 @@
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-payment" aria-hidden="true"></i> Billing</a>
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
               <div class="dropdown-divider" role="presentation"></div>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              <a class="dropdown-item" href="<?=base_url('Login/Login/logout')?>" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -440,9 +440,9 @@
 
         <div class="navbar-brand navbar-brand-center">
           <a href="index.html">
-            <img class="navbar-brand-logo navbar-brand-logo-normal" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>"
-              title="Anglo Latino Education Partnership" style="height: 100px;margin-top: -13px;">
-            <img class="navbar-brand-logo navbar-brand-logo-special" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>"
+            <img class="navbar-brand-logo navbar-brand-logo-normal" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>"
+              title="Anglo Latino Education Partnership" style="height: 80px;margin-top: -13px;">
+            <img class="navbar-brand-logo navbar-brand-logo-special" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>"
               title="Anglo Latino Education Partnership">
           </a>
         </div>

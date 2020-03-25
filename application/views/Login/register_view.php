@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
 
 
-  <link rel="apple-touch-icon" href="<?=base_url('resources/assets/Dashboard/center/assets/images/apple-touch-icon.png');?>">
+  <link rel="apple-touch-icon" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>">
   <link rel="shortcut icon" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>">
 
   <!-- Stylesheets -->

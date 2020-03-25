@@ -12,6 +12,9 @@ class Registro extends MY_RootController {
 
 	public function index()
 	{
+		if (@$this->session->userdata('user_sess')->email) {
+			redirect('Dashboard/Home');
+		}
 		unset($_SESSION['blog']);
 		$this->load->view('Login/register_view');
 	}
@@ -34,27 +37,27 @@ class Registro extends MY_RootController {
 				if ($responseApi['status']=='error') {
 					$this->session->set_flashdata('error',$responseApi);
 					$this->facebook->destroy_session();
-					return redirect('Login/Registro');
+					return redirect('Registro');
 				}else{
 					$this->session->set_flashdata('facebookRegistro','yes');
 					$this->facebook->destroy_session();
-					return redirect('Login/Login');
+					return redirect('Login');
 				}
 			}elseif($userProfile['error']){
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();
-				return redirect('Login/Registro');
+				return redirect('Registro');
 			}else{
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();
-				return redirect('Login/Registro');
+				return redirect('Registro');
 			}
 		}	
 	}
 
 	public function googleRegister(){
-		$clientId = '1'; //Google client ID
-		$clientSecret = '1'; //Google client secret
+		$clientId = '846059479473-nk4bq494i4lhb247j1rd3b6v8ltkj95s.apps.googleusercontent.com'; //Google client ID
+		$clientSecret = 'BrIhlAOnVDeC7QZ7G5dhlbib'; //Google client secret
 		//pagina
 		//$redirectURL = 'http://anglopageone.com/Login/Registro/googleRegister/';
 		//interno
@@ -95,19 +98,19 @@ class Registro extends MY_RootController {
 				$responseApi = $this->_callApiRest('User/api/registro/',$data,"POST",null);
 				if ($responseApi['status']=='error') {
 					$this->session->set_flashdata('error',$responseApi);
-					return redirect('Login/Registro');
+					return redirect('Registro');
 				}else{
 					$this->session->set_flashdata('facebookRegistro','yes');
-					return redirect('Login/Login');
+					return redirect('Login');
 				}
 			}elseif($userProfile['error']){
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();
-				return redirect('Login/Registro');
+				return redirect('Registro');
 			}else{
 				$this->session->set_flashdata('facebook','Error');
 				$this->facebook->destroy_session();
-				return redirect('Login/Registro');
+				return redirect('Registro');
 			}
         } 
 		else 

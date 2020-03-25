@@ -152,6 +152,7 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
   
   <script>
     function toggleFullscreen(elem) {
