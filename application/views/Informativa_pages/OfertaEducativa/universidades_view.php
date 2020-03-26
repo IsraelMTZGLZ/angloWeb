@@ -52,17 +52,10 @@
                             <div class="portfolio_hover">
                                 <a href="#"> University of Bath <span>LEER MÁS </span></a>
                                 <p></p>
-                                <div class="zoom_popup">
-
-                                    <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscribeModal">
-</button></i>
-
-
-
-
-                                </div>
-                            </div>
-            <div class="portfolio_overlay"></div>
+                                <div class="zoom_popup d-none d-lg-block d-xl-block">
+                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#subscribeModal"></button></i>                                </div>
+                               </div>
+                           <div class="portfolio_overlay"></div>
                         </div>
                     </div>
                     <!-- Items -->
@@ -211,8 +204,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Bath Academy <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -224,8 +216,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Cambridge School of Visual and Performing Arts  <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#artsPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -237,8 +228,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> CATS College<span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#catsPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -250,8 +240,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Concord College <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#concordPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -263,8 +252,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> On Campus <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#onPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -276,8 +264,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> St Andrews College, Cambridge <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#adrewsPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -289,8 +276,7 @@
                             <div class="portfolio_hover">
                                 <a href="#">Taunton School <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#tautonPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -302,8 +288,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> English in Chester <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterEnglishModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -315,8 +300,7 @@
                             <div class="portfolio_hover">
                                 <a href="#">Bath Academy of English <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathEnglishModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -328,8 +312,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> International House (Bristol) <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#houseEnglishModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -341,8 +324,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Select English (Cambridge) <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#selectEnglishModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -367,8 +349,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> Cambridge Academy of English <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeEnglishModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -380,8 +361,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> The English Studio, London y Dublin <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#studioEnglishModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -1313,4 +1293,1120 @@
           <div class="bottom-strip"></div>
       </div>
 
+</div>
+
+<!-- ****************************************Prepa Modal*******************************************************************8 -->
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bathPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 	1997 Bath, Somerset, United Kingdom.</div>
+            </div>
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">The UK higher education is among the best in the world.</div>
+              <div class="col-md-6">No 6 2019: Guardian University Guide 2020.  </div>
+              <br>
+            </div>
+
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+              <b>  Facultades:</b>
+
+                  <ul>
+                    <li class="col-md-12 ml-auto">Art</li>
+                    <li class="col-md-12 ml-auto">Biology</li>
+                    <li class="col-md-12 ml-auto">Business</li>
+                    <li class="col-md-12 ml-auto">Chemistry</li>
+                    <li class="col-md-12 ml-auto">Economics</li>
+                    <li class="col-md-12 ml-auto">English Language</li>
+                    <li class="col-md-12 ml-auto">English Literature</li>
+                    <li class="col-md-12 ml-auto">French</li>
+                    <li class="col-md-12 ml-auto">Geography</li>
+                  </ul>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Bath Academy is a private tutorial college that specialises in tailoring academic courses to the individual needs of the students to maximise their chances of applying successfully to high quality university course.</div>
+
+                <div class="header_btn dark_btn footer_btn float_left">
+                    <a href="https://www.bathacademy.co.uk/" target="_blank">Web Page</a>
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+          </div>
+
+          <hr>
+
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="artsPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985 A 50 min de Londres.</div>
+            </div>
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">Está asociada con la revista Hearst Magazines UK (Editora de Elle y Cosmopolitan).</div>
+              <div class="col-md-6">Programas acreditados por la Universidad de los Artes, Londres.</div>
+              <br>
+            </div>
+
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+              <b>  Facultades:</b>
+
+                  <ul>
+                    <li class="col-md-12 ml-auto">Arte y Diseño</li>
+                    <li class="col-md-12 ml-auto">Moda</li>
+                    <li class="col-md-12 ml-auto">Drama y Danza</li>
+                    <li class="col-md-12 ml-auto">Música</li>
+                  </ul>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                <div class="header_btn dark_btn footer_btn float_left">
+                    <a href="https://www.csvpa.com/" target="_blank">Web Page</a>
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+          </div>
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="catsPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1952.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">3a en el ranking de las mejores preparatorias del UK.</div>
+                <div class="col-md-6">6ª en el Ranking de Escuelas Independientes de Internado. La mejor para estudiantes internacionales.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Ofrece cursos de secundaria y de preparatoria para entrar en las mejores universidades del UK.</li>
+                      <li class="col-md-12 ml-auto">36% de los profesores son egresados de las Universidades de Oxford y Cambridge.</li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <!-- <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div> -->
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="collyerPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1532.</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">3a en el ranking de las mejores preparatorias del UK.</div>
+                <div class="col-md-6">6ª en el Ranking de Escuelas Independientes de Internado. La mejor para estudiantes internacionales.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto">Ofrece cursos de secundaria y de preparatoria para entrar en las mejores universidades del UK.</li>
+                      <li class="col-md-12 ml-auto">36% de los profesores son egresados de las Universidades de Oxford y Cambridge.</li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <!-- <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div> -->
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="concordPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="onPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="adrewsPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="tautonPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<!-- *******************************************Englis********************************************************************** -->
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="chesterEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bathEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="houseEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="selectEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cambridgeEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="studioEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> .</div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <b>  Facultades:</b>
+
+                    <ul>
+                      <li class="col-md-12 ml-auto"></li>
+                      <li class="col-md-12 ml-auto"></li>
+
+                    </ul>
+
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
+            </div> -->
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
 </div>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends MY_RootController {
+class Agente extends MY_RootController {
 
 	public function __construct() {
         parent::__construct();
@@ -14,7 +14,7 @@ class Home extends MY_RootController {
 	{
         $data['user']=$this->session->userdata('user_sess');
 		$this->_initialPage($data);
-		$this->load->view('Dashboard_pages/Inicio',$data);
+		$this->load->view('Dashboard_pages/Agente',$data);
 		$this->_finalPage();
 	}
 
