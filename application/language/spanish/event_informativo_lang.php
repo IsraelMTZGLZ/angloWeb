@@ -14,5 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $lang['event'] = "Eventos";
 
+$lang['event_title_coming'] = "Estamos trabajando en esta sección, pronto estará disponible.";
+$lang['event_sub_coming'] = "Próximamente";
+
 $lang['english']="English";
 $lang['spanish']="Spanish";
