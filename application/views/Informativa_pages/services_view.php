@@ -144,55 +144,7 @@
       </div>
   </div>
   <!--process wrapper end-->
-   <!--offer wrapper start-->
-  <div class="offer_wrapper float_left">
-      <div class="offer_left_wraper">
-          <img src="<?=base_url('resources/assets/Informativa/images/off.png');?>" alt="img">
-      </div>
-      <div class="offer_right_wrapper">
-         <div class="cp_heading_wraper left_heading">
-               <h3>investment offers</h3>
-       <p>At Vero Eos Et Accusamus For Odio Dignissimos Ducimus Blanditiis Praesentium Voluptatum Atque Corrupti Quos Dolores .</p>
-          </div>
-          <div class="sw_desc_btm_txt">
-              <div class="sw_disc_image">
-                <i class="flaticon-levels"></i>
-              </div>
-              <div class="sw_disc_head_text">
-                  <h5><a href="#">get free theme demo</a></h5>
-                  <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus quod maxime placeat facere possimus </p>
-              </div>
-          </div>
-          <div class="sw_desc_btm_txt">
-              <div class="sw_disc_image">
-                 <i class="flaticon-star-half-filled"></i>
-              </div>
-              <div class="sw_disc_head_text">
-                  <h5><a href="#">wordpress theme</a></h5>
-                  <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus quod maxme placeat facere possimus</p>
-              </div>
-          </div>
-          <div class="sw_desc_btm_txt">
-              <div class="sw_disc_image">
-               <i class="flaticon-add-user-symbol-of-interface"></i>
-              </div>
-              <div class="sw_disc_head_text">
-                  <h5><a href="#">how about say</a></h5>
-                  <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus quod maxime placeme placeat facere possimus</p>
-              </div>
-          </div>
-        <div class="sw_desc_btm_txt">
-              <div class="sw_disc_image">
-                <i class="flaticon-server"></i>
-              </div>
-              <div class="sw_disc_head_text">
-                  <h5><a href="#">E-mail marketing</a></h5>
-                  <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus quod maxme placeat facere possimus</p>
-              </div>
-          </div>
-
-      </div>
-  </div>
+   
   <!--offer wrapper end-->
   <!--pricing wrapper start-->
 
