@@ -14,7 +14,8 @@
                                 <div class="row">
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
-                                            <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Anglo/anglo_text_latino.png');?>" alt="img"></div>
+                                            <div data-animation="animated zoomIn"><h1 style="color: white;">Anglo Latino Education Partnership</h1></div>
+                                            <br>
                                             <h2 data-animation="animated fadeInUp"><?=$this->lang->line('bienvenido_home');?> <br>
                                             </h2>
 
@@ -44,7 +45,8 @@
                                 <div class="row">
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <div class="content">
-                                            <div data-animation="animated zoomIn"><img src="<?=base_url('resources/assets/Anglo/anglo_text_latino.png');?>" alt="img"></div>
+                                            <div data-animation="animated zoomIn"><h1 style="color: white;">Anglo Latino Education Partnership</h1></div>
+                                            <br>
                                             <h2 data-animation="animated fadeInUp"><?=$this->lang->line('conocenos');?>
                                             </h2>
 
@@ -90,7 +92,7 @@
             </div>
         </div>
         <div class="cp_shape_top">
-            <img src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="">
+            <img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" alt="">
         </div>
     </div>
     <!-- slider wrapper End -->
@@ -263,13 +265,9 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="blog-post-wrapper">
                         <div class="post-thumbnail">
-                            <img src="<?=base_url('resources/assets/Informativa/images/blog_bexit.jpg');?>" class="img-responsive " alt="Image">
+                            <img src="<?=base_url('resources/assets/Informativa/images/blog_benefits.jpg');?>" class="img-responsive " alt="Image">
 							  <div class="entry-footer float_left">
-                            <ul class="entry-meta pull-left">
-                                <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                                <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                            </ul>
-
+                            
                         </div>
                         <!-- /.entry-footer -->
                         </div>
@@ -277,23 +275,80 @@
 
                         <div class="blog-content">
                             <header class="entry-header">
-                                <h4 class="entry-title"><a href="Blog"><?=$this->lang->line('title_question_one');?></a></h4>
+                                <h4 class="entry-title"><a href="Blog"><?=$this->lang->line('title_question_two');?></a></h4>
                                 
                                 <!-- /.entry-meta -->
                             </header>
                             <!-- /.entry-header -->
 
                             <div class="entry-content">
-                                <p><?=$this->lang->line('answer_question_one');?>.</p>
+                                <p><?=$this->lang->line('answer_question_two');?>.</p>
                             </div>
-                            <a href="Blog" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
+                            <a href="Blog/Beneficios" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
                             <!-- /.entry-content -->
                         </div>
                         <!-- /.blog-content -->
 
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post-wrapper">
+                        <div class="post-thumbnail">
+                            <img src="<?=base_url('resources/assets/Informativa/images/blog_studyUk.jpg');?>" class="img-responsive " alt="Image">
+							  <div class="entry-footer float_left">
+                            
+                        </div>
+                        <!-- /.entry-footer -->
+                        </div>
+                        <!-- /.post-thumbnail -->
 
+                        <div class="blog-content">
+                            <header class="entry-header">
+                                <h4 class="entry-title"><a href="Blog"><?=$this->lang->line('title_question_five');?></a></h4>
+                                
+                                <!-- /.entry-meta -->
+                            </header>
+                            <!-- /.entry-header -->
+
+                            <div class="entry-content">
+                                <p><?=$this->lang->line('answer_question_five');?>.</p>
+                            </div>
+                            <a href="Blog/Why" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
+                            <!-- /.entry-content -->
+                        </div>
+                        <!-- /.blog-content -->
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post-wrapper">
+                        <div class="post-thumbnail">
+                            <img src="<?=base_url('resources/assets/Anglo/events.png');?>" class="img-responsive " alt="Image">
+							  <div class="entry-footer float_left">
+                            
+                        </div>
+                        <!-- /.entry-footer -->
+                        </div>
+                        <!-- /.post-thumbnail -->
+
+                        <div class="blog-content">
+                            <header class="entry-header">
+                                <h4 class="entry-title"><a href="Blog"><?=$this->lang->line('event');?></a></h4>
+                                
+                                <!-- /.entry-meta -->
+                            </header>
+                            <!-- /.entry-header -->
+
+                            <div class="entry-content">
+                                <p><?=$this->lang->line('event_leyenda_home');?>.</p>
+                            </div>
+                            <a href="Event" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
+                            <!-- /.entry-content -->
+                        </div>
+                        <!-- /.blog-content -->
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
