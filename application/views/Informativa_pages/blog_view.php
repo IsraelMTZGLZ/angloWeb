@@ -36,10 +36,7 @@
                     <div class="post-thumbnail">
                         <img src="<?=base_url('resources/assets/Informativa/images/blog_bexit.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
+                        
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -76,10 +73,7 @@
                     <div class="post-thumbnail">
                         <img src="<?=base_url('resources/assets/Informativa/images/blog_benefits.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
+                        
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -115,10 +109,7 @@
                     <div class="post-thumbnail">
                         <img src="<?=base_url('resources/assets/Informativa/images/blog_eassy.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
+                        
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -155,10 +146,7 @@
                     <div class="post-thumbnail">
                         <img src="<?=base_url('resources/assets/Informativa/images/blog_certificado.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
+                        
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -194,10 +182,7 @@
                     <div class="post-thumbnail">
                         <img src="<?=base_url('resources/assets/Informativa/images/blog_studyUk.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
-                        <ul class="entry-meta pull-left">
-                            <li><span class="hits"><a href="#"><i class="fa fa-heart"></i> 30</a></span></li>
-                            <li><span class="post-comments-number"><a href="#"><i class="fa fa-comment"></i> 25</a></span></li>
-                        </ul>
+                        
                     </div>
                     <!-- /.entry-footer -->
                     </div>
@@ -229,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="comments_wrapper float_left">
+            <!--<div class="comments_wrapper float_left">
                 <div class="widget_heading">
                     <h2>comments (04)</h2>
                 </div>
@@ -307,8 +292,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="comments_form float_left">
+            </div>-->
+            <!--<div class="comments_form float_left">
                 <div class="widget_heading">
                     <h2>leave a comment</h2>
                 </div>
@@ -322,7 +307,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.col-md-6 -->
                     <div class="col-md-6 col-sm-12">
                         <div class="formsix-e">
                             <div class="form-group i-email">
@@ -332,7 +316,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.col-md-6 -->
                     <div class="col-md-12 col-sm-12">
                         <div class="formsix-m">
                             <div class="form-group i-message">
@@ -342,15 +325,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.col-md-12 -->
                 </div>
-                <!-- /.row-->
                 <div class="header_btn dark_btn cntnt_form float_left">
 
                     <a href="#">send now!</a>
 
                 </div>
-            </div>
+            </div>-->
 
 
 

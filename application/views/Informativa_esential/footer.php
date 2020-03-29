@@ -54,12 +54,9 @@
                     <div class="footer_widget footer_blog_wrapper float_left">
                         <h4> <?=$this->lang->line('eventos_recientes');?></h4>
                         <div class="ft_blog_wrapper1">
-                            <div class="ft_blog_image">
-                                <img src="<?=base_url('resources/assets/Informativa/images/blg1.jpg');?>" class="img-responsive" alt="img" />
-                            </div>
                             <div class="ft_blog_text">
-                                <p><a href="javascript:;">Donec id elit non mi porta gravida </a></p>
-                                <div class="ft_blog_date">22 april, 2019</div>
+                                <p><a href="javascript:;"><?=$this->lang->line('proximamente_home')?>.... </a></p>
+                                
                             </div>
                         </div>
                     </div>
