@@ -34,7 +34,7 @@ $lang['step_title_service_detail']="Your dream, our goal";
 $lang['gratis_servicio']="Free services";
 $lang['gratis_servicio_contenido']="All our services are free with personnel ready to provide the best experience.";
 
-$lang['step_one_service']="Choose a program of interest and / or career to study in the UK";
+$lang['step_one_service']="Choose a program ";
 $lang['step_one_service_detail']="a).Summer courses, English course, high school, undergraduate, postgraduate or doctorate";
 $lang['step_one_service_detail_two']=" b) In case you want to study postgraduate or doctorate; identify the specialty.";
 

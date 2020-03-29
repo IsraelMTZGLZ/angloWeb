@@ -110,7 +110,7 @@
                           <h1 class="numbering">1</h1>
                           <h2><a href="Oferta"><?=$this->lang->line('step_one_service');?></a></h2>
                           <p><?=$this->lang->line('step_one_service_detail');?></p>
-                          <p><?=$this->lang->line('step_one_service_detail_two');?></p>
+                          <!-- <p><?=$this->lang->line('step_one_service_detail_two');?></p> -->
                       </div>
                   </div>
                   <div class="work_process_wrapper p2">
