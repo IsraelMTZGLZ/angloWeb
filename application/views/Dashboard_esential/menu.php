@@ -5,7 +5,7 @@
         <div class="overlay-panel vertical-align overlay-background">
           <div class="vertical-align-middle">
             <a class="avatar avatar-lg" href="javascript:void(0)">
-              <img src="<?=@ ($user->photoUrl!='NULL') ? $user->photoUrl : base_url("resources/assets/Anglo/AngloLatino-sintexto.png") ;?>" alt="">
+              <img src="<?=@($user->photoUrl!='NULL') ? $user->photoUrl : base_url("resources/assets/Anglo/AngloLatino-sintexto.png") ;?>" alt="">
             </a>
             <div class="site-menubar-info">
               <h5 class="site-menubar-user"><?=@ucwords(strtolower($user->names));?> <?=@ucwords(strtolower($user->paterns));?></h5>
