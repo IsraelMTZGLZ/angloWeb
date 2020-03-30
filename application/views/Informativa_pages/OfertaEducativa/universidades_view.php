@@ -185,6 +185,18 @@
                      <div class="portfolio_overlay"></div>
                         </div>
                     </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Otras Universidades <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#othersModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_collyers.jpg');?>" alt="">
@@ -1283,6 +1295,97 @@
           </div>
           <div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x8O5kv47zn8"></iframe>
+          </div>
+
+          <hr>
+
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="othersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: 40px;"> <img src="<?=base_url('resources/assets/Informativa/images/uk_band.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/u_universities.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1413 1hr 30 mins de Londres en avión.</div> -->
+            </div>
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Universidades:</b></div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-6"> <li>University of Strathclyde, Glasgow, Escocia.</li>  </div>
+              <div class="col-md-6"><li>Trinity College Dublin, Ireland </li> </div>
+              <div class="col-md-6"><li>Royal Holloway (University of London)</li></div>
+              <div class="col-md-6"> <li>University of Reading</li> </div>
+              <div class="col-md-6"> <li>Cardiff University </li></div>
+              <div class="col-md-6"><li>Goldsmiths College</li></div>
+              <div class="col-md-6"><li>University of Aberdeen</li></div>
+              <br>
+            </div>
+
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+              <!-- <b>  Facultades:</b>
+
+                  <ul>
+                    <li class="col-md-12 ml-auto">Biología</li>
+                    <li class="col-md-12 ml-auto">Medicina</li>
+                    <li class="col-md-12 ml-auto">Física y Astronomía</li>
+                    <li class="col-md-12 ml-auto">Química</li>
+                    <li class="col-md-12 ml-auto">Informática</li>
+                    <li class="col-md-12 ml-auto">Matemáticas y Estadísticas</li>
+                    <li class="col-md-12 ml-auto">Dirección de Empresas</li>
+                    <li class="col-md-12 ml-auto">Economía</li>
+                    <li class="col-md-12 ml-auto">Inglés</li>
+                  </ul> -->
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v8oA0J3fAnQ"></iframe>
           </div>
 
           <hr>
