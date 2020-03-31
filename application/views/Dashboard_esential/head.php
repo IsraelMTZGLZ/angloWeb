@@ -80,6 +80,8 @@
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/fonts/font-awesome/font-awesome.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/fonts/themify/themify.min599c.css?v4.0.2');?>">
 
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/tables/footable.min599c.css?v4.0.2');?>">
+
   <!--[if lt IE 9]>
     <script src="../global/vendor/html5shiv/html5shiv.min.js?v4.0.2"></script>
     <![endif]-->

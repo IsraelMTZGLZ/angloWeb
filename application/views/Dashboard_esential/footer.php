@@ -104,7 +104,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/asscrollable.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/slidepanel.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/switchery.min599c.js?v4.0.2');?>"></script>
-  
+
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/matchheight.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jvectormap.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-appear.min599c.js')?>"></script>
@@ -140,6 +140,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/datatables.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/tables/datatable.min599c.js?v4.0.2');?>"></script>
 
+
   <script>
     (function(document, window, $) {
       'use strict';
@@ -153,7 +154,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
-  
+
   <script>
     function toggleFullscreen(elem) {
       elem = elem || document.documentElement;
