@@ -76,7 +76,7 @@
     <div class="counter_overlay"></div>
     <!-- cp navi wrapper Start -->
     <nav class="cd-dropdown">
-        <h2><a href="Home"><span><img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" alt="img"></span>Anglo</a></h2>
+        <h2><a href="Home"><span><img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" alt="img"></span>Anglo Latino</a></h2>
             <a href="#0" class="cd-close"><?=$this->lang->line('close');?></a>
               <ul class="cd-dropdown-content">
                   <li>
@@ -131,9 +131,9 @@
     </nav>
     <div class="cp_navi_main_wrapper float_left">
         <div class="container-fluid">
-            <div class="cp_logo_wrapper">
+            <div class="cp_logo_wrapper" style="display:block;margin:auto;">
                 <a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>" aria-label="Ir al inicio de la pagina">
-                    <img src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="" style="height: 50px !important">
+                    <img src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="" style="height: 70px !important;margin-left: 30px;margin-top: 5px;">
                 </a>
             </div>
             <!-- mobile menu area start -->

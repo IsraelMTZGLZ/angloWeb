@@ -66,15 +66,7 @@
                     <ul class="nav nav-tabs">
                         <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home1">01. Mexico</a>
                         </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu1">02. our services</a>
-                        </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu2">03. our works</a>
-                        </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu3">04. projects</a>
-                        </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#menu4">05. UI/UX design</a>
-                        </li>
-
+                        
                     </ul>
                 </div>
             </div>
@@ -87,11 +79,11 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="abt_tab_heading float_left">
-                                    <h1>Paises en Mexico</h1>
+                                    <h1><?=$this->lang->line('paises_en_mexico')?></h1>
                                     <ul class="list-group list-group-flush tb_left_heading_wraper" style="color: black;">
-                                        <li class="list-group-item">Queretaro &nbsp;&nbsp;<span class="badge badge-pill badge-success">Oficinas</span></li>
-                                        <li class="list-group-item">Ciudad De Mexico &nbsp;&nbsp;<span class="badge badge-pill badge-success">Oficinas</span></li>
-                                        <li class="list-group-item">Guadalajara&nbsp;&nbsp;<span class="badge badge-pill badge-info">Oficinas Virtuales</span></li>
+                                        <li class="list-group-item">Queretaro &nbsp;&nbsp;<span class="badge badge-pill badge-success"><?=$this->lang->line('oficinas_en_mexico')?></span></li>
+                                        <li class="list-group-item">Ciudad De Mexico &nbsp;&nbsp;<span class="badge badge-pill badge-success"><?=$this->lang->line('oficinas_en_mexico')?></span></li>
+                                        <li class="list-group-item">Guadalajara&nbsp;&nbsp;<span class="badge badge-pill badge-info"><?=$this->lang->line('oficinas_v_en_mexico')?></span></li>
                                         <li class="list-group-item">Monterrey</li>
                                     </ul>                                        
                                     <div class="header_btn dark_btn tab_btn float_left">
@@ -245,7 +237,7 @@
 
                 <div class="cp_heading_wraper">
 
-                    <h3>Formas de contacto</h3>
+                    <h3><?=$this->lang->line('formas_contacto');?></h3>
 
                 </div>
 
@@ -255,7 +247,7 @@
                         <a class="chat-open-dialog"><div class="contact_rotate">
                             <i class="fas fa-robot"></i>
                         </div></a>
-                        <h4><a class="chat-open-dialog">AngloBot</a></h4>
+                        <h4><a class="chat-open-dialog">Asistente de anglo</a></h4>
                         <p>Agente que te ayuda a encontrar el mejor programa adecuado a ti</p>
                     </div>
                 </div>
@@ -264,8 +256,8 @@
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank"><div class="contact_rotate">
                            <i class="fas fa-envelope"></i>
                         </div></a>
-                        <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank">Email</a></h4>
-                        <p><a>Envianos un correo a: info@anglolatinoedu.com</a></p>
+                        <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank"><?=$this->lang->line('formas_contacto_email');?></a></h4>
+                        <p><a><?=$this->lang->line('formas_contacto_email_leyenda')?>: info@anglolatinoedu.com</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
@@ -273,8 +265,8 @@
                         <a href="tel:4422609090"><div class="contact_rotate">
                            <i class="fas fa-phone"></i>
                         </div></a>
-                        <h4><a href="tel:4422609090">Phone</a></h4>
-                        <p>Comunicate con nosotros: 4422609090</p>
+                        <h4><a href="tel:4422609090"><?=$this->lang->line('formas_contacto_telefono')?></a></h4>
+                        <p><?=$this->lang->line('formas_contacto_telefono_leyenda')?>: 4422609090</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
@@ -282,8 +274,8 @@
                         <a href="../Login/Login"><div class="contact_rotate">
                             <i class="fas fa-laptop"></i>
                         </div></a>
-                        <h4><a href="../Login/Login">Pagina</a></h4>
-                        <p>Registrate en la pagina</p>
+                        <h4><a href="../Login/Login"><?=$this->lang->line('formas_contacto_pagina')?></a></h4>
+                        <p><?=$this->lang->line('formas_contacto_pagina_leyenda')?></p>
                     </div>
                 </div>
             </div>

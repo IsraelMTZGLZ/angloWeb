@@ -188,6 +188,15 @@
             </button>
           </div>
         <?php } ;?>
+        <?php if ($this->session->flashdata('messagePredeterminado')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=@$this->session->flashdata('messagePredeterminado');?>
+            <br>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
         <?php if ($this->session->flashdata('error')) { ;?>
           <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
             <strong>Error!</strong> <?=$this->session->flashdata('error')['message']?>

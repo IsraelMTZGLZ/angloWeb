@@ -13,7 +13,21 @@ class Login extends MY_RootController {
 	public function index()
 	{
 		if (@$this->session->userdata('user_sess')->email) {
-			redirect('Dashboard/Home');
+			if (@$this->session->userdata('user_sess')->statusU=="Activo") {
+				if (@$this->session->userdata('user_sess')->typeUsuario=="Aspirante") {
+					if (@$this->session->userdata('user_sess')->aspirante==null) {
+						//no ha llenado toda su informacion
+						redirect('Dashboard/InformacionAspirante');
+					}else{
+						//ha llenado toda su informacion
+						redirect('Dashboard/Home');
+					}
+				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Agente") {
+					# code...
+				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Admin") {
+					# code...
+				}
+			}
 		}
 		unset($_SESSION['blog']);
 		$this->load->view('Login/login_view');
@@ -100,8 +114,35 @@ class Login extends MY_RootController {
 			//echo var_dump($response);
 
 			if ($response->status=="success") {
-				$this->session->set_userdata('user_sess',$response->data);
-				redirect("Dashboard/Home");
+				//$this->session->set_userdata('user_sess',$response->data);
+				//echo var_dump($response->data);
+				if ($response->data->statusU=="Activo") {
+					//usuario activo
+					//echo var_dump($response->data);
+					if ($response->data->typeUsuario=="Aspirante") {
+						if ($response->data->aspirante==null) {
+							//no ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/InformacionAspirante');
+						}else{
+							//ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/Home');
+						}
+					}else if ($response->data->typeUsuario=="Agente") {
+						# code...
+					}else if ($response->data->typeUsuario=="Admin") {
+						# code...
+					}else{
+						$this->session->set_flashdata('messagePredeterminado','El usuario tiene algunos problemas comunicate con Anglo Latino Education Partnership.');
+						redirect('Login');
+					}
+				}else{
+					//usuario inactivo
+					$this->session->set_flashdata('messagePredeterminado','El usuario no tiene permisos de acceso comunicate con Anglo Latino Education Partnership.');
+					redirect('Login');
+				}
+				//redirect("Dashboard/Home");
 			}else{
 				$this->session->set_flashdata('message',$response);
 				redirect('Login');
@@ -155,8 +196,32 @@ class Login extends MY_RootController {
 			//echo var_dump($response);
 
 			if ($response->status=="success") {
-				$this->session->set_userdata('user_sess',$response->data);
-				redirect("Dashboard/Home");
+				if ($response->data->statusU=="Activo") {
+					//usuario activo
+					//echo var_dump($response->data);
+					if ($response->data->typeUsuario=="Aspirante") {
+						if ($response->data->aspirante==null) {
+							//no ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/InformacionAspirante');
+						}else{
+							//ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/Home');
+						}
+					}else if ($response->data->typeUsuario=="Agente") {
+						# code...
+					}else if ($response->data->typeUsuario=="Admin") {
+						# code...
+					}else{
+						$this->session->set_flashdata('messagePredeterminado','El usuario tiene algunos problemas comunicate con Anglo Latino Education Partnership.');
+						redirect('Login');
+					}
+				}else{
+					//usuario inactivo
+					$this->session->set_flashdata('messagePredeterminado','El usuario no tiene permisos de acceso comunicate con Anglo Latino Education Partnership.');
+					redirect('Login');
+				}
 			}else{
 				$this->session->set_flashdata('message',$response);
 				redirect('Login');
