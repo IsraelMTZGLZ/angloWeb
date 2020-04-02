@@ -21,15 +21,22 @@ function clearFormIcons(_id){
 
 function tostada(_typo,_message){
   if (_typo=="error") {
-    _titulo="Alert Check Message";
+    _titulo="Alerta revisa el mensaje";
     toastr.error(_message,_titulo,{
       "progressBar": true,
       "newestOnTop": true,
       "closeButton": true
     });
   }else if (_typo=="success"){
-    _titulo="Correcto Check Message";
+    _titulo="Correcto Revisa El Mensaje";
     toastr.success(_message,_titulo,{
+      "progressBar": true,
+      "newestOnTop": true,
+      "closeButton": true
+    });
+  }else if (_typo=="info"){
+    _titulo="Correcto Revisa El Mensaje";
+    toastr.info(_message,{
       "progressBar": true,
       "newestOnTop": true,
       "closeButton": true
