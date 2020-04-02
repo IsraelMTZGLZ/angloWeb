@@ -48,3 +48,4 @@ $lang['leyenda2_about']="M&aacute;s de 18 becas aplicables en M&eacute;xico y La
 $lang['leyenda3_about']="Tenemos convenio con m&aacute;s 25 universidades, colegios e institutos en Reino Unido.";
 $lang['leyenda4_about']="Mas de 25 eventos al a&ntilde;o.";
 $lang['leyenda5_about']="Ubicados en mas de 20 paises en Latinoamerica.";
+$lang['conoce_equipo']="Conoce a nuestro equipo";

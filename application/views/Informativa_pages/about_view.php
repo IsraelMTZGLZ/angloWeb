@@ -248,11 +248,8 @@
 
                     <div class="cp_heading_wraper">
 
-                        <h3>meet our team</h3>
+                        <h3><?=$this->lang->line('conoce_equipo')?></h3>
 
-                        <p>sly foster exceptional initiatives mindshare through extensible after
-                            <br>cross-unit infrastructures. .
-                        </p>
                     </div>
 
                 </div>
@@ -262,17 +259,14 @@
                             <div class="item">
                                 <div class="team_slider_main float_left">
 
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team1.png');?>" class="img-responsive" alt="img" />
-                                    </div>
-
+                                    
                                     <div class="team_info_wrapper">
-                                        <h4><a href="#">Orina Togores</a></h4>
+                                        <h4><a href="#">Oriana Togores</a></h4>
                                         <h5>Senior</h5>
-                                        <p>
+                                        <!---<p>
                                             Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
+                                        </p>-->
+                                        <!--<div class="team_info_social_icons">
                                             <ul>
                                                 <li>
                                                     <a href="#">
@@ -297,90 +291,27 @@
 
                                             </ul>
                                         </div>
-
+-->
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="team_slider_main float_left">
-
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
-                                    </div>
-
                                     <div class="team_info_wrapper">
                                         <h4><a href="#">Maria Fernanda</a></h4>
                                         <h5>Team Leader</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
+                                      
 
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="team_slider_main float_left">
-
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team1.png');?>" class="img-responsive" alt="img" />
-                                    </div>
 
                                     <div class="team_info_wrapper">
                                         <h4><a href="#">Paola Díaz</a></h4>
                                         <h5>Ejecutivo de cuenta</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
+                                        
 
                                     </div>
                                 </div>
@@ -388,125 +319,26 @@
                             <div class="item">
                                 <div class="team_slider_main float_left">
 
-                                    <div class="team_img_wrapper">
+                                    <!--<div class="team_img_wrapper">
                                         <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
-                                    </div>
+                                    </div>-->
 
                                     <div class="team_info_wrapper">
                                         <h4><a href="#">Grecia Ignacio</a></h4>
                                         <h5>Ejecutivo de cuenta</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="team_slider_main float_left">
 
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
-                                    </div>
-
-                                    <div class="team_info_wrapper">
-                                        <h4><a href="#">Christian Segura</a></h4>
-                                        <h5>Ejecutivo de cuenta</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="team_slider_main float_left">
-
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Informativa/images/team2.png');?>" class="img-responsive" alt="img" />
-                                    </div>
 
                                     <div class="team_info_wrapper">
                                         <h4><a href="#">Lizbeth Pérez</a></h4>
                                         <h5>Ejecutivo de cuenta</h5>
-                                        <p>
-                                            Pelle ntes quehabi ta ntm orb itr isti quesenec tuse Pelle ntes quehabi ta ntm orb itr isti quesenec tusePelle ntes.
-                                        </p>
-                                        <div class="team_info_social_icons">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-google-plus-g"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
+                                        
+                                        
 
                                     </div>
                                 </div>

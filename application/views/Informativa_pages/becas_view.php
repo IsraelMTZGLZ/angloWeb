@@ -35,7 +35,7 @@
                                     <img src="<?=base_url('resources/assets/Anglo/Logotipo_de_la_CONACYT.png')?>" alt="" style="height: 4.5%;filter: brightness(16)">
                                 </div>
                                 <div class="col-6">
-
+                                    
                                 </div>
                             </div>
                         </div>

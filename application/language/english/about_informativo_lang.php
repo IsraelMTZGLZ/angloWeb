@@ -49,3 +49,4 @@ $lang['leyenda2_about']="More than 18 scholarships applicable in Mexico and Lati
 $lang['leyenda3_about']="We have an agreement with more than 25 universities, colleges and institutes in the United Kingdom.";
 $lang['leyenda4_about']="More than 25 events a year.";
 $lang['leyenda5_about']="Located in more than 20 countries in Latin America.";
+$lang['conoce_equipo']="Meet our team";
