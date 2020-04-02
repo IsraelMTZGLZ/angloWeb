@@ -199,6 +199,19 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/p_ackworth.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#">ACKWORTH SCHOOL<span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
+                                    </a>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_collyers.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#">Collyer´s<span>LEER MÁS </span></a>
@@ -296,7 +309,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_echester.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/e_Chesterbuild.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#"> English in Chester <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
@@ -2070,8 +2083,8 @@
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/e_Chesterbuild.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2083,7 +2096,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" >9-11 Stanley Pl, Chester CH1 2LU, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2091,39 +2108,39 @@
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
+                  <div class="col-md-12 " style="align:center"><b>Cursos de inglés general</b></div>
               </div>
 
               <div class="row">
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Cursos
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >edad 17+</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Curso 25+(cursos para alumnos mayores de 25 que quieren mejorar su inglés cotidiano y profecional).</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Preparación para exámenes cursos 50+(cursos para alumnos mayores de 50).</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cursos para profesionales y gente de negocio.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cursos de verano para adolecentes.</button>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                <div class="col-md-12"><li>Es la única del British Council acreditada Inglés centro de enseñanza de idiomas de Chester.</li></div>
+                <div class="col-md-12"><li>Inglés en Chester es una comunidad. La gente hace la escuela lo que es hoy.</li></div>
+                <div class="col-md-12"><li>Consideramos a todos como parte vital de la escual desde el momento de su llegada a Chester.</li></div>
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                    <pre>
+                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
+
+                      <a  style="align:center" href="#" target="_blank">Me interesa </a>
+                      </pre>
                   </div>
 
               </div>
@@ -2131,9 +2148,12 @@
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
             </div>
 
           </div>
@@ -2148,8 +2168,8 @@
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/i_bathLogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/e_ebath.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2161,7 +2181,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 	</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" > </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2169,39 +2193,36 @@
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
+                  <div class="col-md-12 " style="align:center"><b>C</b></div>
               </div>
 
               <div class="row">
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Cursos
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
+                      <a href="#" target="_blank">Me interesa </a>
                   </div>
 
               </div>
@@ -2209,9 +2230,12 @@
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
             </div>
 
           </div>
@@ -2239,7 +2263,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 	</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" > </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2247,39 +2275,36 @@
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
+                  <div class="col-md-12 " style="align:center"><b>C</b></div>
               </div>
 
               <div class="row">
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Cursos
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
+                      <a href="#" target="_blank">Me interesa </a>
                   </div>
 
               </div>
@@ -2287,9 +2312,12 @@
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
             </div>
 
           </div>
@@ -2317,7 +2345,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 	</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" > </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2325,39 +2357,36 @@
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
+                  <div class="col-md-12 " style="align:center"><b>C</b></div>
               </div>
 
               <div class="row">
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Cursos
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
+                      <a href="#" target="_blank">Me interesa </a>
                   </div>
 
               </div>
@@ -2365,9 +2394,12 @@
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
             </div>
 
           </div>
@@ -2395,7 +2427,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 	</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" > </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2403,39 +2439,36 @@
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
+                  <div class="col-md-12 " style="align:center"><b>C</b></div>
               </div>
 
               <div class="row">
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Cursos
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
+                      <a href="#" target="_blank">Me interesa </a>
                   </div>
 
               </div>
@@ -2443,9 +2476,12 @@
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
             </div>
 
           </div>
@@ -2474,7 +2510,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 	</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" > </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2482,39 +2522,36 @@
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
+                  <div class="col-md-12 " style="align:center"><b>C</b></div>
               </div>
 
               <div class="row">
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Cursos
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li></li></div>
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
+                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
+                      <a href="#" target="_blank">Me interesa </a>
                   </div>
 
               </div>
@@ -2522,9 +2559,12 @@
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
             </div>
 
           </div>
