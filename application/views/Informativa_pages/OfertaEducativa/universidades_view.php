@@ -1420,7 +1420,11 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1997 Bath, Somerset, United Kingdom.</div>
+              <div class="col-md-4 "> 	1997 .</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/1Q5JMSk8WtydJeMB9" target="_blank" >Ciudad de Bath en el suroeste de inglaterra </a> </div>
             </div>
             <div class="row">
               <hr>
@@ -1441,32 +1445,46 @@
               <hr>
 
             </div>
-            <div class="row">
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Facultades
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Odontología</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Veterinaria</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Derecho</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Economía</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingeniería</button>
+            </div>
+            <!-- <div class="row">
               <div class="col-md-12">
               <b>  Facultades:</b>
+                <div class="row">
+                  <ul  >
+                <li >Medicina </li>
+                </ul>
+                </div>
 
-                  <ul>
-                    <li class="col-md-12 ml-auto">Art</li>
-                    <li class="col-md-12 ml-auto">Biology</li>
-                    <li class="col-md-12 ml-auto">Business</li>
-                    <li class="col-md-12 ml-auto">Chemistry</li>
-                    <li class="col-md-12 ml-auto">Economics</li>
-                    <li class="col-md-12 ml-auto">English Language</li>
-                    <li class="col-md-12 ml-auto">English Literature</li>
-                    <li class="col-md-12 ml-auto">French</li>
-                    <li class="col-md-12 ml-auto">Geography</li>
-                  </ul>
+              <div class="col-md-12"><li>Odontología</li></div>
+
+              <div class="col-md-12"><li>Veterinaria</li></div>
+              <div class="col-md-12"><li>Derecho</li></div>
+              <div class="col-md-12"><li>Economía</li></div>
+              <div class="col-md-12"><li>Ingeniería</li></div>
 
               </div>
-            </div>
+            </div> -->
             <div class="row">
               <hr>
             </div>
             <div class="row">
-              <div class="col-md-12">Bath Academy is a private tutorial college that specialises in tailoring academic courses to the individual needs of the students to maximise their chances of applying successfully to high quality university course.</div>
+
+              <div class="col-md-12"><li>A los estudiantes de les enseña en grupos pequeños de tutoría</li></div>
+              <div class="col-md-12"><li>Exámenes para monitorear el progreso</li></div>
+              <div class="col-md-12"><li>Los profesores siempre están disponibles para el asesoramiento y tutoría</li></div>
 
                 <div class="header_btn dark_btn footer_btn float_left">
                     <a href="https://www.bathacademy.co.uk/" target="_blank">Web Page</a>
+                    <a href="https://www.bathacademy.co.uk/" target="_blank">Me interesa </a>
                 </div>
 
             </div>

@@ -18,17 +18,17 @@
                 <li>
                     <a href="https://twitter.com/angloedu" target="_blank"  rel="noopener" aria-label="Ir a twitter de anglo">
                         <i class="fab fa-twitter"></i>
-                    </a> 
+                    </a>
                 </li>
-                <li> 
+                <li>
                     <a href="https://www.linkedin.com/company/anglo-latino-education-partnership-limited" target="_blank"  rel="noopener" aria-label="Ir al linkedin de anglo">
                         <i class="fab fa-linkedin-in"></i>
-                    </a> 
+                    </a>
                 </li>
-                <li> 
+                <li>
                     <a href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank"  rel="noopener" aria-label="Mandar mensaje whatsapp anglo">
                         <i class="fab fa-whatsapp"></i>
-                    </a> 
+                    </a>
                 </li>
             </ul>
         </div>
@@ -56,7 +56,7 @@
                         <div class="ft_blog_wrapper1">
                             <div class="ft_blog_text">
                                 <p><a href="javascript:;"><?=$this->lang->line('proximamente_home')?>.... </a></p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                                         76230, Santiago de Querétaro, Qro.
                                     </a>
                                 </p>
-                                
+
                             </li>
                             <li>
                                 <span><?=$this->lang->line('telefono');?>: </span>
@@ -106,7 +106,7 @@
                                     C.P. 06010, México DF
                                     </a>
                                 </p>
-                                
+
                             </li>
                             <li>
                                 <span><?=$this->lang->line('telefono');?>: </span>
@@ -162,7 +162,7 @@
     <script src="<?=base_url('resources/assets/Informativa/js/imagesloaded.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/isotope.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/custom.js');?>"></script>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -406,6 +406,17 @@
             setTimeout(function(){
                 $("[data-toggle='popover']").popover('hide');
             }, 30000);
+        });
+    </script>
+
+
+    <script type="text/javascript">
+    console.log("Hoka");
+      $(function(){
+          $("#Odont" ).click(function() {
+            var id = $(this).attr('data-id');
+            alert(id);
+          });
         });
     </script>
 </body>
