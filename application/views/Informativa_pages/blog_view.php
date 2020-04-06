@@ -31,10 +31,10 @@
 <div class="blog_wrapper float_left">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog-post-wrapper iner_blog">
                     <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog_bexit.jpg');?>" class="img-responsive " alt="Image">
+                        <img src="<?=base_url('resources/assets/Informativa/images/blog_studyUk.jpg');?>" class="img-responsive " alt="Image">
              <div class="entry-footer float_left">
                         
                     </div>
@@ -42,10 +42,9 @@
                     </div>
                     <!-- /.post-thumbnail -->
 
-
                     <div class="blog-content">
                         <header class="entry-header">
-                            <h4 class="entry-title"><a href="Blog/Brexit"><?=$this->lang->line('title_question_one');?></a></h4>
+                            <h4 class="entry-title"><a href="Blog/Why"><?=$this->lang->line('title_question_five');?></a></h4>
                             <div class="entry-meta">
                                 <ul>
                                     <!-- <li><span class="author">By <a href="#">Admin</a></span>
@@ -59,9 +58,9 @@
                         <!-- /.entry-header -->
 
                         <div class="entry-content">
-                            <p><?=$this->lang->line('answer_question_one');?>.</p>
+                            <p><?=$this->lang->line('answer_question_five');?>.</p>
                         </div>
-                        <a href="Blog/Brexit" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Why" class="blog_read"><?=$this->lang->line('leer_mas_footer');?> <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -97,7 +96,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_two');?>.</p>
                         </div>
-                        <a href="Blog/Beneficios" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Beneficios" class="blog_read"><?=$this->lang->line('leer_mas_footer');?><i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -134,7 +133,7 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_three');?>.</p>
                         </div>
-                        <a href="Blog/Accesible" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Accesible" class="blog_read"><?=$this->lang->line('leer_mas_footer');?> <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
@@ -170,49 +169,14 @@
                         <div class="entry-content">
                             <p><?=$this->lang->line('answer_question_four');?>.</p>
                         </div>
-                        <a href="Blog/Certificado" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                        <a href="Blog/Certificado" class="blog_read"><?=$this->lang->line('leer_mas_footer');?> <i class="flaticon-arrow"></i></a>
                         <!-- /.entry-content -->
                     </div>
                     <!-- /.blog-content -->
 
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="blog-post-wrapper iner_blog">
-                    <div class="post-thumbnail">
-                        <img src="<?=base_url('resources/assets/Informativa/images/blog_studyUk.jpg');?>" class="img-responsive " alt="Image">
-             <div class="entry-footer float_left">
-                        
-                    </div>
-                    <!-- /.entry-footer -->
-                    </div>
-                    <!-- /.post-thumbnail -->
-
-                    <div class="blog-content">
-                        <header class="entry-header">
-                            <h4 class="entry-title"><a href="Blog/Why"><?=$this->lang->line('title_question_five');?></a></h4>
-                            <div class="entry-meta">
-                                <ul>
-                                    <!-- <li><span class="author">By <a href="#">Admin</a></span>
-                                    </li>
-                                    <li><span class="posted-in">sept 19, 2019</span>
-                                    </li> -->
-                                </ul>
-                            </div>
-                            <!-- /.entry-meta -->
-                        </header>
-                        <!-- /.entry-header -->
-
-                        <div class="entry-content">
-                            <p><?=$this->lang->line('answer_question_five');?>.</p>
-                        </div>
-                        <a href="Blog/Why" class="blog_read">read more <i class="flaticon-arrow"></i></a>
-                        <!-- /.entry-content -->
-                    </div>
-                    <!-- /.blog-content -->
-
-                </div>
-            </div>
+           
 
             <!--<div class="comments_wrapper float_left">
                 <div class="widget_heading">
@@ -386,7 +350,7 @@
                      <div class="entry-content">
                          <p><?=$this->lang->line('answer_question_three');?>.</p>
                      </div>
-                     <a href="#" class="blog_read">read more <i class="flaticon-arrow"></i></a>
+                     <a href="#" class="blog_read"><?=$this->lang->line('leer_mas_footer');?> <i class="flaticon-arrow"></i></a>
                      <!-- /.entry-content -->
                  </div>
                  <!-- /.blog-content -->

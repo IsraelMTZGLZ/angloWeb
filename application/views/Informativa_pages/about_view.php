@@ -158,7 +158,7 @@
                                 </div>
                             </div>
                             <div class="count-description"><span class="timer">5000</span>
-                                <h5 class="con1"> <a href="#">  <?=$this->lang->line('leyenda1_about')?> </a></h5>
+                                <h5 class="con1" style="text-transform: none"> <a style="text-transform: none" href="javascript:;">  <?=$this->lang->line('leyenda1_about')?> </a></h5>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">18</span>
-                                <h5 class="con2"> <a href="#"> <?=$this->lang->line('leyenda2_about')?>  </a></h5>
+                                <h5 class="con2"> <a href="javacript:;" style="text-transform: none"> <?=$this->lang->line('leyenda2_about')?>  </a></h5>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">25</span>
-                                <h5 class="con2"> <a href="#"> <?=$this->lang->line('leyenda3_about')?> </a></h5>
+                                <h5 class="con2"> <a href="javacript:;" style="text-transform: none"> <?=$this->lang->line('leyenda3_about')?> </a></h5>
                             </div>
                         </div>
                     </div>
@@ -194,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">25</span>
-                                <h5 class="con2"> <a href="#"> <?=$this->lang->line('leyenda4_about')?></a></h5>
+                                <h5 class="con2"> <a href="javacript:;" style="text-transform: none"> <?=$this->lang->line('leyenda4_about')?></a></h5>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                                 </div>
                             </div>
                             <div class="count-description"> <span class="timer">20</span>
-                                <h5 class="con2"> <a href="#">  <?=$this->lang->line('leyenda5_about')?></a></h5>
+                                <h5 class="con2"> <a href="javacript:;" style="text-transform: none">  <?=$this->lang->line('leyenda5_about')?></a></h5>
                             </div>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
 
                         <h3><?=$this->lang->line('mision_titulo');?></h3>
 
-                        <p><?=$this->lang->line('mision_contenido');?></p>
+                        <p style="text-transform: none"><?=$this->lang->line('mision_contenido');?></p>
                        
                     </div>
                 </div>

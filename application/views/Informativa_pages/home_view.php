@@ -340,7 +340,7 @@
                             <!-- /.entry-header -->
 
                             <div class="entry-content">
-                                <p><?=$this->lang->line('event_title_coming');?>.</p>
+                                <p><?=$this->lang->line('proximamente_home')?>...</p>
                             </div>
                             <a href="Event" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
                             <!-- /.entry-content -->
