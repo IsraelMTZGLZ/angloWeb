@@ -38,7 +38,7 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/idioma.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/flag-icon-css/flag-icon.min599c.css?v4.0.2');?>">
      <!-- event timeline -->
-
+    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/button_animation.css');?>" />
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" />
 
