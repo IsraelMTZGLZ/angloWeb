@@ -10,15 +10,15 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['leer_mas'] = "Bienvenido";
-$lang['beca_asesoria'] = "Te asesoramos para que puedas solicitar una Beca CONACYT para estudiar en el Reino Unido este 2020.";
+$lang['beca_asesoria'] = "Te asesoramos para que puedas solicitar una beca para estudiar en el Reino Unido este 2020.";
 $lang['conocenos'] = "Conocenos";
 $lang['beca_gratuita'] = "Te asesoramos de manera GRATUITA y apoyamos en tu educaci&oacute;n en instituciones y colegios brit&aacute;nicos de excelencia.";
 $lang['nuestros_servicios_home'] = "Nuestros Servicios";
 $lang['ayudar1'] = "Ayudar a mexicanos y latinoamericanos de alto nivel académico a conseguir inscribirse en las mejores universidades";
-$lang['ayudar2'] = "y colegios brit&aacute;nicos con el finde alcanzar sus metas educativas, profesionales y personales.";
+$lang['ayudar2'] = "y colegios brit&aacute;nicos con el fin de alcanzar sus metas educativas, profesionales y personales.";
 $lang['about1_home'] = "Representamos a un grupo selecto de Universidades y Colegios Británicos con una amplia oferta acad&eacute;mica. Nuestras universidades cuentan con alto reconocimiento internacional tanto en la investigaci&oacute;n como en la docencia.";
 $lang['about2_home'] = "Estamos constituidos como un consorcio de instituciones educativas británicas, ofrecemos asesoría, apoyo e información de manera gratuita a candidatos que desean estudiar en nuestras instituciones.";
-$lang['about3_home'] = "Todas Las Universidades Están Rankeadas Entre Las Primeras 200 A Nivel Mundial, Es Decir, El Top 1% En El Mundo Por La Excelencia De Su Investigación Y Su Enseñanza.";
+$lang['about3_home'] = "Todas las universidades están rankeadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
 $lang['reading'] = "Leer";
 $lang['fiabilidad'] = "Fiabilidad";
 $lang['accesibilidad'] = "Accesibilidad";

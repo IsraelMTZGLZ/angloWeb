@@ -28,7 +28,7 @@
             <div class="row">
 				<div class="col-lg-6 col-md-12 col-12">
                     <div class="about_bg_II">
-                        <img src="<?=base_url('resources/assets/Informativa/images/London_imagenOne.jpg');?>" alt="">
+                        <img src="<?=base_url('resources/assets/Informativa/images/London_imagenOne.jpg');?>" alt="" style="margin-left: 5%">
                     </div>
                     <!-- <div class="video_bg_II">
                         <div class="video_img_box">
@@ -97,7 +97,7 @@
             <div class="row">
         <div class="col-lg-6 col-md-12 col-12">
                     <div class="about_bg_II">
-                        <img src="<?=base_url('resources/assets/Informativa/images/LOndon_imagenSeven.jpg');?>" alt="">
+                        <img src="<?=base_url('resources/assets/Informativa/images/LOndon_imagenSeven.jpg');?>" alt="" style="margin-left: 5%">
                     </div>
                     <!-- <div class="video_bg_II">
                         <div class="video_img_box">

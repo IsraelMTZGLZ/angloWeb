@@ -169,7 +169,7 @@
             </div>
 
 
-            <div class="comments_form float_left">
+            <!--<div class="comments_form float_left">
                 <div class="widget_heading">
                     <h2>leave a comment</h2>
                 </div>
@@ -183,7 +183,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.col-md-6 -->
                     <div class="col-md-6 col-sm-12">
                         <div class="formsix-e">
                             <div class="form-group i-email">
@@ -193,7 +192,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.col-md-6 -->
                     <div class="col-md-12 col-sm-12">
                         <div class="formsix-m">
                             <div class="form-group i-message">
@@ -203,15 +201,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.col-md-12 -->
                 </div>
-                <!-- /.row-->
                 <div class="header_btn dark_btn cntnt_form float_left">
 
                     <a href="#">send now!</a>
 
                 </div>
             </div>
+            -->
 
 
 

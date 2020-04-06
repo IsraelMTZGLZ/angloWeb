@@ -10,7 +10,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['bienvenido'] = "Welcome";
-$lang['beca_asesoria'] = "We advise you so you can request a CONACYT Scholarship to study at United Kingdom this 2020.";
+$lang['beca_asesoria'] = "We advise you so you can request a Scholarship to study at United Kingdom this 2020.";
 $lang['conocenos'] = "Know us";
 $lang['beca_gratuita'] = "We advise you for FREE and support your education in British institutions and schools of excellence.";
 $lang['nuestros_servicios_home'] = "Our Services";

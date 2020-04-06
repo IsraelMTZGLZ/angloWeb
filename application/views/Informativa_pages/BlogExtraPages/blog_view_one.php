@@ -122,49 +122,7 @@
               <!-- /.blog-content -->
 <br>
           </div>
-            <div class="comments_form float_left">
-                <div class="widget_heading">
-                    <h2><?=$this->lang->line('informativo_leave_coment');?></h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="formsix-pos">
-                            <div class="form-group i-name">
-                                <label class="sr-only"><?=$this->lang->line('informativo_leave_coment_name');?></label>
-                                <input type="text" class="form-control" required="" id="namTen-first" placeholder="Full Name *">
-                                <i class="fas fa-user-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col-md-6 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="formsix-e">
-                            <div class="form-group i-email">
-                                <label class="sr-only"><?=$this->lang->line('informativo_leave_coment_email');?></label>
-                                <input type="email" class="form-control" required="" id="emailTen" placeholder="Email Address *">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col-md-6 -->
-                    <div class="col-md-12 col-sm-12">
-                        <div class="formsix-m">
-                            <div class="form-group i-message">
-                                <label class="sr-only"><?=$this->lang->line('informativo_leave_coment_coments');?></label>
-                                <textarea class="form-control" required="" rows="4" id="messageTen" placeholder="Message"></textarea>
-                                <i class="fas fa-comment"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col-md-12 -->
-                </div>
-                <!-- /.row-->
-                <div class="header_btn dark_btn cntnt_form float_left">
-
-                    <a href="#">send now!</a>
-
-                </div>
-            </div>
+            
 
 
 

@@ -1,6 +1,6 @@
 
 .share-bar li {
-  min-width: 30px; /* Set minimum width of each cube */
+  min-width: 60px; /* Set minimum width of each cube */
   min-height: 30px; /* Set minimum height of each cube */
 }
 
