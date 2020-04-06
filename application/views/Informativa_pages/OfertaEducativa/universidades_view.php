@@ -393,11 +393,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/s_bath.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambrige <span>LEER MÁS </span></a>
+                                <a href="#"> Bath <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#studioEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathVeranoModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -405,11 +405,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_catso.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_bristool.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cats <span>LEER MÁS </span></a>
+                                <a href="#"> Bristol <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#studioEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bristolVeranoModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -417,11 +417,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_estudio.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_brington.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> The English Studio, London y Dublin <span>LEER MÁS </span></a>
+                                <a href="#"> Brighton <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#studioEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#brightonVeranoModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -429,11 +429,131 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_estudio.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge-university.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> The English Studio, London y Dublin <span>LEER MÁS </span></a>
+                                <a href="#"> Cambridge  <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#studioEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_Canterbury.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Canterbury <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#canterburyVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_chester.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Chester <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_concord.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Concord <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#concordVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_Cork_irland.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Cork, Ireland  <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cork_IrelandVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_dublin.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Dublin <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#dublinVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_Eastbourne.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Eastbourne <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_london.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> London <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#LondonVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_manchester.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Manchester <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#manchesterVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_touton.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Taunton <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#tauntonVeranoModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_york.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> York <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#yorkVeranoModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -2703,3 +2823,1275 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="bottom-strip"></div>
         </div>
 </div>
+
+
+<!--.....................................................- Cursos de verano ...................................................-->
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bathVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/3MMGdZS62rMcWbfL8" target="_blank" >Claverton Down, Bath BA2 7AY, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14 - 17.</li></div>
+                  <div class="col-md-12"><li>Residencial.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Es la única del British Council acreditada Inglés centro de enseñanza de idiomas de Chester.</li></div>
+                <div class="col-md-12"><li>Inglés en Chester es una comunidad. La gente hace la escuela lo que es hoy.</li></div>
+                <div class="col-md-12"><li>Consideramos a todos como parte vital de la escual desde el momento de su llegada a Chester.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bristolVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_bristol.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_bristol.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1876 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/EHbVwH1seTykkR6L8" target="_blank" >Senate House, Tyndall Ave, Bristol BS8 1TH, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14 - 17.</li></div>
+                  <div class="col-md-12"><li>Universitario.</li></div>
+
+              </div>
+              <br>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Academico.</li></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>La Universidad de Bristol invita a estudiantes internacionales a unirse a nuestra gama dinámica e inmersiva de programas de verano.</li></div>
+                <div class="col-md-12"><li> Obtenga experiencia académica y profesional y explore Bristol, una de las ciudades más bellas y vibrantes del Reino Unido.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jhX3YlGnDIc"></iframe>
+            </div>
+
+            <hr>
+          </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="brightonVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_brighton_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_brington.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1858 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/EnJY2JK1wF3U4Br88" target="_blank" > 58-67 Grand Parade, Brighton BN2 0JY, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <br>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+                  <div class="col-md-12"><li>Combinado.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Ofrecer a los estudiantes la oportunidad de experimentar lo que es estudiar una materia que les encanta en la universidad.</li></div>
+                <div class="col-md-12"><li>Los estudiantes aprenderán en un entorno académico, trabajarán con otros estudiantes interesados ​​en cursos similares, estudiantes universitarios y personal académico.</li></div>
+                <div class="col-md-12"><li>No hay ningún costo para participar en una escuela de verano.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vqj6hIFB-TE"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cambridgeVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1209 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/5VoYTGYjtVUXkfpBA" target="_blank" >The Old Schools, Trinity Ln, Cambridge CB2 1TN, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+                  <div class="col-md-12"><li>Universitario 18-25.</li></div>
+
+              </div>
+              <br>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Academico.</li></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+                  <div class="col-md-12"><li>Combinado.</li></div>
+                  <div class="col-md-12"><li>Ingles mas deporte.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Nuestros programas ofrecen una mezcla de tradición e inspiración a medida que los participantes de todo el mundo absorben la atmósfera de este lugar extraordinario.</li></div>
+                <div class="col-md-12"><li>Durante siglos, la Universidad ha ayudado a dar forma y cambiar el mundo.</li></div>
+                <div class="col-md-12"><li>creemos que nuestros programas ofrecen beneficios que ampliarán su experiencia y mejorarán su CV.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="canterburyVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_updatecaterburylogo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/v_update_caterbusy.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1949 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/szyFrYrz2E2A8C9A7" target="_blank" > New Dover Rd, Canterbury CT1 3AJ, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Academico.</li></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+                  <div class="col-md-12"><li>Combinado.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <!-- <div class="col-md-12"><li>.</li></div>
+                <div class="col-md-12"><li>.</li></div>
+                <div class="col-md-12"><li>.</li></div> -->
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe> -->
+            </div>
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="chesterVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1839 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/Hj1s65WCmfdpusXQ8" target="_blank" > Parkgate Rd, Chester CH1 4BJ, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Te enseñarán nuestros destacados académicos de la Facultad de Administración y Negocios que son especialistas de la industria en su campo.</li></div>
+                <div class="col-md-12"><li>Estos programas de dos semanas le brindarán oportunidades fantásticas para experimentar el maravilloso Chester histórico y el noroeste del Reino Unido, incluidos Liverpool, Manchester y el norte de Gales.</li></div>
+                <div class="col-md-12"><li> Es una oportunidad emocionante para combinar actividades de estudio y sociales.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5pcmATG_mjM"></iframe>
+            </div>
+          <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="concordVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_concord.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/xM3PEs5EtxUjUWqq5" target="_blank" >Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Academico.</li></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+                  <div class="col-md-12"><li>Combinado.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Concord College da la bienvenida a estudiantes de todo el mundo y el área local a su comunidad vibrante y variada.</li></div>
+                <div class="col-md-12"><li>Desarrollar la confianza de los estudiantes en sus propias habilidades.</li></div>
+                <div class="col-md-12"><li>Mejorar las habilidades de los estudiantes en su materia seleccionada.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BZKgviod4D4"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cork_IrelandVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_cork_irland_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1845.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > Gaol Walk, University College, Cork, T12 YN60, Irlanda </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+                  <div class="col-md-12"><li>Ingles mas deporte.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>20 o 26 horas de matrícula + programa social.</li></div>
+                <div class="col-md-12"><li>Excursión miércoles por la tarde + evento social jueves por la noche.</li></div>
+                <div class="col-md-12"><li>La Escuela de Verano ofrece oportunidades estructuradas y respaldadas para estudiantes de CCL y estudiantes internacionales visitantes para compartir una experiencia enriquecedora e intercultural.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
+            </div>
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="dublinVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_dublin_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_dublin.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/j5tWf4cfKS5dwWy4A" target="_blank" > College Green, Dublin 2, Irlanda</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Participar en un programa de verano puede ser una forma brillante de experimentar estudiar en el extranjero sin tener que pasar un período completo o un año en el extranjero.</li></div>
+
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jFdd3EVN4-Q"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="eastbourneVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1867 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/RXCpxCfBAsjwzdCr9" target="_blank" >Old Wish Rd, Eastbourne BN21 4JY, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Eastbourne tiene mucho que ofrecer, incluyendo una selección de cines y teatros multiplex modernos, un hermoso paseo marítimo, un puerto deportivo de ocio y excelentes tiendas, tanto interiores como al aire libre.</li></div>
+                <div class="col-md-12"><li>instalaciones educativas y deportivas de primera clase.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+            </div>
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="LondonVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_london_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_london.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/GTxCCZmp9EaZ9SeN9" target="_blank" > Gower St, Bloomsbury, London WC1E 6BT, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Academico.</li></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>La escuela de verano de LSE es la mejor establecida y la más grande de su tipo en toda Europa, con más de 80 cursos académicamente rigurosos que se ofrecen.</li></div>
+                <div class="col-md-12"><li>Cada año, más de 6,000 estudiantes de 120 naciones estudian en el campus de LSE en el corazón del centro de Londres.</li></div>
+                <div class="col-md-12"><li>.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe> -->
+            </div>
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="manchesterVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_manchester_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_manchester.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/8HMTdxADMuBomkUG9" target="_blank" > Fielden Campus, 141 Barlow Moor Rd, West Didsbury, Manchester M20 2PQ, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Con cientos de cursos únicos, útiles e inspiradores para elegir, ¡el conocimiento que necesita para tener éxito está al alcance de su mano!.</li></div>
+                <div class="col-md-12"><li>Ya sea que esté esperando su carrera perfecta, ansioso por aprender nuevas habilidades increíbles o comenzar el camino a la universidad, podemos ayudarlo a encontrar el curso, certificado o premio ideal.</li></div>
+                <div class="col-md-12"><li>Sumérgete en tu área temática favorita, busca la calificación que necesitas y descubre adónde te puede llevar estudiar con The Manchester College.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xnquQlOYJK8"></iframe>
+            </div>
+          <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="tauntonVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_touton.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1847 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/iqbNbiKKHm45cMhH8" target="_blank" >Staplegrove Rd, Taunton TA2 6AD, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Academico.</li></div>
+                  <div class="col-md-12"><li>Combinado.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Establecida en 1847, Taunton School ha sido durante mucho tiempo uno de los principales proveedores de educación privada en el Reino Unido.</li></div>
+                <div class="col-md-12"><li>Estamos ubicados en el hermoso condado rural de Somerset en el suroeste de Inglaterra, ocupando un sitio de 56 acres y con excelentes instalaciones.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/372337647?color=ffffff&byline=0&portrait=0"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="yorkVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_york_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_york.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/Hn4wKX1KX4wHcy8s8" target="_blank" >The King's Manor, Exhibition Square, York YO1 7EP, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Junior 7-13.</li></div>
+                  <div class="col-md-12"><li>Senior 14-17.</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Ingles.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Desarrolla tus habilidades académicas, comunicativas y lingüísticas en inglés.</li></div>
+                <div class="col-md-12"><li>Aumente su confianza y mejore sus habilidades transferibles, como trabajar en equipo en un entorno internacional.</li></div>
+                <div class="col-md-12"><li>Amplíe sus horizontes y desarrolle su forma de pensar.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OZyMxE5QXXE"></iframe>
+            </div>
+          <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+
+
+<!-- . -->

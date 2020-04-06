@@ -162,6 +162,7 @@
     <script src="<?=base_url('resources/assets/Informativa/js/imagesloaded.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/isotope.pkgd.min.js');?>"></script>
     <script src="<?=base_url('resources/assets/Informativa/js/custom.js');?>"></script>
+    <script src="<?=base_url('resources/assets/Informativa/js/button_animation_js.js');?>"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
