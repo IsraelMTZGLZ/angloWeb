@@ -75,7 +75,7 @@
 				<li><a href="#"><i class="ion-social-whatsapp" style="color: #25d366;font-size: 30px;margin: 10px;"></i></a></li>
 				<li><a href="#"><i class="ion-social-linkedin" style="font-size: 30px;margin: 10px;color: #007bb5;"></i></a></li>
 				<li><a href="#"><i class="ion-social-instagram-outline" style="font-size: 30px;margin: 10px;"></i></a></li>
-				<li><a href="#"><i class="ion-social-pinterest" style="font-size: 30px;margin: 10px;"></i></a></li>
+				<li><a href="#"><i class="ion-social-twitter" style="font-size: 30px;margin: 10px;"></i></a></li>
 			</ul>
 		
 		</section><!-- right-section -->
