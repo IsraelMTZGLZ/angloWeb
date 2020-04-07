@@ -50,7 +50,7 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_bathh.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> University of Bath <span>LEER MÁS </span></a>
+                                <a href="#"> University of Bath </a>
                                 <p></p>
                                 <div class="zoom_popup d-none d-lg-block d-xl-block">
                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#subscribeModal"></button></i>                                </div>
@@ -63,37 +63,37 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_bristool.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                 <a href="#"> University of Bristol <span>LEER MÁS </span></a>
+                                 <a href="#"> University of Bristol </a>
                                  <div class="zoom_popup">
-                                      <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bristolModal"></button></i>
-
+                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bristolModal"></button></i>
                                  </div>
                             </div>
             <div class="portfolio_overlay"></div>
                         </div>
                     </div>
                     <!-- Items -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
+                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_cats.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                               <a href="#"> CATS College <span>LEER MÁS </span></a>
+                               <a href="#"> CATS College</a>
                                <div class="zoom_popup">
-                                    <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catsModal"></button></i>
+                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#catsModal"></button></i>
                                </div>
                             </div>
-            <div class="portfolio_overlay"></div>
+                         <div class="portfolio_overlay"></div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Items -->
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge School of Visual & Performing Arts <span>LEER MÁS </span></a>
+                                <a href="#"> Cambridge School of Visual & Performing Arts </a>
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#artsModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#artsModal"></button></i>
                                 </div>
+
                             </div>
                           <div class="portfolio_overlay"></div>
                         </div>
@@ -103,9 +103,9 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_queen-mary.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                 <a href="#"> Queen Mary University of London <span>LEER MÁS </span></a>
+                                 <a href="#"> Queen Mary University of London </a>
                                  <div class="zoom_popup">
-                                      <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#queenModal"></button></i>
+                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#queenModal"></button></i>
                                  </div>
                             </div>
                          <div class="portfolio_overlay"></div>
@@ -116,9 +116,9 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_east-anglia.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> University of East Anglia <span>LEER MÁS </span></a>
+                                <a href="#"> University of East Anglia</a>
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ueaModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#ueaModal"></button></i>
                                 </div>
                             </div>
                        <div class="portfolio_overlay"></div>
@@ -131,7 +131,7 @@
                             <div class="portfolio_hover">
                                 <a href="#"> University of the West of England <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uweModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#uweModal"></button></i>
                                 </div>
                             </div>
                           <div class="portfolio_overlay"></div>
@@ -141,9 +141,9 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_into.png');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Coventry University <span>LEER MÁS </span></a>
+                                <a href="#"> Coventry University</a>
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#coventryModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#coventryModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -153,9 +153,9 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_crandfiel.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cranfield University <span>LEER MÁS </span></a>
+                                <a href="#"> Cranfield University </a>
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cranfieldModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cranfieldModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -165,9 +165,9 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_new-castle.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Newcastle University<span>LEER MÁS </span></a>
+                                <a href="#"> Newcastle University</a>
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#castleModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#castleModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -178,8 +178,9 @@
                             <img src="<?=base_url('resources/assets/Informativa/images/u_st-andrews.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#"> University of St Andrews <span>LEER MÁS </span></a>
+
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#andrewModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#andrewModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -189,55 +190,18 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Otras Universidades <span>LEER MÁS </span></a>
+                                <a href="#"> Otras Universidades </a>
                                 <div class="zoom_popup">
-                                     <i class="flaticon-add"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#othersModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#othersModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
                         </div>
                     </div>
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_ackworth.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#">ACKWORTH SCHOOL<span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/u_collyers.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#">Collyer´s<span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                    <a class="img-link" href="images/pc8.jpg"> <i class="flaticon-add"></i>
-                                    </a>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_bath.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#"> Bath Academy <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathPrepaModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_arts.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#"> Cambridge School of Visual and Performing Arts  <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
@@ -249,7 +213,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_catso.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_cats.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#"> CATS College<span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
@@ -261,7 +225,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_aconcord.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_concord.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#"> Concord College <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
@@ -271,13 +235,14 @@
                      <div class="portfolio_overlay"></div>
                         </div>
                     </div>
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_aoncampus.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_nto.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> On Campus <span>LEER MÁS </span></a>
+                                <a href="#"> Into UK<span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#onPrepaModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#intoPrepaModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -285,7 +250,19 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_andrew.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_kaplan.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Kaplan <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#kaplanPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_st-andrews.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#"> St Andrews College, Cambridge <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
@@ -297,7 +274,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_atauton.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_atauton.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <a href="#">Taunton School <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
@@ -307,6 +284,93 @@
                      <div class="portfolio_overlay"></div>
                         </div>
                     </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_new_AckworthOne.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#">ACKWORTH SCHOOL<span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#akworthPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/bath.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Bath Academy <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_cardiff-sixth.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Cardiff Sixth Form College <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cardiffPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_collers.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#">Collyer´s<span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#collyerPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_dover.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#">Dover college<span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#doverPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_stonyhurts.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#">Stonyhurts College <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#stonyhurtsPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_strathallan.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#">Strathallan <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#strathaPrepaModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/e_Chesterbuild.jpg');?>" alt="">
@@ -638,10 +702,10 @@
                 <b>  Facultades:</b>
 
                     <ul>
-                      <li class="col-md-12 ml-auto">Ingeniería y Diseño</li>
-                      <li class="col-md-12 ml-auto">Humanidades y Ciencias Sociales</li>
+                      <li class="col-md-12 ml-auto">Ingenierías</li>
+                      <li class="col-md-12 ml-auto">Arquitectura</li>
                       <li class="col-md-12 ml-auto">Negocios</li>
-                      <li class="col-md-12 ml-auto">Ciencias</li>
+                      <li class="col-md-12 ml-auto">Ciencias Sociales</li>
                     </ul>
 
                 </div>
@@ -651,6 +715,12 @@
               </div>
               <div class="row">
                 <div class="col-md-12">Ciudad romana, patrimonio mundial de la Humanidad por la UNESCO.</div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+            <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4CGXvsjRjno"></iframe>
               </div>
             </div>
           </div>
@@ -680,7 +750,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1876 Bristol (1h 40min de Londres)..</div>
+                <div class="col-md-4 "> 1876 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >Bristol (1h 40min de Londres). </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -701,25 +775,27 @@
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Artes</li>
-                      <li class="col-md-12 ml-auto">Ingeniería</li>
-                      <li class="col-md-12 ml-auto">Ciencias de la Salud</li>
-                      <li class="col-md-12 ml-auto">Ciencias Sociales y Derecho</li>
-                      <li class="col-md-12 ml-auto">Ciencias de la vida</li>
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingenierias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
               </div>
               <div class="row">
                 <hr>
               </div>
               <div class="row">
                 <div class="col-md-12">Bristol nombrada la mejor ciudad para vivir en UK (Sunday Times 2017).</div>
+              </div>
+              <br>
+              <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src=""></iframe>
               </div>
             </div>
           </div>
@@ -749,7 +825,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1985 A 50 min de Londres.</div>
+                <div class="col-md-4 "> 1985.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >A 50 min de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -770,18 +850,11 @@
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Arte y Diseño</li>
-                      <li class="col-md-12 ml-auto">Moda</li>
-                      <li class="col-md-12 ml-auto">Drama y Danza</li>
-                      <li class="col-md-12 ml-auto">Música</li>
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
               </div>
               <div class="row">
                 <hr>
@@ -798,6 +871,7 @@
             <div class="row">
               <hr>
             </div>
+
             <div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
             </div>
@@ -809,6 +883,7 @@
 
 </div>
 
+<!-- ///////////////////////////////////////////////////////////// -->
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="catsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -832,6 +907,10 @@
                 <div class="col-md-4 "> 1952.</div>
               </div>
               <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >Bristol (1h 40min de Londres). </a> </div>
+              </div>
+              <div class="row">
                 <hr>
 
               </div>
@@ -850,17 +929,18 @@
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Ofrece cursos de secundaria y de preparatoria para entrar en las mejores universidades del UK.</li>
-                      <li class="col-md-12 ml-auto">36% de los profesores son egresados de las Universidades de Oxford y Cambridge.</li>
-
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arquitectura.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingenierias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
               </div>
               <div class="row">
                 <hr>
@@ -888,255 +968,7 @@
 
 </div>
 
-
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="queenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
-              </div>
-            </div>
-            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-            <h3 class="col-md-4 "></h3> -->
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1785 Centro de Londres.</div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6">QS Ranking Mundial de Universidades (2018) 119.</div>
-                <div class="col-md-6">Times Higher Education 46 a nivel europeo. </div>
-                <br>
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Humanidades y Ciencias Sociales</li>
-                      <li class="col-md-12 ml-auto">Ciencia e Ingeniería</li>
-                      <li class="col-md-12 ml-auto">Medicina y Odontología</li>
-                    </ul>
-
-                </div>
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-                <div class="col-md-12">En 1785 fundó la primera escuela de Medicina de Inglaterra en el Royal London Hospital.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.qmul.ac.uk/" target="_blank">Web Page</a>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9y6eeEK1oM"></iframe>
-            </div>
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-
-</div>
-
-
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="ueaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
-              </div>
-            </div>
-            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-            <h3 class="col-md-4 "></h3> -->
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> Norwich  (90 mins) de Londres.</div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6">THE Ranking Mundial 2020: 192.</div>
-                <div class="col-md-6">Ranqueada 10ª en UK por la calidad de su investigación.</div>
-                <br>
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Artes y Humanidades</li>
-                      <li class="col-md-12 ml-auto">Medicina y Ciencias de la Salud</li>
-                      <li class="col-md-12 ml-auto">Ciencia</li>
-                      <li class="col-md-12 ml-auto">Ciencias Sociales</li>
-                    </ul>
-
-                </div>
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-                <div class="col-md-12">Norwich es la primera ciudad Patrimonio Mundial de la Literatura.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="http://www.uea.ac.uk/" target="_blank">Web Page</a>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTF9EOqy9L8"></iframe>
-            </div>
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-
-</div>
-
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="uweModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
-              </div>
-            </div>
-            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-            <h3 class="col-md-4 "></h3> -->
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.</div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6">Guardian University Guide 28 en Reino Unido.</div>
-                <div class="col-md-6">11vo en el UK según encuesta de satisfacción estudiantil.</div>
-                <br>
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Artes</li>
-                      <li class="col-md-12 ml-auto">Industrias creativas y Educación</li>
-                      <li class="col-md-12 ml-auto">Informática</li>
-                      <li class="col-md-12 ml-auto">Negocios y Derecho</li>
-                      <li class="col-md-12 ml-auto">Medio Ambiente y Tecnología</li>
-                      <li class="col-md-12 ml-auto">Salud y Ciencias aplicadas</li>
-                    </ul>
-
-                </div>
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-                <div class="col-md-12">The Guardian nombro a Bristol como una de las 10 ciudades más felices para vivir y trabajar en el Reino Unido.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.uwe.ac.uk/" target="_blank">Web Page</a>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/scLpnIm-XZo"></iframe>
-            </div>
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-
-</div>
-
-
-
-
+<!-- ///////////////////////////////////////////////////////////////// -->
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="coventryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -1161,6 +993,10 @@
                 <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.1843 declarada universidad en 1987.</div>
               </div>
               <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              </div>
+              <div class="row">
                 <hr>
 
               </div>
@@ -1179,20 +1015,16 @@
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Ingeniería</li>
-                      <li class="col-md-12 ml-auto">Medio Ambiente e Informática</li>
-                      <li class="col-md-12 ml-auto">Artes y Humanidades</li>
-                      <li class="col-md-12 ml-auto">Salud y Ciencias de la Vida</li>
-                      <li class="col-md-12 ml-auto">Escuela de Negocios</li>
-                      <li class="col-md-12 ml-auto">Facultad de Derecho</li>
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arquitectura.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingenierias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
               </div>
               <div class="row">
                 <hr>
@@ -1224,7 +1056,6 @@
 
 </div>
 
-
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="cranfieldModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -1248,6 +1079,10 @@
                 <div class="col-md-4 "> 1946 Cranfield (1 hr de Londres)..</div>
               </div>
               <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              </div>
+              <div class="row">
                 <hr>
 
               </div>
@@ -1266,21 +1101,14 @@
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Aeroespacial</li>
-                      <li class="col-md-12 ml-auto">Defensa y Seguridad</li>
-                      <li class="col-md-12 ml-auto">Energía</li>
-                      <li class="col-md-12 ml-auto">Medioambiental y Agroalimentario</li>
-                      <li class="col-md-12 ml-auto">Manufactura</li>
-                      <li class="col-md-12 ml-auto">Sistema de Transporte</li>
-                      <li class="col-md-12 ml-auto">Agua</li>
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingenierias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
               </div>
               <div class="row">
                 <hr>
@@ -1310,8 +1138,7 @@
 
 </div>
 
-
-  <div class="modal fade text-center py-5 subscribeModal-lg "  id="castleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="castleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
@@ -1334,6 +1161,10 @@
                 <div class="col-md-4 "> 1834 4 h de Londres. Campus en London.</div>
               </div>
               <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              </div>
+              <div class="row">
                 <hr>
 
               </div>
@@ -1352,19 +1183,18 @@
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Humanidades y Ciencias Sociales</li>
-                      <li class="col-md-12 ml-auto">Ciencias Médicas</li>
-                      <li class="col-md-12 ml-auto">Ciencias y Física</li>
-                      <li class="col-md-12 ml-auto">Agricultura e Ingeniería</li>
-                      <li class="col-md-12 ml-auto">Ciencias Biológicas</li>
-                    </ul>
-
-                </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arquitectura.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingenierias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
               </div>
               <div class="row">
                 <hr>
@@ -1398,6 +1228,87 @@
 
 </div>
 
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="queenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1785 Centro de Londres.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">QS Ranking Mundial de Universidades (2018) 119.</div>
+                <div class="col-md-6">Times Higher Education 46 a nivel europeo. </div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingenierias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">En 1785 fundó la primera escuela de Medicina de Inglaterra en el Royal London Hospital.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.qmul.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9y6eeEK1oM"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="andrewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -1422,6 +1333,10 @@
               <div class="col-md-4 "> 1413 1hr 30 mins de Londres en avión.</div>
             </div>
             <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+            </div>
+            <div class="row">
               <hr>
 
             </div>
@@ -1440,23 +1355,16 @@
               <hr>
 
             </div>
-            <div class="row">
-              <div class="col-md-12">
-              <b>  Facultades:</b>
-
-                  <ul>
-                    <li class="col-md-12 ml-auto">Biología</li>
-                    <li class="col-md-12 ml-auto">Medicina</li>
-                    <li class="col-md-12 ml-auto">Física y Astronomía</li>
-                    <li class="col-md-12 ml-auto">Química</li>
-                    <li class="col-md-12 ml-auto">Informática</li>
-                    <li class="col-md-12 ml-auto">Matemáticas y Estadísticas</li>
-                    <li class="col-md-12 ml-auto">Dirección de Empresas</li>
-                    <li class="col-md-12 ml-auto">Economía</li>
-                    <li class="col-md-12 ml-auto">Inglés</li>
-                  </ul>
-
-              </div>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Facultades
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
             </div>
             <div class="row">
               <hr>
@@ -1487,6 +1395,168 @@
 
 </div>
 
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="ueaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> Norwich  (90 mins) de Londres.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">THE Ranking Mundial 2020: 192.</div>
+                <div class="col-md-6">Ranqueada 10ª en UK por la calidad de su investigación.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Norwich es la primera ciudad Patrimonio Mundial de la Literatura.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="http://www.uea.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTF9EOqy9L8"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="uweModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6">Guardian University Guide 28 en Reino Unido.</div>
+                <div class="col-md-6">11vo en el UK según encuesta de satisfacción estudiantil.</div>
+                <br>
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arquitectura.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">The Guardian nombro a Bristol como una de las 10 ciudades más felices para vivir y trabajar en el Reino Unido.</div>
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a href="https://www.uwe.ac.uk/" target="_blank">Web Page</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/scLpnIm-XZo"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="othersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -1520,45 +1590,15 @@
             </div>
             <div class="row">
 
+
+              <div class="col-md-6"><li>University of Aberdeen</li></div>
+              <div class="col-md-6"> <li>Cardiff University </li></div>
+              <div class="col-md-6"> <li>University of Exeter</li></div>
+              <div class="col-md-6"><li>Goldsmiths College</li></div>
+              <div class="col-md-6"> <li>University of Reading</li> </div>
               <div class="col-md-6"> <li>University of Strathclyde, Glasgow, Escocia.</li>  </div>
               <div class="col-md-6"><li>Trinity College Dublin, Ireland </li> </div>
-              <div class="col-md-6"><li>Royal Holloway (University of London)</li></div>
-              <div class="col-md-6"> <li>University of Reading</li> </div>
-              <div class="col-md-6"> <li>Cardiff University </li></div>
-              <div class="col-md-6"><li>Goldsmiths College</li></div>
-              <div class="col-md-6"><li>University of Aberdeen</li></div>
               <br>
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-              <!-- <b>  Facultades:</b>
-
-                  <ul>
-                    <li class="col-md-12 ml-auto">Biología</li>
-                    <li class="col-md-12 ml-auto">Medicina</li>
-                    <li class="col-md-12 ml-auto">Física y Astronomía</li>
-                    <li class="col-md-12 ml-auto">Química</li>
-                    <li class="col-md-12 ml-auto">Informática</li>
-                    <li class="col-md-12 ml-auto">Matemáticas y Estadísticas</li>
-                    <li class="col-md-12 ml-auto">Dirección de Empresas</li>
-                    <li class="col-md-12 ml-auto">Economía</li>
-                    <li class="col-md-12 ml-auto">Inglés</li>
-                  </ul> -->
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12"></div>
-
-
             </div>
           </div>
           <div class="row">
@@ -1567,9 +1607,6 @@
           <div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v8oA0J3fAnQ"></iframe>
           </div>
-
-          <hr>
-
           </div>
 
         </div>
@@ -1580,111 +1617,6 @@
 
 <!-- ****************************************Prepa Modal*******************************************************************8 -->
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="bathPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-          <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
-            </div>
-          </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-          <h3 class="col-md-4 "></h3> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1997 .</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/1Q5JMSk8WtydJeMB9" target="_blank" >Ciudad de Bath en el suroeste de inglaterra </a> </div>
-            </div>
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-            </div>
-            <div class="row">
-
-              <div class="col-md-6">The UK higher education is among the best in the world.</div>
-              <div class="col-md-6">No 6 2019: Guardian University Guide 2020.  </div>
-              <br>
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Facultades
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Odontología</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Veterinaria</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Derecho</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Economía</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingeniería</button>
-            </div>
-            <!-- <div class="row">
-              <div class="col-md-12">
-              <b>  Facultades:</b>
-                <div class="row">
-                  <ul  >
-                <li >Medicina </li>
-                </ul>
-                </div>
-
-              <div class="col-md-12"><li>Odontología</li></div>
-
-              <div class="col-md-12"><li>Veterinaria</li></div>
-              <div class="col-md-12"><li>Derecho</li></div>
-              <div class="col-md-12"><li>Economía</li></div>
-              <div class="col-md-12"><li>Ingeniería</li></div>
-
-              </div>
-            </div> -->
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-
-              <div class="col-md-12"><li>A los estudiantes de les enseña en grupos pequeños de tutoría</li></div>
-              <div class="col-md-12"><li>Exámenes para monitorear el progreso</li></div>
-              <div class="col-md-12"><li>Los profesores siempre están disponibles para el asesoramiento y tutoría</li></div>
-
-                <div class="header_btn dark_btn footer_btn float_left">
-                    <a href="https://www.bathacademy.co.uk/" target="_blank">Web Page</a>
-                    <a href="https://www.bathacademy.co.uk/" target="_blank">Me interesa </a>
-                </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-          </div>
-
-          <hr>
-
-          </div>
-
-        </div>
-          <div class="bottom-strip"></div>
-      </div>
-
-</div>
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="artsPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -1706,55 +1638,49 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1985 A 50 min de Londres.</div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="" target="_blank" > A 50 min de Londres </a> </div>
             </div>
             <div class="row">
               <hr>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-            </div>
-            <div class="row">
-
-              <div class="col-md-6">Está asociada con la revista Hearst Magazines UK (Editora de Elle y Cosmopolitan).</div>
-              <div class="col-md-6">Programas acreditados por la Universidad de los Artes, Londres.</div>
-              <br>
             </div>
 
             <div class="row">
               <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Año academico.</li></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+                <div class="col-md-12"><li>Semestre academico.</li></div>
 
             </div>
-            <div class="row">
-              <div class="col-md-12">
-              <b>  Facultades:</b>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
-                  <ul>
-                    <li class="col-md-12 ml-auto">Arte y Diseño</li>
-                    <li class="col-md-12 ml-auto">Moda</li>
-                    <li class="col-md-12 ml-auto">Drama y Danza</li>
-                    <li class="col-md-12 ml-auto">Música</li>
-                  </ul>
-
-              </div>
             </div>
+
             <div class="row">
               <hr>
             </div>
             <div class="row">
               <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-
-                <div class="header_btn dark_btn footer_btn float_left">
-                    <a href="https://www.csvpa.com/" target="_blank">Web Page</a>
-                </div>
-
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
             </div>
           </div>
           <div class="row">
             <hr>
           </div>
+
           <div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
           </div>
@@ -1766,7 +1692,6 @@
 
 
 </div>
-
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="catsPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -1788,57 +1713,51 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1952.</div>
+                <div class="col-md-4 "> 1985.</div>
               </div>
               <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6">3a en el ranking de las mejores preparatorias del UK.</div>
-                <div class="col-md-6">6ª en el Ranking de Escuelas Independientes de Internado. La mejor para estudiantes internacionales.</div>
-                <br>
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Ofrece cursos de secundaria y de preparatoria para entrar en las mejores universidades del UK.</li>
-                      <li class="col-md-12 ml-auto">36% de los profesores son egresados de las Universidades de Oxford y Cambridge.</li>
-
-                    </ul>
-
-                </div>
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="" target="_blank" > A 50 min de Londres </a> </div>
               </div>
               <div class="row">
                 <hr>
               </div>
+
               <div class="row">
-                <!-- <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div> -->
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                  <div class="col-md-12"><li>Año academico.</li></div>
+                  <div class="col-md-12"><li>Prepa completo.</li></div>
+                  <div class="col-md-12"><li>Semestre academico.</li></div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
-                  </div>
+              </div>
+              <br>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+              </div>
+            </div>
+            <div class="col-md-12 ">
+              <div class="header_btn dark_btn footer_btn float_left">
+                  <a  href="#" target="_blank">Me interesa </a>
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uPFn8rHs6kI"></iframe>
+            </div>
             </div>
 
           </div>
@@ -1846,86 +1765,6 @@
         </div>
 
 </div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="collyerPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
-              </div>
-            </div>
-            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-            <h3 class="col-md-4 "></h3> -->
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1532.</div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6">3a en el ranking de las mejores preparatorias del UK.</div>
-                <div class="col-md-6">6ª en el Ranking de Escuelas Independientes de Internado. La mejor para estudiantes internacionales.</div>
-                <br>
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Ofrece cursos de secundaria y de preparatoria para entrar en las mejores universidades del UK.</li>
-                      <li class="col-md-12 ml-auto">36% de los profesores son egresados de las Universidades de Oxford y Cambridge.</li>
-
-                    </ul>
-
-                </div>
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-                <!-- <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div> -->
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-
-</div>
-
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="concordPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -1935,7 +1774,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_concordTwo.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1947,57 +1786,51 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 1985.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/3Mzu2NquUojgwDmG9" target="_blank" > Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido</a> </div>
               </div>
               <div class="row">
                 <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
               </div>
 
               <div class="row">
                 <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                  <div class="col-md-12"><li>Año academico.</li></div>
+                  <div class="col-md-12"><li>Prepa completo.</li></div>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
+              <br>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Internado.</button>
 
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
                 <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
-                  </div>
-
+              </div>
+            </div>
+            <div class="col-md-12 ">
+              <div class="header_btn dark_btn footer_btn float_left">
+                  <a  href="#" target="_blank">Me interesa </a>
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+
+           <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Uy21-BRN84"></iframe>
+            </div>
             </div>
 
           </div>
@@ -2006,82 +1839,148 @@
 
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="onPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
-              </div>
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="intoPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_into_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_nto.png');?>" alt=""></div>
             </div>
-            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
 
-            <h3 class="col-md-4 "></h3> -->
+          <h3 class="col-md-4 "></h3> -->
 
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
-                  </div>
-
-              </div>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/fPDAMFWF43oiYsxJ7" target="_blank" > 102 Middlesex St, Spitalfields, London E1 7EZ, Reino Unido</a> </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Año academico.</li></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
             </div>
 
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
           </div>
-            <div class="bottom-strip"></div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GdEQPUbmvaE"></iframe>
+          </div>
+          </div>
+
         </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="kaplanPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_kaplan_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_kaplan.png');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/zKTbasE3xCGkSUFb7" target="_blank" > Palace House, 3 Cathedral St, London SE1 9DE, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Año academico.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+            </div>
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pdmv3chcouc"></iframe>
+          </div>
+          </div>
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
 
 </div>
 
@@ -2092,8 +1991,8 @@
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2105,59 +2004,55 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 1985.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/CCyZa2zsHdw8cpWH9" target="_blank" > 89 Regent St, Cambridge CB2 1AW, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
               </div>
 
               <div class="row">
                 <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                  <div class="col-md-12"><li>Año academico.</li></div>
+                  <div class="col-md-12"><li>Prepa completo.</li></div>
+                  <div class="col-md-12"><li>Semestre academico.</li></div>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
+              <br>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
 
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
-                    </ul>
-
-                </div>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
                 <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
-                  </div>
-
+              </div>
+            </div>
+            <div class="col-md-12 ">
+              <div class="header_btn dark_btn footer_btn float_left">
+                  <a  href="#" target="_blank">Me interesa </a>
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
-            </div>
 
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tfVYTiZt23E"></iframe>
+            </div>
+            </div>
           </div>
             <div class="bottom-strip"></div>
         </div>
@@ -2170,8 +2065,8 @@
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_tauton_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_atauton.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2183,63 +2078,571 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> .</div>
+                <div class="col-md-4 "> 1985.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/7SNsjXiXfAisYZdd7" target="_blank" > Staplegrove Rd, Taunton TA2 6AD, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-              </div>
-              <div class="row">
-
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <br>
               </div>
 
               <div class="row">
                 <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                  <div class="col-md-12"><li>Año academico.</li></div>
+                  <div class="col-md-12"><li>Prepa completo.</li></div>
+                  <div class="col-md-12"><li>Semestre academico.</li></div>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
+              <br>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Internado.</button>
 
-                    <ul>
-                      <li class="col-md-12 ml-auto"></li>
-                      <li class="col-md-12 ml-auto"></li>
-
-                    </ul>
-
-                </div>
               </div>
+
               <div class="row">
                 <hr>
               </div>
               <div class="row">
                 <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
-                  </div>
-
+              </div>
+            </div>
+            <div class="col-md-12 ">
+              <div class="header_btn dark_btn footer_btn float_left">
+                  <a  href="#" target="_blank">Me interesa </a>
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div> -->
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m61w28VWR2I"></iframe>
+            </div>
             </div>
 
           </div>
             <div class="bottom-strip"></div>
         </div>
 </div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="akworthPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Ackworth_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_new_AckworthOne.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/LzcD7VgjeqKSMHX6A" target="_blank" > Pontefract Rd, Ackworth, Pontefract WF7 7LT, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Año academico.</li></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Internado.</button>
+
+            </div>
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+         <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gdg812Cs8I4"></iframe>
+          </div>
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bathPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/8r8T5gyXEpL3eXi16" target="_blank" > Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Año academico.</li></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+                <div class="col-md-12"><li>Semestre academico.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Con familia.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+            </div>
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+          </div>
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="collyerPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_collers_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_collers.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1985.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/wAKMwQbXom9D6JK68" target="_blank" > 82 Hurst Rd, Horsham RH12 2EJ, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                  <div class="col-md-12"><li>Año academico.</li></div>
+                  <div class="col-md-12"><li>Prepa completo.</li></div>
+
+              </div>
+              <br>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Con familia.</button>
+
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+              </div>
+            </div>
+            <div class="col-md-12 ">
+              <div class="header_btn dark_btn footer_btn float_left">
+                  <a  href="#" target="_blank">Me interesa </a>
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_eJsc2kI7wU"></iframe>
+            </div>
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cardiffPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_cardiff-sixth_Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_cardiff-sixth.png');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://g.page/CSFCOfficial?share" target="_blank" > Trinity Court, 21-27 Newport Rd, Cardiff CF24 0AA, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Año academico.</li></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+            </div>
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cJcIRj8MszM"></iframe>
+          </div>
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="doverPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Dover_prepa.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_dover.png');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/9BECx3p7qQghekqp6" target="_blank" > Effingham Cres, Dover CT17 9RH, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Año academico.</li></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Internado.</button>
+
+            </div>
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WeAYjrwD7v4"></iframe>
+          </div>
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="stonyhurtsPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_stonyhurts.png');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/offSnTJiuAXzAvk78" target="_blank" > Stonyhurst, Clitheroe BB7 9PT, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Internado.</button>
+
+            </div>
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5xa1XwDzSnQ"></iframe>
+          </div>
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="strathaPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_strathallan_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_strathallan.png');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1985.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/h2j9BiWNmAkzGKeo6" target="_blank" > Forgandenny, Perth PH2 9EG, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
+                <div class="col-md-12"><li>Prepa completo.</li></div>
+
+            </div>
+            <br>
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Alojamiento
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Internado.</button>
+
+            </div>
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn footer_btn float_left">
+                <a  href="#" target="_blank">Me interesa </a>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PhklOowjNJk"></iframe>
+          </div>
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+
+</div>
+
+
+
 
 <!-- *******************************************Englis********************************************************************** -->
 
@@ -4046,11 +4449,7 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
                   <div class="col-md-12"><li>Ingles.</li></div>
 
               </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
+              <br>
               <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
                   Alojamiento
@@ -4073,7 +4472,7 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
                   <div class="header_btn dark_btn footer_btn float_left">
                       <a  href="#" target="_blank">Me interesa </a>
                   </div>
-                  </div>
+                </div>
 
               </div>
             </div>
