@@ -24,11 +24,7 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/bootstrap.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/bootstrap-extend.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/css/site.min599c.css?v4.0.2');?>">
-
-  <!-- Skin tools (demo site only) -->
-  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/skintools.min599c.css?v4.0.2');?>">
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Plugin/skintools.min599c.js?v4.0.2');?>"></script>
-
+  
   <!-- Plugins -->
   <link rel="stylesheet"type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/pages/login-v2.min599c.css?v4.0.2');?>">
 
@@ -110,6 +106,15 @@
       <script src="<?=base_url('resources/assets/Dashboard/global/vendor/media-match/media.match.min.js?v4.0.2');?>"></script>
       <script src=".<?=base_url('resources/assets/Dashboard/global/vendor/respond/respond.min.js?v4.0.2');?>"></script>
       <![endif]-->
+
+  <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
 </head>
 <body class="animsition page-login-v2 layout-full page-dark">
   <style>
@@ -119,7 +124,7 @@
   </style>
   <!--bar idioma-->
   <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
-    <ul>
+    <ul style="margin-top: 40px;">
       <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
         <a href="Language/spanish">
           <i class="flag-icon flag-icon-mx" aria-hidden="true"></i>
@@ -128,11 +133,6 @@
       <li class="<?php echo ($this->session->userdata('site_lang') == 'english') ? 'englishActivo' : 'english'; ?>">
         <a href="Language/english">
           <i class="flag-icon flag-icon-gb" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="idioma">
-        <a target="_self">
-        <i class="fas fa-language fa-2x" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
@@ -155,7 +155,8 @@
         <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
         <div class="social-btns">
-            <a class="btn facebook" href="<?=@$this->facebook->login_url('login');?>"><i class="fa fa-facebook"></i></a>
+            <!--<a class="btn facebook" href="<?=@$this->facebook->login_url('login');?>"><i class="fa fa-facebook"></i></a>-->
+            <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="Login/google_login"><i class="fa fa-google"></i></a>
         </div>
         <?php if ($this->session->flashdata('facebook')=="Error") { ;?>
@@ -415,11 +416,17 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
   
   <script type="text/javascript">
     $(function(){
       
+      $(document).on('click','.facebook',function() {
+        alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
+        
+      });
+
     });
   </script>
 </body>

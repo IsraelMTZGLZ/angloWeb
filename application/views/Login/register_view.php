@@ -108,6 +108,14 @@
       <script src="<?=base_url('resources/assets/Dashboard/global/vendor/media-match/media.match.min.js?v4.0.2');?>"></script>
       <script src=".<?=base_url('resources/assets/Dashboard/global/vendor/respond/respond.min.js?v4.0.2');?>"></script>
       <![endif]-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+
 </head>
 <body class="animsition page-login-v2 layout-full page-dark">
   <style>
@@ -117,7 +125,7 @@
   </style>
   <!--bar idioma-->
   <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
-    <ul>
+    <ul style="margin-top: 30px;">
       <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
         <a href="Language/spanish">
           <i class="flag-icon flag-icon-mx" aria-hidden="true"></i>
@@ -128,11 +136,6 @@
           <i class="flag-icon flag-icon-gb" aria-hidden="true"></i>
         </a>
       </li>
-      <li class="idioma">
-        <a target="_self">
-        <i class="fas fa-language fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
     </ul>
   </div>
   <!-- Page -->
@@ -140,21 +143,21 @@
     <div class="page-content">
       <div class="page-brand-info">
         <div class="brand">
-        <a href="Home" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
-          <a href="Home"><h2 class="brand-text font-size-40">Anglo Latino</h2></a>
+        <a href="Login" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
+        <a href="Login"><h2 class="brand-text font-size-20">Anglo Latino Education Partnership</h2></a>
         </div>
         <p class="font-size-20"><?=$this->lang->line('leyenda_registro_page');?></p>
       </div>
 
       <div class="page-login-main animation-slide-right animation-duration-1">
-        <div class="brand hidden-md-up">
-          <a href="Home"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" width="20%"></a>
-          <a href="Home"><h3 class="brand-text font-size-30">Anglo Latino</h3></a>
+      <div class="brand hidden-md-up">
+          <a href="Login"><img class="brand-img" style="display:block;margin:auto;width: 150px;margin-bottom: -30px;margin-top: -20px;" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" width="20%"></a>
         </div>
         <h3 class="font-size-34 text-center"><?=$this->lang->line('registrate');?></h3>
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social_registro');?>:</p>
         <div class="social-btns">
-            <a class="btn facebook" href="<?=@$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a>
+            <!--<a class="btn facebook" href="<?=@$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a>-->
+            <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="Registro/googleRegister"><i class="fa fa-google"></i></a>
         </div>
         <?php if ($this->session->flashdata('facebook')=="Error") { ;?>
@@ -220,7 +223,7 @@
             <p class="ml-40"><?=$this->lang->line('leyenda_terminos');?><a href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blank"><?=$this->lang->line('terminos_registro')?></a>.</p>
           </div>
           <div class="animation-example animation-hover hover">
-            <button type="submit" class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('registrate')?></button>
+            <button type="submit" class="btn btn-info btn-block btn-round"><?=$this->lang->line('registrate')?></button>
           </div>
         </form>
 
@@ -468,6 +471,18 @@
     });
     
   </script>
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
+  
+<script type="text/javascript">
+  $(function(){
+    
+    $(document).on('click','.facebook',function() {
+      alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
+      
+    });
+
+  });
+</script>
 </body>
 </html>

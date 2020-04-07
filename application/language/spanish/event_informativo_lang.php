@@ -16,6 +16,8 @@ $lang['event'] = "Eventos";
 
 $lang['event_title_coming'] = "Estamos trabajando en esta sección, pronto estará disponible.";
 $lang['event_sub_coming'] = "Próximamente";
+$lang['esperalo_event'] = "Esperalo";
+
 
 $lang['english']="English";
 $lang['spanish']="Spanish";

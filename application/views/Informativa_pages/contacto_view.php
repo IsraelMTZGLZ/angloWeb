@@ -25,7 +25,7 @@
     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="cp_heading_wraper contact_wrap">
             <h3><?=$this->lang->line('titule_paises_contact')?></h3>
-            <p style="margin-top: -20px;margin-bottom: 10px;"><?=$this->lang->line('paises_contacto')?></p>
+            <p style="margin-top: -20px;margin-bottom: 10px;text-transform: none"><?=$this->lang->line('paises_contacto')?></p>
         </div>
     </div>
     <div class="col-lg-3 col-md-12 col-sm-12">
@@ -84,7 +84,7 @@
                                         <li class="list-group-item">Queretaro &nbsp;&nbsp;<span class="badge badge-pill badge-success"><?=$this->lang->line('oficinas_en_mexico')?></span></li>
                                         <li class="list-group-item">Ciudad De Mexico &nbsp;&nbsp;<span class="badge badge-pill badge-success"><?=$this->lang->line('oficinas_en_mexico')?></span></li>
                                         <li class="list-group-item">Guadalajara&nbsp;&nbsp;<span class="badge badge-pill badge-info"><?=$this->lang->line('oficinas_v_en_mexico')?></span></li>
-                                        <li class="list-group-item">Monterrey</li>
+                                        <li class="list-group-item">Monterrey&nbsp;&nbsp;<span class="badge badge-pill badge-info"><?=$this->lang->line('oficinas_v_en_mexico')?></span></li>
                                     </ul>                                        
                                     <div class="header_btn dark_btn tab_btn float_left">
 
@@ -247,17 +247,17 @@
                         <a class="chat-open-dialog"><div class="contact_rotate">
                             <i class="fas fa-robot"></i>
                         </div></a>
-                        <h4><a class="chat-open-dialog">Asistente de anglo</a></h4>
-                        <p>Agente que te ayuda a encontrar el mejor programa adecuado a ti</p>
+                        <h4><a class="chat-open-dialog"><?=$this->lang->line('formas_contacto_bot')?></a></h4>
+                        <p><?=$this->lang->line('formas_contacto_bot_leyenda')?></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank"><div class="contact_rotate">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=study@anglolatinoedu.com" target="_blank"><div class="contact_rotate">
                            <i class="fas fa-envelope"></i>
                         </div></a>
-                        <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@anglolatinoedu.com" target="_blank"><?=$this->lang->line('formas_contacto_email');?></a></h4>
-                        <p><a><?=$this->lang->line('formas_contacto_email_leyenda')?>: info@anglolatinoedu.com</a></p>
+                        <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=study@anglolatinoedu.com" target="_blank"><?=$this->lang->line('formas_contacto_email');?></a></h4>
+                        <p><a><?=$this->lang->line('formas_contacto_email_leyenda')?>: study@anglolatinoedu.com</a></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">

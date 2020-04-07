@@ -76,8 +76,14 @@
               <ul class="cd-dropdown-content">
                   <li>
                      <form class="cd-search">
-                      <input type="search" placeholder="Search...">
+                      <input type="search" placeholder="Search..." id="inputBusqueda">
                     </form>
+                    <div class="search" id="search">
+          <table class="search-tabla" id="searchTabla">
+            <thead><tr><td></td></tr></thead>
+            <tbody id="tabla"></tbody>
+          </table>
+</div>
                </li>
             <li class="javascript:;">
                 <a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>"><?=$this->lang->line('home_nav');?></a>

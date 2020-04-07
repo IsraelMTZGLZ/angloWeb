@@ -18,7 +18,7 @@ $lang['title_question_one'] = "How will Brexit affect me if I want to study in t
 $lang['answer_question_one'] = "Given the possible panoramic views of Brexit, UK universities have taken precautions to protect their students from radical modifications.";
 
 $lang['title_question_two'] = "Benefits of studying in the United Kingdom";
-$lang['answer_question_two'] = "Tener estudios en el extranjero puede abrirte muchas puertas, pero, el país donde lo hagas puede hacer la diferenciaHaving studies abroad can open many doors, but the country where you do it can make a difference.";
+$lang['answer_question_two'] = "Having studies abroad can open many doors, but the country where you do it can make a difference.";
 
 $lang['title_question_three'] = "Yes! Now it is much more accessible to study in the UK";
 $lang['answer_question_three'] = "Globalization has also impacted the educational field, so studying abroad is now more accessible in economic matters and in times of statistics.";

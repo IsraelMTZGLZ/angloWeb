@@ -285,9 +285,12 @@
             <p><a>Termina de acompletar tu informacion</a></p>
             <p style="color: blue"><a><?=$user->names,' ', $user->paterns?></a></p>
           </div>
-          <form method="post" action="EleccionUniversidad" autocomplete="off">
+          <div id="responseText" style="margin-top: 20px;margin-bottom: -5px;">
+        </div>
+          <form id="registroForm">
+            <input type="hidden" value="<?=$user->persona?>" name="persona" id="persona">
             <div class="form-group form-material floating" data-plugin="formMaterial" style="align-items: center">
-              <input type="text" class="form-control empty" name="name" data-plugin="datepicker" autocomplete="off">
+              <input type="text" class="form-control empty" name="fecha" id="fecha" data-plugin="datepicker" autocomplete="off">
               <label>Fecha de nacimiento</label>
             </div>
             <div class="form-group form-material floating" data-plugin="formMaterial">
@@ -308,13 +311,14 @@
               </div>
               <div class="col-9">
                 <div class="form-group form-material floating" data-plugin="formMaterial">
-                  <input type="tel" class="form-control empty" name="password">
+                  <input type="tel" class="form-control empty telefono" >
+                  <input type="hidden" class="form-control empty" name="telefono" id="telefono">
                   <label>Numero de telefono</label>
                 </div>
               </div>
             </div>
             <div class="form-group form-material floating" data-plugin="formMaterial">
-              <select class="form-control" data-plugin="select2">
+              <select class="form-control" data-plugin="select2" name="genero" id="genero">
                 <option value="" disabled selected>Elige una opcion</option>
                 <option value="Femenino">Femenino</option>
                 <option value="Masculino">Masculino</option>
@@ -512,6 +516,58 @@
       $persona =$(document).find('#namePerson').val();
       tostada('info','Termina de acompletar tu informacion.');
       tostada('success','Bienvenido '+$persona);
+
+      $(document).on('submit','#registroForm',function(event){
+        event.preventDefault();
+
+        $(document).find('#fecha').next('div').remove();
+        $(document).find('#telefono').next('div').remove();
+        $(document).find('#ciudad').next('div').remove();
+        _url = "";
+        _url = _principalURL()+"Aspirante/api/aspirante/";
+        _method = "POST";
+
+        if($(document).find('.telefono').val()){
+          $(document).find('#telefono').val($(document).find('#lada').val()+$(document).find('.telefono').val())
+        }
+        $.ajax({
+            url: _url,
+            method : _method,
+            headers : {
+            'X-API-KEY':'ANGLOKEY'
+            },
+            data: $(document).find('#registroForm').serialize(),
+            success : function(_response){
+            response = JSON.stringify(_response);
+
+            if (_response.status=="error") {
+              $.each(_response.validations,function(key,message){
+                  $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+              });
+
+              setTimeout(function(){
+              
+                  $(document).find('#responseText').html('<div class="summary-errors alert alert-danger alert-dismissible fade show" role="alert">'+
+                  '<strong>Error!</strong> '+_response.message+
+                  '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                  '<span aria-hidden="true">&times;</span>'+
+                  '</button>'+
+                  '</div>'
+                  );
+              },2000);
+            }
+            if (_response.status=="success") {
+              window.location.href = "<?php echo site_url('Dashboard/EleccionUniversidad'); ?>";
+            }
+            
+            tostada(_response.status,_response.message);
+            
+
+            },error : function(err){
+            
+            }
+          });
+        });
     });
   </script>
 </body>
