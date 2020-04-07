@@ -285,7 +285,7 @@
             <p><a>Termina de acompletar tu informacion</a></p>
             <p style="color: blue"><a><?=$user->names,' ', $user->paterns?></a></p>
           </div>
-          <form method="post" action="#" autocomplete="off">
+          <form method="post" action="EleccionUniversidad" autocomplete="off">
             <div class="form-group form-material floating" data-plugin="formMaterial" style="align-items: center">
               <input type="text" class="form-control empty" name="name" data-plugin="datepicker" autocomplete="off">
               <label>Fecha de nacimiento</label>

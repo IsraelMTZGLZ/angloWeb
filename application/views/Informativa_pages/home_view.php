@@ -158,7 +158,7 @@
 
                         <h3><?=$this->lang->line('nuestros_servicios_home');?></h3>
 
-                        <p><?=$this->lang->line('ayudar1');?>
+                        <p style="text-transform: none;"><?=$this->lang->line('ayudar1');?>
                             <br><?=$this->lang->line('ayudar2');?>
                         </p>
                     </div>
@@ -233,7 +233,7 @@
 
                     <h3><?=$this->lang->line('acerca_de_nosotros');?></h3>
 
-                    <p> <?=$this->lang->line('about1_home');?>
+                    <p style="text-transform: none"> <?=$this->lang->line('about1_home');?>
                         <br>
                         <br> <?=$this->lang->line('about2_home');?>
                         <br>
@@ -340,7 +340,7 @@
                             <!-- /.entry-header -->
 
                             <div class="entry-content">
-                                <p><?=$this->lang->line('event_title_coming');?>.</p>
+                                <p><?=$this->lang->line('proximamente_home')?>...</p>
                             </div>
                             <a href="Event" class="blog_read"><?=$this->lang->line('reading');?><i class="flaticon-arrow"></i></a>
                             <!-- /.entry-content -->
@@ -363,7 +363,7 @@
 
                         <h3><?=$this->lang->line('becas_home')?></h3>
 
-                        <p><?=$this->lang->line('becas_desc_home')?></p>
+                        <p style="text-transform: none"><?=$this->lang->line('becas_desc_home')?></p>
                     </div>
 
                 </div>
