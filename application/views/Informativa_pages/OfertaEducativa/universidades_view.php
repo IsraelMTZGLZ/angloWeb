@@ -370,14 +370,86 @@
                         </div>
                     </div>
 
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/s_bath.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Bath <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/u_bristool.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Bristol <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bristolInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_brington.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Brighton <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#brightonInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge-university.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Cambridge  <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_Canterbury.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Canterbury <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#canterburyInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_chester.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <a href="#"> Chester <span>LEER MÁS </span></a>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <div class="portfolio_overlay"></div>
+                        </div>
+                    </div>
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_Chesterbuild.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_Cork_irland.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> English in Chester <span>LEER MÁS </span></a>
+                                <a href="#"> Cork, Ireland  <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cork_IrelandInglesModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -385,11 +457,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_ebath.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_dublin.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#">Bath Academy of English <span>LEER MÁS </span></a>
+                                <a href="#"> Dublin <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#dublinInglesModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -397,11 +469,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/p_aconcord.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_Eastbourne.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Concord Collage <span>LEER MÁS </span></a>
+                                <a href="#"> Eastbourne <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#concordEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneInglesModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -409,11 +481,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_eselect.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_london.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Select English (Cambridge) <span>LEER MÁS </span></a>
+                                <a href="#"> Liverpool <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#selectEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#LondonInglesModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -421,11 +493,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_estanfort.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_london.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Stafford House International <span>LEER MÁS </span></a>
+                                <a href="#"> London <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#stanfordEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#LondonInglesModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
@@ -433,28 +505,18 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/v_manchester.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge Academy of English <span>LEER MÁS </span></a>
+                                <a href="#"> Manchester <span>LEER MÁS </span></a>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeEnglishModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#manchesterInglesModal"></button></i>
                                 </div>
                             </div>
                      <div class="portfolio_overlay"></div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_estudio.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#"> The English Studio, London y Dublin <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#studioEnglishModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
+
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/s_bath.jpg');?>" alt="">
@@ -708,7 +770,7 @@
                       <li class="col-md-12 ml-auto">Ciencias Sociales</li>
                     </ul>
 
-                </div>
+                </div>n
               </div>
               <div class="row">
                 <hr>
@@ -2646,15 +2708,15 @@
 
 <!-- *******************************************Englis********************************************************************** -->
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="chesterEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bathInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/e_Chesterbuild.jpg');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2670,7 +2732,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" >9-11 Stanley Pl, Chester CH1 2LU, Reino Unido </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/3MMGdZS62rMcWbfL8" target="_blank" >Claverton Down, Bath BA2 7AY, Reino Unido</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2678,7 +2740,17 @@
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Cursos de inglés general</b></div>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
               </div>
 
               <div class="row">
@@ -2687,13 +2759,10 @@
               </div>
               <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Cursos
+                  Alojamiento
                 </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >edad 17+</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Curso 25+(cursos para alumnos mayores de 25 que quieren mejorar su inglés cotidiano y profecional).</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Preparación para exámenes cursos 50+(cursos para alumnos mayores de 50).</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cursos para profesionales y gente de negocio.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cursos de verano para adolecentes.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
               </div>
 
               <div class="row">
@@ -2701,16 +2770,15 @@
               </div>
               <div class="row">
 
-                <div class="col-md-12"><li>Es la única del British Council acreditada Inglés centro de enseñanza de idiomas de Chester.</li></div>
-                <div class="col-md-12"><li>Inglés en Chester es una comunidad. La gente hace la escuela lo que es hoy.</li></div>
-                <div class="col-md-12"><li>Consideramos a todos como parte vital de la escual desde el momento de su llegada a Chester.</li></div>
+                <div class="col-md-12"><li>Acreditada por UKVI y British Council.</li></div>
+                <div class="col-md-12"><li>atención individual a cada estudiante.</li></div>
+                <div class="col-md-12"><li>Alojamiento con familias solidarias y responsables.</li></div>
+
+                <div class="col-md-12 ">
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                    <pre>
-                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
-
-                      <a  style="align:center" href="#" target="_blank">Me interesa </a>
-                      </pre>
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
                   </div>
 
               </div>
@@ -2731,15 +2799,15 @@
         </div>
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="bathEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bristolInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/i_bathLogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/i_ebath.jpg');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_bristol.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_bristol.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2751,12 +2819,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1997  	</div>
+                <div class="col-md-4 "> 	1876 .</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/vBcrtj6ixuGqWjCt8" target="_blank" >Resultados de búsqueda
-Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/EHbVwH1seTykkR6L8" target="_blank" >Senate House, Tyndall Ave, Bristol BS8 1TH, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2764,7 +2831,17 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Cursos de Inglés</b></div>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
               </div>
 
               <div class="row">
@@ -2773,31 +2850,739 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Cursos
+                  Alojamiento
                 </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inglés general y curso intensivo</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" > Preparación para los examenes IELTS & Cambridge ESOL </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inglés para negocios </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Desarrollo de ingles académico.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Talleres de habilidades profecionales</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inglés conversacional</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inglés con fines específicos</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inglés cultural</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cursos de verano para jóvenes(12 a 17 años)</button>
-              </div>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
 
+              </div>
               <div class="row">
                 <hr>
               </div>
               <div class="row">
 
-                <div class="col-md-12"><li>Situada en el corazón de la hermosa ciudad Patrimonio de la Humanidad de Bath</li></div>
-                <div class="col-md-12"><li>Acreditada por UKVI nivel en el British Council</li></div>
-                <div class="col-md-12"><li>Prestamos atención individual a cada estudiante y aprovechamos sus talentos particulares</li></div>
+                <div class="col-md-12"><li>La Universidad de Bristol invita a estudiantes internacionales a unirse a nuestra gama dinámica e inmersiva de programas de ingles.</li></div>
+                <div class="col-md-12"><li> Obtenga experiencia académica y profesional y explore Bristol, una de las ciudades más bellas y vibrantes del Reino Unido.</li></div>
+
+                <div class="col-md-12 ">
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.bathacademy.co.uk/study/english-language-training/" target="_blank">Web Page</a>
-                      <a href="#" target="_blank">Me interesa </a>
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jhX3YlGnDIc"></iframe>
+            </div>
+
+            <hr>
+          </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="brightonInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_brighton_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_brington.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1858 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/EnJY2JK1wF3U4Br88" target="_blank" > 58-67 Grand Parade, Brighton BN2 0JY, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Ofrecer a los estudiantes la oportunidad de experimentar lo que es estudiar una materia que les encanta en la universidad.</li></div>
+                <div class="col-md-12"><li>Los estudiantes aprenderán en un entorno académico, trabajarán con otros estudiantes interesados ​​en cursos similares, estudiantes universitarios y personal académico.</li></div>
+                <div class="col-md-12"><li>Clases de diversas nacionalidades.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vqj6hIFB-TE"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cambridgeInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1209 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/5VoYTGYjtVUXkfpBA" target="_blank" >The Old Schools, Trinity Ln, Cambridge CB2 1TN, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Nuestros programas ofrecen una mezcla de tradición e inspiración a medida que los participantes de todo el mundo absorben la atmósfera de este lugar extraordinario.</li></div>
+                <div class="col-md-12"><li>Durante siglos, la Universidad ha ayudado a dar forma y cambiar el mundo.</li></div>
+                <div class="col-md-12"><li>creemos que nuestros programas ofrecen beneficios que ampliarán su experiencia y mejorarán su CV.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="canterburyInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_updatecaterburylogo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/v_update_caterbusy.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 1949 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/szyFrYrz2E2A8C9A7" target="_blank" > New Dover Rd, Canterbury CT1 3AJ, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <!-- <div class="col-md-12"><li>.</li></div>
+                <div class="col-md-12"><li>.</li></div>
+                <div class="col-md-12"><li>.</li></div> -->
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe> -->
+            </div>
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="chesterInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1839 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/Hj1s65WCmfdpusXQ8" target="_blank" > Parkgate Rd, Chester CH1 4BJ, Reino Unido</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Te enseñarán nuestros destacados académicos de la Facultad de Administración y Negocios que son especialistas de la industria en su campo.</li></div>
+                <div class="col-md-12"><li>Oportunidades fantásticas para experimentar el maravilloso Chester histórico y el noroeste del Reino Unido, incluidos Liverpool, Manchester y el norte de Gales.</li></div>
+                <div class="col-md-12"><li> Es una oportunidad emocionante para combinar actividades de estudio y sociales.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5pcmATG_mjM"></iframe>
+            </div>
+          <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="concordInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_concord.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/xM3PEs5EtxUjUWqq5" target="_blank" >Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Concord College da la bienvenida a estudiantes de todo el mundo y el área local a su comunidad vibrante y variada.</li></div>
+                <div class="col-md-12"><li>Desarrollar la confianza de los estudiantes en sus propias habilidades.</li></div>
+                <div class="col-md-12"><li>Mejorar las habilidades de los estudiantes en su materia seleccionada.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BZKgviod4D4"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cork_IrelandInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_cork_irland_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1845.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > Gaol Walk, University College, Cork, T12 YN60, Irlanda </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <!-- <div class="col-md-12"><li>20 o 26 horas de matrícula + programa social.</li></div>
+                <div class="col-md-12"><li>Excursión miércoles por la tarde + evento social jueves por la noche.</li></div>
+                <div class="col-md-12"><li>La Escuela de Verano ofrece oportunidades estructuradas y respaldadas para estudiantes de CCL y estudiantes internacionales visitantes para compartir una experiencia enriquecedora e intercultural.</li></div> -->
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
+            </div>
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="dublinInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_dublin_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_dublin.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1976 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/j5tWf4cfKS5dwWy4A" target="_blank" > College Green, Dublin 2, Irlanda</a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Participar en un programa de Inglés puede ser una forma brillante de experimentar estudiar en el extranjero.</li></div>
+
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jFdd3EVN4-Q"></iframe>
+            </div>
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="eastbourneInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header d-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1867 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/RXCpxCfBAsjwzdCr9" target="_blank" >Old Wish Rd, Eastbourne BN21 4JY, Reino Unido </a> </div>
+              </div>
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>Eastbourne tiene mucho que ofrecer, incluyendo una selección de cines y teatros multiplex modernos, un hermoso paseo marítimo, un puerto deportivo de ocio y excelentes tiendas, tanto interiores como al aire libre.</li></div>
+                <div class="col-md-12"><li>instalaciones educativas y deportivas de primera clase.</li></div>
+
+                <div class="col-md-12 ">
+
+                  <div class="header_btn dark_btn footer_btn float_left">
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
                   </div>
 
               </div>
@@ -2808,7 +3593,8 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
             </div>
-           <hr>
+
+            <hr>
 
             </div>
 
@@ -2817,15 +3603,15 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
         </div>
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="concordEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="LondonInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/i_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/i_aconcord.jpg');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_london_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_london.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2837,11 +3623,11 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1949	</div>
+                <div class="col-md-4 "> 	1976 .</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/wCKSPxqUDBguJRc28" target="_blank" >Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/GTxCCZmp9EaZ9SeN9" target="_blank" > Gower St, Bloomsbury, London WC1E 6BT, Reino Unido</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2849,7 +3635,17 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Cursos de Inglés</b></div>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
               </div>
 
               <div class="row">
@@ -2858,35 +3654,31 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Cursos
+                  Alojamiento
                 </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Cursos adecuados para los estudiantes de 9-17 años</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Cursos para mejorar las habilidades de Inglés tales como leer, hablar, escuchar y escribir </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cursos de Inglés general</button>
-              </div>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
+              </div>
               <div class="row">
                 <hr>
               </div>
               <div class="row">
-
-                <div class="col-md-12"><li>Cumplir y hacer amigos con gente joven de diferentes países y culturas del mundo</li></div>
-                <div class="col-md-12"><li>Conocer algo de Gran Bretaña y de la manera de la vida Británica</li></div>
-
-
+                <div class="col-md-12"><li>Cada año, más de 6,000 estudiantes de 120 naciones estudian en el campus de LSE en el corazón del centro de Londres.</li></div>
+                <div class="col-md-12 ">
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://concordcollegeuk.com/" target="_blank">Web Page</a>
-                      <a href="#" target="_blank">Me interesa </a>
+                      <a  href="#" target="_blank">Me interesa </a>
                   </div>
-
+                  </div>
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
             <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Uy21-BRN84"></iframe>
+              <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe> -->
             </div>
+
             <hr>
 
             </div>
@@ -2896,15 +3688,15 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
         </div>
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="selectEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="manchesterInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/i_Selec_Logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/i_eselect.png');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_manchester_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_manchester.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2916,11 +3708,11 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1991	</div>
+                <div class="col-md-4 "> 	1976 .</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/dMHeWmZx4qPCKMHh9" target="_blank" > 13 Station Rd, Cambridge CB1 2JB, Reino Unido </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/8HMTdxADMuBomkUG9" target="_blank" > Fielden Campus, 141 Barlow Moor Rd, West Didsbury, Manchester M20 2PQ, Reino Unido</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2928,7 +3720,17 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Cursos de Inglés</b></div>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
               </div>
 
               <div class="row">
@@ -2937,26 +3739,26 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Cursos
+                  Alojamiento
                 </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inglés General.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inglés Intensivo.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Preparación para exámenes (IELTS, CAE, FCE).</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cursos de verano.</button>
-              </div>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
+              </div>
               <div class="row">
                 <hr>
               </div>
               <div class="row">
 
-                <div class="col-md-12"><li>Enseñanza personalizada que ayuda a todos los estudiates a alcanzar sus metas de aprendizaje.</li></div>
-                <div class="col-md-12"><li>Ofrecemos un abiente agradable, estimulante, apoyo e inclusión.</li></div>
-                <div class="col-md-12"><li>Cursos de inglés durante todo el año con una duración de entre 15 y 25 horas.</li></div>
+                <div class="col-md-12"><li>Con cientos de cursos únicos, útiles e inspiradores para elegir, ¡el conocimiento que necesita para tener éxito está al alcance de su mano!.</li></div>
+                <div class="col-md-12"><li>Ya sea que esté esperando su carrera perfecta, ansioso por aprender nuevas habilidades increíbles o comenzar el camino a la universidad, podemos ayudarlo a encontrar el curso, certificado o premio ideal.</li></div>
+                <div class="col-md-12"><li>Sumérgete en tu área temática favorita, busca la calificación que necesitas y descubre adónde te puede llevar estudiar con The Manchester College.</li></div>
+
+                <div class="col-md-12 ">
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="http://www.selectenglish.co.uk/" target="_blank">Web Page</a>
-                      <a href="#" target="_blank">Me interesa </a>
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
                   </div>
 
               </div>
@@ -2965,10 +3767,9 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               <hr>
             </div>
             <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IbDyLsPEbPA"></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xnquQlOYJK8"></iframe>
             </div>
-
-            <hr>
+          <hr>
 
             </div>
 
@@ -2977,15 +3778,15 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
         </div>
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="stanfordEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="tauntonInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/i_stafford-Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/i_stanfford.jpg');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_touton.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2997,11 +3798,11 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1952	</div>
+                <div class="col-md-4 "> 	1847 .</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/eyaqhw7GysdrdbNp6" target="_blank" > 2 Southampton Pl, Holborn, London WC1A 2DA, Reino Unido </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/iqbNbiKKHm45cMhH8" target="_blank" >Staplegrove Rd, Taunton TA2 6AD, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3009,7 +3810,17 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>Cuenta con 5 centros ubicados en :</b></div>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
               </div>
 
               <div class="row">
@@ -3018,29 +3829,25 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  ubicaciones
+                  Alojamiento
                 </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >London.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Brighton.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Canterbury.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Boston, USA.</button>
-              </div>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
+              </div>
               <div class="row">
                 <hr>
               </div>
               <div class="row">
 
-                <div class="col-md-12"><li>Más de 60 años de experencia y éxito  .</li></div>
-                <div class="col-md-12"><li>Entorno familiar y proporciona un punto de partida importante para los estudiantes.</li></div>
-                <div class="col-md-12"><li>Profesores calificados de DELTA.</li></div>
-                <div class="col-md-12"><li>Clases pequeñas(10 - 14 alumnos).</li></div>
-                <div class="col-md-12"><li>Tecnología y tableros inteligentes en todos los salones.</li></div>
-                <div class="col-md-12"><li>Programas social todo el año.</li></div>
+                <div class="col-md-12"><li>Establecida en 1847, Taunton School ha sido durante mucho tiempo uno de los principales proveedores de educación privada en el Reino Unido.</li></div>
+                <div class="col-md-12"><li>Estamos ubicados en el hermoso condado rural de Somerset en el suroeste de Inglaterra, ocupando un sitio de 56 acres y con excelentes instalaciones.</li></div>
+
+                <div class="col-md-12 ">
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.staffordhouse.com/coronavirus-advice/school-updates.htm/" target="_blank">Web Page</a>
-                      <a href="#" target="_blank">Me interesa </a>
+                      <a  href="#" target="_blank">Me interesa </a>
+                  </div>
                   </div>
 
               </div>
@@ -3049,9 +3856,8 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               <hr>
             </div>
             <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fl54_zfHx4w"></iframe>
+              <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/372337647?color=ffffff&byline=0&portrait=0"></iframe>
             </div>
-
             <hr>
 
             </div>
@@ -3061,16 +3867,15 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
         </div>
 </div>
 
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="cambridgeEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="yorkInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
           <div class="modal-header d-none d-lg-block d-xl-block">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_york_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_york.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3082,11 +3887,11 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	</div>
+                <div class="col-md-4 "> 	1976 .</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" > </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/Hn4wKX1KX4wHcy8s8" target="_blank" >The King's Manor, Exhibition Square, York YO1 7EP, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3094,7 +3899,17 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
-                  <div class="col-md-12 " style="align:center"><b>C</b></div>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
               </div>
 
               <div class="row">
@@ -3103,28 +3918,27 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               </div>
               <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Cursos
+                  Alojamiento
                 </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
-              </div>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
+              </div>
               <div class="row">
                 <hr>
               </div>
               <div class="row">
 
-                <div class="col-md-12"><li></li></div>
-                <div class="col-md-12"><li></li></div>
-                <div class="col-md-12"><li></li></div>
+                <div class="col-md-12"><li>Desarrolla tus habilidades académicas, comunicativas y lingüísticas en inglés.</li></div>
+                <div class="col-md-12"><li>Aumente su confianza y mejore sus habilidades transferibles, como trabajar en equipo en un entorno internacional.</li></div>
+                <div class="col-md-12"><li>Amplíe sus horizontes y desarrolle su forma de pensar.</li></div>
+
+                <div class="col-md-12 ">
 
                   <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
-                      <a href="#" target="_blank">Me interesa </a>
+                      <a  href="#" target="_blank">Me interesa </a>
                   </div>
+                </div>
 
               </div>
             </div>
@@ -3132,10 +3946,9 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
               <hr>
             </div>
             <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OZyMxE5QXXE"></iframe>
             </div>
-
-            <hr>
+          <hr>
 
             </div>
 
@@ -3144,88 +3957,6 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
         </div>
 </div>
 
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="studioEnglishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
-              </div>
-            </div>
-            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-            <h3 class="col-md-4 "></h3> -->
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/JWbzqgJ5k51EL9uW6" target="_blank" > </a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>C</b></div>
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Cursos
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" ></button>
-              </div>
-
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-
-                <div class="col-md-12"><li></li></div>
-                <div class="col-md-12"><li></li></div>
-                <div class="col-md-12"><li></li></div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.ackworthschool.com/" target="_blank">Web Page</a>
-                      <a href="#" target="_blank">Me interesa </a>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-            </div>
-
-            <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div>
 
 
 <!--.....................................................- Cursos de verano ...................................................-->
@@ -3323,7 +4054,6 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
         </div>
 </div>
 
-
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="bristolVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -3413,8 +4143,6 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="bottom-strip"></div>
         </div>
 </div>
-
-
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="brightonVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -3602,6 +4330,7 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="bottom-strip"></div>
         </div>
 </div>
+
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="canterburyVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -3692,6 +4421,7 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="bottom-strip"></div>
         </div>
 </div>
+
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="chesterVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -3781,6 +4511,7 @@ Avon, 27 Queen Square, Bath BA1 2HX, Reino Unido </a> </div>
             <div class="bottom-strip"></div>
         </div>
 </div>
+
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="concordVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
