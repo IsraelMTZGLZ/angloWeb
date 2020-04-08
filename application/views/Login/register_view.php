@@ -223,7 +223,7 @@
             <p class="ml-40"><?=$this->lang->line('leyenda_terminos');?><a href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blank"><?=$this->lang->line('terminos_registro')?></a>.</p>
           </div>
           <div class="animation-example animation-hover hover">
-            <button type="submit" class="btn btn-info btn-block btn-round"><?=$this->lang->line('registrate')?></button>
+            <button type="submit" class="btn btn-info btn-block btn-round btn-registrar"><?=$this->lang->line('registrate')?></button>
           </div>
         </form>
 
@@ -421,7 +421,7 @@
         _url = "";
         _url = _principalURL()+"User/api/registro/";
         _method = "POST";
-      
+        $(document).find('.btn-registrar').prop('disabled',true);
       
         $.ajax({
           url: _url,
@@ -434,6 +434,7 @@
           response = JSON.stringify(_response);
 
           if (_response.status=="error") {
+            $(document).find('.btn-registrar').prop('disabled',false);
             $.each(_response.validations,function(key,message){
               $(document).find('#'+key).addClass('is-invalid').closest('div').after('<div class="invalid-feedback" style="display:inline;">'+message+'</div>');
             });
@@ -450,6 +451,7 @@
             },2000);
           }
           if (_response.status=="success") {
+            $(document).find('.btn-registrar').prop('disabled',false);
             $(document).find('#responseText').html(
               '<div class="alert alert-success fade show" role="alert">'+
               '<h4 class="alert-heading">Revisa tu correo!</h4>'+

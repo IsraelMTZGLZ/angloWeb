@@ -9,6 +9,10 @@ class ComingSoon extends CI_Controller {
 
 	public function index()
 	{
-	  $this->load->view('coming_view');
+		if (!@$this->session->userdata('user_sess')->email) {
+			redirect('Login');
+        }
+        $data['user']=$this->session->userdata('user_sess');
+	    $this->load->view('coming_view',$data);
 	}
 }

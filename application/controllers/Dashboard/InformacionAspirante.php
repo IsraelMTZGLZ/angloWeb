@@ -5,6 +5,18 @@ class InformacionAspirante extends MY_RootController {
 
 	public function __construct() {
 		parent::__construct();
+		if (!@$this->session->userdata('user_sess')->email) {
+			redirect('Login');
+        }else{
+			if (@$this->session->userdata('user_sess')->typeUsuario=="Aspirante") {
+				if (@$this->session->userdata('user_sess')->aspirante!=null) {
+					redirect('Login');
+				}
+			}else {	
+				redirect('Login');
+			}
+			
+		}
     }
 
 	public function index()

@@ -4,9 +4,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends MY_RootController {
 
 	public function __construct() {
-        parent::__construct();
+		parent::__construct();
         if (!@$this->session->userdata('user_sess')->email) {
 			redirect('Login');
+        }else{
+            if (@$this->session->userdata('user_sess')->typeUsuario!="Admin") {
+                redirect('Login');
+            }
         }
     }
 

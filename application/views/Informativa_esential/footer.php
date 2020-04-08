@@ -416,7 +416,7 @@
 
 
     <script type="text/javascript">
-    console.log("Hoka");
+    //console.log("Hoka");
       $(function(){
           $("#Odont" ).click(function() {
             var id = $(this).attr('data-id');

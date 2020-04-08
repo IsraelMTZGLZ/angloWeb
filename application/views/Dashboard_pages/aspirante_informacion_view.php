@@ -317,15 +317,16 @@
                 </div>
               </div>
             </div>
-            <div class="form-group form-material floating" data-plugin="formMaterial">
-              <select class="form-control" data-plugin="select2" name="genero" id="genero">
-                <option value="" disabled selected>Elige una opcion</option>
-                <option value="Femenino">Femenino</option>
-                <option value="Masculino">Masculino</option>
-              </select>
-              <label>Genero</label>
-            </div>
-            
+            <?php if ($user->genero==null) { ?>
+              <div class="form-group form-material floating" data-plugin="formMaterial">
+                <select class="form-control" data-plugin="select2" name="<?php echo ($user->genero==null) ? 'genero' : '';?>" id="<?php echo ($user->genero==null) ? 'genero' : '';?>">
+                  <option value="" disabled selected>Elige una opcion</option>
+                  <option value="Femenino">Femenino</option>
+                  <option value="Masculino">Masculino</option>
+                </select>
+                <label>Genero</label>
+              </div>
+            <?php } ;?>
             <button type="submit" class="btn btn-primary btn-block btn-lg mt-40">Continuar</button>
           </form>
           <p><a href="<?=base_url('Login/Login/logout')?>">Cerrar sesion</a></p>
@@ -528,15 +529,40 @@
         _method = "POST";
 
         if($(document).find('.telefono').val()){
-          $(document).find('#telefono').val($(document).find('#lada').val()+$(document).find('.telefono').val())
+          $(document).find('#telefono').val($(document).find('#lada').val()+$(document).find('.telefono').val());
         }
+
+        if($(document).find('#ciudad').val()){
+          $array = $(document).find('#ciudad').val();
+          $ciudadParticion = $array.split(',');
+        }else{
+          $ciudadParticion= [null];
+        }
+
+        if($(document).find('#fecha').val()){
+          $fechaNueva =$(document).find('#fecha').val();
+        }else{
+          $fechaNueva = null;
+        }
+        
+        _params={
+        	"persona":$(document).find('#persona').val(),
+          "telefono":$(document).find('#telefono').val(),
+          "ciudad":$ciudadParticion[0],
+          "fecha": $fechaNueva
+        };
+
+        if ($(document).find('#genero')) {
+          _params['genero'] = $(document).find('#genero').val();
+        }
+        //console.info(_params);
         $.ajax({
             url: _url,
             method : _method,
             headers : {
             'X-API-KEY':'ANGLOKEY'
             },
-            data: $(document).find('#registroForm').serialize(),
+            data: _params,
             success : function(_response){
             response = JSON.stringify(_response);
 
