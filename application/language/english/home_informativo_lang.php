@@ -10,9 +10,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['bienvenido'] = "Welcome";
-$lang['beca_asesoria'] = "We advise you so you can request a Scholarship to study at United Kingdom this 2020.";
+$lang['beca_asesoria'] = "Anglo Latino provides free advice, application information and support right through to scholarship and visa applications.";
 $lang['conocenos'] = "Know us";
-$lang['beca_gratuita'] = "We advise you for FREE and support your education in British institutions and schools of excellence.";
+$lang['beca_gratuita'] = "We offer guidance and advice on applying to scholarships available for entry to UK Universities and colleges in 2020.";
 $lang['nuestros_servicios_home'] = "Our Services";
 $lang['ayudar1'] = "Help Mexicans and Latin Americans of high academic level get enrolled in the best universities";
 $lang['ayudar2'] = "and British schools in order to reach their educational, professional and personal goals.";
@@ -28,8 +28,13 @@ $lang['eficacia'] = "Effectiveness";
 $lang['calidad'] = "Quality";
 $lang['univerdiades_home'] = "Universities";
 $lang['univerdiades_desc_home'] = "We represent Universities ranked among the top 200 universities in the world, in other words, the top 1% of universities worldwide.";
+<<<<<<< HEAD
 $lang['preparatoria_home'] = "High schools";
 $lang['preparatoria_desc_home'] = "The colleges we represent are focussed on giving students the best possible preparation ofr university study. We work with traditional boarding schools and international colleges. We offer semester and academic year programmes, or the option of studying high school from age 14+.";
+=======
+$lang['preparatoria_home'] = "Colleges";
+$lang['preparatoria_desc_home'] = "The colleges we represent are focussed on giving students the best possible preparation for university study.";
+>>>>>>> 870c56fff337f221a77642b563495f66a66a98b4
 $lang['cursos_home'] = "English courses";
 $lang['cursos_desc_home'] = "We work with a range of specialist schools dedicated to teaching English to international students. Located in cities throughout the UK, the schools offer flexible course including General English, preparation for exams - IELTS, TOEFL - and English courses for professionals.";
 $lang['cursos__verano_home'] = "Summer courses";

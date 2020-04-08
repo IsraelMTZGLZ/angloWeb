@@ -115,7 +115,7 @@
                           <div class="work_img"><img src="<?=base_url('resources/assets/Anglo/universidades.jpg');?>" alt="img" /></div>
                           <h1 class="numbering d-none d-lg-block">1</h1>
                           <h2><a href="OfertaEducativa/Universidades"><?=$this->lang->line('univerdiades_home')?></a></h2>
-                          <p><?=$this->lang->line('univerdiades_desc_home')?></p>
+                          <p style="text-align: justify;"><?=$this->lang->line('univerdiades_desc_home')?></p>
                       </div>
                   </div>
                   <div class="work_process_wrapper p2">
@@ -123,7 +123,7 @@
                           <div class="work_img"><img src="<?=base_url('resources/assets/Anglo/preparatorias.jpg');?>" alt="img" /></div>
                           <h1 class="numbering2 d-none d-lg-block">2</h1>
                           <h2><a href="OfertaEducativa/Universidades"><?=$this->lang->line('preparatoria_home')?></a></h2>
-                          <p><?=$this->lang->line('preparatoria_desc_home')?></p>
+                          <p style="text-align: justify;"><?=$this->lang->line('preparatoria_desc_home')?></p>
                       </div>
                   </div>
                   <div class="work_process_wrapper p3">

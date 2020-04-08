@@ -110,12 +110,22 @@
       <script src="<?=base_url('resources/assets/Dashboard/global/vendor/media-match/media.match.min.js?v4.0.2');?>"></script>
       <script src=".<?=base_url('resources/assets/Dashboard/global/vendor/respond/respond.min.js?v4.0.2');?>"></script>
       <![endif]-->
+
+   <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+
 </head>
 <body class="animsition page-forgot-password layout-full">
   
   <!--bar idioma-->
   <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
-    <ul>
+    <ul style="margin-top: 40px;">
       <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
         <a href="../Language/spanish">
           <i class="flag-icon flag-icon-mx" aria-hidden="true"></i>
@@ -124,11 +134,6 @@
       <li class="<?php echo ($this->session->userdata('site_lang') == 'english') ? 'englishActivo' : 'english'; ?>">
         <a href="../Language/english">
           <i class="flag-icon flag-icon-gb" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="idioma">
-        <a target="_self">
-        <i class="fas fa-language fa-2x" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
@@ -144,12 +149,12 @@
       <h2><?=$this->lang->line('frogot_password_page');?></h2>
       <p><?=$this->lang->line('frogot_password_page_leyenda');?></p>
 
-      <form method="post" role="form">
+      <form>
         <div class="form-group">
           <input type="email" class="form-control" id="inputEmail" name="email" placeholder="<?=$this->lang->line('tu_email');?>">
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-block"><?=$this->lang->line('resetear_password');?></button>
+          <button type="button" class="btn btn-primary btn-block btn-send"><?=$this->lang->line('resetear_password');?></button>
         </div>
       </form>
 
@@ -347,6 +352,18 @@
     ga('create', 'UA-65522665-1', 'auto');
     ga('send', 'pageview');
   </script>
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
+  
+<script type="text/javascript">
+  $(function(){
+    
+    $(document).on('click','.btn-send',function() {
+      alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!Comunicate con un asesor de anglo.', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
+      
+    });
+
+  });
+</script>
 </body>
 </html>

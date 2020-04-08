@@ -18,9 +18,11 @@ class Login extends MY_RootController {
 					if (@$this->session->userdata('user_sess')->aspirante==null) {
 						//no ha llenado toda su informacion
 						redirect('Dashboard/InformacionAspirante');
+					}elseif (@$this->session->userdata('user_sess')->programaDeInteres==null){
+						redirect('Dashboard/EleccionUniversidad');
 					}else{
 						//ha llenado toda su informacion
-						redirect('Dashboard/Home');
+						redirect('ComingSoon');
 					}
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Agente") {
 					# code...
@@ -111,7 +113,7 @@ class Login extends MY_RootController {
 
 			curl_close($curl_request);
 			$response =json_decode($response);
-			//echo var_dump($response);
+			echo var_dump($response);
 
 			if ($response->status=="success") {
 				//$this->session->set_userdata('user_sess',$response->data);
@@ -124,10 +126,13 @@ class Login extends MY_RootController {
 							//no ha llenado toda su informacion
 							$this->session->set_userdata('user_sess',$response->data);
 							redirect('Dashboard/InformacionAspirante');
+						}elseif (@$response->data->programaDeInteres==null){
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/EleccionUniversidad');
 						}else{
 							//ha llenado toda su informacion
 							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/Home');
+							redirect('ComingSoon');
 						}
 					}else if ($response->data->typeUsuario=="Agente") {
 						# code...
@@ -140,7 +145,7 @@ class Login extends MY_RootController {
 				}else{
 					//usuario inactivo
 					$this->session->set_flashdata('messagePredeterminado','El usuario no tiene permisos de acceso comunicate con Anglo Latino Education Partnership.');
-					redirect('Login');
+					//redirect('Login');
 				}
 				//redirect("Dashboard/Home");
 			}else{
@@ -204,10 +209,13 @@ class Login extends MY_RootController {
 							//no ha llenado toda su informacion
 							$this->session->set_userdata('user_sess',$response->data);
 							redirect('Dashboard/InformacionAspirante');
+						}elseif (@$response->data->programaDeInteres==null){
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/EleccionUniversidad');
 						}else{
 							//ha llenado toda su informacion
 							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/Home');
+							redirect('ComingSoon');
 						}
 					}else if ($response->data->typeUsuario=="Agente") {
 						# code...

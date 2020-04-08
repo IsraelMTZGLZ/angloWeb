@@ -100,7 +100,6 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/idioma.css');?>" />
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
     <!--[if lt IE 9]>
       <script src=".<?=base_url('resources/assets/Dashboard/global/vendor/html5shiv/html5shiv.min.js?v4.0.2');?>"></script>
       <![endif]-->
@@ -346,7 +345,8 @@
           <div class="row" style="display: flex;justify-content: center;margin-top: -30px;">
             <div class="animation-example animation-hover hover" >
                 <form name="escuelaSelecionada" id="escuelaSelecionada">
-                    <input type="hidden" name="institucion" id="institucion" disabled>
+                  <input type="hidden" name="aspirante" id="aspirante" value="<?=$user->aspirante;?>">
+                    <input type="hidden" name="institucion" id="institucion" >
                     <button type="submit" class="btn btn-primary animation-shake btn-lg btn-direction btn-up">Continuar</button>
                 </form>
                 
@@ -549,7 +549,7 @@
             //univerisiad activa
             $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow')
             $universidad=false;
-            $(document).find('#institucion').val('universidad');
+            $(document).find('#institucion').val('Universidad');
 
             //preparatoria quitar
             $(document).find('.card-preparatoria').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
@@ -576,7 +576,7 @@
               //preparatoria activa
             $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow');
             $preparatoria=false;
-            $(document).find('#institucion').val('preparatoria');
+            $(document).find('#institucion').val('Preparatoria');
 
             //universidad
             $(document).find('.card-universidad').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
@@ -603,7 +603,7 @@
             //ingles activa
             $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow')
             $ingles=false;
-            $(document).find('#institucion').val('ingles');
+            $(document).find('#institucion').val('CursoIngles');
 
             //preparatoria quitar
             $(document).find('.card-preparatoria').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
@@ -631,7 +631,7 @@
             //verano activa
             $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow')
             $verano=false;
-            $(document).find('#institucion').val('verano');
+            $(document).find('#institucion').val('CursoVerano');
 
             //preparatoria quitar
             $(document).find('.card-preparatoria').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
@@ -656,7 +656,30 @@
         event.preventDefault();
         $intitucion = $(document).find('#institucion').val();
         if ($intitucion) {
-            
+            //console.info($(document).find('#escuelaSelecionada').serialize());
+            _url = _principalURL()+"Aspirante/api/aspiranteEleccion/";
+            _method = "POST";
+
+
+            $.ajax({
+              url: _url,
+              method : _method,
+              headers : {
+              'X-API-KEY':'ANGLOKEY'
+              },
+              data: $(document).find('#escuelaSelecionada').serialize(),
+              success : function(_response){
+              response = JSON.stringify(_response);
+
+              if (_response.status=="success") {
+                window.location.href = "<?php echo site_url('ComingSoon'); ?>";
+              }
+        
+
+              },error : function(err){
+              
+              }
+            });
         }else{
             tostada('error','Selecciona un programa por favor');
             $(document).find('.card-preparatoria').addClass('bg-danger').css('box-shadow','0 5px 15px 2px red');

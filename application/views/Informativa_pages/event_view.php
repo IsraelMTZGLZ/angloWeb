@@ -32,58 +32,69 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-12">
-                <div class="comming_wrapper float_left">
-                    <div class="comming_top_header float_left">
-                        <div class="comming_logo">
-                            <a href="#"> <img src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatin.png');?>" alt="logo"></a>
+            <div class="blog-post-wrapper">
+                       
+                        <!-- /.entry-footer -->
                         </div>
-                        <div class="comming_about">
+                        <!-- /.post-thumbnail -->
 
-                        </div>
+                        <!-- /.blog-content -->
 
                     </div>
-                    <h1><?=$this->lang->line('event_title_coming');?>.</h1>
-
-
-                    <div class="timer_wrapper float_left">
-
-                        <div id="clockdiv">
-                            <div><span class="days"></span>
-                                <div class="smalltext">Days</div>
-                            </div>
-                            <div><span class="hours"></span>
-                                <div class="smalltext">Hours</div>
-                            </div>
-                            <div><span class="minutes"></span>
-                                <div class="smalltext">Minutes</div>
-                            </div>
-                            <div><span class="seconds"></span>
-                                <div class="smalltext">Seconds</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="comming_soon_form comments_form  float_left">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="cp_heading_wraper">
-
-                                        <h3><?=$this->lang->line('event_sub_coming');?></h3>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
             </div>
         </div>
     </div>
+    
+</div>
+<style>#container{
+    margin-top: -110px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#avatar{
+  border: white solid 7px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.25);
+  /*box-shadow: 0px 2px 3px rgba(0,0,0,0.25);*/
+  /*transition: all 0.5s cubic-bezier(0.19,1.0,0.22,1.0);*/
+  border-radius: 50%;
+  animation: bounce cubic-bezier(0.19,1.0,0.22,1.0) 1.5s alternate infinite;
+  -webkit-animation: bounce cubic-bezier(0.19,1.0,0.22,1.0) 1.5s alternate infinite;
+  /*maxthon duplicate*/
+}
+
+@keyframes bounce {
+	to{
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+  }
+}
+@-webkit-keyframes bounce { /*maxthon duplicate*/
+	to{
+    -webkit-transform: translateY(-12px) scale(1.03);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+  }
+}
+
+/*#avatar:hover{
+  transform: translateY(-7px) scale(1.05);
+  -webkit-transform: translateY(-7px) scale(1.05); /*maxthon
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+}*/
+
+#text{
+  margin-top: 7px;
+}
+
+
+</style>
+<div id=container>
+  <img src="https://pbs.twimg.com/profile_images/459505368234606592/nuxaaQoo_400x400.jpeg"" id="avatar" width="250" draggable="false"/>
+
+  <div id=text>
+    <h1><?=$this->lang->line('event_sub_coming');?></h1>
+    <p title="(I guess)"><?=$this->lang->line('esperalo_event');?></p>
+  </div>
 </div>
 <!-- <div class="blog_wrapper float_left">
     <div class="container">

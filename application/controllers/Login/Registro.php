@@ -13,7 +13,7 @@ class Registro extends MY_RootController {
 	public function index()
 	{
 		if (@$this->session->userdata('user_sess')->email) {
-			redirect('Dashboard/Home');
+			redirect('Login');
 		}
 		unset($_SESSION['blog']);
 		$this->load->view('Login/register_view');
