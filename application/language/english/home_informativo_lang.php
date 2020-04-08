@@ -1,7 +1,7 @@
 <?php
 /**
-* This languague file is used for 
-* general titles,errors, and legends used in the project "projectmanagment" 
+* This languague file is used for
+* general titles,errors, and legends used in the project "projectmanagment"
 * @package	Project Management
 * @author	Maxei Code
 * @since	Version 1.0.0
@@ -27,13 +27,13 @@ $lang['comunicacion'] = "Comunication";
 $lang['eficacia'] = "Effectiveness";
 $lang['calidad'] = "Quality";
 $lang['univerdiades_home'] = "Universities";
-$lang['univerdiades_desc_home'] = "All the universities with which we have an agreement have internal scholarships for foreign students.";
+$lang['univerdiades_desc_home'] = "We represent Universities ranked among the top 200 universities in the world, in other words, the top 1% of universities worldwide.";
 $lang['preparatoria_home'] = "High schools";
-$lang['preparatoria_desc_home'] = "All these institutions offer internal scholarships for students.";
+$lang['preparatoria_desc_home'] = "The colleges we represent are focussed on giving students the best possible preparation ofr university study. We work with traditional boarding schools and international colleges. We offer semester and academic year programmes, or the option of studying high school from age 14+.";
 $lang['cursos_home'] = "English courses";
-$lang['cursos_desc_home'] = "English courses throughout the year, summer camps for young people; Tailored courses for groups.";
+$lang['cursos_desc_home'] = "We work with a range of specialist schools dedicated to teaching English to international students. Located in cities throughout the UK, the schools offer flexible course including General English, preparation for exams - IELTS, TOEFL - and English courses for professionals.";
 $lang['cursos__verano_home'] = "Summer courses";
-$lang['cursos__verano_desc_home'] = "Learn while having fun. Combine interactive classes in classrooms with activities, sports and group excursions.";
+$lang['cursos__verano_desc_home'] = "We offer summer camps, both academic and English, for students aged between 10 and 18+. Our summer programmes combine interactive classes with activities and excursions, in a variety of settings from traditional boarding schools to university campuses.";
 $lang['blog_eventos_home'] = "Blog & Events";
 $lang['becas_home'] = "Scholarships & Financing";
 $lang['becas_desc_home'] = "We advise you throughout the process";

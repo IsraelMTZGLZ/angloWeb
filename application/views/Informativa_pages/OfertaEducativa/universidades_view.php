@@ -782,8 +782,9 @@
                 <hr>
               </div>
             <div class="embed-responsive embed-responsive-21by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4CGXvsjRjno"></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HqwIMl67hCQ"></iframe>
               </div>
+              <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
             <div class="bottom-strip"></div>
@@ -857,7 +858,7 @@
               </div>
               <br>
               <div class="embed-responsive embed-responsive-21by9">
-                <iframe class="embed-responsive-item" src=""></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5XcKtaAU-xw"></iframe>
               </div>
             </div>
           </div>
@@ -865,7 +866,7 @@
         </div>
     </div>
 </div>
-
+<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="artsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">

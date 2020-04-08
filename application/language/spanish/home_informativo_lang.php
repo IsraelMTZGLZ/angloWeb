@@ -1,7 +1,7 @@
 <?php
 /**
-* This languague file is used for 
-* general titles,errors, and legends used in the project "projectmanagment" 
+* This languague file is used for
+* general titles,errors, and legends used in the project "projectmanagment"
 * @package	Project Management
 * @author	Maxei Code
 * @since	Version 1.0.0
@@ -27,14 +27,14 @@ $lang['comunicacion'] = "Comunicaci&oacute;n";
 $lang['eficacia'] = "Eficacia";
 $lang['calidad'] = "Calidad";
 $lang['univerdiades_home'] = "Universidades";
-$lang['univerdiades_desc_home'] = "Todas las universidades con las que tenemos convenio cuentan con becas internas para estudiantes extranjeros.";
+$lang['univerdiades_desc_home'] = "Representamos a Universidades ranqueadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
 $lang['preparatoria_home'] = "Preparatoria";
-$lang['preparatoria_desc_home'] = "Todas estas instituciones ofrecen becas internas para estudiantes.";
+$lang['preparatoria_desc_home'] = "Nuestras preparatorias se enfocan en prepararte para estudiar en las mejores universidades del mundo. Tenemos opciones de internado tradicional y colegios internacionales. Programas de semestre, ano academico o prepa completa (para jovenes de 14 + años de edad).";
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
-$lang['cursos_desc_home'] = "Cursos de ingl&eacute;s durante todo el año, campamentos de verano para j&oacute;venes; cursos a la medida para grupos.";
+$lang['cursos_desc_home'] = "Trabajamos con escuelas dedicadas a la enseñanza de inglés para extranjeros. Ubicadas en diferentes ciudades en el Reino Unido, estas escuelas ofrecen cursos muy flexibles, cursos de inglés general, preparación para exámenes - IELTS, TOEFL - y cursos de inglés para profesionistas.";
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
 $lang['cursos__verano_home'] = "Cursos De Verano";
-$lang['cursos__verano_desc_home'] = "Aprende mientras te diviertes. Combina clases interactivas en salones de clase con actividades, deportes y excursiones grupales.";
+$lang['cursos__verano_desc_home'] = "Ofrecemos campamentos de inglés y académicos durante el verano para estudiantes de 10 a 18 + años de edad. Nuestros campamentos combinan horario de clases interactivas combinadas con actividades y excursiones, en una variedad de entornos desde internados hasta campus universitarios.";
 $lang['blog_eventos_home'] = "Blog y Eventos";
 $lang['becas_home'] = "Becas y Financiamineto";
 $lang['becas_desc_home'] = "Te asesoramos en todo el proceso";

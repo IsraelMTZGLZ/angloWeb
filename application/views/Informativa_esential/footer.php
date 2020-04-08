@@ -167,6 +167,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=hyrhA2NAOY5SHZVQS553t79Tyn1CoQ5AkGpgorZVCvoqRiSDphmqhvPrw0Fa"></script></span>
 
     <!-- custom js-->
     <!--chat files-->
@@ -447,7 +448,7 @@
    * @param panel
    * @constructor
    */
-  var Carousel3d = function (carousel) { 
+  var Carousel3d = function (carousel) {
     this.el = carousel;
     this._makeOption();
 
@@ -512,7 +513,7 @@
 
   };
 
-	
+
   /**
    * remove chlid
    * @param index|selector(string)|element|jQuery instance of element
@@ -755,19 +756,19 @@
 
     this._resize();
   };
-	
-	
+
+
   /**
    * remove Child object
    * @param index|selector(string)|element|jQuery instance of element
    */
   ChildrenWrapper.prototype.removeChild = function (index) {
     function isInt(value) {
-	  return !isNaN(value) && 
-	  parseInt(Number(value)) == value && 
+	  return !isNaN(value) &&
+	  parseInt(Number(value)) == value &&
 	  !isNaN(parseInt(value, 10));
 	}
-	  
+
 	if(isInt(index)){
 		if(index in this._childObjArray){
 			var child = this._childObjArray[index];
@@ -835,13 +836,13 @@
 
         $(this._childObjArray[childIndex].el).css('opacity', Math.cos(Math.PI / 180 * childDegree));
         $(this._childObjArray[childIndex].el).css('z-index', Math.floor((Math.cos(Math.PI / 180 * childDegree) + 1) * 100));
-		  
-		
+
+
 		var i = index < 0 ? (index < (this._childObjArray.length)*(-1) ? this._childObjArray.length - (index*(-1) % this._childObjArray.length) : this._childObjArray.length + index) : index;
 		childIndex == (i > this._childObjArray.length-1 ? i % this._childObjArray.length : i) ?
 		  $(this._childObjArray[childIndex].el).attr("data-child-active",true) :
 		  $(this._childObjArray[childIndex].el).removeAttr("data-child-active") ;
-		
+
       }
     }
     else {

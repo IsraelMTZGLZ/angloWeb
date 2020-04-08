@@ -1874,10 +1874,61 @@ a:hover {
     background-image: -webkit-gradient(linear,right bottom,left top,from(#fd4959),to(#fb7a85));
     background-image: linear-gradient(to top left,#fd4959,#fb7a85);
 	right: -17px;
-    bottom: 95px;
+    bottom: 150px;
     border: 5px solid #f9f9f7;
 }
 .numbering2{
+	position: absolute;
+    content: '';
+    width: 55px;
+    height: 55px;
+    line-height: 47px;
+    color: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    background-image: -webkit-gradient(linear,right bottom,left top,from(#4a9ae7),to(#6badec));
+    background-image: linear-gradient(to top left,#4a9ae7,#6badec);
+	right: -17px;
+    bottom: 230px;
+    border: 5px solid #f9f9f7;
+}
+.numbering3{
+	position: absolute;
+    content: '';
+    width: 55px;
+    height: 55px;
+    line-height: 47px;
+    color: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    background-image: -webkit-gradient(linear,right bottom,left top,from(#f5664f),to(#f78b78));
+    background-image: linear-gradient(to top left,#f5664f,#f78b78);
+	right: -17px;
+    bottom: 250px;
+    border: 5px solid #f9f9f7;
+}
+.numbering4{
+	position: absolute;
+    content: '';
+    width: 55px;
+    height: 55px;
+    line-height: 47px;
+    color: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    background-image:  -webkit-gradient(linear,right bottom,left top,from(#1ec3ce),to(#65d9e1));
+    background-image:  linear-gradient(to top left,#1ec3ce,#65d9e1);
+	right: -17px;
+    bottom: 265px;
+    border: 5px solid #f9f9f7;
+}
+/* .numbering2{
     background-image: -webkit-gradient(linear,right bottom,left top,from(#4a9ae7),to(#6badec));
     background-image: linear-gradient(to top left,#4a9ae7,#6badec);
 }
@@ -1888,7 +1939,7 @@ a:hover {
 .numbering4{
     background-image: -webkit-gradient(linear,right bottom,left top,from(#1ec3ce),to(#65d9e1));
     background-image: linear-gradient(to top left,#1ec3ce,#65d9e1);
-}
+} */
 /***----team wrapper css -----***/
 .team_wrapper{
 	padding:100px 0;
