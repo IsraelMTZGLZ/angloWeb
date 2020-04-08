@@ -27,15 +27,15 @@ $lang['comunicacion'] = "Comunicaci&oacute;n";
 $lang['eficacia'] = "Eficacia";
 $lang['calidad'] = "Calidad";
 $lang['univerdiades_home'] = "Universidades";
-<<<<<<< HEAD
+
 $lang['univerdiades_desc_home'] = "Representamos a Universidades ranqueadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
 $lang['preparatoria_home'] = "Preparatoria";
 $lang['preparatoria_desc_home'] = "Nuestras preparatorias se enfocan en prepararte para estudiar en las mejores universidades del mundo. Tenemos opciones de internado tradicional y colegios internacionales. Programas de semestre, ano academico o prepa completa (para jovenes de 14 + años de edad).";
-=======
+
 $lang['univerdiades_desc_home'] = "Representamos a Universidades rankeadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
 $lang['preparatoria_home'] = "Preparatorias";
 $lang['preparatoria_desc_home'] = "Nuestras preparatorias se enfocan en prepararte para estudiar en las mejores universidades del mundo.";
->>>>>>> 870c56fff337f221a77642b563495f66a66a98b4
+
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
 $lang['cursos_desc_home'] = "Trabajamos con escuelas dedicadas a la enseñanza de inglés para extranjeros. Ubicadas en diferentes ciudades en el Reino Unido, estas escuelas ofrecen cursos muy flexibles, cursos de inglés general, preparación para exámenes - IELTS, TOEFL - y cursos de inglés para profesionistas.";
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
