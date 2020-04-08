@@ -28,15 +28,133 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="pn_slider_wraper float_left">
                         <div class="owl-carousel owl-theme">
-                            <div class="item"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="item" >
                                 <div class="pn_img_wrapper">
                                     <p style="color: black">
-                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
                                             <span class="flag-icon flag-icon-mx">
                                             </span> Mexico
                                         </a>
                                     </p>
+                                    <p style="color: black">
+                                        Para estudiar posgrado y maestría, hasta $300,000
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/conacyt.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                    <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    
+                                    <a href="javascript:;"><img style="margin-top: 60px;" src="<?=base_url('resources/assets/Anglo/cultura_fonca_negro.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/Logo-funed.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    <p style="color: black">
+                                        Financiamiento para estudios de posgrado.
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/banco-de-mexico.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    <p style="color: black">
+                                        Becas del gobierno británico hasta del 100%.
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    <p style="color: black">
+                                        Financiamiento para posgrado hasta $1,000,000 de pesos.
+                                    </p>
+                                    <a href="javascript:;"><img style="background: black;margin-top: 20px" src="<?=base_url('resources/assets/Anglo/logotipo-laudex.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    <p style="color: black">
+                                        Financiamientos.
+                                    </p>
+                                    <a href="javascript:;"><img style="background: black;margin-top: 50px;" src="<?=base_url('resources/assets/Anglo/edupass.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    <p style="color: black">
+                                        Beca y financiamiento/para México y Latinoamerica
+                                    </p>
                                     <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-uy">
+                                            </span> Uruguay
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/anii.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-py">
+                                            </span> Paraguay
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: 20px" src="<?=base_url('resources/assets/Anglo/becal.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -47,139 +165,148 @@
                                             </span> Honduras
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/conacyt.png');?>" alt="patner_img"></a>
+                                    <a href="javascript:;"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/12WpHA8H.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png');?>" alt="patner_img"></a>
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-hn">
+                                            </span> Honduras
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/BECAS-HONDURAS.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-co">
+                                            </span> Colombia
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/colfuturo.jpg');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-co">
+                                            </span> Colombia
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: 30px;" src="<?=base_url('resources/assets/Anglo/colciencias_1.jpg');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-pe">
+                                            </span> Peru
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: 30px;" src="<?=base_url('resources/assets/Anglo/logo_50_años_horizontal.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-pe">
+                                            </span> Peru
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/pronabec.jpg');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-cl">
+                                            </span> Chile
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/LOGO_CONICYT.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-gt">
+                                            </span> Guatemala
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: -10px;" src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-cr">
+                                            </span> Costa Rica
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: 30px" src="<?=base_url('resources/assets/Anglo/conape.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-pa">
+                                            </span> Panama
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/IFARHU.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-pa">
+                                            </span> Panama
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img style="margin-top: 50px" src="<?=base_url('resources/assets/Anglo/SENACYT.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 15px">
+                                             Republica Dominicana
+                                        </a>
+                                    </p>
+                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/mescyt.jpg');?>" alt="patner_img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-ec">
+                                            </span> Ecuador
+                                        </a>
+                                    </p>
                                     <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/senescyt.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/banco-de-mexico.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="pn_img_wrapper">
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/Logo-funed.png');?>" alt="patner_img"></a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="header_btn dark_btn float_left" style="display: flex;align-items: center;justify-content: center;">
+
+                        <a href="Login"><?=$this->lang->line('comenzar');?></a>
+
+                    </div>
         </div>
     </div>
-
-<div class="collapse" id="collapseExample">
-<div class="solution_wrapper float_left" style="margin-top: -30px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-12 col-sm-12 col-12">
-                <div class="tab-content cp_tab_cntnt">
-                    <div id="home1" class="tab-pane active">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <div class="abt_tab_img float_left imagentest" ><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="img" style="width: 70%;margin-left: 10%;"></div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <p>Test</p>                                     
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="Login">Comenzar</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab2.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>our services</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu2" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab3.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>our works</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu3" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab4.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>projects</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu4" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab5.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>UI / UX designs</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
