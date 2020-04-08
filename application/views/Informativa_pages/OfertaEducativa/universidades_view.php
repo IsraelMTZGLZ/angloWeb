@@ -286,9 +286,9 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_new_AckworthOne.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#">ACKWORTH SCHOOL<span>LEER MÁS </span></a>
+                                <a href="#">Otras Preparatorias</a>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#akworthPrepaModal"></button></i>
                                 </div>
@@ -296,7 +296,7 @@
                      <div class="portfolio_overlay"></div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
+                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/bath.jpg');?>" alt="">
                             <div class="portfolio_hover">
@@ -368,7 +368,7 @@
                             </div>
                      <div class="portfolio_overlay"></div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
@@ -2200,8 +2200,8 @@
         <div class="modal-header d-none d-lg-block d-xl-block">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Ackworth_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_new_AckworthOne.jpg');?>" alt=""></div>
+              <div class="col-md-4 "  style="margin-top: 40px;"> <img src="<?=base_url('resources/assets/Informativa/images/uk_band.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/u_universities.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2211,60 +2211,37 @@
         </div>
         <div class="modal-body">
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1985.</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/LzcD7VgjeqKSMHX6A" target="_blank" > Pontefract Rd, Ackworth, Pontefract WF7 7LT, Reino Unido </a> </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
 
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo</b></div>
-                <div class="col-md-12"><li>Año academico.</li></div>
-                <div class="col-md-12"><li>Prepa completo.</li></div>
-
-            </div>
             <br>
             <div class="list-group">
               <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
+                Lista de Preparatorias
               </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Internado.</button>
-
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ackworth School</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Bath Academy.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Cardiff Sixth Form College.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Collyer's.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Dover College .</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >OnCampus.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Stonyhurst College.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Strathallan.</button>
             </div>
 
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-            </div>
-          </div>
-          <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
           </div>
           <div class="row">
             <hr>
           </div>
-         <div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gdg812Cs8I4"></iframe>
-          </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v8oA0J3fAnQ"></iframe>
           </div>
 
         </div>
           <div class="bottom-strip"></div>
       </div>
 
-
 </div>
+</div>
+
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="bathPrepaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
