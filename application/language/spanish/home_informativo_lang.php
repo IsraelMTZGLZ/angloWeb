@@ -10,9 +10,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['leer_mas'] = "Bienvenido";
-$lang['beca_asesoria'] = "Te asesoramos para que puedas solicitar una beca para estudiar en el Reino Unido este 2020.";
+$lang['beca_asesoria'] = "Anglo Latino te asesora por todo el proceso de admision desde proporcionarte informaci&oacute;n acerca de los programas de estudio, hasta guiarte por la aplicaci&oacute;n tanto para la universidad como para las becas disponibles y asesoria en la aplicaci&oacute;n para la visa. Todo de forma gratuita.";
 $lang['conocenos'] = "Conocenos";
-$lang['beca_gratuita'] = "Te asesoramos de manera GRATUITA y apoyamos en tu educaci&oacute;n en instituciones y colegios brit&aacute;nicos de excelencia.";
+$lang['beca_gratuita'] = "Te asesoramos para que puedas solicitar una beca para estudiar en el Reino Unido en el 2020.";
 $lang['nuestros_servicios_home'] = "Nuestros Servicios";
 $lang['ayudar1'] = "Ayudar a mexicanos y latinoamericanos de alto nivel académico a conseguir inscribirse en las mejores universidades";
 $lang['ayudar2'] = "y colegios brit&aacute;nicos con el fin de alcanzar sus metas educativas, profesionales y personales.";
@@ -27,9 +27,9 @@ $lang['comunicacion'] = "Comunicaci&oacute;n";
 $lang['eficacia'] = "Eficacia";
 $lang['calidad'] = "Calidad";
 $lang['univerdiades_home'] = "Universidades";
-$lang['univerdiades_desc_home'] = "Todas las universidades con las que tenemos convenio cuentan con becas internas para estudiantes extranjeros.";
-$lang['preparatoria_home'] = "Preparatoria";
-$lang['preparatoria_desc_home'] = "Todas estas instituciones ofrecen becas internas para estudiantes.";
+$lang['univerdiades_desc_home'] = "Representamos a Universidades rankeadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
+$lang['preparatoria_home'] = "Preparatorias";
+$lang['preparatoria_desc_home'] = "Nuestras preparatorias se enfocan en prepararte para estudiar en las mejores universidades del mundo.";
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
 $lang['cursos_desc_home'] = "Cursos de ingl&eacute;s durante todo el año, campamentos de verano para j&oacute;venes; cursos a la medida para grupos.";
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
