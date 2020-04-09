@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['contactanos'] = "Contact Us";
 $lang['paises_contacto'] = "The red color on the map indicates the countries in which we have a presence.";
-$lang['titule_paises_contact'] = "Anglo In Latin America";
+$lang['titule_paises_contact'] = "Anglo in Latin America";
 $lang['llamar_contact_page'] = "Call us";
 $lang['paises_en_mexico'] = "Offices in Mexico";
 $lang['oficinas_en_mexico'] = "Offices";
