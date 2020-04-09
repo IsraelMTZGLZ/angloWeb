@@ -27,7 +27,7 @@
 
 <!-- navi wrapper End -->
 <!--gallery wrapper start-->
-<div class="gallery_wrapper float_left">
+<div class="gallery_wrapper float_left" style="margin-bottom: -200px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -686,9 +686,7 @@
                         </div>
                     </div>
                 </div>
-              <div class="header_btn dark_btn gallery_btn float_left">
-                        <a href="#">load more</a>
-                </div>
+              
             </div>
         </div>
     </div>
