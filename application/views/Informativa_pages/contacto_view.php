@@ -24,7 +24,7 @@
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="cp_heading_wraper contact_wrap">
-            <h3><?=$this->lang->line('titule_paises_contact')?></h3>
+            <h3 style="text-transform: none;"><?=$this->lang->line('titule_paises_contact')?></h3>
             <p style="margin-top: -20px;margin-bottom: 10px;text-transform: none"><?=$this->lang->line('paises_contacto')?></p>
         </div>
     </div>
@@ -89,78 +89,6 @@
                                     <div class="header_btn dark_btn tab_btn float_left">
 
                                         <a href="tel:4422609090"><?=$this->lang->line('llamar_contact_page')?></a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab2.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>our services</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu2" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab3.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>our works</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu3" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab4.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>projects</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="menu4" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_img float_left"><img src="images/tab5.png" alt="img"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="abt_tab_heading float_left">
-                                    <h1>UI / UX designs</h1>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bibum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
-                                    <div class="header_btn dark_btn tab_btn float_left">
-
-                                        <a href="#">read more</a>
 
                                     </div>
                                 </div>

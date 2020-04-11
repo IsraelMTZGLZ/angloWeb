@@ -113,7 +113,7 @@ class Login extends MY_RootController {
 
 			curl_close($curl_request);
 			$response =json_decode($response);
-			echo var_dump($response);
+			//echo var_dump($response);
 
 			if ($response->status=="success") {
 				//$this->session->set_userdata('user_sess',$response->data);
@@ -145,7 +145,7 @@ class Login extends MY_RootController {
 				}else{
 					//usuario inactivo
 					$this->session->set_flashdata('messagePredeterminado','El usuario no tiene permisos de acceso comunicate con Anglo Latino Education Partnership.');
-					//redirect('Login');
+					redirect('Login');
 				}
 				//redirect("Dashboard/Home");
 			}else{
