@@ -11,14 +11,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['leer_mas'] = "Bienvenido";
 $lang['beca_asesoria'] = "Anglo Latino te asesora por todo el proceso de admision desde proporcionarte informaci&oacute;n acerca de los programas de estudio, hasta guiarte por la aplicaci&oacute;n tanto para la universidad como para las becas disponibles y asesoria en la aplicaci&oacute;n para la visa. Todo de forma gratuita.";
-$lang['conocenos'] = "Conocenos";
+$lang['conocenos'] = "Con&oacute;cenos";
 $lang['beca_gratuita'] = "Te asesoramos para que puedas solicitar una beca para estudiar en el Reino Unido en el 2020.";
 $lang['nuestros_servicios_home'] = "Nuestros Servicios";
 $lang['ayudar1'] = "Ayudar a mexicanos y latinoamericanos de alto nivel académico a conseguir inscribirse en las mejores universidades";
 $lang['ayudar2'] = "y colegios brit&aacute;nicos con el fin de alcanzar sus metas educativas, profesionales y personales.";
-$lang['about1_home'] = "Representamos a un grupo selecto de Universidades y Colegios Británicos con una amplia oferta acad&eacute;mica. Nuestras universidades cuentan con alto reconocimiento internacional tanto en la investigaci&oacute;n como en la docencia.";
-$lang['about2_home'] = "Estamos constituidos como un consorcio de instituciones educativas británicas, ofrecemos asesoría, apoyo e información de manera gratuita a candidatos que desean estudiar en nuestras instituciones.";
-$lang['about3_home'] = "Todas las universidades están rankeadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
+$lang['about1_home'] = "Somos un consorcio de instituciones educativas británicas, ofrecemos asesoría, apoyo e información de manera gratuita a candidatos que desean estudiar en nuestras instituciones..";
+$lang['about2_home'] = "Representamos a un grupo selecto de Universidades y Colegios Británicos con una amplia oferta académica. Universidades con alto reconocimiento internacional tanto en la investigación como en la docencia..";
+$lang['about3_home'] = "Representamos a Universidades ranqueadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
 $lang['reading'] = "Leer";
 $lang['fiabilidad'] = "Fiabilidad";
 $lang['accesibilidad'] = "Accesibilidad";
@@ -31,10 +31,6 @@ $lang['univerdiades_home'] = "Universidades";
 $lang['univerdiades_desc_home'] = "Representamos a Universidades ranqueadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
 $lang['preparatoria_home'] = "Preparatoria";
 $lang['preparatoria_desc_home'] = "Nuestras preparatorias se enfocan en prepararte para estudiar en las mejores universidades del mundo. Tenemos opciones de internado tradicional y colegios internacionales. Programas de semestre, ano academico o prepa completa (para jovenes de 14 + años de edad).";
-
-$lang['univerdiades_desc_home'] = "Representamos a Universidades rankeadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
-$lang['preparatoria_home'] = "Preparatorias";
-$lang['preparatoria_desc_home'] = "Nuestras preparatorias se enfocan en prepararte para estudiar en las mejores universidades del mundo.";
 
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
 $lang['cursos_desc_home'] = "Trabajamos con escuelas dedicadas a la enseñanza de inglés para extranjeros. Ubicadas en diferentes ciudades en el Reino Unido, estas escuelas ofrecen cursos muy flexibles, cursos de inglés general, preparación para exámenes - IELTS, TOEFL - y cursos de inglés para profesionistas.";

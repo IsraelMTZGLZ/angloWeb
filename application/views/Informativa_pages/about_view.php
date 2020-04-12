@@ -77,7 +77,7 @@
                         <br>
                         <h3><?=$this->lang->line('introduccion_one');?></h3>
 
-                        <p><?=$this->lang->line('descripcion_two');?></p>
+                        <p style="text-transform: none"><?=$this->lang->line('descripcion_two');?></p>
                         <!-- <div class="header_btn dark_btn float_left">
 
                             <a href="#">reading</a>
