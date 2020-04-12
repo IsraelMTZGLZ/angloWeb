@@ -42,6 +42,7 @@
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" />
 
+    
 <!-- Hotjar Tracking Code for My site -->
 <script>
     (function(h,o,t,j,a,r){
