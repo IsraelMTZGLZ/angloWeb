@@ -830,19 +830,16 @@
                 <hr>
 
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                <b>  Facultades:</b>
-
-                    <ul>
-                      <li class="col-md-12 ml-auto">Ingenierías</li>
-                      <li class="col-md-12 ml-auto">Arquitectura</li>
-                      <li class="col-md-12 ml-auto">Negocios</li>
-                      <li class="col-md-12 ml-auto">Ciencias Sociales</li>
-                    </ul>
-
-                </div>n
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Facultades
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ingenierías.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arquitectura.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
               </div>
+
               <div class="row">
                 <hr>
               </div>
