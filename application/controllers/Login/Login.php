@@ -25,7 +25,7 @@ class Login extends MY_RootController {
 						redirect('ComingSoon');
 					}
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Agente") {
-					# code...
+					redirect('Dashboard/InformacionAgente');
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Admin") {
 					# code...
 				}
