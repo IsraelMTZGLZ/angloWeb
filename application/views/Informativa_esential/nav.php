@@ -59,13 +59,14 @@
   </ul>
 </div>
 
+<!--
 <div class="">
   <div id="iframeHolder"></div>
-	<!-- <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a> -->
-<!-- <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> -->
+	 <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a>
+    <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> 
 <button type="button" aria-label="Abrir chat agente anglo" class="chat-open-dialog" data-toggle="popover" data-content="<?=$this->lang->line('ayudar')?> </br><?=$this->lang->line('escribenos')?>"> <span class="fa fa-question"></span> </button>
 <button class="chat-button-destroy" aria-label="Cerrar chat agente anglo"> <span class="fas fa-window-close fa-2x" style="color: white;"></span> </button>
-</div>
+</div>-->
 
 <div class="inner_top_header">
     <div class="counter_overlay"></div>

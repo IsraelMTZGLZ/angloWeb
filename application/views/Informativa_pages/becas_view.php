@@ -39,7 +39,7 @@
                                     <p style="color: black">
                                         Para estudiar posgrado y maestría, hasta $300,000
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/conacyt.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/conacyt.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -51,7 +51,7 @@
                                         </a>
                                     </p>
                                     
-                                    <a href="javascript:;"><img style="margin-top: 60px;" src="<?=base_url('resources/assets/Anglo/cultura_fonca_negro.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 60px;" src="<?=base_url('resources/assets/Anglo/cultura_fonca_negro.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -62,7 +62,7 @@
                                             </span> Mexico
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/Logo-funed.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/Logo-funed.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -76,7 +76,7 @@
                                     <p style="color: black">
                                         Financiamiento para estudios de posgrado.
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/banco-de-mexico.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/banco-de-mexico.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -90,7 +90,7 @@
                                     <p style="color: black">
                                         Becas del gobierno británico hasta del 100%.
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -104,7 +104,7 @@
                                     <p style="color: black">
                                         Financiamiento para posgrado hasta $1,000,000 de pesos.
                                     </p>
-                                    <a href="javascript:;"><img style="background: black;margin-top: 20px" src="<?=base_url('resources/assets/Anglo/logotipo-laudex.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="background: black;margin-top: 20px" src="<?=base_url('resources/assets/Anglo/logotipo-laudex.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -118,7 +118,7 @@
                                     <p style="color: black">
                                         Financiamientos.
                                     </p>
-                                    <a href="javascript:;"><img style="background: black;margin-top: 50px;" src="<?=base_url('resources/assets/Anglo/edupass.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="background: black;margin-top: 50px;" src="<?=base_url('resources/assets/Anglo/edupass.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -132,7 +132,7 @@
                                     <p style="color: black">
                                         Beca y financiamiento/para México y Latinoamerica
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -143,7 +143,7 @@
                                             </span> Uruguay
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/anii.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/anii.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -154,7 +154,7 @@
                                             </span> Paraguay
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 20px" src="<?=base_url('resources/assets/Anglo/becal.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 20px" src="<?=base_url('resources/assets/Anglo/becal.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -165,7 +165,7 @@
                                             </span> Honduras
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/12WpHA8H.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/12WpHA8H.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -176,7 +176,7 @@
                                             </span> Honduras
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/BECAS-HONDURAS.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/BECAS-HONDURAS.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -187,7 +187,7 @@
                                             </span> Colombia
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/colfuturo.jpg');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 20px;" src="<?=base_url('resources/assets/Anglo/colfuturo.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -198,7 +198,7 @@
                                             </span> Colombia
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 30px;" src="<?=base_url('resources/assets/Anglo/colciencias_1.jpg');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 30px;" src="<?=base_url('resources/assets/Anglo/colciencias_1.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -209,7 +209,7 @@
                                             </span> Peru
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 30px;" src="<?=base_url('resources/assets/Anglo/logo_50_años_horizontal.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 30px;" src="<?=base_url('resources/assets/Anglo/logo_50_años_horizontal.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -220,7 +220,7 @@
                                             </span> Peru
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/pronabec.jpg');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/pronabec.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -231,7 +231,10 @@
                                             </span> Chile
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/LOGO_CONICYT.png');?>" alt="patner_img"></a>
+                                    <p style="color: black">
+                                        ANID
+                                    </p>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/LOGO_CONICYT.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -242,7 +245,7 @@
                                             </span> Guatemala
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: -10px;" src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: -10px;" src="<?=base_url('resources/assets/Anglo/guatefuturo-logo.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -253,7 +256,7 @@
                                             </span> Costa Rica
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 30px" src="<?=base_url('resources/assets/Anglo/conape.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 30px" src="<?=base_url('resources/assets/Anglo/conape.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -264,7 +267,7 @@
                                             </span> Panama
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/IFARHU.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/IFARHU.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -275,7 +278,7 @@
                                             </span> Panama
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img style="margin-top: 50px" src="<?=base_url('resources/assets/Anglo/SENACYT.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img style="margin-top: 50px" src="<?=base_url('resources/assets/Anglo/SENACYT.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -285,7 +288,7 @@
                                              Republica Dominicana
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/mescyt.jpg');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/mescyt.jpg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -296,7 +299,7 @@
                                             </span> Ecuador
                                         </a>
                                     </p>
-                                    <a href="javascript:;"><img src="<?=base_url('resources/assets/Anglo/senescyt.png');?>" alt="patner_img"></a>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/senescyt.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                         </div>
