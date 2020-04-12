@@ -13,7 +13,7 @@
   <meta name="author" content="Maxei Code" />
   <meta name="MobileOptimized" content="320" />
   <meta property="og:url" content="https://www.anglolatinoedu.com/">
-  <meta property="og:site_name" content="Anglo Latino">
+  <meta property="og:site_name" content="Anglo Latino"> 
   <meta property="og:type" content="website">
 
 
