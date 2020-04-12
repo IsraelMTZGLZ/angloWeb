@@ -53,7 +53,7 @@
                                 <a href="#"> University of Bath </a>
                                 <p></p>
                                 <div class="zoom_popup d-none d-lg-block d-xl-block">
-                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#subscribeModal"></button></i>                                </div>
+                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#BathUniModal"></button></i>                                </div>
                                </div>
                            <div class="portfolio_overlay"></div>
                         </div>
@@ -789,7 +789,7 @@
 
 
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="BathUniModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
@@ -852,7 +852,6 @@
             <div class="embed-responsive embed-responsive-21by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HqwIMl67hCQ"></iframe>
               </div>
-              <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
             <div class="bottom-strip"></div>
