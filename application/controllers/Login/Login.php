@@ -50,7 +50,7 @@ class Login extends MY_RootController {
 				$this->facebook->destroy_session();
 				redirect('Login');
 			}
-		}	
+		}
 	}
 
 	public function google_login()
@@ -61,7 +61,7 @@ class Login extends MY_RootController {
 		//$redirectURL = 'http://anglopageone.com/Login/Login/google_login/';
 		//local
 		$redirectURL = 'http://localhost/angloWeb/Login/Login/google_login/';
-		
+
 		//Call Google API
 		$gClient = new Google_Client();
 		$gClient->setApplicationName('Login');
@@ -71,7 +71,7 @@ class Login extends MY_RootController {
 		$gClient->setScopes('profile email');
 		$gClient->setApprovalPrompt('force');
 		$google_oauthV2 = new Google_Oauth2Service($gClient);
-		
+
 		if(isset($_GET['code']))
 		{
 			$gClient->authenticate($_GET['code']);
@@ -79,11 +79,11 @@ class Login extends MY_RootController {
 			header('Location: ' . filter_var($redirectURL, FILTER_SANITIZE_URL));
 		}
 
-		if (isset($_SESSION['token'])) 
+		if (isset($_SESSION['token']))
 		{
 			$gClient->setAccessToken($_SESSION['token']);
 		}
-		
+
 		if ($gClient->getAccessToken()) {
             $userProfile = $google_oauthV2->userinfo_v2_me->get();
 			if ($userProfile['id']) {
@@ -135,7 +135,18 @@ class Login extends MY_RootController {
 							redirect('ComingSoon');
 						}
 					}else if ($response->data->typeUsuario=="Agente") {
-						# code...
+						if ($response->data->aspirante==null) {
+							//no ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/InformacionAgente');
+						}elseif (@$response->data->programaDeInteres==null){
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/EleccionUniversidad');
+						}else{
+							//ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('ComingSoon');
+						}
 					}else if ($response->data->typeUsuario=="Admin") {
 						# code...
 					}else{
@@ -151,7 +162,7 @@ class Login extends MY_RootController {
 			}else{
 				$this->session->set_flashdata('message',$response);
 				redirect('Login');
-			}	
+			}
 			}elseif($userProfile['error']){
 				$this->session->set_flashdata('facebook','Error');
 				return redirect('Login');
@@ -159,8 +170,8 @@ class Login extends MY_RootController {
 				$this->session->set_flashdata('facebook','Error');
 				return redirect('Login');
 			}
-        } 
-		else 
+        }
+		else
 		{
             $url = $gClient->createAuthUrl();
 		    header("Location: $url");
@@ -218,7 +229,15 @@ class Login extends MY_RootController {
 							redirect('ComingSoon');
 						}
 					}else if ($response->data->typeUsuario=="Agente") {
-						# code...
+						if ($response->data->aspirante==null) {
+							//no ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('Dashboard/InformacionAgente');
+						}else{
+							//ha llenado toda su informacion
+							$this->session->set_userdata('user_sess',$response->data);
+							redirect('ComingSoon');
+						}
 					}else if ($response->data->typeUsuario=="Admin") {
 						# code...
 					}else{
@@ -233,14 +252,14 @@ class Login extends MY_RootController {
 			}else{
 				$this->session->set_flashdata('message',$response);
 				redirect('Login');
-			}	
+			}
 
 		}else{
 			//flashdata
 			$this->session->set_flashdata('message',"No se envio parametros");
 			redirect('Login');
 		}
-		
+
 	}
 
 	function logout()
@@ -249,6 +268,5 @@ class Login extends MY_RootController {
 		redirect('Login');
 	}
 
-	
+
 }
- 
