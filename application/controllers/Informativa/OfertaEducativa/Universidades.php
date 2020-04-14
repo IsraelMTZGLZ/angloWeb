@@ -14,6 +14,7 @@ class Universidades extends MY_RootController {
 		$this->_initialInformativa();
 		$this->load->view('Informativa_pages/OfertaEducativa/universidades_view');
 		$this->_finalInformativa();
+		$this->load->view('Informativa_pages/OfertaEducativa/universidadesJS');
 	}
 
 }
