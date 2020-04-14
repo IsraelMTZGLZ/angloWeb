@@ -5,7 +5,7 @@ class InformacionAgente extends MY_RootController {
 
 	public function __construct() {
 		parent::__construct();
-		redirect('Login');
+		//redirect('Login');
         if (!@$this->session->userdata('user_sess')->email) {
 			redirect('Login');
         }

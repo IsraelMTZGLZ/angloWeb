@@ -33,6 +33,18 @@ class Email extends MY_RootController {
         $this->load->library('email');  
 
         if($email_settings){
+            //Email servidor
+            $config['mailpath'] = "/usr/sbin/sendmail";
+            $config['protocol'] = "sendmail";
+            $config['smtp_host'] = "relay-hosting.secureserver.net";
+            $config['smtp_user'] = "study@anglopageone.com";
+            $config['smtp_pass'] = "Anglo@2020";
+            $config['smtp_port'] = "25";
+            $config['mailtype'] = "HTML";
+            $config['validate'] = "TRUE";
+            $this->email->initialize($config);  
+            
+            /*email from google
             $config['protocol'] = $email_settings['email_protocol'];
             $config['smtp_host'] = "ssl://".$email_settings['email_host'];
             $config['smtp_user'] = $email_settings['email_send'];
@@ -41,10 +53,11 @@ class Email extends MY_RootController {
             $config['charset'] = "utf-8";
             $config['mailtype'] = "html";
             $this->email->initialize($config);  
-  
+            */
             $this->email->set_newline("\r\n");
             
             $this->email->from($email_settings['email_send'],$email_settings['from_email']);
+            $this->email->reply_to('study@anglolatinoedu.com');
             $this->email->to('hectori.um.15@gmail.com','hectori.um.15@gmail.com');
             $this->email->subject("Testing");
             $this->email->message('test');

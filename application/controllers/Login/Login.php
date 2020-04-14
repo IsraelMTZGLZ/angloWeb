@@ -15,17 +15,33 @@ class Login extends MY_RootController {
 		if (@$this->session->userdata('user_sess')->email) {
 			if (@$this->session->userdata('user_sess')->statusU=="Activo") {
 				if (@$this->session->userdata('user_sess')->typeUsuario=="Aspirante") {
+					$response = $this->_callApiRest('Aspirante/api/aspirante/id/'.$this->session->userdata('user_sess')->usuario,null,"GET",null);
+					$object = json_decode(json_encode($response['data']), FALSE);
+					//$this->session->set_userdata('user_sess',$object);
+					//echo var_dump($object->persona);
 					if (@$this->session->userdata('user_sess')->aspirante==null) {
 						//no ha llenado toda su informacion
 						redirect('Dashboard/InformacionAspirante');
 					}elseif (@$this->session->userdata('user_sess')->programaDeInteres==null){
+						//selecionar el programa
 						redirect('Dashboard/EleccionUniversidad');
 					}else{
 						//ha llenado toda su informacion
 						redirect('ComingSoon');
 					}
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Agente") {
-					# code...
+					//echo 'entro';
+					$response = $this->_callApiRest('Agente/api/agente/id/'.$this->session->userdata('user_sess')->usuario,null,"GET",null);
+					$object = json_decode(json_encode($response['data']), FALSE);
+					$this->session->set_userdata('user_sess',$object);
+					//echo var_dump($response);
+					if (@$this->session->userdata('user_sess')->agente==null) {
+						redirect('Dashboard/InformacionAgente');
+					}else{
+						//ha llenado toda su informacion
+						redirect('ComingSoon');
+					}
+				
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Admin") {
 					# code...
 				}
@@ -121,34 +137,11 @@ class Login extends MY_RootController {
 				if ($response->data->statusU=="Activo") {
 					//usuario activo
 					//echo var_dump($response->data);
-					if ($response->data->typeUsuario=="Aspirante") {
-						if ($response->data->aspirante==null) {
-							//no ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/InformacionAspirante');
-						}elseif (@$response->data->programaDeInteres==null){
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/EleccionUniversidad');
-						}else{
-							//ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('ComingSoon');
-						}
-					}else if ($response->data->typeUsuario=="Agente") {
-						if ($response->data->aspirante==null) {
-							//no ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/InformacionAgente');
-						}elseif (@$response->data->programaDeInteres==null){
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/EleccionUniversidad');
-						}else{
-							//ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('ComingSoon');
-						}
-					}else if ($response->data->typeUsuario=="Admin") {
-						# code...
+				
+					
+					if ($response->data->typeUsuario) {
+						$this->session->set_userdata('user_sess',$response->data);
+						redirect('Login');
 					}else{
 						$this->session->set_flashdata('messagePredeterminado','El usuario tiene algunos problemas comunicate con Anglo Latino Education Partnership.');
 						redirect('Login');
@@ -213,33 +206,9 @@ class Login extends MY_RootController {
 
 			if ($response->status=="success") {
 				if ($response->data->statusU=="Activo") {
-					//usuario activo
-					//echo var_dump($response->data);
-					if ($response->data->typeUsuario=="Aspirante") {
-						if ($response->data->aspirante==null) {
-							//no ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/InformacionAspirante');
-						}elseif (@$response->data->programaDeInteres==null){
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/EleccionUniversidad');
-						}else{
-							//ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('ComingSoon');
-						}
-					}else if ($response->data->typeUsuario=="Agente") {
-						if ($response->data->aspirante==null) {
-							//no ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('Dashboard/InformacionAgente');
-						}else{
-							//ha llenado toda su informacion
-							$this->session->set_userdata('user_sess',$response->data);
-							redirect('ComingSoon');
-						}
-					}else if ($response->data->typeUsuario=="Admin") {
-						# code...
+					if ($response->data->typeUsuario) {
+						$this->session->set_userdata('user_sess',$response->data);
+						redirect('Login');
 					}else{
 						$this->session->set_flashdata('messagePredeterminado','El usuario tiene algunos problemas comunicate con Anglo Latino Education Partnership.');
 						redirect('Login');

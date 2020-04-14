@@ -93,7 +93,7 @@
                                     <a href="Login"><img src="<?=base_url('resources/assets/Anglo/chevening.png');?>" alt="patner_img"></a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <!--<div class="item">
                                 <div class="pn_img_wrapper">
                                 <p style="color: black">
                                         <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
@@ -106,8 +106,8 @@
                                     </p>
                                     <a href="Login"><img style="background: black;margin-top: 20px" src="<?=base_url('resources/assets/Anglo/logotipo-laudex.png');?>" alt="patner_img"></a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div>-->
+                            <!--<div class="item">
                                 <div class="pn_img_wrapper">
                                 <p style="color: black">
                                         <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
@@ -120,7 +120,7 @@
                                     </p>
                                     <a href="Login"><img style="background: black;margin-top: 50px;" src="<?=base_url('resources/assets/Anglo/edupass.png');?>" alt="patner_img"></a>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="item">
                                 <div class="pn_img_wrapper">
                                 <p style="color: black">
@@ -133,6 +133,19 @@
                                         Beca y financiamiento/para México y Latinoamerica
                                     </p>
                                     <a href="Login"><img src="<?=base_url('resources/assets/Anglo/fundacion-beca.png');?>" alt="patner_img"></a>
+                                </div>
+                            </div><div class="item">
+                                <div class="pn_img_wrapper">
+                                <p style="color: black">
+                                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem" style="font-size: 20px">
+                                            <span class="flag-icon flag-icon-mx">
+                                            </span> Mexico
+                                        </a>
+                                    </p>
+                                    <p style="color: black">
+                                        Beca soy joven jalisco
+                                    </p>
+                                    <a href="Login"><img src="<?=base_url('resources/assets/Anglo/becasJoven.jpeg');?>" alt="patner_img"></a>
                                 </div>
                             </div>
                             <div class="item">

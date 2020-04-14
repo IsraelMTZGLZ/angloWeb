@@ -583,7 +583,7 @@
               },2000);
             }
             if (_response.status=="success") {
-              window.location.href = "<?php echo site_url('Dashboard/EleccionUniversidad'); ?>";
+              window.location.href = "<?php echo site_url('Login');?>";
             }
             
             tostada(_response.status,_response.message);
