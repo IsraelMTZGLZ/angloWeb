@@ -57,6 +57,7 @@ class Email extends MY_RootController {
             $this->email->set_newline("\r\n");
             
             $this->email->from($email_settings['email_send'],$email_settings['from_email']);
+            $this->email->reply_to('study@anglolatinoedu.com');
             $this->email->to('hectori.um.15@gmail.com','hectori.um.15@gmail.com');
             $this->email->subject("Testing");
             $this->email->message('test');

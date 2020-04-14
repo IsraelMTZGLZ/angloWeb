@@ -48,9 +48,17 @@
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/u_bathh.jpg');?>" alt="">
+                          <div class="row">
+                          <div class="col-8">
+                          <img src="<?=base_url('resources/assets/Informativa/images/u_bathh.jpg');?>" alt="">
+
+                          </div>
+                          <div class="col-4">
+                          <img style="margin-left: -50px" src="<?=base_url('resources/assets/Informativa/images/lu_bath.png');?>" alt="...">
+                          </div>
+                          </div>
                             <div class="portfolio_hover">
-                                <a href="#"> University of Bath </a>
+                                <a type="button" data-toggle="modal" data-target="#BathUniModal"> University of Bath </a>
                                 <p></p>
                                 <div class="zoom_popup d-none d-lg-block d-xl-block">
                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#BathUniModal"></button></i>                                </div>
