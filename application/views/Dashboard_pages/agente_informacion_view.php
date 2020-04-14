@@ -290,30 +290,28 @@
           <form id="registroForm">
             <input type="hidden" value="<?=$user->persona?>" name="persona" id="persona">
             <div class="form-group form-material floating" data-plugin="formMaterial" style="align-items: center">
-              <input type="text" class="form-control empty" name="numeroEmp" id="numeroEmp" data-plugin="datepicker" autocomplete="off">
+              <input type="text" class="form-control empty" name="numeroEmp" id="numeroEmp">
               <label>Numero de empleado</label>
             </div>
 
             <div class="row">
 
-              <div class="col-9">
+              <div class="col-12">
                 <div class="form-group form-material floating" data-plugin="formMaterial" style="align-items: center">
-                  <input type="text" class="form-control empty" name="puesto" id="puesto" data-plugin="datepicker" autocomplete="off">
+                  <input type="text" class="form-control empty" name="puesto" id="puesto">
                   <label>Puesto empleado</label>
                 </div>
 
               </div>
             </div>
-            <?php if ($user->genero==null) { ?>
               <div class="form-group form-material floating" data-plugin="formMaterial">
-                <select class="form-control" data-plugin="select2" name="<?php echo ($user->genero==null) ? 'genero' : '';?>" id="<?php echo ($user->genero==null) ? 'genero' : '';?>">
+                <select class="form-control" data-plugin="select2" name="genero" id="genero">
                   <option value="" disabled selected>Elige una opcion</option>
-                  <option value="Femenino">Femenino</option>
-                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino" <?php echo ($user->genero=='Femenino') ?'selected' : '' ?>>Femenino</option>
+                  <option value="Masculino" <?php echo ($user->genero=='Masculino') ?'selected' : '' ?>>Masculino</option>
                 </select>
                 <label>Genero</label>
               </div>
-            <?php } ;?>
             <button type="submit" class="btn btn-primary btn-block btn-lg mt-40">Continuar</button>
           </form>
           <p><a href="<?=base_url('Login/Login/logout')?>">Cerrar sesion</a></p>
@@ -496,58 +494,42 @@
 
   <script>
     $(function(){
-      $('#ciudad').on('change', function() {
-        $array = this.value;
-        $lada = $array.split(',');
-        $(document).find('#lada').val('+'+$lada[1])
-      });
+
+
       $persona =$(document).find('#namePerson').val();
+      //$(document).find('#genero').val(value);
       tostada('info','Termina de acompletar tu informacion.');
       tostada('success','Bienvenido '+$persona);
+
 
       $(document).on('submit','#registroForm',function(event){
         event.preventDefault();
 
         $(document).find('#numeroEmp').next('div').remove();
         $(document).find('#puesto').next('div').remove();
-        _url = "";
+
         _url = _principalURL()+"Agente/api/agente/";
         _method = "POST";
 
-        if($(document).find('.puesto').val()){
-          $(document).find('#puesto').val($(document).find('#lada').val()+$(document).find('.puesto').val());
-        }
+    
 
-        if($(document).find('#ciudad').val()){
-          $array = $(document).find('#ciudad').val();
-          $ciudadParticion = $array.split(',');
-        }else{
-          $ciudadParticion= [null];
-        }
-
-        if($(document).find('#numeroEmp').val()){
-          $fechaNueva =$(document).find('#numeroEmp').val();
-        }else{
-          $fechaNueva = null;
-        }
-
-        _params={
+        /*_params={
         	"persona":$(document).find('#persona').val(),
-          "puesto":$(document).find('#telefono').val(),
+          "puesto":$(document).find('#puesto').val(),
           "numeroEmp": $fechaNueva
         };
 
         if ($(document).find('#genero')) {
           _params['genero'] = $(document).find('#genero').val();
-        }
-        //console.info(_params);
+        }*/
+
         $.ajax({
             url: _url,
             method : _method,
             headers : {
             'X-API-KEY':'ANGLOKEY'
             },
-            data: _params,
+            data: $(document).find('#registroForm').serialize(),
             success : function(_response){
             response = JSON.stringify(_response);
 
@@ -568,7 +550,7 @@
               },2000);
             }
             if (_response.status=="success") {
-              window.location.href = "<?php echo site_url('Dashboard/EleccionUniversidad'); ?>";
+              window.location.href = "<?php echo site_url('Login'); ?>";
             }
 
             tostada(_response.status,_response.message);
