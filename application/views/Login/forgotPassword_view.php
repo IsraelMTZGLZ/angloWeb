@@ -148,13 +148,14 @@
       </div>
       <h2><?=$this->lang->line('frogot_password_page');?></h2>
       <p><?=$this->lang->line('frogot_password_page_leyenda');?></p>
+      <div id="responseText" style="margin-top: 20px;margin-bottom: -5px;"></div>
 
-      <form>
+      <form id="forgotForm">
         <div class="form-group">
-          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="<?=$this->lang->line('tu_email');?>">
+          <input type="email" class="form-control" id="email" name="email" placeholder="<?=$this->lang->line('tu_email');?>">
         </div>
         <div class="form-group">
-          <button type="button" class="btn btn-primary btn-block btn-send"><?=$this->lang->line('resetear_password');?></button>
+          <button type="submit" class="btn btn-primary btn-block btn-send"><?=$this->lang->line('resetear_password');?></button>
         </div>
       </form>
 
@@ -331,7 +332,8 @@
       });
     })(document, window, jQuery);
   </script>
-
+  
+  <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   
   <!-- Google Analytics -->
@@ -358,9 +360,59 @@
 <script type="text/javascript">
   $(function(){
     
-    $(document).on('click','.btn-send',function() {
-      alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!Comunicate con un asesor de anglo.', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
-      
+    $(document).on('submit','#forgotForm',function() {
+      //alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!Comunicate con un asesor de anglo.', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
+      event.preventDefault();
+      clearForm('forgotForm');
+      _url = "";
+      _url = _principalURL()+"User/api/cambiarPassword/";
+      _method = "POST";
+
+      $.ajax({
+        url: _url,
+        method : _method,
+        headers : {
+        'X-API-KEY':'ANGLOKEY'
+        },
+        data: $(document).find('#forgotForm').serialize(),
+        success : function(_response){
+        response = JSON.stringify(_response);
+
+        if (_response.status=="error") {  
+          $.each(_response.validations,function(key,message){
+              $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+          });
+          console.info(_response);
+          setTimeout(function(){
+          
+              $(document).find('#responseText').html('<div class="summary-errors alert alert-danger alert-dismissible fade show" role="alert">'+
+              '<strong>Error!</strong> '+_response.message+
+              '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+              '<span aria-hidden="true">&times;</span>'+
+              '</button>'+
+              '</div>'
+              );
+          },2000);
+        }
+        if (_response.status=="success") {
+          $(document).find('#responseText').html(
+              '<div class="alert alert-success fade show" role="alert">'+
+              '<h4 class="alert-heading">Contraseña cambiada correctamente! Revisa tu correo se envio la contraseña a el correo proporcionado</h4>'+
+              '</div>'
+          );
+          setTimeout(function(){
+                            location.reload();
+              
+                        },2500);
+        }
+                
+        tostada(_response.status,_response.message);
+                
+
+        },error : function(err){
+        
+        }
+      });
     });
 
   });

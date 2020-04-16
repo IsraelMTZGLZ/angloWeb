@@ -962,7 +962,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1966 Ciudad de Bath (1hr 50 mins de Londres).</div>
+                <div class="col-md-4 "> 1966 .</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Ciudad de Bath (1hr 50 mins de Londres). </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1048,7 +1052,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >Bristol (1h 40min de Londres). </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min de Londres). </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1134,7 +1138,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >A 50 min de Londres. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">A 50 min de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1218,7 +1222,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >Bristol (1h 40min de Londres). </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min de Londres). </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1306,11 +1310,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.1843 declarada universidad en 1987.</div>
+                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min) de Londres.1843 declarada universidad en 1987. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1399,11 +1403,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1946 Cranfield (1 hr de Londres)..</div>
+                <div class="col-md-4 "> 1946.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;" >Cranfield (1 hr de Londres). </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1487,11 +1491,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1834 4 h de Londres. Campus en London.</div>
+                <div class="col-md-4 "> 1834 4 h de Londres.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Campus en London. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1586,11 +1590,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1785 Centro de Londres.</div>
+                <div class="col-md-4 "> 1785.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;" >Centro de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1675,11 +1679,11 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1413 1hr 30 mins de Londres en avión.</div>
+              <div class="col-md-4 "> 1413.</div>
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              <div class="col-md-4 "> <a href="javascript:;"  >1hr 30 mins de Londres en avión. </a> </div>
             </div>
             <div class="row">
               <hr>
@@ -1767,11 +1771,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> Norwich  (90 mins) de Londres.</div>
+                <div class="col-md-4 "> 29 de septiembre de 1963.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Norwich  (90 mins) de Londres.</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -1856,11 +1860,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.</div>
+                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min) de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2018,7 +2022,7 @@
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="" target="_blank" > A 50 min de Londres </a> </div>
+              <div class="col-md-4 "> <a href="javascript:;"> A 50 min de Londres </a> </div>
             </div>
             <div class="row">
               <hr>
@@ -2099,7 +2103,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" > A 50 min de Londres </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;"> A 50 min de Londres </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -4829,11 +4833,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1963 Norwich  (90 mins) de Londres.</div>
+                <div class="col-md-4 "> 1963</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Norwich  (90 mins) de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -5126,7 +5130,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >A 50 min de Londres. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;" >A 50 min de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -5318,7 +5322,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" > A 50 min de Londres </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;" > A 50 min de Londres </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -5799,11 +5803,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad. Bristol (1h 40min) de Londres.</div>
+                <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min) de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -5887,11 +5891,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1785 Centro de Londres.</div>
+                <div class="col-md-4 "> 1785.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;" >Centro de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -5960,11 +5964,11 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1413 1hr 30 mins de Londres en avión.</div>
+              <div class="col-md-4 "> 1413.</div>
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+              <div class="col-md-4 "> <a href="javascript:;" >1hr 30 mins de Londres en avión </a> </div>
             </div>
 
             <div class="row">
@@ -6039,11 +6043,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> Norwich  (90 mins) de Londres.</div>
+                <div class="col-md-4 "> 29 de septiembre de 1963</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="" target="_blank" >. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;"  >Norwich  (90 mins) de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
