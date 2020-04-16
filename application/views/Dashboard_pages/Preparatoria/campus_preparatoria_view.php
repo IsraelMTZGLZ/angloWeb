@@ -97,6 +97,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
 $(function(){
+  <?php if(@$idAdmin){ ?>
+ <?php }else { ?>
+tostada('error','');
+ <?php } ?>
+
   /*This function is emplemented to show data in the table */
 
     _url = _principalURL()+"Preparatoria/api/preparatoria/";
@@ -117,7 +122,7 @@ $(function(){
         {data: 'nombre_Preparatoria'},
         {data: 'fundacion_Preparatoria'},
         {data: 'status_Preparatoria'},
-        {data: '',defaultContent:'<a href="<?=base_url("Dashboard/Preparatoria/CampusPreparatoria/add/")?>1" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
+        {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
         ]
       });
 
