@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class TablaDescarga extends MY_RootController {
+class All_Preparatorias extends MY_RootController {
 
 	public function __construct() {
         parent::__construct();
