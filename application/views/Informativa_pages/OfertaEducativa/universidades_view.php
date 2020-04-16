@@ -1,32 +1,21 @@
-    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/modal_info.css');?>" />
+  <div class="page_title_section float_left">
 
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+                <!-- section_heading start -->
+                <div class="col-lg-12 col-md-12 col-12 col-sm-12">
 
-
-    <div class="page_title_section float_left">
-
-        <div class="page_header">
-            <div class="container">
-                <div class="row">
-                    <!-- section_heading start -->
-                    <div class="col-lg-12 col-md-12 col-12 col-sm-12">
-
-                        <h1> <?=$this->lang->line('offer_edictiva_us');?></h1>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-12 col-sm-12">
-                        <div class="sub_title_section">
-                            <ul class="sub_title">
-
-                            </ul>
-                        </div>
-                    </div>
+                    <h1><?=$this->lang->line('offer_edictiva_us');?></h1>
                 </div>
             </div>
         </div>
     </div>
+  </div>
 </div>
 
-<!-- navi wrapper End -->
-<!--gallery wrapper start-->
+
+
 <div class="gallery_wrapper float_left" style="margin-bottom: -200px;">
     <div class="container">
         <div class="row">
@@ -40,30 +29,24 @@
                       <li data-filter=".ux_uy"><a href="#">Cursos de verano</a></li>
                 </ul>
             </div>
+
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="row portfoli_inner">
-
-                    <!-- Items -->
-
-
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website">
                         <div class="portfolio_item">
-                          <div class="row">
-                          <div class="col-8">
                           <img src="<?=base_url('resources/assets/Informativa/images/u_bathh.jpg');?>" alt="">
-
-                          </div>
-                          <div class="col-4">
-                          <img style="margin-left: -50px" src="<?=base_url('resources/assets/Informativa/images/lu_bath.png');?>" alt="...">
-                          </div>
-                          </div>
                             <div class="portfolio_hover">
-                                <a type="button" data-toggle="modal" data-target="#BathUniModal"> University of Bath </a>
-                                <p></p>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/lu_bath.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#BathUniModal">University of Bath</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup d-none d-lg-block d-xl-block">
                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#BathUniModal"></button></i>                                </div>
                                </div>
-                           <div class="portfolio_overlay"></div>
+                               <a data-toggle="modal" data-target="#BathUniModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <!-- Items -->
@@ -71,39 +54,38 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_bristool.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                 <a href="#"> University of Bristol </a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/lu_bristol.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#bristolModal">University of Bristol</a>                                   </div>
+                                </div>
                                  <div class="zoom_popup">
                                       <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bristolModal"></button></i>
                                  </div>
                             </div>
-            <div class="portfolio_overlay"></div>
+                            <a data-toggle="modal" data-target="#bristolModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
-                    <!-- Items -->
-                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/u_cats.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                               <a href="#"> CATS College</a>
-                               <div class="zoom_popup">
-                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#catsModal"></button></i>
-                               </div>
-                            </div>
-                         <div class="portfolio_overlay"></div>
-                        </div>
-                    </div> -->
-                    <!-- Items -->
+                   
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge School of Visual & Performing Arts </a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#artsModal">Cambridge School of Visual & Performing Arts</a></div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#artsModal"></button></i>
                                 </div>
 
                             </div>
-                          <div class="portfolio_overlay"></div>
+                          <a data-toggle="modal" data-target="#artsModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <!-- Items -->
@@ -111,12 +93,18 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_queen-mary.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                 <a href="#"> Queen Mary University of London </a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#queenModal">Queen Mary University of London</a>                                   </div>
+                                </div>
                                  <div class="zoom_popup">
                                       <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#queenModal"></button></i>
                                  </div>
                             </div>
-                         <div class="portfolio_overlay"></div>
+                         <a data-toggle="modal" data-target="#queenModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <!-- Items -->
@@ -124,12 +112,19 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_east-anglia.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> University of East Anglia</a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#ueaModal">University of East Anglia</a>                                
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#ueaModal"></button></i>
                                 </div>
                             </div>
-                       <div class="portfolio_overlay"></div>
+                       <a data-toggle="modal" data-target="#ueaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -137,73 +132,108 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_west-of-england.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> University of the West of England <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#uweModal"> University of the West of England</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#uweModal"></button></i>
                                 </div>
                             </div>
-                          <div class="portfolio_overlay"></div>
+                          <a data-toggle="modal" data-target="#uweModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_into.png');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Coventry University</a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/lu_conventru.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#coventryModal"> Coventry University</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#coventryModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#coventryModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_crandfiel.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cranfield University </a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/lu_cranfield.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#cranfieldModal"> Cranfield University </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cranfieldModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                        <a data-toggle="modal" data-target="#cranfieldModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_new-castle.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Newcastle University</a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/lu_newcastle.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#castleModal"> Newcastle University </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#castleModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#castleModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_st-andrews.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> University of St Andrews <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#andrewModal">University of St Andrews</a>
+                                  </div>
+                                </div>
 
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#andrewModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                            <a data-toggle="modal" data-target="#andrewModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  website">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Otras Universidades </a>
+                                <a data-toggle="modal" data-target="#othersModal"> Otras Universidades </a>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#othersModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#othersModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -211,36 +241,57 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge School of Visual and Performing Arts  <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#artsPrepaModal"> Cambridge School of Visual and Performing Arts  <span>LEER MÁS </span></a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#artsPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                          <a data-toggle="modal" data-target="#artsPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_cats.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> CATS College<span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7" style="background: white">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#catsPrepaModal"> CATS College</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#catsPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#catsPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_concord.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Concord College <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="https://pbs.twimg.com/profile_images/1189486413403901953/G1XL4_AA_400x400.jpg">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#concordPrepaModal">Concord College</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#concordPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#concordPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -248,171 +299,139 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/prepa_nto.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Into UK<span>LEER MÁS </span></a>
+                                <a data-toggle="modal" data-target="#intoPrepaModal"> Into UK</a>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#intoPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#intoPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/prepa_kaplan.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Kaplan <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7" style="background: white">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/prepa_kaplan_logo.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#kaplanPrepaModal"> Kaplan</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#kaplanPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#kaplanPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_st-andrews.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> St Andrews College, Cambridge <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7" style="background: white">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#adrewsPrepaModal"> St Andrews College, Cambridge</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#adrewsPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#adrewsPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/prepa_atauton.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#">Taunton School <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-9">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/prepa_tauton_logo.jpeg');?>">
+                                  </div>
+                                  <div class="col-3">
+                                    <a data-toggle="modal" data-target="#tautonPrepaModal">Taunton School</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#tautonPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#tautonPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#">Otras Preparatorias</a>
+                                <a data-toggle="modal" data-target="#akworthPrepaModal">Otras Preparatorias</a>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#akworthPrepaModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#akworthPrepaModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
-                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/bath.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#"> Bath Academy <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathPrepaModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_cardiff-sixth.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#"> Cardiff Sixth Form College <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cardiffPrepaModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_collers.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#">Collyer´s<span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#collyerPrepaModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_dover.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#">Dover college<span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#doverPrepaModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_stonyhurts.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#">Stonyhurts College <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#stonyhurtsPrepaModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/prepa_strathallan.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <a href="#">Strathallan <span>LEER MÁS </span></a>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#strathaPrepaModal"></button></i>
-                                </div>
-                            </div>
-                     <div class="portfolio_overlay"></div>
-                        </div>
-                    </div> -->
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/s_bath.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Bath <span>LEER MÁS </span></a>
+                              <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7" style="background: white">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/new_bath_acaademic_of_english.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#bathInglesModal" style="font-size: 40px;"> Bath</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathInglesModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#bathInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
-
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_brington.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Brighton <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/new_bringthon.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#brightonInglesModal"> Brighton </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#brightonInglesModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#brightonInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge-university.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge  <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#cambridgeInglesModal"> Cambridge </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeInglesModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#cambridgeInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -420,12 +439,19 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_chester.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Chester <span>LEER MÁS </span></a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#chesterInglesModal"> Chester </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterInglesModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#chesterInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -433,36 +459,51 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_Eastbourne.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Eastbourne <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#eastbourneInglesModal"> Eastbourne </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneInglesModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#eastbourneInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge Academy of English </a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                  <img style="width: 70%" src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#cambridgeAcademyInglesModal"> Cambridge Academy of English </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeAcademyInglesModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#cambridgeAcademyInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Otras escuelas de Inglés </a>
+                              
+                                <a data-toggle="modal" data-target="#othersModalEnglish"> Otras escuelas de Inglés </a>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#othersModalEnglish"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#othersModalEnglish"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -470,169 +511,250 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge School of Visual & Performing Arts </a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#artsVeranoModal"> Cambridge School of Visual & Performing Arts </a>
+                                  </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#artsVeranoModal"></button></i>
                                 </div>
-
+                                </div>
                             </div>
-                          <div class="portfolio_overlay"></div>
+                          <a data-toggle="modal" data-target="#artsVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_bristool.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Bristol <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/v_bristol.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#bristolVeranoModal"> Bristol</a>
+                                </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bristolVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#bristolVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_cats.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> CATS College<span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#catsVeranoModal"> CATS College</a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#catsVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                            <a  data-toggle="modal" data-target="#catsVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_concord.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Concord <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                    <a data-toggle="modal" data-target="#concordVeranoModal"> Concord </a>
+                                  </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#concordVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                            <a data-toggle="modal" data-target="#concordVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_chester.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Chester <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#chesterVeranoModal">Chester</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#chesterVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge-university.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge  <span>LEER MÁS </span></a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#cambridgeVeranoModal">Cambridge</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#cambridgeVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/prepa_nto.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Into UK<span>LEER MÁS </span></a>
+                                <a data-toggle="modal" data-target="#intoVeranoModal"> Into UK</a>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#intoVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#intoVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ux_uy ">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_queen-mary.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                 <a href="#"> Queen Mary University of London </a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#queenVeranoModal">Queen Mary University of London</a>                                   </div>
+                                </div>
                                  <div class="zoom_popup">
                                       <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#queenVeranoModal"></button></i>
                                  </div>
                             </div>
-                         <div class="portfolio_overlay"></div>
+                         <a data-toggle="modal" data-target="#queenVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_st-andrews.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> St Andrews College, Cambridge <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#andrewVeranoModal">St Andrews College, Cambridge</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#andrewVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#andrewVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_touton.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Taunton <span>LEER MÁS </span></a>
+                              <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#tauntonVeranoModal">Taunton</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#tauntonVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#tauntonVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_york.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Uea  <span>LEER MÁS </span></a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#ueaVeranoModal">Uea</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#ueaVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#ueaVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy  ">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_west-of-england.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> University of the West of England <span>LEER MÁS </span></a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#uweVeranoModal">University of the West of England</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#uweVeranoModal"></button></i>
                                 </div>
                             </div>
-                          <div class="portfolio_overlay"></div>
+                          <a data-toggle="modal" data-target="#uweVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/s_bath.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Bath <span>LEER MÁS </span></a>
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#bathVeranoModal">Bath</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#bathVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Cambridge Academy of English </a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#cambridgeVeranoInglesModal">Cambridge Academy of English</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoInglesModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#cambridgeVeranoInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -640,36 +762,54 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_brington.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Brighton <span>LEER MÁS </span></a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/new_bringthon.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#brightonVeranoModal">Brighton</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#brightonVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#brightonVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/v_Eastbourne.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#"> Eastbourne <span>LEER MÁS </span></a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#eastbourneVeranoModal">Eastbourne</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                     <a data-toggle="modal" data-target="#eastbourneVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/prepa_stonyhurts.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                                <a href="#">Stonyhurts College <span>LEER MÁS </span></a>
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                     <a data-toggle="modal" data-target="#stonyhurtsVeranoModal">Stonyhurts College</a>                                   </div>
+                                </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#stonyhurtsVeranoModal"></button></i>
                                 </div>
                             </div>
-                     <div class="portfolio_overlay"></div>
+                            <a data-toggle="modal" data-target="#stonyhurtsVeranoModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
 
@@ -801,11 +941,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -60px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/um_bathh.jpg');?>" alt=""></div>
+                <div class="col-md-4  d-none d-lg-block d-xl-block"  style="margin-top: -60px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto  d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/um_bathh.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -854,12 +999,18 @@
               <div class="row">
                 <div class="col-md-12">Ciudad romana, patrimonio mundial de la Humanidad por la UNESCO.</div>
               </div>
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
               <div class="row">
                 <hr>
               </div>
-            <div class="embed-responsive embed-responsive-21by9">
+              
+              <div class="youtube-player" data-id="HqwIMl67hCQ"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HqwIMl67hCQ"></iframe>
-              </div>
+              </div>-->
             </div>
           </div>
             <div class="bottom-strip"></div>
@@ -872,11 +1023,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -60px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_bristol.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_bristol.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -60px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_bristol.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_bristol.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -929,12 +1085,18 @@
                 <hr>
               </div>
               <div class="row">
+                
                 <div class="col-md-12">Bristol nombrada la mejor ciudad para vivir en UK (Sunday Times 2017).</div>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
               </div>
+              
               <br>
-              <div class="embed-responsive embed-responsive-21by9">
+              <div class="youtube-player" data-id="5XcKtaAU-xw"></div>
+              <!--<div class="embed-responsive embed-responsive-21by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5XcKtaAU-xw"></iframe>
-              </div>
+              </div>-->
             </div>
           </div>
             <div class="bottom-strip"></div>
@@ -947,11 +1109,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -999,9 +1166,9 @@
               </div>
               <div class="row">
                 <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.csvpa.com/" target="_blank">Web Page</a>
+                  
+                  <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -1009,10 +1176,10 @@
             <div class="row">
               <hr>
             </div>
-
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="TLGYTqu34i0"></div>
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -1026,11 +1193,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1080,15 +1252,16 @@
                 <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
                 <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
               </div>
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
               <div class="row">
                 <hr>
               </div>
               <div class="row">
                 <!-- <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div> -->
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.catseducation.com/" target="_blank">Web Page</a>
-                  </div>
+          
 
               </div>
             </div>
@@ -1112,11 +1285,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_conventru.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_coventry.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_conventru.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_coventry.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1170,8 +1348,8 @@
               <div class="row">
                 <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.coventry.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -1179,13 +1357,15 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="ULS0FN2kjqg"></div>
+            <div class="youtube-player" data-id="_neMHKZo1AI"></div>
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ULS0FN2kjqg"></iframe>
             </div>
             <hr>
             <div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_neMHKZo1AI"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -1198,11 +1378,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cranfield.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_crandfiel.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cranfield.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_crandfiel.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1254,8 +1439,8 @@
               <div class="row">
                 <div class="col-md-12">La única universidad con su propio aeropuerto operativo; se utiliza para la investigación y el diseño aeroespacial.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.cranfield.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -1263,9 +1448,10 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="FpdZKWHX-7g"></div>
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FpdZKWHX-7g"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -1280,11 +1466,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_newcastle.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_new-castle.jpg');?>" alt=""></div>
+                <div class="col-md-4  d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_newcastle.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto  d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_new-castle.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1312,7 +1503,7 @@
               </div>
               <div class="row">
 
-                <div class="col-md-6">QS Ranking Mundial de Universidades 146..</div>
+                <div class="col-md-6">QS Ranking Mundial de Universidades 146.</div>
                 <div class="col-md-6">9a en Times Higher Education Europe Teaching Rankings 2018. </div>
                 <br>
               </div>
@@ -1340,8 +1531,8 @@
               <div class="row">
                 <div class="col-md-12">En la ciudad de Newcastle, se encuentra el Center of Life (centro de investigación biomédica)..</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="http://www.ncl.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -1349,13 +1540,17 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="An1TyEODZ2Y"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/An1TyEODZ2Y"></iframe>
-            </div>
+            </div>-->
             <hr>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="DcP4YPY7N9g"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DcP4YPY7N9g"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -1370,11 +1565,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1428,8 +1628,8 @@
               <div class="row">
                 <div class="col-md-12">En 1785 fundó la primera escuela de Medicina de Inglaterra en el Royal London Hospital.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.qmul.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -1437,9 +1637,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="f9y6eeEK1oM"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9y6eeEK1oM"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -1452,11 +1654,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1510,18 +1717,20 @@
             <div class="row">
               <div class="col-md-12">Los Duques de Cambridge, el Príncipe William y Kate, se conocieron mientras estudiaban.</div>
 
-                <div class="header_btn dark_btn footer_btn float_left">
-                    <a href="https://www.st-andrews.ac.uk/" target="_blank">Web Page</a>
-                </div>
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
 
             </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="x8O5kv47zn8"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x8O5kv47zn8"></iframe>
-          </div>
+          </div>-->
 
           <hr>
 
@@ -1537,11 +1746,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1604,9 +1818,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="LTF9EOqy9L8"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTF9EOqy9L8"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -1619,11 +1835,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1676,8 +1897,8 @@
               <div class="row">
                 <div class="col-md-12">The Guardian nombro a Bristol como una de las 10 ciudades más felices para vivir y trabajar en el Reino Unido.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.uwe.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -1685,9 +1906,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="scLpnIm-XZo"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/scLpnIm-XZo"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -1700,11 +1923,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: 40px;"> <img src="<?=base_url('resources/assets/Informativa/images/uk_band.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/u_universities.jpg');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 40px;"> <img src="<?=base_url('resources/assets/Informativa/images/uk_band.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/u_universities.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1739,12 +1967,17 @@
               <br>
             </div>
           </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="v8oA0J3fAnQ"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v8oA0J3fAnQ"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -1760,11 +1993,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1811,17 +2049,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
+          <div class="youtube-player" data-id="TLGYTqu34i0"></div>
 
-          <div class="embed-responsive embed-responsive-21by9">
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -1835,11 +2074,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1886,16 +2130,18 @@
               </div>
             </div>
             <div class="col-md-12 ">
-              <div class="header_btn dark_btn footer_btn float_left">
-                  <a  href="#" target="_blank">Me interesa </a>
-              </div>
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="uPFn8rHs6kI"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uPFn8rHs6kI"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -1912,11 +2158,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_concordTwo.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img style="width: 90%" src="https://pbs.twimg.com/profile_images/1189486413403901953/G1XL4_AA_400x400.jpg" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_concordTwo.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -1962,17 +2213,18 @@
               </div>
             </div>
             <div class="col-md-12 ">
-              <div class="header_btn dark_btn footer_btn float_left">
-                  <a  href="#" target="_blank">Me interesa </a>
-              </div>
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
             </div>
             <div class="row">
               <hr>
             </div>
+            <div class="youtube-player" data-id="5Uy21-BRN84"></div>
 
-           <div class="embed-responsive embed-responsive-21by9">
+           <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Uy21-BRN84"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -1985,11 +2237,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_into_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_nto.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_into_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_nto.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2034,17 +2291,17 @@
               <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
             </div>
           </div>
-          <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
-          </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="GdEQPUbmvaE"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GdEQPUbmvaE"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -2058,11 +2315,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_kaplan_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_kaplan.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_kaplan_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_kaplan.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2107,17 +2369,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+              <a style="width: 100%;" href="../Login" > Me interesa</a>
             </div>
           </div>
           <div class="row">
             <hr>
           </div>
+          <div class="youtube-player" data-id="Pdmv3chcouc"></div>
 
-          <div class="embed-responsive embed-responsive-21by9">
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pdmv3chcouc"></iframe>
-          </div>
+          </div>-->
           </div>
         </div>
           <div class="bottom-strip"></div>
@@ -2130,11 +2393,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2183,17 +2451,18 @@
               </div>
             </div>
             <div class="col-md-12 ">
-              <div class="header_btn dark_btn footer_btn float_left">
-                  <a  href="#" target="_blank">Me interesa </a>
-              </div>
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
             </div>
             <div class="row">
               <hr>
             </div>
+            <div class="youtube-player" data-id="tfVYTiZt23E"></div>
 
-            <div class="embed-responsive embed-responsive-21by9">
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tfVYTiZt23E"></iframe>
-            </div>
+            </div>-->
             </div>
           </div>
             <div class="bottom-strip"></div>
@@ -2204,11 +2473,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_tauton_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_atauton.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_tauton_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_atauton.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2255,16 +2529,18 @@
               </div>
             </div>
             <div class="col-md-12 ">
-              <div class="header_btn dark_btn footer_btn float_left">
-                  <a  href="#" target="_blank">Me interesa </a>
-              </div>
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="m61w28VWR2I"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m61w28VWR2I"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -2278,6 +2554,11 @@
           <!-- <div class="top-strip"></div> -->
         <div class="modal-header d-none d-lg-block d-xl-block">
           <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
               <div class="col-md-4 "  style="margin-top: 40px;"> <img src="<?=base_url('resources/assets/Informativa/images/uk_band.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
               <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/u_universities.jpg');?>" alt=""></div>
@@ -2307,12 +2588,16 @@
             </div>
 
           </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="v8oA0J3fAnQ"></div>
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v8oA0J3fAnQ"></iframe>
-          </div>
+          </div>-->
 
         </div>
           <div class="bottom-strip"></div>
@@ -2326,11 +2611,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2379,16 +2669,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="S1G5cWSMmzQ"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -2401,11 +2693,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_collers_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_collers.png');?>" alt=""></div>
+                <div class="col-md-4  d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_collers_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto  d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_collers.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2452,16 +2749,18 @@
               </div>
             </div>
             <div class="col-md-12 ">
-              <div class="header_btn dark_btn footer_btn float_left">
-                  <a  href="#" target="_blank">Me interesa </a>
-              </div>
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="_eJsc2kI7wU"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_eJsc2kI7wU"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -2474,11 +2773,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_cardiff-sixth_Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_cardiff-sixth.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_cardiff-sixth_Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_cardiff-sixth.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2524,16 +2828,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="cJcIRj8MszM"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cJcIRj8MszM"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -2547,11 +2853,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Dover_prepa.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_dover.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Dover_prepa.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_dover.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2597,16 +2908,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="WeAYjrwD7v4"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WeAYjrwD7v4"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -2620,11 +2933,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_stonyhurts.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_stonyhurts.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2669,16 +2987,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="5xa1XwDzSnQ"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5xa1XwDzSnQ"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -2692,11 +3012,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_strathallan_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_strathallan.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_strathallan_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_strathallan.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2741,16 +3066,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="PhklOowjNJk"></div>
+
+          <<!--div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PhklOowjNJk"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -2770,11 +3097,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_bath_acaademic_of_english.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_bath_acaademic_of_english.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2834,8 +3166,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -2844,9 +3176,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="S1G5cWSMmzQ"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -2862,11 +3196,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_bringthon.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_brington.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_bringthon.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_brington.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -2925,8 +3264,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                  <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -2935,9 +3274,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="Vqj6hIFB-TE"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vqj6hIFB-TE"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -2952,11 +3293,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3016,8 +3362,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -3026,9 +3372,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="bCApP-JqLpc"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -3043,11 +3391,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3106,8 +3459,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
               </div>
@@ -3115,9 +3468,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="_RNiSEej3qA"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -3133,11 +3488,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/ee_ecambrige.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/ee_ecambrige.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3196,8 +3556,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
               </div>
@@ -3205,9 +3565,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="_RNiSEej3qA"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -3222,11 +3584,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3286,19 +3653,21 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                  <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
-                  </div>
+                </div>
 
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="5pcmATG_mjM"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5pcmATG_mjM"></iframe>
-            </div>
+            </div>-->
           <hr>
 
             </div>
@@ -3312,11 +3681,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3374,8 +3748,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -3384,9 +3758,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="bgIFZ8_Hwwk"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -3401,11 +3777,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: 40px;"> <img src="<?=base_url('resources/assets/Informativa/images/uk_band.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/u_universities.jpg');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 40px;"> <img src="<?=base_url('resources/assets/Informativa/images/uk_band.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/u_universities.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3431,12 +3812,17 @@
             </div>
 
           </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="v8oA0J3fAnQ"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v8oA0J3fAnQ"></iframe>
-          </div>
+          </div>-->
 
         </div>
           <div class="bottom-strip"></div>
@@ -3445,614 +3831,22 @@
 </div>
 </div>
 
-
-<!-- / -->
-
-<!-- <div class="modal fade text-center py-5 subscribeModal-lg "  id="concordInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_concord.png');?>" alt=""></div>
-              </div>
-            </div>
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1976 .</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/xM3PEs5EtxUjUWqq5" target="_blank" >Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido </a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                  <div class="col-md-12"><li>Inglés general.</li></div>
-                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
-                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
-
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Alojamiento
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-
-                <div class="col-md-12"><li>Concord College da la bienvenida a estudiantes de todo el mundo y el área local a su comunidad vibrante y variada.</li></div>
-                <div class="col-md-12"><li>Desarrollar la confianza de los estudiantes en sus propias habilidades.</li></div>
-                <div class="col-md-12"><li>Mejorar las habilidades de los estudiantes en su materia seleccionada.</li></div>
-
-                <div class="col-md-12 ">
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
-                  </div>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BZKgviod4D4"></iframe>
-            </div>
-            <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="cork_IrelandInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_cork_irland_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
-              </div>
-            </div>
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1845.</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > Gaol Walk, University College, Cork, T12 YN60, Irlanda </a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                  <div class="col-md-12"><li>Inglés general.</li></div>
-                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
-                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
-
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Alojamiento
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-                <div class="col-md-12 ">
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
-                  </div>
-                  </div>
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
-            </div>
-
-            <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="dublinInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_dublin_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_dublin.png');?>" alt=""></div>
-              </div>
-            </div>
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1976 .</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/j5tWf4cfKS5dwWy4A" target="_blank" > College Green, Dublin 2, Irlanda</a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                  <div class="col-md-12"><li>Inglés general.</li></div>
-                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
-                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
-
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Alojamiento
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-
-                <div class="col-md-12"><li>Participar en un programa de Inglés puede ser una forma brillante de experimentar estudiar en el extranjero.</li></div>
-
-
-                <div class="col-md-12 ">
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
-                  </div>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jFdd3EVN4-Q"></iframe>
-            </div>
-            <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div> -->
-
-<!-- / -->
-
-<!-- <div class="modal fade text-center py-5 subscribeModal-lg "  id="LondonInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_london_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_london.png');?>" alt=""></div>
-              </div>
-            </div>
-
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1976 .</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/GTxCCZmp9EaZ9SeN9" target="_blank" > Gower St, Bloomsbury, London WC1E 6BT, Reino Unido</a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                  <div class="col-md-12"><li>Inglés general.</li></div>
-                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
-                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
-
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Alojamiento
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-                <div class="col-md-12"><li>Cada año, más de 6,000 estudiantes de 120 naciones estudian en el campus de LSE en el corazón del centro de Londres.</li></div>
-                <div class="col-md-12 ">
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
-                  </div>
-                  </div>
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-            </div>
-
-            <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="manchesterInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_manchester_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_manchester.png');?>" alt=""></div>
-              </div>
-            </div>
-
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1976 .</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/8HMTdxADMuBomkUG9" target="_blank" > Fielden Campus, 141 Barlow Moor Rd, West Didsbury, Manchester M20 2PQ, Reino Unido</a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                  <div class="col-md-12"><li>Inglés general.</li></div>
-                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
-                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
-
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Alojamiento
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-
-                <div class="col-md-12"><li>Con cientos de cursos únicos, útiles e inspiradores para elegir, ¡el conocimiento que necesita para tener éxito está al alcance de su mano!.</li></div>
-                <div class="col-md-12"><li>Ya sea que esté esperando su carrera perfecta, ansioso por aprender nuevas habilidades increíbles o comenzar el camino a la universidad, podemos ayudarlo a encontrar el curso, certificado o premio ideal.</li></div>
-                <div class="col-md-12"><li>Sumérgete en tu área temática favorita, busca la calificación que necesitas y descubre adónde te puede llevar estudiar con The Manchester College.</li></div>
-
-                <div class="col-md-12 ">
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
-                  </div>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xnquQlOYJK8"></iframe>
-            </div>
-          <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="tauntonInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_touton.png');?>" alt=""></div>
-              </div>
-            </div>
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1847 .</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/iqbNbiKKHm45cMhH8" target="_blank" >Staplegrove Rd, Taunton TA2 6AD, Reino Unido </a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                  <div class="col-md-12"><li>Inglés general.</li></div>
-                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
-                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
-
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Alojamiento
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-
-                <div class="col-md-12"><li>Establecida en 1847, Taunton School ha sido durante mucho tiempo uno de los principales proveedores de educación privada en el Reino Unido.</li></div>
-                <div class="col-md-12"><li>Estamos ubicados en el hermoso condado rural de Somerset en el suroeste de Inglaterra, ocupando un sitio de 56 acres y con excelentes instalaciones.</li></div>
-
-                <div class="col-md-12 ">
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
-                  </div>
-                  </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/372337647?color=ffffff&byline=0&portrait=0"></iframe>
-            </div>
-            <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="yorkInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header d-none d-lg-block d-xl-block">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_york_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_york.png');?>" alt=""></div>
-              </div>
-            </div>
-
-        	</div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1976 .</div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/Hn4wKX1KX4wHcy8s8" target="_blank" >The King's Manor, Exhibition Square, York YO1 7EP, Reino Unido </a> </div>
-              </div>
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-              </div>
-              <div class="row">
-                <hr>
-                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                  <div class="col-md-12"><li>Inglés general.</li></div>
-                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
-                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
-
-              </div>
-
-              <div class="row">
-                <hr>
-
-              </div>
-              <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                  Alojamiento
-                </button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-                <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-              </div>
-              <div class="row">
-                <hr>
-              </div>
-              <div class="row">
-
-                <div class="col-md-12"><li>Desarrolla tus habilidades académicas, comunicativas y lingüísticas en inglés.</li></div>
-                <div class="col-md-12"><li>Aumente su confianza y mejore sus habilidades transferibles, como trabajar en equipo en un entorno internacional.</li></div>
-                <div class="col-md-12"><li>Amplíe sus horizontes y desarrolle su forma de pensar.</li></div>
-
-                <div class="col-md-12 ">
-
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OZyMxE5QXXE"></iframe>
-            </div>
-          <hr>
-
-            </div>
-
-          </div>
-            <div class="bottom-strip"></div>
-        </div>
-</div> -->
-
-
 <!--.....................................................- Cursos de verano ...................................................-->
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="bathVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4113,8 +3907,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4123,9 +3917,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="S1G5cWSMmzQ"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -4141,11 +3937,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_brighton_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_brington.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_brighton_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_brington.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4209,8 +4010,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4219,9 +4020,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="Vqj6hIFB-TE"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vqj6hIFB-TE"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -4236,11 +4039,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_updatecaterburylogo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/v_update_caterbusy.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_updatecaterburylogo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/v_update_caterbusy.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4300,8 +4108,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4329,11 +4137,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_cork_irland_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_cork_irland_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4392,8 +4205,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
               </div>
@@ -4401,9 +4214,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="_RNiSEej3qA"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -4418,11 +4233,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_dublin_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_dublin.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_dublin_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_dublin.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4480,8 +4300,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4490,9 +4310,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="jFdd3EVN4-Q"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jFdd3EVN4-Q"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -4506,11 +4328,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4566,8 +4393,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                  <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4576,9 +4403,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="S1G5cWSMmzQ"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -4593,11 +4422,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_london_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_london.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_london_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_london.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4658,8 +4492,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4685,11 +4519,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_manchester_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_manchester.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_manchester_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_manchester.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4747,8 +4586,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4757,9 +4596,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="xnquQlOYJK8"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xnquQlOYJK8"></iframe>
-            </div>
+            </div>-->
           <hr>
 
             </div>
@@ -4773,11 +4614,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_touton.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_touton.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4836,8 +4682,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -4845,10 +4691,13 @@
             </div>
             <div class="row">
               <hr>
-            </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            </div>            
+            <div class="youtube-player" data-id="C3trTWa7_Cg"></div>
+
+            
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/372337647?color=ffffff&byline=0&portrait=0"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -4862,11 +4711,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_york_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_york.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_york_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_york.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4921,8 +4775,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                 </div>
 
@@ -4931,9 +4785,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="OZyMxE5QXXE"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OZyMxE5QXXE"></iframe>
-            </div>
+            </div>-->
           <hr>
 
             </div>
@@ -4952,11 +4808,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5010,8 +4871,8 @@
               <div class="row">
                 <div class="col-md-12">Norwich es la primera ciudad Patrimonio Mundial de la Literatura.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="http://www.uea.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -5019,9 +4880,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="LTF9EOqy9L8"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTF9EOqy9L8"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -5036,11 +4899,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/ee_ecambrige.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/ee_ecambrige.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5106,8 +4974,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
               </div>
@@ -5115,9 +4983,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="_RNiSEej3qA"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -5134,11 +5004,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5196,8 +5071,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -5206,9 +5081,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="S1G5cWSMmzQ"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
-            </div>
+            </div>-->
 
             <hr>
 
@@ -5224,11 +5101,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cambriadge.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_arts.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5287,17 +5169,20 @@
               </div>
               <div class="row">
                 <div class="col-md-12">Especializada en las artes, diseño y drama.</div>
-
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
 
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
+            <div class="youtube-player" data-id="TLGYTqu34i0"></div>
 
-            <div class="embed-responsive embed-responsive-21by9">
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -5310,11 +5195,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_bristol.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_bristol.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_bristol.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_bristol.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5374,8 +5264,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -5384,9 +5274,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="jhX3YlGnDIc"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jhX3YlGnDIc"></iframe>
-            </div>
+            </div>-->
 
             <hr>
           </div>
@@ -5401,11 +5293,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5467,16 +5364,18 @@
               </div>
             </div>
             <div class="col-md-12 ">
-              <div class="header_btn dark_btn footer_btn float_left">
-                  <a  href="#" target="_blank">Me interesa </a>
-              </div>
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="uPFn8rHs6kI"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uPFn8rHs6kI"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -5489,11 +5388,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_concord.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_concord.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5554,8 +5458,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -5564,9 +5468,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="BZKgviod4D4"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BZKgviod4D4"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -5580,11 +5486,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5644,8 +5555,8 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
                   </div>
 
@@ -5654,9 +5565,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="5pcmATG_mjM"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5pcmATG_mjM"></iframe>
-            </div>
+            </div>-->
           <hr>
 
             </div>
@@ -5670,11 +5583,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5738,19 +5656,21 @@
 
                 <div class="col-md-12 ">
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a  href="#" target="_blank">Me interesa </a>
+                  <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
-                  </div>
+                </div>
 
               </div>
             </div>
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="bCApP-JqLpc"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>
-            </div>
+            </div>-->
             <hr>
 
             </div>
@@ -5764,11 +5684,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_into_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_nto.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_into_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepa_nto.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5828,16 +5753,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="GdEQPUbmvaE"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GdEQPUbmvaE"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -5851,11 +5778,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5908,8 +5840,8 @@
               <div class="row">
                 <div class="col-md-12">The Guardian nombro a Bristol como una de las 10 ciudades más felices para vivir y trabajar en el Reino Unido.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.uwe.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -5917,9 +5849,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="scLpnIm-XZo"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/scLpnIm-XZo"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -5932,11 +5866,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5974,8 +5913,8 @@
               <div class="row">
                 <div class="col-md-12">En 1785 fundó la primera escuela de Medicina de Inglaterra en el Royal London Hospital.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="https://www.qmul.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -5983,9 +5922,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="f9y6eeEK1oM"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9y6eeEK1oM"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -5998,11 +5939,16 @@
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
-        <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="modal-header">
           <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -6043,18 +5989,20 @@
             <div class="row">
               <div class="col-md-12">Los Duques de Cambridge, el Príncipe William y Kate, se conocieron mientras estudiaban.</div>
 
-                <div class="header_btn dark_btn footer_btn float_left">
-                    <a href="https://www.st-andrews.ac.uk/" target="_blank">Web Page</a>
-                </div>
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
 
             </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="x8O5kv47zn8"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x8O5kv47zn8"></iframe>
-          </div>
+          </div>-->
 
           <hr>
 
@@ -6070,11 +6018,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
-          <div class="modal-header d-none d-lg-block d-xl-block">
+          <div class="modal-header">
             <div class="container-fluid">
+              <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="row">
-                <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -6134,8 +6087,8 @@
               <div class="row">
                 <div class="col-md-12">Norwich es la primera ciudad Patrimonio Mundial de la Literatura.</div>
 
-                  <div class="header_btn dark_btn footer_btn float_left">
-                      <a href="http://www.uea.ac.uk/" target="_blank">Web Page</a>
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
 
               </div>
@@ -6143,9 +6096,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
+            <div class="youtube-player" data-id="LTF9EOqy9L8"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTF9EOqy9L8"></iframe>
-            </div>
+            </div>-->
             </div>
 
           </div>
@@ -6160,9 +6115,14 @@
           <!-- <div class="top-strip"></div> -->
         <div class="modal-header d-none d-lg-block d-xl-block">
           <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="row">
-              <div class="col-md-4 "  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_stonyhurts.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_stonyhurts.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -6216,16 +6176,18 @@
             </div>
           </div>
           <div class="col-md-12 ">
-            <div class="header_btn dark_btn footer_btn float_left">
-                <a  href="#" target="_blank">Me interesa </a>
-            </div>
+          <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="embed-responsive embed-responsive-21by9">
+          <div class="youtube-player" data-id="5xa1XwDzSnQ"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5xa1XwDzSnQ"></iframe>
-          </div>
+          </div>-->
           </div>
 
         </div>
@@ -6236,3 +6198,4 @@
 </div>
 
 <!-- . -->
+<!-- contact info section end -->    
