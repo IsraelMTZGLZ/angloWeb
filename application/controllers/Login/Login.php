@@ -43,7 +43,7 @@ class Login extends MY_RootController {
 					}
 				
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Admin") {
-					# code...
+					redirect('Dashboard/Home');
 				}
 			}
 		}

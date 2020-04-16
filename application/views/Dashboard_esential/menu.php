@@ -41,6 +41,20 @@
                   </li>
                 </ul>
               </li>
+              <li class="site-menu-item has-sub hover">
+                <a href="javascript:void(0)">
+                  <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                  <span class="site-menu-title">Usuarios</span>
+                  <span class="site-menu-arrow"></span>
+                </a>
+                <ul class="site-menu-sub">
+                  <li class="site-menu-item">
+                    <a href="TablaDescarga">
+                      <span class="site-menu-title">Aspirantes</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
           </ul>
         </div>
       </div>
