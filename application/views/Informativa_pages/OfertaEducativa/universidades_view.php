@@ -68,7 +68,7 @@
                             <a data-toggle="modal" data-target="#bristolModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
-                   
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 website ">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
@@ -117,7 +117,7 @@
                                     <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>">
                                   </div>
                                   <div class="col-5">
-                                    <a data-toggle="modal" data-target="#ueaModal">University of East Anglia</a>                                
+                                    <a data-toggle="modal" data-target="#ueaModal">University of East Anglia</a>
                                   </div>
                                 </div>
                                 <div class="zoom_popup">
@@ -328,11 +328,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  design">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/u_st-andrews.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/cambios_standrew.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7" style="background: white">
-                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>">
+                                    <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/cambios_stadrew_Collage.jpg');?>">
                                   </div>
                                   <div class="col-5">
                                     <a data-toggle="modal" data-target="#adrewsPrepaModal"> St Andrews College, Cambridge</a>
@@ -497,7 +497,7 @@
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                              
+
                                 <a data-toggle="modal" data-target="#othersModalEnglish"> Otras escuelas de Inglés </a>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#othersModalEnglish"></button></i>
@@ -658,7 +658,7 @@
                                     <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#andrewVeranoModal">St Andrews College, Cambridge</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#andrewVeranoModal">University of St Andrews</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#andrewVeranoModal"></button></i>
@@ -1009,7 +1009,7 @@
               <div class="row">
                 <hr>
               </div>
-              
+
               <div class="youtube-player" data-id="HqwIMl67hCQ"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
@@ -1089,13 +1089,13 @@
                 <hr>
               </div>
               <div class="row">
-                
+
                 <div class="col-md-12">Bristol nombrada la mejor ciudad para vivir en UK (Sunday Times 2017).</div>
                 <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
                       <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
               </div>
-              
+
               <br>
               <div class="youtube-player" data-id="5XcKtaAU-xw"></div>
               <!--<div class="embed-responsive embed-responsive-21by9">
@@ -1170,7 +1170,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-                  
+
                   <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
                       <a style="width: 100%;" href="../Login" > Me interesa</a>
                   </div>
@@ -1265,7 +1265,7 @@
               <div class="row">
                 <!-- <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div> -->
 
-          
+
 
               </div>
             </div>
@@ -2406,7 +2406,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/cambios_standrewModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4695,10 +4695,10 @@
             </div>
             <div class="row">
               <hr>
-            </div>            
+            </div>
             <div class="youtube-player" data-id="C3trTWa7_Cg"></div>
 
-            
+
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/372337647?color=ffffff&byline=0&portrait=0"></iframe>
             </div>-->
@@ -6202,4 +6202,4 @@
 </div>
 
 <!-- . -->
-<!-- contact info section end -->    
+<!-- contact info section end -->
