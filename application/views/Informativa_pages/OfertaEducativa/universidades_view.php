@@ -1314,7 +1314,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min) de Londres.1843 declarada universidad en 1987. </a> </div>
+                <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min) de Londres. </a> </div>
               </div>
               <div class="row">
                 <hr>
