@@ -7,7 +7,7 @@
   <body>
 
   <input accept="image/*" id="fotoAlumno" type="file">
-    <input type="text" class="form-control" name="nombrePreparatoria" id="nombrePreparatoria" placeholder="Nombre">
+    <input type="text" class="form-control" name="nombrePreparatoria" id="nombre_Preparatoria" placeholder="Nombre">
   <button id="guardarImagen">Subir</button>
 <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
 
@@ -83,9 +83,8 @@ $(function() {
       var lector = new FileReader();
 
       formData.append('my_file', foto);
-      formData.append('name', $("#nombrePreparatoria").val());
-      var  l = $("#nombrePreparatoria").val();
-      console.log(l);
+      formData.append('nombre', $("#nombrePreparatoria").val());
+      console.log(formData);
       $.ajax({
         url: _principalURL()+"PreparatoriaCampus/api/files",
         data: formData,

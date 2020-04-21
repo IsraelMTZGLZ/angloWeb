@@ -98,6 +98,7 @@
 <script>
 $(function(){
   <?php if(@$idAdmin){ ?>
+    console.info(<?=@$idAdmin?>);
  <?php }else { ?>
 tostada('error','');
  <?php } ?>

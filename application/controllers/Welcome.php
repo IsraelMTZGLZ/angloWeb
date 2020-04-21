@@ -9,8 +9,8 @@ class Welcome extends MY_RootController {
 
 	public function index()
 	{
-		$this->_initialPage();
+		// $this->_initialPage();
 		$this->load->view('welcome_message');
-		$this->_finalPage();
+		// $this->_finalPage();
 	}
-} 
+}

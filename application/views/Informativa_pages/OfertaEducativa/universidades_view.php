@@ -2102,8 +2102,12 @@
                 <div class="col-md-4 "> 1985.</div>
               </div>
               <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="javascript:;"> A 50 min de Londres </a> </div>
+                <div class="col-md-4"><b>Ubicación Cambridge:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/TtxkyUd5Ud1nw4SV9"> A1 High St, Chesterton, Cambridge CB4 1NQ, Reino Unido </a> </div>
+                <div class="col-md-4"><b>Ubicación Canterbury:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/5WQzGMZvC7Ki8gGHA"> 68 New Dover Rd, Canterbury CT1 3LQ, Reino Unido </a> </div>
+                <div class="col-md-4"><b>Ubicación Londres:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/gUfa7H22Ts4LAzwM6">43-45 Bloomsbury Square, Holborn, London WC1A 2RA, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2130,7 +2134,7 @@
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+                <div class="col-md-12">Cats College lleva casi 60 años formando alumnos con futuros llenos de éxito.</div>
               </div>
             </div>
             <div class="col-md-12 ">
@@ -2187,7 +2191,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/3Mzu2NquUojgwDmG9" target="_blank" > Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido</a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/wvfZuoTvzmAGgQE69" target="_blank" > Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -2213,7 +2217,9 @@
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+                <div class="col-md-12">Como colegio internacional es uno de los más importantes de inglaterra.</div>
+                <div class="col-md-12">Como colegio es una escuela en la que los jóvenes pueden florecer, encontrar confianza y un sentido de autoestima.</div>
+                <div class="col-md-12">Concord es un lugar seguro y salidable para que cualquier niño crezca, damos la beinvenida a estudiantes de todo el mundo.</div>
               </div>
             </div>
             <div class="col-md-12 ">
@@ -2292,7 +2298,9 @@
               <hr>
             </div>
             <div class="row">
-              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+              <div class="col-md-12">Los especialistas internacionales del estudio, Cada año , se ayuda a miles de jóvenes de todo el mundo para estudiar en las universidades líderes en UK.</div>
+              <div class="col-md-12">Con Into los estudiantes van a estar mejor preparados para tener éxito en la universidad.</div>
+              <div class="col-md-12">Con Into, Se les garantiza una gran educación internacional.</div>
             </div>
           </div>
           <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
@@ -2301,13 +2309,12 @@
           <div class="row">
             <hr>
           </div>
-          <div class="youtube-player" data-id="GdEQPUbmvaE"></div>
+          <div class="youtube-player" data-id="kkI2_4UKbos"></div>
 
           <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GdEQPUbmvaE"></iframe>
           </div>-->
           </div>
-
         </div>
           <div class="bottom-strip"></div>
       </div>
@@ -2369,7 +2376,9 @@
               <hr>
             </div>
             <div class="row">
-              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+              <div class="col-md-12">Estudie en una de las universidades internacionales más respetadas de Londres.</div>
+              <div class="col-md-12">KIC London celebra 10 años de ayudar a los estudiantes a seguir su camino a la universidad.</div>
+              <div class="col-md-12">Situado en la ciudad académica más importante del mundo (QS Best Student Cities 2019), el Colegio te preparará para un título universitario y para una carrera exitosa.</div>
             </div>
           </div>
           <div class="col-md-12 ">
@@ -2380,8 +2389,7 @@
           <div class="row">
             <hr>
           </div>
-          <div class="youtube-player" data-id="Pdmv3chcouc"></div>
-
+          <div class="youtube-player" data-id="Mc7EnS3hri0"></div>
           <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pdmv3chcouc"></iframe>
           </div>-->
@@ -2405,7 +2413,7 @@
                 </button>
               </div>
               <div class="row">
-                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/cambios_stadrew_Collage.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
                 <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/cambios_standrewModal.jpg');?>" alt=""></div>
               </div>
             </div>
@@ -2451,7 +2459,9 @@
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+                <div class="col-md-12">Cuenta con una alta calidad educativa .</div>
+                <div class="col-md-12">Cuenta con internet inálambrico por todo el campus, tiene 16 salones bien equipados con pizarrón interactivo.</div>
+                <div class="col-md-12">Estudiantes desde 14 años estudian en St. Andrews.</div>
               </div>
             </div>
             <div class="col-md-12 ">
@@ -2462,7 +2472,11 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="tfVYTiZt23E"></div>
+            <video controls width="640" height="480"  >
+              <source src="https://www.standrewscambridge.co.uk/wp-content/uploads/2019/02/St.-Andrews-2018.mp4" type="video/mp4" width="640" height="480">
+
+            </video>
+          <!-- <div class="youtube-player" data-id="tfVYTiZt23E"></div> -->
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tfVYTiZt23E"></iframe>
@@ -2498,7 +2512,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 1985.</div>
+                <div class="col-md-4 "> 1847.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
@@ -2529,7 +2543,9 @@
                 <hr>
               </div>
               <div class="row">
-                <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
+                <div class="col-md-12">La escuela esta localizada en un hermoso y seguro campus con exelente conexión con Londres.</div>
+                <div class="col-md-12">Cuenta con edificios antiguos muy hermosos complementados con modernas instalaciones.</div>
+                <div class="col-md-12">El objetivo de la escuela es preparar a los estudiantes para entrar al sistema educativo británico.</div>
               </div>
             </div>
             <div class="col-md-12 ">
@@ -2540,7 +2556,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="m61w28VWR2I"></div>
+            <div class="youtube-player" data-id="t38tNAvZbJk"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m61w28VWR2I"></iframe>
