@@ -53,6 +53,25 @@
                       <span class="site-menu-title">Aspirantes</span>
                     </a>
                   </li>
+                  <li class="site-menu-item">
+                    <a href="TablaAgente">
+                      <span class="site-menu-title">Agentes</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="site-menu-item has-sub hover">
+                <a href="javascript:void(0)">
+                  <i class="site-menu-icon fas fa-plus-square" aria-hidden="true"></i>
+                  <span class="site-menu-title">Escuelas</span>
+                  <span class="site-menu-arrow"></span>
+                </a>
+                <ul class="site-menu-sub">
+                  <li class="site-menu-item">
+                    <a href="Preparatoria/All_Preparatorias">
+                      <span class="site-menu-title">Preparatorias</span>
+                    </a>
+                  </li>
                 </ul>
               </li>
           </ul>

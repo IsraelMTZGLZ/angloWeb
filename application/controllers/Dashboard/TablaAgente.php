@@ -5,10 +5,13 @@ class TablaAgente extends MY_RootController {
 
 	public function __construct() {
         parent::__construct();
-        //redirect('Login');
-		//if (!@$this->session->userdata('user_sess')->email) {
-			//redirect('Login');
-        //}
+        if (!@$this->session->userdata('user_sess')->email) {
+			redirect('Login');
+        }else{
+            if (@$this->session->userdata('user_sess')->typeUsuario!="Admin") {
+                redirect('Login');
+            }
+        }
     }
 
 	public function index()
