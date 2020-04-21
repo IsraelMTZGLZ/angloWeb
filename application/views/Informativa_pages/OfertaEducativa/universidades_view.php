@@ -377,16 +377,58 @@
                         </div>
                     </div>
 
+
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/s_bath.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/new_new_eselect.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#cambridgeInglesModal"> Select English </a>
+                                  </div>
+                                </div>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <a data-toggle="modal" data-target="#cambridgeInglesModal"><div class="portfolio_overlay"></div></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/new_newchester-english-in-chester-00.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#chesterInglesModal"> English in Chester </a>
+                                  </div>
+                                </div>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <a data-toggle="modal" data-target="#chesterInglesModal"><div class="portfolio_overlay"></div></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/new_new_Bathh.jpg');?>" alt="">
                             <div class="portfolio_hover">
                               <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7" style="background: white">
                                     <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/new_bath_acaademic_of_english.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                    <a data-toggle="modal" data-target="#bathInglesModal" style="font-size: 40px;"> Bath</a>
+                                    <a data-toggle="modal" data-target="#bathInglesModal" style="font-size: 40px;"> Bath Academy of English</a>
                                   </div>
                                 </div>
                                 <div class="zoom_popup">
@@ -398,14 +440,14 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/v_brington.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/new_new_centre_brighton.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7">
                                     <img src="<?=base_url('resources/assets/Informativa/images/new_bringthon.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                  <a data-toggle="modal" data-target="#brightonInglesModal"> Brighton </a>
+                                  <a data-toggle="modal" data-target="#brightonInglesModal"> English Language Centre Brighton </a>
                                   </div>
                                 </div>
                                 <div class="zoom_popup">
@@ -415,45 +457,9 @@
                      <a data-toggle="modal" data-target="#brightonInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge-university.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                  <div class="col-7">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>">
-                                  </div>
-                                  <div class="col-5">
-                                  <a data-toggle="modal" data-target="#cambridgeInglesModal"> Cambridge </a>
-                                  </div>
-                                </div>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeInglesModal"></button></i>
-                                </div>
-                            </div>
-                     <a data-toggle="modal" data-target="#cambridgeInglesModal"><div class="portfolio_overlay"></div></a>
-                        </div>
-                    </div>
 
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_ui">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/v_chester.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                  <div class="col-7">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>">
-                                  </div>
-                                  <div class="col-5">
-                                  <a data-toggle="modal" data-target="#chesterInglesModal"> Chester </a>
-                                  </div>
-                                </div>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterInglesModal"></button></i>
-                                </div>
-                            </div>
-                     <a data-toggle="modal" data-target="#chesterInglesModal"><div class="portfolio_overlay"></div></a>
-                        </div>
-                    </div>
+
+
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
@@ -464,7 +470,7 @@
                                     <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                  <a data-toggle="modal" data-target="#eastbourneInglesModal"> Eastbourne </a>
+                                  <a data-toggle="modal" data-target="#eastbourneInglesModal"> Eastbourne School of English</a>
                                   </div>
                                 </div>
                                 <div class="zoom_popup">
@@ -535,7 +541,7 @@
                                   <img src="<?=base_url('resources/assets/Informativa/images/v_bristol.png');?>">
                                   </div>
                                   <div class="col-5">
-                                  <a data-toggle="modal" data-target="#bristolVeranoModal"> Bristol</a>
+                                  <a data-toggle="modal" data-target="#bristolVeranoModal">University of Bristol</a>
                                 </div>
                                 </div>
                                 <div class="zoom_popup">
@@ -573,7 +579,7 @@
                                     <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                    <a data-toggle="modal" data-target="#concordVeranoModal"> Concord </a>
+                                    <a data-toggle="modal" data-target="#concordVeranoModal"> Concord College</a>
                                   </div>
                                 </div>
                                 <div class="zoom_popup">
@@ -592,7 +598,7 @@
                                     <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#chesterVeranoModal">Chester</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#chesterVeranoModal">University of Chester</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterVeranoModal"></button></i>
@@ -603,14 +609,14 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge-university.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/new_new_eselect.jpg');?>" alt="">
                             <div class="portfolio_hover">
                             <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7">
                                     <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#cambridgeVeranoModal">Cambridge</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#cambridgeVeranoModal">Select English</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoModal"></button></i>
@@ -676,7 +682,7 @@
                                     <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#tauntonVeranoModal">Taunton</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#tauntonVeranoModal">Bridgwater & Taunton College</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#tauntonVeranoModal"></button></i>
@@ -694,7 +700,7 @@
                                     <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#ueaVeranoModal">Uea</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#ueaVeranoModal">University of East Anglia</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#ueaVeranoModal"></button></i>
@@ -723,14 +729,14 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/s_bath.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/new_new_Bathh.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7">
                                     <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#bathVeranoModal">Bath</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#bathVeranoModal">Bath Academic</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathVeranoModal"></button></i>
@@ -764,10 +770,10 @@
                             <div class="portfolio_hover">
                             <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/new_bringthon.jpg');?>">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/v_brighton_logo.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#brightonVeranoModal">Brighton</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#brightonVeranoModal">University of Brighton</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#brightonVeranoModal"></button></i>
@@ -785,7 +791,7 @@
                                     <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#eastbourneVeranoModal">Eastbourne</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#eastbourneVeranoModal">Eastbourne college</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneVeranoModal"></button></i>
@@ -2104,10 +2110,18 @@
               <div class="row">
                 <div class="col-md-4"><b>Ubicación Cambridge:</b> </div>
                 <div class="col-md-4 "> <a href="https://goo.gl/maps/TtxkyUd5Ud1nw4SV9"> A1 High St, Chesterton, Cambridge CB4 1NQ, Reino Unido </a> </div>
+
+            </div>
+            <br>
+              <div class="row">
                 <div class="col-md-4"><b>Ubicación Canterbury:</b> </div>
                 <div class="col-md-4 "> <a href="https://goo.gl/maps/5WQzGMZvC7Ki8gGHA"> 68 New Dover Rd, Canterbury CT1 3LQ, Reino Unido </a> </div>
+              </div>
+              <br>
+              <div class="row">
                 <div class="col-md-4"><b>Ubicación Londres:</b> </div>
                 <div class="col-md-4 "> <a href="https://goo.gl/maps/gUfa7H22Ts4LAzwM6">43-45 Bloomsbury Square, Holborn, London WC1A 2RA, Reino Unido </a> </div>
+
               </div>
               <div class="row">
                 <hr>
@@ -3126,7 +3140,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_bath_acaademic_of_english.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_newu_BathhModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3142,7 +3156,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/3MMGdZS62rMcWbfL8" target="_blank" >Claverton Down, Bath BA2 7AY, Reino Unido</a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/u82xj3PPHUkcMBsy8" target="_blank" >27 Queen Square, Bath BA1 2HX,United Kingdom</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3225,7 +3239,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_bringthon.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_brington.png');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_centre_brightonModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3241,7 +3255,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/EnJY2JK1wF3U4Br88" target="_blank" > 58-67 Grand Parade, Brighton BN2 0JY, Reino Unido</a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/EnJY2JK1wF3U4Br88" target="_blank" >33 Palmeira Square, Hove BN3 2GB, United Kingdom</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3294,7 +3308,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="Vqj6hIFB-TE"></div>
+            <div class="youtube-player" data-id="WJWdV6xExKk"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vqj6hIFB-TE"></iframe>
@@ -3322,7 +3336,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_eselectModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3338,7 +3352,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/5VoYTGYjtVUXkfpBA" target="_blank" >The Old Schools, Trinity Ln, Cambridge CB2 1TN, Reino Unido </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/fyt4VQvkFH7GoHhp6" target="_blank" >13 Station Rd, Cambridge CB1 2JB, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3392,7 +3406,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="bCApP-JqLpc"></div>
+            <div class="youtube-player" data-id="IbDyLsPEbPA"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>
@@ -3613,7 +3627,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_newchester-english-in-chester-00 (copy).jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3629,7 +3643,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/Hj1s65WCmfdpusXQ8" target="_blank" > Parkgate Rd, Chester CH1 4BJ, Reino Unido</a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/G5cp1nuiuyYMBk977" target="_blank" > 9-11 Stanley PI, Chester CH1 2LU, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3683,7 +3697,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="5pcmATG_mjM"></div>
+            <div class="youtube-player" data-id="0P024JLpuoI"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5pcmATG_mjM"></iframe>
@@ -3866,7 +3880,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_bath.jpg');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_Bathh.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3882,7 +3896,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/3MMGdZS62rMcWbfL8" target="_blank" >Claverton Down, Bath BA2 7AY, Reino Unido</a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/u82xj3PPHUkcMBsy8" target="_blank" >27 Queen Square, Bath BA1 2HX,United Kingdom</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -5337,8 +5351,20 @@
                 <div class="col-md-4 "> 1985.</div>
               </div>
               <div class="row">
-                <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="javascript:;" > A 50 min de Londres </a> </div>
+                <div class="col-md-4"><b>Ubicación Cambridge:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/TtxkyUd5Ud1nw4SV9"> A1 High St, Chesterton, Cambridge CB4 1NQ, Reino Unido </a> </div>
+
+            </div>
+            <br>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación Canterbury:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/5WQzGMZvC7Ki8gGHA"> 68 New Dover Rd, Canterbury CT1 3LQ, Reino Unido </a> </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación Londres:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/gUfa7H22Ts4LAzwM6">43-45 Bloomsbury Square, Holborn, London WC1A 2RA, Reino Unido </a> </div>
+
               </div>
               <div class="row">
                 <hr>
@@ -5612,7 +5638,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_cambridge-university.png');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_eselectModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5628,7 +5654,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/5VoYTGYjtVUXkfpBA" target="_blank" >The Old Schools, Trinity Ln, Cambridge CB2 1TN, Reino Unido </a> </div>
+                  <div class="col-md-4 "> <a href="https://goo.gl/maps/fyt4VQvkFH7GoHhp6" target="_blank" >13 Station Rd, Cambridge CB1 2JB, Reino Unido </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -5780,7 +5806,7 @@
           <div class="row">
             <hr>
           </div>
-          <div class="youtube-player" data-id="GdEQPUbmvaE"></div>
+          <div class="youtube-player" data-id="kkI2_4UKbos"></div>
 
           <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GdEQPUbmvaE"></iframe>
@@ -6218,4 +6244,4 @@
 </div>
 
 <!-- . -->
-<!-- contact info section end -->
+<!-- contact info section endd -->
