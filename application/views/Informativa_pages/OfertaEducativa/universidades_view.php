@@ -460,6 +460,45 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/bristol_international_house.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/bristol_international_house_logo.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#bristolInglesModal">  International English  Bristol   </a>
+                                  </div>
+                                </div>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bristolInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <a data-toggle="modal" data-target="#bristolInglesModal"><div class="portfolio_overlay"></div></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                  <img style="width: 70%" src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#cambridgeAcademyInglesModal"> Cambridge Academy of English </a>
+                                  </div>
+                                </div>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeAcademyInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <a data-toggle="modal" data-target="#cambridgeAcademyInglesModal"><div class="portfolio_overlay"></div></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
+                        <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/new_new_centre_brighton.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
@@ -500,25 +539,7 @@
                      <a data-toggle="modal" data-target="#eastbourneInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
-                        <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
-                            <div class="portfolio_hover">
-                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                  <div class="col-7">
-                                  <img style="width: 70%" src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>">
-                                  </div>
-                                  <div class="col-5">
-                                  <a data-toggle="modal" data-target="#cambridgeAcademyInglesModal"> Cambridge Academy of English </a>
-                                  </div>
-                                </div>
-                                <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeAcademyInglesModal"></button></i>
-                                </div>
-                            </div>
-                     <a data-toggle="modal" data-target="#cambridgeAcademyInglesModal"><div class="portfolio_overlay"></div></a>
-                        </div>
-                    </div>
+
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
                             <img src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="">
@@ -3547,6 +3568,105 @@
               <hr>
             </div>
             <div class="youtube-player" data-id="aL_NVnu7cAY"></div>
+
+            <!--<div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
+            </div>-->
+
+            <hr>
+
+            </div>
+
+          </div>
+            <div class="bottom-strip"></div>
+        </div>
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="bristolInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          	<!-- <div class="top-strip"></div> -->
+          <div class="modal-header">
+            <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="row">
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/bristol_international_house_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/bristol_international_houseModal.jpg');?>" alt=""></div>
+              </div>
+            </div>
+            <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+            <h3 class="col-md-4 "></h3> -->
+
+        	</div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"><b>Fundación:</b> </div>
+                <div class="col-md-4 "> 	1987.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/BrwbcPdo9NdSxqxe9" target="_blank" > 27 Oakfield Rd, Clifton, Bristol BS8 2AT, Reino Unido </a> </div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Edades</b></div>
+                  <div class="col-md-12"><li>Mayor de (16+).</li></div>
+
+              </div>
+              <div class="row">
+                <hr>
+                  <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
+                  <div class="col-md-12"><li>Inglés general.</li></div>
+                  <div class="col-md-12"><li>Inglés profecional (25+).</li></div>
+                  <div class="col-md-12"><li>Preparación para examenes.</li></div>
+
+              </div>
+
+              <div class="row">
+                <hr>
+
+              </div>
+              <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                  Alojamiento
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
+
+              </div>
+              <div class="row">
+                <hr>
+              </div>
+              <div class="row">
+
+                <div class="col-md-12"><li>En el edificio principal de nuestra escuela en Oakfield Road, tenemos una gran sala de estudio, una sala de estudiantes en la planta baja con máquinas de café y bebidas.</li></div>
+                <div class="col-md-12"><li>El edificio cuenta con una conexión a internet súper rápida de 500 Mbit y la última Wifi para mantenerlo conectado.</li></div>
+                <div class="col-md-12"><li>Su seguridad es una prioridad para nosotros y la escuela mantiene altos estándares en esta área.</li></div>
+
+                <div class="col-md-12 ">
+
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                      <a style="width: 100%;" href="../Login" > Me interesa</a>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="youtube-player" data-id="khM7tjui86Q"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
