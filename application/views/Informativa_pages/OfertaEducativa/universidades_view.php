@@ -378,6 +378,25 @@
                     </div>
 
 
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_ui">
+                        <div class="portfolio_item">
+                            <img src="<?=base_url('resources/assets/Informativa/images/new_newchester-english-in-chester-00.jpg');?>" alt="">
+                            <div class="portfolio_hover">
+                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                  <div class="col-7">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>">
+                                  </div>
+                                  <div class="col-5">
+                                  <a data-toggle="modal" data-target="#chesterInglesModal"> English in Chester </a>
+                                  </div>
+                                </div>
+                                <div class="zoom_popup">
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterInglesModal"></button></i>
+                                </div>
+                            </div>
+                     <a data-toggle="modal" data-target="#chesterInglesModal"><div class="portfolio_overlay"></div></a>
+                        </div>
+                    </div>
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
@@ -398,25 +417,26 @@
                      <a data-toggle="modal" data-target="#cambridgeInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_ui">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/new_newchester-english-in-chester-00.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/e_stafford_house.jpg');?>" alt="">
                             <div class="portfolio_hover">
-                            <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                  <a data-toggle="modal" data-target="#chesterInglesModal"> English in Chester </a>
+                                  <a data-toggle="modal" data-target="#stanfordInglesModal">     Stafford house </a>
                                   </div>
                                 </div>
                                 <div class="zoom_popup">
-                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterInglesModal"></button></i>
+                                     <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#stanfordInglesModal"></button></i>
                                 </div>
                             </div>
-                     <a data-toggle="modal" data-target="#chesterInglesModal"><div class="portfolio_overlay"></div></a>
+                     <a data-toggle="modal" data-target="#stanfordInglesModal"><div class="portfolio_overlay"></div></a>
                         </div>
                     </div>
+
 
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
@@ -3434,7 +3454,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Cork_irland.png');?>" alt=""></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/e_stafford_houseModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3446,11 +3466,35 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1845.</div>
+                <div class="col-md-4 "> 	1952.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > Gaol Walk, University College, Cork, T12 YN60, Irlanda </a> </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4"><b>London:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/Ycju8LdURUVEbCMaA" target="_blank" > Londres SE1 5JA, Reino Unido </a> </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4"><b>Brighton:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/8fqbcbiC9WhTSiHH6" target="_blank" > 61 Western Rd, Hove BN3 1JD, Reino Unido</a> </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4"><b>Canterbury:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/fHtg59F324RBwaat8" target="_blank" > 19 New Dover Rd, Canterbury CT1 3AH, Reino Unido </a> </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4"><b>Cambridge:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/uLPgmAYTYmDJxciV9" target="_blank" >15 Round Church St, Cambridge CB5 8AD, Reino Unido </a> </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4"><b>Boston, USA:</b> </div>
+                <div class="col-md-4 "> <a href="https://g.page/stafford-house-boston?share" target="_blank" > 38 Chauncy St 8th floor, Boston, MA 02111, Estados Unidos</a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3487,9 +3531,9 @@
               </div>
               <div class="row">
 
-                <!-- <div class="col-md-12"><li>20 o 26 horas de matrícula + programa social.</li></div>
-                <div class="col-md-12"><li>Excursión miércoles por la tarde + evento social jueves por la noche.</li></div>
-                <div class="col-md-12"><li>La Escuela de Verano ofrece oportunidades estructuradas y respaldadas para estudiantes de CCL y estudiantes internacionales visitantes para compartir una experiencia enriquecedora e intercultural.</li></div> -->
+                <div class="col-md-12"><li>Acreditada por el British Council en Londres.</li></div>
+                <div class="col-md-12"><li>Cuenta con los más altos estándares con más de 60 años de experiencia y éxito.</li></div>
+                <div class="col-md-12"><li>Clases pequeñas(10 en primedio, máximo 14), Profesores altamente calificados, Cuenta con última tecnología  y tableros inteligentes en todos los salones.</li></div>
 
                 <div class="col-md-12 ">
 
@@ -3502,7 +3546,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="_RNiSEej3qA"></div>
+            <div class="youtube-player" data-id="aL_NVnu7cAY"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
