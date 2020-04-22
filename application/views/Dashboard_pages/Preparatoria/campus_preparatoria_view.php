@@ -120,9 +120,15 @@ tostada('error','');
         }
       },
       columns : [
-        {data: 'nombre_Preparatoria'},
-        {data: 'fundacion_Preparatoria'},
-        {data: 'status_Preparatoria'},
+        {data: 'nombre_Campus'},
+        {data: 'ubicacion_Campus'},
+        {data: 'alojamiento_Campus'},
+        {data: 'status_Campus'},
+        {data: 'tipo_Campus'},
+        {data: ''},
+        {data: ''},
+        {data: ''},
+        {data: ''},
         {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
         ]
       });
