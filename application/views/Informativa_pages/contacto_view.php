@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
 
-                    <h3><a href="#">Anglo Latino Education Partnership</a></h3>
+                    <h3><a href="javascript:;">Anglo Latino Education Partnership</a></h3>
                     <hr class="lines">
                     <div class="text_wrapper_left">
                         <div class="icon_wrapper_list" style="margin-top: 20px;">
@@ -172,10 +172,10 @@
             </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
-                        <a class="chat-open-dialog"><div class="contact_rotate">
+                        <a ><div class="contact_rotate">
                             <i class="fas fa-robot"></i>
                         </div></a>
-                        <h4><a class="chat-open-dialog"><?=$this->lang->line('formas_contacto_bot')?></a></h4>
+                        <h4><a ><?=$this->lang->line('formas_contacto_bot')?></a></h4>
                         <p><?=$this->lang->line('formas_contacto_bot_leyenda')?></p>
                     </div>
                 </div>
@@ -199,10 +199,10 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
-                        <a href="../Login/Login"><div class="contact_rotate">
+                        <a href="../Login"><div class="contact_rotate">
                             <i class="fas fa-laptop"></i>
                         </div></a>
-                        <h4><a href="../Login/Login"><?=$this->lang->line('formas_contacto_pagina')?></a></h4>
+                        <h4><a href="../Login"><?=$this->lang->line('formas_contacto_pagina')?></a></h4>
                         <p><?=$this->lang->line('formas_contacto_pagina_leyenda')?></p>
                     </div>
                 </div>

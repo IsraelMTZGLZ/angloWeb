@@ -57,7 +57,7 @@ class Email extends MY_RootController {
             $this->email->set_newline("\r\n");
             
             $this->email->from($email_settings['email_send'],$email_settings['from_email']);
-            $this->email->reply_to('study@anglolatinoedu.com');
+            //$this->email->reply_to('study@anglolatinoedu.com');
             $this->email->to('hectori.um.15@gmail.com','hectori.um.15@gmail.com');
             $this->email->subject("Testing");
             $this->email->message('test');
@@ -65,8 +65,9 @@ class Email extends MY_RootController {
                 $this->session->set_flashdata('email','Correo enviado correctamente');
                 redirect ('Dashboard/Email');
             }else{
-                $this->session->set_flashdata('email','No fue posible enviar el correo, email o password incorrecto intenta modificar las configuraciones y si el problema persiste comunicate con los desarrolladores');
-                redirect ('Dashboard/Email');
+                //$this->session->set_flashdata('email','No fue posible enviar el correo, email o password incorrecto intenta modificar las configuraciones y si el problema persiste comunicate con los desarrolladores');
+                echo $this->email->print_debugger();
+                //redirect ('Dashboard/Email');
             }
         }else{
             redirect('home');

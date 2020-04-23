@@ -7,7 +7,7 @@
     Aspirantes Interesados
   </div>
   <div class="card-body">
-    <table id="example" class="display nowrap" style="width:100%">
+    <table id="example" class="display nowrap table-striped table-bordered" style="width:80%">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -22,6 +22,17 @@
         <tbody>
             
         </tbody>
+        <tfoot>
+            <tr>
+                <th>Nombre</th>
+                <th>Genero</th>
+                <th>Correo</th>
+                <th>Fecha de nacimiento</th>
+                <th>Telefono</th>
+                <th>Ciudad</th>
+                <th>Programa de interes</th>
+            </tr>
+        </tfoot>
     </table>
   </div>
 </div>
@@ -44,8 +55,17 @@
     $(document).ready(function() 
         {
             
+            $('#example tfoot th').each( function () {
+                var title = $(this).text();
+                $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+            } );
+            
             _url = _principalURL()+"Aspirante/api/aspirante/";
             var table=$(document).find('#example').DataTable({
+                scrollY:        '50vh',
+                "scrollX": true,
+                scrollCollapse: true,
+                paging:         false,
                 dom: 'Bfrtip',
                 buttons: [
                     'copy', 'csv', 'excel', 'pdf', 'print'
@@ -69,6 +89,22 @@
                     {data : 'programaDeInteres'}
                 ]
             });
+            
+            // DataTable
+    var table2 = $('#example').DataTable();
+ 
+    // Apply the search
+    table2.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change clear', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
         } 
     );
 </script>

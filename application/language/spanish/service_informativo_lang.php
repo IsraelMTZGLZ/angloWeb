@@ -36,7 +36,7 @@ $lang['step_title_service']="Sigue estos simples pasos";
 $lang['step_title_service_detail']="Tu sueño, nuestro objetivo";
 
 $lang['step_one_service']="Elige un programa ";
-$lang['step_one_service_detail']="a) Cursos de verano, curso de inglés, preparatoria, licenciatura, posgrado o doctorado.";
+$lang['step_one_service_detail']="a) Cursos de verano, curso de inglés, preparatoria, carrera o doctorado.";
 $lang['step_one_service_detail_two']=" b) En caso de querer estudiar posgrado o doctorado; identifica la especialidad.";
 
 $lang['step_two_service']="Contáctanos";

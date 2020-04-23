@@ -21,9 +21,9 @@
     <meta property="og:type" content="website">
 
     <!--Template style -->
-
-    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/animate.css');?>" />
-    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/bootstrap.min.css');?>" />
+    <meta name="google-site-verification" content="3HgmeAlqxAYgU7McG_PrtciCOpxI5P9z7UwPB9K6Jhs" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/animate.css');?>" defer/>
+    <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/bootstrap.min.css');?>"/>
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/fonts.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/flaticon.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/font-awesome.css');?>" />
@@ -38,6 +38,8 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/idioma.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/flag-icon-css/flag-icon.min599c.css?v4.0.2');?>">
      <!-- event timeline -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/button_animation.css');?>" />
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" />
@@ -48,7 +50,15 @@
 .youtube-player img:hover {-webkit-filter:brightness(75%);}
 .youtube-player .play {height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background: url("//i.imgur.com/TxzC70f.png") no-repeat;}
 </style>
-    
+    <style>
+        @font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+    </style>
 <!-- Hotjar Tracking Code for My site -->
 <script>
     (function(h,o,t,j,a,r){

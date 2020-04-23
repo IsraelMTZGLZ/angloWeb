@@ -76,22 +76,15 @@
             <a href="#0" class="cd-close"><?=$this->lang->line('close');?></a>
               <ul class="cd-dropdown-content">
                   <li>
-                     <form class="cd-search">
-                      <input type="search" placeholder="Search..." id="inputBusqueda">
-                    </form>
-                    <div class="search" id="search">
-          <table class="search-tabla" id="searchTabla">
-            <thead><tr><td></td></tr></thead>
-            <tbody id="tabla"></tbody>
-          </table>
-</div>
+                     <script async src="https://cse.google.com/cse.js?cx=001441891157965034420:8s6jgmwz23k"></script>
+<div class="gcse-search"></div>
                </li>
             <li class="javascript:;">
                 <a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>"><?=$this->lang->line('home_nav');?></a>
             </li>
 
 			<li class="javascript:;">
-                <a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa/Universidades' : 'OfertaEducativa/Universidades' ;?>"><?=$this->lang->line('oferta_educativa');?></a>
+                <a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa' : 'OfertaEducativa' ;?>"><?=$this->lang->line('oferta_educativa');?></a>
             </li>
                <!-- .has-children -->
             <li class="has-children">
@@ -145,7 +138,7 @@
                         <div class="col-lg-12">
                             <div class="cd-dropdown-wrapper">
                                 <a class="house_toggle" href="#0" aria-label="Abrir menu de opciones">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px">
+                                    <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px">
                                         <g>
                                             <g>
                                                 <path class="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#004165" />
@@ -189,10 +182,8 @@
 
                 <!-- Quik search -->
                 <div class="dez-quik-search bg-primary-dark">
-                    <form action="#">
-                        <input name="search" value="" type="text" class="form-control" placeholder="Type to search...">
-                        <span id="quik-search-remove"><i class="fas fa-times"></i></span>
-                    </form>
+                     <script async src="https://cse.google.com/cse.js?cx=001441891157965034420:8s6jgmwz23k"></script>
+<div class="gcse-search"></div>
                 </div>
             </div>
 
@@ -201,7 +192,7 @@
                     <ul class="main_nav_ul">
                          <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'home') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Home' : 'Home' ;?>" class="gc_main_navigation"><?=$this->lang->line('home_nav');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'Universidades') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa/Universidades' : 'OfertaEducativa/Universidades' ;?>" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'Universidades') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../OfertaEducativa' : 'OfertaEducativa' ;?>" class="gc_main_navigation"><?=$this->lang->line('oferta_educativa');?></a>
                         </li>
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'about') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('acerca_de_nosotros');?></a>
                             <ul class="navi_2_dropdown">

@@ -1,22 +1,12 @@
 <link rel="stylesheet" href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-<!-- Default theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
-<!-- Semantic UI theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
-<!-- Bootstrap theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
-
-
-
+    
 <div class="card text-center">
   <div class="card-header" style="margin-top: 2%;">
     Agentes
   </div>
   <div class="card-body">
-     
     <table id="example" class="display nowrap" style="width:100%">
         <thead>
             <tr>
@@ -35,26 +25,7 @@
   </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
@@ -68,8 +39,6 @@
 <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
 <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
-<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-
 <script>
     $(document).ready(function() 
         {
@@ -98,6 +67,7 @@
                     {data : null,'defaultContent':'<button type="button" class="btn btn-icon btn-info btn-outline btn-lg"><i class="icon wb-wrench" aria-hidden="true"></i></button>'}
                 ]
             });
+
             $(document).find('#example tbody').on('click','tr',function(){
                 var clasificacion=table.row(this).data();
                 //console.info(clasificacion['usuario']);

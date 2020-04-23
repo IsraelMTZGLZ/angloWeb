@@ -522,14 +522,14 @@
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/v_Eastbourne.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourne.jpg');?>" alt="">
                             <div class="portfolio_hover">
                                 <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                  <a data-toggle="modal" data-target="#eastbourneInglesModal"> Eastbourne School of English</a>
+                                  <a data-toggle="modal" data-target="#eastbourneInglesModal"> the english language centre brighton / eastbourne</a>
                                   </div>
                                 </div>
                                 <div class="zoom_popup">
@@ -825,14 +825,14 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                         <div class="portfolio_item">
-                            <img src="<?=base_url('resources/assets/Informativa/images/v_Eastbourne.jpg');?>" alt="">
+                            <img src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourne.jpg');?>" alt="">
                             <div class="portfolio_hover">
                             <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                   <div class="col-7">
-                                    <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>">
+                                    <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>">
                                   </div>
                                   <div class="col-5">
-                                     <a data-toggle="modal" data-target="#eastbourneVeranoModal">Eastbourne college</a>                                   </div>
+                                     <a data-toggle="modal" data-target="#eastbourneVeranoModal">the english language centre brighton / eastbourne</a>                                   </div>
                                 </div>
                                 <div class="zoom_popup">
                                      <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneVeranoModal"></button></i>
@@ -3567,7 +3567,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="aL_NVnu7cAY"></div>
+            <div class="youtube-player" data-id="Wztg6uPsJpE"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
@@ -3707,11 +3707,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4"><b>Fundación:</b> </div>
-                <div class="col-md-4 "> 	1845.</div>
+                <div class="col-md-4 ">	1845.</div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > Gaol Walk, University College, Cork, T12 YN60, Irlanda </a> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/T33Bn6Mfjrnpa69x5" target="_blank" > Cambridge Academy of English, 65 High Street, Girton, Cambridge CB3 0QD England </a> </div>
               </div>
               <div class="row">
                 <hr>
@@ -3887,8 +3887,8 @@
                 </button>
               </div>
               <div class="row">
-                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_Eastbourne_English-studyco1.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourneModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -3956,7 +3956,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="bgIFZ8_Hwwk"></div>
+            <div class="youtube-player" data-id="UPrH--JS5eg"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
@@ -4534,8 +4534,8 @@
                 </button>
               </div>
               <div class="row">
-                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_eastbourne_log.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt=""></div>
+                <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourneModal.jpg');?>" alt=""></div>
               </div>
             </div>
             <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -4601,7 +4601,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="S1G5cWSMmzQ"></div>
+            <div class="youtube-player" data-id="UPrH--JS5eg"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
@@ -5181,7 +5181,7 @@
             <div class="row">
               <hr>
             </div>
-            <div class="youtube-player" data-id="_RNiSEej3qA"></div>
+            <div class="youtube-player" data-id="oegk-4TmnnM"></div>
 
             <!--<div class="embed-responsive embed-responsive-21by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
@@ -5198,7 +5198,7 @@
 
 
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="eastbourneVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="easttbourneVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           	<!-- <div class="top-strip"></div> -->
@@ -6408,4 +6408,4 @@
 </div>
 
 <!-- . -->
-<!-- contact info section endd -->
+<!-- contact info section end -->
