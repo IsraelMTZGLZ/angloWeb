@@ -54,8 +54,8 @@
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a href="TablaAgente">
-                      <span class="site-menu-title">Agentes</span>
+                    <a href="Permisos">
+                      <span class="site-menu-title">Permisos Agentes</span>
                     </a>
                   </li>
                 </ul>

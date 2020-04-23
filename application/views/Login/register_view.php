@@ -456,7 +456,8 @@
               '<div class="alert alert-success fade show" role="alert">'+
               '<h4 class="alert-heading">Revisa tu correo!</h4>'+
               'En tu correo se mando la contraseña temporal para<br/>'+
-              'ingresar al sistema,Ve a iniciar sesion<br/>'+
+              'ingresar al sistema,es posible que el correo se haya enviado en tu carpeta de spam,</br>'+
+              'Ve a iniciar sesion<br/>'+
               'e ingresa tu contraseña y usuario<br/>'+
               '</div>'
             );
