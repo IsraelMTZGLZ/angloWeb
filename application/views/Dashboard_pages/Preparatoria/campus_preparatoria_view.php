@@ -21,10 +21,12 @@
     <table id="example" class="display nowrap" style="width:100%">
         <thead>
             <tr>
-                <th>Nombre</th>
-                <th>Fundacion</th>
-                <th>Status</th>
-                <th>Opciones</th>
+                <th>Nombre Preparatoria </th>
+                <th>Status Preparatoria</th>
+                <th>Fundación</th>
+                <th>Nombre Campus</th>
+                <th>Tipo</th>
+                <th>Alojamiento</th>
             </tr>
         </thead>
         <tbody>
@@ -42,18 +44,44 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
-        <h4 class="modal-title">Preparatoria</h4>
+        <h4 class="modal-title">Preparatoria Campus</h4>
       </div>
-      	<form id="prepaForm">
+      	<form id="campusForm">
       <div class="modal-body form-row">
 
+        <div class="col-xl-4 form-group">
+          <label>Foto Campus</label>
+          <input accept="image/*" id="fotoCampus" type="file">
+        </div>
+        <div class="col-xl-4 form-group">
+          <label>Logo Campus</label>
+          <input accept="image/*" id="fotoLogo" type="file">
+        </div>
+
           <div class="col-xl-4 form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control" name="nombrePreparatoria" id="nombre_Preparatoria" placeholder="Nombre">
+            <label>nombreCampus</label>
+            <input type="text" class="form-control" name="nombreCampus" id="nombreCampus" placeholder="Nombre">
           </div>
           <div class="col-xl-4 form-group">
+            <label>Ubicación</label>
+            <input type="text" class="form-control" name="ubicacionCampus" id="ubicacionCampus" placeholder="Nombre">
+          </div>
+          <div class="col-xl-4 form-group">
+            <label>tipo Campus</label>
+            <input type="text" class="form-control" name="tipoCampus" id="tipoCampus" placeholder="Nombre">
+          </div>
+          <div class="col-xl-4 form-group">
+            <label>alojamiento Campus</label>
+            <input type="text" class="form-control" name="alojamientoCampus" id="alojamientoCampus" placeholder="Nombre">
+          </div>
+          <div class="col-xl-4 form-group">
+            <label>descripcion Campus</label>
+            <input type="text" class="form-control" name="descripcionCampus" id="descripcionCampus" placeholder="Nombre">
+          </div>
+
+          <div class="col-xl-4 form-group">
             <label>Status</label>
-              <select class="form-control" name="statusPreparatoria" id="status_Preparatoria" data-plugin="selectpicker">
+              <select class="form-control" name="statusCampus" id="statusCampus" data-plugin="selectpicker">
 
                 <option  value="Activo">Activo</option>
                 <option value="Inactivo" >Inactivo</option>
@@ -62,13 +90,6 @@
               </select>
 
           </div>
-          <div class="col-xl-4 form-group">
-            <label>Fundación</label>
-            <input type="text" class="form-control" name="fundacionPreparatoria" id="fundacion_Preparatoria" placeholder="Fundación">
-          </div>
-          <!-- <div class="col-md-12 float-right">
-            <button class="btn btn-primary btn-outline" data-dismiss="modal" type="button">Create</button>
-          </div> -->
 
       </div>
       <div class="modal-footer">
@@ -105,7 +126,8 @@ tostada('error','');
 
   /*This function is emplemented to show data in the table */
 
-    _url = _principalURL()+"Preparatoria/api/preparatoria/";
+    _url = _principalURL()+"/PreparatoriaCampus/api/preparatoriacampus";
+    console.log(_url);
     var table=$(document).find('#example').DataTable({
       dom: 'Bfrtip',
       buttons: [
@@ -120,16 +142,12 @@ tostada('error','');
         }
       },
       columns : [
-        {data: 'nombre_Campus'},
-        {data: 'ubicacion_Campus'},
-        {data: 'alojamiento_Campus'},
-        {data: 'status_Campus'},
-        {data: 'tipo_Campus'},
-        {data: ''},
-        {data: ''},
-        {data: ''},
-        {data: ''},
-        {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
+        {data: 'nombrePreparatoria'},
+        {data: 'statusPreparatoria'},
+        {data: 'fundacion'},
+        {data: 'nombreCampus'},
+        {data: 'tipoCampus'},
+        {data: 'alojamientoCampus'}
         ]
       });
 
@@ -171,7 +189,7 @@ tostada('error','');
               '</div>'
 
             );
-            $(document).find('#prepaForm').append(
+            $(document).find('#campusForm').append(
               '<input type="hidden" id="id" name="id" value="'+_response.data.idPreparatoria+'">'
             );
           }
@@ -185,23 +203,64 @@ tostada('error','');
       });
     });
     /* This method is implemented to submit information to the DATA BASE */
-    $(document).on('submit','#prepaForm',function(event){
+    $(document).on('submit','#campusForm',function(event){
+
+        var $fotoCampus = $("#fotoCampus");
+        var $fotoLogo = $("#fotoLogo");
+        var $nombre = $("#nombrePreparatoria");
+        var formData = new FormData();
+        var archivosCampu = $fotoCampus[0].files;
+        var archivosLogo = $fotoLogo[0].files;
+      if (archivosCampu.length >= 0 && archivosLogo.length >= 0 ) {
+        var fotoCampus = archivosCampu[0]; //Sólo queremos la primera imagen, ya que el usuario pudo seleccionar más
+        var fotoLogo = archivosLogo[0];
+        var lector = new FileReader();
+        formData.append('my_file', fotoCampus);
+        formData.append('my_logo', fotoLogo);
+        formData.append('nombreCampus', $("#nombreCampus").val());
+        formData.append('ubicacionCampus', $("#ubicacionCampus").val());
+        formData.append('tipoCampus', $("#tipoCampus").val());
+        formData.append('alojamientoCampus', $("#alojamientoCampus").val());
+        formData.append('descripcionCampus', $("#descripcionCampus").val());
+        formData.append('nombreCampus', $("#nombreCampus").val());
+        formData.append('statusCampus', $("#statusCampus").val());
+        formData.append('preparatoria', 1);
+        var  l = $("#nombreCampus").val();
+        console.log(l);
+
+        if(_id>0){
+           console.info("llego Put");
+           _url = _principalURL()+"Preparatoria/api/preparatoria/"+$(document).find('#id').val();
+          _method = "PUT";
+          _text = 'Los datos fueron editados correctamente';
+        }else{
+            console.info("llego Post");
+            _url = _principalURL()+"Preparatoria/api/preparatoria/";
+          _method = "POST";
+            _text = 'Los datos fueron guardados correctamente';
+
+        }
+
+      }else{
+
+      }
+
 
 
       event.preventDefault();
-      clearForm('prepaForm');
+      clearForm('campusForm');
       _url = "";
       _method = "";
       var _id = $(document).find('#id').val();
-      console.info($(document).find("#prepaForm").serialize());
+      console.info($(document).find("#campusForm").serialize());
       if(_id>0){
          console.info("llego Put");
-         _url = _principalURL()+"Preparatoria/api/preparatoria/"+$(document).find('#id').val();
+         _url = _principalURL()+"PreparatoriaCampus/api/preparatoriacampusfhoto/"+$(document).find('#id').val();
         _method = "PUT";
         _text = 'Los datos fueron editados correctamente';
       }else{
           console.info("llego Post");
-          _url = _principalURL()+"Preparatoria/api/preparatoria/";
+          _url = _principalURL()+"PreparatoriaCampus/api/preparatoriacampusfhoto/";
         _method = "POST";
           _text = 'Los datos fueron guardados correctamente';
 
@@ -212,7 +271,9 @@ tostada('error','');
         headers : {
           'X-API-KEY':'ANGLOKEY'
         },
-        data: $(document).find("#prepaForm").serialize(),
+        data: formData,
+        contentType: false,
+        processData: false,
         success : function(_response){
           response= JSON.stringify(_response);
           if(_response.status == "error"){
@@ -222,7 +283,7 @@ tostada('error','');
                 $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
                });
           }else{
-            clearForm('prepaForm');
+            clearForm('campusForm');
             tostada('success','Los datos se an guardado correctamente ');
           }
 
@@ -240,6 +301,40 @@ tostada('error','');
 
         }
       });
+      // $.ajax({
+      //   url:_url,
+      //   method: _method,
+      //   headers : {
+      //     'X-API-KEY':'ANGLOKEY'
+      //   },
+      //   data: $(document).find("#campusForm").serialize(),
+      //   success : function(_response){
+      //     response= JSON.stringify(_response);
+      //     if(_response.status == "error"){
+      //       console.log(_response);
+      //       tostada('error','Revise sus datos ');
+      //         $.each(_response.validations, function(key,message){
+      //           $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+      //          });
+      //     }else{
+      //       clearForm('campusForm');
+      //       tostada('success','Los datos se an guardado correctamente ');
+      //     }
+      //
+      //   },
+      //   error : function(err){
+      //       response= JSON.stringify(err.responseText);
+      //       $(document).find('#responseText').html(
+      //         '<div class="alert alert-success" role="alert">'
+      //         +response+
+      //         '</div>'
+      //       );
+      //       setTimeout(function(){
+      //           $(document).find('#responseText').html('');
+      //       }, 3000);
+      //
+      //   }
+      // });
     });
 
     $(document).on('click','.btn-delete',function(){
@@ -253,12 +348,12 @@ tostada('error','');
         success : function(_response){
 
           if(_response.status == "error"){
-            clearForm('prepaForm');
+            clearForm('campusForm');
             tostada('error','Los datos no se an borrado correctamente ');
 
 
           }else{
-            clearForm('prepaForm');
+            clearForm('campusForm');
            tostada('success','Los datos se an borrado correctamente ');
 
 
@@ -271,7 +366,7 @@ tostada('error','');
       });
     });
     $(document).on('click','.btn-cancel',function(){
-      clearForm('prepaForm');
+      clearForm('campusForm');
     $('#exampleModalPrimary').modal('hide');
     });
 
