@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-    
+
 <div class="card text-center">
   <div class="card-header" style="margin-top: 2%;">
     Aspirantes Interesados
@@ -20,7 +20,7 @@
             </tr>
         </thead>
         <tbody>
-            
+
         </tbody>
     </table>
   </div>
@@ -41,9 +41,9 @@
 <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
 <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
 <script>
-    $(document).ready(function() 
+    $(document).ready(function()
         {
-            
+
             _url = _principalURL()+"Aspirante/api/aspirante/";
             var table=$(document).find('#example').DataTable({
                 dom: 'Bfrtip',
@@ -69,6 +69,7 @@
                     {data : 'programaDeInteres'}
                 ]
             });
-        } 
+
+        }
     );
 </script>

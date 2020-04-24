@@ -122,6 +122,7 @@ $(function(){
       });
 
 
+                  console.log(table);
     // this me tethod is implemented to submit or delete information to the table
     $(document).find('#example tbody').on('click','tr',function(){
       _url = _principalURL()+"Preparatoria/api/preparatoria/id/";
