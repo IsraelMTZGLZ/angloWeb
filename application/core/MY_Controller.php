@@ -34,9 +34,9 @@ class MY_RootController extends CI_Controller {
             case "POST":
                 $dataToString = json_encode($data ? $data : array());
                 //api pagina
-                $curlRequest = curl_init("https://api.anglo.anglolatinoedu.com/".$endPoint);
+                //$curlRequest = curl_init("https://api.anglo.anglolatinoedu.com/".$endPoint);
                 //api local
-                //$curlRequest = curl_init("http://localhost/angloApi/".$endPoint);
+                $curlRequest = curl_init("http://localhost/angloApi/".$endPoint);
 
                 curl_setopt($curlRequest, CURLOPT_CUSTOMREQUEST, $method);
                 curl_setopt($curlRequest, CURLOPT_HTTPHEADER, array(
@@ -65,9 +65,9 @@ class MY_RootController extends CI_Controller {
                 $queryString = http_build_query( $data ? $data : array() );
 
                 //api web
-                $curlRequest = curl_init("https://api.anglo.anglolatinoedu.com/".$endPoint."?".$queryString);
+                //$curlRequest = curl_init("https://api.anglo.anglolatinoedu.com/".$endPoint."?".$queryString);
                 //api local
-                //$curlRequest = curl_init("http://localhost/angloApi/".$endPoint."?".$queryString);
+                $curlRequest = curl_init("http://localhost/angloApi/".$endPoint."?".$queryString);
                 curl_setopt($curlRequest, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($curlRequest, CURLOPT_HTTPHEADER, array(
                         'X-API-KEY: ANGLOKEY' ,
