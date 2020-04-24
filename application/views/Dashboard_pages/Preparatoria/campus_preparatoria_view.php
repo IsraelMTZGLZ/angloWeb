@@ -121,13 +121,17 @@
 <script>
 $(function(){
   <?php if(@$idAdmin){ ?>
+<<<<<<< HEAD
     // console.info(<?=@$idAdmin?>);
+=======
+>>>>>>> 603f6a9bfdfc7a97f363d0b0c049556ec3b8b529
  <?php }else { ?>
 tostada('error','');
  <?php } ?>
 
   /*This function is emplemented to show data in the table */
 
+<<<<<<< HEAD
     _url = _principalURL()+"/PreparatoriaCampus/api/preparatoriacampus";
 
     var _html ="";
@@ -196,6 +200,29 @@ tostada('error','');
       //     ],
       //   });
       // console.log(table);
+=======
+    _url = _principalURL()+"Preparatoria/api/preparatoria/";
+    var table=$(document).find('#example').DataTable({
+      dom: 'Bfrtip',
+      buttons: [
+        'copy', 'csv', 'excel', 'pdf', 'print'
+      ],
+      ajax: {
+        url : _url,
+        method : 'get',
+        dataSrc : 'data',
+        headers : {
+          'X-API-KEY':'ANGLOKEY'
+        }
+      },
+      columns : [
+        {data: 'nombre_Preparatoria'},
+        {data: 'fundacion_Preparatoria'},
+        {data: 'status_Preparatoria'},
+        {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
+        ]
+      });
+>>>>>>> 603f6a9bfdfc7a97f363d0b0c049556ec3b8b529
 
 
     // this me tethod is implemented to submit or delete information to the table

@@ -304,26 +304,14 @@
                                     </div>
                                     <div class="team_info_wrapper">
 
-                                        <h4><a href="#">Maria Fernanda</a></h4>
+                                        <h4><a href="javascript:;">Maria Fernanda</a></h4>
                                         <h5>Team Leader</h5>
                                       
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="team_slider_main float_left">
-                                    <div class="team_img_wrapper">
-                                        <img src="<?=base_url('resources/assets/Anglo/PaolaDiaz.jpeg');?>" class="img-responsive" alt="img" />
-                                    </div>
-                                    <div class="team_info_wrapper">
-                                        <h4><a href="#">Paola Díaz</a></h4>
-                                        <h5>Ejecutivo de cuenta</h5>
-                                        
-
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <div class="item">
                                 <div class="team_slider_main float_left">
 
@@ -332,7 +320,7 @@
                                     </div>
 
                                     <div class="team_info_wrapper">
-                                        <h4><a href="#">Grecia Ignacio</a></h4>
+                                        <h4><a href="javascript:;">Grecia Ignacio</a></h4>
                                         <h5>Ejecutivo de cuenta</h5>
                                         
                                     </div>
@@ -343,8 +331,34 @@
 
 
                                     <div class="team_info_wrapper">
-                                        <h4><a href="#">Lizbeth Pérez</a></h4>
-                                        <h5>Ejecutivo de cuenta</h5>
+                                        <h4><a href="jvascript:;">Lizbeth Pérez</a></h4>
+                                        <h5>Gerente de operaciones</h5>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team_slider_main float_left">
+
+
+                                    <div class="team_info_wrapper">
+                                        <h4><a href="jvascript:;">David Patrick Thomas</a></h4>
+                                        <h5>Director</h5>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team_slider_main float_left">
+
+
+                                    <div class="team_info_wrapper">
+                                        <h4><a href="jvascript:;">Julieta Gallegos</a></h4>
+                                        <h5>Director</h5>
                                         
                                         
 

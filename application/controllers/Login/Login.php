@@ -5,6 +5,7 @@ class Login extends MY_RootController {
 
 	public function __construct() {
 		parent::__construct();
+		//redirect('Home');
 		require_once APPPATH.'third_party/src/Google_Client.php';
 		require_once APPPATH.'third_party/src/contrib/Google_Oauth2Service.php';
 		$this->load->library('facebook');
@@ -17,7 +18,7 @@ class Login extends MY_RootController {
 				if (@$this->session->userdata('user_sess')->typeUsuario=="Aspirante") {
 					$response = $this->_callApiRest('Aspirante/api/aspirante/id/'.$this->session->userdata('user_sess')->usuario,null,"GET",null);
 					$object = json_decode(json_encode($response['data']), FALSE);
-					//$this->session->set_userdata('user_sess',$object);
+					$this->session->set_userdata('user_sess',$object);
 					//echo var_dump($object->persona);
 					if (@$this->session->userdata('user_sess')->aspirante==null) {
 						//no ha llenado toda su informacion
@@ -74,9 +75,9 @@ class Login extends MY_RootController {
 		$clientId = '846059479473-nk4bq494i4lhb247j1rd3b6v8ltkj95s.apps.googleusercontent.com'; //Google client ID
 		$clientSecret = 'BrIhlAOnVDeC7QZ7G5dhlbib'; //Google client secret
 		//google
-		//$redirectURL = 'http://anglopageone.com/Login/Login/google_login/';
+		$redirectURL = 'https://www.anglolatinoedu.com/Login/Login/google_login/';
 		//local
-		$redirectURL = 'http://localhost/angloWeb/Login/Login/google_login/';
+		//$redirectURL = 'http://localhost/angloWeb/Login/Login/google_login/';
 
 		//Call Google API
 		$gClient = new Google_Client();
@@ -109,7 +110,7 @@ class Login extends MY_RootController {
 				);
 				$data_to_string=json_encode($data);
 			//peticiones http
-			$curl_request = curl_init("http://localhost/angloApi/User/api/loginPlus");
+			$curl_request = curl_init("https://api.anglo.anglolatinoedu.com/User/api/loginPlus");
 
 			curl_setopt($curl_request,CURLOPT_CUSTOMREQUEST,"POST");
 			curl_setopt($curl_request,CURLOPT_HTTPHEADER,array(
@@ -182,7 +183,7 @@ class Login extends MY_RootController {
 			//decodificar
 			$data_to_string=json_encode($data);
 			//peticiones http
-			$curl_request = curl_init("http://localhost/angloApi/User/api/loginNativo");
+			$curl_request = curl_init("https://api.anglo.anglolatinoedu.com/User/api/loginNativo");
 
 			curl_setopt($curl_request,CURLOPT_CUSTOMREQUEST,"POST");
 			curl_setopt($curl_request,CURLOPT_HTTPHEADER,array(

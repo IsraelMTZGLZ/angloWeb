@@ -83,14 +83,14 @@ Globe Elements
   .globe__worldmap__front,
   .globe__worldmap__back {
     left: 0; top: 0; width: 1000px; height: 200px; overflow: visible;
-    background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/worldmap_2x.svg);
+    background-image: url(https://www.anglolatinoedu.com/resources/assets/Anglo/worldmap_2x%20_nueva.svg);
     background-repeat: no-repeat;
   }
   
   
   
   .backimg4{
-    background-image: url(http://www.cakecounter.com/globe/blue-purple-gradient/globe_images/worldmap_2x.svg);
+    background-image: url(https://www.anglolatinoedu.com/resources/assets/Anglo/worldmap_2x.svg);
   }
   
   
@@ -102,12 +102,12 @@ Globe Elements
   /**
   Globe elements visibility options
   **/
-  .globe__sphere { background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/sphere.svg); display: none;}
+  .globe__sphere { background-image: url(https://www.anglolatinoedu.com/resources/assets/Anglo/sphere.svg); display: none;}
   
-  .globe__outer_shadow { background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/outer_shadow.svg);}
-  .globe__reflections__top { background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/reflections.svg); display: none;}
-  .globe__reflections__bottom { background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/reflections.svg); display: none;}
-  .globe__inner_shadow { background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/inner_shadow.svg);}
+  .globe__outer_shadow { background-image: url(https://www.anglolatinoedu.com/resources/assets/Anglo/outer_shadow.svg);}
+  .globe__reflections__top { background-image: url(https://www.anglolatinoedu.com/resources/assets/Anglo/reflections.svg); display: none;}
+  .globe__reflections__bottom { background-image: url(https://www.anglolatinoedu.com/resources/assets/Anglo/reflections.svg); display: none;}
+  .globe__inner_shadow { background-image: url(https://www.anglolatinoedu.com/resources/assets/Anglo/inner_shadow.svg);}
   .globe__worldmap__front { background-position: 0px 0px;
   animation: textureSpinreverse 8s linear infinite;
   }

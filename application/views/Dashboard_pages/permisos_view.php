@@ -66,8 +66,8 @@
                   <div class="card-footer">
                     <div class="row no-space">
                       <div class="col-12">
+                        <span>Genero:</span>
                         <strong class="profile-stat-count"><?=@$agentes[$i]['genero'];?></strong>
-                        <span>Genero</span>
                       </div>
                     </div>
                   </div>
