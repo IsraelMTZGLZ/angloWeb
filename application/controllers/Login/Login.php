@@ -75,9 +75,9 @@ class Login extends MY_RootController {
 		$clientId = '846059479473-nk4bq494i4lhb247j1rd3b6v8ltkj95s.apps.googleusercontent.com'; //Google client ID
 		$clientSecret = 'BrIhlAOnVDeC7QZ7G5dhlbib'; //Google client secret
 		//google
-		$redirectURL = 'https://www.anglolatinoedu.com/Login/Login/google_login/';
+		//$redirectURL = 'https://www.anglolatinoedu.com/Login/Login/google_login/';
 		//local
-		//$redirectURL = 'http://localhost/angloWeb/Login/Login/google_login/';
+		$redirectURL = 'http://localhost/angloWeb/Login/Login/google_login/';
 
 		//Call Google API
 		$gClient = new Google_Client();
@@ -110,7 +110,9 @@ class Login extends MY_RootController {
 				);
 				$data_to_string=json_encode($data);
 			//peticiones http
-			$curl_request = curl_init("https://api.anglo.anglolatinoedu.com/User/api/loginPlus");
+			//$curl_request = curl_init("https://api.anglo.anglolatinoedu.com/User/api/loginPlus");
+			//local
+			$curl_request = curl_init("http://localhost/angloApi/User/api/loginPlus");
 
 			curl_setopt($curl_request,CURLOPT_CUSTOMREQUEST,"POST");
 			curl_setopt($curl_request,CURLOPT_HTTPHEADER,array(
@@ -183,7 +185,9 @@ class Login extends MY_RootController {
 			//decodificar
 			$data_to_string=json_encode($data);
 			//peticiones http
-			$curl_request = curl_init("https://api.anglo.anglolatinoedu.com/User/api/loginNativo");
+			//$curl_request = curl_init("https://api.anglo.anglolatinoedu.com/User/api/loginNativo");
+			//local
+			$curl_request = curl_init("http://localhost/angloApi/User/api/loginNativo");
 
 			curl_setopt($curl_request,CURLOPT_CUSTOMREQUEST,"POST");
 			curl_setopt($curl_request,CURLOPT_HTTPHEADER,array(

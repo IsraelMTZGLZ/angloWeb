@@ -228,6 +228,7 @@
               <input type="password" class="form-control <?=@ ($this->session->flashdata('message')->validations->email) ? 'is-invalid' : '';  ?><?=@ ($this->session->flashdata('message')->validations->password) ? 'is-invalid' : '';  ?>" placeholder="Password" id="password" name="password" required minlength="5">
             </div>
           </div>
+          <div class="checkbox-custom checkbox-primary show-password-wrap"><input type="checkbox" class="strength-toggle" title="Show/Hide Password" id="show_password"><label for="show_password">Show Password</label></div>
           <div class="form-group clearfix">
             <a class="float-right" href="Login/forgotPassword"><?=$this->lang->line('forgot_password')?></a>
           </div>
@@ -421,12 +422,20 @@
   
   <script type="text/javascript">
     $(function(){
-      
+      var test = true;
       $(document).on('click','.facebook',function() {
         alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
         
       });
-
+      $(document).on('click','.show-password-wrap',function(){
+        if(test){
+          document.getElementById('password').type = 'text';
+          test = false;
+        }else{
+          document.getElementById('password').type = 'password';
+          test = true;
+        }
+      });
     });
   </script>
 </body>

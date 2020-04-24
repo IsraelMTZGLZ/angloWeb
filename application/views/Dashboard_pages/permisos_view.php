@@ -98,7 +98,7 @@
                     <input type="text" class="form-control" name="nombre" id="nombre" >
                     </div>
                     <div class="form-group form-material" data-plugin="formMaterial">
-                    <label class="form-control-label" for="inputText">Nombre:</label>
+                    <label class="form-control-label" for="inputText">Descripcion:</label>
                     <textarea type="text" class="form-control" name="descripcion" id="descripcion" ></textarea>
                     </div>
                 
