@@ -54,16 +54,14 @@
 <script>
     $(document).ready(function()
         {
-<<<<<<< HEAD
 
-=======
-            
+
             $('#example tfoot th').each( function () {
                 var title = $(this).text();
                 $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
             } );
-            
->>>>>>> 603f6a9bfdfc7a97f363d0b0c049556ec3b8b529
+
+
             _url = _principalURL()+"Aspirante/api/aspirante/";
             var table=$(document).find('#example').DataTable({
                 scrollY:        '50vh',
@@ -97,14 +95,14 @@
 
         }
 =======
-            
+
             // DataTable
     var table2 = $('#example').DataTable();
- 
+
     // Apply the search
     table2.columns().every( function () {
         var that = this;
- 
+
         $( 'input', this.footer() ).on( 'keyup change clear', function () {
             if ( that.search() !== this.value ) {
                 that
@@ -113,7 +111,7 @@
             }
         } );
     } );
-        } 
+        }
 >>>>>>> 603f6a9bfdfc7a97f363d0b0c049556ec3b8b529
     );
 </script>

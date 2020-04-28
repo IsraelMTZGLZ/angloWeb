@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-
+  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/files.css');?>"/>
 <div class="card text-center">
   <div class="card-header" style="margin-top: 2%;">
     Preparatorias
@@ -51,9 +51,11 @@
       	<form id="campusForm">
       <div class="modal-body form-row">
 
+
+
         <div class="col-xl-6 form-group">
           <label>Foto Campus</label>
-          <input accept="image/*" id="fotoCampus" type="file">
+          <input  accept="image/*" id="fotoCampus" type="file">
         </div>
         <div class="col-xl-6 form-group">
           <label>Logo Campus</label>
@@ -121,17 +123,15 @@
 <script>
 $(function(){
   <?php if(@$idAdmin){ ?>
-<<<<<<< HEAD
     // console.info(<?=@$idAdmin?>);
-=======
->>>>>>> 603f6a9bfdfc7a97f363d0b0c049556ec3b8b529
+
  <?php }else { ?>
 tostada('error','');
  <?php } ?>
 
   /*This function is emplemented to show data in the table */
 
-<<<<<<< HEAD
+
     _url = _principalURL()+"/PreparatoriaCampus/api/preparatoriacampus";
 
     var _html ="";
@@ -200,29 +200,29 @@ tostada('error','');
       //     ],
       //   });
       // console.log(table);
-=======
-    _url = _principalURL()+"Preparatoria/api/preparatoria/";
-    var table=$(document).find('#example').DataTable({
-      dom: 'Bfrtip',
-      buttons: [
-        'copy', 'csv', 'excel', 'pdf', 'print'
-      ],
-      ajax: {
-        url : _url,
-        method : 'get',
-        dataSrc : 'data',
-        headers : {
-          'X-API-KEY':'ANGLOKEY'
-        }
-      },
-      columns : [
-        {data: 'nombre_Preparatoria'},
-        {data: 'fundacion_Preparatoria'},
-        {data: 'status_Preparatoria'},
-        {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
-        ]
-      });
->>>>>>> 603f6a9bfdfc7a97f363d0b0c049556ec3b8b529
+
+    // _url = _principalURL()+"Preparatoria/api/preparatoria/";
+    // var table=$(document).find('#example').DataTable({
+    //   dom: 'Bfrtip',
+    //   buttons: [
+    //     'copy', 'csv', 'excel', 'pdf', 'print'
+    //   ],
+    //   ajax: {
+    //     url : _url,
+    //     method : 'get',
+    //     dataSrc : 'data',
+    //     headers : {
+    //       'X-API-KEY':'ANGLOKEY'
+    //     }
+    //   },
+    //   columns : [
+    //     {data: 'nombre_Preparatoria'},
+    //     {data: 'fundacion_Preparatoria'},
+    //     {data: 'status_Preparatoria'},
+    //     {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
+    //     ]
+    //   });
+
 
 
     // this me tethod is implemented to submit or delete information to the table
