@@ -10,9 +10,9 @@
     <div class="page-header">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="Home">Home</a></li>
-        <li class="breadcrumb-item active">Universidades</li>
+        <li class="breadcrumb-item active">Preparatorias</li>
       </ol>
-      <h1 class="page-title">Configuracion de Universidades</h1>
+      <h1 class="page-title">Configuracion de Preparatorias</h1>
       
     </div>
    
@@ -25,7 +25,7 @@
         <div class="col-xxl-6 col-xl-12">
             
           <!-- Panel Traffic -->
-          <div class="card card-shadow example-responsive border border-primary" id="widgetLinearea">
+          <div class="card card-shadow example-responsive" id="widgetLinearea">
             <div class="card-block">
             
             <div class="row">
