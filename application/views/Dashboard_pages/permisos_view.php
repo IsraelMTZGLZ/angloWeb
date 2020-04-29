@@ -254,9 +254,11 @@
                       success : function(_response){
                       response = JSON.stringify(_response);
                       var permisosUsuario = _response['data'];
+                      if(permisosUsuario){
                       for (let j = 0; j < permisosUsuario.length; j++) {
                         //console.info(permisosUsuario[j]['nombrePermiso']);
                         $(document).find('.nuevo').append('<a type="button" class="list-group-item blue-grey-500 btn-deletePermiso" id="'+permisosUsuario[j]['idPermisoAgente']+'"><i class="icon wb-inbox" aria-hidden="true"></i>'+permisosUsuario[j]['nombrePermiso']+'</a>');
+                      }
                       }
                       $(document).find('#agente').val(idAgente);
                       $('#editModal').modal('show');
