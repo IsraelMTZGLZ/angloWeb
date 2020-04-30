@@ -68,8 +68,18 @@
                 </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a href="Preparatoria/All_Preparatorias">
+                    <a href="Institucion">
+                      <span class="site-menu-title">Instituciones / Universidades</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a href="Preparatorias">
                       <span class="site-menu-title">Preparatorias</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a href="Tipo">
+                      <span class="site-menu-title">Estudios / Alojamiento</span>
                     </a>
                   </li>
                 </ul>
