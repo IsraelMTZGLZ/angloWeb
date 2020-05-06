@@ -36,7 +36,7 @@ function tostada(_typo,_message){
     });
   }else if (_typo=="info"){
     _titulo="Correcto Revisa El Mensaje";
-    toastr.info(_message,{
+    toastr.info(_message,_titulo,{
       "progressBar": true,
       "newestOnTop": true,
       "closeButton": true

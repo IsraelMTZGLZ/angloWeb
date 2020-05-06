@@ -9,7 +9,9 @@ class EleccionUniversidad extends MY_RootController {
 			redirect('Login');
         }else{
 			if (@$this->session->userdata('user_sess')->typeUsuario=="Aspirante") {
-				if (@$this->session->userdata('user_sess')->programaDeInteres!=null) {
+				if (@$this->session->userdata('user_sess')->aspirante==null) {
+					redirect('Login');
+				}if (@$this->session->userdata('user_sess')->programaDeInteres) {
 					redirect('Login');
 				}
 			}else {	

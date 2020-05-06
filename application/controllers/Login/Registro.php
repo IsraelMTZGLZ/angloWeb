@@ -59,9 +59,9 @@ class Registro extends MY_RootController {
 		$clientId = '846059479473-nk4bq494i4lhb247j1rd3b6v8ltkj95s.apps.googleusercontent.com'; //Google client ID
 		$clientSecret = 'BrIhlAOnVDeC7QZ7G5dhlbib'; //Google client secret
 		//pagina
-		$redirectURL = 'https://www.anglolatinoedu.com/Login/Registro/googleRegister/';
+		//$redirectURL = 'https://www.anglolatinoedu.com/Login/Registro/googleRegister/';
 		//interno
-		//$redirectURL = 'http://localhost/angloWeb/Login/Registro/googleRegister/';
+		$redirectURL = 'http://localhost/angloWeb/Login/Registro/googleRegister/';
 		
 		//Call Google API
 		$gClient = new Google_Client();

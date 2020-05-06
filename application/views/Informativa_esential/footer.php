@@ -95,25 +95,6 @@
                                     <a href="tel:4422609090">442 260 9090</a>
                                 </p>
                             </li>
-                            <li style="border-bottom: none;">
-                                <span> CDMX
-                                    <?=$this->lang->line('oficina');?>:
-                                </span>
-                                <p>
-                                    <a href="https://goo.gl/maps/PwDgXfENr2sS1X4e9" target="_blank" rel="noopener">
-                                    Paseo de la Reforma No 42, Piso 1, Oficina A-145 Col Centro,
-                                    Del Cuauhtemoc,
-                                    C.P. 06010, México DF
-                                    </a>
-                                </p>
-
-                            </li>
-                            <li>
-                                <span><?=$this->lang->line('telefono');?>: </span>
-                                <p>
-                                    <a href="tel:4422609090">55 3687 4477</a>
-                                </p>
-                            </li>
 
                         </ul>
                     </div>
