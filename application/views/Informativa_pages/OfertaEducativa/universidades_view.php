@@ -1,3 +1,274 @@
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+
+:root {
+  --border-radius-size: 14px;
+  --barbarian: #EC9B3B;
+  --archer: #EE5487;
+  --giant: #F3011A;
+  --goblin: #82BB30;
+  --wizard: #4FACFF;
+
+}
+
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+
+.slide-container {
+  margin: auto;
+  width: 1000px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+.clash-card {
+  background: white;
+  width: 350px;
+  display: inline-block;
+  -webkit-border-radius: 23px !important;
+  -moz-border-radius: 23px !important;
+  border-radius: 23px !important;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: var(--border-radius-size);
+  border-top-right-radius: var(--border-radius-size);
+}
+
+.clash-card__image--barbarian {
+  background: url('<?=base_url('resources/assets/Informativa/images/barbarian-bg.png');?>') !important;
+
+}
+
+.imagencard {
+
+  position: absolute;
+  top: 26px;
+  left:60px;
+}
+.clash-card__image--archer {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  img {
+    width: 400px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--giant {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  img {
+    width: 340px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+  }
+}
+
+.clash-card__image--goblin {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  img {
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--wizard {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+  img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+  }
+}
+
+.clash-card__level {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #EC9B3B;
+}
+
+.clash-card__level--barbarian {
+  color: var(--barbarian);
+}
+
+.clash-card__level--archer {
+  color: var(--archer);
+}
+
+.clash-card__level--giant {
+  color: var(--giant);
+}
+
+.clash-card__level--goblin {
+  color: var(--goblin);
+}
+
+.clash-card__level--wizard {
+  color: var(--wizard);
+}
+
+.clash-card__unit-name {
+  font-size: 18px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;
+
+}
+.where{
+  font-size: 18px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.nameInst{
+  font-size: 16px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-stats--barbarian {
+  background:var(--barbarian);
+
+  .one-third {
+     border-right: 1px solid #BD7C2F !important;
+  }
+}
+
+.clash-card__unit-stats--archer {
+  background: var(--archer);
+
+  .one-third {
+     border-right: 1px solid #D04976;
+  }
+}
+
+.clash-card__unit-stats--giant {
+  background: var(--giant);
+
+  .one-third {
+     border-right: 1px solid darken(var(--giant), 8%);
+  }
+}
+
+.clash-card__unit-stats--goblin {
+  background: var(--goblin);
+
+  .one-third {
+     border-right: 1px solid darken(var(--goblin), 6%);
+  }
+}
+
+.clash-card__unit-stats--wizard {
+  background: var(--wizard);
+
+  .one-third {
+     border-right: 1px solid darken(var(--wizard), 6%);
+  }
+}
+
+.clash-card__unit-stats {
+
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius:var(--border-radius-size);
+  border-bottom-right-radius: var(--border-radius-size);
+
+  .one-third {
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+  }
+
+  sup {
+    position: absolute;
+    bottom: 4px;
+    font-size: 45%;
+    margin-left: 2px;
+  }
+
+
+
+
+
+  .no-border {
+    border-right: none;
+  }
+}
+
+.stat {
+font-size: 18px;
+}
+
+.stat-value {
+
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+
+
+#mdialTamanio{
+  width: 80% !important;
+}
+
+</style>
 <div class="page_title_section float_left">
 
   <div class="page_header">
@@ -553,7 +824,7 @@
                    <a data-toggle="modal" data-target="#othersModalEnglish"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
-
+                  <!-- inicia v-->
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ux_uy ">
                       <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
@@ -5389,8 +5660,8 @@
 
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="bristolVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+<div class="modal fade text-center py-5 subscribeModal-lg"  id="bristolVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document" >
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
         <div class="modal-header">
@@ -5424,6 +5695,370 @@
               <hr>
 
             </div>
+            <div class="row">
+
+              <div class="slide-container ">
+
+                  <div class="row">
+                    <div class="col-xs-2 col-md-6 ">
+                     <div class="wrapper">
+                       <div class="clash-card barbarian">
+                         <div class="clash-card__image clash-card__image--barbarian">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--barbarian">Arqueología</div>
+                         <div class="clash-card__unit-name">Incluye:</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Inscripción, materiales de excavación, libro.</li>
+                            <li>- Transporte al sitio de excavación.</li>
+                            <li>- Alojamiento en habitación individual en residencia de la universidad de Bristol.</li>
+                            <li>- Desayuno y cenas. Lunch en días de excavación.</li>
+                            <li>- Viajes de fin de semana.</li>
+                            <li>Traslado de llegada y salida dentro de Bristol, estación de autobús o estación de tren Temple Meads.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Requisitos</div>
+                             <div class="stat">IELTS 6.5 /  TOEFL IBT 85</div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value">Costo </div>
+                             <div class="stat">£2,745</div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value">Cuando?</div>
+                             <div class="stat">5 de Julio 2020 – 18  de Julio 2020</div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card wizard">
+                         <div class="clash-card__image clash-card__image--wizard">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--wizard">Química Avanzada</div>
+                         <p>Para estudiantes de licenciatura</p>
+                         <div class="clash-card__unit-name">Incluye:</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Inscripción, laboratorio y costos de equipamiento..</li>
+                            <li>- Alojamiento en habitación individual en residencia de la universidad de Bristol.</li>
+                            <li>- Desayuno y cenas. </li>
+                            <li>- Viajes de fin de semana.</li>
+                            <li>- Traslado de llegada y salida dentro de Bristol, estación de autobús o estación de tren Temple Meads.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Requisitos</div>
+                             <div class="stat">IELTS 6.5 /  TOEFL IBT 88</div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value">Costo </div>
+                             <div class="stat">£3,350</div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value">¿Cuando?</div>
+                             <div class="stat">18 Julio 2020 - 08 Agosto 2020</div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card goblin">
+                         <div class="clash-card__image clash-card__image--goblin">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--goblin">Escuela de Veterinaria</div>
+                         <p>Abrierto para estudiantes de 16 años que cursan la preparatoria.</p>
+                         <div class="clash-card__unit-name">Incluye:</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Inscripción y materiales necesarios para el curso.</li>
+                            <li>- Viaje hacia y desde nuestras actividades en nuestro campus Langford.</li>
+                            <li>- Alojamiento en habitación individual en residencia de la universidad de Bristol.</li>
+                            <li>- Desayuno y cenas. Lunch en días de excavación.</li>
+                            <li>- Emocionante programa social que incluye viajes de fin de semana y comidas.</li>
+                            <li>- Traslado de aeropuerto desde Heathrow o aeropuerto de Bristol y traslados dentro de la ciudad de Bristol el domingo 19 de julio de 2020 y el sábado 1 de agosto de 2020.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Requisitos</div>
+                             <div class="stat">IELTS 7.0 /  TOEFL IBT 95</div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value">Costo </div>
+                             <div class="stat">£2,395</div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value">¿Cuando?</div>
+                             <div class="stat">19 Julio 2020 - 1 Agosto 2020</div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card archer">
+                         <div class="clash-card__image clash-card__image--archer">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--archer">Proyectos de investigación STEM</div>
+                         <div class="clash-card__unit-name">Incluye:</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Inscripción, materiales de laboratorio, libro.</li>
+                            <li>- Inscripción, materiales de laboratorio, libro.</li>
+                            <li>- Desayuno y cenas. Lunch en días de excursión.</li>
+                            <li>- Viajes de fin de semana.</li>
+                            <li>- Traslado de llegada y salida dentro de Bristol, estación de autobús o estación de tren Temple Meads.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Requisitos</div>
+                             <div class="stat">IELTS 6.5 /  TOEFL IBT 85</div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value">Costo </div>
+                             <div class="stat">£5,950 incluye  alojamiento</div>
+                             <div class="stat">£4,100 sin alojamiento</div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value">¿Cuando?</div>
+                             <div class="stat">19 Julio 2020 - 29 Agosto 2020</div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card giant">
+                         <div class="clash-card__image clash-card__image--giant">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--giant">Laboratorio de Biomedicina</div>
+                         <p>Para estudiantes de licenciatura</p>
+                         <div class="clash-card__unit-name">Incluye:</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Inscripción, laboratorio, materiales y libro.</li>
+                            <li>- Alojamiento en habitación individual en residencia de la universidad de Bristol.</li>
+                            <li>- Desayuno y cenas.</li>
+                            <li>- Viajes de fin de semana.</li>
+                            <li>- Traslado de llegada y salida dentro de Bristol, estación de autobús o estación de tren Temple Meads.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Requisitos</div>
+                             <div class="stat">IELTS 6.5 /  TOEFL IBT 85</div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value">Costo </div>
+                             <div class="stat">£2,995</div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value">Cuando?</div>
+                             <div class="stat"> 18 Julio 2020  –  8 Agosto  2020</div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card barbarian">
+                         <div class="clash-card__image clash-card__image--barbarian">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--barbarian">Innovación y Emprendimiento</div>
+                         <p>Para estudiantes de licenciatura</p>
+                         <div class="clash-card__unit-name">Incluye:</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Inscripción, materiales, libro.</li>
+                            <li>- Alojamiento en habitación individual en residencia de la universidad de Bristol.</li>
+                            <li>- Desayunos y Cenas.</li>
+                            <li>- Viajes en fin de semana.</li>
+                            <li>- Traslado de llegada y salida dentro de Bristol, estación de autobús o estación de tren Temple Meads.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Requisitos</div>
+                             <div class="stat"> IELTS 6.5 /  TOEFL IBT 88 </div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value">Costo </div>
+                             <div class="stat">£2,995</div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value">Cuando?</div>
+                             <div class="stat"> 19 Julio 2020 - 8 Agosto 2020</div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card wizard">
+                         <div class="clash-card__image clash-card__image--wizard">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--wizard">Arte, Activismo y Justicia Social</div>
+                         <p>Para estudiantes de licenciatura</p>
+                         <div class="clash-card__unit-name">Incluye:</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Inscripción, participación en el taller, libro.</li>
+                            <li>- Alojamiento en habitación individual en residencia de la universidad de Bristol.</li>
+                            <li>- Todos los alimentos.</li>
+                            <li>- Programa social que combina con tus intereses.</li>
+                            <li>- Traslado de llegada y salida dentro de Bristol, estación de autobús o estación de tren Temple Meads.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Requisitos</div>
+                             <div class="stat"> IELTS 6.5 /  TOEFL IBT 88 </div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value">Costo </div>
+                             <div class="stat">£2,650</div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value">Cuando?</div>
+                             <div class="stat"> 7 Junio 2020 - 27 Junio 2020</div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card giant">
+                         <div class="clash-card__image clash-card__image--giant">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--giant">No Incluye</div>
+                         <div class="clash-card__unit-description">
+                          <ul>
+                            <li>- Viaje internacional a Reino Unido.</li>
+                            <li>- Viaje de tu aeropuerto hacia la ciudad de Bristol.</li>
+                            <li>- Traslados desde estación de autobús o tren en Bristol fuera de los días agendados.</li>
+                            <li>- Seguro de viaje.</li>
+                            <li>- Costos de visa, solo si aplica.</li>
+                            <li>- Dinero para gastos personales.</li>
+                           </ul>
+                         </div>
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                           <div class="one-third">
+                             <div class="stat-value"></div>
+                             <div class="stat"></div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value"></div>
+                             <div class="stat"></div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value"></div>
+                             <div class="stat"> </div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+
+
+               </div> <!-- end row two -->
+
+
+            </div><!-- end slide continer-->
+            </div>
+
             <div class="row">
               <hr>
                 <div class="col-md-12 " style="align:center"><b>Edades</b></div>
@@ -5530,9 +6165,265 @@
               <div class="col-md-4 "> <a href="https://goo.gl/maps/gUfa7H22Ts4LAzwM6">43-45 Bloomsbury Square, Holborn, London WC1A 2RA, Reino Unido </a> </div>
 
             </div>
+            <br>
+            <div class="row">
+              <div class="slide-container ">
+                  <div class="row">
+                    <div class="col-xs-2 col-md-6 ">
+                     <div class="wrapper">
+                       <div class="clash-card barbarian">
+                         <div class="clash-card__image clash-card__image--barbarian">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--barbarian">STEM </div>
+                         <div class="clash-card__unit-name">Ciencia, tecnología, ingeniería y matemáticas</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que se interesan en como la ciencia, tecnología, ingeniería y las matemáticas  se pueden usar creativamente para resolver problemas.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Cambridge</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat"> IELTS 5.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,700*  </div>
+                           </div>
+                         </div>
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card wizard">
+                         <div class="clash-card__image clash-card__image--wizard">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--wizard">Experiencia de Educación en Reino Unido</div>
+
+
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que quieren experimentar el aprendizaje  en la educación Británica.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Canterbury</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  19 Julio</p>
+                           <p><b>Llegada: </b>Domingo 19 Julio <b>Salida: </b>Domingo 2 Agosto</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 5.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> 2 Semanas £2,700* </div>
+                             <div class="stat">  3 Semanas £3,750*  </div>
+                           </div>
+                         </div>
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card goblin">
+                         <div class="clash-card__image clash-card__image--goblin">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--goblin">Laboratorio de negocios Bloomberg</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes con intereses en economía y finanzas.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Londres</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
+                           <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 26 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17</div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 4.5 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,00* </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card archer">
+                         <div class="clash-card__image clash-card__image--archer">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--archer">STEM</div>
+                         <div class="clash-card__unit-name">(Ciencia, tecnología, ingeniería y matemáticas) y curso de inglés.</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que se interesan en cómo la ciencia, tecnología, ingeniería y las matemáticas  se pueden usar creativamente para resolver problemas combinado con curso de inglés especializado.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Cambridge</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Julio <b>Salida: </b>Domingo  26 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17  </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 4.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,700*  </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card giant">
+                         <div class="clash-card__image clash-card__image--giant">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--giant">Preparación Oxbridge</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que aspiran estudiar universidades prestigiosas como Oxford, Cambridge y otras universidades Top de UK.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Cambridge</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  19 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">16-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 5.5 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £3,750* </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card barbarian">
+                         <div class="clash-card__image clash-card__image--barbarian">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--barbarian">Medicina</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que quieren explorar opciones de carrera en medicina.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Canterbury</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
+                           <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 26 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 5.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,00* </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card giant">
+                         <div class="clash-card__image clash-card__image--giant">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__unit-description">
+                            *El precio incluye hospedaje, tres comidas al día, costo de registro y transferencias de aeropuerto. Hay un costo extra de £75 que aplica para los que soliciten asistencia para viajes de menores sin compañia.
+                         </div>
+
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                           <div class="one-third">
+                             <div class="stat-value"></div>
+                             <div class="stat">!</div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value"></div>
+                             <div class="stat"></div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value"></div>
+                             <div class="stat"> </div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+
+
+               </div> <!-- end row two -->
+
+
+            </div><!-- end slide continer-->
+            </div>
+
             <div class="row">
               <hr>
-
             </div>
             <div class="row">
               <hr>

@@ -168,6 +168,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+    (function() {
+
+      console.log(cargo);
+      var slideContainer = $('.slide-container');
+
+      slideContainer.slick();
+
+      $('.clash-card__image img').hide();
+      $('.slick-active').find('.clash-card img').fadeIn(200);
+
+      // On before slide change
+      slideContainer.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.slick-active').find('.clash-card img').fadeOut(1000);
+      });
+
+      // On after slide change
+      slideContainer.on('afterChange', function(event, slick, currentSlide) {
+        $('.slick-active').find('.clash-card img').fadeIn(200);
+      });
+
+    })();
+
+    </script>
     <!-- custom js-->
     <!--chat files-->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

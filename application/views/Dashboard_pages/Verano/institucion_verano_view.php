@@ -94,7 +94,7 @@
               <div class="col-lg-4">
                 <div class="card card-shadow text-center">
                   <div class="card-block">
-                    <img class="card-img-top" src="<?=@ ($instituciones[$i]['logoInstitucion']) ? $instituciones[$i]['logoInstitucion'] : base_url("resources/assets/Anglo/AngloLatino-sintexto.png");?>" alt="Imagen Institucion">
+                    <img class="card-img-top" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion">
                     <h4 class="profile-user"><?=@$instituciones[$i]['nombreInstitucion'];?></h4>
                     <p class="profile-job"><?=@$instituciones[$i]['ubicacionInstitucion'];?></p>
 

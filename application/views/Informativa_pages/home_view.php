@@ -352,7 +352,63 @@
             </div>
         </div>
     </div>
+
     <!--blog wrapper end-->
+    <div class="testimonial_wrapper float_left">
+        <div class="counter_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="testimonial_slider_wrapper">
+
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="testi_cont_wrapper float_left">
+
+                                    <p>“Anglo Latino me acompañó durante todo el proceso para iniciar mis estudios de
+                                        doctorado en Reino Unido. Apoyó con el proceso de aceptación con la University
+                                        of Bristol y la preparación de la solicitudes de beca escolar y visa ante CONACyT
+                                        y Reino Unido respectivamente.”
+                                      </p>
+                                    <h4>by - farhan S.</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testi_cont_wrapper float_left">
+
+                                    <p>“La ayuda proporcionada por David Thomas fue
+                                        fundamental para poder estudiar aquí ya que él se encargó de contactarme con el
+                                        investigador que ahora supervisa mis estudios y así poder generar el vínculo
+                                        académico necesario para poder seguir con los trámites. Además, él me ayudó
+                                        con la validación de mi comprobante académico (tira de materias) para obtener mi
+                                        carta de aceptación por parte de la universidad. Es importante destacar que
+                                        también el equipo de Anglo Latino me ayudó durante el proceso de aplicación para
+                                        la beca que ahora tengo.”
+                                    </p>
+                                    <h4>by - farhan S.</h4>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="testi_cont_wrapper float_left">
+
+                                    <p>“Yo no tenía ningún amigo o familiar cercano que haya estudiado en UK, por lo que todo el
+                                        proceso era desconocido para mí. Sin embargo, buscando encontré al equipo de Anglo
+                                        Latino.
+                                        Me estuvieron guiando en cada una de las etapas del proceso. Pero en especial ellos me
+                                        apoyaron a obtuve mi unconditional letter 2 días antes de la fecha límite. Todo el equipo e
+                                        incluso el director de Anglo Latino se pusieron en contacto con Cardiff University y casi de
+                                        forma inmediata consiguieron mi carta de aceptación.”
+                                    </p>
+                                    <h4>by - farhan S.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--partner wrapper start-->
     <div class="partner_wrapper float_left">
         <div class="container">
