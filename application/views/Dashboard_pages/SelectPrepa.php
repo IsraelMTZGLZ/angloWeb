@@ -394,7 +394,7 @@ h1 {
   
   <div class="page text-center" >
     <div class="page-content">
-      <input type="hidden" id="aspiranteUni" value="<?=$aspiranteUni['idAspiranteUniversidad'];?>" name="aspiranteUni">
+      <input type="hidden" id="aspirantePrepa" value="<?=$aspirantePrepa['idAspirantePreparatoria'];?>" name="aspirantePrepa">
     <div class="row">
         <div class="col-12">
           <!-- Example Card Decks -->
@@ -404,7 +404,7 @@ h1 {
             <div class="row">
                 <div class="col-lg-5">
                     <div class="example-col">
-                        <p style="color: white;font-size: 18px">Selecciona las universidades de tu interes ( Maximo 3 ):</p>
+                        <p style="color: white;font-size: 18px">Selecciona las preparatorias de tu interes ( Maximo 3 ):</p>
                     </div>
                 </div>
                 <div class="offset-lg-4">
@@ -416,15 +416,15 @@ h1 {
                 </div>
             </div>
             <div class="grid-wrapper">
-                <?php for($i=0; $i < count($universidades);$i++) { ?>
+                <?php for($i=0; $i < count($preparatorias);$i++) { ?>
                 <div class="card-wrapper">
-                    <input class="c-card uni" type="checkbox"  id="<?=$i+1?>" value="<?=@$universidades[$i]['idInstitucion']?>">
+                    <input class="c-card prepa" type="checkbox"  id="<?=$i+1?>" value="<?=@$preparatorias[$i]['idInstitucion']?>">
                     <div class="card-content">
                     <div class="card-state-icon"></div>
                     <label for="<?=$i+1?>">
-                        <div class="image"><img src="<?=@$universidades[$i]['logoInstitucion']?>" style="width: 180px;height: 120px"></div>
-                        <h3 style="color: white"><?=@$universidades[$i]['nombreInstitucion']?></h4>
-                        <h5 style="color: white"><?=@$universidades[$i]['nombreFacultad']?></h5>
+                        <div class="image"><img src="<?=@$preparatorias[$i]['logoInstitucion']?>" style="width: 180px;height: 120px"></div>
+                        <h3 style="color: white"><?=@$preparatorias[$i]['nombreInstitucion']?></h4>
+                        <h5 style="color: white"><?=@$preparatorias[$i]['nombreFacultad']?></h5>
                         <p class="small-meta dim" style="color: white">Gracias</p>
                     </label>
                     </div>
@@ -441,8 +441,8 @@ h1 {
                         <select class="form-control" name="mes" id="mes">
                             <option value="" disabled selected>selecciona una opcion</option>
                             <option value="01">Enero</option>
-                            <option value="03">Marzo</option>
-                            <option value="05">Mayo</option>
+                            <option value="02">Febrero</option>
+                            <option value="04">Abril</option>
                             <option value="09">Septiembre</option>
                         </select>
                     </div>
@@ -645,41 +645,38 @@ h1 {
   <script>
     $(function(){
         var contador = 0;
-        $( '.uni' ).on( 'change', function() {
+        $( '.prepa' ).on( 'change', function() {
             if( $(this).is(':checked') ){
                 contador++;
             } else {
                 contador--;
             }
             if(contador==3){
-                $(".uni:not(:checked)").prop( "disabled", true );
-                tostada('info','Has seleccionado el maximo de universidades posibles');
+                $(".prepa:not(:checked)").prop( "disabled", true );
+                tostada('info','Has seleccionado el maximo de preparatorias posibles');
             }
             if(contador<3){
-                $(".uni:not(:checked)").prop( "disabled", false );
+                $(".prepa:not(:checked)").prop( "disabled", false );
             }
         });
         $(document).on('click','.btn-continue',function (){
-            let unis = [];
+            let prepas = [];
             $("input:checkbox:checked").each(   
                 function() {
-                    unis.push(this.value);
+                    prepas.push(this.value);
                 }
             );
-            if(unis.length >0){
+            if(prepas.length >0){
                 var mes = $(document).find('#mes').val();
                 var anio = $(document).find('#anio').val();
                 if( mes && anio){
                     var d = anio+'-'+mes+'-01';
-                    //var parts =d.split('-');
-                    //var mydate = new Date(parts[0], parts[1] - 1, parts[2]); 
                     _params={
-                        "instituciones":unis,
-                        "aspiranteUniversidad":$(document).find('#aspiranteUni').val(),
+                        "instituciones":prepas,
+                        "aspirantePrepa":$(document).find('#aspirantePrepa').val(),
                         "anioMes":d
                     };
-                    _url = _principalURL()+"AspiranteUniversidades/api/aspiranteUniversidadesFacultades/";
-
+                    _url = _principalURL()+"AspirantePreparatorias/api/aspirantePreparatoriasFacultades/";
                     $.ajax({
                         url: _url,
                         method : 'POST',
@@ -719,7 +716,7 @@ h1 {
                 }
                 
             }else{
-                tostada('error','Por favor selecciona al menos una universidad');
+                tostada('error','Por favor selecciona al menos una preparatoria');
             }
         });
     });

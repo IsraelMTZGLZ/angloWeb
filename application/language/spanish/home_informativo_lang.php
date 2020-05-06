@@ -29,7 +29,7 @@ $lang['calidad'] = "Calidad";
 $lang['univerdiades_home'] = "Universidades";
 
 $lang['univerdiades_desc_home'] = "Representamos a Universidades ranqueadas entre las primeras 200 a nivel mundial, es decir, el top 1% en el mundo por la excelencia de su investigación y su enseñanza.";
-$lang['preparatoria_home'] = "Preparatoria";
+$lang['preparatoria_home'] = "Preparatorias";
 $lang['preparatoria_desc_home'] = "Nuestras preparatorias se enfocan en prepararte para estudiar en las mejores universidades del mundo. Tenemos opciones de internado tradicional y colegios internacionales. Programas de semestre, ano academico o prepa completa (para jovenes de 14 + años de edad).";
 
 $lang['cursos_home'] = "Cursos De Ingl&eacute;s";
