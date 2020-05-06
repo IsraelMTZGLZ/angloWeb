@@ -13,9 +13,9 @@
     <div class="page-header">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="Home">Home</a></li>
-        <li class="breadcrumb-item active">Universidades</li>
+        <li class="breadcrumb-item active">Oferta Educativa</li>
       </ol>
-      <h1 class="page-title">Configuracion de Universidades</h1>
+      <h1 class="page-title">Oferta Educativa</h1>
       
     </div>
    

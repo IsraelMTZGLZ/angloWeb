@@ -21,18 +21,21 @@
       <div>
         <div>
           <ul class="site-menu" data-plugin="menu">
-            <li class="site-menu-item hover">
+            <li class="site-menu-item">
+              <?php if($user->typeUsuario=="Admin") { ;?>
                 <a href="Home">
                   <i class="site-menu-icon fas fa-home" aria-hidden="true" style="font-size: 20px;"></i>
                   <span class="site-menu-title">Home</span>
                 </a>
-              </li>
-            <li class="site-menu-item has-sub hover">
-              <a href="javascript:void(0)">
-                <i class="site-menu-icon fas fa-envelope" aria-hidden="true"></i>
-                <span class="site-menu-title">Email</span>
-                <span class="site-menu-arrow"></span>
-              </a>
+              <?php } ;?>
+            </li>
+            <?php if($user->typeUsuario=="Admin") { ;?>
+              <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)">
+                  <i class="site-menu-icon fas fa-envelope" aria-hidden="true"></i>
+                  <span class="site-menu-title">Email</span>
+                  <span class="site-menu-arrow"></span>
+                </a>
                 <ul class="site-menu-sub" style="">
                   <li class="site-menu-item">
                     <a href="Email">
@@ -41,7 +44,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="site-menu-item has-sub hover">
+            <?php } ;?>
+            <?php if($user->typeUsuario=="Admin") { ?>
+              <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
                   <span class="site-menu-title">Usuarios</span>
@@ -60,7 +65,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="site-menu-item has-sub hover">
+            <?php } ?>
+            <?php if($user->typeUsuario=="Admin") { ?>
+              <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon fas fa-plus-square" aria-hidden="true"></i>
                   <span class="site-menu-title">Escuelas</span>
@@ -84,8 +91,20 @@
                   </li>
                 </ul>
               </li>
+            <?php } ?>
+            <?php if($user->typeUsuario=="Admin" || $user->typeUsuario=="Agente") { ?>
+              <li class="site-menu-item">
+                <a href="Escuelas">
+                  <i class="site-menu-icon fas fa-graduation-cap" aria-hidden="true"></i>
+                  <span class="site-menu-title">Oferta Educativa</span>
+                  
+                </a>
+              </li>
+            <?php } ?>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+  

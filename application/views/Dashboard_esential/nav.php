@@ -147,7 +147,7 @@
         <!-- End Navbar Toolbar Right -->
 
         <div class="navbar-brand navbar-brand-center">
-          <a href="index.html">
+          <a href="Home">
             <img class="navbar-brand-logo navbar-brand-logo-normal" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>"
               title="Anglo Latino Education Partnership" style="height: 80px;margin-top: -13px;">
             <img class="navbar-brand-logo navbar-brand-logo-special" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>"

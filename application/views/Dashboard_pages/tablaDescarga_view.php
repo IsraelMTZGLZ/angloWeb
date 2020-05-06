@@ -91,27 +91,19 @@
                     {data : 'programaDeInteres'}
                 ]
             });
-<<<<<<< HEAD
+
+            table.columns().every( function () {
+                var that = this;
+        
+                $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                    if ( that.search() !== this.value ) {
+                        that
+                            .search( this.value )
+                            .draw();
+                    }
+                } );
+            } );
 
         }
-=======
-
-            // DataTable
-    var table2 = $('#example').DataTable();
-
-    // Apply the search
-    table2.columns().every( function () {
-        var that = this;
-
-        $( 'input', this.footer() ).on( 'keyup change clear', function () {
-            if ( that.search() !== this.value ) {
-                that
-                    .search( this.value )
-                    .draw();
-            }
-        } );
-    } );
-        }
->>>>>>> 603f6a9bfdfc7a97f363d0b0c049556ec3b8b529
     );
 </script>
