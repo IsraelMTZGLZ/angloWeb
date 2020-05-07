@@ -25,7 +25,13 @@
               <?php if($user->typeUsuario=="Admin") { ;?>
                 <a href="Home">
                   <i class="site-menu-icon fas fa-home" aria-hidden="true" style="font-size: 20px;"></i>
-                  <span class="site-menu-title">Home</span>
+                  <span class="site-menu-title">Inicio</span>
+                </a>
+              <?php } ;?>
+              <?php if($user->typeUsuario=="Agente") { ;?>
+                <a href="HomeAgente">
+                  <i class="site-menu-icon fas fa-home" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Inicio</span>
                 </a>
               <?php } ;?>
             </li>
