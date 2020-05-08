@@ -44,7 +44,7 @@
  </div>
 
 <!--bar idioma-->
-<div class="share-bar right d-none d-sm-block"><!-- Set position: top,left,right,bottom -->
+<div class="share-bar rightI d-none d-sm-block"><!-- Set position: top,left,right,bottom -->
   <ul style="margin-top: 30px;">
     <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
       <a href="<?php echo ($this->session->flashdata('blog')) ? '../Language/spanish' : 'Language/spanish';?>">
