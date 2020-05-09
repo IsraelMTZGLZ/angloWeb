@@ -6,7 +6,7 @@
   --border-radius-size: 14px;
   --barbarian: #EC9B3B;
   --archer: #EE5487;
-  --giant: #F3011A;
+  --giant: #F1C40F;
   --goblin: #82BB30;
   --wizard: #4FACFF;
 
@@ -44,7 +44,7 @@ $wizard: #4FACFF;
 
 .clash-card {
   background: white;
-  width: 350px;
+  width: auto;
   display: inline-block;
   -webkit-border-radius: 23px !important;
   -moz-border-radius: 23px !important;
@@ -63,18 +63,19 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--barbarian {
-  background: url('<?=base_url('resources/assets/Informativa/images/barbarian-bg.png');?>') !important;
+  background: url('<?=base_url('resources/assets/Informativa/images/barbarian-bg.jpg');?>') !important;
 
 }
 
 .imagencard {
-
-  position: absolute;
+  position: relative;
   top: 26px;
-  left:60px;
+  left:3px;
+  right:26px;
+  bottom:26px;
 }
 .clash-card__image--archer {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  background: url('<?=base_url('resources/assets/Informativa/images/archer-bg.jpg');?>');
   img {
     width: 400px;
     position: absolute;
@@ -84,7 +85,7 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--giant {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  background: url('<?=base_url('resources/assets/Informativa/images/giant-bg.jpg');?>');
   img {
     width: 340px;
     position: absolute;
@@ -94,7 +95,7 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--goblin {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  background: url('<?=base_url('resources/assets/Informativa/images/goblin-bg.jpg');?>');
   img {
     width: 370px;
     position: absolute;
@@ -104,7 +105,7 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--wizard {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+  background: url('<?=base_url('resources/assets/Informativa/images/wizard-bg.jpg');?>');
   img {
     width: 345px;
     position: absolute;
@@ -144,7 +145,7 @@ $wizard: #4FACFF;
 .clash-card__unit-name {
   font-size: 18px;
   color: black;
-  font-weight: 900;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -156,6 +157,19 @@ $wizard: #4FACFF;
 .where{
   font-size: 18px;
   color: black;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.closed{
+  font-size: 30px;
+  color: red;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.signoadmiracion{
+  font-size: 20px;
+  color: white;
   font-weight: 900;
   margin-bottom: 5px;
 }
@@ -166,7 +180,23 @@ $wizard: #4FACFF;
   font-weight: 900;
   margin-bottom: 5px;
 }
+.theadtable{
+  background:  var(--wizard);
+  color: white;
+}
+.theadtabletw{
+  background:  var(--goblin);
+  color: white;
+}
+.theadtableth{
+  background:  var(--barbarian);
+  color: white;
+}
 
+.theadtablefo{
+  background:  var(--giant);
+  color: white;
+}
 .clash-card__unit-stats--barbarian {
   background:var(--barbarian);
 
@@ -264,10 +294,6 @@ font-size: 18px;
 }
 
 
-#mdialTamanio{
-  width: 80% !important;
-}
-
 </style>
 <div class="page_title_section float_left">
 
@@ -297,7 +323,8 @@ font-size: 18px;
                   <li data-filter=".website"><a href="#">Universidades</a></li>
                   <li data-filter=".design"><a href="#">Preparatorias</a></li>
                   <li data-filter=".ux_ui"><a href="#">Escuelas de inglés</a></li>
-                    <li data-filter=".ux_uy"><a href="#">Cursos de verano</a></li>
+                  <li data-filter=".ux_uy"><a href="#">Cursos de verano</a></li>
+                  <li data-filter=".ux_uyy"><a href="#">Cursos de verano de inglés</a></li>
               </ul>
           </div>
 
@@ -825,7 +852,7 @@ font-size: 18px;
                       </div>
                   </div>
                   <!-- inicia v-->
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ux_uy ">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                       <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/u_arts.jpg');?>" alt="">
                           <div class="portfolio_hover">
@@ -884,73 +911,6 @@ font-size: 18px;
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                       <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_concord.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                <div class="col-7">
-                                  <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>">
-                                </div>
-                                <div class="col-5">
-                                  <a data-toggle="modal" data-target="#concordVeranoModal"> Concord College</a>
-                                </div>
-                              </div>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#concordVeranoModal"></button></i>
-                              </div>
-                          </div>
-                          <a data-toggle="modal" data-target="#concordVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_chester.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                <div class="col-7">
-                                  <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>">
-                                </div>
-                                <div class="col-5">
-                                   <a data-toggle="modal" data-target="#chesterVeranoModal">University of Chester</a>                                   </div>
-                              </div>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <a data-toggle="modal" data-target="#chesterVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/new_new_eselect.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                <div class="col-7">
-                                  <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>">
-                                </div>
-                                <div class="col-5">
-                                   <a data-toggle="modal" data-target="#cambridgeVeranoModal">Select English</a>                                   </div>
-                              </div>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <a data-toggle="modal" data-target="#cambridgeVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/prepa_nto.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a data-toggle="modal" data-target="#intoVeranoModal"> Into UK</a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#intoVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <a data-toggle="modal" data-target="#intoVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ux_uy ">
-                      <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/u_queen-mary.jpg');?>" alt="">
                           <div class="portfolio_hover">
                           <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
@@ -965,6 +925,42 @@ font-size: 18px;
                                </div>
                           </div>
                        <a data-toggle="modal" data-target="#queenVeranoModal"><div class="portfolio_overlay"></div></a>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                      <div class="portfolio_item">
+                          <img src="<?=base_url('resources/assets/Informativa/images/u_west-of-england.jpg');?>" alt="">
+                          <div class="portfolio_hover">
+                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="col-7">
+                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>">
+                                </div>
+                                <div class="col-5">
+                                   <a data-toggle="modal" data-target="#uweVeranoModal">University of the West of England</a>                                   </div>
+                              </div>
+                              <div class="zoom_popup">
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#uweVeranoModal"></button></i>
+                              </div>
+                          </div>
+                        <a data-toggle="modal" data-target="#uweVeranoModal"><div class="portfolio_overlay"></div></a>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                      <div class="portfolio_item">
+                          <img src="<?=base_url('resources/assets/Informativa/images/v_york.jpg');?>" alt="">
+                          <div class="portfolio_hover">
+                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="col-7">
+                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>">
+                                </div>
+                                <div class="col-5">
+                                   <a data-toggle="modal" data-target="#ueaVeranoModal">University of East Anglia</a>                                   </div>
+                              </div>
+                              <div class="zoom_popup">
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#ueaVeranoModal"></button></i>
+                              </div>
+                          </div>
+                   <a data-toggle="modal" data-target="#ueaVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
@@ -987,14 +983,14 @@ font-size: 18px;
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                       <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_touton.jpg');?>" alt="">
+                          <img src="<?=base_url('resources/assets/Informativa/images/prepamodal_atauton.png');?>" alt="">
                           <div class="portfolio_hover">
                             <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                 <div class="col-7">
-                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>">
+                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/prepa_tauton_logo.jpeg');?>">
                                 </div>
                                 <div class="col-5">
-                                   <a data-toggle="modal" data-target="#tauntonVeranoModal">Bridgwater & Taunton College</a>                                   </div>
+                                   <a data-toggle="modal" data-target="#tauntonVeranoModal">Tauton School</a>                                   </div>
                               </div>
                               <div class="zoom_popup">
                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#tauntonVeranoModal"></button></i>
@@ -1005,96 +1001,62 @@ font-size: 18px;
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
                       <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_york.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                <div class="col-7">
-                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>">
-                                </div>
-                                <div class="col-5">
-                                   <a data-toggle="modal" data-target="#ueaVeranoModal">University of East Anglia</a>                                   </div>
-                              </div>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#ueaVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <a data-toggle="modal" data-target="#ueaVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy  ">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/u_west-of-england.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                <div class="col-7">
-                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>">
-                                </div>
-                                <div class="col-5">
-                                   <a data-toggle="modal" data-target="#uweVeranoModal">University of the West of England</a>                                   </div>
-                              </div>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#uweVeranoModal"></button></i>
-                              </div>
-                          </div>
-                        <a data-toggle="modal" data-target="#uweVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/new_new_Bathh.jpg');?>" alt="">
+                          <img src="<?=base_url('resources/assets/Informativa/images/v_concord.jpg');?>" alt="">
                           <div class="portfolio_hover">
                               <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                 <div class="col-7">
-                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>">
                                 </div>
                                 <div class="col-5">
-                                   <a data-toggle="modal" data-target="#bathVeranoModal">Bath Academic</a>                                   </div>
-                              </div>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <a data-toggle="modal" data-target="#bathVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
-                                <div class="col-7">
-                                  <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>">
+                                  <a data-toggle="modal" data-target="#concordVeranoModal"> Concord College</a>
                                 </div>
-                                <div class="col-5">
-                                   <a data-toggle="modal" data-target="#cambridgeVeranoInglesModal">Cambridge Academy of English</a>                                   </div>
                               </div>
                               <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoInglesModal"></button></i>
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#concordVeranoModal"></button></i>
                               </div>
                           </div>
-                   <a data-toggle="modal" data-target="#cambridgeVeranoInglesModal"><div class="portfolio_overlay"></div></a>
+                          <a data-toggle="modal" data-target="#concordVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
 
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                  <!-- //termina -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
                       <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_brington.jpg');?>" alt="">
+                          <img src="<?=base_url('resources/assets/Informativa/images/new_newchester-english-in-chester-001Modal.jpg');?>" alt="">
+                          <div class="portfolio_hover">
+                              <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="col-7">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>">
+                                </div>
+                                <div class="col-5">
+                                   <a data-toggle="modal" data-target="#chesterVeranoModal">English in Chester</a>                                   </div>
+                              </div>
+                              <div class="zoom_popup">
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterVeranoModal"></button></i>
+                              </div>
+                          </div>
+                   <a data-toggle="modal" data-target="#chesterVeranoModal"><div class="portfolio_overlay"></div></a>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
+                      <div class="portfolio_item">
+                          <img src="<?=base_url('resources/assets/Informativa/images/new_new_eselect.jpg');?>" alt="">
                           <div class="portfolio_hover">
                           <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                 <div class="col-7">
-                                  <img src="<?=base_url('resources/assets/Informativa/images/v_brighton_logo.jpg');?>">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>">
                                 </div>
                                 <div class="col-5">
-                                   <a data-toggle="modal" data-target="#brightonVeranoModal">University of Brighton</a>                                   </div>
+                                   <a data-toggle="modal" data-target="#cambridgeVeranoModal">Select English</a>                                   </div>
                               </div>
                               <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#brightonVeranoModal"></button></i>
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoModal"></button></i>
                               </div>
                           </div>
-                   <a data-toggle="modal" data-target="#brightonVeranoModal"><div class="portfolio_overlay"></div></a>
+                   <a data-toggle="modal" data-target="#cambridgeVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
                       <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourne.jpg');?>" alt="">
                           <div class="portfolio_hover">
@@ -1112,7 +1074,62 @@ font-size: 18px;
                    <a data-toggle="modal" data-target="#eastbourneVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
+                      <div class="portfolio_item">
+                          <img src="<?=base_url('resources/assets/Informativa/images/e_stafford_house.jpg');?>" alt="">
+                          <div class="portfolio_hover">
+                              <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="col-7">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>">
+                                </div>
+                                <div class="col-5">
+                                <a data-toggle="modal" data-target="#stanfordVeranoModal">  Stafford house </a>
+                                </div>
+                              </div>
+                              <div class="zoom_popup">
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#stanfordVeranoModal"></button></i>
+                              </div>
+                          </div>
+                   <a data-toggle="modal" data-target="#stanfordVeranoModal"><div class="portfolio_overlay"></div></a>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
+                      <div class="portfolio_item">
+                          <img src="<?=base_url('resources/assets/Informativa/images/new_new_Bathh.jpg');?>" alt="">
+                          <div class="portfolio_hover">
+                              <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="col-7">
+                                  <img style="background: white" src="<?=base_url('resources/assets/Informativa/images/lp_bath.png');?>">
+                                </div>
+                                <div class="col-5">
+                                   <a data-toggle="modal" data-target="#bathVeranoModal">Bath Academic</a>                                   </div>
+                              </div>
+                              <div class="zoom_popup">
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#bathVeranoModal"></button></i>
+                              </div>
+                          </div>
+                   <a data-toggle="modal" data-target="#bathVeranoModal"><div class="portfolio_overlay"></div></a>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
+                      <div class="portfolio_item">
+                          <img src="<?=base_url('resources/assets/Informativa/images/e_ecambrige.jpg');?>" alt="">
+                          <div class="portfolio_hover">
+                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="col-7">
+                                  <img style="width: 80%" src="<?=base_url('resources/assets/Informativa/images/new_CAE-Cambridge-Academy-of-English.jpg');?>">
+                                </div>
+                                <div class="col-5">
+                                   <a data-toggle="modal" data-target="#cambridgeVeranoInglesModal">Cambridge Academy of English</a>                                   </div>
+                              </div>
+                              <div class="zoom_popup">
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoInglesModal"></button></i>
+                              </div>
+                          </div>
+                   <a data-toggle="modal" data-target="#cambridgeVeranoInglesModal"><div class="portfolio_overlay"></div></a>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
                       <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/prepa_stonyhurts.jpg');?>" alt="">
                           <div class="portfolio_hover">
@@ -1130,120 +1147,19 @@ font-size: 18px;
                           <a data-toggle="modal" data-target="#stonyhurtsVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
-
-                  <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
                       <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_cambridge-university.jpg');?>" alt="">
+                          <img src="<?=base_url('resources/assets/Informativa/images/prepa_nto.jpg');?>" alt="">
                           <div class="portfolio_hover">
-                              <a href="#"> Cambridge  <span>LEER MÁS </span></a>
+                              <a data-toggle="modal" data-target="#intoVeranoModal"> Into UK</a>
                               <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cambridgeVeranoModal"></button></i>
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#intoVeranoModal"></button></i>
                               </div>
                           </div>
-                   <div class="portfolio_overlay"></div>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_Canterbury.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> Canterbury <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#canterburyVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <div class="portfolio_overlay"></div>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 v_chester.jpgcol-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_chester.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> Chester <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#chesterVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <div class="portfolio_overlay"></div>
+                   <a data-toggle="modal" data-target="#intoVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
 
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_Cork_irland.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> Cork, Ireland  <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#cork_IrelandVeranoModal"></button></i>
-                              </div>
-                          </div>
-                  <div class="portfolio_overlay"></div>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_dublin.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> Dublin <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#dublinVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <div class="portfolio_overlay"></div>
-                      </div>
-                  </div>
-
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_london.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> London <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#LondonVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <div class="portfolio_overlay"></div>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_manchester.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> Manchester <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#manchesterVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <div class="portfolio_overlay"></div>
-                      </div>
-                  </div>
-
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_york.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> York <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#yorkVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <div class="portfolio_overlay"></div>
-                      </div>
-                  </div>
-
-
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/v_Eastbourne.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a href="#"> Eastbourne <span>LEER MÁS </span></a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <div class="portfolio_overlay"></div>
-                      </div>
-                  </div> -->
 
               </div>
 
@@ -1668,7 +1584,6 @@ font-size: 18px;
               <hr>
             </div>
             <div class="row">
-              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
 
               <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
                     <a style="width: 100%;" href="../Login" > Me interesa</a>
@@ -3010,9 +2925,6 @@ font-size: 18px;
           <div class="row">
             <hr>
           </div>
-          <div class="row">
-            <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-          </div>
         </div>
         <div class="col-md-12 ">
         <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
@@ -3090,9 +3002,6 @@ font-size: 18px;
             <div class="row">
               <hr>
             </div>
-            <div class="row">
-              <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-            </div>
           </div>
           <div class="col-md-12 ">
           <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
@@ -3168,9 +3077,6 @@ font-size: 18px;
 
           <div class="row">
             <hr>
-          </div>
-          <div class="row">
-            <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
           </div>
         </div>
         <div class="col-md-12 ">
@@ -3249,9 +3155,6 @@ font-size: 18px;
           <div class="row">
             <hr>
           </div>
-          <div class="row">
-            <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-          </div>
         </div>
         <div class="col-md-12 ">
         <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
@@ -3328,9 +3231,6 @@ font-size: 18px;
           <div class="row">
             <hr>
           </div>
-          <div class="row">
-            <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-          </div>
         </div>
         <div class="col-md-12 ">
         <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
@@ -3406,9 +3306,6 @@ font-size: 18px;
 
           <div class="row">
             <hr>
-          </div>
-          <div class="row">
-            <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
           </div>
         </div>
         <div class="col-md-12 ">
@@ -3788,29 +3685,7 @@ font-size: 18px;
               <div class="col-md-4"><b>Boston, USA:</b> </div>
               <div class="col-md-4 "> <a href="https://g.page/stafford-house-boston?share" target="_blank" > 38 Chauncy St 8th floor, Boston, MA 02111, Estados Unidos</a> </div>
             </div>
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Mayor de (16+).</li></div>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de curso</b></div>
-                <div class="col-md-12"><li>Inglés general.</li></div>
-                <div class="col-md-12"><li>Inglés profesional (25+).</li></div>
-                <div class="col-md-12"><li>Preparación para exámenes.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
+            <br>
             <div class="list-group">
               <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
                 Alojamiento
@@ -3821,6 +3696,466 @@ font-size: 18px;
             <div class="row">
               <hr>
             </div>
+            <div class="row">
+
+              <div class="col-md-12"><li>Acreditada por el British Council en Londres.</li></div>
+              <div class="col-md-12"><li>Cuenta con los más altos estándares con más de 60 años de experiencia y éxito.</li></div>
+              <div class="col-md-12"><li>Clases pequeñas(10 en primedio, máximo 14), Profesores altamente calificados, Cuenta con última tecnología  y tableros inteligentes en todos los salones.</li></div>
+
+              <div class="col-md-12 ">
+
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="youtube-player" data-id="Wztg6uPsJpE"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RNiSEej3qA"></iframe>
+          </div>-->
+
+          <hr>
+
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="stanfordVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header">
+          <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/e_stafford_houseModal.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 	1952.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4"><b>London:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/Ycju8LdURUVEbCMaA" target="_blank" > Londres SE1 5JA, Reino Unido </a> </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4"><b>Brighton:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/8fqbcbiC9WhTSiHH6" target="_blank" > 61 Western Rd, Hove BN3 1JD, Reino Unido</a> </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4"><b>Canterbury:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/fHtg59F324RBwaat8" target="_blank" > 19 New Dover Rd, Canterbury CT1 3AH, Reino Unido </a> </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4"><b>Cambridge:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/uLPgmAYTYmDJxciV9" target="_blank" >15 Round Church St, Cambridge CB5 8AD, Reino Unido </a> </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4"><b>Boston, USA:</b> </div>
+              <div class="col-md-4 "> <a href="https://g.page/stafford-house-boston?share" target="_blank" > 38 Chauncy St 8th floor, Boston, MA 02111, Estados Unidos</a> </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="slide-container ">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Actividades de Aventura </div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes en este curso participarán en emocionantes actividades en Rutland Water, la reserva natural que se encuentra cerca de la escuela. Entre las actividades están, deportes acuáticos, montar a caballo, escalada, construir refugios de emergencia y paseo guiado en bicicleta.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Oakham</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>4 Jul <b>Salida: </b>2 Ago</p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–4 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12-17 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Pre-Intermedio a Avanzado </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£368 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Arte</div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes trabajarán en diferentes disciplinas artísticas, fotografía, trabajo 3D.Realizarán su portfolio y lo presentarán a otros estudiantes.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Malvern</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>4 Jul <b>Salida: </b>26 Jul</p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–2 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12-17 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico a Avanzado </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£273 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Basketball</div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes tendrán 9 horas a la semana de clases de basketball con entrenadores acreditados. El entrenamiento se enfocará en las habilidades y técnicas usadas en el juego y lo pondrán a prueba en torneos semanales.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Canterbury</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>21 Jun<b>Salida: </b>16 Ago</p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–4 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12-17 años</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico a Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£273 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                        </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card archer">
+                           <div class="clash-card__image clash-card__image--archer">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--archer">Teatro</div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes en este curso desarrollarán su conocimiento de técnicas en teatro y artes escénicas. Trabajarán en sus habilidades físicas y vocales.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Malvern y Woodcote</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>5 Jul<b>Salida: </b>26 Jul </p>
+                             <p><b>Llegada: </b>5 Jul<b>Salida: </b>2 Ago </p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–2 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12-17 años</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico a Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£273 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                        </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Rugby</div>
+                           <div class="clash-card__unit-description">
+                             Este curso será impartido por Glenn Gelderbloom, jugador profesional del equipo Leicester Tigers campeones de la copa Europea. Actualmente es entrenador en Leicester Tigers Academy.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Oakham</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>5 Jul<b>Salida: </b>26 Jul</p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–4 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 12-17 años</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico a Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£295 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Equitación</div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes aprenderán a mantener limpio y cuidado un establo de caballos. Usar el equipamiento de equitación así como disfrutar de equitación den tro y al aire libre con instructores calificados.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Malvern</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b> 5 Jul<b>Salida: </b>26 Jul</p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–2 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 12-17 años</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico a Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£550 por semana</div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Navegación</div>
+                           <div class="clash-card__unit-description">
+                             (Todos los estudiantes deberán saber nadar con confianza en el mar)
+                             Este programa está diseñado para permitirle a los estudiantes obtener confianza en el agua mientras se divierten. Las sesiones se llevarán a cabo con  Royal Yachting Association Instructor en el puerto de Dove.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Dover College</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>5 Jul <b>Salida: </b>19 Jul</p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                              2 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12-17 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico a Avanzado </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£368 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Tenis</div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes tendrán 9 horas de clases a la semana de tenis profesional, impartidos por entrenadores calificados de Malvern Tennis Academy. Las sesiones incluyen enseñanza de técnicas para golpear la pelota en el juego.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Malvern</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>5 Jul<b>Salida: </b>26 Jul</p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–4 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12-17 años</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico a Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£295 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                        </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card archer">
+                           <div class="clash-card__image clash-card__image--archer">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--archer">Codificación de Videojuegos</div>
+                           <div class="clash-card__unit-description">
+                            Los estudiantes aprenderán las bases de codificación y programación ya que lograrán crear su propio videojuego.
+                           </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Oakham</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>4 Jul<b>Salida: </b>02 Ago </p>
+                           </div>
+                           <p class="where">Duración</p>
+                           <div class="clash-card__unit-description">
+                             1–2 semanas
+                           </div>
+                           <p class="where">El costo por semana incluye: </p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, comida y cena, suplementos para el curso, actividades sociales programadas y costo de inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12-17 años</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Pre-Intermedio a Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£368 por semana</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                        </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                 </div> <!-- end row two -->
+              </div><!-- end slide continer-->
+            </div>
+            <br>
             <div class="row">
 
               <div class="col-md-12"><li>Acreditada por el British Council en Londres.</li></div>
@@ -4318,10 +4653,6 @@ font-size: 18px;
               <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_Bathh.jpg');?>" alt=""></div>
             </div>
           </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-          <h3 class="col-md-4 "></h3> -->
-
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -4333,54 +4664,146 @@ font-size: 18px;
               <div class="col-md-4"><b>Ubicación:</b> </div>
               <div class="col-md-4 "> <a href="https://goo.gl/maps/u82xj3PPHUkcMBsy8" target="_blank" >27 Queen Square, Bath BA1 2HX,United Kingdom</a> </div>
             </div>
+            <br>
             <div class="row">
-              <hr>
+                <div class="slide-container ">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">JUNIOR SUMMER SCHOOL</div>
+                           <div class="clash-card__unit-description">
+                             El mejor ambiente para jóvenes que quieren desarrollar sus habilidades en inglés que les gustaría conocer gente nueva y hacer nuevos amigos.
+                           </div>
+                           <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>29 de Junio <b>Salida: </b>31 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12 - 16 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat"> Básico - Avanzado</div>
+                             </div>
+                           </div>
 
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                         <div class="wrapper">
+                          <table class="table table-bordered">
+                            <thead class="theadtabletw">
+                              <tr>
+                                <th >Junior Summer School en Bath Academy (Casa anfitriona y residencia)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>15 horas por semana de clases, programa completo de actividades, materiales, comidas y alojamiento</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table table-bordered">
+                            <thead class="theadtabletw">
+                              <tr>
+                                <th>1 semana</th>
+                                <th>2 semanas</th>
+                                <th>3 semanas</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>£630</td>
+                                <td>£1,240</td>
+                                <td>£1,830</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                         </div>
+                      </div>
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                        <div class="wrapper">
+                         <table class="table table-bordered">
+                           <thead class="theadtableth">
+                             <tr>
+                               <th >Junior Summer School at Milton Abbey (Residencial)</th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                             <tr>
+                               <td>15 horas por semana de clases, programa completo de actividades, materiales, comidas y alojamiento</td>
+                             </tr>
+                           </tbody>
+                         </table>
+                         <table class="table table-bordered">
+                           <thead class="theadtableth">
+                             <tr>
+                               <th>1 semana</th>
+                               <th>2 semanas</th>
+                               <th>3 semanas</th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                             <tr>
+                               <td>£630</td>
+                               <td>£1,240</td>
+                               <td>£1,830</td>
+                             </tr>
+                           </tbody>
+                         </table>
+                        </div>
+                      </div>
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">MILTON ABBEY JUNIOR SUMMER SCHOOL</div>
+                           <div class="clash-card__unit-description">
+                             El mejor ambiente para jóvenes que quieren desarrollar sus habilidades en inglés que les gustaría conocer gente nueva y hacer nuevos amigos.
+                           </div>
+                           <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>05 de Julio <b>Salida: </b>19 Julio 2020</p>
+                           </div>
+                           <p class="where">Incluye</p>
+                           <div class="clash-card__unit-description">
+                             Alimentos, alojamiento, actividades programadas, excursiones.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 9 - 16 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico - Avanzado</div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                 </div> <!-- end row two -->
+              </div><!-- end slide continer-->
             </div>
+            <br>
             <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Junior 7-13.</li></div>
-                <div class="col-md-12"><li>Senior 14 - 17.</li></div>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de curso</b></div>
-                <div class="col-md-12"><li>Inglés.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-            </div>
-
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-
-              <div class="col-md-12"><li>Es la única del British Council acreditada Inglés centro de enseñanza de idiomas de Chester.</li></div>
-              <div class="col-md-12"><li>Inglés en Chester es una comunidad. La gente hace la escuela lo que es hoy.</li></div>
-              <div class="col-md-12"><li>Consideramos a todos como parte vital de la escual desde el momento de su llegada a Chester.</li></div>
-
               <div class="col-md-12 ">
-
               <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
                     <a style="width: 100%;" href="../Login" > Me interesa</a>
                 </div>
-                </div>
-
+              </div>
             </div>
           </div>
           <div class="row">
@@ -4828,33 +5251,131 @@ font-size: 18px;
               <hr>
 
             </div>
+            <br>
             <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Eastbourne</b></div>
-                <div class="col-md-12"><li>Nuestros cursos y la enseñanza están diseñados para proporcionar una formación eficaz para estudiantes que necesitan Inglés para su trabajo, estudio, viajes o placer personal.</li></div>
+                <div class="slide-container ">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Brighton</div>
+                           <div class="clash-card__level clash-card__level--barbarian">Summer Vacation course (V) </div>
+                           <div class="clash-card__unit-description">
+                             Diseñado para jóvenes adultos, medio día de estudio y medio día de actividades sociales.
+                           </div>
+                             <p class="where">Costo</p>
+                           <div class="clash-card__unit-description">
+                             <ul>
+                               <li>- £756 2 semanas </li>
+                               <li>- £1,086 3 semanas</li>
+                               <li>- £1,368 4 semanas + paquete de actividades por £85</li>
+                             </ul>
+                           </div>
+                           <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, cena, materiales, actividades sociales y excursiones programadas.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">16-22 años. </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Inicio:</div>
+                               <div class="stat">Cualquier lunes de Julio - Agosto </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Nivel de Ingles:</div>
+                               <div class="stat">Principiante a Avanzado</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Brighton</div>
+                           <div class="clash-card__level clash-card__level--wizard">Junior Vacation course (VJ)</div>
+                           <div class="clash-card__unit-description">
+                             Diseñado para estudiantes que alguno de sus padres están tomando alguno de nuestros cursos de adulto. Medio día de clases y un programa completo de actividades supervisadas.
+                           </div>
+                           <p class="where">Costo:</p>
+                           <div class="clash-card__unit-description">
+                             <ul>
+                               <li>- £361 por semana  ( mínimo 2 semanas  + paquete de actividades por £85 )</li>
+                             </ul>
+                           </div>
+                           <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, desayuno, cena, materiales, actividades sociales y excursiones programadas.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">13-15 años </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat"> Principiante a Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Inicio:</div>
+                               <div class="stat"> Cualquier lunes de Julio - Agosto </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
 
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Eastbourne</div>
+                           <div class="clash-card__level clash-card__level--giant">Summer Plus course (SP)</div>
+                           <div class="clash-card__unit-description">
+                             Diseñado para jóvenes adultos, clases de inglés intensivo y actividades sociales.
+                           </div>
+                             <p class="where">Costo</p>
+                              <div class="clash-card__unit-description">
+                                £361 por semana
+                              </div>
+                              <p class="where">Incluye</p>
+                               <div class="clash-card__unit-description">
+                                 Alojamiento, desayuno, cena, actividades sociales programadas, futbol, cine, boliche, cabalgata, mini golf y excursiones.
+                               </div>
+                             <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                               <div class="one-third">
+                                 <div class="stat-value">Edad:</div>
+                                 <div class="stat">16-22 años</div>
+                               </div>
+                               <div class="one-third no-border">
+                                 <div class="stat-value">Nivel de inglés:</div>
+                                 <div class="stat"> Principiante a Avanzado</div>
+                               </div>
+                               <div class="one-third no-border">
+                                 <div class="stat-value">Inicio:</div>
+                                 <div class="stat"> Cualquier lunes de Junio - Agosto</div>
+                               </div>
+                             </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                 </div> <!-- end row two -->
+              </div><!-- end slide continer-->
             </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Eastbourne School of English ofrece los siguientes cursos:
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Cursos de inglés general (edad 17 +).</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Preparación para exámenes.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Preparación para la Universidad.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Cursos 50+ (Cursos para alumnos mayores de 50).</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Cursos para profesionales y gente de negocio.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Cursos de Verano para adolescentes.</button>
-
-            </div>
-
-            <div class="row">
-              <hr>
-            </div>
+            <br>
             <div class="row">
 
               <div class="col-md-12"><li>Eastbourne tiene mucho que ofrecer, incluyendo una selección de cines y teatros multiplex modernos, un hermoso paseo marítimo, un puerto deportivo de ocio y excelentes tiendas, tanto interiores como al aire libre.</li></div>
@@ -5091,8 +5612,8 @@ font-size: 18px;
               </button>
             </div>
             <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_touton_logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_touton.png');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_tauton_logo.jpeg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_atauton.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5110,11 +5631,490 @@ font-size: 18px;
               <div class="col-md-4"><b>Ubicación:</b> </div>
               <div class="col-md-4 "> <a href="https://goo.gl/maps/iqbNbiKKHm45cMhH8" target="_blank" >Staplegrove Rd, Taunton TA2 6AD, Reino Unido </a> </div>
             </div>
+            <br>
             <div class="row">
-              <hr>
+              <div class="slide-container ">
+                <div class="row">
+                 <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Programa Académico</div>
+                           <div class="clash-card__unit-description">
+                             Este curso ofrece una variedad de experiencias de aprendizaje del idioma inglés (3 horas) y otras materias académicas (2 horas).
+                           </div>
+                             <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 8-12 años </div>
+                             </div>
+
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">  £2,700 por 2 semanas </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">STEM: Computación, programación y robótica</div>
+                           <div class="clash-card__unit-description">
+                             Nuestros estudiantes serán introducidos al mundo de la tecnología y robótica. Diseñarán y programaran robots de Lego Mindstorms©.
+                           </div>
+                           <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                           </div>
+
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 8-12 años </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£2,500 por 2 semanas </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Multi - Deportes</div>
+                           <div class="clash-card__unit-description">
+                              Este curso de dos semanas tiene dos horas de un deporte diferente cada día, desde los deportes más tradicionales como fútbol​​, tenis, baloncesto, atletismo, bádminton y natación hasta los deportes menos conocidos como rugby, cricket, rounders, esgrima y netball. Y 3 horas de clases de inglés.
+                           </div>
+                             <p class="where">Costo Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">8-12 años</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £2,500 por 2 semanas </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card archer">
+                           <div class="clash-card__image clash-card__image--archer">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--archer">Cocina</div>
+                           <div class="clash-card__unit-description">
+                            El curso de cocina les brinda a nuestros estudiantes más jóvenes tres horas de inglés y dos horas de cocina práctica cada día, utilizando las excelentes instalaciones de cocina de la escuela Taunton Prep.
+                           </div>
+                             <p class="where">Costo Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">8-12 años  </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">£2,600 por 2 semanas </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                </div> <!-- end row two -->
+              </div><!-- end slide continer-->
+            </div>
+            <br>
+            <div class="row">
+              <table class="table table-bordered">
+                <thead class="theadtable">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Fechas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Summer School 1</td>
+                    <td>2 Semanas</td>
+                    <td>Sábado 4 de Julio – Sábado 18 de Julio 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Summer School 1</td>
+                    <td>2 Semanas</td>
+                    <td>Sábado 18 de Julio – Sábado 1 de Agosto 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Summer School 3</td>
+                    <td>2 Semanas</td>
+                    <td>Sábado 1 de Agosto – Sábado 15 de Agosto 2020</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <br>
+            <div class="row">
+              <div class="slide-container ">
+               <div class="row">
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card giant">
+                      <div class="clash-card__image clash-card__image--giant">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--giant">Académico</div>
+                      <div class="clash-card__unit-description">
+                        Dentro de cada tema, se les enseña a los estudiantes cómo investigar, organizar, evaluar, sintetizar y aplicar el conocimiento a diferentes situaciones.
+                      </div>
+                        <p class="where">Costo Incluye</p>
+                      <div class="clash-card__unit-description">
+                        Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">13-17 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat"> £2,700 por 2 semanas </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card barbarian">
+                      <div class="clash-card__image clash-card__image--barbarian">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--barbarian">Futuros líderes de negocios</div>
+                      <div class="clash-card__unit-description">
+                        Este curso proporciona una introducción ideal a los negocios, las finanzas y la economía.
+                      </div>
+                        <p class="where">Costo Incluye:</p>
+                      <div class="clash-card__unit-description">
+                        Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                     </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat"> 13-17 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat">£2,500 por 2 semanas </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card wizard">
+                      <div class="clash-card__image clash-card__image--wizard">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--wizard">STEM (Ciencia, Tecnología, Ingeniería y matemáticas)</div>
+                      <div class="clash-card__unit-description">
+                        Complementando las tres horas de clases de inglés, los estudiantes tienen dos horas diarias de enseñanza altamente práctica en Ciencias, Tecnología, Ingeniería y Matemáticas.
+                      </div>
+                        <p class="where">¿Costo Incluye:</p>
+                      <div class="clash-card__unit-description">
+                        Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">13-17 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat"> £2,500 por 2 semanas  </div>
+                        </div>
+                      </div>
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card goblin">
+                      <div class="clash-card__image clash-card__image--goblin">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--goblin">Artes Escénicas</div>
+                      <div class="clash-card__unit-description">
+                        Los estudiantes tienen la oportunidad de escribir e interpretar sus propios guiones, diseño de vestuario y el uso de efectos visuales y de audio.
+                      </div>
+                        <p class="where">Costo Incluye:</p>
+                      <div class="clash-card__unit-description">
+                        Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">13-17 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat"> £2,500 por 2 semanas </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card archer">
+                      <div class="clash-card__image clash-card__image--archer">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--archer">Golf</div>
+                      <div class="clash-card__unit-description">
+                        Esta es una oportunidad emocionante para los golfistas con algo de experiencia que desean mejorar sus habilidades y disfrutar jugando al golf con otros estudiantes de la misma edad.
+                      </div>
+                        <p class="where">Costo Incluye:</p>
+                      <div class="clash-card__unit-description">
+                        Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">13-17 años</div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat">  £2,700 por 2 semanas  </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card giant">
+                      <div class="clash-card__image clash-card__image--giant">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--giant">Tenis</div>
+                      <div class="clash-card__unit-description">
+                        Este curso está diseñado para jugadores de tenis que desean mejorar su juego mientras aprenden inglés.
+                      </div>
+                        <p class="where">Costo Incluye:</p>
+                      <div class="clash-card__unit-description">
+                        Matrícula, materiales didácticos, alojamiento, entrenamiento deportivo, informe académico completo y certificado del curso, comida, lavandería, actividades, seguro, excursiones y traslados a aeropuertos seleccionados (entre los horarios publicados en los días de traslado).
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">13-17 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat"> £2,500 por 2 semanas </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+               </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <table class="table table-bordered">
+                <thead class="theadtabletw">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Fechas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Summer School 1</td>
+                    <td>2 Semanas</td>
+                    <td>Sábado 4 de Julio – Sábado 18 de Julio 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Summer School 2</td>
+                    <td>2 Semanas</td>
+                    <td>Sábado 18 de Julio – Sábado 1 de Agosto 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Summer School 2</td>
+                    <td>2 Semanas</td>
+                    <td>Sábado 1 de Agosto – Sábado 15 de Agosto 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>GCSE Pre-Sessional</td>
+                    <td>2 Semanas</td>
+                    <td>Domingo 23 Agosto – Miércoles  2 de  Septiembre 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>A-Level/IB/Foundation Pre-Sessional</td>
+                    <td>2 Semanas</td>
+                    <td>Domingo 23 Agosto – Miércoles  2 de  Septiembre 2020</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12"><li>Al asistir a uno de nuestros cursos Pre-sessional, los estudiantes no solo pueden mejorar su dominio del inglés, sino que también pueden desarrollar habilidades académicas clave que los equiparán bien para su viaje educativo.</li></div>
 
             </div>
             <div class="row">
+              <div class="slide-container ">
+               <div class="row">
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                                        <div class="wrapper">
+                                          <div class="clash-card barbarian">
+                                            <div class="clash-card__image clash-card__image--barbarian">
+                                              <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                                            </div>
+                                            <div class="clash-card__level clash-card__level--barbarian">Pre – sessional GCSE</div>
+                                            <div class="clash-card__unit-description">
+                                              Estos cursos de 10 días están diseñados para proporcionar ese importante impulso para los estudiantes internacionales antes de unirse a un programa de Diploma GCSE, A Level, BTEC o IB (Bachillerato Internacional) en el Reino Unido.
+                                            </div>
+                                              <p class="where">Costo Incluye:</p>
+                                            <div class="clash-card__unit-description">
+                                              Los cursos incluyen tres horas de inglés académico intensivo cada mañana. Por las tardes, los estudiantes reciben dos horas de otra preparación académica, incluyendo lecciones, conferencias y talleres.
+                                            </div>
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                                              <div class="one-third">
+                                                <div class="stat-value">Edad:</div>
+                                                <div class="stat"> 14-16 años </div>
+                                              </div>
+                                              <div class="one-third no-border">
+                                                <div class="stat-value">Costo:</div>
+                                                <div class="stat"> £1,600 por 10 días </div>
+                                              </div>
+                                            </div>
+
+                                          </div> <!-- end clash-card barbarian-->
+                                          </div> <!-- end wrapper -->
+
+                                       </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                                        <div class="wrapper">
+                                          <div class="clash-card wizard">
+                                            <div class="clash-card__image clash-card__image--wizard">
+                                              <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                                            </div>
+                                            <div class="clash-card__level clash-card__level--wizard">Pre – sessional IB/A Levels</div>
+                                            <div class="clash-card__unit-description">
+                                              Estos cursos de 10 días están diseñados para proporcionar ese importante impulso para los estudiantes internacionales antes de unirse a un programa de Diploma GCSE, A Level, BTEC o IB (Bachillerato Internacional) en el Reino Unido.
+                                            </div>
+                                              <p class="where">Costo Incluye:</p>
+                                            <div class="clash-card__unit-description">
+                                              Los cursos incluyen tres horas de inglés académico intensivo cada mañana. Por las tardes, los estudiantes reciben dos horas de otra preparación académica, incluyendo lecciones, conferencias y talleres.
+                                            </div>
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                                              <div class="one-third">
+                                                <div class="stat-value">Edad:</div>
+                                                <div class="stat">17-18 años </div>
+                                              </div>
+                                              <div class="one-third no-border">
+                                                <div class="stat-value">Costo:</div>
+                                                <div class="stat"> £1,600 por 10 días </div>
+                                              </div>
+                                            </div>
+                                          </div> <!-- end clash-card barbarian-->
+                                          </div> <!-- end wrapper -->
+
+                                       </div> <!-- end col waper-->
+               </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <table class="table table-bordered">
+                <thead class="theadtableth">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Fechas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>GCSE Pre-Sessional</td>
+                    <td>10 Días</td>
+                    <td>Domingo 23 Agosto – Miércoles  2 de  Septiembre 2020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>A-Level/IB/Foundation Pre-Sessional</td>
+                    <td>10 Días</td>
+                    <td>Domingo 23 Agosto – Miércoles  2 de  Septiembre 2020</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <br>
+            <!-- <div class="row">
               <hr>
                 <div class="col-md-12 " style="align:center"><b>Edades</b></div>
                 <div class="col-md-12"><li>Junior 7-13.</li></div>
@@ -5127,19 +6127,19 @@ font-size: 18px;
                 <div class="col-md-12"><li>Academico.</li></div>
                 <div class="col-md-12"><li>Combinado.</li></div>
 
-            </div>
+            </div> -->
 
             <div class="row">
               <hr>
 
             </div>
-            <div class="list-group">
+            <!-- <div class="list-group">
               <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
                 Alojamiento
               </button>
               <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
 
-            </div>
+            </div> -->
 
             <div class="row">
               <hr>
@@ -5268,11 +6268,6 @@ font-size: 18px;
       </div>
 </div>
 
-
-
-
-
-
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="ueaVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -5304,6 +6299,101 @@ font-size: 18px;
               <div class="col-md-4"><b>Ubicación:</b> </div>
               <div class="col-md-4 "> <a href="javascript:;">Norwich  (90 mins) de Londres. </a> </div>
             </div>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="slide-container ">
+
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Marca, publicidad y marketing digital.</div>
+                           <div class="clash-card__unit-description">
+                             Este módulo de ayudará a explorar la conexión entre publicidad y las técnicas de mercadotecnia digital – y como le dan forma a los mensajes de las marcas.
+                           </div>
+                             <p class="where">Viajes de Campo incluidos: </p>
+                             <div class="clash-card__unit-description">
+                               <p>- BBC Voices Workshop (The Forum, Norwich), London’s Museum of Brands and The History of Advertising Trust.</p>
+                             </div>
+
+                           <!-- <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS overall 5.0</div>
+                             </div>
+                           </div> -->
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Escritura Creativa.</div>
+                           <div class="clash-card__unit-description">
+                            Estudiaras el trabajo de autores reconocidos y obtendrás las habilidades esenciales para convertirte en escritor, incluida la redacción de borradores y la lectura como escritor.
+                           </div>
+                           <p class="where">Viajes de Campo incluidos:</p>
+                           <div class="clash-card__unit-description">
+                             Shakespeare’s Globe Theatre (London), National Centre for Writing (Norwich).
+                           </div>
+
+                           <!-- <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">16+  </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS overall 5.0 / intermedio</div>
+                             </div>
+                           </div> -->
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Ley Global de medios y comunicaciones.</div>
+                           <div class="clash-card__unit-description">
+                             Te alentaremos a compartir las leyes de tu país para encontrar los retos de la “sociedad de la información”
+                           </div>
+                           <p class="where">Viajes de Campo incluidos:</p>
+                           <div class="clash-card__unit-description">
+                             Te alentaremos a compartir las leyes de tu país para encontrar los retos de la “sociedad de la información”
+                           </div>
+
+
+                           <!-- <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">18+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS overall 5.0 / intermedio</div>
+                             </div>
+
+                           </div> -->
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                    </div> <!-- end row two -->
+              </div><!-- end slide continer-->
+            </div>
             <div class="row">
               <hr>
 
@@ -5323,7 +6413,7 @@ font-size: 18px;
               <hr>
 
             </div>
-            <div class="list-group">
+            <!-- <div class="list-group">
               <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
                 Facultades
               </button>
@@ -5333,7 +6423,7 @@ font-size: 18px;
               <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
               <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
               <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
-            </div>
+            </div> -->
             <div class="row">
               <hr>
             </div>
@@ -5361,8 +6451,6 @@ font-size: 18px;
       </div>
 
 </div>
-
-
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="cambridgeVeranoInglesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -5395,52 +6483,270 @@ font-size: 18px;
               <div class="col-md-4"><b>Ubicación:</b> </div>
               <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > Gaol Walk, University College, Cork, T12 YN60, Irlanda </a> </div>
             </div>
+            <br>
             <div class="row">
-              <hr>
+                <div class="slide-container ">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Cursos en casa anfitriona: Adolescentes </div>
+                           <div class="clash-card__unit-description">
+                            20 horas de clases por semana, actividades sociales y deportivas programadas
+                           </div>
+                           <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, comidas, traslados, actividades deportivas, excursiones, seguro médico e inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 - 16 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat"> Básico - Avanzado</div>
+                             </div>
+                           </div>
 
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                         <div class="wrapper">
+                          <table class="table table-bordered">
+                            <thead class="theadtabletw">
+                              <tr>
+                                <th>Therm</th>
+                                <th>Fechas</th>
+                                <th>Duración</th>
+                                <th>Costo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>T1</td>
+                                <td>22 Junio – 3 Julio 2020</td>
+                                <td>2 Semanas</td>
+                                <td>£1870</td>
+                              </tr>
+                              <tr>
+                                <td>T2</td>
+                                <td>6 Julio – 17 Julio 2020</td>
+                                <td> 2 Semanas</td>
+                                <td> £1870 </td>
+                              </tr>
+                              <tr>
+                                <td>T3</td>
+                                <td>20 Julio – 31 Julio 2020</td>
+                                <td>2 Semanas</td>
+                                <td>£1870</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                         </div>
+                      </div>
+
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                         <div class="wrapper">
+                          <table class="table table-bordered">
+                            <thead class="theadtableth">
+                              <tr>
+                                <th>Therm</th>
+                                <th>Fechas</th>
+                                <th>Duración</th>
+                                <th>Costo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>MH1</td>
+                                <td>6 Julio – 17 Julio 2020</td>
+                                <td>2 Semanas</td>
+                                <td>£2110</td>
+                              </tr>
+                              <tr>
+                                <td>MH1</td>
+                                <td>20 Julio – 31 Julio 2020</td>
+                                <td> 2 Semanas</td>
+                                <td> £2110 </td>
+                              </tr>
+                              <tr>
+                                <td>MH1 + 2</td>
+                                <td>6 Julio - 31 Julio 2020</td>
+                                <td>4 Semanas </td>
+                                <td>£3860</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                         </div>
+                      </div>
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Cursos en residencia: Niños </div>
+                           <div class="clash-card__unit-description">
+                             15 horas de clases por semana, actividades sociales y deportivas programadas.
+                           </div>
+                           <p class="where">Incluye</p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, comidas, traslados, actividades deportivas, excursiones, seguro médico e inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">9 - 13 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico - Avanzado</div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+
+                      <div class="col-xs-2 col-md-6">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Cursos en residencia: Adolescentes </div>
+                           <div class="clash-card__unit-description">
+                             15 horas de clases por semana, actividades sociales y deportivas programadas
+                           </div>
+                           <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, comidas, traslados, actividades deportivas, excursiones, seguro médico e inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">12 - 16 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat"> Básico - Avanzado</div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                         <div class="wrapper">
+                          <table class="table table-bordered">
+                            <thead class="theadtable">
+                              <tr>
+                                <th>Therm</th>
+                                <th>Fechas</th>
+                                <th>Duración</th>
+                                <th>Costo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>OBH1</td>
+                                <td>13 Julio – 24 Julio 2020</td>
+                                <td>2 Semanas</td>
+                                <td>£2110</td>
+                              </tr>
+                              <tr>
+                                <td>OBH2</td>
+                                <td>27 Julio – 07 Agosto 2020</td>
+                                <td> 2 Semanas</td>
+                                <td> £2110 </td>
+                              </tr>
+                              <tr>
+                                <td>OBH1 + 2</td>
+                                <td>13 Julio - 7 Agosto 2020</td>
+                                <td>4 Semanas </td>
+                                <td>£3860</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                         </div>
+                      </div>
+
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                         <div class="wrapper">
+                          <table class="table table-bordered">
+                            <thead class="theadtablefo">
+                              <tr>
+                                <th>Therm</th>
+                                <th>Fechas</th>
+                                <th>Duración</th>
+                                <th>Costo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>PHC1</td>
+                                <td>6 Julio – 17 Julio 2020</td>
+                                <td>2 Semanas</td>
+                                <td>£2110</td>
+                              </tr>
+                              <tr>
+                                <td>PHC2</td>
+                                <td>20 Julio – 31 Julio 2020</td>
+                                <td> 2 Semanas</td>
+                                <td> £2110 </td>
+                              </tr>
+                              <tr>
+                                <td>OBH1 + 2</td>
+                                <td>6 Julio - 31 Julio 2020</td>
+                                <td>4 Semanas </td>
+                                <td>£3860</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                         </div>
+                      </div>
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Cursos en residencia: Adolescentes </div>
+                           <div class="clash-card__unit-description">
+                             20 horas de clases por semana, actividades sociales y deportivas programadas.
+                           </div>
+                           <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Alojamiento, comidas, traslados, actividades deportivas, excursiones, seguro médico e inscripción.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 14 - 17 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico - Avanzado</div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                 </div> <!-- end row two -->
+              </div><!-- end slide continer-->
             </div>
+            <br>
             <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Cambridge</b></div>
-                <div class="col-md-12"><li>Creemos que su tiempo fuera del aula es tan importante como su trabajo en clase de ahí que tomemos "Inglaterra es nuestro salón de clases“ como nuestro lema.</li></div>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>CAE ofrece los siguientes cursos:</b></div>
-                <div class="col-md-12"><li>General English.</li></div>
-                <div class="col-md-12"><li>Intensive English.</li></div>
-                  <div class="col-md-12"><li>Summer Courses.</li></div>
-                    <div class="col-md-12"><li>Exam preparation of IELTS.</li></div>
-                      <div class="col-md-12"><li>Cambridge Exams.</li></div>
-                        <div class="col-md-12"><li>Writing Practice.</li></div>
-                          <div class="col-md-12"><li>Grammar workshop.</li></div>
-                <div class="col-md-12"><li>Speaking and Listening.</li></div>
-                <div class="col-md-12"><li>English for Law Students.</li></div>
-                <div class="col-md-12"><li>English for Business Students.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-
-              <!-- <div class="col-md-12"><li>20 o 26 horas de matrícula + programa social.</li></div>
-              <div class="col-md-12"><li>Excursión miércoles por la tarde + evento social jueves por la noche.</li></div>
-              <div class="col-md-12"><li>La Escuela de Verano ofrece oportunidades estructuradas y respaldadas para estudiantes de CCL y estudiantes internacionales visitantes para compartir una experiencia enriquecedora e intercultural.</li></div> -->
-
               <div class="col-md-12 ">
 
               <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
@@ -5465,6 +6771,736 @@ font-size: 18px;
         </div>
           <div class="bottom-strip"></div>
       </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="uweVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header">
+          <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min) de Londres. </a> </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 " style="align:center"><p class="closed">Aplicaciones cerradas para 2020</p></div>
+
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="slide-container ">
+
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Escuela de verano de lengua Inglesa y cultura Británica</div>
+                           <div class="clash-card__unit-description">
+                             Tendrás una experiencia universitaria en UK.
+                           </div>
+                             <p class="where">Costo </p>
+                             <div class="clash-card__unit-description">
+                               <p>- £1,150 paquete self-catering (Alimentos no incluidos. Ideal para los que prefieren cocinar sus alimentos. Solo disponible para mayores de 18 años.)</p>
+                               <p>- £1,450 Paquete todo incluído (Comidas incluidas. Paquete disponible para todos los estudiantes.)</p>
+                             </div>
+                             <p class="where">Incluye:</p>
+                             <div class="clash-card__unit-description">
+                               <ul>
+                                 <li>- Materiales</li>
+                                 <li>- Wi-Fi dentro de la universidad.</li>
+                                 <li>- Dos semanas de alojamiento el la Villa estudiantil en el campus de Frenchay habitación sencilla.</li>
+                                 <li>- Transferencias de aeropuerto ( horarios y días designados).</li>
+                                 <li>- Viajes</li>
+                                 <li>- Lunch de bienvenida y despedida.</li>
+                               </ul>
+                             </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS overall 5.0</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Escuela de verano de arte, medios y diseño</div>
+                           <div class="clash-card__unit-description">
+                            Despierta tu creatividad en un entorno que te alienta a desarrollar tu talento.
+                           </div>
+                           <p class="where">Costo: £2,500 </p>
+                           <p class="where">Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             <ul>
+                               <p class="where">Alojamiento:</p>
+                                 <li>-Todos los alimentos</li>
+                                 <li>-Acceso a internet en todas las habitaciones.</li>
+                                 <li>-Servicio de limpieza y cambio de ropa de cama semanal. </li>
+                                 <li>-Seguridad monitoreada 24/7</li>
+                            </ul>
+                           </div>
+
+                           <div class="clash-card__unit-description">
+                             <ul>
+                               <p class="where">Todos los alimentos:</p>
+                             <li>-Desayuno , Comida y cena. </li>
+                             <li>-Actividades sociales y viajes. </li>
+                             <li>-Transferencias de aeropuerto ( horarios y días designados)</li>
+                             <li>-Wi-Fi dentro de la Universidad</li>
+                             <li>-Certificado de asistencia por parte de UWE Bristol</li>
+                             </ul>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">16+  </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS overall 5.0 / intermedio</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Escuela de verano de ciencia.</div>
+                           <div class="clash-card__unit-description">
+                             Tendrás clases académicas de inglés combinadas con talleres de ciencias.
+                           </div>
+                           <p class="where">Costo  </p>
+                           <div class="clash-card__unit-description">
+                             <ul>
+                                 <li>-£1,150 paquete self-catering (Alimentos no incluidos. Ideal para los que prefieren cocinar sus alimentos. Solo disponible para mayores de 18 años.)</li>
+                                 <li>-£1,450 Paquete todo incluído (Comidas incluidas. Paquete disponible para todos los estudiantes.)</li>
+                            </ul>
+                           </div>
+
+                           <div class="clash-card__unit-description">
+                             <ul>
+                              <p class="where">Incluye:</p>
+                             <li>-Materiales. </li>
+                             <li>-Wi-Fi dentro de la universidad. </li>
+                             <li>-Dos semanas de alojamiento el la Villa estudiantil en el campus de Frenchay habitación sencilla.</li>
+                             <li>-Transferencias de aeropuerto ( horarios y días designados)</li>
+                             <li>-Viajes</li>
+                             <li>-Lunch de bienvenida y despedida</li>
+                             </ul>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">18+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS overall 5.0 / intermedio</div>
+                             </div>
+
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                    </div> <!-- end row two -->
+              </div><!-- end slide continer-->
+            </div>
+            <div class="row">
+              <hr>
+
+            </div>
+            <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">Guardian University Guide 28 en Reino Unido.</div>
+              <div class="col-md-6">11vo en el UK según encuesta de satisfacción estudiantil.</div>
+              <br>
+            </div>
+
+            <div class="row">
+              <hr>
+
+            </div>
+            <!-- <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+                Facultades
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arquitectura.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
+              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
+            </div> -->
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">The Guardian nombro a Bristol como una de las 10 ciudades más felices para vivir y trabajar en el Reino Unido.</div>
+
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="youtube-player" data-id="scLpnIm-XZo"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/scLpnIm-XZo"></iframe>
+          </div>-->
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="queenVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 1785.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="javascript:;" >Centro de Londres. </a> </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 " style="align:center"><p class="closed">Aplicaciones cerradas para 2020</p></div>
+
+            </div>
+
+            <div class="row">
+                <div class="slide-container ">
+
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Cultura y artes liberales</div>
+                           <div class="clash-card__unit-description">
+                             Descubre historia, cultura y arte en queen Mary.
+                           </div>
+                             <p class="where"></p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Alojamiento: </b>£670 por sesión
+                               <br>
+                              <b>Viajes de campo: </b>£10 - £20</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 18+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">  IELTS overall 7 / TOEFL iBT overall 100</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">  £1,700 1 sesión - £3,300 2 sesiones  </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Negocios, política y leyes</div>
+                           <div class="clash-card__unit-description">
+                             Tendrás un sofisticado entendimiento de la globalización.
+                           </div>
+                           <p class="where"></p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Alojamiento: </b>£670 por sesión
+                               <br>
+                              <b>Viajes de campo: </b>£10 - £20</p>
+                           </div>
+
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">18+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS overall 6.5 / TOEFL iBT overall 92</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,700 1 sesión - £3,300 2 sesiones </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Ciencia, medicina y tecnología</div>
+                           <div class="clash-card__unit-description">
+                             Entrenamiento básico en cirugía, desarrollo de investigaciones, aprender de programas como python. Eso y más aprenderás.
+                           </div>
+                           <p class="where"></p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Alojamiento: </b>£670 por sesión
+                               <br>
+                              <b>Viajes de campo: </b>£10 - £20</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">18+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">ELTS overall 6.5 / TOEFL iBT overall 100</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,700 1 sesión - £3,300 2 sesiones </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__unit-description">
+                             *Los estudiantes deberán haber completado dos semestres de estudio en la Universidad de su País.
+                             -Costos de viaje y alimentos no están incluídos
+                           </div>
+
+
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value"></div>
+                               <div class="stat">!</div>
+
+                             </div>
+
+                             <div class="one-third">
+                               <div class="stat-value"></div>
+                               <div class="stat"></div>
+
+                             </div>
+
+                             <div class="one-third no-border">
+                               <div class="stat-value"></div>
+                               <div class="stat"> </div>
+
+                             </div>
+
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                    </div> <!-- end row two -->
+              </div><!-- end slide continer-->
+            </div>
+            <div class="row">
+              <hr>
+
+            </div>
+            <!-- <div class="row">
+              <hr>
+                <div class="col-md-12 " style="align:center"><b>Principales facultades</b></div>
+                <div class="col-md-12"><li>Humanities and social sciences.</li></div>
+                <div class="col-md-12"><li>Science and engineering.</li></div>
+                <div class="col-md-12"><li>Medicine and Dentistry.</li></div>
+
+            </div> -->
+
+
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">En 1785 fundó la primera escuela de Medicina de Inglaterra en el Royal London Hospital.</div>
+
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="youtube-player" data-id="f9y6eeEK1oM"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9y6eeEK1oM"></iframe>
+          </div>-->
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="andrewVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <!-- <div class="top-strip"></div> -->
+      <div class="modal-header">
+        <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <div class="row">
+            <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+            <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
+          </div>
+        </div>
+        <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+        <h3 class="col-md-4 "></h3> -->
+
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4"><b>Fundación:</b> </div>
+            <div class="col-md-4 "> 1413.</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><b>Ubicación:</b> </div>
+            <div class="col-md-4 "> <a href="javascript:;" >1hr 30 mins de Londres en avión </a> </div>
+          </div>
+
+          <br>
+          <div class="row">
+          <div class="col-md-12">Para los estudiantes que están interesados ​​en experimentar lo que es estudiar en la Universidad de St Andrews o están buscando una muestra de la vida universitaria, nuestra escuela de verano puede ser la oportunidad perfecta.</div>
+          </div>
+
+          <br>
+          <div class="row">
+              <div class="col-md-12 " style="align:center"><p class="closed">Aplicaciones cerradas para 2020</p></div>
+
+          </div>
+          <br>
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
+              Academic courses:
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arts and Social Sciences.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Biological and Earth Sciences.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Creative Writing.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Management, Economics and Entrepreneurship.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicine.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Moral Philosophy in the Age of Artificial Intelligence.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Physical Science, Mathematics and Computer Science.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Psychology and Neuroscience.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Making Scotland: Many Stories, One Nation.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Sustainable Development.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >World Literature.</button>
+          </div>
+          <br>
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action list-group-item-warning ">
+              Costo £4,100.
+            </button>
+            <p class="where">Incluye:</p>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Inscripción.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Material de lectura.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Equipamiento de laboratorio y equipamiento de deportes.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Alojamiento.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Desayuno, comida y cena diarios.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Transporte de y para el aeropuerto llegada y salida.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Presentaciones de invitados.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Viajes de campo.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Todas las actividades sociales y culturales organizadas.</button>
+            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Membresía del centro de deportes. </button>
+          </div>
+          <br>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-md-12">Los Duques de Cambridge, el Príncipe William y Kate, se conocieron mientras estudiaban.</div>
+
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <hr>
+        </div>
+        <div class="youtube-player" data-id="x8O5kv47zn8"></div>
+
+        <!--<div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x8O5kv47zn8"></iframe>
+        </div>-->
+
+        <hr>
+
+        </div>
+
+      </div>
+        <div class="bottom-strip"></div>
+    </div>
+
+</div>
+
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="stonyhurtsVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <!-- <div class="top-strip"></div> -->
+      <div class="modal-header d-none d-lg-block d-xl-block">
+        <div class="container-fluid">
+          <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <div class="row">
+            <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+            <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_stonyhurts.png');?>" alt=""></div>
+          </div>
+        </div>
+        <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+        <h3 class="col-md-4 "></h3> -->
+
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4"><b>Fundación:</b> </div>
+            <div class="col-md-4 "> 1593.</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><b>Ubicación:</b> </div>
+            <div class="col-md-4 "> <a href="https://goo.gl/maps/offSnTJiuAXzAvk78" target="_blank" > Stonyhurst, Clitheroe BB7 9PT, Reino Unido </a> </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="slide-container ">
+                  <div class="row">
+                    <div class="col-xs-2 col-md-6">
+                     <div class="wrapper">
+                       <div class="clash-card wizard">
+                         <div class="clash-card__image clash-card__image--wizard">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--wizard">STONYHURST Language School</div>
+                         <div class="clash-card__unit-description">
+                           Los alumnos tendrán un mejor entendimiento del inglés, poner a prueba sus habilidades y a tener un mayor confianza a la hora de hablar el idioma inglés.
+                         </div>
+                         <p class="where">Incluye:</p>
+                         <div class="clash-card__unit-description">
+                           <ul>
+                             <li>Clases de alta calidad.</li>
+                             <li>Alojamiento premium.</li>
+                             <li>Todos los alimentos y actividades programadas.</li>
+                             <li>Sudadera, playera y bolso.</li>
+                             <li>Todos los deportes y actividades con instructores calificados y equipamiento de seguridad.</li>
+                             <li>Lavandería.</li>
+                             <li>Materiales.</li>
+                             <li>Traslados desde aeropuerto de Liverpool, Manchester o Leeds Bradford.</li>
+                             <li>Seguro médico de viaje.</li>
+                           </ul>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">10 - 16 años </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat"> Básico - Avanzado</div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                        <table class="table table-bordered">
+                          <thead class="theadtablefo">
+                            <tr>
+                              <th>Semanas</th>
+                              <th>Llegada</th>
+                              <th>Salida</th>
+                              <th>Costo</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Dos semanas</td>
+                              <td>Viernes 9 Julio</td>
+                              <td>Viernes 23 Julio 2021</td>
+                              <td>£2,550</td>
+                            </tr>
+                            <tr>
+                              <td>Dos semanas</td>
+                              <td>Viernes 23 Julio</td>
+                              <td> Viernes 6 Agosto 2021</td>
+                              <td> £2,550 </td>
+                            </tr>
+                            <tr>
+                              <td>Tres semanas  </td>
+                              <td> Viernes  9 Julio</td>
+                              <td>Viernes 30 Julio 2021 </td>
+                              <td>£3,800</td>
+                            </tr>
+                            <tr>
+                              <td>Cuatro semanas </td>
+                              <td> Viernes  9 Julio</td>
+                              <td>Viernes 6 Agosto 2021 </td>
+                              <td>£4,650</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                          <thead class="theadtabletw">
+                            <tr>
+                              <th colspan="4" >Actividades extra que requieren agendarse antes de iniciar el curso</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Equitación</td>
+                              <td>£38 por una hora</td>
+                            </tr>
+                            <tr>
+                              <td>Clases de Golf</td>
+                              <td>£38 por una hora </td>
+                            </tr>
+                            <tr>
+                              <td>Clases de Tenis </td>
+                              <td>£38 por una hora </td>
+                            </tr>
+                            <tr>
+                              <td>Clases de natación</td>
+                              <td>£20 por 30 min</td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                       </div>
+                    </div>
+               </div> <!-- end row two -->
+            </div><!-- end slide continer-->
+          </div>
+          <br>
+        </div>
+        <div class="col-md-12 ">
+        <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+        </div>
+        <div class="row">
+          <hr>
+        </div>
+        <div class="youtube-player" data-id="5xa1XwDzSnQ"></div>
+
+        <!--<div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5xa1XwDzSnQ"></iframe>
+        </div>-->
+        </div>
+
+      </div>
+        <div class="bottom-strip"></div>
+    </div>
+
+
 </div>
 
 
@@ -5602,58 +7638,602 @@ font-size: 18px;
 
             </div>
             <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Art and design.</li></div>
-                <div class="col-md-12"><li>Drama and dance.</li></div>
-                <div class="col-md-12"><li>Music.</li></div>
-
+              <div class="col-md-12">En Cambridge School of Visual & Performing Arts ofrecemos un gran rango de divertidos e interactivos cursos de 1 a 3 semanas o si deseas permanecer más tiempo con nosotros puedes combinar un número de materias y pasar el verano con nosotros!.</div>
             </div>
-            <!-- <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de curso</b></div>
-                <div class="col-md-12"><li>Academico.</li></div>
-                <div class="col-md-12"><li>Inglés.</li></div>
-                <div class="col-md-12"><li>Combinado.</li></div>
-                <div class="col-md-12"><li>Inglés mas deporte.</li></div>
-
-            </div> -->
-
+              <br>
             <div class="row">
-              <hr>
+                <div class="slide-container ">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/art_preparacionporta.jpg');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Preparación de Portafolio </div>
+                           <div class="clash-card__unit-name">Ciencia, tecnología, ingeniería y matemáticas</div>
+                           <div class="clash-card__unit-description">
+                             Para estudiantes que quieran desarrollar un portafolio digital.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 5 Julio <b>Salida: </b>Sabado 25 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 2 Agosto <b>Salida: </b>Sábado 22 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">16+. </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat"> IELTS 4.5+ / intermedio.</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £3,900*.  </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Preparación de Portafolio y curso de ingléso</div>
+                           <div class="clash-card__unit-description">
+                             Para estudiantes que quieran desarrollar un portafolio digital y obtener clases de inglés especializadas.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 2 Agosto  <b>Salida: </b>Sábado 22 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">18+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £3,900*  </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
 
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Curso de Modas</div>
+                           <div class="clash-card__unit-description">
+                             Para estudiantes interesados en el mundo de la moda.
+                             *Preferible si tiene portafolio
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 28 Junio  <b>Salida: </b>Sabado 11 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 26 Julio <b>Salida: </b>Sábado 8 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 a 18</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £2,700* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card archer">
+                           <div class="clash-card__image clash-card__image--archer">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--archer">Filmación</div>
+                           <div class="clash-card__unit-description">
+                             Para estudiantes que se encuentren interesados en filmación, televisión y animación.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Sabado 11 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 26 Julio <b>Salida: </b>Sábado 8 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 a 18  </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">  £2,700*  </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Teatro musical</div>
+                           <div class="clash-card__unit-description">
+                             En este curso te enseñarán profesionales en el teatro con créditos en Londres y Nueva York.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo 12 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 26 Julio <b>Salida: </b>Domingo 9 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £2,700* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Actuación</div>
+                           <div class="clash-card__unit-description">
+                             Este curso es impartido por actores profesionales que te enseñarán a desarrollar tu creatividad y confianza.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 28 June <b>Salida: </b>Domingo 12 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 26 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 26 Julio 2020 <b>Salida: </b>Domingo 9 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 14 a 18 </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £2,700* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Presentación Musical</div>
+                           <div class="clash-card__unit-description">
+                             En este curso aprederás con profesionales sobre técnicas instrumentales y vocales.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 19 Julio  <b>Salida: </b>Domingo 26 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 a 18  </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450*  </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Producción Musical</div>
+                           <div class="clash-card__unit-description">
+                             Tendrás clases intensivas utilizando equipo de producción profesional, aprendiendo técnicas y elaborando tu propia música.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 19 Julio  <b>Salida: </b>Domingo 26 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat"> IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £2,700* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card archer">
+                           <div class="clash-card__image clash-card__image--archer">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--archer">Fotografía</div>
+                           <div class="clash-card__unit-description">
+                             Tendrás a Cambridge de inspiración para crear un gran portafolio.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo 5 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 5 Julio <b>Salida: </b>Domingo 12 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 19 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 26 Julio 2020 <b>Salida: </b>Domingo 2 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 a 18</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">  £1,450*  </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Comunicación de Moda</div>
+                           <div class="clash-card__unit-description">
+                             Te introducirá a las áreas clave de la comunicación visual dirigida a la industria de la moda y marcas.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 5 Julio <b>Salida: </b>Domingo 12 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Estilismo de Moda</div>
+                           <div class="clash-card__unit-description">
+                             En este curso investigaras y aprenderas como el estilismo de la moda es una forma moderna de contar una historia.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 5 Julio <b>Salida: </b>Domingo 12 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 14 a 18 </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Pintura y dibujo</div>
+                           <div class="clash-card__unit-description">
+                             Utilizando una amplia gama de dibujo en diferentes materiales explotarás pintura contemporánea, usando Cambridge como inspiración.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 28 Junio  <b>Salida: </b>Domingo 5 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 12 Julio  <b>Salida: </b>Domingo 19 Julio 2020</p>
+                             <p><b>Llegada: </b>Domingo 26 Julio 2020  <b>Salida: </b> Domingo 2 Agosto</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 a 18 </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450* </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Gráficos e Ilustración</div>
+                           <div class="clash-card__unit-description">
+                             Utilizando técnicas tradicionales y digitales explorarán el diseño de comunicación contemporánea y la ilustración narrativa.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 5 Julio  <b>Salida: </b>Domingo 12 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card archer">
+                           <div class="clash-card__image clash-card__image--archer">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--archer">Diseño 3D</div>
+                           <div class="clash-card__unit-description">
+                             Te dará la oportunidad de explorar diferentes materiales icónicos utilizados en el diseño de productos.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 2 Agosto<b>Salida: </b>Domingo 9 Agosto 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 a 18</div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Animación</div>
+                           <div class="clash-card__unit-description">
+                             Aprenderás a desarrollar técnicas tradicionales y digitales utilizadas en la animación a computadora.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 19 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 a 18 </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Diseño de Videojuegos</div>
+                           <div class="clash-card__unit-description">
+                             Este curso explora tu creatividad y técnica creando tu propio videojuego.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>Domingo 19 Julio<b>Salida: </b>Domingo 26 Julio 2020</p>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 14+ </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">IELTS 4.5+ / intermedio</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> £1,450* </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__unit-description">
+                              *El precio incluye hospedaje, tres comidas al día, costo de registro y transferencias de aeropuerto. Hay un costo extra de £75 que aplica para los que soliciten asistencia para viajes de menores sin compañía.
+                           </div>
+
+
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value"></div>
+                               <div class="stat">!</div>
+
+                             </div>
+
+                             <div class="one-third">
+                               <div class="stat-value"></div>
+                               <div class="stat"></div>
+
+                             </div>
+
+                             <div class="one-third no-border">
+                               <div class="stat-value"></div>
+                               <div class="stat"> </div>
+
+                             </div>
+
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+
+
+                 </div> <!-- end row two -->
+
+
+              </div><!-- end slide continer-->
             </div>
-            <!-- <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-            </div> -->
-
             <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12">Especializada en las artes, diseño y drama.</div>
               <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-
+               <a style="width: 100%;" href="../Login" > Me interesa</a>
+              </div>
             </div>
           </div>
           <div class="row">
             <hr>
           </div>
           <div class="youtube-player" data-id="TLGYTqu34i0"></div>
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TLGYTqu34i0"></iframe>
-          </div>-->
-          </div>
-
+        </div>
         </div>
           <div class="bottom-strip"></div>
       </div>
@@ -5704,7 +8284,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card barbarian">
                          <div class="clash-card__image clash-card__image--barbarian">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arqStop.png');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--barbarian">Arqueología</div>
                          <div class="clash-card__unit-name">Incluye:</div>
@@ -5733,7 +8313,7 @@ font-size: 18px;
                            </div>
 
                            <div class="one-third no-border">
-                             <div class="stat-value">Cuando?</div>
+                             <div class="stat-value">Cuándo?</div>
                              <div class="stat">5 de Julio 2020 – 18  de Julio 2020</div>
 
                            </div>
@@ -5747,7 +8327,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card wizard">
                          <div class="clash-card__image clash-card__image--wizard">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/br_quimica.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--wizard">Química Avanzada</div>
                          <p>Para estudiantes de licenciatura</p>
@@ -5776,7 +8356,7 @@ font-size: 18px;
                            </div>
 
                            <div class="one-third no-border">
-                             <div class="stat-value">¿Cuando?</div>
+                             <div class="stat-value">¿Cuándo?</div>
                              <div class="stat">18 Julio 2020 - 08 Agosto 2020</div>
 
                            </div>
@@ -5791,7 +8371,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card goblin">
                          <div class="clash-card__image clash-card__image--goblin">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/br_veterinaria.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--goblin">Escuela de Veterinaria</div>
                          <p>Abrierto para estudiantes de 16 años que cursan la preparatoria.</p>
@@ -5821,7 +8401,7 @@ font-size: 18px;
                            </div>
 
                            <div class="one-third no-border">
-                             <div class="stat-value">¿Cuando?</div>
+                             <div class="stat-value">¿Cuándo?</div>
                              <div class="stat">19 Julio 2020 - 1 Agosto 2020</div>
 
                            </div>
@@ -5836,7 +8416,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card archer">
                          <div class="clash-card__image clash-card__image--archer">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/br_stm_pro.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--archer">Proyectos de investigación STEM</div>
                          <div class="clash-card__unit-name">Incluye:</div>
@@ -5865,7 +8445,7 @@ font-size: 18px;
                            </div>
 
                            <div class="one-third no-border">
-                             <div class="stat-value">¿Cuando?</div>
+                             <div class="stat-value">¿Cuándo?</div>
                              <div class="stat">19 Julio 2020 - 29 Agosto 2020</div>
 
                            </div>
@@ -5880,7 +8460,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card giant">
                          <div class="clash-card__image clash-card__image--giant">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/br_biomedica.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--giant">Laboratorio de Biomedicina</div>
                          <p>Para estudiantes de licenciatura</p>
@@ -5909,7 +8489,7 @@ font-size: 18px;
                            </div>
 
                            <div class="one-third no-border">
-                             <div class="stat-value">Cuando?</div>
+                             <div class="stat-value">Cuándo?</div>
                              <div class="stat"> 18 Julio 2020  –  8 Agosto  2020</div>
 
                            </div>
@@ -5924,7 +8504,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card barbarian">
                          <div class="clash-card__image clash-card__image--barbarian">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/br_inova.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--barbarian">Innovación y Emprendimiento</div>
                          <p>Para estudiantes de licenciatura</p>
@@ -5953,7 +8533,7 @@ font-size: 18px;
                            </div>
 
                            <div class="one-third no-border">
-                             <div class="stat-value">Cuando?</div>
+                             <div class="stat-value">Cuándo?</div>
                              <div class="stat"> 19 Julio 2020 - 8 Agosto 2020</div>
 
                            </div>
@@ -5968,7 +8548,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card wizard">
                          <div class="clash-card__image clash-card__image--wizard">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/br_activismo.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--wizard">Arte, Activismo y Justicia Social</div>
                          <p>Para estudiantes de licenciatura</p>
@@ -5997,7 +8577,7 @@ font-size: 18px;
                            </div>
 
                            <div class="one-third no-border">
-                             <div class="stat-value">Cuando?</div>
+                             <div class="stat-value">Cuándo?</div>
                              <div class="stat"> 7 Junio 2020 - 27 Junio 2020</div>
 
                            </div>
@@ -6012,7 +8592,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card giant">
                          <div class="clash-card__image clash-card__image--giant">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_Logo.png');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--giant">No Incluye</div>
                          <div class="clash-card__unit-description">
@@ -6121,666 +8701,6 @@ font-size: 18px;
       </div>
 </div>
 
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="catsVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-          <!-- <div class="top-strip"></div> -->
-        <div class="modal-header">
-          <div class="container-fluid">
-            <div class="row" style="margin-bottom: 10px;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
-            </div>
-          </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-          <h3 class="col-md-4 "></h3> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1985.</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación Cambridge:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/TtxkyUd5Ud1nw4SV9"> A1 High St, Chesterton, Cambridge CB4 1NQ, Reino Unido </a> </div>
-
-          </div>
-          <br>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación Canterbury:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/5WQzGMZvC7Ki8gGHA"> 68 New Dover Rd, Canterbury CT1 3LQ, Reino Unido </a> </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación Londres:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/gUfa7H22Ts4LAzwM6">43-45 Bloomsbury Square, Holborn, London WC1A 2RA, Reino Unido </a> </div>
-
-            </div>
-            <br>
-            <div class="row">
-              <div class="slide-container ">
-                  <div class="row">
-                    <div class="col-xs-2 col-md-6 ">
-                     <div class="wrapper">
-                       <div class="clash-card barbarian">
-                         <div class="clash-card__image clash-card__image--barbarian">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
-                         </div>
-                         <div class="clash-card__level clash-card__level--barbarian">STEM </div>
-                         <div class="clash-card__unit-name">Ciencia, tecnología, ingeniería y matemáticas</div>
-                         <div class="clash-card__unit-description">
-                           Para estudiantes que se interesan en como la ciencia, tecnología, ingeniería y las matemáticas  se pueden usar creativamente para resolver problemas.
-                         </div>
-                           <p class="where">¿Cuándo y dónde?</p>
-                           <p class="nameInst">Cambridge</p>
-                         <div class="clash-card__unit-description">
-                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
-                         </div>
-                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
-                           <div class="one-third">
-                             <div class="stat-value">Edad:</div>
-                             <div class="stat">14-17 </div>
-                           </div>
-                           <div class="one-third">
-                             <div class="stat-value">Nivel de inglés:</div>
-                             <div class="stat"> IELTS 5.0 o equivalente</div>
-                           </div>
-                           <div class="one-third no-border">
-                             <div class="stat-value">Costo:</div>
-                             <div class="stat"> £2,700*  </div>
-                           </div>
-                         </div>
-                       </div> <!-- end clash-card barbarian-->
-                       </div> <!-- end wrapper -->
-                    </div> <!-- end col waper-->
-                    <div class="col-xs-2 col-md-6  ml-auto">
-                     <div class="wrapper">
-                       <div class="clash-card wizard">
-                         <div class="clash-card__image clash-card__image--wizard">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
-                         </div>
-                         <div class="clash-card__level clash-card__level--wizard">Experiencia de Educación en Reino Unido</div>
-
-
-                         <div class="clash-card__unit-description">
-                           Para estudiantes que quieren experimentar el aprendizaje  en la educación Británica.
-                         </div>
-                           <p class="where">¿Cuándo y dónde?</p>
-                           <p class="nameInst">Canterbury</p>
-                         <div class="clash-card__unit-description">
-                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  19 Julio</p>
-                           <p><b>Llegada: </b>Domingo 19 Julio <b>Salida: </b>Domingo 2 Agosto</p>
-                         </div>
-                         <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
-                           <div class="one-third">
-                             <div class="stat-value">Edad:</div>
-                             <div class="stat">14-17 </div>
-                           </div>
-                           <div class="one-third">
-                             <div class="stat-value">Nivel de inglés:</div>
-                             <div class="stat">IELTS 5.0 o equivalente</div>
-                           </div>
-                           <div class="one-third no-border">
-                             <div class="stat-value">Costo:</div>
-                             <div class="stat"> 2 Semanas £2,700* </div>
-                             <div class="stat">  3 Semanas £3,750*  </div>
-                           </div>
-                         </div>
-                       </div> <!-- end clash-card barbarian-->
-                       </div> <!-- end wrapper -->
-
-                    </div> <!-- end col waper-->
-                    <div class="col-xs-2 col-md-6  ml-auto">
-                     <div class="wrapper">
-                       <div class="clash-card goblin">
-                         <div class="clash-card__image clash-card__image--goblin">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
-                         </div>
-                         <div class="clash-card__level clash-card__level--goblin">Laboratorio de negocios Bloomberg</div>
-                         <div class="clash-card__unit-description">
-                           Para estudiantes con intereses en economía y finanzas.
-                         </div>
-                           <p class="where">¿Cuándo y dónde?</p>
-                           <p class="nameInst">Londres</p>
-                         <div class="clash-card__unit-description">
-                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
-                           <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 26 Julio</p>
-                         </div>
-                         <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
-                           <div class="one-third">
-                             <div class="stat-value">Edad:</div>
-                             <div class="stat">14-17</div>
-                           </div>
-                           <div class="one-third">
-                             <div class="stat-value">Nivel de inglés:</div>
-                             <div class="stat">IELTS 4.5 o equivalente</div>
-                           </div>
-                           <div class="one-third no-border">
-                             <div class="stat-value">Costo:</div>
-                             <div class="stat"> £2,00* </div>
-                           </div>
-                         </div>
-
-                       </div> <!-- end clash-card barbarian-->
-                       </div> <!-- end wrapper -->
-
-                    </div> <!-- end col waper-->
-                    <div class="col-xs-2 col-md-6  ml-auto">
-                     <div class="wrapper">
-                       <div class="clash-card archer">
-                         <div class="clash-card__image clash-card__image--archer">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
-                         </div>
-                         <div class="clash-card__level clash-card__level--archer">STEM</div>
-                         <div class="clash-card__unit-name">(Ciencia, tecnología, ingeniería y matemáticas) y curso de inglés.</div>
-                         <div class="clash-card__unit-description">
-                           Para estudiantes que se interesan en cómo la ciencia, tecnología, ingeniería y las matemáticas  se pueden usar creativamente para resolver problemas combinado con curso de inglés especializado.
-                         </div>
-                           <p class="where">¿Cuándo y dónde?</p>
-                           <p class="nameInst">Cambridge</p>
-                         <div class="clash-card__unit-description">
-                           <p><b>Llegada: </b>Domingo 28 Julio <b>Salida: </b>Domingo  26 Julio</p>
-                         </div>
-                         <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
-                           <div class="one-third">
-                             <div class="stat-value">Edad:</div>
-                             <div class="stat">14-17  </div>
-                           </div>
-                           <div class="one-third">
-                             <div class="stat-value">Nivel de inglés:</div>
-                             <div class="stat">IELTS 4.0 o equivalente</div>
-                           </div>
-                           <div class="one-third no-border">
-                             <div class="stat-value">Costo:</div>
-                             <div class="stat"> £2,700*  </div>
-                           </div>
-                         </div>
-
-                       </div> <!-- end clash-card barbarian-->
-                       </div> <!-- end wrapper -->
-
-                    </div> <!-- end col waper-->
-                    <div class="col-xs-2 col-md-6  ml-auto">
-                     <div class="wrapper">
-                       <div class="clash-card giant">
-                         <div class="clash-card__image clash-card__image--giant">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
-                         </div>
-                         <div class="clash-card__level clash-card__level--giant">Preparación Oxbridge</div>
-                         <div class="clash-card__unit-description">
-                           Para estudiantes que aspiran estudiar universidades prestigiosas como Oxford, Cambridge y otras universidades Top de UK.
-                         </div>
-                           <p class="where">¿Cuándo y dónde?</p>
-                           <p class="nameInst">Cambridge</p>
-                         <div class="clash-card__unit-description">
-                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  19 Julio</p>
-                         </div>
-                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
-                           <div class="one-third">
-                             <div class="stat-value">Edad:</div>
-                             <div class="stat">16-17 </div>
-                           </div>
-                           <div class="one-third">
-                             <div class="stat-value">Nivel de inglés:</div>
-                             <div class="stat">IELTS 5.5 o equivalente</div>
-                           </div>
-                           <div class="one-third no-border">
-                             <div class="stat-value">Costo:</div>
-                             <div class="stat"> £3,750* </div>
-                           </div>
-                         </div>
-
-                       </div> <!-- end clash-card barbarian-->
-                       </div> <!-- end wrapper -->
-
-                    </div> <!-- end col waper-->
-                    <div class="col-xs-2 col-md-6  ml-auto">
-                     <div class="wrapper">
-                       <div class="clash-card barbarian">
-                         <div class="clash-card__image clash-card__image--barbarian">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
-                         </div>
-                         <div class="clash-card__level clash-card__level--barbarian">Medicina</div>
-                         <div class="clash-card__unit-description">
-                           Para estudiantes que quieren explorar opciones de carrera en medicina.
-                         </div>
-                           <p class="where">¿Cuándo y dónde?</p>
-                           <p class="nameInst">Canterbury</p>
-                         <div class="clash-card__unit-description">
-                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
-                           <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 26 Julio</p>
-                         </div>
-                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
-                           <div class="one-third">
-                             <div class="stat-value">Edad:</div>
-                             <div class="stat">14-17 </div>
-                           </div>
-                           <div class="one-third">
-                             <div class="stat-value">Nivel de inglés:</div>
-                             <div class="stat">IELTS 5.0 o equivalente</div>
-                           </div>
-                           <div class="one-third no-border">
-                             <div class="stat-value">Costo:</div>
-                             <div class="stat"> £2,00* </div>
-                           </div>
-                         </div>
-
-                       </div> <!-- end clash-card barbarian-->
-                       </div> <!-- end wrapper -->
-
-                    </div> <!-- end col waper-->
-                    <div class="col-xs-2 col-md-6  ml-auto">
-                     <div class="wrapper">
-                       <div class="clash-card giant">
-                         <div class="clash-card__image clash-card__image--giant">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
-                         </div>
-                         <div class="clash-card__unit-description">
-                            *El precio incluye hospedaje, tres comidas al día, costo de registro y transferencias de aeropuerto. Hay un costo extra de £75 que aplica para los que soliciten asistencia para viajes de menores sin compañia.
-                         </div>
-
-
-                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
-                           <div class="one-third">
-                             <div class="stat-value"></div>
-                             <div class="stat">!</div>
-
-                           </div>
-
-                           <div class="one-third">
-                             <div class="stat-value"></div>
-                             <div class="stat"></div>
-
-                           </div>
-
-                           <div class="one-third no-border">
-                             <div class="stat-value"></div>
-                             <div class="stat"> </div>
-
-                           </div>
-
-                         </div>
-
-                       </div> <!-- end clash-card barbarian-->
-                       </div> <!-- end wrapper -->
-
-                    </div> <!-- end col waper-->
-
-
-               </div> <!-- end row two -->
-
-
-            </div><!-- end slide continer-->
-            </div>
-
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Junior 7-13.</li></div>
-                <div class="col-md-12"><li>Senior 14 - 17.</li></div>
-                <div class="col-md-12"><li>Universitario 18-25.</li></div>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                <div class="col-md-12"><li>Academico.</li></div>
-                <div class="col-md-12"><li>Inglés.</li></div>
-                <div class="col-md-12"><li>Combinado.</li></div>
-                <div class="col-md-12"><li>Inglés mas deporte.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-            </div>
-
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12">l CATS College lleva casi 60 años formando alumnos con futuros llenos de éxito.</div>
-            </div>
-          </div>
-          <div class="col-md-12 ">
-            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="youtube-player" data-id="uPFn8rHs6kI"></div>
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uPFn8rHs6kI"></iframe>
-          </div>-->
-          </div>
-
-        </div>
-          <div class="bottom-strip"></div>
-      </div>
-
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="concordVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-          <!-- <div class="top-strip"></div> -->
-        <div class="modal-header">
-          <div class="container-fluid">
-            <div class="row" style="margin-bottom: 10px;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_concord.png');?>" alt=""></div>
-            </div>
-          </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-          <h3 class="col-md-4 "></h3> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1976 .</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/xM3PEs5EtxUjUWqq5" target="_blank" >Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido </a> </div>
-            </div>
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Junior 7-13.</li></div>
-                <div class="col-md-12"><li>Senior 14 - 17.</li></div>
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                <div class="col-md-12"><li>Academico.</li></div>
-                <div class="col-md-12"><li>Inglés.</li></div>
-                <div class="col-md-12"><li>Combinado.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
-
-            </div>
-
-
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-
-              <div class="col-md-12"><li>Concord College da la bienvenida a estudiantes de todo el mundo y el área local a su comunidad vibrante y variada.</li></div>
-              <div class="col-md-12"><li>Desarrollar la confianza de los estudiantes en sus propias habilidades.</li></div>
-              <div class="col-md-12"><li>Mejorar las habilidades de los estudiantes en su materia seleccionada.</li></div>
-
-              <div class="col-md-12 ">
-
-              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-                </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="youtube-player" data-id="BZKgviod4D4"></div>
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BZKgviod4D4"></iframe>
-          </div>-->
-          <hr>
-
-          </div>
-
-        </div>
-          <div class="bottom-strip"></div>
-      </div>
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="chesterVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-          <!-- <div class="top-strip"></div> -->
-        <div class="modal-header">
-          <div class="container-fluid">
-            <div class="row" style="margin-bottom: 10px;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_Chester-Uni-logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_chester.png');?>" alt=""></div>
-            </div>
-          </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-          <h3 class="col-md-4 "></h3> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1839 .</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/Hj1s65WCmfdpusXQ8" target="_blank" > Parkgate Rd, Chester CH1 4BJ, Reino Unido</a> </div>
-            </div>
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Junior 7-13.</li></div>
-                <div class="col-md-12"><li>Senior 14-17.</li></div>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
-                <div class="col-md-12"><li>Inglés.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-            </div>
-
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-
-              <div class="col-md-12"><li>Te enseñarán nuestros destacados académicos de la Facultad de Administración y Negocios que son especialistas de la industria en su campo.</li></div>
-              <div class="col-md-12"><li>Estos programas de dos semanas le brindarán oportunidades fantásticas para experimentar el maravilloso Chester histórico y el noroeste del Reino Unido, incluidos Liverpool, Manchester y el norte de Gales.</li></div>
-              <div class="col-md-12"><li> Es una oportunidad emocionante para combinar actividades de estudio y sociales.</li></div>
-
-              <div class="col-md-12 ">
-
-              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-                </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="youtube-player" data-id="5pcmATG_mjM"></div>
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5pcmATG_mjM"></iframe>
-          </div>-->
-        <hr>
-
-          </div>
-
-        </div>
-          <div class="bottom-strip"></div>
-      </div>
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="cambridgeVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-          <!-- <div class="top-strip"></div> -->
-        <div class="modal-header">
-          <div class="container-fluid">
-            <div class="row" style="margin-bottom: 10px;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_eselectModal.jpg');?>" alt=""></div>
-            </div>
-          </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-          <h3 class="col-md-4 "></h3> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1209 .</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-                <div class="col-md-4 "> <a href="https://goo.gl/maps/fyt4VQvkFH7GoHhp6" target="_blank" >13 Station Rd, Cambridge CB1 2JB, Reino Unido </a> </div>
-            </div>
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Junior 7-13.</li></div>
-                <div class="col-md-12"><li>Senior 14 - 17.</li></div>
-                <div class="col-md-12"><li>Universitario 18-25.</li></div>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de curso</b></div>
-                <div class="col-md-12"><li>Academico.</li></div>
-                <div class="col-md-12"><li>Inglés.</li></div>
-                <div class="col-md-12"><li>Combinado.</li></div>
-                <div class="col-md-12"><li>Inglés mas deporte.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >Con familia.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-            </div>
-
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-
-              <div class="col-md-12"><li>Nuestros programas ofrecen una mezcla de tradición e inspiración a medida que los participantes de todo el mundo absorben la atmósfera de este lugar extraordinario.</li></div>
-              <div class="col-md-12"><li>Durante siglos, la Universidad ha ayudado a dar forma y cambiar el mundo.</li></div>
-              <div class="col-md-12"><li>creemos que nuestros programas ofrecen beneficios que ampliarán su experiencia y mejorarán su CV.</li></div>
-
-              <div class="col-md-12 ">
-
-                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="youtube-player" data-id="bCApP-JqLpc"></div>
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>
-          </div>-->
-          <hr>
-
-          </div>
-
-        </div>
-          <div class="bottom-strip"></div>
-      </div>
-</div>
-
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="intoVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -6875,95 +8795,8 @@ font-size: 18px;
 
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="uweVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-          <!-- <div class="top-strip"></div> -->
-        <div class="modal-header">
-          <div class="container-fluid">
-          <div class="row" style="margin-bottom: 10px;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uwe.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_west.jpg');?>" alt=""></div>
-            </div>
-          </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
 
-          <h3 class="col-md-4 "></h3> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1595 y en 1992 obtiene título de universidad.</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="javascript:;">Bristol (1h 40min) de Londres. </a> </div>
-            </div>
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Ranking:</b></div>
-            </div>
-            <div class="row">
-
-              <div class="col-md-6">Guardian University Guide 28 en Reino Unido.</div>
-              <div class="col-md-6">11vo en el UK según encuesta de satisfacción estudiantil.</div>
-              <br>
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Facultades
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Arquitectura.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
-            </div>
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12">The Guardian nombro a Bristol como una de las 10 ciudades más felices para vivir y trabajar en el Reino Unido.</div>
-
-              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="youtube-player" data-id="scLpnIm-XZo"></div>
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/scLpnIm-XZo"></iframe>
-          </div>-->
-          </div>
-
-        </div>
-          <div class="bottom-strip"></div>
-      </div>
-
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="queenVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="catsVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
@@ -6975,8 +8808,8 @@ font-size: 18px;
               </button>
             </div>
             <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_queen-mary.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_queen-mary.jpg');?>" alt=""></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_cats.png');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_cats.png');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -6988,177 +8821,293 @@ font-size: 18px;
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1785.</div>
+              <div class="col-md-4 "> 1985.</div>
             </div>
             <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="javascript:;" >Centro de Londres. </a> </div>
+              <div class="col-md-4"><b>Ubicación Cambridge:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/TtxkyUd5Ud1nw4SV9"> A1 High St, Chesterton, Cambridge CB4 1NQ, Reino Unido </a> </div>
+
+          </div>
+          <br>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación Canterbury:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/5WQzGMZvC7Ki8gGHA"> 68 New Dover Rd, Canterbury CT1 3LQ, Reino Unido </a> </div>
             </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación Londres:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/gUfa7H22Ts4LAzwM6">43-45 Bloomsbury Square, Holborn, London WC1A 2RA, Reino Unido </a> </div>
+
+            </div>
+            <br>
+            <div class="row">
+              <div class="slide-container ">
+                  <div class="row">
+                    <div class="col-xs-2 col-md-6 ">
+                     <div class="wrapper">
+                       <div class="clash-card barbarian">
+                         <div class="clash-card__image clash-card__image--barbarian">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/cats_stem.jpg');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--barbarian">STEM </div>
+                         <div class="clash-card__unit-name">Ciencia, tecnología, ingeniería y matemáticas</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que se interesan en como la ciencia, tecnología, ingeniería y las matemáticas  se pueden usar creativamente para resolver problemas.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Cambridge</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat"> IELTS 5.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,700*  </div>
+                           </div>
+                         </div>
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card wizard">
+                         <div class="clash-card__image clash-card__image--wizard">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/cats_experiencia.jpg');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--wizard">Experiencia de Educación en Reino Unido</div>
+
+
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que quieren experimentar el aprendizaje  en la educación Británica.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Canterbury</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  19 Julio</p>
+                           <p><b>Llegada: </b>Domingo 19 Julio <b>Salida: </b>Domingo 2 Agosto</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 5.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> 2 Semanas £2,700* </div>
+                             <div class="stat">  3 Semanas £3,750*  </div>
+                           </div>
+                         </div>
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card goblin">
+                         <div class="clash-card__image clash-card__image--goblin">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/cats_blomber.jpg');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--goblin">Laboratorio de negocios Bloomberg</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes con intereses en economía y finanzas.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Londres</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
+                           <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 26 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17</div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 4.5 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,00* </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card archer">
+                         <div class="clash-card__image clash-card__image--archer">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/cats_stem2.jpg');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--archer">STEM</div>
+                         <div class="clash-card__unit-name">(Ciencia, tecnología, ingeniería y matemáticas) y curso de inglés.</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que se interesan en cómo la ciencia, tecnología, ingeniería y las matemáticas  se pueden usar creativamente para resolver problemas combinado con curso de inglés especializado.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Cambridge</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Julio <b>Salida: </b>Domingo  26 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17  </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 4.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,700*  </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card giant">
+                         <div class="clash-card__image clash-card__image--giant">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/cats_prepoxford.jpg');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--giant">Preparación Oxbridge</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que aspiran estudiar universidades prestigiosas como Oxford, Cambridge y otras universidades Top de UK.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Cambridge</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  19 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">16-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 5.5 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £3,750* </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card barbarian">
+                         <div class="clash-card__image clash-card__image--barbarian">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/cats_medicina.jpg');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__level clash-card__level--barbarian">Medicina</div>
+                         <div class="clash-card__unit-description">
+                           Para estudiantes que quieren explorar opciones de carrera en medicina.
+                         </div>
+                           <p class="where">¿Cuándo y dónde?</p>
+                           <p class="nameInst">Canterbury</p>
+                         <div class="clash-card__unit-description">
+                           <p><b>Llegada: </b>Domingo 28 Junio <b>Salida: </b>Domingo  12 Julio</p>
+                           <p><b>Llegada: </b>Domingo 12 Julio <b>Salida: </b>Domingo 26 Julio</p>
+                         </div>
+                         <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                           <div class="one-third">
+                             <div class="stat-value">Edad:</div>
+                             <div class="stat">14-17 </div>
+                           </div>
+                           <div class="one-third">
+                             <div class="stat-value">Nivel de inglés:</div>
+                             <div class="stat">IELTS 5.0 o equivalente</div>
+                           </div>
+                           <div class="one-third no-border">
+                             <div class="stat-value">Costo:</div>
+                             <div class="stat"> £2,00* </div>
+                           </div>
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+                    <div class="col-xs-2 col-md-6  ml-auto">
+                     <div class="wrapper">
+                       <div class="clash-card giant">
+                         <div class="clash-card__image clash-card__image--giant">
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                         </div>
+                         <div class="clash-card__unit-description">
+                            *El precio incluye hospedaje, tres comidas al día, costo de registro y transferencias de aeropuerto. Hay un costo extra de £75 que aplica para los que soliciten asistencia para viajes de menores sin compañia.
+                         </div>
+
+
+                         <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                           <div class="one-third">
+                             <div class="stat-value"></div>
+                             <div class="stat">!</div>
+
+                           </div>
+
+                           <div class="one-third">
+                             <div class="stat-value"></div>
+                             <div class="stat"></div>
+
+                           </div>
+
+                           <div class="one-third no-border">
+                             <div class="stat-value"></div>
+                             <div class="stat"> </div>
+
+                           </div>
+
+                         </div>
+
+                       </div> <!-- end clash-card barbarian-->
+                       </div> <!-- end wrapper -->
+
+                    </div> <!-- end col waper-->
+
+
+               </div> <!-- end row two -->
+
+
+            </div><!-- end slide continer-->
+            </div>
+
             <div class="row">
               <hr>
-
             </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Principales facultades</b></div>
-                <div class="col-md-12"><li>Humanities and social sciences.</li></div>
-                <div class="col-md-12"><li>Science and engineering.</li></div>
-                <div class="col-md-12"><li>Medicine and Dentistry.</li></div>
-
-            </div>
-
-
-            <div class="row">
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12">En 1785 fundó la primera escuela de Medicina de Inglaterra en el Royal London Hospital.</div>
-
-              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="youtube-player" data-id="f9y6eeEK1oM"></div>
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f9y6eeEK1oM"></iframe>
-          </div>-->
-          </div>
-
-        </div>
-          <div class="bottom-strip"></div>
-      </div>
-
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="andrewVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-        <!-- <div class="top-strip"></div> -->
-      <div class="modal-header">
-        <div class="container-fluid">
-          <div class="row" style="margin-bottom: 10px;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-          <div class="row">
-            <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/luu_st-andrews.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-            <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/lu_st-andrews.jpg');?>" alt=""></div>
-          </div>
-        </div>
-        <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-        <h3 class="col-md-4 "></h3> -->
-
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4"><b>Fundación:</b> </div>
-            <div class="col-md-4 "> 1413.</div>
-          </div>
-          <div class="row">
-            <div class="col-md-4"><b>Ubicación:</b> </div>
-            <div class="col-md-4 "> <a href="javascript:;" >1hr 30 mins de Londres en avión </a> </div>
-          </div>
-
-          <div class="row">
-            <hr>
-
-          </div>
-          <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-              Facultades
-            </button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Artes y Humanidades.</button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias.</button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias de la salud.</button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Ciencias Sociales.</button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Medicina y Odontologia.</button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" >Negocios.</button>
-          </div>
-
-          <div class="row">
-            <hr>
-          </div>
-          <div class="row">
-            <div class="col-md-12">Los Duques de Cambridge, el Príncipe William y Kate, se conocieron mientras estudiaban.</div>
-
-            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
-                    <a style="width: 100%;" href="../Login" > Me interesa</a>
-                </div>
-
-          </div>
-        </div>
-        <div class="row">
-          <hr>
-        </div>
-        <div class="youtube-player" data-id="x8O5kv47zn8"></div>
-
-        <!--<div class="embed-responsive embed-responsive-21by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x8O5kv47zn8"></iframe>
-        </div>-->
-
-        <hr>
-
-        </div>
-
-      </div>
-        <div class="bottom-strip"></div>
-    </div>
-
-</div>
-
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="ueaVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-          <!-- <div class="top-strip"></div> -->
-        <div class="modal-header">
-          <div class="container-fluid">
-            <div class="row" style="margin-bottom: 10px;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/lu_uea.png');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/luu_east-anglia.jpg');?>" alt=""></div>
-            </div>
-          </div>
-          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
-
-          <h3 class="col-md-4 "></h3> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 29 de septiembre de 1963</div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="javascript:;"  >Norwich  (90 mins) de Londres. </a> </div>
-            </div>
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="row">
+            <!-- <div class="row">
               <hr>
                 <div class="col-md-12 " style="align:center"><b>Edades</b></div>
                 <div class="col-md-12"><li>Junior 7-13.</li></div>
                 <div class="col-md-12"><li>Senior 14 - 17.</li></div>
                 <div class="col-md-12"><li>Universitario 18-25.</li></div>
 
-            </div>
-            <div class="row">
+            </div> -->
+            <!-- <div class="row">
               <hr>
                 <div class="col-md-12 " style="align:center"><b>Tipo de campamento</b></div>
                 <div class="col-md-12"><li>Academico.</li></div>
@@ -7166,13 +9115,9 @@ font-size: 18px;
                 <div class="col-md-12"><li>Combinado.</li></div>
                 <div class="col-md-12"><li>Inglés mas deporte.</li></div>
 
-            </div>
+            </div> -->
 
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
+            <!-- <div class="list-group">
               <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
                 Alojamiento
               </button>
@@ -7180,27 +9125,27 @@ font-size: 18px;
               <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >Internado.</button>
               <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
 
-            </div>
+            </div> -->
 
             <div class="row">
               <hr>
             </div>
             <div class="row">
-              <div class="col-md-12">Norwich es la primera ciudad Patrimonio Mundial de la Literatura.</div>
-
-              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+              <div class="col-md-12">l CATS College lleva casi 60 años formando alumnos con futuros llenos de éxito.</div>
+            </div>
+          </div>
+          <div class="col-md-12 ">
+            <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
                     <a style="width: 100%;" href="../Login" > Me interesa</a>
                 </div>
-
-            </div>
           </div>
           <div class="row">
             <hr>
           </div>
-          <div class="youtube-player" data-id="LTF9EOqy9L8"></div>
+          <div class="youtube-player" data-id="uPFn8rHs6kI"></div>
 
           <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTF9EOqy9L8"></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uPFn8rHs6kI"></iframe>
           </div>-->
           </div>
 
@@ -7210,93 +9155,909 @@ font-size: 18px;
 
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="stonyhurtsVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-        <!-- <div class="top-strip"></div> -->
-      <div class="modal-header d-none d-lg-block d-xl-block">
-        <div class="container-fluid">
-          <div class="row" style="margin-bottom: 10px;">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="concordVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
               <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          <div class="row">
-            <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: -1px;"> <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-            <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/prepamodal_stonyhurts.png');?>" alt=""></div>
+            <div class="row">
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/v_concord_logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/vv_concord.png');?>" alt=""></div>
+            </div>
           </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
         </div>
-        <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 	1976 .</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/xM3PEs5EtxUjUWqq5" target="_blank" >Acton Burnell Hall, Acton Burnell, Shrewsbury SY5 7PF, Reino Unido </a> </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="slide-container ">
+               <div class="row">
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card giant">
+                      <div class="clash-card__image clash-card__image--giant">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--giant">Inglés y ciencias</div>
+                      <div class="clash-card__unit-description">
+                        Nuestro programa de inglés consta de 21 horas de clases por semana. Los estudiantes tendrán 6 horas por semana de aprendizaje integrado a través de un horario variado que consta de dos temas de su elección.
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">10 a 12 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat"> £4,200 por 2 semanas </div>
+                        </div>
+                      </div>
 
-        <h3 class="col-md-4 "></h3> -->
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
 
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4"><b>Fundación:</b> </div>
-            <div class="col-md-4 "> 1593.</div>
-          </div>
-          <div class="row">
-            <div class="col-md-4"><b>Ubicación:</b> </div>
-            <div class="col-md-4 "> <a href="https://goo.gl/maps/offSnTJiuAXzAvk78" target="_blank" > Stonyhurst, Clitheroe BB7 9PT, Reino Unido </a> </div>
-          </div>
-          <div class="row">
-            <hr>
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card barbarian">
+                      <div class="clash-card__image clash-card__image--barbarian">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--barbarian">Inglés y actividades</div>
+                      <div class="clash-card__unit-description">
+                        Las actividades incluyen arte, negocios, carreras,
+                        Cocina, debate, drama, preparación de exámenes,
+                        Fitness, periodismo, música, actividades al aire libre o deportes
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat"> 10 a 12 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat">  £3,900 por 2 semanas </div>
+                        </div>
+                      </div>
 
-          </div>
-          <div class="row">
-            <hr>
-              <div class="col-md-12 " style="align:center"><b>Stonyhurst</b></div>
-              <div class="col-md-12"><li>La enseñanza especializada y apoyo personal inigualable ha dado lugar cada vez más a impresionantes resultados de GCSE y A Levels.</li></div>
-              <div class="col-md-12"><li>Los alumnos externos e internos por igual se benefician de nuestro programa de enriquecimiento amplio que incluye viajes de teatro, charlas y presentaciones de nuestros propios departamentos académicos.</li></div>
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
 
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card wizard">
+                      <div class="clash-card__image clash-card__image--wizard">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--wizard">Ciencia y Matemáticas</div>
+                      <div class="clash-card__unit-description">
+                        Nuestros cursos junior y de ciencias generales
+                        cubren aspectos de biología, química, física y
+                        Matemáticas.
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">10 a 12 años </div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat"> £4,500 por 2 semanas </div>
+                        </div>
+                      </div>
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
 
-          </div>
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card goblin">
+                      <div class="clash-card__image clash-card__image--goblin">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--goblin">Inglés y ciencias</div>
+                      <div class="clash-card__unit-description">
+                        Nuestro programa de inglés consta de 21 horas de clases por semana. Los estudiantes tendrán 6 horas por semana de aprendizaje integrado a través de un horario variado que consta de dos temas de su elección.
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">13 a 17 años</div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat"> £3,600por 2 semanas </div>
+                        </div>
+                      </div>
 
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
 
-          <div class="row">
-            <hr>
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card archer">
+                      <div class="clash-card__image clash-card__image--archer">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--archer">Inglés y actividades</div>
+                      <div class="clash-card__unit-description">
+                        Las actividades incluyen arte, negocios, carreras,
+                        Cocina, debate, drama, preparación de exámenes,
+                        Fitness, periodismo, música, actividades al aire libre o deportes
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">13 a 17 años</div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat">  £3,900 por 2 semanas  </div>
+                        </div>
+                      </div>
 
-          </div>
-          <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-              Stonyhurst animamos a los estudiantes a participar en las actividades extracurriculares que incluyen
-            </button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" data-id="Odontología" >deportivas.</button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont"  data-id="Veterinaria" >culturales.</button>
-            <button type="button" class="list-group-item list-group-item-action" id="Odont" >artes.</button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >trabajo voluntario.</button>
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
 
-          </div>
-          <div class="row">
-            <hr>
-          </div>
-          <div class="row">
-            <div class="col-md-12">Una preparatoria especializada en las artes, diseño y drama.</div>
-          </div>
-        </div>
-        <div class="col-md-12 ">
-        <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                 </div> <!-- end col waper-->
+                 <div class="col-xs-2 col-md-6  ml-auto">
+                  <div class="wrapper">
+                    <div class="clash-card giant">
+                      <div class="clash-card__image clash-card__image--giant">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--giant">Ciencia Seleccionada</div>
+                      <div class="clash-card__unit-description">
+                        Nuestros cursos de ciencias generales
+                        cubren aspectos de biología, química, física y
+                        Matemáticas.
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat">15 a 17 años</div>
+                        </div>
+                        <div class="one-third no-border">
+                          <div class="stat-value">Costo:</div>
+                          <div class="stat">£4,200 por 2 semanas </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+               </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <table class="table table-bordered">
+                <thead class="theadtabletw">
+                  <tr>
+                    <th>#</th>
+                    <th colspan="2">Incluye</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Alojamiento</td>
+                    <td>Uso de instalaciones deportivas</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Uso de instalaciones deportivas</td>
+                    <td>Actividades dentro del campus</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Materiales de estudio</td>
+                    <td>Un día de excursión por semana</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Bolso con botella para agua, playera y calendario.</td>
+                    <td>Seguro</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Traslados de Aeropuerto</td>
+                    <td>Fotografía del curso Todos los Alimentos (Desayuno, comida y cena)</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col-md-12"><li>Concord College da la bienvenida a estudiantes de todo el mundo y el área local a su comunidad vibrante y variada.</li></div>
+              <div class="col-md-12"><li>Desarrollar la confianza de los estudiantes en sus propias habilidades.</li></div>
+              <div class="col-md-12"><li>Mejorar las habilidades de los estudiantes en su materia seleccionada.</li></div>
+
+              <div class="col-md-12 ">
+
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
                     <a style="width: 100%;" href="../Login" > Me interesa</a>
                 </div>
-        </div>
-        <div class="row">
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="youtube-player" data-id="BZKgviod4D4"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BZKgviod4D4"></iframe>
+          </div>-->
           <hr>
-        </div>
-        <div class="youtube-player" data-id="5xa1XwDzSnQ"></div>
 
-        <!--<div class="embed-responsive embed-responsive-21by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5xa1XwDzSnQ"></iframe>
-        </div>-->
-        </div>
+          </div>
 
+        </div>
+          <div class="bottom-strip"></div>
       </div>
-        <div class="bottom-strip"></div>
-    </div>
-
-
 </div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="chesterVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/e_chester.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_newchester-english-in-chester-00 (copy).jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 	1839 .</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/Hj1s65WCmfdpusXQ8" target="_blank" > Parkgate Rd, Chester CH1 4BJ, Reino Unido</a> </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="slide-container ">
+               <div class="row">
+                 <div class="col-xs-2 col-md-6 ">
+                  <div class="wrapper">
+                    <div class="clash-card giant">
+                      <div class="clash-card__image clash-card__image--giant">
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                      </div>
+                      <div class="clash-card__level clash-card__level--giant">Experiencia Internacional con programa Social</div>
+                      <div class="clash-card__unit-description">
+                        Creamos oportunidades para que los estudiantes aumenten su confianza en el inglés al mismo tiempo que aprenden sobre la cultura y las costumbres de otras naciones.
+                      </div>
+                      <p class="where">Precio de Paquete incluye</p>
+                      <div class="clash-card__unit-description">
+                        Matrícula del curso y programa social, Alojamiento en casa anfitriona(compartida o sencilla), desayuno, cena y lunch.
+                      </div>
+                      <p class="where">Precio Excluye:</p>
+                      <div class="clash-card__unit-description">
+                        £80.00 registro, transferencias de aeropuerto(£130.00) o servicio de Meet & Greet (£160.00).
+                      </div>
+                      <p class="where">Programa social incluye (por semana):</p>
+                      <div class="clash-card__unit-description">
+                        2 proyecto, 1 excursión de medio día, 2 actividades de medio día, 2 eventos en la tarde, 1 excursión de fin de
+                      </div>
+                      <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                        <div class="one-third">
+                          <div class="stat-value">Edad:</div>
+                          <div class="stat"> 13-16 años </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end clash-card barbarian-->
+                    </div> <!-- end wrapper -->
+
+                 </div> <!-- end col waper-->
+               </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <table class="table table-bordered">
+                <thead class="theadtabletw">
+                  <tr>
+                    <th>Semana de inicio</th>
+                    <th >Costo del curso y programa social por semana</th>
+                    <th >Alojamiento por semana</th>
+                    <th >Total del paquete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th >29 Jun, 6 Jul, 13 Jul, 20 Jul 2020</th>
+                    <td>£415.00</td>
+                    <td>£178.00</td>
+                    <td>£593.00</td>
+                  </tr>
+                  <tr>
+                    <th >27 Jul, 3 Ago, 10 Ago 2020</th>
+                    <td>£353.00</td>
+                    <td>£178.00</td>
+                    <td>£531.00</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col-md-12"><li>Te enseñarán nuestros destacados académicos de la Facultad de Administración y Negocios que son especialistas de la industria en su campo.</li></div>
+              <div class="col-md-12"><li>Estos programas de dos semanas le brindarán oportunidades fantásticas para experimentar el maravilloso Chester histórico y el noroeste del Reino Unido, incluidos Liverpool, Manchester y el norte de Gales.</li></div>
+              <div class="col-md-12"><li> Es una oportunidad emocionante para combinar actividades de estudio y sociales.</li></div>
+
+              <div class="col-md-12 ">
+
+              <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="youtube-player" data-id="5pcmATG_mjM"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5pcmATG_mjM"></iframe>
+          </div>-->
+        <hr>
+
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="cambridgeVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_eselectModal.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 	1209 .</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+                <div class="col-md-4 "> <a href="https://goo.gl/maps/fyt4VQvkFH7GoHhp6" target="_blank" >13 Station Rd, Cambridge CB1 2JB, Reino Unido </a> </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="slide-container ">
+                    <div class="row">
+                      <div class="col-xs-2 col-md-6 ">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Culford Young Learners </div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes de Culford estudian 15 horas completas de clases de inglés cada semana y realizan actividades por la tarde y por la noche.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             <p><b>Llegada: </b>5 - 18 July 2020 19 Julio <b>Salida: </b>1 Agosto 2020</p>
+                           </div>
+                           <p class="where">Costo Incluye:</p>
+                           <div class="clash-card__unit-description">
+                             Alimentos, alojamiento, actividades programadas, excursiones.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">10 – 13 años. </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">2 semanas - £1,750 + £50 registro</div>
+                              <div class="stat">4 semanas - £3,500 + £50 registro</div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--wizard">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--wizard">Culford Adolescentes</div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes de Culford estudian 20 horas completas de clases de inglés cada semana y realizan actividades por la tarde y por la noche.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                             <div class="clash-card__unit-description">
+                               <p><b>Llegada: </b>5 - 18 July 2020  <b>Salida: </b>19 Julio – 1 Agosto 2020</p>
+                             </div>
+                             <p class="where">Incluye</p>
+                             <div class="clash-card__unit-description">
+                               Alimentos, alojamiento, actividades programadas, excursiones.
+                             </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">13 – 16 años </div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> 2 semanas - £1,750 + £50 registro </div>
+                               <div class="stat"> 4 semanas - £3,500 + £50 registro </div>
+                             </div>
+                           </div>
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card goblin">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant">Inglés + Futbol</div>
+                           <div class="clash-card__unit-description">
+                             Los estudiantes se unen a las clases en el curso Cambridge Junior y se quedan en el mismo alojamiento. Por las tardes y los domingos hay un curso intensivo de fútbol con nuestros entrenadores calificados por English FA.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                             <div class="clash-card__unit-description">
+                               <p><b>Llegada: </b>12 - 25 Julio 2020  <b>Salida: </b>25 Julio – 8 Agosto 2020</p>
+                             </div>
+                            <p class="where">Incluye</p>
+                             <div class="clash-card__unit-description">
+                               Alimentos, alojamiento, actividades programadas, excursiones.
+                             </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 – 17 años</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat"> 2 semanas/Homesaty(hab. doble)- £1,720 + £50 registro </div>
+                               <div class="stat"> 2 semanas/Residencia(hab. Doble) - £1,920 + £50 registro </div>
+                               <div class="stat"> 2 semanas/Residencia(hab.sencilla) - £1,980 + £50 registro </div>
+                               <div class="stat"> 2 semanas/Residencia(hab.sencilla) The Reilyard - £2,030 + £50 registro </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card archer">
+                           <div class="clash-card__image clash-card__image--archer">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--archer">Magdalene College</div>
+                           <div class="clash-card__unit-description">
+                             Los alumnos asistirán a uno de los colegios más viejo y bellos de la universidad de Cambridge fundado en 1428. Tendrán 20 horas de clases, desarrollarán sus habilidades en el idioma inglés debatiendo sobre temas relevantes e interesantes.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             -5 - 18 July 2020
+                             -19 Julio – 1 Agosto 2020
+                           </div>
+                           <p class="where">Incluye</p>
+                           <div class="clash-card__unit-description">
+                             Alimentos, alojamiento, actividades programadas, excursiones.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 16 – 25 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Básico - Avanzado</div>
+                             </div>
+                             <div class="one-third no-border">
+                               <div class="stat-value">Costo:</div>
+                               <div class="stat">  2 semanas - £2,170 + £50 registro  </div>
+                               <div class="stat">  4 semanas - £4,340 + £50 registro  </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card giant">
+                           <div class="clash-card__image clash-card__image--goblin">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--goblin">Cambridge Adolescentes</div>
+                           <div class="clash-card__unit-description">
+                             Tendrán cuatro horas completas de clases de inglés por día con actividades de tarde y noche. El sábado, hay un viaje de un día completo a Londres con la oportunidad de ver los lugares de interés, así como algo de tiempo libre para hacer algunas compras.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             - 28 Junio – 11Julio
+                             - 12 – 25 Julio
+                             - 26 Julio – 8 Agosto
+                             - 9 – 22 Agosto
+                           </div>
+                           <p class="where">Incluye:</p>
+                         <div class="clash-card__unit-description">
+                           Alimentos, alojamiento, actividades programadas, excursiones.
+                         </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat">14 – 17 años </div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                         <div class="wrapper">
+                          <table class="table table-bordered">
+                            <thead class="theadtabletw">
+                              <tr>
+                                <th colspan="2">Alojamiento Familia Anfitriona</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£1520 +£50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£3040 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£4560 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >8 semanas</th>
+                                <td>£6080 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table table-bordered">
+                            <thead class="theadtabletw">
+                              <tr>
+                                <th colspan="2">Junior Alojamiento en residencia Doble</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£1720 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£3440 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£5160 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >8 semanas</th>
+                                <td>£6880 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table table-bordered">
+                            <thead class="theadtabletw">
+                              <tr>
+                                <th colspan="2">Junior Alojamiento en residencia sencilla</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£1780 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£3560 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£5340 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >8 semanas</th>
+                                <td>£7120 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table table-bordered">
+                            <thead class="theadtabletw">
+                              <tr>
+                                <th colspan="2">Junior Alojamiento en residencia en The Railyard</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£3660 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£5490 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£7320 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                         </div>
+                      </div>
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                         <div class="wrapper">
+                          <table class="table table-bordered">
+                            <thead class="theadtableth">
+                              <tr>
+                                <th colspan="2">Alojamiento Familia Anfitriona</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£1520 +£50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£3040 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£4560 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >8 semanas</th>
+                                <td>£6080 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table table-bordered">
+                            <thead class="theadtableth">
+                              <tr>
+                                <th colspan="2">Junior Alojamiento en residencia Doble</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£1720 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£3440 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£5160 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >8 semanas</th>
+                                <td>£6880 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table table-bordered">
+                            <thead class="theadtableth">
+                              <tr>
+                                <th colspan="2">Junior Alojamiento en residencia sencilla</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£1780 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£3560 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£5340 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >8 semanas</th>
+                                <td>£7120 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table table-bordered">
+                            <thead class="theadtableth">
+                              <tr>
+                                <th colspan="2">Junior Alojamiento en residencia en The Railyard</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th >2 semanas</th>
+                                <td>£7120 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >4 semanas</th>
+                                <td>£3660 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >6 semanas</th>
+                                <td>£5490 + £50 costo de registro</td>
+                              </tr>
+                              <tr>
+                                <th >8 semanas</th>
+                                <td>£7320 + £50 costo de registro</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                         </div>
+                      </div>
+                      <div class="col-xs-2 col-md-6  ml-auto">
+                       <div class="wrapper">
+                         <div class="clash-card barbarian">
+                           <div class="clash-card__image clash-card__image--barbarian">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--barbarian">Inglés Plus</div>
+                           <div class="clash-card__unit-description">
+                             Tendrán cuatro horas completas de clases de inglés por día. Pueden elegir combinar 10 horas de inglés con 10 horas de clases extra de ciencia, teatro musical, arte o inglés para líderes a la semana. Junto con el programa de actividades sociales programadas.
+                           </div>
+                             <p class="where">¿Cuándo?</p>
+                           <div class="clash-card__unit-description">
+                             - 28 Junio – 11 Julio
+                             - 12 – 25 Julio
+                             - 26 Julio – 8 Agosto
+                             - 9 – 22 Agosto
+                           </div>
+                           <p class="where">Incluye</p>
+                           <div class="clash-card__unit-description">
+                             Alimentos, alojamiento, actividades programadas, excursiones.
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                             <div class="one-third">
+                               <div class="stat-value">Edad:</div>
+                               <div class="stat"> 14 – 17 años </div>
+                             </div>
+                             <div class="one-third">
+                               <div class="stat-value">Nivel de inglés:</div>
+                               <div class="stat">Intermedio - Avanzado</div>
+                             </div>
+                           </div>
+
+                         </div> <!-- end clash-card barbarian-->
+                         </div> <!-- end wrapper -->
+
+                      </div> <!-- end col waper-->
+                      <div class="col-xs-2 col-md-6">
+                       <div class="wrapper">
+                         <div class="clash-card wizard">
+                           <div class="clash-card__image clash-card__image--giant">
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           </div>
+                           <div class="clash-card__level clash-card__level--giant"></div>
+
+                            <p class="where">Suplementos del curso(Se agrega al precio de tabla)</p>
+                           <div class="clash-card__unit-description">
+                            <p class="nameInst">Precios por 2 semanas de curso</p>
+                            <ul>
+                            <li>- Ciencia = £90</li>
+                            <li>- Teatro musical= £90</li>
+                            <li>- Arte = £90</li>
+                            <li>-Inglés para líderes= £250</li>
+                           </div>
+                          </div>
+                         </div>
+                      </div>
+                 </div> <!-- end row two -->
+              </div><!-- end slide continer-->
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col-md-12"><li>Nuestros programas ofrecen una mezcla de tradición e inspiración a medida que los participantes de todo el mundo absorben la atmósfera de este lugar extraordinario.</li></div>
+              <div class="col-md-12"><li>Durante siglos, la Universidad ha ayudado a dar forma y cambiar el mundo.</li></div>
+              <div class="col-md-12"><li>creemos que nuestros programas ofrecen beneficios que ampliarán su experiencia y mejorarán su CV.</li></div>
+
+              <div class="col-md-12 ">
+
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="youtube-player" data-id="bCApP-JqLpc"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>
+          </div>-->
+          <hr>
+
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+</div>
+
+
 
 <!-- . -->
 <!-- contact info section end -->

@@ -454,7 +454,7 @@
         <div class="col-12">
           <!-- Example Card Decks -->
           <div class="example-wrap">
-            <h4 class="example-title" style="color: white;font-size: 30px">Que te interesa estudiar?</h4>
+            <h4 class="example-title" style="color: white;font-size: 30px">completar los siguientes pasos</h4>
 
             <div class="row">
                 <!-- <div class="col-lg-4">
