@@ -8,7 +8,7 @@ class Escuelas extends MY_RootController {
         if (!@$this->session->userdata('user_sess')->email) {
 			redirect('Login');
         }else{
-            if (@$this->session->userdata('user_sess')->typeUsuario!="Admin") {
+            if (@$this->session->userdata('user_sess')->typeUsuario!="Admin" && $this->session->userdata('user_sess')->typeUsuario!="Agente") {
                 redirect('Login');
             }
         }

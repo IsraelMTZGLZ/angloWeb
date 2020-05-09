@@ -46,182 +46,104 @@
     </div>
     
 </div>
-<style>#container{
-    margin-top: -110px;
-  text-align: center;
-  margin-bottom: 70px;
-}
 
-#avatar{
-  border: white solid 7px;
-  box-shadow: 0px 1px 0px rgba(0,0,0,0.25);
-  /*box-shadow: 0px 2px 3px rgba(0,0,0,0.25);*/
-  /*transition: all 0.5s cubic-bezier(0.19,1.0,0.22,1.0);*/
-  border-radius: 50%;
-  animation: bounce cubic-bezier(0.19,1.0,0.22,1.0) 1.5s alternate infinite;
-  -webkit-animation: bounce cubic-bezier(0.19,1.0,0.22,1.0) 1.5s alternate infinite;
-  /*maxthon duplicate*/
-}
+<div class="blog_wrapper float_left">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post-wrapper iner_blog">
+                        <div class="post-thumbnail">
+                            <img src="<?=base_url('resources/assets/Eventos/9Mayo.png');?>" class="img-responsive " alt="Image">
+							   <div class="entry-footer float_left">
+                            <ul class="entry-meta pull-left">
+                            </ul>
+                        </div>
+                        <!-- /.entry-footer -->
+                        </div>                 
+                        <!-- /.post-thumbnail -->
 
-@keyframes bounce {
-	to{
-    transform: translateY(-12px) scale(1.03);
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
-  }
-}
-@-webkit-keyframes bounce { /*maxthon duplicate*/
-	to{
-    -webkit-transform: translateY(-12px) scale(1.03);
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
-  }
-}
+                        <div class="blog-content">
+                            <header class="entry-header">
+                                <h4 class="entry-title"><a href="https://bit.ly/Posgrados-en-UK" target="_blank">Posgrado  en UK</a></h4>
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li><span class="posted-in" style="font-size: 20px">Fecha: &nbsp;09 Mayo, 2020</span>
+                                        </li>
+                                        <li><span class="posted-in" style="font-size: 20px">Horario: &nbsp;9:50 a.m</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.entry-meta -->
+                            </header>
+                            <!-- /.entry-header -->
+                            <br>
+                            <div class="entry-content">
+                                <p>Todo lo que necesitas para estudiar en las mejores universidades del mundo.</p>
+                            </div>
+                            <a href="https://bit.ly/Posgrados-en-UK" class="blog_read">Registrarme <i class="flaticon-arrow"></i></a>
+                            <!-- /.entry-content -->
+                        </div>
+                        <!-- /.blog-content -->
 
-/*#avatar:hover{
-  transform: translateY(-7px) scale(1.05);
-  -webkit-transform: translateY(-7px) scale(1.05); /*maxthon
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
-}*/
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post-wrapper iner_blog">
+                        <div class="post-thumbnail">
+                            <div id="blogoneSlider" class="carousel slide" data-ride="carousel">
 
-#text{
-  margin-top: 7px;
-}
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img src="<?=base_url('resources/assets/Eventos/posgrado.png');?>" class="img-responsive " alt="Image">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="<?=base_url('resources/assets/Eventos/pregrado.png');?>" class="img-responsive " alt="Image">
+                                    </div>
+                                </div>
 
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#blogoneSlider" role="button" data-slide="prev">
+                                    <span class="flaticon-left-arrow" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#blogoneSlider" role="button" data-slide="next">
+                                    <span class="flaticon-right-arrow" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+							  <div class="entry-footer float_left">
 
-</style>
-<div id=container>
-  <img src="https://pbs.twimg.com/profile_images/459505368234606592/nuxaaQoo_400x400.jpeg"" id="avatar" width="250" draggable="false"/>
+                        </div>
+                        <!-- /.entry-footer -->
+                        </div>                      
+                        <!-- /.post-thumbnail -->
 
-  <div id=text>
-    <h1><?=$this->lang->line('event_sub_coming');?></h1>
-    <p title="(I guess)"><?=$this->lang->line('esperalo_event');?></p>
-  </div>
-</div>
-<!-- <div class="blog_wrapper float_left">
-    <div class="container">
-        <div class="row">
+                        <div class="blog-content">
+                            <header class="entry-header">
+                                <h4 class="entry-title"><a href="https://forms.gle/oLV9LB2fSnvFvEn96">BRISTOL ECONÓMICS</a></h4>
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li><span class="posted-in" style="font-size: 20px">Fecha: &nbsp;12 al 20 Mayo, 2020</span>
+                                        </li>
+                                        <li><span class="posted-in" style="font-size: 20px">Horario: &nbsp;12.30 p.m</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.entry-meta -->
+                            </header>
+                            <!-- /.entry-header -->
+                            <br>
+                            <div class="entry-content">
+                                <p>Revisa las opciones para pregrado y posgrado.</p>
+                                <a href="https://forms.gle/oLV9LB2fSnvFvEn96" class="blog_read">Registrarme <i class="flaticon-arrow"></i></a>
+                            </div>
+                            <!-- /.entry-content -->
+                        </div>
+                        <!-- /.blog-content -->
 
-            <div class="comments_form float_left">
-
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="main-timeline">
-                        <div class="">
-
-
-                          <a href="#.bd-example-modal-lg" class="timeline" >
-                              <div class="timeline-icon" ><i class="far fa-calendar-plus" aria-hidden="true"></i></div>
-                              <div class="timeline-content">
-                                  <h3 class="title">Feria Lunes 14 de noviembre </h3>
-                                  <p class="description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                  </p>
-
-                              </div>
-                          </a>
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Reservar</button>
-
-                          </div>
-                          <a href="#" class="timeline">
-                              <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                              <div class="timeline-content">
-                                  <h3 class="title">Web Developer</h3>
-                                  <p class="description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                  </p>
-                              </div>
-                          </a>
-                          <a href="#" class="timeline">
-                              <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
-                              <div class="timeline-content">
-                                  <h3 class="title">Web Designer</h3>
-                                  <p class="description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                  </p>
-                              </div>
-                          </a>
-                          <a href="#" class="timeline">
-                              <div class="timeline-icon"><i class="fa fa-mobile"></i></div>
-                              <div class="timeline-content">
-                                  <h3 class="title">Web Developer</h3>
-                                  <p class="description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                  </p>
-                              </div>
-                          </a>
-                          <a href="#" class="timeline">
-                              <div class="timeline-icon"><i class="fa fa-calendar-plus"></i></div>
-                              <div class="timeline-content">
-                                  <h3 class="title">Web Developer</h3>
-                                  <p class="description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                  </p>
-                              </div>
-                          </a>
-                          <a href="#" class="timeline">
-                              <div class="timeline-icon"><i class="fa fa-calendar-plus"></i></div>
-                              <div class="timeline-content">
-                                  <h3 class="title">Web Developer</h3>
-                                  <p class="description">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                  </p>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-
+                    </div>
+                </div> 
             </div>
-
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
         </div>
     </div>
-</div> -->
-
-<script>
-    //************* time counter ***********//
-
-    var deadline = 'may 10 2020 11:59:00 GMT-0400';
-
-    function time_remaining(endtime) {
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var seconds = Math.floor((t / 1000) % 60);
-        var minutes = Math.floor((t / 1000 / 60) % 60);
-        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        return {
-            'total': t,
-            'days': days,
-            'hours': hours,
-            'minutes': minutes,
-            'seconds': seconds
-        };
-    }
-
-    function run_clock(id, endtime) {
-        var clock = document.getElementById(id);
-
-        // get spans where our clock numbers are held
-        var days_span = clock.querySelector('.days');
-        var hours_span = clock.querySelector('.hours');
-        var minutes_span = clock.querySelector('.minutes');
-        var seconds_span = clock.querySelector('.seconds');
-
-        function update_clock() {
-            var t = time_remaining(endtime);
-
-            // update the numbers in each part of the clock
-            days_span.innerHTML = t.days;
-            hours_span.innerHTML = ('0' + t.hours).slice(-2);
-            minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
-            seconds_span.innerHTML = ('0' + t.seconds).slice(-2);
-
-            if (t.total <= 0) {
-                clearInterval(timeinterval);
-            }
-        }
-        update_clock();
-        var timeinterval = setInterval(update_clock, 1000);
-    }
-    run_clock('clockdiv', deadline);
-</script>

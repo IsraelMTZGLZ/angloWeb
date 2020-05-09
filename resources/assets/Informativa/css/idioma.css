@@ -4,7 +4,7 @@
   min-height: 30px; /* Set minimum height of each cube */
 }
 
-.share-bar .left, .share-bar .right {
+.share-bar .left, .share-bar .rightI {
   min-height: 400px;
 }
 
@@ -29,7 +29,7 @@
   z-index: 9999;
 }
 
-.right {
+.rightI {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -47,13 +47,13 @@
   list-style-type: none;
 }
 
-.share-bar.right a, .share-bar.left a {
+.share-bar.rightI a, .share-bar.left a {
   width: inherit;
   height: inherit;
   display: block;
 }
 
-.share-bar .right a {
+.share-bar .rightI a {
   width: inherit;
   height: inherit;
   display: block;

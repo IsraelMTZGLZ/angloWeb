@@ -52,7 +52,7 @@
               <div class="col-lg-3">
                 <div class="card card-shadow text-center">
                   <div class="card-block">
-                    <img class="card-img-top" src="<?=base_url('resources/assets/Anglo/preparatorias.jpg');?>" alt="Imagen Institucion">
+                    <img class="card-img-top" src="<?=base_url('resources/assets/Anglo/preparatorias.jpg');?>" alt="Imagen Institucion" >
                     <h4 class="profile-user">Preparatorias</h4>
                     <p class="profile-job">Da click para ver todas las preparatorias disponibles</p>
                   </div>
@@ -69,7 +69,7 @@
               <div class="col-lg-3">
                 <div class="card card-shadow text-center">
                   <div class="card-block">
-                    <img class="card-img-top" src="<?=base_url('resources/assets/Anglo/cursos_ingles.jpg');?>" alt="Imagen Institucion">
+                    <img class="card-img-top" src="<?=base_url('resources/assets/Anglo/cursos_ingles.jpg');?>" alt="Imagen Institucion" >
                     <h4 class="profile-user">Cursos De Ingles</h4>
                     <p class="profile-job">Da click para ver todas los cursos de ingles disponibles</p>
                   </div>
@@ -150,7 +150,7 @@
         <div class="col-lg-4">
           <div class="card card-shadow text-center">
             <div class="card-block">
-              <img class="card-img-top" src="<?=@$universidades[$i]['intitucion']['logoInstitucion']?>" alt="Imagen Institucion">
+              <img class="card-img-top" src="<?=@$universidades[$i]['intitucion']['logoInstitucion']?>" alt="Imagen Institucion" style="width: 70%">
               <h4 class="profile-user"><?=@$universidades[$i]['intitucion']['nombreInstitucion']?></h4>
               <ul class="list-group list-group-bordered">
                 <li class="list-group-item list-group-item-action active">Lista de Facultades</li>
@@ -220,7 +220,7 @@
         <div class="col-lg-6">
           <div class="card card-shadow text-center">
             <div class="card-block">
-              <img class="card-img-top" src="<?=@$preparatorias[$i]['institucion']['logoInstitucion']?>" alt="Imagen Institucion">
+              <img class="card-img-top" src="<?=@$preparatorias[$i]['institucion']['logoInstitucion']?>" alt="Imagen Institucion" style="width: 40%">
               <h4 class="profile-user"><?=@$preparatorias[$i]['institucion']['nombreInstitucion']?></h4>
               <div class="row">
                 <div class="col-lg-6">
@@ -322,7 +322,7 @@
                     $(document).find('.divUni').append('<div class="col-lg-4">'+
                       '<div class="card card-shadow text-center" style="">'+
                         '<div class="card-block">'+
-                          '<img class="card-img-top" src="'+universidades[i]['logoInstitucion']+'" alt="Imagen Institucion">'+
+                          '<img class="card-img-top" src="'+universidades[i]['logoInstitucion']+'" alt="Imagen Institucion" style="width: 70%">'+
                           '<h4 class="profile-user">'+universidades[i]['nombreInstitucion']+'</h4>'+
                           '<ul class="list-group list-group-bordered '+universidades[i]['idInstitucion']+'">'+
                             '<li class="list-group-item list-group-item-action active">Lista de Facultades</li>'+
@@ -374,7 +374,7 @@
                     $(document).find('.divUni').append('<div class="col-lg-4">'+
                       '<div class="card card-shadow text-center" style="">'+
                         '<div class="card-block">'+
-                          '<img class="card-img-top" src="'+universidades[i]['logoInstitucion']+'" alt="Imagen Institucion">'+
+                          '<img class="card-img-top" src="'+universidades[i]['logoInstitucion']+'" alt="Imagen Institucion" style="width: 70%">'+
                           '<h4 class="profile-user">'+universidades[i]['nombreInstitucion']+'</h4>'+
                           '<ul class="list-group list-group-bordered '+universidades[i]['idInstitucion']+'">'+
                             '<li class="list-group-item list-group-item-action active">Lista de Facultades</li>'+
@@ -446,7 +446,7 @@
                         $(document).find('.divPrepa').append('<div class="col-lg-6">'+
                           '<div class="card card-shadow text-center">'+
                             '<div class="card-block">'+
-                              '<img class="card-img-top" src="'+preparatorias[i]['logoInstitucion']+'" alt="Imagen Institucion">'+
+                              '<img class="card-img-top" src="'+preparatorias[i]['logoInstitucion']+'" alt="Imagen Institucion" style="width: 40%">'+
                               '<h4 class="profile-user">'+preparatorias[i]['nombreInstitucion']+'</h4>'+
                               '<div class="row">'+
                                 '<div class="col-lg-6">'+
@@ -524,7 +524,7 @@
                         $(document).find('.divPrepa').append('<div class="col-lg-6">'+
                           '<div class="card card-shadow text-center">'+
                             '<div class="card-block">'+
-                              '<img class="card-img-top" src="'+preparatorias[i]['logoInstitucion']+'" alt="Imagen Institucion">'+
+                              '<img class="card-img-top" src="'+preparatorias[i]['logoInstitucion']+'" alt="Imagen Institucion" style="width: 40%">'+
                               '<h4 class="profile-user">'+preparatorias[i]['nombreInstitucion']+'</h4>'+
                               '<div class="row">'+
                                 '<div class="col-lg-6">'+
@@ -602,7 +602,7 @@
                         $(document).find('.divPrepa').append('<div class="col-lg-6">'+
                           '<div class="card card-shadow text-center">'+
                             '<div class="card-block">'+
-                              '<img class="card-img-top" src="'+preparatorias[i]['logoInstitucion']+'" alt="Imagen Institucion">'+
+                              '<img class="card-img-top" src="'+preparatorias[i]['logoInstitucion']+'" alt="Imagen Institucion" style="width: 40%">'+
                               '<h4 class="profile-user">'+preparatorias[i]['nombreInstitucion']+'</h4>'+
                               '<div class="row">'+
                                 '<div class="col-lg-6">'+

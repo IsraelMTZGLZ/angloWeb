@@ -71,7 +71,7 @@ class Login extends MY_RootController {
 						redirect('Dashboard/InformacionAgente');
 					}else{
 						//ha llenado toda su informacion
-						redirect('ComingSoon');
+						redirect('Dashboard/HomeAgente');
 					}
 				
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Admin") {
