@@ -293,7 +293,7 @@
             <div class="form-group form-material floating" data-plugin="formMaterial">
               <select class="form-control" name="eau" id="eau" data-plugin="select2">
                 <option value="" disabled selected>Elige una opcion</option>
-                <option value="Carrera">Carrera</option>
+                <option value="Carrera">Carrera/Pregrado</option>
                 <option value="Masters">Maestria</option>
                 <option value="PhD">PhD</option>
               </select>

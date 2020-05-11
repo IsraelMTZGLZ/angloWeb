@@ -124,7 +124,7 @@
     }
   </style>
   <!--bar idioma-->
-  <div class="share-bar right"><!-- Set position: top,left,right,bottom -->
+  <div class="share-bar rightI"><!-- Set position: top,left,right,bottom -->
     <ul style="margin-top: 30px;">
       <li class="<?php echo ($this->session->userdata('site_lang') == 'spanish') ? 'spanishActivo' : 'spanish'; ?>">
         <a href="Language/spanish">

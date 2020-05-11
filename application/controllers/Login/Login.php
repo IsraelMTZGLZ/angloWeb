@@ -35,7 +35,7 @@ class Login extends MY_RootController {
 								//ya acompleto el tipo de estudio y eligio facultad
 								if($response['data']['anioMesIngreso']){
 									//ya selecciono las universidades que le interesan
-									redirect('ComingSoon');
+									redirect('Dashboard/HomeAspirante');
 								}else{
 									redirect('Dashboard/Universidad/UniversidadesFacultad');
 								}
@@ -50,7 +50,7 @@ class Login extends MY_RootController {
 								//ya acompleto el tipo de estudio y eligio tipo de alojamiento
 								if($response['data']['anioMesIngreso']){
 									//ya selecciono las preparatorias que le interesan
-									redirect('ComingSoon');
+									redirect('Dashboard/HomeAspirante');
 								}else{
 									redirect('Dashboard/Preparatoria/PreparatoriasFacultad');
 								}
