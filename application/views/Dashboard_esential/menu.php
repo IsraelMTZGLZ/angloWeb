@@ -34,6 +34,12 @@
                   <span class="site-menu-title">Inicio</span>
                 </a>
               <?php } ;?>
+              <?php if($user->typeUsuario=="Aspirante") { ;?>
+                <a href="HomeAspirante">
+                  <i class="site-menu-icon fas fa-home" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Inicio</span>
+                </a>
+              <?php } ;?>
             </li>
             <?php if($user->typeUsuario=="Admin") { ;?>
               <li class="site-menu-item has-sub">
