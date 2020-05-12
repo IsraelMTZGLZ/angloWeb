@@ -79,8 +79,8 @@
               </div>
               <!-- End Panel Overall Sales -->
             </div>
-            
-        
+
+
       </div>
 
       <div class="row" data-plugin="matchHeight" data-by-row="true">

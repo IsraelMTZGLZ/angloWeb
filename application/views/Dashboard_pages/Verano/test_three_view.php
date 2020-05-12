@@ -25,9 +25,6 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/bootstrap-extend.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/css/site.min599c.css?v4.0.2');?>">
 
-  <!-- Skin tools (demo site only) -->
-  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/skintools.min599c.css?v4.0.2');?>">
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Plugin/skintools.min599c.js?v4.0.2');?>"></script>
 
 
   <!--<link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/animsition/animsition.min599c.css?v4.0.2');?>">-->
@@ -256,43 +253,128 @@
   }
 }
 
-
-
-/* //////////////////////////////// */
-
-.container {
-  max-width: 900px;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.small-meta {
+  font-size: 12px;
+}
+.dim {
+  opacity: 0.4;
+}
+.image {
+  width: 180px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+}
+.grid-wrapper {
   margin: 0 auto;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.card-content {
+    -webkit-box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
+    -moz-box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
+    box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
+    border-radius: 3px;
+    padding: 25px 25px 10px 25px;
+}
+.card-content * {
+  cursor: pointer;
+}
+.card-wrapper {
+  position: relative;
+  width: 284px;
+  height: 285px;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 70px;
+}
+.c-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.c-card ~ .card-content {
+  transition: all 500ms ease-out;
+}
+.c-card ~ .card-content .card-state-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  transition: all 100ms ease-out;
+}
+.c-card ~ .card-content:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 0;
+  height: 0;
+  border-top: 52px solid #47cf73;
+  border-left: 52px solid transparent;
+  transition: all 200ms ease-out;
+}
+.c-card ~ .card-content:after {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 50px solid #FFF;
+  border-left: 50px solid transparent;
+  transition: all 200ms ease-out;
+}
+.c-card ~ .card-content:hover {
+  border: 4px solid #CCC;
+}
+.c-card ~ .card-content:hover .card-state-icon {
+  background-position: -30px 0;
+}
+.c-card ~ .card-content:hover:before {
+  border-top: 52px solid #47cf73;
+}
+.c-card:checked ~ .card-content {
+  border: 4px solid #1DCA0D;
+}
+.c-card:checked ~ .card-content .card-state-icon {
+  background-position: -90px 2px;
+}
+.c-card:checked ~ .card-content:before {
+  border-top: 52px solid #47cf73;
+      background: url("https://www.shareicon.net/download/2016/08/20/817721_check.svg") no-repeat;
+}
+.c-card:checked ~ .card-content:after {
+  border-top: 52px solid #47cf73;
+
+}
+.c-card:checked:hover ~ .card-content .card-state-icon {
+  background-position: -60px 2px;
+}
+.c-card:checked:hover ~ .card-content:before {
+  border-top: 52px solid #47cf73;
+}
+.c-card:checked:hover ~ .card-content:after {
+  border-top: 52px solid #47cf73;
 }
 
-
-/**
-  Component
-**/
-
-.card{
-    width: 100%;
-}
-
-.card-input-element {
-    display: none;
-}
-
-.card-input {
-    margin: 10px;
-    padding: 00px;
-}
-
-.card-input:hover {
-    cursor: pointer;
-}
-
-.card-input-element:checked + .card-input {
-     box-shadow: 0 0 1px 1px #2ecc71;
- }
-
-
-/*custom font*/
 
   </style>
   <div id="nc-main" class="nc-main bg-cover bg-cc" >
@@ -310,85 +392,119 @@
     </div>
   </div>
 
-  <input type="hidden" name="namePerson" id="namePerson" value="<?=@$user->names;?> <?=@$user->paterns;?>">
-
-  <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">&gt;
-    <div class="page-content vertical-align-middle animation-slide-top animation-duration-1">
-
+  <div class="page text-center" >
+    <div class="page-content">
+      <input type="hidden" id="aspiranteUni" value="<?=@$aspiranteUni['idAspiranteUniversidad'];?>" name="aspiranteUni">
     <div class="row">
         <div class="col-12">
           <!-- Example Card Decks -->
           <div class="example-wrap">
-            <h4 class="example-title" style="color: white;font-size: 30px">Elije 3 Instituciones</h4>
+            <h4 class="example-title" style="color: white;font-size: 30px">Que te interesa estudiar?</h4>
 
             <div class="row">
-                <!-- <div class="col-lg-4">
+                <div class="col-lg-5">
                     <div class="example-col">
-                        <p style="color: white;font-size: 18px">Selecciona el programa que te gustaria estudiar:</p>
+                        <p style="color: white;font-size: 18px">Selecciona las universidades de tu interes ( Maximo 3 ):</p>
                     </div>
-                </div> -->
-                <div class="col-lg-4 offset-lg-4">
+                </div>
+                <div class="offset-lg-4">
                     <div class="example-col">
                         <div class="row" style="display: flex;justify-content: left;margin-left: 60%;">
-                            <!-- <p><a href="<?=base_url('Login/Login/logout')?>" class="btn btn-warning">Cerrar sesion</a></p> -->
+                            <p><a href="<?=base_url('Login/Login/logout')?>" class="btn btn-warning">Cerrar sesion</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card-deck">
-
-
-              <div class="example-wrap">
-
-                <div class="row">
-                    <?php for ($i = 0; $i < count($instituciones); $i++) { ?>
-                  <div class="col-lg-3 col-md-12">
-
-                    <!-- <h4 class="example-title">Types</h4> -->
-                    <div class="card">
-                      <div class="checkbox-custom checkbox-primary checkbox-lg">
-                        <input type="checkbox" class="selectable-item" id="media_1" />
-                        <label for="media_1"></label>
+            <br>
+            <div class="row" style="display: flex;justify-content: center;margin-top: -30px;">
+              <div class="animation-example animation-hover hover" >
+                      <div class="form-group">
+                          <label for="mes" style="color: white;">Elige el mes de ingreso en el que estas interesado</label>
+                          <select class="form-control" name="mes" id="mes">
+                              <option value="" disabled selected>selecciona una opcion</option>
+                              <option value="01">Enero</option>
+                              <option value="03">Marzo</option>
+                              <option value="05">Mayo</option>
+                              <option value="09">Septiembre</option>
+                          </select>
                       </div>
-                      <img class="card-img-top img-fluid w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>"
-                        alt="Card image cap">
-                      <div class="card-block">
-                        <h4 class="card-title"><?=@$instituciones[$i]['nombreInstitucion'];?></h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                          the bulk of the card's content.</p>
+                      <div class="form-group">
+                          <label for="anio" style="color: white;">Elige el año de ingreso en el que estas interesado</label>
+                          <select class="form-control" name="anio" id="anio">
+                              <option value="" disabled selected>selecciona una opcion</option>
+                              <option value="2020">2020</option>
+                              <option value="2021">2021</option>
+                              <option value="2022">2022</option>
+                              <option value="2023">2023</option>
+                          </select>
                       </div>
-                      <ul class="list-group list-group-dividered px-20 mb-0">
-                        <li class="list-group-item px-0">Cras justo odio</li>
-                        <li class="list-group-item px-0">Dapibus ac facilisis in</li>
-                        <li class="list-group-item px-0">Vestibulum at eros</li>
-                      </ul>
-                      <div class="card-block">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                      </div>
-                    </div>
-                  </div>
-                <?php } ?>
+                      <button type="button" class="btn btn-success animation-shake btn-lg btn-direction btn-left btn-continue">Continuar</button>
 
-                </div>
+
+
               </div>
 
             </div>
-          </div>
+            <br>
+            <div class="example-wrap">
+
+              <div class="row">
+                  <?php for ($i = 0; $i < count($instituciones); $i++) { ?>
+                <div class="col-lg-3 col-md-12">
+                  <!-- <input class="c-card uni" type="checkbox"  id="<?=$i+1?>" value="<?=@$universidades[$i]['idInstitucion']?>"> -->
 
 
-          <div class="row" style="display: flex;justify-content: center;margin-top: -30px;">
-            <div class="animation-example animation-hover hover" >
-                <form name="escuelaSelecionada" id="escuelaSelecionada">
-                  <input type="hidden" name="aspirante" id="aspirante" value="1">
-                    <input type="hidden" name="institucion" id="institucion" >
-                    <button type="submit" class="btn btn-primary animation-shake btn-lg btn-direction btn-up">Continuar</button>
-                </form>
+                  <div class="card">
+                    <div class="checkbox-custom checkbox-primary checkbox-lg">
+                      <input type="checkbox" class="selectable-item uni"  id="<?=$i?>" value="<?=@$instituciones[$i]['idInstitucion']?>">
+                      <label for="media_1"></label>
+                    </div>
+                    <label for="<?=$i?>">
+                    <img class="card-img-top img-fluid w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>"
+                      alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title"><?=@$instituciones[$i]['nombreInstitucion'];?></h4>
 
 
+                          <!-- <h3 style="color: white"><?=@$instituciones[$i]['nombreInstitucion']?></h4>
+                          <h5 style="color: white"><?=@$instituciones[$i]['nombreFacultad']?></h5>
+                          <p class="small-meta dim" style="color: white">Gracias</p> -->
+
+
+                    </div>
+                    <ul class="list-group list-group-dividered px-20 mb-0">
+                      <li class="list-group-item px-0">Cras justo odio</li>
+                      <li class="list-group-item px-0">Dapibus ac facilisis in</li>
+                      <li class="list-group-item px-0">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-block">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                      </label>
+                  </div>
+                </div>
+              <?php } ?>
+
+              </div>
             </div>
+            <br>
+            <button type="button" class="btn btn-success animation-shake btn-lg btn-direction btn-left btn-continue">Continuar</button>
 
+            <!-- <div class="grid-wrapper">
+                <?php for($i=0; $i < count(@$instituciones);$i++) { ?>
+                <div class="card-wrapper">
+                    <input class="c-card uni" type="checkbox"  id="<?=$i+1?>" value="<?=@$universidades[$i]['idInstitucion']?>">
+                    <div class="card-content">
+                    <div class="card-state-icon"></div>
+
+                </div>
+                <?php } ?>
+
+
+            </div> -->
           </div>
+
           <!-- End Example Card Decks -->
         </div>
 
@@ -550,10 +666,12 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-strength.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/multi-select.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-placeholder.min599c.js?v4.0.2');?>"></script>
-<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/datatables.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/tables/datatable.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/formatter.min599c.js?v4.0.2');?>"></script>
+
+  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/sweetalert2.js');?>"></script>
   <script>
     (function(document, window, $) {
       'use strict';
@@ -567,260 +685,106 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
-<script type="text/javascript">
 
-//jQuery time
-var current_fs, next_fs, previous_fs; //fieldsets
-var left, opacity, scale; //fieldset properties which we will animate
-var animating; //flag to prevent quick multi-click glitches
-
-$(".next").click(function(){
-if(animating) return false;
-animating = true;
-
-current_fs = $(this).parent();
-next_fs = $(this).parent().next();
-
-//activate next step on progressbar using the index of next_fs
-$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-//show the next fieldset
-next_fs.show();
-//hide the current fieldset with style
-current_fs.animate({opacity: 0}, {
-  step: function(now, mx) {
-    //as the opacity of current_fs reduces to 0 - stored in "now"
-    //1. scale current_fs down to 80%
-    scale = 1 - (1 - now) * 0.2;
-    //2. bring next_fs from the right(50%)
-    left = (now * 50)+"%";
-    //3. increase opacity of next_fs to 1 as it moves in
-    opacity = 1 - now;
-    current_fs.css({
-      'transform': 'scale('+scale+')',
-      'position': 'absolute'
-    });
-    next_fs.css({'left': left, 'opacity': opacity});
-  },
-  duration: 800,
-  complete: function(){
-    current_fs.hide();
-    animating = false;
-  },
-  //this comes from the custom easing plugin
-  easing: 'easeInOutBack'
-});
-});
-
-$(".previous").click(function(){
-if(animating) return false;
-animating = true;
-
-current_fs = $(this).parent();
-previous_fs = $(this).parent().prev();
-
-//de-activate current step on progressbar
-$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-//show the previous fieldset
-previous_fs.show();
-//hide the current fieldset with style
-current_fs.animate({opacity: 0}, {
-  step: function(now, mx) {
-    //as the opacity of current_fs reduces to 0 - stored in "now"
-    //1. scale previous_fs from 80% to 100%
-    scale = 0.8 + (1 - now) * 0.2;
-    //2. take current_fs to the right(50%) - from 0%
-    left = ((1-now) * 50)+"%";
-    //3. increase opacity of previous_fs to 1 as it moves in
-    opacity = 1 - now;
-    current_fs.css({'left': left});
-    previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
-  },
-  duration: 800,
-  complete: function(){
-    current_fs.hide();
-    animating = false;
-  },
-  //this comes from the custom easing plugin
-  easing: 'easeInOutBack'
-});
-});
-
-$(".submit").click(function(){
-return false;
-})
-
-</script>
   <script>
     $(function(){
-      $universidad=true;
-      $preparatoria=true;
-      $ingles=true;
-      $verano=true;
-      $persona =$(document).find('#namePerson').val();
-      tostada('info','Termina de acompletar tu informacion.');
+        var contador = 0;
+        $( '.uni' ).on( 'change', function() {
+            if( $(this).is(':checked') ){
+                contador++;
+            } else {
+                contador--;
+            }
+            if(contador==3){
+                $(".uni:not(:checked)").prop( "disabled", true );
+                tostada('info','Has seleccionado el maximo de universidades posibles');
+            }
+            if(contador<3){
+                $(".uni:not(:checked)").prop( "disabled", false );
+            }
+        });
+        $(document).on('click','.btn-continue',function (){
+            let unis = [];
+            $("input:checkbox:checked").each(
+                function() {
+                    unis.push(this.value);
+                }
+            );
+            if(unis.length >0){
+                var mes = $(document).find('#mes').val();
+                var anio = $(document).find('#anio').val();
+                console.log(unis);
+                console.log(unis[0]);
+                var formData = new FormData();
+                formData.append('mes', $(document).find('#mes').val());
+                formData.append('anio', $(document).find('#anio').val());
+                formData.append('campusone', unis[0]);
+                formData.append('campustwo', unis[1]);
+                formData.append('campusthree', unis[2]);
+                if( mes && anio){
+                    var d = anio+'-'+mes+'-01';
+                    //var parts =d.split('-');
+                    //var mydate = new Date(parts[0], parts[1] - 1, parts[2]);
+                    _params={
+                        "instituciones":unis,
+                        "aspiranteUniversidad":$(document).find('#aspiranteUni').val(),
+                        "anioMes":d
+                    };
+                    _url = _principalURL()+"AspiranteUniversidades/api/aspiranteUniversidadesFacultades/";
 
-      $(document).on('click','.card-universidad',function(){
-        removerClase();
+                    $.ajax({
+                        url: _url,
+                        method : 'POST',
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: _params,
+                        success : function(_response){
+                        if (_response.status=="error") {
+                            tostada("error",'Ocurrio un error intenta mas tarde');
+                        }
 
-          if ($universidad) {
-            //univerisiad activa
-            $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow')
-            $universidad=false;
-            $(document).find('#institucion').val('Universidad');
+                        if (_response.status=="success") {
+                          Swal.fire({
+                            title: 'Buen trabajo!',
+                            text: 'Sus Datos Fueron Guardados Correctamente',
+                            type: 'success',
+                            confirmButtonText: 'Siguiente'
+                            }).then(function () {
 
-            //preparatoria quitar
-            $(document).find('.card-preparatoria').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $preparatoria=true;
-
-            //ingles
-            $(document).find('.card-ingles').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $ingles=true;
-
-            //verano
-            $(document).find('.card-verano').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $verano=true;
-          }else{
-            $(this).removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $universidad=true;
-            $(document).find('#institucion').val('');
-          }
-
-      });
-
-      $(document).on('click','.card-preparatoria',function(){
-        removerClase();
-          if ($preparatoria) {
-              //preparatoria activa
-            $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow');
-            $preparatoria=false;
-            $(document).find('#institucion').val('Preparatoria');
-
-            //universidad
-            $(document).find('.card-universidad').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $universidad=true;
-
-            //ingles
-            $(document).find('.card-ingles').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $ingles=true;
-
-            //verano
-            $(document).find('.card-verano').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $verano=true;
-          }else{
-            $(this).removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $preparatoria=true;
-            $(document).find('#institucion').val('');
-          }
-
-      });
-
-      $(document).on('click','.card-ingles',function(){
-        removerClase();
-          if ($ingles) {
-            //ingles activa
-            $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow')
-            $ingles=false;
-            $(document).find('#institucion').val('CursoIngles');
-
-            //preparatoria quitar
-            $(document).find('.card-preparatoria').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $preparatoria=true;
-
-            //universidad quitar
-            $(document).find('.card-universidad').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $universidad=true;
-
-            //verano
-            $(document).find('.card-verano').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $verano=true;
-
-          }else{
-            $(this).removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $ingles=true;
-            $(document).find('#institucion').val('');
-          }
-
-      });
-
-      $(document).on('click','.card-verano',function(){
-        removerClase();
-          if ($verano) {
-            //verano activa
-            $(this).addClass('bg-warning').css('box-shadow','0 5px 15px 8px yellow')
-            $verano=false;
-            $(document).find('#institucion').val('CursoVerano');
-
-            //preparatoria quitar
-            $(document).find('.card-preparatoria').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $preparatoria=true;
-
-            //universidad quitar
-            $(document).find('.card-universidad').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $universidad=true;
-
-            //ingles
-            $(document).find('.card-ingles').removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $ingles=true;
-          }else{
-            $(this).removeClass('bg-warning').css('box-shadow','0 5px 15px 2px #f3f7f9');
-            $verano=true;
-            $(document).find('#institucion').val('');
-          }
-
-      });
-
-      $(document).on('submit','#escuelaSelecionada',function(event){
-        event.preventDefault();
-        console.info("Hola");
-        $intitucion = $(document).find('#institucion').val();
-        $aspirante = $(document).find('#aspirante').val();
-        if ($intitucion) {
-            //console.info($(document).find('#escuelaSelecionada').serialize());
-            _url = _principalURL()+"Aspirante/api/aspiranteEleccion/";
-            _method = "POST";
+                             window.location.href = "<?php echo site_url('Login'); ?>";
+                          });
+                             $('#successMessage').empty().append(response.message);
+                        }
 
 
-            $.ajax({
-              url: _url,
-              method : _method,
-              headers : {
-              'X-API-KEY':'ANGLOKEY'
-              },
-              data: $(document).find('#escuelaSelecionada').serialize(),
-              success : function(_response){
-              response = JSON.stringify(_response);
-
-              if (_response.status=="success") {
-                 window.location.href = "<?php echo site_url('Dashboard/Verano/InstitucionVerano'); ?>";
-                 /* window.location.href = "<?php echo site_url('Dashboard/Verano/InstitucionVerano'); ?>/"+$aspirante+""; */
-
-              }else{
-                console.info("llega");
-              }
 
 
-              },error : function(err){
+                        },error : function(err){
 
-              }
-            });
-        }else{
-            tostada('error','Selecciona un programa por favor');
-            $(document).find('.card-preparatoria').addClass('bg-danger').css('box-shadow','0 5px 15px 2px red');
-            $(document).find('.card-verano').addClass('bg-danger').css('box-shadow','0 5px 15px 2px red');
-            $(document).find('.card-ingles').addClass('bg-danger').css('box-shadow','0 5px 15px 2px red');
-            $(document).find('.card-universidad').addClass('bg-danger').css('box-shadow','0 5px 15px 2px red');
-        }
-      });
+                        }
+                    });
+                }else{
+                    if(!mes){
+                        $(document).find('#mes').addClass('is-invalid').after('<div class="invalid-feedback">El campo mes es requerido</div>');
+                    }
+                    else{
+                        $(document).find('#mes').removeClass('is-invalid');
+                    }
+                    if(!anio){
+                        $(document).find('#anio').addClass('is-invalid').after('<div class="invalid-feedback">El campo año es requerido</div>');
+                        tostada('error','Por favor selecciona el mes y año de ingreso al que estas interesado');
+                    }else{
+                        $(document).find('#anio').removeClass('is-invalid');
+                    }
+                }
+
+            }else{
+                tostada('error','Por favor selecciona al menos una universidad');
+            }
+        });
     });
 
-    function removerClase() {
-        $(document).find('.card-preparatoria').removeClass('bg-danger');
-        $(document).find('.card-verano').removeClass('bg-danger');
-        $(document).find('.card-ingles').removeClass('bg-danger');
-        $(document).find('.card-universidad').removeClass('bg-danger');
-    }
   </script>
 </body>
 </html>

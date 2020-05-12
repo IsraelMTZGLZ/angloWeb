@@ -1080,7 +1080,7 @@ font-size: 18px;
                           <div class="portfolio_hover">
                               <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
                                 <div class="col-7">
-                                  <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/stafford_Logo.png');?>">
                                 </div>
                                 <div class="col-5">
                                 <a data-toggle="modal" data-target="#stanfordVeranoModal">  Stafford house </a>
@@ -3740,7 +3740,7 @@ font-size: 18px;
               </button>
             </div>
             <div class="row">
-              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/new_stafford_house.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/stafford_Logo.png');?>" class="rounded mx-auto d-block" alt="..."></div>
               <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/e_stafford_houseModal.jpg');?>" alt=""></div>
             </div>
           </div>
@@ -3791,7 +3791,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/Stafford_Activities.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Actividades de Aventura </div>
                            <div class="clash-card__unit-description">
@@ -3831,7 +3831,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_arte.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Arte</div>
                            <div class="clash-card__unit-description">
@@ -3871,7 +3871,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_basquetball.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Basketball</div>
                            <div class="clash-card__unit-description">
@@ -3911,7 +3911,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card archer">
                            <div class="clash-card__image clash-card__image--archer">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_teatro.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--archer">Teatro</div>
                            <div class="clash-card__unit-description">
@@ -3952,7 +3952,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_rugby.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Rugby</div>
                            <div class="clash-card__unit-description">
@@ -3993,7 +3993,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_aquitacion.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Equitación</div>
                            <div class="clash-card__unit-description">
@@ -4035,7 +4035,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_navegacion.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Navegación</div>
                            <div class="clash-card__unit-description">
@@ -4076,7 +4076,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_tenis.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Tenis</div>
                            <div class="clash-card__unit-description">
@@ -4116,7 +4116,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card archer">
                            <div class="clash-card__image clash-card__image--archer">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stafford_videojuegos.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--archer">Codificación de Videojuegos</div>
                            <div class="clash-card__unit-description">
@@ -4672,7 +4672,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bath_summerschool.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">JUNIOR SUMMER SCHOOL</div>
                            <div class="clash-card__unit-description">
@@ -4765,7 +4765,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bath_milton.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">MILTON ABBEY JUNIOR SUMMER SCHOOL</div>
                            <div class="clash-card__unit-description">
@@ -5259,7 +5259,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/brigthon.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Brighton</div>
                            <div class="clash-card__level clash-card__level--barbarian">Summer Vacation course (V) </div>
@@ -5299,7 +5299,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/brigthon.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Brighton</div>
                            <div class="clash-card__level clash-card__level--wizard">Junior Vacation course (VJ)</div>
@@ -5338,7 +5338,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/eastbourne.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Eastbourne</div>
                            <div class="clash-card__level clash-card__level--giant">Summer Plus course (SP)</div>
@@ -5639,7 +5639,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Programa Académico</div>
                            <div class="clash-card__unit-description">
@@ -5667,7 +5667,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">STEM: Computación, programación y robótica</div>
                            <div class="clash-card__unit-description">
@@ -5696,7 +5696,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Multi - Deportes</div>
                            <div class="clash-card__unit-description">
@@ -5725,7 +5725,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card archer">
                            <div class="clash-card__image clash-card__image--archer">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--archer">Cocina</div>
                            <div class="clash-card__unit-description">
@@ -5799,7 +5799,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card giant">
                       <div class="clash-card__image clash-card__image--giant">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--giant">Académico</div>
                       <div class="clash-card__unit-description">
@@ -5828,7 +5828,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card barbarian">
                       <div class="clash-card__image clash-card__image--barbarian">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--barbarian">Futuros líderes de negocios</div>
                       <div class="clash-card__unit-description">
@@ -5857,7 +5857,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card wizard">
                       <div class="clash-card__image clash-card__image--wizard">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--wizard">STEM (Ciencia, Tecnología, Ingeniería y matemáticas)</div>
                       <div class="clash-card__unit-description">
@@ -5885,7 +5885,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card goblin">
                       <div class="clash-card__image clash-card__image--goblin">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--goblin">Artes Escénicas</div>
                       <div class="clash-card__unit-description">
@@ -5914,7 +5914,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card archer">
                       <div class="clash-card__image clash-card__image--archer">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--archer">Golf</div>
                       <div class="clash-card__unit-description">
@@ -5943,7 +5943,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card giant">
                       <div class="clash-card__image clash-card__image--giant">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--giant">Tenis</div>
                       <div class="clash-card__unit-description">
@@ -6029,7 +6029,7 @@ font-size: 18px;
                                         <div class="wrapper">
                                           <div class="clash-card barbarian">
                                             <div class="clash-card__image clash-card__image--barbarian">
-                                              <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                                              <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                                             </div>
                                             <div class="clash-card__level clash-card__level--barbarian">Pre – sessional GCSE</div>
                                             <div class="clash-card__unit-description">
@@ -6058,7 +6058,7 @@ font-size: 18px;
                                         <div class="wrapper">
                                           <div class="clash-card wizard">
                                             <div class="clash-card__image clash-card__image--wizard">
-                                              <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                                              <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/TautonSchool.png');?>"   alt="barbarian" />
                                             </div>
                                             <div class="clash-card__level clash-card__level--wizard">Pre – sessional IB/A Levels</div>
                                             <div class="clash-card__unit-description">
@@ -6310,7 +6310,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/uea.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Marca, publicidad y marketing digital.</div>
                            <div class="clash-card__unit-description">
@@ -6321,7 +6321,7 @@ font-size: 18px;
                                <p>- BBC Voices Workshop (The Forum, Norwich), London’s Museum of Brands and The History of Advertising Trust.</p>
                              </div>
 
-                           <!-- <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                           <!-- <div class="clash-card__unit-stats clash-card__unit-statsbarbarian clearfix">
                              <div class="one-third">
                                <div class="stat-value">Nivel de inglés:</div>
                                <div class="stat">IELTS overall 5.0</div>
@@ -6334,7 +6334,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/uea.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Escritura Creativa.</div>
                            <div class="clash-card__unit-description">
@@ -6345,7 +6345,7 @@ font-size: 18px;
                              Shakespeare’s Globe Theatre (London), National Centre for Writing (Norwich).
                            </div>
 
-                           <!-- <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                           <!-- <div class="clash-card__unit-stats clash-card__unit-statswizard clearfix">
                              <div class="one-third">
                                <div class="stat-value">Edad:</div>
                                <div class="stat">16+  </div>
@@ -6363,7 +6363,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/uea.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Ley Global de medios y comunicaciones.</div>
                            <div class="clash-card__unit-description">
@@ -6375,7 +6375,7 @@ font-size: 18px;
                            </div>
 
 
-                           <!-- <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                           <!-- <div class="clash-card__unit-stats clash-card__unit-statsgoblin clearfix">
                              <div class="one-third">
                                <div class="stat-value">Edad:</div>
                                <div class="stat">18+ </div>
@@ -6491,7 +6491,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/AcademicofEnglish_summer.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Cursos en casa anfitriona: Adolescentes </div>
                            <div class="clash-card__unit-description">
@@ -6589,7 +6589,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/AcademicofEnglish_summer.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Cursos en residencia: Niños </div>
                            <div class="clash-card__unit-description">
@@ -6619,7 +6619,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/AcademicofEnglish_recidencia.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Cursos en residencia: Adolescentes </div>
                            <div class="clash-card__unit-description">
@@ -6717,7 +6717,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/AcademicofEnglish_Tw_adolecente.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Cursos en residencia: Adolescentes </div>
                            <div class="clash-card__unit-description">
@@ -6819,7 +6819,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/uwe_leuguacultural.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Escuela de verano de lengua Inglesa y cultura Británica</div>
                            <div class="clash-card__unit-description">
@@ -6854,7 +6854,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/uwe_arteMedia.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Escuela de verano de arte, medios y diseño</div>
                            <div class="clash-card__unit-description">
@@ -6900,7 +6900,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/uwe_ciencias.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Escuela de verano de ciencia.</div>
                            <div class="clash-card__unit-description">
@@ -7046,7 +7046,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/queenmary_cultArte.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Cultura y artes liberales</div>
                            <div class="clash-card__unit-description">
@@ -7079,7 +7079,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/queenmary_negOpolitleyes.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Negocios, política y leyes</div>
                            <div class="clash-card__unit-description">
@@ -7114,7 +7114,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/queenmary_cienciaMedicina.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Ciencia, medicina y tecnología</div>
                            <div class="clash-card__unit-description">
@@ -7375,7 +7375,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card wizard">
                          <div class="clash-card__image clash-card__image--wizard">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/stonyLogo.png');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--wizard">STONYHURST Language School</div>
                          <div class="clash-card__unit-description">
@@ -7681,7 +7681,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/art_preparacionporta.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Preparación de Portafolio y curso de ingléso</div>
                            <div class="clash-card__unit-description">
@@ -7713,7 +7713,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_modas.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Curso de Modas</div>
                            <div class="clash-card__unit-description">
@@ -7748,7 +7748,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card archer">
                            <div class="clash-card__image clash-card__image--archer">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_film.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--archer">Filmación</div>
                            <div class="clash-card__unit-description">
@@ -7782,7 +7782,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_teatromusical.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Teatro musical</div>
                            <div class="clash-card__unit-description">
@@ -7816,7 +7816,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_actuacion.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Actuación</div>
                            <div class="clash-card__unit-description">
@@ -7851,7 +7851,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_precentacionmusical.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Presentación Musical</div>
                            <div class="clash-card__unit-description">
@@ -7883,7 +7883,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_precentacionmusical.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Producción Musical</div>
                            <div class="clash-card__unit-description">
@@ -7916,7 +7916,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card archer">
                            <div class="clash-card__image clash-card__image--archer">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_produccionmusical.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--archer">Fotografía</div>
                            <div class="clash-card__unit-description">
@@ -7952,7 +7952,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_moda.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Comunicación de Moda</div>
                            <div class="clash-card__unit-description">
@@ -7985,7 +7985,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_estilismomoda.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Estilismo de Moda</div>
                            <div class="clash-card__unit-description">
@@ -8018,7 +8018,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_pinturadivujo.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Pintura y dibujo</div>
                            <div class="clash-card__unit-description">
@@ -8052,7 +8052,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_graficosilustration.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Gráficos e Ilustración</div>
                            <div class="clash-card__unit-description">
@@ -8085,7 +8085,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card archer">
                            <div class="clash-card__image clash-card__image--archer">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_dise3D.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--archer">Diseño 3D</div>
                            <div class="clash-card__unit-description">
@@ -8118,7 +8118,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_animation.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Animación</div>
                            <div class="clash-card__unit-description">
@@ -8151,7 +8151,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_videojuegos.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Diseño de Videojuegos</div>
                            <div class="clash-card__unit-description">
@@ -9194,7 +9194,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card giant">
                       <div class="clash-card__image clash-card__image--giant">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/concordCollage.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--giant">Inglés y ciencias</div>
                       <div class="clash-card__unit-description">
@@ -9219,7 +9219,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card barbarian">
                       <div class="clash-card__image clash-card__image--barbarian">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/concordCollage.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--barbarian">Inglés y actividades</div>
                       <div class="clash-card__unit-description">
@@ -9246,7 +9246,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card wizard">
                       <div class="clash-card__image clash-card__image--wizard">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/concordCollage.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--wizard">Ciencia y Matemáticas</div>
                       <div class="clash-card__unit-description">
@@ -9272,7 +9272,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card goblin">
                       <div class="clash-card__image clash-card__image--goblin">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/concordCollage.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--goblin">Inglés y ciencias</div>
                       <div class="clash-card__unit-description">
@@ -9297,7 +9297,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card archer">
                       <div class="clash-card__image clash-card__image--archer">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/concordCollage.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--archer">Inglés y actividades</div>
                       <div class="clash-card__unit-description">
@@ -9324,7 +9324,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card giant">
                       <div class="clash-card__image clash-card__image--giant">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/concordCollage.png');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--giant">Ciencia Seleccionada</div>
                       <div class="clash-card__unit-description">
@@ -9461,7 +9461,7 @@ font-size: 18px;
                   <div class="wrapper">
                     <div class="clash-card giant">
                       <div class="clash-card__image clash-card__image--giant">
-                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                        <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/Chester_first.jpg');?>"   alt="barbarian" />
                       </div>
                       <div class="clash-card__level clash-card__level--giant">Experiencia Internacional con programa Social</div>
                       <div class="clash-card__unit-description">
@@ -9593,7 +9593,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/select_younglearners.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Culford Young Learners </div>
                            <div class="clash-card__unit-description">
@@ -9625,7 +9625,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--wizard">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/select_adolecentes.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--wizard">Culford Adolescentes</div>
                            <div class="clash-card__unit-description">
@@ -9658,7 +9658,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card goblin">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/select_inglesFut.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant">Inglés + Futbol</div>
                            <div class="clash-card__unit-description">
@@ -9694,7 +9694,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card archer">
                            <div class="clash-card__image clash-card__image--archer">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/select_magdalene.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--archer">Magdalene College</div>
                            <div class="clash-card__unit-description">
@@ -9733,7 +9733,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--goblin">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/select_adolecentestwo.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--goblin">Cambridge Adolescentes</div>
                            <div class="clash-card__unit-description">
@@ -9969,7 +9969,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card barbarian">
                            <div class="clash-card__image clash-card__image--barbarian">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/select_adolecentestwo.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--barbarian">Inglés Plus</div>
                            <div class="clash-card__unit-description">

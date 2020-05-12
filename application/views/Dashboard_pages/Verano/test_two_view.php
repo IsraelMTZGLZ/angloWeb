@@ -853,7 +853,7 @@ current_fs.animate({opacity: 0}, {
                 });
             }
             if (_response.status=="success") {
-             window.location.href = "<?php echo site_url('Dashboard/Verano/TestThree/add/'); ?>/"+$edad +"/"+$campamento+"/"+$alojamiento+"";
+             window.location.href = "<?php echo site_url('Dashboard/Verano/TestThree');?>";
             }
 
             tostada(_response.status,_response.message);
