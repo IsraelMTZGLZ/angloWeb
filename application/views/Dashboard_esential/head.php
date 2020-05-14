@@ -101,4 +101,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/dropify/dropify.min599c.css?v4.0.2');?>">
+
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/slick-carousel/slick.min.css?v4.0.2');?>">
+
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/pages/profile-v2.min.css?v4.0.2');?>">
 </head>

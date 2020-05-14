@@ -121,6 +121,12 @@
                 </a>
               <?php } ;?>
             </li>
+            <li class="site-menu-item">
+                <a href="<?=base_url('Login/Login/logout')?>">
+                  <i class="site-menu-icon icon wb-power" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Cerrar sesión</span>
+                </a>
+            </li>
           </ul>
         </div>
       </div>
