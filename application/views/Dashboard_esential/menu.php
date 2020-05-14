@@ -113,6 +113,14 @@
                 </a>
               </li>
             <?php } ?>
+            <li class="site-menu-item">
+              <?php if($user->typeUsuario=="Aspirante") { ;?>
+                <a href="MisArchivos">
+                  <i class="site-menu-icon far fa-file" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Mis Archivos</span>
+                </a>
+              <?php } ;?>
+            </li>
           </ul>
         </div>
       </div>

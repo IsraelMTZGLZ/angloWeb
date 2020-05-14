@@ -411,5 +411,10 @@
         });
     });
 
+
+    $(document).on('click','.btn-inverse',function(){
+        window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+    });
+
   });
 </script>
