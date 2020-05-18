@@ -54,7 +54,7 @@
               </span>
             </a>
             <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a>
+              <a class="dropdown-item" href="ProfileAspirante" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a>
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Configuracion</a>
               <div class="dropdown-divider" role="presentation"></div>
               <a class="dropdown-item" href="<?=base_url('Login/Login/logout')?>" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Cerrar Sesión</a>

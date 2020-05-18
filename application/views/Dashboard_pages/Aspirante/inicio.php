@@ -679,11 +679,14 @@ header .footer-wave {
           <!--Eligio carrera como tipo de estudio-->
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Carrera") { ;?>
             <div class="row" style="margin: 20px;margin-top:-40px !important;">
-              <?php if(!$documentosBoleta) { ;?>
-                <form id="boletaForm">
+              <?php if(!$documentosBoleta || !$documentosBoletaTraduccion) { ;?>
+  
+                
                   <ul class="list-group list-group-bordered">
                     <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Copia escaneada de la boleta de calificaciones de los dos últimos años de estudio más su traducción al ingles.</li>
                   </ul>
+                <?php if(!$documentosBoleta) { ?>
+                <form id="boletaForm">
                   <div class="boletaAlert">
                   </div>
                   <div class="row">
@@ -692,10 +695,30 @@ header .footer-wave {
 
                       </div>
                       <div class="col-md-4 col-sm-12 vertical-align-middle">
+                        <label>Documento original (.PDF)</label>
                         <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-boleta">Subir</button>
                       </div>
                   </div>
                 </form>
+                <?php } ?>
+                <?php if(!$documentosBoletaTraduccion) { ?>
+
+                <form id="boletaDOCForm">
+                  <div class="boletaDOCAlert" style="margin-top: 10px">
+                  </div>
+                  <div class="row" style="margin-top: 10px">
+                      <div class="col-md-8 col-sm-12">
+                        <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="BoletaDOC" name="BoletaDOC">
+
+                      </div>
+                      <div class="col-md-4 col-sm-12 vertical-align-middle">
+                        <label>Documento traducido (.DOC/Word/PDF).</label>
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-boletaDOC">Subir</button>
+                      </div>
+                  </div>
+                </form>
+                <?php } ?>
+
               <?php } ;?>
               <?php if(!$documentosCarta) { ;?>
                 <form id="cartaForm">
@@ -711,6 +734,7 @@ header .footer-wave {
                       <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="CartaMotivo" name="CartaMotivo">
                     </div>
                     <div class="col-md-4 col-sm-12 vertical-align-middle">
+                    <label>Documento original (.PDF) o Archivo (.DOC/Word).</label>
                       <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-carta">Subir</button>
                     </div>
                   </div>
@@ -729,12 +753,13 @@ header .footer-wave {
                       <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Pasaporte" name="Pasaporte">
                     </div>
                     <div class="col-md-4 col-sm-12 vertical-align-middle">
+                      <label>Documento original (.PDF)</label>
                       <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-pasaporte">Subir</button>
                     </div>
                   </div>
                 </form>
               <?php } ;?>
-              <?php if($documentosPasaporte && $documentosCarta && $documentosBoleta) { ;?>
+              <?php if($documentosPasaporte && $documentosCarta && $documentosBoleta && $documentosBoletaTraduccion) { ;?>
                 <div role="alert" class="alert dark alert-danger alert-avatar alert-dismissible">
                   
                   <span class="avatar">
@@ -756,63 +781,105 @@ header .footer-wave {
           <!--Eligio  maestria como su tipo de estudio de interes-->
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Masters") { ;?>
             <div class="row" style="margin: 20px;margin-top:-40px !important;">
-              <?php if(!$documentosTrasncripcion) { ;?>
-                <form id="transcripcionForm">
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. -Copia escaneada de las transcripciones de su carrera (completa o parcial) mas su traducción al ingles.</li>
-                  </ul>
-                  <div class="transcripcionAlert">
-                  </div>
-                  <div class="row">
-                      <div class="col-md-8 col-sm-12">
-                        <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Transcripcion" name="Transcripcion">
+              <?php if(!$documentosTrasncripcion || !$documentosTrasncripcionTraduccion) { ;?>
+                <ul class="list-group list-group-bordered">
+                  <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. -Copia escaneada de las transcripciones de su carrera (completa o parcial) mas su traducción al ingles.</li>
+                </ul>
+                <?php if(!$documentosTrasncripcion) {?>
+                  <form id="transcripcionForm">
+                    <div class="transcripcionAlert">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                        
+                          <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Transcripcion" name="Transcripcion">
 
-                      </div>
-                      <div class="col-md-4 col-sm-12 vertical-align-middle">
-                        <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-transcripcion">Subir</button>
-                      </div>
-                  </div>
-                </form>
+                        </div>
+                        <div class="col-md-4 col-sm-12 vertical-align-middle">
+                          <label>Documento original En PDF</label>
+                          <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-transcripcion">Subir</button>
+                        </div>
+                    </div>
+                  </form>
+                <?php } ?>
+                <?php if(!$documentosTrasncripcionTraduccion) {?>
+                  <form id="transcripcionTraForm">
+                    <div class="transcripcionTraAlert" style="margin-top: 15px;">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                          <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Transcripcion" name="Transcripcion">
+
+                        </div>
+                        <div class="col-md-4 col-sm-12 vertical-align-middle">
+
+                          <label>Traduccion En PDF o Word/.docx</label>
+                          <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-transcripcionTra">Subir</button>
+                        </div>
+                    </div>
+                  </form>
+                <?php } ?>
               <?php } ;?>
-              <?php if(!$documentosCarta) { ;?>
-                <form id="cartaMaestriaForm">
-                  <ul class="list-group list-group-bordered" style="margin-top: 15px">
-                    <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Carta de motivos.</li>
-                    <li class="list-group-item list-group-item-action" style="font-size: 16px;">- Identificando la maestria especifica y los motivos por aplicar a esta.</li>
-                    <li class="list-group-item list-group-item-action" style="font-size: 16px;">- Debe ser entregada en ingles.</li>
+              <?php if(count($documentosCarta) <  count($universidades)) { ;?>
+                <div class="row" style="margin: 15px">
+
+                
+                  <ul class="list-group list-group-gap" >
+                    <li class="list-group-item list-group-item-dark">2. Carta Motivos</li>
                   </ul>
-                  <div class="cartaMaestriaAlert">
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8 col-sm-12">
-                      <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="CartaMotivo" name="CartaMotivo">
-                    </div>
-                    <div class="col-md-4 col-sm-12 vertical-align-middle">
-                      <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-cartaMaestria">Subir</button>
-                    </div>
-                  </div>
-                </form>
+                </div>
+                <?php for($i=0;$i < count($universidades);$i++) { ?>
+                  <?php if ($documentosCarta) { ?>
+                    <?php for ($j=0; $j < count($documentosCarta); $j++) { ?>
+                      <?php if($documentosCarta[$j]['idInstitucion']!=$universidades[$i]['idInstitucion']) { ?>
+                      <form id="cartaMaestriaForm-<?=@$universidades[$i]['idInstitucion']?>">
+                        <ul class="list-group list-group-bordered" style="margin-top: 15px">
+                          <li class="list-group-item list-group-item-action active" style="font-size: 16px;"><?=@$i+1?>. Carta motivos de <?=@$universidades[$i]['nombreInstitucion']?>.</li>
+                          <li class="list-group-item list-group-item-action" style="font-size: 16px;">- Identificando la maestria especifica y los motivos por aplicar a esta.</li>
+                          <li class="list-group-item list-group-item-action" style="font-size: 16px;">- Debe ser entregada en ingles.</li>
+                        </ul>
+                        <div class="cartaMaestriaAlert-<?=@$universidades[$i]['idInstitucion']?>">
+                        </div>
+                        <div class="row" style="margin-bottom: 50px;">
+                          <div class="col-md-8 col-sm-12">
+                            <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="CartaMotivo" name="CartaMotivo">
+                          </div>
+                          <div class="col-md-4 col-sm-12 vertical-align-middle">
+                            <label>
+                              Documento en PDF o WORD/docx
+                            </label> 
+                            <button type="button" class="btn btn-block btn-info btn-cartaMaestria" style="margin-top:20%" id="<?=@$universidades[$i]['idInstitucion']?>">Subir</button>
+                          </div>
+                        </div>
+                      </form>
+                      <?php } ?>
+                    <?php } ?>
+                  <?php }else { ?>
+                    <form id="cartaMaestriaForm-<?=@$universidades[$i]['idInstitucion']?>">
+                        <ul class="list-group list-group-bordered" style="margin-top: 15px">
+                          <li class="list-group-item list-group-item-action active" style="font-size: 16px;"><?=@$i+1?>. Carta motivos de <?=@$universidades[$i]['nombreInstitucion']?>.</li>
+                          <li class="list-group-item list-group-item-action" style="font-size: 16px;">- Identificando la maestria especifica y los motivos por aplicar a esta.</li>
+                          <li class="list-group-item list-group-item-action" style="font-size: 16px;">- Debe ser entregada en ingles.</li>
+                        </ul>
+                        <div class="cartaMaestriaAlert-<?=@$universidades[$i]['idInstitucion']?>">
+                        </div>
+                        <div class="row" style="margin-bottom: 50px;">
+                          <input type="hidden" id="fkInstitucion" value="<?=@$universidades[$i]['nombreInstitucion']?>">
+                          <div class="col-md-8 col-sm-12">
+                            <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="CartaMotivo" name="CartaMotivo">
+                          </div>
+                          <div class="col-md-4 col-sm-12 vertical-align-middle">
+                            <label>
+                              Documento en PDF o WORD/docx
+                            </label> 
+                            <button type="button" class="btn btn-block btn-info btn-cartaMaestria" style="margin-top:20%" id="<?=@$universidades[$i]['idInstitucion']?>">Subir</button>
+                          </div>
+                        </div>
+                      </form>
+                  <?php } ?> 
+                <?php } ?>
               <?php } ;?>
-              <?php if(!$documentosRecomendacion || count($documentosRecomendacion)<2) { ;?>
-                <form id="recomendacionForm">
-                  <ul class="list-group list-group-bordered" style="margin-top: 15px">
-                    <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. <?php  echo (count($documentosRecomendacion)==1) ? ' Falta una carta' : ' Dos cartas';  ?>  de recomendación (académicas – o minimo una academica, otra profesional).</li>
-                    <li class="list-group-item list-group-item-action" style="font-size: 16px;">- Ingresa tu primera carta de recomendación y luego da click en subir, posteriormente vueleve a subir la segunda carta de recomendación</li>
-                  </ul>
-                  <div class="recomendacionAlert">
-                    
-                  </div>
-                  <div class="row" style="margin-bottom: 200px;">
-                    <div class="col-md-8 col-sm-12">
-                      <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="CartaRecomendacion" name="CartaRecomendacion">
-                    </div>
-                    <div class="col-md-4 col-sm-12 vertical-align-middle">
-                      <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-recomendacion">Subir</button>
-                    </div>
-                  </div>
-                </form>
-              <?php } ;?>
-              <?php if($documentosTrasncripcion && $documentosCarta && $documentosRecomendacion) { ;?>
+              <?php if($documentosTrasncripcion && count($documentosCarta) ==  count($universidades) && $documentosTrasncripcionTraduccion) { ;?>
                 <div role="alert" class="alert dark alert-danger alert-avatar alert-dismissible">
                   
                   <span class="avatar">
@@ -834,22 +901,42 @@ header .footer-wave {
           <!--PHD-->
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="PhD") { ;?>
             <div class="row" style="margin: 20px;margin-top:-40px !important;">
-              <?php if(!$documentosTrasncripcion) { ;?>
-                <form id="transcripcionPHDForm">
-                  <ul class="list-group list-group-bordered">
+              <?php if(!$documentosTrasncripcion || !$documentosTrasncripcionTraduccion) { ;?>
+                <ul class="list-group list-group-bordered">
                     <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Transcripciones de la maestría y/o de la carrera universitaria (originales mas traducción al ingles).</li>
                   </ul>
-                  <div class="transcripcionPHDAlert">
-                  </div>
-                  <div class="row">
-                      <div class="col-md-8 col-sm-12">
-                        <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Transcripcion" name="Transcripcion">
-                      </div>
-                      <div class="col-md-4 col-sm-12 vertical-align-middle">
-                        <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-transcripcionPHD">Subir</button>
-                      </div>
-                  </div>
-                </form>
+                <?php if(!$documentosTrasncripcion) { ?>
+                  <form id="transcripcionPHDForm">
+                    
+                    <div class="transcripcionPHDAlert" style="margin: 15px;">
+                    </div>
+                    <div class="row" style="margin: 15px;">
+                        <div class="col-md-8 col-sm-12">
+                          <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Transcripcion" name="Transcripcion">
+                        </div>
+                        <div class="col-md-4 col-sm-12 vertical-align-middle">
+                          <label>Documento original en PDF</label>
+                          <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-transcripcionPHD">Subir</button>
+                        </div>
+                    </div>
+                  </form>
+                <?php } ?>
+                <?php if(!$documentosTrasncripcionTraduccion) { ?>
+                  <form id="transcripcionTRAPHDForm">
+                    
+                    <div class="transcripcioTRAPHDAlert" style="margin: 15px;">
+                    </div>
+                    <div class="row" style="margin: 15px;">
+                        <div class="col-md-8 col-sm-12">
+                          <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Transcripcion" name="Transcripcion">
+                        </div>
+                        <div class="col-md-4 col-sm-12 vertical-align-middle">
+                          <label>Documento traducido de ser necesario en PDF O WORD/docx</label>
+                          <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-transcripcionTRAPHD">Subir</button>
+                        </div>
+                    </div>
+                  </form>
+                <?php } ?>
               <?php } ;?>
               <?php if(!$documentosPropuesta) { ;?>
                 <form id="propuestaForm">
@@ -863,6 +950,7 @@ header .footer-wave {
                       <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Propuesta" name="Propuesta">
                     </div>
                     <div class="col-md-4 col-sm-12 vertical-align-middle">
+                      <label>Documento en PDF o WORD/docx</label>
                       <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-cartaPropuesta">Subir</button>
                     </div>
                   </div>
@@ -881,12 +969,13 @@ header .footer-wave {
                       <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="CV" name="CV">
                     </div>
                     <div class="col-md-4 col-sm-12 vertical-align-middle">
+                      <label>Documento en PDF o WORD/docx</label>
                       <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-cv">Subir</button>
                     </div>
                   </div>
                 </form>
               <?php } ;?>
-              <?php if($documentosTrasncripcion && $documentosPropuesta && $documentosCV) { ;?>
+              <?php if($documentosTrasncripcion && $documentosPropuesta && $documentosCV && $documentosTrasncripcionTraduccion) { ;?>
                 <div role="alert" class="alert dark alert-danger alert-avatar alert-dismissible">
                   
                   <span class="avatar">
@@ -908,22 +997,42 @@ header .footer-wave {
           <!--Preparatoria -->
           <?php if(@$infoAspirantePrepa) { ;?>
             <div class="row" style="margin: 20px;margin-top:-40px !important;">
-              <?php if(!$documentosBoletas) { ;?>
-                <form id="boletaPrepaForm">
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. -Copia escaneada de la boleta de calificaciones de los dos últimos años de estudio más su traducción al ingles.</li>
-                  </ul>
-                  <div class="boletaPrepAlert">
-                  </div>
-                  <div class="row">
-                      <div class="col-md-8 col-sm-12">
-                        <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Boleta" name="Boleta">
-                      </div>
-                      <div class="col-md-4 col-sm-12 vertical-align-middle">
-                        <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-boletaPrep">Subir</button>
-                      </div>
-                  </div>
-                </form>
+              <?php if(!$documentosBoletas || !$documentosBoletasTraduccion) { ;?>
+                <ul class="list-group list-group-bordered">
+                  <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. -Copia escaneada de la boleta de calificaciones de los dos últimos años de estudio más su traducción al ingles.</li>
+                </ul>
+                <?php if (!$documentosBoletas) { ?>
+                  <form id="boletaPrepaForm">
+                    
+                    <div class="boletaPrepAlert" style="margin: 10px">
+                    </div>
+                    <div class="row" style="margin: 10px">
+                        <div class="col-md-8 col-sm-12">
+                          <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Boleta" name="Boleta">
+                        </div>
+                        <div class="col-md-4 col-sm-12 vertical-align-middle">
+                          <label>Documento original en PDF</label>
+                          <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-boletaPrep">Subir</button>
+                        </div>
+                    </div>
+                  </form>
+                <?php } ?>
+                <?php if (!$documentosBoletasTraduccion) { ?>
+                  <form id="boletaPrepaTraForm">
+                    
+                    <div class="boletaPrepaTraAlert" style="margin: 10px">
+                    </div>
+                    <div class="row" style="margin: 10px">
+                        <div class="col-md-8 col-sm-12">
+                          <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Boleta" name="Boleta">
+                        </div>
+                        <div class="col-md-4 col-sm-12 vertical-align-middle">
+                          <label>Traduccion del documento en PDF o WORD/docx (Subir solo de ser necesario)</label>
+                          <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-boletaPrepaTra">Subir</button>
+                        </div>
+                    </div>
+                  </form>
+                <?php } ?>
               <?php } ;?>
               <?php if(!$documentosPasaporte) { ;?>
                 <form id="pasaportePrepaForm">
@@ -937,12 +1046,13 @@ header .footer-wave {
                       <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" id="Pasaporte" name="Pasaporte">
                     </div>
                     <div class="col-md-4 col-sm-12 vertical-align-middle">
+                      <label>Documento en PDF</label>
                       <button type="button" class="btn btn-block btn-info" style="margin-top:20%" id="btn-pasaportePrepa">Subir</button>
                     </div>
                   </div>
                 </form>
               <?php } ;?>
-              <?php if($documentosPasaporte && $documentosBoletas ) { ;?>
+              <?php if($documentosPasaporte && $documentosBoletas && $documentosBoletasTraduccion) { ;?>
                 <div role="alert" class="alert dark alert-danger alert-avatar alert-dismissible">
                   
                   <span class="avatar">

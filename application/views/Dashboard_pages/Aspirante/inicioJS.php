@@ -37,6 +37,43 @@
         });
     });
 
+    $(document).on('click','#btn-boletaDOC',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#boletaDOCForm')[0]);
+        $.ajax({
+            url:_principalURL()+'Documentos/Carrera/api/carreraBoletaDOC/id/'+aspirante,
+            type:'post',
+            processData:false,
+            cache:false,
+            headers: {
+            'X-API-KEY':'ANGLOKEY'
+            },
+            contentType:false,
+            data:formData,
+            success : function(_response){
+                if(_response.status=="error"){
+                    $(document).find('.boletaDOCAlert').html(
+                        '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                                '<span aria-hidden="true">×</span>'+
+                            '</button>'+
+                            '<i class="icon wb-close" aria-hidden="true"></i>'+_response.validations+
+                        '</div>'
+                    );
+                }
+                if(_response.status=="success"){
+                    setTimeout(function(){
+                        location.reload();    
+                    },2000);
+                }
+                tostada(_response.status,_response.message);
+
+            },error : function(err){
+            
+            }
+        });
+    });
+
     $(document).on('click','#btn-carta',function(){
         var aspirante = $(document).find('#aspirante').val();
         var formData = new FormData($('#cartaForm')[0]);
@@ -148,11 +185,11 @@
         });
     });
 
-    $(document).on('click','#btn-cartaMaestria',function(){
+    $(document).on('click','#btn-transcripcionTra',function(){
         var aspirante = $(document).find('#aspirante').val();
-        var formData = new FormData($('#cartaMaestriaForm')[0]);
+        var formData = new FormData($('#transcripcionTraForm')[0]);
         $.ajax({
-            url:_principalURL()+'Documentos/Maestria/api/maestriaCartaMotivo/id/'+aspirante,
+            url:_principalURL()+'Documentos/Maestria/api/maestriaTranscripcionTraduccion/id/'+aspirante,
             type:'post',
             processData:false,
             cache:false,
@@ -163,7 +200,45 @@
             data:formData,
             success : function(_response){
                 if(_response.status=="error"){
-                    $(document).find('.cartaMaestriaAlert').html(
+                    $(document).find('.transcripcionTraAlert').html(
+                        '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                                '<span aria-hidden="true">×</span>'+
+                            '</button>'+
+                            '<i class="icon wb-close" aria-hidden="true"></i>'+_response.validations+
+                        '</div>'
+                    );
+                }
+                if(_response.status=="success"){
+                    setTimeout(function(){
+                        location.reload();    
+                    },2000);
+                }
+                tostada(_response.status,_response.message);
+
+            },error : function(err){
+            
+            }
+        });
+    });
+
+    $(document).on('click','.btn-cartaMaestria',function(){
+        var institucion = this.id;
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#cartaMaestriaForm-'+institucion)[0]);
+        $.ajax({
+            url:_principalURL()+'Documentos/Maestria/api/maestriaCartaMotivo/id/'+aspirante+'/institucion/'+institucion,
+            type:'post',
+            processData:false,
+            cache:false,
+            headers: {
+            'X-API-KEY':'ANGLOKEY'
+            },
+            contentType:false,
+            data:formData,
+            success : function(_response){
+                if(_response.status=="error"){
+                    $(document).find('.cartaMaestriaAlert-'+institucion).html(
                         '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
                             '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
                                 '<span aria-hidden="true">×</span>'+
@@ -238,6 +313,43 @@
             success : function(_response){
                 if(_response.status=="error"){
                     $(document).find('.transcripcionPHDAlert').html(
+                        '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                                '<span aria-hidden="true">×</span>'+
+                            '</button>'+
+                            '<i class="icon wb-close" aria-hidden="true"></i>'+_response.validations+
+                        '</div>'
+                    );
+                }
+                if(_response.status=="success"){
+                    setTimeout(function(){
+                        location.reload();    
+                    },2000);
+                }
+                tostada(_response.status,_response.message);
+
+            },error : function(err){
+            
+            }
+        });
+    });
+
+    $(document).on('click','#btn-transcripcionTRAPHD',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#transcripcionTRAPHDForm')[0]);
+        $.ajax({
+            url:_principalURL()+'Documentos/PhD/api/phDTranscripcionTra/id/'+aspirante,
+            type:'post',
+            processData:false,
+            cache:false,
+            headers: {
+            'X-API-KEY':'ANGLOKEY'
+            },
+            contentType:false,
+            data:formData,
+            success : function(_response){
+                if(_response.status=="error"){
+                    $(document).find('.transcripcioTRAPHDAlert').html(
                         '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
                             '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
                                 '<span aria-hidden="true">×</span>'+
@@ -352,6 +464,44 @@
                 console.info(_response);
                 if(_response.status=="error"){
                     $(document).find('.boletaPrepAlert').html(
+                        '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                                '<span aria-hidden="true">×</span>'+
+                            '</button>'+
+                            '<i class="icon wb-close" aria-hidden="true"></i>'+_response.validations+
+                        '</div>'
+                    );
+                }
+                if(_response.status=="success"){
+                    setTimeout(function(){
+                        location.reload();    
+                    },2000);
+                }
+                tostada(_response.status,_response.message);
+
+            },error : function(err){
+            
+            }
+        });
+    });
+
+    $(document).on('click','#btn-boletaPrepaTra',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#boletaPrepaTraForm')[0]);
+        $.ajax({
+            url:_principalURL()+'Documentos/Preparatoria/api/prepartoriaBoletaTraduccion/id/'+aspirante,
+            type:'post',
+            processData:false,
+            cache:false,
+            headers: {
+            'X-API-KEY':'ANGLOKEY'
+            },
+            contentType:false,
+            data:formData,
+            success : function(_response){
+                console.info(_response);
+                if(_response.status=="error"){
+                    $(document).find('.boletaPrepaTraAlert').html(
                         '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
                             '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
                                 '<span aria-hidden="true">×</span>'+

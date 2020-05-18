@@ -540,7 +540,8 @@
         }
 
         if($(document).find('#fecha').val()){
-          $fechaNueva =$(document).find('#fecha').val();
+          $test =$(document).find('#fecha').val();
+          $fechaNueva = $test.replace(/(\d\d)\/(\d\d)\/(\d{4})/, "$3-$1-$2"); 
         }else{
           $fechaNueva = null;
         }
