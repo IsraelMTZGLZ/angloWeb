@@ -1,12 +1,6 @@
 <script>
     $(function(){
-        $('.ciudad').on('change', function() {
-            $array = this.value;
-            $lada = $array.split(',');
-            $(document).find('#telefono').val('+'+$lada[1]);
-            $(document).find('#ciudad').val($lada[0]);
-        });
-
+        
         $(document).on('click','.add-foto',function (){
             $('#examplePositionCenter').modal('show');
         });
@@ -46,7 +40,7 @@
                     }
                     if(_response.status=="success"){
                         setTimeout(function(){
-                            window.location.href = "<?php echo site_url('Dashboard/ProfileAspirante/fotoRedirect'); ?>";    
+                            window.location.href = "<?php echo site_url('Dashboard/ProfileAgente/fotoRedirect'); ?>";    
                         },2000);
                     }
                     tostada(_response.status,_response.message);
@@ -114,7 +108,7 @@
             event.preventDefault();
             //clearForm('informacionForm');
 
-            _url = _principalURL()+"Profile/api/informacionChange/id/";
+            _url = _principalURL()+"Profile/api/informacionChangeAgente/";
             _method = "POST";
 
 
@@ -145,7 +139,7 @@
                 if (_response.status=="success") {
                     
                     setTimeout(function(){
-                        window.location.href = "<?php echo site_url('Dashboard/ProfileAspirante/fotoRedirect'); ?>";
+                        window.location.href = "<?php echo site_url('Dashboard/ProfileAgente/fotoRedirect'); ?>";
                     },2000);
                 }
                 

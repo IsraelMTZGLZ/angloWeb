@@ -130,17 +130,7 @@
               </li>
               <?php } ?>
             </ul>
-            <ul class="list-group list-group-full">
-              
-              <li class="list-group-item snip1344" >
-                <h4 class="example-title"><i class="icon fa-file-pdf-o" aria-hidden="true"></i>Mis documentos :</h4>
-                <p style="margin-left: 20px">
-                  Para ver tus documentos ve a la seccion de mis archivos.
-                </p>
-                <a type="button" class="btn btn-primary" href="MisArchivos">Ir</a>
-
-              </li>
-            </ul>
+            
           </div>
           <div class="col-lg-8 col-sm-12">
             <div class="card" style="-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);">
@@ -172,21 +162,15 @@
                             </p>
                           </li>
                           <li class="list-group-item">
-                            <h4 class="example-title"><i class="icon wb-calendar" aria-hidden="true"></i>Fecha de nacimiento :</h4>
+                            <h4 class="example-title"><i class="icon fa-briefcase" aria-hidden="true"></i>Numero de empleado :</h4>
                             <p style="margin-left: 20px">
-                              <?=$user->fechaNacimiento?>
+                              <?=$user->numeroEmpleado?>
                             </p>
                           </li>
                           <li class="list-group-item">
-                            <h4 class="example-title"><i class="icon fa-phone" aria-hidden="true"></i>Telefono :</h4>
+                            <h4 class="example-title"><i class="icon fa-puzzle-piece" aria-hidden="true"></i>Puesto :</h4>
                             <p style="margin-left: 20px">
-                              <?=$user->telefono?>
-                            </p>
-                          </li>
-                          <li class="list-group-item">
-                            <h4 class="example-title"><i class="icon fa-map-marker" aria-hidden="true"></i>Ciudad :</h4>
-                            <p style="margin-left: 20px">
-                              <?=$user->ciudad?>
+                              <?=$user->puesto?>
                             </p>
                           </li>
                           <li class="list-group-item list-group-item-action active">
@@ -199,62 +183,11 @@
                   <div class="col-lg-6 col-sm-12">
                     <div class="card border-light mb-3">
                       <div class="card-header text-center" style="background: black;color: white">
-                        Informacion Aplicante
+                        Permisos Otorgados
                       </div>
                       <div class="card-body">
                         <ul class="list-group list-group-full">
-                          <li class="list-group-item">
-                            <h4 class="example-title"><i class="icon fa-book" aria-hidden="true"></i>Programa de interes:</h4>
-                            <p style="margin-left: 20px">
-                              <?=$user->programaDeInteres?>
-                            </p>
-                          </li>
-                          <li class="list-group-item">
-                            <hr>
-                          </li>
-                          <?php if(@$infoAspiranteUni) { ?>
-                            <li class="list-group-item">
-                              <h4 class="example-title"><i class="icon fa-flask" aria-hidden="true"></i>Facultad:</h4>
-                              <p style="margin-left: 20px">
-                                <?=$infoAspiranteUni['nombreFacultad']?>
-                              </p>
-                            </li>
-                            <li class="list-group-item">
-                              <h4 class="example-title"><i class="icon fa-graduation-cap" aria-hidden="true"></i>Tipo de estudio de interes:</h4>
-                              <p style="margin-left: 20px">
-                                <?=$infoAspiranteUni['estudiosAspiranteUniversidad']?>
-                              </p>
-                            </li>
-                            <li class="list-group-item">
-                              <h4 class="example-title"><i class="icon fa-calendar-check-o" aria-hidden="true"></i>Año y Mes de ingreso:</h4>
-                              <p style="margin-left: 20px">
-                                <?=$infoAspiranteUni['anio']?> - <?=$infoAspiranteUni['mes']?>
-                              </p>
-                            </li>
-                          <?php } ?>
-                          <?php if(@$infoAspirantePrepa) { ?>
-                            <li class="list-group-item">
-                              <h4 class="example-title"><i class="icon fa-graduation-cap" aria-hidden="true"></i>Tipo de estudio de interes:</h4>
-                              <p style="margin-left: 20px">
-                                <?=$infoAspirantePrepa['nombreTipoEstudio']?>
-                              </p>
-                            </li>
-                            <li class="list-group-item">
-                              <h4 class="example-title"><i class="icon fa-graduation-cap" aria-hidden="true"></i>Tipo de alojamiento de interes:</h4>
-                              <p style="margin-left: 20px">
-                                <?=$infoAspirantePrepa['nombreTipoAlojamiento']?>
-                              </p>
-                            </li>
-                            <li class="list-group-item">
-                              <h4 class="example-title"><i class="icon fa-calendar-check-o" aria-hidden="true"></i>Año y Mes de ingreso:</h4>
-                              <p style="margin-left: 20px">
-                                <?=$infoAspirantePrepa['anio']?> - <?=$infoAspirantePrepa['mes']?>
-                              </p>
-                            </li>
-                          <?php } ?>
-                          <li class="list-group-item">
-                            <hr>
-                          </li>
+                          
                         </ul>
 
 
@@ -262,62 +195,6 @@
                     </div>
                   </div>
                   
-                  <?php if(@$universidades) { ?>
-                    <div class="col-lg-12 col-sm-12">
-                      <div class="card border-light mb-3">
-                        <div class="card-header text-center" style="background: black;color: white">
-                          Universidades Seleccionadas
-                        </div>
-                        <div class="card-body">
-                        <ul class="list-group list-group-full">
-                          <?php for($i = 0; $i < count($universidades); $i++) { ?>
-                            <li class="list-group-item">
-                              <div class="row">
-                                <div class="col-4">
-                                  <img src="<?=$universidades[$i]['logoInstitucion']?>" style="max-height: 100%;max-width: 100%">
-                                </div>
-                                <div class="col-8" style="margin-top: 5%">
-                                  <h4><?=$universidades[$i]['nombreInstitucion']?></h4>
-                                  
-                                </div>
-                              </div>
-                            </li>
-                          <?php } ?>
-                        </ul>
-
-
-                        </div>
-                      </div>
-                    </div>
-                  <?php } ?>
-                  <?php if(@$preparatorias) { ?>
-                    <div class="col-lg-12 col-sm-12">
-                      <div class="card border-light mb-3">
-                        <div class="card-header text-center" style="background: black;color: white">
-                          Preparatorias Seleccionadas
-                        </div>
-                        <div class="card-body">
-                        <ul class="list-group list-group-full">
-                          <?php for($i = 0; $i < count($preparatorias); $i++) { ?>
-                            <li class="list-group-item">
-                              <div class="row">
-                                <div class="col-4">
-                                  <img src="<?=$preparatorias[$i]['logoInstitucion']?>" style="max-height: 100%;max-width: 100%">
-                                </div>
-                                <div class="col-8" style="margin-top: 5%">
-                                  <h4><?=$preparatorias[$i]['nombreInstitucion']?></h4>
-                                  
-                                </div>
-                              </div>
-                            </li>
-                          <?php } ?>
-                        </ul>
-
-
-                        </div>
-                      </div>
-                    </div>
-                  <?php } ?>
 
                 </div>
               </div>
@@ -409,7 +286,7 @@
 
         <form id="informacionForm">
           <input type="hidden" name="persona" id="persona" value="<?=@$user->persona?>">
-          <input type="hidden" name="aspirante" id="aspirante" value="<?=@$user->aspirante?>">
+          <input type="hidden" name="agente" id="agente" value="<?=@$user->agente?>">
           <div class="modal-body">
             <div class="responseIText"></div>            
                 <div class="form-group form-material" data-plugin="formMaterial">
@@ -427,24 +304,13 @@
                     <option value="Masculino" <?php  echo ($user->genero == "Masculino") ? 'selected' : '';  ?>>Masculino</option>
                   </select>                
                 </div>
-                
                 <div class="form-group form-material" data-plugin="formMaterial">
-                  <label class="form-control-label" for="fechaNacimiento">Fecha de nacimiento :</label>
-                  <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" value="<?=$user->fechaNacimiento?>">
+                  <label class="form-control-label" for="numeroEmpleado">Numero de empleado :</label>
+                  <input type="text" class="form-control" id="numeroEmpleado" name="numeroEmpleado" value="<?=$user->numeroEmpleado?>">
                 </div>
                 <div class="form-group form-material" data-plugin="formMaterial">
-                  <label class="form-control-label" for="ciudad">Ciudad de origen :</label>
-                  <select class="form-control ciudad" data-plugin="select2">
-                    <option value="" disabled selected>Elige una opcion</option>
-                    <?php for ($i=0; $i < count($countries); $i++) {  ;?>
-                    <option value="<?=$countries[$i]['name']?>,<?=$countries[$i]['callingCodes'][0];?>" <?php  echo ($user->ciudad == $countries[$i]['name']) ? 'selected' : '';  ?>><?=$countries[$i]['name'];?></option>
-                    <?php } ;?>
-                  </select>
-                </div>
-                <input type="hidden"  name="ciudad" id="ciudad" value="<?=$user->ciudad?>">
-                <div class="form-group form-material" data-plugin="formMaterial">
-                  <label class="form-control-label" for="telefono">Telefono con lada :</label>
-                  <input type="tel" class="form-control" id="telefono" name="telefono" value="<?=$user->telefono?>">
+                  <label class="form-control-label" for="telefono">Puesto :</label>
+                  <input type="text" class="form-control" id="puesto" name="puesto" value="<?=$user->puesto?>">
                 </div>
           </div>
           <div class="modal-footer">

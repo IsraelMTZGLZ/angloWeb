@@ -121,6 +121,22 @@
                 </a>
               <?php } ;?>
             </li>
+            <?php if($user->typeUsuario=="Agente") { ?>
+              <li class="site-menu-item">
+                <a href="TablaDescarga">
+                  <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                  <span class="badge badge-pill badge-primary">Status 0</span>
+                </a>
+              </li>
+              <li class="site-menu-item">
+                <a href="AspiranteStatus1">
+                  <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                  <span class="badge badge-pill badge-primary">Status 1</span>
+                </a>
+              </li>
+            <?php } ?>
             <li class="site-menu-item">
                 <a href="<?=base_url('Login/Login/logout')?>">
                   <i class="site-menu-icon icon wb-power" aria-hidden="true" style="font-size: 20px;"></i>

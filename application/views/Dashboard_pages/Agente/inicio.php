@@ -622,7 +622,7 @@ header .footer-wave {
       <div class="col-xs-12 col-sm-6 col-md-4 listar-feature-item-wrapper listar-feature-with-image listar-height-changed" data-aos="fade-zoom-in" data-aos-group="features" data-line-height="25.2px">
         <div class="listar-feature-item listar-feature-has-link">
 
-          <a class="editarInfo" id="<?=@$user->agente;?>"></a>
+          <a href="ProfileAgente"></a>
 
           <div class="listar-feature-item-inner">
 

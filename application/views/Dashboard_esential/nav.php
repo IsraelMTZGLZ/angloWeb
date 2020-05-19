@@ -54,8 +54,13 @@
               </span>
             </a>
             <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="ProfileAspirante" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Configuracion</a>
+              <?php if($user->typeUsuario=="Aspirante") { ;?>
+                <a class="dropdown-item" href="ProfileAspirante" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a>
+                <a class="dropdown-item" href="../Contacto" role="menuitem" target="_blank"><i class="icon wb-help-circle" aria-hidden="true"></i> Ayuda</a>
+              <?php } ?> 
+              <?php if($user->typeUsuario=="Agente") { ;?>
+                <a class="dropdown-item" href="ProfileAgente" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a> 
+              <?php } ?> 
               <div class="dropdown-divider" role="presentation"></div>
               <a class="dropdown-item" href="<?=base_url('Login/Login/logout')?>" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Cerrar Sesión</a>
             </div>

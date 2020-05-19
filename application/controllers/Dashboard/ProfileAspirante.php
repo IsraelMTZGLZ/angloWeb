@@ -18,6 +18,16 @@ class ProfileAspirante extends MY_RootController {
 	{
         $data['user']=$this->session->userdata('user_sess');
 
+        $ch = curl_init();
+
+		curl_setopt($ch, CURLOPT_URL, "https://restcountries.eu/rest/v2/region/Americas?fields=name;callingCodes");
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$res = json_decode(curl_exec($ch),true);
+		
+		curl_close($ch);
+		//echo var_dump($res[0]['callingCodes'][0]);
+		$data['countries']=$res;
+
         if($data['user']->programaDeInteres=="Universidad"){
             //infromcion llenada por el aspirante con el año de ingreso por ejemplo, la facultad
             $response = $this->_callApiRest('AspiranteUniversidades/api/aspiranteUniversidadesBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
@@ -50,5 +60,6 @@ class ProfileAspirante extends MY_RootController {
         $this->session->set_userdata('user_sess',$object);
         redirect('Dashboard/ProfileAspirante');
     }
+
 
 }
