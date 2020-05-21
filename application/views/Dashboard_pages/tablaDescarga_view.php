@@ -13,6 +13,8 @@
                 <th>Nombre</th>
                 <th>Genero</th>
                 <th>Correo</th>
+                <th>Mes</th>
+                <th>Año</th>
                 <th>Accion</th>
             </tr>
         </thead>
@@ -24,6 +26,8 @@
                 <th>Nombre</th>
                 <th>Genero</th>
                 <th>Correo</th>
+                <th>Mes</th>
+                <th>Año</th>
             </tr>
         </tfoot>
     </table>
@@ -71,6 +75,8 @@
                     {data: 'fullname'},
                     {data: 'genero'},
                     {data: 'email'},
+                    {data: 'mesCreation'},
+                    {data: 'yearCreation'},
                     {data: 'usuario',
                         render:function(data, type, row)
                         {
@@ -95,7 +101,30 @@
 
             $(document).on('click','.sendEmail',function (){
                 var usuario = this.id;
-                alert(usuario);
+                _url = _principalURL()+"Status/api/sendEmailStatus0/id/"+usuario;
+                _method = "POST";
+
+
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: null,
+                    success : function(_response){
+                        console.info(_response);
+                        if(!_response){
+                            tostada('success','Correo Enviado Corractamente al destinatario');
+                        }else{
+                            tostada('error','Error inesperado, si persiste comunicate con los desarrolladores');
+
+                        }
+                    },error : function(err){
+                    
+                    }
+                });
+
             });
 
         }
