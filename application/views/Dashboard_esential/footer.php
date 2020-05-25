@@ -80,7 +80,6 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/datatables.net-buttons-bs4/buttons.bootstrap4.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/bootbox/bootbox.min599c.js?v4.0.2');?>"></script>
 
-
   <!-- Scripts -->
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Component.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin.min599c.js?v4.0.2');?>"></script>
@@ -140,7 +139,17 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/datatables.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/tables/datatable.min599c.js?v4.0.2');?>"></script>
 
-
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-tmpl/tmpl.min599c.js');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-canvas-to-blob/canvas-to-blob.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-load-image/load-image.all.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload599c.js');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-process599c.js');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-image599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-audio599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-video599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-validate599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-ui599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/dropify/dropify.min599c.js?v4.0.2');?>"></script>
   <script>
     (function(document, window, $) {
       'use strict';

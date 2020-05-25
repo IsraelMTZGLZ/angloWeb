@@ -75,6 +75,7 @@
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/fonts/web-icons/web-icons.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/fonts/brand-icons/brand-icons.min599c.css?v4.0.2');?>">
   <link rel='stylesheet' href="<?=base_url('resources/assets/Dashboard/fonts.googleapis.com/cssade9.css?family=Roboto:300,400,500,300italic');?>">
+  <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
 
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/fonts/weather-icons/weather-icons.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/fonts/font-awesome/font-awesome.min599c.css?v4.0.2');?>">
@@ -98,5 +99,10 @@
   </script>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload.min599c.css?v4.0.2');?>">
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/dropify/dropify.min599c.css?v4.0.2');?>">
 
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/slick-carousel/slick.min.css?v4.0.2');?>">
+
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/pages/profile-v2.min.css?v4.0.2');?>">
 </head>

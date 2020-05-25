@@ -34,6 +34,12 @@
                   <span class="site-menu-title">Inicio</span>
                 </a>
               <?php } ;?>
+              <?php if($user->typeUsuario=="Aspirante") { ;?>
+                <a href="HomeAspirante">
+                  <i class="site-menu-icon fas fa-home" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Inicio</span>
+                </a>
+              <?php } ;?>
             </li>
             <?php if($user->typeUsuario=="Admin") { ;?>
               <li class="site-menu-item has-sub">
@@ -107,6 +113,36 @@
                 </a>
               </li>
             <?php } ?>
+            <li class="site-menu-item">
+              <?php if($user->typeUsuario=="Aspirante") { ;?>
+                <a href="MisArchivos">
+                  <i class="site-menu-icon far fa-file" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Mis Archivos</span>
+                </a>
+              <?php } ;?>
+            </li>
+            <?php if($user->typeUsuario=="Agente") { ?>
+              <li class="site-menu-item">
+                <a href="TablaDescarga">
+                  <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                  <span class="badge badge-pill badge-primary">Status 0</span>
+                </a>
+              </li>
+              <li class="site-menu-item">
+                <a href="AspiranteStatus1">
+                  <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                  <span class="badge badge-pill badge-primary">Status 1</span>
+                </a>
+              </li>
+            <?php } ?>
+            <li class="site-menu-item">
+                <a href="<?=base_url('Login/Login/logout')?>">
+                  <i class="site-menu-icon icon wb-power" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Cerrar sesión</span>
+                </a>
+            </li>
           </ul>
         </div>
       </div>

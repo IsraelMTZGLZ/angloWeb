@@ -7,16 +7,15 @@
     Aspirantes Interesados
   </div>
   <div class="card-body">
-    <table id="example" class="display nowrap table-striped table-bordered" style="width:80%">
+    <table id="example" class="display nowrap table table-hover dataTable table-striped w-full" style="width:80%">
         <thead>
             <tr>
                 <th>Nombre</th>
                 <th>Genero</th>
                 <th>Correo</th>
-                <th>Fecha de nacimiento</th>
-                <th>Telefono</th>
-                <th>Ciudad</th>
-                <th>Programa de interes</th>
+                <th>Mes</th>
+                <th>Año</th>
+                <th>Accion</th>
             </tr>
         </thead>
         <tbody>
@@ -27,10 +26,8 @@
                 <th>Nombre</th>
                 <th>Genero</th>
                 <th>Correo</th>
-                <th>Fecha de nacimiento</th>
-                <th>Telefono</th>
-                <th>Ciudad</th>
-                <th>Programa de interes</th>
+                <th>Mes</th>
+                <th>Año</th>
             </tr>
         </tfoot>
     </table>
@@ -55,23 +52,16 @@
     $(document).ready(function()
         {
 
-
             $('#example tfoot th').each( function () {
                 var title = $(this).text();
                 $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
             } );
 
 
-            _url = _principalURL()+"Aspirante/api/aspirante/";
+            _url = _principalURL()+"Aspirante/api/aspiranteByStatus0/";
             var table=$(document).find('#example').DataTable({
-                scrollY:        '50vh',
-                "scrollX": true,
-                scrollCollapse: true,
-                paging:         false,
-                dom: 'Bfrtip',
-                buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print'
-                ],
+                
+                
                 ajax: {
                     url : _url,
                     method : 'get',
@@ -85,10 +75,15 @@
                     {data: 'fullname'},
                     {data: 'genero'},
                     {data: 'email'},
-                    {data: 'fechaNacimiento'},
-                    {data: 'telefono'},
-                    {data : 'ciudad'},
-                    {data : 'programaDeInteres'}
+                    {data: 'mesCreation'},
+                    {data: 'yearCreation'},
+                    {data: 'usuario',
+                        render:function(data, type, row)
+                        {
+                        return '<button type="button" id="'+data+'" class="btn btn-icon btn-primary sendEmail"><i class="icon wb-envelope" aria-hidden="true"></i></button>';
+                        },
+                        "targets": -1
+                    }
                 ]
             });
 
@@ -103,6 +98,34 @@
                     }
                 } );
             } );
+
+            $(document).on('click','.sendEmail',function (){
+                var usuario = this.id;
+                _url = _principalURL()+"Status/api/sendEmailStatus0/id/"+usuario;
+                _method = "POST";
+
+
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: null,
+                    success : function(_response){
+                        console.info(_response);
+                        if(!_response){
+                            tostada('success','Correo Enviado Corractamente al destinatario');
+                        }else{
+                            tostada('error','Error inesperado, si persiste comunicate con los desarrolladores');
+
+                        }
+                    },error : function(err){
+                    
+                    }
+                });
+
+            });
 
         }
     );

@@ -36,18 +36,18 @@
 						},
 						data: $(document).find('#comingForm').serialize(),
 						success : function(_response){
-                        if (_response.status=="error") {
-                            $.each(_response.validations,function(key,message){
-                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
-                            });
-                        }
-                        if (_response.status=="success") {
-                            setTimeout(function(){
-                                window.location.href = "<?php echo site_url('Login'); ?>";
-                            },2000);
-                        }
-                        
-                        tostada(_response.status,_response.message);
+							if (_response.status=="error") {
+								$.each(_response.validations,function(key,message){
+									$(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+								});
+							}
+							if (_response.status=="success") {
+								setTimeout(function(){
+									window.location.href = "<?php echo site_url('Login'); ?>";
+								},2000);
+							}
+							
+							tostada(_response.status,_response.message);
 						
 
 						},error : function(err){
