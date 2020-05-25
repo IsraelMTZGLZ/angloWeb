@@ -283,11 +283,20 @@ h1 {
   text-align: center;
   position: relative;
 }
+
+.card{
+
+  background: white;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+}
 .card-content {
     -webkit-box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
     -moz-box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
     box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 25px 25px 10px 25px;
 }
 .card-content * {
@@ -321,7 +330,7 @@ h1 {
   background-position: 0 0;
   transition: all 100ms ease-out;
 }
-.c-card ~ .card-content:before {
+/* .card:before {
   position: absolute;
   top: 1px;
   right: 1px;
@@ -331,7 +340,7 @@ h1 {
   border-left: 52px solid transparent;
   transition: all 200ms ease-out;
 }
-.c-card ~ .card-content:after {
+.card:after {
   position: absolute;
   top: 1px;
   right: 1px;
@@ -341,38 +350,22 @@ h1 {
   border-top: 50px solid #FFF;
   border-left: 50px solid transparent;
   transition: all 200ms ease-out;
+} */
+.card:hover {
+  /* border: 4px solid #CCC; */
+  background: white;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px #0bb2d4;
+  z-index: 9999;
 }
-.c-card ~ .card-content:hover {
-  border: 4px solid #CCC;
-}
-.c-card ~ .card-content:hover .card-state-icon {
-  background-position: -30px 0;
-}
-.c-card ~ .card-content:hover:before {
-  border-top: 52px solid #47cf73;
-}
-.c-card:checked ~ .card-content {
-  border: 4px solid #1DCA0D;
-}
-.c-card:checked ~ .card-content .card-state-icon {
-  background-position: -90px 2px;
-}
-.c-card:checked ~ .card-content:before {
-  border-top: 52px solid #47cf73;
-      background: url("https://www.shareicon.net/download/2016/08/20/817721_check.svg") no-repeat;
-}
-.c-card:checked ~ .card-content:after {
-  border-top: 52px solid #47cf73;
 
-}
-.c-card:checked:hover ~ .card-content .card-state-icon {
-  background-position: -60px 2px;
-}
-.c-card:checked:hover ~ .card-content:before {
-  border-top: 52px solid #47cf73;
-}
-.c-card:checked:hover ~ .card-content:after {
-  border-top: 52px solid #47cf73;
+
+
+.checkA{
+  position: absolute;
+  top: -10px;
 }
 
 
@@ -394,7 +387,7 @@ h1 {
 
   <div class="page text-center" >
     <div class="page-content">
-      <input type="hidden" id="aspiranteUni" value="<?=@$aspiranteUni['idAspiranteUniversidad'];?>" name="aspiranteUni">
+      <input type="hidden" id="aspirante" value="<?=$user->aspirante;?>" name="fkAspirante">
     <div class="row">
         <div class="col-12">
           <!-- Example Card Decks -->
@@ -455,13 +448,15 @@ h1 {
 
 
                   <div class="card">
-                    <div class="checkbox-custom checkbox-primary checkbox-lg">
-                      <input type="checkbox" class="selectable-item uni"  id="<?=$i?>" value="<?=@$instituciones[$i]['idInstitucion']?>">
-                      <label for="media_1"></label>
-                    </div>
+
                     <label for="<?=$i?>">
+
                     <img class="card-img-top img-fluid w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>"
                       alt="Card image cap">
+                      <div class="checkbox-custom checkbox-success checkbox-lg checkA">
+                        <input type="checkbox" class="selectable-item uni checkboxc"  id="<?=$i?>" value="<?=@$instituciones[$i]['idInstitucion']?>">
+                        <label for="media_1"></label>
+                      </div>
                     <div class="card-block">
                       <h4 class="card-title"><?=@$instituciones[$i]['nombreInstitucion'];?></h4>
 
@@ -473,14 +468,11 @@ h1 {
 
                     </div>
                     <ul class="list-group list-group-dividered px-20 mb-0">
-                      <li class="list-group-item px-0">Cras justo odio</li>
-                      <li class="list-group-item px-0">Dapibus ac facilisis in</li>
-                      <li class="list-group-item px-0">Vestibulum at eros</li>
+                      <li class="list-group-item px-0"><?=@$instituciones[$i]['abreviacionEdad'];?> <?=@$instituciones[$i]['nombreEdad'];?> <?=@$instituciones[$i]['edadEdad'];?></li>
+                      <li class="list-group-item px-0"><?=@$instituciones[$i]['abreviacionCampamento'];?> <?=@$instituciones[$i]['nombreCampamento'];?></li>
+                      <li class="list-group-item px-0"><?=@$instituciones[$i]['abreviacionTipoAlojamiento'];?> <?=@$instituciones[$i]['nombreTipoAlojamiento'];?></li>
                     </ul>
-                    <div class="card-block">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
+
                       </label>
                   </div>
                 </div>
@@ -703,7 +695,9 @@ h1 {
                 $(".uni:not(:checked)").prop( "disabled", false );
             }
         });
-        $(document).on('click','.btn-continue',function (){
+        $(document).on('click','.btn-continue',function (event){
+          event.preventDefault();
+          var formData = new FormData();
             let unis = [];
             $("input:checkbox:checked").each(
                 function() {
@@ -713,32 +707,34 @@ h1 {
             if(unis.length >0){
                 var mes = $(document).find('#mes').val();
                 var anio = $(document).find('#anio').val();
-                console.log(unis);
-                console.log(unis[0]);
-                var formData = new FormData();
-                formData.append('mes', $(document).find('#mes').val());
-                formData.append('anio', $(document).find('#anio').val());
-                formData.append('campusone', unis[0]);
+                var idAspirante = $(document).find('#aspirante').val();
+
+
+
+                f = formData.append('campusone', unis[0]);
                 formData.append('campustwo', unis[1]);
                 formData.append('campusthree', unis[2]);
+                console.log(f);
                 if( mes && anio){
                     var d = anio+'-'+mes+'-01';
+                    formData.append('mesanio', d);
                     //var parts =d.split('-');
                     //var mydate = new Date(parts[0], parts[1] - 1, parts[2]);
                     _params={
-                        "instituciones":unis,
-                        "aspiranteUniversidad":$(document).find('#aspiranteUni').val(),
-                        "anioMes":d
+                        "campusone":unis[0],
+                        "campustwo":unis[1],
+                        "campusthree":unis[2],
+                        "mesanio":d
                     };
-                    _url = _principalURL()+"AspiranteUniversidades/api/aspiranteUniversidadesFacultades/";
+                    _url = _principalURL()+"Verano/api/aspirante_E_C_A/"+idAspirante;
 
                     $.ajax({
                         url: _url,
-                        method : 'POST',
+                        method : 'PUT',
                         headers : {
                         'X-API-KEY':'ANGLOKEY'
                         },
-                        data: _params,
+                        data:   _params,
                         success : function(_response){
                         if (_response.status=="error") {
                             tostada("error",'Ocurrio un error intenta mas tarde');
@@ -752,7 +748,7 @@ h1 {
                             confirmButtonText: 'Siguiente'
                             }).then(function () {
 
-                             window.location.href = "<?php echo site_url('Login'); ?>";
+                             window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
                           });
                              $('#successMessage').empty().append(response.message);
                         }

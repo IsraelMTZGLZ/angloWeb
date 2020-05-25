@@ -378,6 +378,7 @@
 	overflow: hidden;
 	/*CSS counters to number the steps*/
 	counter-reset: step;
+
 }
 #progressbar li {
 	list-style-type: none;
@@ -399,6 +400,7 @@
 	background: white;
 	border-radius: 3px;
 	margin: 0 auto 5px auto;
+
 }
 /*progressbar connectors*/
 #progressbar li:after {
@@ -421,7 +423,9 @@
 	background: #27AE60;
 	color: white;
 }
-
+.aligner{
+  align:center;
+}
 
 /* New */
 [type="radio"]:checked,
@@ -522,40 +526,24 @@
 
               <form id="msform" name="msform">
                 <!-- progressbar -->
-
+                <div class="aligner">
                 <ul id="progressbar">
-                  <li class="active">Edad</li>
-                  <li>Tipo de campamento</li>
+                  <li class="active">Tipo de curso</li>
                   <li>Alojamiento</li>
                 </ul>
+                </div>
                 <!-- fieldsets -->
 
+
                 <fieldset>
-                  <h2 class="fs-title">Edades</h2>
-                  <h3 class="fs-subtitle">Indica tu edad</h3>
+                  <h2 class="fs-title">Tipo de curso</h2>
+                  <h3 class="fs-subtitle">Indica el tipo de curso</h3>
                   <div class="container">
-                    <?php for ($i = 0; $i < count($edades); $i++) { ?>
-                    <ul  >
-
-                      <input type="radio" id="test<?=@$i+1;?>" name="edad" value="<?=@$edades[$i]['idEdad'];?>">
-                      <label  for="test<?=@$i+1;?>"><?=@$edades[$i]['nombreEdad'];?> <?=@$edades[$i]['edadEdad'];?></label>
-
-                  </ul>
-                  <br>
-                    <?php } ?>
-                  </div>
-
-                  <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                  <h2 class="fs-title">Tipo de campamento</h2>
-                  <h3 class="fs-subtitle">Indica el tipo de campamento</h3>
-                  <div class="container">
-                    <?php for ($i = 0; $i < count($campamentos); $i++) { ?>
+                    <?php for ($i = 0; $i < count($cursos); $i++) { ?>
                     <ul >
                         <?php if(1== 1) {?>
-                        <input type="radio" id="tes<?=@$i+1;?>" name="campamento" value="<?=@$campamentos[$i]['idCampamento'];?>">
-                        <label for="tes<?=@$i+1;?>"><?=@$campamentos[$i]['nombreCampamento'];?></label>
+                        <input type="radio" id="tes<?=@$i+1;?>" name="curso" value="<?=@$cursos[$i]['idTipoCurso'];?>">
+                        <label for="tes<?=@$i+1;?>"><?=@$cursos[$i]['nombreTipoCurso'];?> </label>
                         <?php }?>
                     </ul>
 
@@ -861,38 +849,22 @@ $(".submit").click(function(){
 
 
 
-      $("#campamentocheck").click(function () {
-
-        $campamentocheck =$('input:radio[name=campamento]:checked').val();
-
-        if($campamentocheck==2){
-          console.log($campamentocheck);
-          /* $h = $(document).find('#ten1');
-          console.log($h); */
-          document.getElementById("ten1").style.display = 'none';
-          /* $some = $('input[type=hidden]').val(); */
-        }else{
-           document.getElementById(message).style.display= "inline";
-        }
-			});
 
       $(document).on('submit','#msform',function(event){
         event.preventDefault();
 
-      $edad = $('input:radio[name=edad]:checked').val();
-      $campamento =$('input:radio[name=campamento]:checked').val();
+      $campamento =$('input:radio[name=curso]:checked').val();
       $alojamiento =$('input:radio[name=alojamiento]:checked').val();
-      console.log($edad);
+
       console.log($campamento);
       console.log($alojamiento);
 
     var formData = new FormData();
     formData.append('aspirante', $(document).find('#aspirante').val());
-    formData.append('edad', $('input:radio[name=edad]:checked').val());
-    formData.append('campamento',$('input:radio[name=campamento]:checked').val());
+    formData.append('campamento',$('input:radio[name=curso]:checked').val());
     formData.append('alojamiento',$('input:radio[name=alojamiento]:checked').val());
-    console.log(0);
-    _url = _principalURL()+"Verano/api/aspirante_E_C_A/";
+
+    _url = _principalURL()+"Ingles/api/aspiranteIngles_C_A/";
     $.ajax({
         url: _url,
         method : 'POST',
@@ -905,19 +877,17 @@ $(".submit").click(function(){
         success : function(_response){
             response = JSON.stringify(_response);
             if (_response.status=="error") {
-                $.each(_response.validations,function(key,message){
-                    $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
-                });
+              tostada(_response.status,"Completar correctamente los campos");
             }
             if (_response.status=="success") {
-             window.location.href = "<?php echo site_url('Dashboard/Verano/TestThree');?>";
+             window.location.href = "<?php echo site_url('EnglishInst');?>";
             }
 
-            tostada(_response.status,_response.message);
+            tostada("Success","correcto");
 
 
         },error : function(err){
-
+            tostada(_response.status,_response.message);
         }
      });
 

@@ -2,11 +2,11 @@
 <html class="no-js css-menubar" lang="en">
 
 <head>
-  
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Anglo Latino Education Partnership</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta name="description" content="¿Te interesa estudiar en Reino Unido? Te asesoramos de manera GRATUITA y apoyamos en tu educación en instituciones y colegios británicos de excelencia." />
   <meta name="keywords" content="Anglo,Latino,Estudiar,Reino Unido,Asesores,Gratuita,Britanicos " />
@@ -44,7 +44,7 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/asrange/asRange.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/nprogress/nprogress.min599c.css');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/ladda/ladda.min599c.css?v4.0.2');?>">
-  
+
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/select2/select2.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css"href="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min599c.css?v4.0.2');?>">
@@ -273,9 +273,9 @@
 
     </div>
   </div>
-  
+
   <input type="hidden" name="namePerson" id="namePerson" value="<?=$user->names;?> <?=$user->paterns;?>">
-  
+
   <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">&gt;
     <div class="page-content vertical-align-middle animation-slide-top animation-duration-1">
       <div class="panel">
@@ -299,13 +299,14 @@
                 <?php for ($i=0; $i < count($countries); $i++) {  ;?>
                  <option value="<?=$countries[$i]['name']?>,<?=$countries[$i]['callingCodes'][0];?>"><?=$countries[$i]['name'];?></option>
                 <?php } ;?>
+                
               </select>
               <label>Ciudad de origen</label>
             </div>
             <div class="row">
               <div class="col-3">
                 <div class="form-group form-material floating" data-plugin="formMaterial">
-                  
+
                   <input type="text" class="form-control empty" disabled name="lada" id="lada">
                 </div>
               </div>
@@ -361,9 +362,9 @@
       </footer>
     </div>
   </div>
-          
-  
-  
+
+
+
   <script data-cfasync="false" src="<?=base_url('resources/assets/Dashboard/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js');?>"></script><script src="<?=base_url('resources/assets/Dashboard/global/vendor/babel-external-helpers/babel-external-helpers599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery/jquery.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/popper-js/umd/popper.min599c.js?v4.0.2');?>"></script>
@@ -433,7 +434,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/datatables.net-buttons-bs4/buttons.bootstrap4.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/bootbox/bootbox.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/formatter/jquery.formatter.min599c.js?v4.0.2');?>"></script>
-  
+
   <!-- Scripts -->
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Component.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin.min599c.js?v4.0.2');?>"></script>
@@ -457,7 +458,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/asscrollable.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/slidepanel.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/switchery.min599c.js?v4.0.2');?>"></script>
-  
+
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/matchheight.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jvectormap.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-appear.min599c.js')?>"></script>
@@ -506,7 +507,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
-  
+
   <script>
     $(function(){
       $('#ciudad').on('change', function() {
@@ -544,7 +545,7 @@
         }else{
           $fechaNueva = null;
         }
-        
+
         _params={
         	"persona":$(document).find('#persona').val(),
           "telefono":$(document).find('#telefono').val(),
@@ -572,7 +573,7 @@
               });
 
               setTimeout(function(){
-              
+
                   $(document).find('#responseText').html('<div class="summary-errors alert alert-danger alert-dismissible fade show" role="alert">'+
                   '<strong>Error!</strong> '+_response.message+
                   '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
@@ -585,12 +586,12 @@
             if (_response.status=="success") {
               window.location.href = "<?php echo site_url('Login');?>";
             }
-            
+
             tostada(_response.status,_response.message);
-            
+
 
             },error : function(err){
-            
+
             }
           });
         });

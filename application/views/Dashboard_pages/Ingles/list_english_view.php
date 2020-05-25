@@ -2,41 +2,54 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/files.css');?>"/>
-<div class="card text-center">
-  <div class="card-header" style="margin-top: 2%;">
-    Preparatorias
-  </div>
 
-  <div class="card-body">
-    <div id="responseText" style="margin-top: 20px;margin-bottom: -5px;">
-    <div class="row">
-      <div class="col-md-6 col-sm-6 col-6">
-        <div class="example example-buttons">
-          <!-- <button type="button" data-toggle="modal" class="btn btn-primary" data-target="#exampleModalScrollable">	Add New <i class="fa fa-plus"></i>	</button> -->
-            <button type="button" data-toggle="modal" data-target="#exampleModalPrimary" class="btn btn-outline btn-primary"><i class="icon wb-plus" aria-hidden="true"></i> More</button>
-        </div>
+
+
+  <div class="page">
+    <div class="page-header">
+      <h1 align="center" class="page-title">Escuela de Inglés</h1>
+      <h1 class="page-title">Lista de estudiantes nuevos</h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)">Tables</a></li>
+        <li class="breadcrumb-item active">DataTables</li>
+      </ol>
+      <div class="page-header-actions">
+        <a class="btn btn-sm btn-default btn-outline btn-round" href="https://datatables.net/" target="_blank">
+        <i class="icon wb-link" aria-hidden="true"></i>
+        <span class="hidden-sm-down">Official Website</span>
+      </a>
       </div>
     </div>
+      <div class="page-content">
+      <!-- Panel Table Add Row -->
+      <div class="panel">
 
-    <table id="example" class="display nowrap" style="width:100%">
-        <thead>
-            <tr>
-            <th>Foto </th>
-                <th>Nombre Preparatoria </th>
-                <th>Status Preparatoria</th>
-                <th>Fundación</th>
-                <th>Nombre Campus</th>
-                <th>Tipo</th>
-                <th>Alojamiento</th>
+        <div class="panel-body">
+
+          <table class="table table-bordered table-hover table-striped" cellspacing="0" id="example">
+            <thead align="center">
+              <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Género</th>
+                <th>email</th>
+                <th>Teléfono</th>
+                <th>Ciudad</th>
                 <th>Opciones</th>
-            </tr>
-        </thead>
-        <tbody>
+              </tr>
+            </thead>
+            <tbody align="center">
 
-        </tbody>
-    </table>
-  </div>
-</div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End Panel Table Add Row -->
+
+
+
 
 <div class="modal fade modal-primary" id="exampleModalPrimary" aria-hidden="true"
   aria-labelledby="exampleModalPrimary" role="dialog" tabindex="-1">
@@ -122,14 +135,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
 $(function(){
-
-
-  /*This function is emplemented to show data in the table */
-
-
-    _url = _principalURL()+"/PreparatoriaCampus/api/preparatoriacampus";
+    _url = _principalURL()+"/Ingles/api/englishnewStudents";
 
     var _html ="";
+    console.log("entra");
 
       $.ajax({
   			url:_url,
@@ -145,14 +154,13 @@ $(function(){
   				for (var i = 0; i < response.data.length; i++) {
   					_html +="<tr>";
 
-  					        _html +="<td><img src='"+response.data[i].urlLogotipo+"' alt='Elemento de Descarga' width='50px' height='50px'></td>";
-  			    				_html +="<td>"+response.data[i].nombrePreparatoria+"</td>";
-  									_html +="<td>"+response.data[i].statusPreparatoria+"</td>";
-  			    				_html +="<td>"+response.data[i].fundacion+"</td>";
-  			    				_html +="<td>"+response.data[i].nombreCampus+"</td>";
-  			    				_html +="<td>"+response.data[i].tipoCampus+"</td>";
-  			    				_html +="<td>"+response.data[i].alojamientoCampus+"</td>";
-  			    				_html +="<td> <a href='<?=base_url('Cita/add/')?>"+response.data[i].id+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-primary btn-xs'  data-toggle='tooltip' title='Edit'> <i class='fa fa-pencil'></i></a>   <button id='"+response.data[i].id+"' class='delete-control btn btn-danger btn-xs'  title='Delete'><i class='fa fa-trash-o'></i></button></td>";
+  					        _html +="<td>"+response.data[i].firstNamePersona+"</td>";
+  			    				_html +="<td>"+response.data[i].lastNamePersona+"</td>";
+  									_html +="<td>"+response.data[i].generoPersona+"</td>";
+  			    				_html +="<td>"+response.data[i].emailUsuario+"</td>";
+  			    				_html +="<td>"+response.data[i].telefonoAspirante+"</td>";
+  			    				_html +="<td>"+response.data[i].ciudadAspirante+"</td>";
+  			    				_html +="<td> <a href='<?=base_url('Dashboard/Ingles/AspiranteInfo/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' title='Information'> <i class='icon wb-plus'></i>Más Información</a>  </td>";
   			    				_html +="</tr>";
   				}
 
@@ -160,7 +168,7 @@ $(function(){
   				$('#example').DataTable({
             dom: 'Bfrtip',
             buttons: [
-                'copy', 'csv', 'excel', 'pdf', 'print'
+                'copy', 'csv','excel', 'pdf', 'print'
             ]
           });
   				var table_admin = response.data;
@@ -187,6 +195,37 @@ $(function(){
 
   			}
   		});
+
+      // var table=$(document).find('#example').DataTable({
+      //     dom: 'Bfrtip',
+      //     buttons: [
+      //         'copy', 'csv', 'excel', 'pdf', 'print'
+      //     ],
+      //   });
+      // console.log(table);
+
+    // _url = _principalURL()+"Preparatoria/api/preparatoria/";
+    // var table=$(document).find('#example').DataTable({
+    //   dom: 'Bfrtip',
+    //   buttons: [
+    //     'copy', 'csv', 'excel', 'pdf', 'print'
+    //   ],
+    //   ajax: {
+    //     url : _url,
+    //     method : 'get',
+    //     dataSrc : 'data',
+    //     headers : {
+    //       'X-API-KEY':'ANGLOKEY'
+    //     }
+    //   },
+    //   columns : [
+    //     {data: 'nombre_Preparatoria'},
+    //     {data: 'fundacion_Preparatoria'},
+    //     {data: 'status_Preparatoria'},
+    //     {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
+    //     ]
+    //   });
+
 
 
     // this me tethod is implemented to submit or delete information to the table
@@ -264,6 +303,19 @@ $(function(){
         formData.append('preparatoria', 1);
         var  l = $("#nombreCampus").val();
 
+        if(_id>0){
+           console.info("llego Put");
+           _url = _principalURL()+"Preparatoria/api/preparatoria/"+$(document).find('#id').val();
+          _method = "PUT";
+          _text = 'Los datos fueron editados correctamente';
+        }else{
+            console.info("llego Post");
+            _url = _principalURL()+"Preparatoria/api/preparatoria/";
+          _method = "POST";
+            _text = 'Los datos fueron guardados correctamente';
+
+        }
+
       }else{
 
       }
@@ -324,7 +376,40 @@ $(function(){
 
         }
       });
-
+      // $.ajax({
+      //   url:_url,
+      //   method: _method,
+      //   headers : {
+      //     'X-API-KEY':'ANGLOKEY'
+      //   },
+      //   data: $(document).find("#campusForm").serialize(),
+      //   success : function(_response){
+      //     response= JSON.stringify(_response);
+      //     if(_response.status == "error"){
+      //       console.log(_response);
+      //       tostada('error','Revise sus datos ');
+      //         $.each(_response.validations, function(key,message){
+      //           $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+      //          });
+      //     }else{
+      //       clearForm('campusForm');
+      //       tostada('success','Los datos se an guardado correctamente ');
+      //     }
+      //
+      //   },
+      //   error : function(err){
+      //       response= JSON.stringify(err.responseText);
+      //       $(document).find('#responseText').html(
+      //         '<div class="alert alert-success" role="alert">'
+      //         +response+
+      //         '</div>'
+      //       );
+      //       setTimeout(function(){
+      //           $(document).find('#responseText').html('');
+      //       }, 3000);
+      //
+      //   }
+      // });
     });
 
     $(document).on('click','.btn-delete',function(){
@@ -371,6 +456,4 @@ $(function(){
     });
   }
   });
-
-
 </script>

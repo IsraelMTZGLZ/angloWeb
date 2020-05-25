@@ -323,7 +323,7 @@ font-size: 18px;
                   <li data-filter=".website"><a href="#">Universidades</a></li>
                   <li data-filter=".design"><a href="#">Preparatorias</a></li>
                   <li data-filter=".ux_ui"><a href="#">Escuelas de inglés</a></li>
-                  <li data-filter=".ux_uy"><a href="#">Cursos de verano</a></li>
+                  <li data-filter=".ux_uy"><a href="#">Cursos de verano Académicos</a></li>
                   <li data-filter=".ux_uyy"><a href="#">Cursos de verano de inglés</a></li>
               </ul>
           </div>
@@ -818,6 +818,7 @@ font-size: 18px;
 
 
 
+
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_ui">
                       <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourne.jpg');?>" alt="">
@@ -1058,6 +1059,24 @@ font-size: 18px;
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
                       <div class="portfolio_item">
+                          <img src="<?=base_url('resources/assets/Informativa/images/new_new_centre_brighton.jpg');?>" alt="">
+                          <div class="portfolio_hover">
+                          <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
+                                <div class="col-7">
+                                  <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>">
+                                </div>
+                                <div class="col-5">
+                                   <a data-toggle="modal" data-target="#brightonnVeranoModal">the english language centre brighton</a>                                   </div>
+                              </div>
+                              <div class="zoom_popup">
+                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#brightonnVeranoModal"></button></i>
+                              </div>
+                          </div>
+                   <a data-toggle="modal" data-target="#brightonnVeranoModal"><div class="portfolio_overlay"></div></a>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
+                      <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourne.jpg');?>" alt="">
                           <div class="portfolio_hover">
                           <div class="row" style="display: flex;align-items: center;justify-content: center;background: white;">
@@ -1065,7 +1084,7 @@ font-size: 18px;
                                   <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>">
                                 </div>
                                 <div class="col-5">
-                                   <a data-toggle="modal" data-target="#eastbourneVeranoModal">the english language centre brighton / eastbourne</a>                                   </div>
+                                   <a data-toggle="modal" data-target="#eastbourneVeranoModal">the english language centre eastbourne</a>                                   </div>
                               </div>
                               <div class="zoom_popup">
                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#eastbourneVeranoModal"></button></i>
@@ -1074,6 +1093,7 @@ font-size: 18px;
                    <a data-toggle="modal" data-target="#eastbourneVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
+
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
                       <div class="portfolio_item">
                           <img src="<?=base_url('resources/assets/Informativa/images/e_stafford_house.jpg');?>" alt="">
@@ -1138,7 +1158,7 @@ font-size: 18px;
                                   <img src="<?=base_url('resources/assets/Informativa/images/prepa_Stonyhurts_College.jpg');?>">
                                 </div>
                                 <div class="col-5">
-                                   <a data-toggle="modal" data-target="#stonyhurtsVeranoModal">Stonyhurts College</a>                                   </div>
+                                   <a data-toggle="modal" data-target="#stonyhurtsVeranoModal">Stonyhurst College</a>                                   </div>
                               </div>
                               <div class="zoom_popup">
                                    <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#stonyhurtsVeranoModal"></button></i>
@@ -1147,18 +1167,7 @@ font-size: 18px;
                           <a data-toggle="modal" data-target="#stonyhurtsVeranoModal"><div class="portfolio_overlay"></div></a>
                       </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  ux_uyy">
-                      <div class="portfolio_item">
-                          <img src="<?=base_url('resources/assets/Informativa/images/prepa_nto.jpg');?>" alt="">
-                          <div class="portfolio_hover">
-                              <a data-toggle="modal" data-target="#intoVeranoModal"> Into UK</a>
-                              <div class="zoom_popup">
-                                   <i class=""><button type="button" class="btn btn-primary flaticon-add" data-toggle="modal" data-target="#intoVeranoModal"></button></i>
-                              </div>
-                          </div>
-                   <a data-toggle="modal" data-target="#intoVeranoModal"><div class="portfolio_overlay"></div></a>
-                      </div>
-                  </div>
+
 
 
               </div>
@@ -3464,7 +3473,7 @@ font-size: 18px;
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/EnJY2JK1wF3U4Br88" target="_blank" >33 Palmeira Square, Hove BN3 2GB, United Kingdom</a> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/EnJY2JK1wF3U4Br88" target="_blank" >33 Palmeira Square, Hove BN3 2GB</a> </div>
             </div>
             <div class="row">
               <hr>
@@ -3501,9 +3510,6 @@ font-size: 18px;
             </div>
             <div class="row">
 
-              <div class="col-md-12"><li>Ofrecer a los estudiantes la oportunidad de experimentar lo que es estudiar una materia que les encanta en la universidad.</li></div>
-              <div class="col-md-12"><li>Los estudiantes aprenderán en un entorno académico, trabajarán con otros estudiantes interesados ​​en cursos similares, estudiantes universitarios y personal académico.</li></div>
-              <div class="col-md-12"><li>Clases de diversas nacionalidades.</li></div>
 
               <div class="col-md-12 ">
 
@@ -4317,7 +4323,7 @@ font-size: 18px;
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/T33Bn6Mfjrnpa69x5" target="_blank" > Cambridge Academy of English, 65 High Street, Girton, Cambridge CB3 0QD England </a> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/T33Bn6Mfjrnpa69x5" target="_blank" > 65 High St, Girton, Cambridge CB3 0QD, United Kingdom </a> </div>
             </div>
             <div class="row">
               <hr>
@@ -5216,7 +5222,7 @@ font-size: 18px;
       </div>
 </div>
 
-<div class="modal fade text-center py-5 subscribeModal-lg "  id="eastbourneVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="brightonnVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
           <!-- <div class="top-strip"></div> -->
@@ -5229,7 +5235,7 @@ font-size: 18px;
             </div>
             <div class="row">
               <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
-              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourneModal.jpg');?>" alt=""></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/new_new_centre_brightonModal.jpg');?>" alt=""></div>
             </div>
           </div>
           <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
@@ -5241,11 +5247,11 @@ font-size: 18px;
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1867 .</div>
+              <div class="col-md-4 "> 	1962 .</div>
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/RXCpxCfBAsjwzdCr9" target="_blank" >Old Wish Rd, Eastbourne BN21 4JY, Reino Unido </a> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/EnJY2JK1wF3U4Br88" target="_blank" >33 Palmeira Square, Hove BN3 2GB</a> </div>
             </div>
             <div class="row">
               <hr>
@@ -5334,6 +5340,83 @@ font-size: 18px;
                          </div> <!-- end wrapper -->
 
                       </div> <!-- end col waper-->
+
+                 </div> <!-- end row two -->
+              </div><!-- end slide continer-->
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col-md-12"><li>Eastbourne tiene mucho que ofrecer, incluyendo una selección de cines y teatros multiplex modernos, un hermoso paseo marítimo, un puerto deportivo de ocio y excelentes tiendas, tanto interiores como al aire libre.</li></div>
+              <div class="col-md-12"><li>instalaciones educativas y deportivas de primera clase.</li></div>
+
+              <div class="col-md-12 ">
+
+                <div class="header_btn dark_btn" style="display: flex;justify-content: center;">
+                    <a style="width: 100%;" href="../Login" > Me interesa</a>
+                </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+          </div>
+          <div class="youtube-player" data-id="WJWdV6xExKk"></div>
+
+          <!--<div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1G5cWSMmzQ"></iframe>
+          </div>-->
+
+          <hr>
+
+          </div>
+
+        </div>
+          <div class="bottom-strip"></div>
+      </div>
+</div>
+
+<div class="modal fade text-center py-5 subscribeModal-lg "  id="eastbourneVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <!-- <div class="top-strip"></div> -->
+        <div class="modal-header">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 10px;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: red">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-md-4 d-none d-lg-block d-xl-block"  style="margin-top: 30px;"> <img src="<?=base_url('resources/assets/Informativa/images/z_subir_estbourne_Logo.jpg');?>" class="rounded mx-auto d-block" alt="..."></div>
+              <div class="col-md-7 ml-auto d-none d-lg-block d-xl-block"><img  src="<?=base_url('resources/assets/Informativa/images/z_subir_eastbourneModal.jpg');?>" alt=""></div>
+            </div>
+          </div>
+          <!-- <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank"> </a>
+
+          <h3 class="col-md-4 "></h3> -->
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"><b>Fundación:</b> </div>
+              <div class="col-md-4 "> 	1867 .</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"><b>Ubicación:</b> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/RXCpxCfBAsjwzdCr9" target="_blank" >Old Wish Rd, Eastbourne BN21 4JY, Reino Unido </a> </div>
+            </div>
+            <div class="row">
+              <hr>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="slide-container ">
+                    <div class="row">
+
                       <div class="col-xs-2 col-md-6">
                        <div class="wrapper">
                          <div class="clash-card goblin">
@@ -5407,6 +5490,7 @@ font-size: 18px;
           <div class="bottom-strip"></div>
       </div>
 </div>
+
 
 <div class="modal fade text-center py-5 subscribeModal-lg "  id="LondonVeranoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -6161,13 +6245,9 @@ font-size: 18px;
           <div class="row">
             <hr>
           </div>
-          <div class="youtube-player" data-id="C3trTWa7_Cg"></div>
-
-
-          <!--<div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/372337647?color=ffffff&byline=0&portrait=0"></iframe>
-          </div>-->
-          <hr>
+          <iframe src="https://player.vimeo.com/video/372337647?color=ffffff&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <p><a href="https://vimeo.com/372337647">Summer School Film</a> from <a href="https://vimeo.com/user14231530">Taunton School</a> </p>
+        <hr>
 
           </div>
 
@@ -6481,7 +6561,7 @@ font-size: 18px;
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > Gaol Walk, University College, Cork, T12 YN60, Irlanda </a> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/pKZkLmhqavSQGqLL8" target="_blank" > 65 High St, Girton, Cambridge CB3 0QD, United Kingdom </a> </div>
             </div>
             <br>
             <div class="row">
@@ -6521,7 +6601,7 @@ font-size: 18px;
                           <table class="table table-bordered">
                             <thead class="theadtabletw">
                               <tr>
-                                <th>Therm</th>
+                                <th>Term</th>
                                 <th>Fechas</th>
                                 <th>Duración</th>
                                 <th>Costo</th>
@@ -6556,7 +6636,7 @@ font-size: 18px;
                           <table class="table table-bordered">
                             <thead class="theadtableth">
                               <tr>
-                                <th>Therm</th>
+                                <th>Term</th>
                                 <th>Fechas</th>
                                 <th>Duración</th>
                                 <th>Costo</th>
@@ -6649,7 +6729,7 @@ font-size: 18px;
                           <table class="table table-bordered">
                             <thead class="theadtable">
                               <tr>
-                                <th>Therm</th>
+                                <th>Term</th>
                                 <th>Fechas</th>
                                 <th>Duración</th>
                                 <th>Costo</th>
@@ -6684,7 +6764,7 @@ font-size: 18px;
                           <table class="table table-bordered">
                             <thead class="theadtablefo">
                               <tr>
-                                <th>Therm</th>
+                                <th>Term</th>
                                 <th>Fechas</th>
                                 <th>Duración</th>
                                 <th>Costo</th>
@@ -7149,7 +7229,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/quee.png');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__unit-description">
                              *Los estudiantes deberán haber completado dos semestres de estudio en la Universidad de su País.
@@ -7683,7 +7763,7 @@ font-size: 18px;
                            <div class="clash-card__image clash-card__image--wizard">
                              <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/art_preparacionporta.jpg');?>"   alt="barbarian" />
                            </div>
-                           <div class="clash-card__level clash-card__level--wizard">Preparación de Portafolio y curso de ingléso</div>
+                           <div class="clash-card__level clash-card__level--wizard">Preparación de Portafolio y curso de inglés</div>
                            <div class="clash-card__unit-description">
                              Para estudiantes que quieran desarrollar un portafolio digital y obtener clases de inglés especializadas.
                            </div>
@@ -8184,7 +8264,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card giant">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/arts_english.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__unit-description">
                               *El precio incluye hospedaje, tres comidas al día, costo de registro y transferencias de aeropuerto. Hay un costo extra de £75 que aplica para los que soliciten asistencia para viajes de menores sin compañía.
@@ -8592,7 +8672,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card giant">
                          <div class="clash-card__image clash-card__image--giant">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_Logo.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_Logo.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__level clash-card__level--giant">No Incluye</div>
                          <div class="clash-card__unit-description">
@@ -8639,33 +8719,7 @@ font-size: 18px;
             </div><!-- end slide continer-->
             </div>
 
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Edades</b></div>
-                <div class="col-md-12"><li>Junior 7-13.</li></div>
-                <div class="col-md-12"><li>Senior 14 - 17.</li></div>
-                <div class="col-md-12"><li>Universitario 18-25.</li></div>
 
-            </div>
-            <div class="row">
-              <hr>
-                <div class="col-md-12 " style="align:center"><b>Tipo de curso</b></div>
-                <div class="col-md-12"><li>Academico.</li></div>
-                <div class="col-md-12"><li>Inglés.</li></div>
-
-            </div>
-
-            <div class="row">
-              <hr>
-
-            </div>
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action list-group-item-success ">
-                Alojamiento
-              </button>
-              <button type="button" class="list-group-item list-group-item-action" id="Odont" >Residencial.</button>
-
-            </div>
 
             <div class="row">
               <hr>
@@ -8821,7 +8875,7 @@ font-size: 18px;
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 1985.</div>
+              <div class="col-md-4 "> 1952.</div>
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación Cambridge:</b> </div>
@@ -9056,7 +9110,7 @@ font-size: 18px;
                      <div class="wrapper">
                        <div class="clash-card giant">
                          <div class="clash-card__image clash-card__image--giant">
-                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                           <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/lu_cats.jpg');?>"   alt="barbarian" />
                          </div>
                          <div class="clash-card__unit-description">
                             *El precio incluye hospedaje, tres comidas al día, costo de registro y transferencias de aeropuerto. Hay un costo extra de £75 que aplica para los que soliciten asistencia para viajes de menores sin compañia.
@@ -9447,11 +9501,11 @@ font-size: 18px;
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1839 .</div>
+              <div class="col-md-4 "> 	1976 .</div>
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
-              <div class="col-md-4 "> <a href="https://goo.gl/maps/Hj1s65WCmfdpusXQ8" target="_blank" > Parkgate Rd, Chester CH1 4BJ, Reino Unido</a> </div>
+              <div class="col-md-4 "> <a href="https://goo.gl/maps/Hj1s65WCmfdpusXQ8" target="_blank" >  9-11 Stanley Pl, Chester CH1 2LU, United Kingdom</a> </div>
             </div>
             <br>
             <div class="row">
@@ -9477,7 +9531,7 @@ font-size: 18px;
                       </div>
                       <p class="where">Programa social incluye (por semana):</p>
                       <div class="clash-card__unit-description">
-                        2 proyecto, 1 excursión de medio día, 2 actividades de medio día, 2 eventos en la tarde, 1 excursión de fin de
+                        2 proyecto, 1 excursión de medio día, 2 actividades de medio día, 2 eventos en la tarde, 1 excursión de fin de semana
                       </div>
                       <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
                         <div class="one-third">
@@ -9579,7 +9633,7 @@ font-size: 18px;
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4"><b>Fundación:</b> </div>
-              <div class="col-md-4 "> 	1209 .</div>
+              <div class="col-md-4 "> 	1991 .</div>
             </div>
             <div class="row">
               <div class="col-md-4"><b>Ubicación:</b> </div>
@@ -10005,7 +10059,7 @@ font-size: 18px;
                        <div class="wrapper">
                          <div class="clash-card wizard">
                            <div class="clash-card__image clash-card__image--giant">
-                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/bristol_arq.png');?>"   alt="barbarian" />
+                             <img class="imagencard" src="<?=base_url('resources/assets/Informativa/images/new_selectenglishlogo.jpg');?>"   alt="barbarian" />
                            </div>
                            <div class="clash-card__level clash-card__level--giant"></div>
 
@@ -10017,6 +10071,12 @@ font-size: 18px;
                             <li>- Teatro musical= £90</li>
                             <li>- Arte = £90</li>
                             <li>-Inglés para líderes= £250</li>
+                           </div>
+                           <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                             <div class="one-third">
+
+                               <div class="stat"> !</div>
+                             </div>
                            </div>
                           </div>
                          </div>
@@ -10043,7 +10103,7 @@ font-size: 18px;
           <div class="row">
             <hr>
           </div>
-          <div class="youtube-player" data-id="bCApP-JqLpc"></div>
+          <div class="youtube-player" data-id="7G29l0wyFww"></div>
 
           <!--<div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bCApP-JqLpc"></iframe>

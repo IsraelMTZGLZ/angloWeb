@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class InstitucionIngles extends MY_RootController {
+class StepsEnglish extends MY_RootController {
 
 	public function __construct() {
         parent::__construct();
@@ -17,9 +17,7 @@ class InstitucionIngles extends MY_RootController {
 		$data['alojamientos'] =$responseAlojamiento['data'];
 		$data['instituciones'] =$responseInstituciones['data'];
 		$data['user']=$this->session->userdata('user_sess');
-    $this->_initialPage($data);
-    $this->load->view('Dashboard_pages/Ingles/institucion_ingles_view',$data);
-    $this->_finalPage();
+    $this->load->view('Dashboard_pages/Ingles/steps_english_view',$data);
 	}
 
 }
