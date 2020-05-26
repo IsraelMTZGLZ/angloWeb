@@ -175,6 +175,9 @@
                               '<li class="list-group-item" style="font-size: 18px"><span style="color:black !important;">Mes de estudio: </span >&nbsp;&nbsp;'+(universidadInfo['mes'] ? universidadInfo['mes'] : "No se ha seleccionado un mes de ingreso")+'</span></li>'+
                             '</ul>'+
                             '<div class="test">'+
+                              '<ul class="list-group list-group-bordered">'+
+                                '<li class="list-group-item list-group-item-action active next" style="font-size: 18px"><span  style="font-size: 15px">Universidades seleccionadas</li>'+
+                              '</ul>'+
                             '</div>'
                           );
                           if(universidadInfo['anioMesIngreso']){
@@ -186,13 +189,11 @@
                               },
                               data: null,
                               success : function(_response){
-                                console.info(_response);
                                 unisSeleccionadas = _response['data'];
                                 for (let i = 0; i < unisSeleccionadas.length; i++) {
-                                  $(document).find('.test').append(
-                                    '<ul class="list-group list-group-bordered">'+
-                                      '<li class="list-group-item list-group-item-action active" style="font-size: 18px"><span  style="font-size: 15px">Universidad:</span> '+unisSeleccionadas[i]['nombreInstitucion']+'</li>'+
-                                    '</ul>'
+                                  $(document).find('.test').find('.next').after(
+                                      '<li class="list-group-item list-group-item-action" style="font-size: 18px"> '+unisSeleccionadas[i]['nombreInstitucion']+'</li>'
+                                    
                                   );
                                 }
                               },error : function(err){}
@@ -211,9 +212,69 @@
                         }
                         
                       },error : function(err){
-                      
+                        
                       }
                     });
+                  }else if(aspiranteInfo['programaDeInteres']=='Preparatoria'){
+                    $.ajax({
+                          url: _principalURL()+"AspirantePreparatorias/api/aspirantePreparatoriasBYAspirante/id/"+aspiranteInfo['aspirante'],
+                          method : _method,
+                          headers : {
+                          'X-API-KEY':'ANGLOKEY'
+                          },
+                          data: null,
+                          success : function(_response){
+                            preparatoriasInfo = _response['data'];
+                            console.info(preparatoriasInfo);
+                            if(preparatoriasInfo){
+                              $(document).find('.modal-body').html(
+                                '<ul class="list-group list-group-dividered ">'+
+                                  '<li class="list-group-item" style="font-size: 18px;"><span style="color:black !important;">Tipo de alojamiento elegido:</span>&nbsp;&nbsp;'+preparatoriasInfo['nombreTipoAlojamiento']+'</span></li>'+
+                                  '<li class="list-group-item" style="font-size: 18px"><span style="color:black !important;">Tipo de estudio elegido: </span >&nbsp;&nbsp;'+preparatoriasInfo['nombreTipoEstudio']+'</span></li>'+
+                                  '<li class="list-group-item" style="font-size: 18px"><span style="color:black !important;">Año de estudio: </span>&nbsp;&nbsp;'+(preparatoriasInfo['anio'] ? preparatoriasInfo['anio'] : "No se ha seleccionado un año de ingreso")+'</span></li>'+
+                                  '<li class="list-group-item" style="font-size: 18px"><span style="color:black !important;">Mes de estudio: </span >&nbsp;&nbsp;'+(preparatoriasInfo['mes'] ? preparatoriasInfo['mes'] : "No se ha seleccionado un mes de ingreso")+'</span></li>'+
+                                '</ul>'+
+                                '<div class="test">'+
+                                  '<ul class="list-group list-group-bordered">'+
+                                    '<li class="list-group-item list-group-item-action active next" style="font-size: 18px"><span  style="font-size: 15px">Preparatorias seleccionadas</li>'+
+                                  '</ul>'+
+                                '</div>'
+                              );
+                              if(preparatoriasInfo['anioMesIngreso']){
+                                $.ajax({
+                                  url: _principalURL()+"AspirantePreparatorias/api/aspiranteInstitucionesBYAspirantePrepa/id/"+preparatoriasInfo['idAspirantePreparatoria'],
+                                  method : _method,
+                                  headers : {
+                                  'X-API-KEY':'ANGLOKEY'
+                                  },
+                                  data: null,
+                                  success : function(_response){
+                                    prepasSeleecionadas = _response['data'];
+                                    for (let i = 0; i < prepasSeleecionadas.length; i++) {
+                                      $(document).find('.test').find('.next').after(
+                                          '<li class="list-group-item list-group-item-action" style="font-size: 18px"> '+prepasSeleecionadas[i]['nombreInstitucion']+'</li>'
+                                        
+                                      );
+                                    }
+                                  },error : function(err){}
+                                });
+                              }else{
+                                $(document).find('.test').html(
+                                  '<ul class="list-group list-group-bordered">'+
+                                    '<li class="list-group-item list-group-item-action active">No ha seleccionado Preparatorias:</li>'+
+                                  '</ul>'
+                                );
+                              }
+                              $('#modalInformacion').modal('show');
+                            }else{
+                              tostada('error','No se puede acceder a ver mas informacion, ya que no ha elegido una facultad o un tipo de estudio de interes');
+
+                            }
+                            
+                          },error : function(err){
+                          
+                          }
+                        });
                   }
                 }else{
                   tostada('error','No se puede acceder a ver mas informacion, ya que no ha elegido un programa de interes');
