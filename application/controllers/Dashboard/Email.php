@@ -30,7 +30,7 @@ class Email extends MY_RootController {
 		$response =  $this->_callApiRest('EmailConfig/Api/email/',null,"GET",null);
 		$email_settings = $response['data'];
         $this->load->library('encryption');
-        $this->load->library('email');  
+        $this->load->library('email');
 
         if($email_settings){
             //Email servidor
@@ -43,7 +43,7 @@ class Email extends MY_RootController {
             $config['mailtype'] = "HTML";
             $config['validate'] = "TRUE";
             $this->email->initialize($config);  */
-            
+
             //email from google
             $config['protocol'] = $email_settings['email_protocol'];
             $config['smtp_host'] = "ssl://".$email_settings['email_host'];
@@ -52,10 +52,10 @@ class Email extends MY_RootController {
             $config['smtp_port'] = $email_settings['email_port'];
             $config['charset'] = "utf-8";
             $config['mailtype'] = "html";
-            $this->email->initialize($config);  
-            
+            $this->email->initialize($config);
+
             $this->email->set_newline("\r\n");
-            
+
             $this->email->from($email_settings['email_send'],$email_settings['from_email']);
             //$this->email->reply_to('study@anglolatinoedu.com');
             $this->email->to('hectori.um.15@gmail.com','hectori.um.15@gmail.com');
@@ -75,4 +75,3 @@ class Email extends MY_RootController {
 	}
 
 }
- 

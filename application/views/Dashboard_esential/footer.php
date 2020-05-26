@@ -196,6 +196,30 @@
     });
 
   </script>
+
+  <!-- Plugins For This Page -->
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/chartist/chartist.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min599c.js?v4.0.2');?>"></script>
+
+
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery-selective/jquery-selective.min599c.js?v4.0.2');?>"></script>
+
+
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery-ui/jquery-ui.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-tmpl/tmpl.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-process599c.js?v4.0.2');?>"></script>
+
+
+
+  <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/forms/uploads.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/sweetalert2.js');?>"></script>
+
+  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/asscrollable.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/slidepanel.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/switchery.min599c.js?v4.0.2');?>"></script>
+
+
 </body>
 
 </html>

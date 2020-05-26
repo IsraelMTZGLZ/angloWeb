@@ -47,6 +47,22 @@
         </div>
       </div>
       <!-- End Panel Table Add Row -->
+      <h2>Contacto</h2>
+      <form action="<?=base_url("Dashboard/Ingles/ListEnglish/enviar")?>" method="post">
+          Correo electronico: <br/>
+          <input type="email" name="email" /><br/>
+          Asunto: <br/>
+          <input type="text" name="asunto" /><br/>
+          Mensaje:<br/>
+          <textarea name="mensaje"></textarea><br/>
+          <input type="submit" name="submit" value="Enviar"/>
+      </form>
+      <?php
+      if($this->session->flashdata('envio')){
+          echo $this->session->flashdata('envio');
+      }
+      ?>
+
 
 
 
@@ -160,7 +176,7 @@ $(function(){
   			    				_html +="<td>"+response.data[i].emailUsuario+"</td>";
   			    				_html +="<td>"+response.data[i].telefonoAspirante+"</td>";
   			    				_html +="<td>"+response.data[i].ciudadAspirante+"</td>";
-  			    				_html +="<td> <a href='<?=base_url('Dashboard/Ingles/AspiranteInfo/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' title='Information'> <i class='icon wb-plus'></i>Más Información</a>  </td>";
+  			    				_html +="<td> <a href='<?=base_url('Dashboard/Ingles/AspiranteInfo/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' > <i class='icon wb-plus'></i>Más Información</a>  </td>";
   			    				_html +="</tr>";
   				}
 
