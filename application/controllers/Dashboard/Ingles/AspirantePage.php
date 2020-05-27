@@ -25,7 +25,7 @@ class AspirantePage extends MY_RootController {
 
 
     $responseinfoSteps = $this->_callApiRest('Ingles/api/englishinfoSteps/id/'.$identAspirante,null,"GET",null);
-    
+
 		$status = $responseInstOne['data']['statusInstitucion'] ? $responseInstOne['data']['statusInstitucion'] == 'Activo': 'Inactivo';
 		$statu = '';
 			if($status == TRUE){
@@ -49,6 +49,7 @@ class AspirantePage extends MY_RootController {
 				$enable = "disabled='disabled'";
 			}
 
+		
 
     $data['aspirante'] =$responseEnglish['data'];
     $data['instOne'] =$responseInstOne['data'];

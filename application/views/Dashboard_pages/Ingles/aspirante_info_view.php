@@ -418,7 +418,7 @@
     <div class="page-header">
       <h1 align="center" class="page-title">Escuela de Verano</h1>
       <h1 class="page-title">Información de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></h1>
-
+      <input type="hidden" id="aspirante" value="<?=@$aspirante['idAspirante'];?>" name="fkAspirante">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../index.html">Cursos de Verano</a></li>
         <li class="breadcrumb-item"><a href="javascript:void(0)">Información</a></li>
@@ -490,10 +490,11 @@
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Pasaporte </h4>
+
             </div>
             <div class="card-block">
               <div class="example-wrap">
-                <h4 class="example-title"></h4>
+                <h4 class="example-title"><?=$infoDoc;?></h4>
                 <div class="example">
                   <input type="file" id="input-file-now" data-plugin="dropify" <?=$enable;?>   data-default-file="<?=$defaultfile;?>"
                   />
@@ -503,13 +504,13 @@
 
                   <?php if(@$fileexists == TRUE) { ;?>
                     <div class="float-left">
-                      <button type="button" class="btn btn-primary ladda-button btn-file" data-style="expand-left"
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar" data-style="expand-left"
                         data-plugin="ladda" data-type="progress" id="file">
                         <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
                       </button>
                     </div>
                   <div class="float-left">
-                    <button type="button" class="btn btn-warning ladda-button btn-edit-file" data-style="expand-left"
+                    <button type="button" class="btn btn-warning ladda-button btn-rechazar" data-style="expand-left"
                       data-plugin="ladda" data-type="progress" id="file">
                       <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
                     </button>
@@ -520,7 +521,37 @@
                   <?php } ;?>
 
                 </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl current col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar Pasaporte</span>
+                    </div>
+                    <div class="pearl current col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning ">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl    col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Confirmación</span>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               </div>
           </div>
           <!-- End User Background -->
@@ -777,17 +808,7 @@
                                 <div class="skill-name vertical-align-middle">
                                   <?=@$infAspirante['nombreTipoCurso'];?>
                                 </div>
-                                <ul class="skill-team list-unstyled">
-                                  <li class="avatar">
-                                    <img src="../../global/portraits/2.jpg" alt="">
-                                  </li>
-                                  <li class="avatar">
-                                    <img src="../../global/portraits/4.jpg" alt="">
-                                  </li>
-                                  <li class="avatar">
-                                    <img src="../../global/portraits/5.jpg" alt="">
-                                  </li>
-                                </ul>
+
                               </li>
 
                             </ul>
@@ -807,17 +828,7 @@
                                 <div class="skill-name vertical-align-middle">
                                   <?=@$infAspirante['nombreTipoAlojamiento'];?>
                                 </div>
-                                <ul class="skill-team list-unstyled">
-                                  <li class="avatar">
-                                    <img src="../../global/portraits/2.jpg" alt="">
-                                  </li>
-                                  <li class="avatar">
-                                    <img src="../../global/portraits/4.jpg" alt="">
-                                  </li>
-                                  <li class="avatar">
-                                    <img src="../../global/portraits/5.jpg" alt="">
-                                  </li>
-                                </ul>
+
                               </li>
                             </ul>
                           </div>

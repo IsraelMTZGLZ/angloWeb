@@ -219,7 +219,1074 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/slidepanel.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/switchery.min599c.js?v4.0.2');?>"></script>
 
+  <script type="text/javascript">
+  $(document).ready(function(){
+        $(document).on('click','.btn-file',function (event){
+        var $pdfInfo = $("#input-file-now");
+        var archivo = $pdfInfo[0].files;
+          if(archivo.length > 0){
+            var formData = new FormData();
+            var pdfInfo = archivo[0];
+            var lector = new FileReader();
+            formData.append('my_file', pdfInfo);
+            formData.append('aspirante', $(document).find('#aspirante').val());
 
+            _url = _principalURL()+"Verano/api/files/";
+
+            $.ajax({
+              url:_url,
+              method: 'POST',
+              headers : {
+                'X-API-KEY':'ANGLOKEY'
+              },
+              data: formData,
+              contentType: false,
+              processData: false,
+              success : function(_response){
+                response= JSON.stringify(_response);
+                if(_response.status == "error"){
+
+                  tostada('error','Revise sus datos ');
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                     });
+                }else{
+                  Swal.fire({
+                    title: 'Buen trabajo!',
+                    text: 'Su pasaporte Fue Guardado Correctamente',
+                    type: 'success',
+                    confirmButtonText: 'Ok'
+                  }).then(function () {
+
+
+                });
+                }
+
+              },
+              error : function(err){
+                  response= JSON.stringify(err.responseText);
+                  $(document).find('#responseText').html(
+                    '<div class="alert alert-success" role="alert">'
+                    +response+
+                    '</div>'
+                  );
+                  setTimeout(function(){
+                      $(document).find('#responseText').html('');
+                  }, 3000);
+
+              }
+            });
+          }else{
+            Swal.fire({
+              title: 'Error!',
+              text: 'Elija un archivo',
+              type: 'error',
+              confirmButtonText: 'Entendido'
+            });
+          }
+        });
+
+        $(document).on('click','.btn-edit-file',function (event){
+        var $pdfInfo = $("#input-file-now");
+        var archivo = $pdfInfo[0].files;
+          if(archivo.length > 0){
+            var formData = new FormData();
+            var pdfInfo = archivo[0];
+            var lector = new FileReader();
+            formData.append('my_file', pdfInfo);
+            formData.append('aspirante', $(document).find('#aspirante').val());
+
+            _url = _principalURL()+"Verano/api/files/id/"+ $(document).find('#aspirante').val();
+
+            $.ajax({
+              url:_url,
+              method: 'PUT',
+              headers : {
+                'X-API-KEY':'ANGLOKEY'
+              },
+              data: formData,
+              contentType: false,
+              processData: false,
+              success : function(_response){
+                response= JSON.stringify(_response);
+                if(_response.status == "error"){
+
+                  tostada('error','Revise sus datos ');
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                     });
+                }else{
+                  Swal.fire({
+                    title: 'Buen trabajo!',
+                    text: 'Su pasaporte Fue Guardado Correctamente',
+                    type: 'success',
+                    confirmButtonText: 'Ok'
+                  }).then(function () {
+
+                   window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+                });
+                }
+
+              },
+              error : function(err){
+                  response= JSON.stringify(err.responseText);
+                  $(document).find('#responseText').html(
+                    '<div class="alert alert-success" role="alert">'
+                    +response+
+                    '</div>'
+                  );
+                  setTimeout(function(){
+                      $(document).find('#responseText').html('');
+                  }, 3000);
+
+              }
+            });
+            }else{
+              Swal.fire({
+                title: 'Error!',
+                text: 'Elija un archivo',
+                type: 'error',
+                confirmButtonText: 'Entendido'
+              });
+            }
+        });
+
+        $(document).on('click','.btn-rechazar',function (event){
+          var formData = new FormData();
+          formData.append('status', 'Rechazado');
+          _d = {
+            "status":"Rechazado"
+          };
+          Swal.fire({
+            title: 'Esta seguro de realizar esta operacion?',
+            text: 'El archivo sera rechazado',
+            type: 'warning',
+            confirmButtonText: 'Ok'
+            }).then(function () {
+
+
+              _url = _principalURL()+"Ingles/api/inglesFile/"+ $(document).find('#aspirante').val();
+
+              $.ajax({
+                url:_url,
+                method: 'PUT',
+                headers : {
+                  'X-API-KEY':'ANGLOKEY'
+                },
+                data: _d,
+                success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+
+                    tostada('error','Revise sus datos ');
+                      $.each(_response.validations, function(key,message){
+                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                       });
+                  }else{
+                    Swal.fire({
+                      title: 'Buen trabajo!',
+                      text: 'El estatus del archivo se cambio correctamente',
+                      type: 'success',
+                      confirmButtonText: 'Ok'
+                    }).then(function () {
+                      _ident =  $(document).find('#aspirante').val();
+                      console.log(_ident);
+                     window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+                  });
+                  }
+
+                },
+                error : function(err){
+                    response= JSON.stringify(err.responseText);
+                    $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                      +response+
+                      '</div>'
+                    );
+                    setTimeout(function(){
+                        $(document).find('#responseText').html('');
+                    }, 3000);
+
+                }
+              });
+
+          });
+
+        });
+        $(document).on('click','.btn-aceptar',function (event){
+          var formData = new FormData();
+          formData.append('status', 'Aceptado');
+          _d = {
+            "status":"Rechazado"
+          };
+          Swal.fire({
+            title: 'Esta seguro de realizar esta operacion?',
+            text: 'El archivo sera rechazado',
+            type: 'warning',
+            confirmButtonText: 'Ok'
+            }).then(function () {
+
+
+              _url = _principalURL()+"Ingles/api/inglesFile/"+ $(document).find('#aspirante').val();
+
+              $.ajax({
+                url:_url,
+                method: 'PUT',
+                headers : {
+                  'X-API-KEY':'ANGLOKEY'
+                },
+                data: _d,
+                success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+
+                    tostada('error','Revise sus datos ');
+                      $.each(_response.validations, function(key,message){
+                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                       });
+                  }else{
+                    Swal.fire({
+                      title: 'Buen trabajo!',
+                      text: 'El estatus del archivo se cambio correctamente',
+                      type: 'success',
+                      confirmButtonText: 'Ok'
+                    }).then(function () {
+                      _ident =  $(document).find('#aspirante').val();
+                      console.log(_ident);
+                     window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+                  });
+                  }
+
+                },
+                error : function(err){
+                    response= JSON.stringify(err.responseText);
+                    $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                      +response+
+                      '</div>'
+                    );
+                    setTimeout(function(){
+                        $(document).find('#responseText').html('');
+                    }, 3000);
+
+                }
+              });
+
+          });
+
+        });
+  });
+
+  </script>
+
+<script>
+    $(document).ready(function()
+    {
+        var id;
+        var idInstitucion;
+        $(document).on('click','.facultad',function(){
+           id = this.id;
+           console.info(id);
+           _url = _principalURL()+"TipoCursos/api/tipoCursos/id/"+id;
+
+            $.ajax({
+                url : _url,
+                method : 'get',
+                headers : {
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(_response){
+
+                    $(document).find('#nombre').val(_response.data.nombreTipoCurso);
+                    $(document).find('#abreviacion').val(_response.data.abreviacionTipoCurso);
+
+                        $(document).find('.btns').html(
+                        '<div class="row">'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">Cancelar</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="submit" class="btn btn-primary btn-update">Update</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-warning btn-delete">Delete</button>'+
+                            '</div>'+
+                        '</div>'
+                        );
+
+                        $(document).find('#cursoForm').append(
+                        '<input type="hidden" id="id" value="'+
+                        _response.data.idTipoCurso+'">'
+                        );
+
+                        $('#cursoInstitucion').modal('show');
+
+                },error : function(error){
+
+                }
+            });
+        });
+
+
+
+        $(document).on('submit','#cursoForm',function(event){
+            event.preventDefault();
+            clearForm('cursoForm');
+            var _id=$(document).find('#id').val();
+            if(_id){
+                _url = _principalURL()+"TipoCursos/api/tipoCursos/id/"+id;
+                _method = 'PUT';
+            }else{
+                _url = _principalURL()+"TipoCursos/api/tipoCursos/";
+                _method = 'POST';
+            }
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#cursoForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+
+        $(document).on('click','.edad',function(){
+           id = this.id;
+           console.info(id);
+           _url = _principalURL()+"Edad/api/edad/id/"+id;
+
+            $.ajax({
+                url : _url,
+                method : 'get',
+                headers : {
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(_response){
+
+                    $(document).find('#nombree').val(_response.data.nombreEdad);
+                    $(document).find('#abreviacione').val(_response.data.abreviacionEdad);
+                    $(document).find('#edad').val(_response.data.edadEdad);
+
+                        $(document).find('.btns').html(
+                        '<div class="row">'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">Cancelar</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="submit" class="btn btn-primary btn-update">Update</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-warning btn-delete-edad">Delete</button>'+
+                            '</div>'+
+                        '</div>'
+                        );
+
+                        $(document).find('#edadForm').append(
+                        '<input type="hidden" id="id" value="'+
+                        _response.data.idEdad+'">'
+                        );
+
+                        $('#edadModal').modal('show');
+
+                },error : function(error){
+
+                }
+            });
+        });
+
+        $(document).on('submit','#edadForm',function(event){
+            event.preventDefault();
+            clearForm('edadForm');
+            var _id=$(document).find('#id').val();
+            if(_id){
+                _url = _principalURL()+"Edad/api/edad/id/"+id;
+                _method = 'PUT';
+            }else{
+                _url = _principalURL()+"Edad/api/edad/";
+                _method = 'POST';
+            }
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#edadForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+        $(document).on('click','.alojamiento',function(){
+           id = this.id;
+           console.info(id);
+           _url = _principalURL()+"TipoAlojamientoCurso/api/tipoAlojamientoCurso/id/"+id;
+
+            $.ajax({
+                url : _url,
+                method : 'get',
+                headers : {
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(_response){
+
+                    $(document).find('#nombrea').val(_response.data.nombreTipoAlojamiento);
+                    $(document).find('#abreviaciona').val(_response.data.abreviacionTipoAlojamiento);
+
+                        $(document).find('.btns').html(
+                        '<div class="row">'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">Cancelar</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="submit" class="btn btn-primary btn-update">Update</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-warning btn-delete-alojamiento">Delete</button>'+
+                            '</div>'+
+                        '</div>'
+                        );
+
+                        $(document).find('#alojamientoForm').append(
+                        '<input type="hidden" id="id" value="'+
+                        _response.data.idTipoAlojamiento+'">'
+                        );
+
+                        $('#alojamientoModal').modal('show');
+
+                },error : function(error){
+
+                }
+            });
+        });
+
+        $(document).on('submit','#alojamientoForm',function(event){
+            event.preventDefault();
+            clearForm('alojamientoForm');
+            var _id=$(document).find('#id').val();
+            if(_id){
+                _url = _principalURL()+"TipoAlojamientoCurso/api/tipoAlojamientoCurso/id/"+id;
+                _method = 'PUT';
+            }else{
+                _url = _principalURL()+"TipoAlojamientoCurso/api/tipoAlojamientoCurso/";
+                _method = 'POST';
+            }
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#alojamientoForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+        $(document).on('submit','#addForm',function(event){
+            event.preventDefault();
+
+           _url = _principalURL()+"Permisos/api/permisosAgentes/";
+           clearForm('addForm');
+                $.ajax({
+                    url: _url,
+                    method : 'POST',
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#addForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+        $('#cursoInstitucion').on('hidden.bs.modal', function (e) {
+            $(document).find('#nombre').val('');
+            $(document).find('#abreviacion').val('');
+            $(document).find('#id').remove();
+            $(document).find('.btns').html(
+                '<div class="row">'+
+                '<div class="col">'+
+                    '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
+                    '<button type="submit" class="btn btn-primary">Guardar Cambios</button>'+
+                '</div>'+
+                '</div>'
+            );
+        });
+
+        $(document).on('click','.btn-delete',function(){
+            _url = _principalURL()+"Campamento/api/campamento/id/"+$(document).find('#id').val();
+            $.ajax({
+                "url":_url,
+                "method":"DELETE",
+                headers :{
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(response){
+                if(response.status=="success"){
+
+                    setTimeout(function(){
+                            location.reload();
+
+                        },2000);
+
+                }
+
+                tostada(response.status,response.message);
+
+                },
+                error : function(error){
+
+                }
+            })
+        });
+
+
+        $(document).on('click','.btn-delete-edad',function(){
+            _url = _principalURL()+"Edad/api/edad/id/"+$(document).find('#id').val();
+            $.ajax({
+                "url":_url,
+                "method":"DELETE",
+                headers :{
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(response){
+                if(response.status=="success"){
+
+                    setTimeout(function(){
+                            location.reload();
+
+                        },2000);
+
+                }
+
+                tostada(response.status,response.message);
+
+                },
+                error : function(error){
+
+                }
+            })
+        });
+
+        $(document).on('click','.btn-delete-alojamiento',function(){
+            _url = _principalURL()+"Edad/api/alojamiento/id/"+$(document).find('#id').val();
+            $.ajax({
+                "url":_url,
+                "method":"DELETE",
+                headers :{
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(response){
+                if(response.status=="success"){
+
+                    setTimeout(function(){
+                            location.reload();
+
+                        },2000);
+
+                }
+
+                tostada(response.status,response.message);
+
+                },
+                error : function(error){
+
+                }
+            })
+        });
+
+
+        $(document).on('submit','#InstitucionForm',function(event){
+            event.preventDefault();
+            clearForm('InstitucionForm');
+            var _id=$(document).find('#idInstitucion').val();
+            if(_id){
+                _url = _principalURL()+"Institucion/api/Institucion/id/"+id;
+                _method = 'PUT';
+            }else{
+                _url = _principalURL()+"Institucion/api/Institucion/";
+                _method = 'POST';
+            }
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#InstitucionForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+        $(document).on('click','.editarInstitucion',function(){
+          id = this.id;
+          _url = _principalURL()+"Institucion/api/institucion/id/"+id;
+
+            $.ajax({
+                url : _url,
+                method : 'get',
+                headers : {
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(_response){
+
+                    $(document).find('#nombreI').val(_response.data.nombreInstitucion);
+                    $(document).find('#ubicacion').val(_response.data.ubicacionInstitucion);
+                    $(document).find('#url').val(_response.data.logoInstitucion);
+
+                        $(document).find('.btnsIns').html(
+                        '<div class="row">'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">Cancelar</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="submit" class="btn btn-primary btn-update">Update</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-warning btn-delete-institucion">Delete</button>'+
+                            '</div>'+
+                        '</div>'
+                        );
+
+                        $(document).find('#InstitucionForm').append(
+                          '<input type="hidden" id="idInstitucion" value="'+
+                          _response.data.idInstitucion+'">'
+                        );
+
+                        $('#institucionModal').modal('show');
+
+                },error : function(error){
+
+                }
+            });
+        });
+
+        $('#institucionModal').on('hidden.bs.modal', function (e) {
+            $(document).find('#nombreI').val('');
+            $(document).find('#ubicacion').val('');
+            $(document).find('#url').val('');
+            $(document).find('#idInstitucion').remove();
+            $(document).find('.btnsIns').html(
+                '<div class="row">'+
+                '<div class="col">'+
+                    '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
+                    '<button type="submit" class="btn btn-primary">Guardar Cambios</button>'+
+                '</div>'+
+                '</div>'
+            );
+        });
+
+        $(document).on('click','.btn-delete-institucion',function(){
+            _url = _principalURL()+"Institucion/api/institucion/id/"+$(document).find('#idInstitucion').val();
+            $.ajax({
+                "url":_url,
+                "method":"DELETE",
+                headers :{
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(response){
+                if(response.status=="success"){
+
+                    setTimeout(function(){
+                            location.reload();
+
+                        },2000);
+
+                }
+
+                tostada(response.status,response.message);
+
+                },
+                error : function(error){
+
+                }
+            })
+        });
+
+        $(document).on('click','.btn-add-cursoInstitucion',function(){
+          $(document).find('.nuevo').empty();
+          idInstitucion = this.id;
+          $(document).find('#institucion').val(idInstitucion);
+          (idInstitucion);
+          _url = _principalURL()+"TipoCursosInstituciones/api/tipoCursoByInstituciones/id/"+idInstitucion;
+          $.ajax({
+                    url: _url,
+                    method : 'GET',
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: null,
+                    success : function(_response){
+                      if(_response.data){
+                        console.info(_response.data);
+                        $(document).find('.nombreInstitucion').html(_response.data[0].institucion);
+                        var cursoInstitucion = _response.data;
+                        for (let j = 0; j < cursoInstitucion.length; j++) {
+                          $(document).find('.nuevo').append('<a type="button" class="list-group-item blue-grey-500 btn-editDeleteUniversidad" id="'+cursoInstitucion[j]['idTipoCursosInstituciones']+'" name="'+cursoInstitucion[j]['idTipoCurso']+'"><i class="icon wb-inbox" aria-hidden="true"></i>'+cursoInstitucion[j]['nombre']+'</a>');
+                        }
+                      }else{
+                        $(document).find('.nombreInstitucion').html('');
+                      }
+
+                    },error : function(err){
+
+                    }
+          });
+          $('#addICModal').modal('show');
+        });
+
+        $(document).on('click','.btn-add-edadInstitucion',function(){
+          $(document).find('.nuevoo').empty();
+          idInstitucion = this.id;
+          $(document).find('#institucionn').val(idInstitucion);
+          /* alert(idInstitucion); */
+          _url = _principalURL()+"EdadesInstituciones/api/edadByInstituciones/id/"+idInstitucion;
+          $.ajax({
+                    url: _url,
+                    method : 'GET',
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: null,
+                    success : function(_response){
+                      if(_response.data){
+                        console.info(_response.data);
+                        $(document).find('.nombreInstitucion').html(_response.data[0].institucion);
+                        var edadInstitucion = _response.data;
+                        for (let j = 0; j < edadInstitucion.length; j++) {
+                          $(document).find('.nuevoo').append('<a type="button" class="list-group-item blue-grey-500 btn-editDeleteUniversidad" id="'+edadInstitucion[j]['idEdadInstitucion']+'" name="'+edadInstitucion[j]['idEdad']+'"><i class="icon wb-inbox" aria-hidden="true"></i>'+edadInstitucion[j]['nombre']+'</a>');
+                        }
+                      }else{
+                        $(document).find('.nombreInstitucion').html('');
+                      }
+
+                    },error : function(err){
+
+                    }
+          });
+          $('#addIEModal').modal('show');
+        });
+
+        $(document).on('click','.btn-add-alojamientoInstitucion',function(){
+          $(document).find('.nuevo').empty();
+          idInstitucion = this.id;
+          $(document).find('#institucionnn').val(idInstitucion);
+          /* alert(idInstitucion); */
+          _url = _principalURL()+"AlojamientoCurso/api/alojamientoByInstituciones/id/"+idInstitucion;
+          $.ajax({
+                    url: _url,
+                    method : 'GET',
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: null,
+                    success : function(_response){
+                      if(_response.data){
+                        console.info(_response.data);
+                        $(document).find('.nombreInstitucion').html(_response.data[0].institucion);
+                        var alojamientoInstitucion = _response.data;
+                        for (let j = 0; j < alojamientoInstitucion.length; j++) {
+                          $(document).find('.nuevo').append('<a type="button" class="list-group-item blue-grey-500 btn-editDeleteUniversidad" id="'+alojamientoInstitucion[j]['idAlojamientoCampamento']+'" name="'+alojamientoInstitucion[j]['idTipoAlojamiento']+'"><i class="icon wb-inbox" aria-hidden="true"></i>'+alojamientoInstitucion[j]['nombre']+'</a>');
+                        }
+                      }else{
+                        $(document).find('.nombreInstitucion').html('');
+                      }
+
+                    },error : function(err){
+
+                    }
+          });
+          $('#addIAModal').modal('show');
+        });
+
+
+
+        $(document).on('submit','#addCursoaddInsForm',function(event){
+          event.preventDefault();
+
+          var _id=$(document).find('#idInstitucionFacultadKey').val();
+            if(_id){
+                _url = _principalURL()+"TipoCursosInstituciones/api/tipoCursosInstituciones/id/"+_id;
+                _method = 'PUT';
+            }else{
+                _url = _principalURL()+"TipoCursosInstituciones/api/tipoCursosInstituciones/";
+                _method = 'POST';
+            }
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#addCursoaddInsForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+
+        $(document).on('submit','#addEdadInsForm',function(event){
+          event.preventDefault();
+
+          var _id=$(document).find('#idInstitucionFacultadKey').val();
+            if(_id){
+                _url = _principalURL()+"EdadesInstituciones/api/edadesInstituciones/id/"+_id;
+                _method = 'PUT';
+            }else{
+                _url = _principalURL()+"EdadesInstituciones/api/edadesInstituciones/";
+                _method = 'POST';
+            }
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#addEdadInsForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+        $(document).on('submit','#addAlojamientoInsForm',function(event){
+          event.preventDefault();
+
+          var _id=$(document).find('#idInstitucionFacultadKey').val();
+            if(_id){
+                _url = _principalURL()+"AlojamientoCurso/api/alojamientoCurso/id/"+_id;
+                _method = 'PUT';
+            }else{
+                _url = _principalURL()+"AlojamientoCurso/api/AlojamientoCurso/";
+                _method = 'POST';
+            }
+                $.ajax({
+                    url: _url,
+                    method : _method,
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: $(document).find('#addAlojamientoInsForm').serialize(),
+                    success : function(_response){
+                        response = JSON.stringify(_response);
+                        if (_response.status=="error") {
+                            $.each(_response.validations,function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                            });
+                        }
+                        if (_response.status=="success") {
+                            setTimeout(function(){
+                                location.reload();
+
+                            },2000);
+                        }
+
+                        tostada(_response.status,_response.message);
+
+
+                    },error : function(err){
+
+                    }
+            });
+        });
+
+        $(document).on('click','.btn-editDeleteUniversidad',function(){
+          var idF = this.id;
+          var idFa = this.name;
+          console.info(idF);
+          $('#facultad').val(idFa).trigger('change');
+          $(document).find('#addCursoaddInsForm').append(
+                          '<input type="hidden" id="idInstitucionFacultadKey" value="'+
+                          idF+'">'
+                        );
+
+          $(document).find('.btnsFI').html(
+                        '<div class="row">'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">Cancelar</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="submit" class="btn btn-primary btn-update">Update</button>'+
+                            '</div>'+
+                            '<div class="col">'+
+                            '<button type="button" class="btn btn-warning btn-delete-institucionFacultadKey">Delete</button>'+
+                            '</div>'+
+                        '</div>'
+                        );
+        });
+
+        $(document).on('click','.btn-delete-institucionFacultadKey',function(){
+            _url = _principalURL()+"Universidad/api/universidad/id/"+$(document).find('#idInstitucionFacultadKey').val();
+            $.ajax({
+                "url":_url,
+                "method":"DELETE",
+                headers :{
+                'X-API-KEY':'ANGLOKEY'
+                },
+                success : function(response){
+                if(response.status=="success"){
+
+                    setTimeout(function(){
+                            location.reload();
+
+                        },2000);
+
+                }
+
+                tostada(response.status,response.message);
+
+                },
+                error : function(error){
+
+                }
+            })
+        });
+
+        $('#addICModal').on('hidden.bs.modal', function (e) {
+            $('#facultad').val('').trigger('change');
+            $(document).find('#idInstitucionFacultadKey').remove();
+            $(document).find('.btnsFI').html(
+                '<div class="row">'+
+                '<div class="col">'+
+                    '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
+                    '<button type="submit" class="btn btn-primary">Guardar Cambios</button>'+
+                '</div>'+
+                '</div>'
+            );
+        });
+
+    });
+</script>
 </body>
 
 </html>

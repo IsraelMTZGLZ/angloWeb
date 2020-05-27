@@ -39,17 +39,34 @@ class AspiranteInfo extends MY_RootController {
 				$defaultfile = '';
 				$fileexists = FALSE;
 				$enable= '';
-
+				$statusDoc= "SinDocumento";
 			}else{
 				$defaultfile = $responseFile['data']['urlDocumento'];
 				$fileexists = TRUE;
 				$enable = "disabled='disabled'";
+				$statusDoc= $responseFile['data']['statusDocumento'];
 			}
-			$data['defaultfile'] =$defaultfile;
-			$data['fileexists'] =$fileexists;
-			$data['fileInfo'] =$responseFile;
-			$data['enable'] =$enable;
-$data['fileInfo'] =$responseFile;
+
+
+		if($statusDoc == "Revision"){
+			echo("Revicion");
+		}else if($statusDoc == "Rechazado"){
+			echo("Rechazado Sorry");
+			$defaultfile = '';
+			$fileexists = FALSE;
+			$enable= "disabled='disabled'";
+			$infoDoc = 'El documento fue rechazado';
+		}else if($statusDoc == "Aceptado"){
+				echo("Aceptado");
+		}else if($statusDoc =="SinDocumento"){
+			echo("SIn doc");
+		}
+		$data['defaultfile'] =$defaultfile;
+		$data['fileexists'] =$fileexists;
+		$data['fileInfo'] =$responseFile;
+		$data['enable'] =$enable;
+		$data['infoDoc'] =$infoDoc;
+		$data['fileInfo'] =$responseFile;
     $data['idAspirante'] = $idAspirante;
     $data['aspirante'] =$responseEnglish['data'];
 		$data['instOne'] =$responseInstOne['data'];
