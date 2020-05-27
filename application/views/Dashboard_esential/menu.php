@@ -41,22 +41,6 @@
                 </a>
               <?php } ;?>
             </li>
-            <?php if($user->typeUsuario=="Admin") { ;?>
-              <li class="site-menu-item has-sub">
-                <a href="javascript:void(0)">
-                  <i class="site-menu-icon fas fa-envelope" aria-hidden="true"></i>
-                  <span class="site-menu-title">Email</span>
-                  <span class="site-menu-arrow"></span>
-                </a>
-                <ul class="site-menu-sub" style="">
-                  <li class="site-menu-item">
-                    <a href="Email">
-                      <span class="site-menu-title">Configuración correo</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            <?php } ;?>
             <?php if($user->typeUsuario=="Admin") { ?>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
@@ -65,16 +49,24 @@
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
-                  <li class="site-menu-item">
-                    <a href="TablaDescarga">
-                      <span class="site-menu-title">Aspirantes</span>
-                    </a>
-                  </li>
+                  
                   <li class="site-menu-item">
                     <a href="Permisos">
                       <span class="site-menu-title">Agentes</span>
                     </a>
                   </li>
+                  <li class="site-menu-item">
+                <a href="TablaDescarga">
+                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                  <span class="badge badge-pill badge-primary">Status 0</span>
+                </a>
+              </li>
+              <li class="site-menu-item">
+                <a href="AspiranteStatus1">
+                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                  <span class="badge badge-pill badge-primary">Status 1</span>
+                </a>
+              </li>
                 </ul>
               </li>
             <?php } ?>
@@ -102,6 +94,13 @@
                     </a>
                   </li>
                 </ul>
+              </li>
+              <li class="site-menu-item">
+                <a href="Eventos">
+                  <i class="site-menu-icon fas fa-calendar" aria-hidden="true"></i>
+                  <span class="site-menu-title">Eventos</span>
+                  
+                </a>
               </li>
             <?php } ?>
             <?php if($user->typeUsuario=="Admin" || $user->typeUsuario=="Agente") { ?>

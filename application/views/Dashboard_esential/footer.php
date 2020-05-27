@@ -79,6 +79,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/datatables.net-buttons/buttons.colVis.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/datatables.net-buttons-bs4/buttons.bootstrap4.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/bootbox/bootbox.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/magnific-popup/jquery.magnific-popup.min599c.js?v4.0.2');?>"></script>
 
   <!-- Scripts -->
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Component.min599c.js?v4.0.2');?>"></script>
@@ -150,6 +151,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-validate599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload-ui599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/dropify/dropify.min599c.js?v4.0.2');?>"></script>
+  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/magnific-popup.min599c.js?v4.0.2');?>"></script>
   <script>
     (function(document, window, $) {
       'use strict';
