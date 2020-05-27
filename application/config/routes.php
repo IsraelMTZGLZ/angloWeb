@@ -80,3 +80,4 @@ $route['EnglishInst'] = 'Dashboard/Ingles/StepInst';
 $route['AspiranteInfo'] = 'Dashboard/Ingles/AspiranteInfo';
 $route['AspiranteEnglish'] = 'Dashboard/Ingles/AspirantePage';
 $route['AspirantesList'] = 'Dashboard/Ingles/ListEnglish';
+$route['Dashboard/DetailsAspirante(:any)'] = 'Dashboard/DetailsAspirante/index/$1';
