@@ -30,19 +30,21 @@ class DetailsAspirante extends MY_RootController {
                     $responseUnis = $this->_callApiRest('AspiranteUniversidades/api/aspiranteInstitucionesBYAspiranteUni/id/'.$response['data']['idAspiranteUniversidad'],null,"GET",null);
                     $data['universidades'] = $responseUnis['data'];
     
-                    if($data['infoAspiranteUni']['estudiosAspiranteUniversidad']=="Carrera"){
-                        $responseDocumentos = $this->_callApiRest('Documentos/Carrera/api/carreraByAspiranteOnly/id/'.$data['aspirante']['aspirante'],null,"GET",null);
-                        //echo var_dump($responseDocumentos['data']);
-                        $data['documentos'] = $responseDocumentos['data'];
-                    }else if($data['infoAspiranteUni']['estudiosAspiranteUniversidad']=="Masters"){
-                        $responseDocumentos = $this->_callApiRest('Documentos/Maestria/api/maestriaByAspiranteOnly/id/'.$data['aspirante']['aspirante'],null,"GET",null);
-                        //echo var_dump($responseDocumentos['data']);
-                        $data['documentos'] = $responseDocumentos['data'];
-                    }else{
-                        $responseDocumentos = $this->_callApiRest('Documentos/PhD/api/phDByAspiranteOnly/id/'.$data['aspirante']['aspirante'],null,"GET",null);
-                        //echo var_dump($responseDocumentos['data']);
-                        $data['documentos'] = $responseDocumentos['data'];
-                    }
+                    $response = $this->_callApiRest('Documentos/Carrera/api/carreraByAspiranteOnly/id/'.$data['aspirante']['aspirante'],null,"GET",null);
+                    $data['documentos'] = $response['data'];
+                    //echo var_dump($data['documentos'][0]);
+                }if($data['aspirante']['programaDeInteres']=="Preparatoria"){
+                    
+                    $response = $this->_callApiRest('AspirantePreparatorias/api/aspirantePreparatoriasBYAspirante/id/'.$data['aspirante']['aspirante'],null,"GET",null);
+                    $data['infoAspirantePrepa'] = $response['data'];
+
+                    $responsePrepas = $this->_callApiRest('AspirantePreparatorias/api/aspiranteInstitucionesBYAspirantePrepa/id/'.$response['data']['idAspirantePreparatoria'],null,"GET",null);
+                    $data['preparatorias'] = $responsePrepas['data'];
+
+                    //echo var_dump($data['preparatorias']);
+
+                    $response = $this->_callApiRest('Documentos/Carrera/api/carreraByAspiranteOnly/id/'.$data['aspirante']['aspirante'],null,"GET",null);
+                    $data['documentos'] = $response['data'];
                 }
                 
                 $this->_initialPage($data);

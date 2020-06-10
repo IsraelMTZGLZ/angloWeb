@@ -104,4 +104,6 @@ class Welcome extends MY_RootController {
 		echo $response;
 		
 	}
+
+	
 } 

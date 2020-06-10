@@ -1,3 +1,94 @@
+<style>
+.wrapper{
+    width:70%;
+    height:60px;
+    position: absolute;
+    left:50%;
+    top:150%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    width:25px;
+    height:25px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    left:15%;
+    transform-origin: 50%;
+    animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle{
+    0%{
+        top:60px;
+        height:5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+    40%{
+        height:20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100%{
+        top:0%;
+    }
+}
+.circle:nth-child(2){
+    left:45%;
+    animation-delay: .2s;
+}
+.circle:nth-child(3){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+.shadow{
+    width:20px;
+    height:4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top:62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left:15%;
+    filter: blur(1px);
+    animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+    0%{
+        transform: scaleX(1.5);
+    }
+    40%{
+        transform: scaleX(1);
+        opacity: .7;
+    }
+    100%{
+        transform: scaleX(.2);
+        opacity: .4;
+    }
+}
+.shadow:nth-child(4){
+    left: 45%;
+    animation-delay: .2s
+}
+.shadow:nth-child(5){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+.wrapper span{
+    position: absolute;
+    top:75px;
+    font-family: 'Lato';
+    font-size: 20px;
+    letter-spacing: 12px;
+    color: #fff;
+    left:15%;
+}
+</style>
 
 <div class="page">
    
@@ -8,17 +99,25 @@
                 <div class="user-info card card-shadow text-center">
                     <div class="user-base card-block">
                         <a class="avatar img-bordered avatar-100" href="javascript:void(0)">
-                            <img src="<?=@ ($aspirante['photoUrl']) ? $aspirante['photoUrl'] : base_url("resources/assets/Anglo/AngloLatino-sintexto.png") ;?>" alt="Imagen Perfil">
+                            
+                            <img src="<?=@ ($aspirante['photoUrl']!='NULL') ? $aspirante['photoUrl'] : base_url("resources/assets/Anglo/AngloLatino-sintexto.png") ;?>" alt="Imagen Perfil">
                         </a>
-                        <p class="userName"></p>
+                        <br>
+                        
+                        <p class="user-job"></p>
                         <p class="userDatos"></p>
-                        <p class="user-job">Correo</p>
+                        <p class="user-job"></p>
+                        <p class="userDatos"></p>
+                        <p class="user-job" style="font-weight: normal">Nombre:</p>
+                        <p class="userDatos"><i class="icon fa-user nationicon " aria-hidden="true" style="color: red"></i> <?=@$aspirante['fullname'];?></p>
+
+                        <p class="user-job" style="font-weight: normal">Correo:</p>
                         <p class="userDatos"><i class="icon wb-envelope emailicon " aria-hidden="true" style="color: red"></i> <?=@$aspirante['email'];?></p>
-                        <p class="user-job">Teléfono</p>
+                        <p class="user-job" style="font-weight: normal">Teléfono:</p>
                         <p class="userDatos"><i class="icon fa-phone-square callicon" aria-hidden="true" style="color: red"></i> <?=@$aspirante['telefono'];?></p>
-                        <p class="user-job">Ciudad</p>
+                        <p class="user-job" style="font-weight: normal">Ciudad:</p>
                         <p class="userDatos"><i class="icon fa-flag nationicon" aria-hidden="true" style="color: red"></i> <?=@$aspirante['ciudad'];?></p>
-                        <p class="user-job">Género</p>
+                        <p class="user-job" style="font-weight: normal">Género:</p>
                         <p class="userDatos"><i class="icon fa-user nationicon" aria-hidden="true" style="color: red"></i> <?=@$aspirante['genero'];?></p>
                     </div>
                 </div>
@@ -47,11 +146,25 @@
                                 <br>
                                 <br>
                                 <div class="card-deck">
-                                    <?php for($i=0;$i<count($universidades);$i++) {?>
+                                    <?php for($i=0;$i<count(@$universidades);$i++) {?>
                                         <div class="card card-element" style="border: 0;">
                                             <img class="card-img-top w-full" src="<?=@$universidades[$i]['logoInstitucion'];?>" alt="Imagen Institucion">
                                             <div class="card-block">
                                                 <h4 class="card-title" align="center"><?=@$universidades[$i]['nombreInstitucion'];?>.</h4>
+                               
+                                            </div>
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                                                <div class="one-third">
+                                                    <div class="stat"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php }?>
+                                    <?php for($i=0;$i<count(@$preparatorias);$i++) {?>
+                                        <div class="card card-element" style="border: 0;">
+                                            <img class="card-img-top w-full" src="<?=@$preparatorias[$i]['logoInstitucion'];?>" alt="Imagen Institucion">
+                                            <div class="card-block">
+                                                <h4 class="card-title" align="center"><?=@$preparatorias[$i]['nombreInstitucion'];?>.</h4>
                                
                                             </div>
                                             <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
@@ -98,18 +211,34 @@
                                             <label class="form-control-label" for="inputBasicEmail">Estudio de interes:</label>
                                             <input type="text" class="form-control" value="<?=@$aspirante['programaDeInteres']?>" disabled>
                                         </div>
+                                        <?php if(@$infoAspiranteUni){ ?>
                                         <div class="form-group">
                                             <label class="form-control-label" for="inputBasicEmail">Facultad:</label>
                                             <input type="text" class="form-control" value="<?=@$infoAspiranteUni['nombreFacultad']?>" disabled>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-control-label" for="inputBasicEmail">Tipo de estudio:</label>
-                                            <input type="text" class="form-control" value="<?=@$infoAspiranteUni['estudiosAspiranteUniversidad']?>" disabled>
+                                            <input type="text" class="form-control tipoDeEstudio" value="<?=@$infoAspiranteUni['estudiosAspiranteUniversidad']?>" disabled>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-control-label" for="inputBasicEmail">Mes y año de ingreso:</label>
                                             <input type="text" class="form-control" value="<?=@$infoAspiranteUni['mes']?>, <?=@$infoAspiranteUni['anio']?>" disabled>
                                         </div>
+                                        <?php } ?>
+                                        <?php if(@$infoAspirantePrepa){ ?>
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="inputBasicEmail">Tipo de estudio:</label>
+                                                <input type="text" class="form-control" value="<?=@$infoAspirantePrepa['nombreTipoEstudio']?>" disabled>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="inputBasicEmail">Tipo de alojamiento:</label>
+                                                <input type="text" class="form-control tipoDeEstudio" value="<?=@$infoAspirantePrepa['nombreTipoAlojamiento']?>" disabled>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="inputBasicEmail">Mes y año de ingreso:</label>
+                                                <input type="text" class="form-control" value="<?=@$infoAspirantePrepa['mes']?>, <?=@$infoAspirantePrepa['anio']?>" disabled>
+                                            </div>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
@@ -126,26 +255,34 @@
         <div class="card card-shadow card-responsive" id="widgetLineareaColor">
           
           <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos del aspirante: &nbsp;</p>
-         
+          <?php if(@!$documentos) { ?>
+              <div class="card " style="margin-left:50px;">
+              <img class="card-img-top img-fluid w-full" src="https://www.mygotoit.com/files/2020/01/file-2-resized.jpg" alt="Card image cap" style="max-width: 40%">
+              <div class="card-block">
+                <h4 class="card-title">No cuenta con documentos subidos.</h4>
+                <p class="card-text">Comunicate con el aspirante.</p>
+              </div>
+            </div>
+            <?php } ?>
           <div class="row">
             <?php for($i=0; $i< count(@$documentos);$i++) {?>
-            <div class="col-lg-5 col-sm-12" style="margin: 30px;">
+            <div class="col-lg-5 col-sm-12 col-md-12" style="margin: 30px;">
               <div class="card card-shadow text-center">
                 <div class="card-block">
-                  <a class="avatar avatar-lg" href="<?=@'http://localhost/angloApi'.$documentos[$i]['urlDocumento']?>" target="_blank" style="width: 110px;">
+                  <a class="avatar avatar-lg" target="_blank" style="width: 110px;">
                     <img src="https://img.icons8.com/clouds/2x/pdf-2.png" alt="Icon PDF">
                   </a>
-                  <?php if($documentos[$i]['descMaestriaDocumento']) {?>
+                  <?php if(@$documentos[$i]['descDocumento']) {?>
                     <div class="form-group">
                         <label>Descripción del problema:</label>
                         <br>
-                        <label class="form-control-label" for="inputBasicFirstName"><?=@$documentos[$i]['descMaestriaDocumento']?></label>
+                        <label class="form-control-label" for="inputBasicFirstName"><?=@$documentos[$i]['descDocumento']?></label>
                     </div>
                   <?php } ?>
-                  <h4 class="profile-user"><?=$documentos[$i]['nombreDocumento']?></h4>
-                  <p class="profile-job">Fecha de subida: <?=$documentos[$i]['lastUpdateDocumento']?></p>
-                  <p></p>
-                  <a type="button" class="btn btn-primary" href="<?=@'http://localhost/angloApi'.$documentos[$i]['urlDocumento']?>" target="_blank">Ver</a>
+                  <h4 class="profile-user"><?=@$documentos[$i]['nameDocumento']?></h4>
+                  <p class="profile-job">Fecha de subida: <?=@$documentos[$i]['creationDate']?></p>
+                  <p class="profile-job" style="font-weight: normal;">Ubicacion de la carpeta en dropbox: </p><p>
+                      <?=@$documentos[$i]['pathDisplayDocumento']?></p>
                 </div>
                 <?php if(@$documentos[$i]['statusDocumento']=="Pendiente") { ;?>
                   <div class="card-footer" style="background-color: #FFED78">
@@ -177,63 +314,16 @@
             <div class="col-lg-5 col-sm-12" style="margin: 30px;"> 
                 <div class="card card-shadow " style="border: 0">
                     <?php if($documentos[$i]['statusDocumento']=="Pendiente") { ?>
-                        <div class="boletaAlert-<?=@$documentos[$i]['idDocumento']?>"></div>
+                        <div class="alert-<?=@$documentos[$i]['idReal']?>"></div>
                         <div class="form-group">
                             <label class="form-control-label" for="inputBasicFirstName" style="font-size: 16px;">Describe de forma detallada el problema que existe en el documento, que pueda ayudar al aspirante a saber que corregir.</label>
-                            <textarea class="form-control" style="height: 100px;font-size: 15px" id="desc-<?=@$documentos[$i]['idDocumento']?>"></textarea>
+                            <textarea class="form-control" style="height: 200px;font-size: 15px" id="desc-<?=@$documentos[$i]['idReal']?>"></textarea>
                         </div>
-                        <input type="hidden" id="tipo-<?=@$documentos[$i]['idDocumento']?>" value="<?=@$documentos[$i]['tipo']?>">
-                        <form id="documentoSubir-<?=@$documentos[$i]['idDocumento']?>">
-                            <?php if($documentos[$i]['tipo']=="Transcripcion") { ?>
-                                <div class="form-group">
-                                    <label>Formato PDF</label>
-                                    <div class="input-group input-group-file" data-plugin="inputGroupFile">
-                                        <input type="text" class="form-control" id="t-<?=@$documentos[$i]['idDocumento']?>" readonly="">
-                                        <span class="input-group-btn">
-                                        <span class="btn btn-success btn-file">
-                                            <i class="icon wb-upload" aria-hidden="true"></i>
-                                                <input type="file" class="test file-<?=@$documentos[$i]['idDocumento']?>" id="<?=@$documentos[$i]['idDocumento']?>" name="Transcripcion">
-                                            
-                                        </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                            <?php if($documentos[$i]['tipo']=="TranscripcionTraduccion") { ?>
-                                <div class="form-group">
-                                    <label>Formato PDF|DOC|WORD</label>
-                                    <div class="input-group input-group-file" data-plugin="inputGroupFile">
-                                        <input type="text" class="form-control" id="t-<?=@$documentos[$i]['idDocumento']?>" readonly="">
-                                        <span class="input-group-btn">
-                                        <span class="btn btn-success btn-file">
-                                            <i class="icon wb-upload" aria-hidden="true"></i>
-                                                <input type="file" class="test file-<?=@$documentos[$i]['idDocumento']?>" id="<?=@$documentos[$i]['idDocumento']?>" name="Transcripcion">
-                                            
-                                        </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                            <?php if($documentos[$i]['tipo']=="CartaMotivo") { ?>
-                                <div class="form-group">
-                                    <label>Formato PDF|DOC|WORD</label>
-                                    <div class="input-group input-group-file" data-plugin="inputGroupFile">
-                                        <input type="text" class="form-control" id="t-<?=@$documentos[$i]['idDocumento']?>" readonly="">
-                                        <span class="input-group-btn">
-                                        <span class="btn btn-success btn-file">
-                                            <i class="icon wb-upload" aria-hidden="true"></i>
-                                                <input type="file" class="test file-<?=@$documentos[$i]['idDocumento']?>" id="<?=@$documentos[$i]['idDocumento']?>" name="CartaMotivo">
-                                            
-                                        </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                        </form>
+                        <input type="hidden" id="path-<?=@$documentos[$i]['idReal']?>" value="<?=@$documentos[$i]['pathDisplayDocumento']?>">
                         <div class="form-group text-center">
-                            <button type="button" class="btn btn-info btnAceptar" id="<?=@$documentos[$i]['idDocumento']?>">Aceptar</button>
+                            <button type="button" class="btn btn-info btnAceptar" id="<?=@$documentos[$i]['idReal']?>">Aceptar</button>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger">Rechazar</button>
+                            <button type="button" class="btn btn-danger btnRechazar" id="<?=@$documentos[$i]['idReal']?>">Rechazar</button>
                         </div>
                     <?php } ?>
                     <?php if($documentos[$i]['statusDocumento']=="Rechazado") { ?>
@@ -242,6 +332,15 @@
                         <br>
                         <div class="form-group">
                             <label class="form-control-label" for="inputBasicFirstName" style="font-size: 18px;">El aspirante aun no ha modificado su archivo, nose puede realizar ninguna accion.</label>
+                        </div>
+                        
+                    <?php } ?>
+                    <?php if($documentos[$i]['statusDocumento']=="Aceptado") { ?>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label class="form-control-label" for="inputBasicFirstName" style="font-size: 18px;">El documento ya ha sido aceptado, nose puede realizar ninguna accion.</label>
                         </div>
                         
                     <?php } ?>
@@ -256,33 +355,22 @@
     </div>
 
     <div class="col-xxl-5 col-lg-4" >
-      <div class="card card-shadow" id="widgetStackedBar" style="height: 50%">
+      <div class="card card-shadow" id="widgetStackedBar">
         <div class="card-block p-0">
           <div class="p-30 h-150">
               <p  class="font-size-20 blue-grey-700">Contactar:</p>
-              <p  class="font-size-15 blue-grey-700">Si tienes dudas sobre el proceso de tus archivos o por algun tipo dde estado de tus archivos contactanos por los siguientes medios:</p>
+              <p  class="font-size-15 blue-grey-700">Si quieres ponerte en contacto con el aspirante realiza algunas de las siguientes acciones:</p>
           </div>
           <ul class="list-group list-group-bordered" style="margin:15px">
             <li class="list-group-item">
-              <a type="button" class="btn btn-block" style="background-color:#171A21;color:white;" href="tel:4422609090"><i class="icon fas fa-phone" aria-hidden="true"></i>Llamar</a>
+              <a type="button" class="btn btn-block" style="background-color:#171A21;color:white;" href="tel:<?=@$aspirante['telefono'];?>"><i class="icon fas fa-phone" aria-hidden="true"></i>Llamar</a>
             </li>
             <li class="list-group-item">
-              <a type="button" class="btn btn-block" style="background-color:#25d366;color:white;" href="https://api.whatsapp.com/send?phone=524423645384&text=Dudas%20de%20la%20documentacion%20entregada" target="_blank"  rel="noopener" aria-label="Mandar mensaje whatsapp anglo"><i class="icon fab fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
+              <a type="button" class="btn btn-block" style="background-color:#25d366;color:white;"  href="https://api.whatsapp.com/send?phone=<?=@$aspirante['telefono'];?>&text=Hola%20un%20gusto%20saludarte%20!%20<?=@$aspirante['fullname'];?>." target="_blank"  rel="noopener" aria-label="Mandar mensaje whatsapp anglo"><i class="icon fab fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
             </li>
-            <li class="list-group-item d-block d-sm-none">
-              <a type="button" class="btn btn-block" style="background-color:#db4437;color:white;" href="mailto:study@anglolatinoedu.com?Subject=Dudas%20de%20la%20documentacion%20entregada"><i class="icon far fa-envelope" aria-hidden="true" target="_blank"></i>Correo</a>
-              <span style="margin-left:20px">study@anglolatinoedu.com</span>
-            </li>
-            <li class="list-group-item d-none d-sm-block ">
-              <a type="button" class="btn btn-block" style="background-color:#db4437;color:white;" href=" https://mail.google.com/mail/?view=cm&fs=1&to=study@anglolatinoedu.com&su=Dudas%20de%20la%20documentacion%20entregada&body=Mi%20nombre%20es:%20<?=$user->fullname;?>%20y%20Mi%20Correo%20es%20:<?=$user->email;?>" target="_blank"><i class="icon far fa-envelope" aria-hidden="true" target="_blank"></i>Correo</a>
-              <span style="margin-left:20px">study@anglolatinoedu.com</span>
-            </li>
-            <li class="list-group-item d-none d-sm-block">
-              <a type="button" class="btn btn-block social-facebook" href="https://www.facebook.com/AngloLatino/" target="_blank"><i class="icon bd-facebook" aria-hidden="true"></i>Facebook</a>
-            </li> 
-            <li class="list-group-item d-block d-sm-none">
-              <a type="button" class="btn btn-block social-facebook" href="fb://page/6623204789"><i class="icon bd-facebook" aria-hidden="true"></i>Facebook</a>
-            </li>        
+            <li class="list-group-item">
+              <a type="button" class="btn btn-block" style="background-color:#db4437;color:white;"><i class="icon far fa-envelope" aria-hidden="true" target="_blank"></i>Correo</a>
+            </li>      
           </ul>
         </div>
       </div>
@@ -290,4 +378,30 @@
   </div>
     </div>
     
+</div>
+
+
+<div class="modal fade modal-fill-in" id="exampleFillIn" aria-hidden="false" aria-labelledby="exampleFillIn"
+                    role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-simple">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h1 class="modal-title" id="exampleFillInModalTitle" style="color: red;">Tu documento se esta eliminando.</h1>
+      </div>
+      <div class="modal-body">
+        <h4>Espera a que tu documento se elimine correctamente.Cuando este se elimine seras redirecionado a la pagina.</h4>
+        
+        <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Loading</span>
+    </div>
+      </div>
+    </div>
+  </div>
 </div>

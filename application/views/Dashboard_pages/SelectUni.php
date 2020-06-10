@@ -416,6 +416,24 @@ h1 {
                 </div>
             </div>
             <div class="grid-wrapper">
+              <?php if($aspiranteUni['estudiosAspiranteUniversidad']=='Carrera') { ?>
+                <?php for($i=0; $i < count($universidades);$i++) { ?>
+                  <?php if($universidades[$i]['nombreInstitucion']!='Cranfield University') { ?>
+                    <div class="card-wrapper">
+                      <input class="c-card uni" type="checkbox"  id="<?=$i+1?>" value="<?=@$universidades[$i]['idInstitucion']?>">
+                      <div class="card-content">
+                      <div class="card-state-icon"></div>
+                      <label for="<?=$i+1?>">
+                          <div class="image"><img src="<?=@$universidades[$i]['logoInstitucion']?>" style="width: 180px;height: 120px"></div>
+                          <h3 style="color: white"><?=@$universidades[$i]['nombreInstitucion']?></h4>
+                          <h5 style="color: white"><?=@$universidades[$i]['nombreFacultad']?></h5>
+                          <p class="small-meta dim" style="color: white">Gracias</p>
+                      </label>
+                      </div>
+                  </div>
+                  <?php } ?>
+                <?php } ?>
+              <?php }else { ?>
                 <?php for($i=0; $i < count($universidades);$i++) { ?>
                 <div class="card-wrapper">
                     <input class="c-card uni" type="checkbox"  id="<?=$i+1?>" value="<?=@$universidades[$i]['idInstitucion']?>">
@@ -430,6 +448,8 @@ h1 {
                     </div>
                 </div>
                 <?php } ?>
+              <?php } ?>
+                
                 
                 
             </div>
