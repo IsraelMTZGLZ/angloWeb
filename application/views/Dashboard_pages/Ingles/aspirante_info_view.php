@@ -79,47 +79,113 @@
     Breakpoints();
   </script>
   <style media="screen">
-  .userDatos{
-    font-size: 16px;
-    color: black;
-    font-weight: 200;
-    margin-bottom: 5px;
-  }
-  .userName{
-    font-size: 19px;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 5px;
-  }
-  .emailicon{
+    :root {
+      --border-radius-size: 14px;
+      --barbarian: #EC9B3B;
+      --archer: #EE5487;
+      --giant: #F1C40F;
+      --goblin:   #11C26D;
+      --wizard:   #f2353c;
 
-    color: #4FACFF;
-    font-weight: 250;
-    margin-bottom: 5px;
-  }
-    .callicon{
-
-      color: #4FACFF;
-      font-weight: 250;
-      margin-bottom: 5px;
     }
 
-    .iconcheck{
-      font-size: 20px;
-      color: #4FACFF;
-      font-weight: 250;
+    .userDatos{
+      font-size: 16px;
+      color: black;
+      font-weight: 200;
       margin-bottom: 5px;
     }
-
-    .nationicon{
-
-      color: #4FACFF;
-      font-weight: 250;
+    .userName{
+      font-size: 19px;
+      color: black;
+      font-weight: 400;
       margin-bottom: 5px;
     }
+    .emailicon{
+      font-size: 16px;
+      color: #4FACFF;
+      font-weight: 250;clash-card__unit-stats--goblin
+      margin-bottom: 5px;
+    }
+      .callicon{
+        font-size: 18px;
+        color: #4FACFF;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
 
-  </style>
-</head>
+      .iconcheck{
+        font-size: 20px;
+        color: #4FACFF;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
+
+      .nationicon{
+        font-size: 18px;
+        color: #4FACFF;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
+
+      .resumen{
+
+        font-size: 22px;
+        color: #0bb2d4;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
+      .card-element{
+        background: white;
+        width: auto;
+        display: inline-block;
+
+        text-align: center;
+        box-shadow: -1px 1px 20px -12px #3e8ef7;
+      }
+      .clash-card__unit-stats--barbarian {
+        background:var(--barbarian);
+
+
+      }
+
+
+      .clash-card__unit-stats--archer {
+        background: var(--archer);
+
+
+      }
+
+      .clash-card__unit-stats--giant {
+        background: var(--giant);
+
+      }
+
+      .clash-card__unit-stats--goblin {
+        background: var(--goblin);
+
+      }
+
+      .clash-card__unit-stats--wizard {
+        background: var(--wizard);
+
+      }
+
+
+      .stat {
+      font-size: 18px;
+      color: white;
+      }
+
+      .reviciones{
+        align: center;
+      }
+      /* .upicon{
+        position:relative;
+        top: 1px;
+      } */
+    </style>
+  </head>
 <body class="animsition  page-profile-v2  ">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -416,7 +482,7 @@
   <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 align="center" class="page-title">Escuela de Verano</h1>
+      <h1 align="center" class="page-title">Cursos de  inglés  </h1>
       <h1 class="page-title">Información de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></h1>
       <input type="hidden" id="aspirante" value="<?=@$aspirante['idAspirante'];?>" name="fkAspirante">
       <ol class="breadcrumb">
@@ -439,7 +505,7 @@
                 <div class="example">
 
                   <div class="progress progress-lg">
-                    <div class="progress-bar progress-bar-success" style="width: 50%;" role="progressbar">50%</div>
+                    <div class="progress-bar progress-bar-success" style="width: <?=$progreso;?>;" role="progressbar"><?=$progreso;?></div>
                   </div>
                 </div>
               </div>
@@ -450,33 +516,48 @@
           <!-- User Posts -->
           <div class="user-posts card card-shadow">
             <div class="card-block">
-              <h4 class="card-title mb-20">Instituciones elegidas</h4>
+              <h4 class="card-title mb-20">Mis instituciones elegidas</h4>
               <div class="card-deck">
-                <div class="card">
+                <div class="card card-element">
                   <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title" align="center"><?=@$instOne['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center"><?=@$instOne['statusInstitucion'];?></p>
+                    <p class="card-text" align="center"></p>
                     <p class="card-text hidden-md-down" align="center"><?=@$instOne['ubicacionInstitucion'] ? $instOne['ubicacionInstitucion'] : 'London' ;?>.</p>
 
                   </div>
+                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                    <div class="one-third">
+                      <div class="stat"><?=@$instOne['statusInstitucion'];?> </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
+                <div class="card card-element">
+                  <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title" align="center"><?=@$instTwo['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center"><?=@$instTwo['statusInstitucion'];?></p>
+                    <p class="card-text" align="center"></p>
                     <p class="card-text hidden-md-down" align="center"><?=@$instTwo['ubicacionInstitucion'] ? $instTwo['ubicacionInstitucion'] : 'London' ;?>.</p>
 
                   </div>
+                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                    <div class="one-third">
+                      <div class="stat"><?=@$instTwo['statusInstitucion'];?></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card">
+                <div class="card card-element">
                   <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title" align="center"><?=@$instThree['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center" ><?=@$instThree['statusInstitucion'];?></p>
+                    <p class="card-text" align="center" ></p>
                     <p class="card-text hidden-md-down" align="center"><?=@$instThree['ubicacionInstitucion'] ? $instThree['ubicacionInstitucion'] : 'London' ;?>.</p>
 
+                  </div>
+                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                    <div class="one-third">
+                      <div class="stat"><?=@$instThree['statusInstitucion'];?></div>
+                    </div>
                   </div>
                 </div>
 
@@ -503,50 +584,55 @@
                 <div class="example example-buttons">
 
                   <?php if(@$fileexists == TRUE) { ;?>
+                    <?php if(@$statusDoc == "Revision") { ;?>
                     <div class="float-left">
                       <button type="button" class="btn btn-primary ladda-button btn-aceptar" data-style="expand-left"
                         data-plugin="ladda" data-type="progress" id="file">
                         <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
                       </button>
                     </div>
-                  <div class="float-left">
-                    <button type="button" class="btn btn-warning ladda-button btn-rechazar" data-style="expand-left"
-                      data-plugin="ladda" data-type="progress" id="file">
-                      <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
-                    </button>
-                  </div>
-                  <div class="float-right">
-                    <a type="button" class="btn btn-primary ladda-button btn-file"  href="<?=$defaultfile;?>" download> <i class="icon fa-download " aria-hidden="true"></i>Descargar </a>
-                  </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+                      <?php } ;?>
+
+                    <div class="float-right">
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfile;?>" download> <i class="icon fa-download " aria-hidden="true"></i>Descargar </a>
+                    </div>
+
                   <?php } ;?>
 
                 </div>
                 <div class="example">
                   <div class="pearls row">
-                    <div class="pearl current col-4">
+                    <div class="pearl <?=@$stepOne;?> col-4">
                       <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
                       <span class="pearl-title">Cargar Pasaporte</span>
                     </div>
-                    <div class="pearl current col-4">
+                    <div class="pearl <?=@$stepTwo;?> col-4">
                       <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
                       <span class="pearl-title">Revisión</span>
 
                       <?php if(@$fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
                       <div class="reviciones example example-popover" align="center">
 
-                        <div class="popover bs-popover-bottom popover-warning ">
+                        <div class="popover bs-popover-bottom popover-warning col-12">
                           <div class="arrow"></div>
                           <h3 class="popover-header">Documento rechazado</h3>
-                          <div class="popover-body">
-                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado!</p>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b> <?=@$description;?></p>
                           </div>
                         </div>
                       </div>
                       <?php } ;?>
                     </div>
-                    <div class="pearl    col-4">
+                    <div class="pearl  <?=@$stepThree;?>  col-4">
                       <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
-                      <span class="pearl-title">Confirmación</span>
+                      <span class="pearl-title">Aceptado</span>
                     </div>
                   </div>
                 </div>

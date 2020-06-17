@@ -14,7 +14,9 @@ class InstitucionVerano extends MY_RootController {
 		$responseEdad = $this->_callApiRest('Edad/api/edad/',null,"GET",null);
 		$responseAlojamiento = $this->_callApiRest('TipoAlojamiento/api/tipoAlojamiento/',null,"GET",null);
 		$responseInstituciones = $this->_callApiRest('Institucion/api/Institucion/',null,"GET",null);
+		$responseTipo = $this->_callApiRest('TipoCampamento/api/tipoCampamento/',null,"GET",null);
 		$data['campamentos'] =$response['data'];
+		$data['tipos'] =$responseTipo['data'];
 		$data['alojamientos'] =$responseAlojamiento['data'];
 		$data['edades'] =$responseEdad['data'];
 		$data['instituciones'] =$responseInstituciones['data'];

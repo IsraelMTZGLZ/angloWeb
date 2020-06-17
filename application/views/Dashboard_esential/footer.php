@@ -223,126 +223,61 @@
 
   <script type="text/javascript">
   $(document).ready(function(){
-        $(document).on('click','.btn-file',function (event){
-        var $pdfInfo = $("#input-file-now");
-        var archivo = $pdfInfo[0].files;
-          if(archivo.length > 0){
-            var formData = new FormData();
-            var pdfInfo = archivo[0];
-            var lector = new FileReader();
-            formData.append('my_file', pdfInfo);
-            formData.append('aspirante', $(document).find('#aspirante').val());
+        $(document).on('click','.btn-file-verano',function (event){
+          var $pdfInfo = $("#input-file-now");
+          var archivo = $pdfInfo[0].files;
+            if(archivo.length > 0){
+              var formData = new FormData();
+              var pdfInfo = archivo[0];
+              var lector = new FileReader();
+              formData.append('Pasaporte', pdfInfo);
+              formData.append('aspirante', $(document).find('#aspirante').val());
 
-            _url = _principalURL()+"Verano/api/files/";
+              _url = _principalURL()+"Verano/api/pasaporte/id/"+$(document).find('#aspirante').val();
 
-            $.ajax({
-              url:_url,
-              method: 'POST',
-              headers : {
-                'X-API-KEY':'ANGLOKEY'
-              },
-              data: formData,
-              contentType: false,
-              processData: false,
-              success : function(_response){
-                response= JSON.stringify(_response);
-                if(_response.status == "error"){
+              $.ajax({
+                url:_url,
+                method: 'POST',
+                headers : {
+                  'X-API-KEY':'ANGLOKEY'
+                },
+                data: formData,
+                contentType: false,
+                processData: false,
+                success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
 
-                  tostada('error','Revise sus datos ');
-                    $.each(_response.validations, function(key,message){
-                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                     });
-                }else{
-                  Swal.fire({
-                    title: 'Buen trabajo!',
-                    text: 'Su pasaporte Fue Guardado Correctamente',
-                    type: 'success',
-                    confirmButtonText: 'Ok'
-                  }).then(function () {
+                    tostada('error','Revise sus datos ');
+                      $.each(_response.validations, function(key,message){
+                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                       });
+                  }else{
+                    Swal.fire({
+                      title: 'Buen trabajo!',
+                      text: 'Su pasaporte Fue Guardado Correctamente',
+                      type: 'success',
+                      confirmButtonText: 'Ok'
+                    }).then(function () {
 
 
-                });
+                  });
+                  }
+
+                },
+                error : function(err){
+                    response= JSON.stringify(err.responseText);
+                    $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                      +response+
+                      '</div>'
+                    );
+                    setTimeout(function(){
+                        $(document).find('#responseText').html('');
+                    }, 3000);
+
                 }
-
-              },
-              error : function(err){
-                  response= JSON.stringify(err.responseText);
-                  $(document).find('#responseText').html(
-                    '<div class="alert alert-success" role="alert">'
-                    +response+
-                    '</div>'
-                  );
-                  setTimeout(function(){
-                      $(document).find('#responseText').html('');
-                  }, 3000);
-
-              }
-            });
-          }else{
-            Swal.fire({
-              title: 'Error!',
-              text: 'Elija un archivo',
-              type: 'error',
-              confirmButtonText: 'Entendido'
-            });
-          }
-        });
-
-        $(document).on('click','.btn-edit-file',function (event){
-        var $pdfInfo = $("#input-file-now");
-        var archivo = $pdfInfo[0].files;
-          if(archivo.length > 0){
-            var formData = new FormData();
-            var pdfInfo = archivo[0];
-            var lector = new FileReader();
-            formData.append('my_file', pdfInfo);
-            formData.append('aspirante', $(document).find('#aspirante').val());
-
-            _url = _principalURL()+"Verano/api/files/id/"+ $(document).find('#aspirante').val();
-
-            $.ajax({
-              url:_url,
-              method: 'PUT',
-              headers : {
-                'X-API-KEY':'ANGLOKEY'
-              },
-              data: formData,
-              contentType: false,
-              processData: false,
-              success : function(_response){
-                response= JSON.stringify(_response);
-                if(_response.status == "error"){
-
-                  tostada('error','Revise sus datos ');
-                    $.each(_response.validations, function(key,message){
-                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                     });
-                }else{
-                  Swal.fire({
-                    title: 'Buen trabajo!',
-                    text: 'Su pasaporte Fue Guardado Correctamente',
-                    type: 'success',
-                    confirmButtonText: 'Ok'
-                  }).then(function () {
-
-                   window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
-                });
-                }
-
-              },
-              error : function(err){
-                  response= JSON.stringify(err.responseText);
-                  $(document).find('#responseText').html(
-                    '<div class="alert alert-success" role="alert">'
-                    +response+
-                    '</div>'
-                  );
-                  setTimeout(function(){
-                      $(document).find('#responseText').html('');
-                  }, 3000);
-
-              }
-            });
+              });
             }else{
               Swal.fire({
                 title: 'Error!',
@@ -352,48 +287,146 @@
               });
             }
         });
+        $(document).on('click','.btn-add-fileaddInstitucion',function(){
+          $(document).find('.nuev').empty();
+          idInstitucion = this.id;
+          $(document).find('#institucionn').val(idInstitucion);
+          console.log(idInstitucion);
 
-        $(document).on('click','.btn-rechazar',function (event){
-          var formData = new FormData();
-          formData.append('status', 'Rechazado');
-          _d = {
-            "status":"Rechazado"
-          };
-          Swal.fire({
-            title: 'Esta seguro de realizar esta operacion?',
-            text: 'El archivo sera rechazado',
-            type: 'warning',
-            confirmButtonText: 'Ok'
-            }).then(function () {
+          _url = _principalURL()+"Verano/Academico/api/fileVeranoAcademico/id/"+idInstitucion;
+          $.ajax({
+                    url: _url,
+                    method : 'GET',
+                    headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: null,
+                    success : function(_response){
+                      if(_response.data){
+                        console.info(_response.data);
+                        $(document).find('.nombreInstitucion').html(_response.data[0].nombreDocumento);
+
+                        var dataInstitucion = _response.data;
+
+                        for (let j = 0; j < dataInstitucion.length; j++) {
+                          $(document).find('.nuev').append('<a type="button" class="list-group-item blue-grey-500 btn-editDeleteUniversidad" id="'+dataInstitucion[j]['idDocumento']+'" name="'+dataInstitucion[j]['fkInstitucion']+'"><i class="icon wb-inbox" aria-hidden="true"></i>'+dataInstitucion[j]['nombreDocumento']+'</a>');
+                        }
+                      }else{
+                        $(document).find('.nombreInstitucion').html('');
+                      }
+
+                    },error : function(err){
+
+                    }
+          });
+          $('#addFormatoSolicitud').modal('show');
+        });
+        $(document).on('click','.btn-file-veranoAcademic',function (event){
+            var $pdfInfo = $("#input-file-now");
+            var archivo = $pdfInfo[0].files;
+
+              if(archivo.length > 0){
+                var formData = new FormData();
+                var pdfInfo = archivo[0];
+                var lector = new FileReader();
+                formData.append('formatoDeSolicitud', pdfInfo);
+                formData.append('fkInstitucion', $(document).find('#institucionn').val());
+
+                _url = _principalURL()+"Verano/Academico/api/formatoSolicitud/id/"+$(document).find('#institucionn').val();
+
+                $.ajax({
+                  url:_url,
+                  method: 'POST',
+                  headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                  },
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success : function(_response){
+                    response= JSON.stringify(_response);
+                    if(_response.status == "error"){
+
+                      tostada('error','Revise sus datos ');
+                        $.each(_response.validations, function(key,message){
+                          $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                         });
+                    }else{
+                      Swal.fire({
+                        title: 'Buen trabajo!',
+                        text: 'Su pasaporte Fue Guardado Correctamente',
+                        type: 'success',
+                        confirmButtonText: 'Ok'
+                      }).then(function () {
 
 
-              _url = _principalURL()+"Ingles/api/inglesFile/"+ $(document).find('#aspirante').val();
+                    });
+                    }
+
+                  },
+                  error : function(err){
+                      response= JSON.stringify(err.responseText);
+                      $(document).find('#responseText').html(
+                        '<div class="alert alert-success" role="alert">'
+                        +response+
+                        '</div>'
+                      );
+                      setTimeout(function(){
+                          $(document).find('#responseText').html('');
+                      }, 3000);
+
+                  }
+                });
+              }else{
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'Elija un archivo',
+                  type: 'error',
+                  confirmButtonText: 'Entendido'
+                });
+              }
+          });
+          /* // */
+        $(document).on('click','.btn-edit-file-verano',function (event){
+          var $pdfInfo = $("#input-file-now");
+          var archivo = $pdfInfo[0].files;
+            if(archivo.length > 0){
+              var formData = new FormData();
+              var pdfInfo = archivo[0];
+              var lector = new FileReader();
+              formData.append('Pasaporte', pdfInfo);
+              formData.append('aspirante', $(document).find('#aspirante').val());
+
+              _url = _principalURL()+"Verano/api/pasaporteUpdate/id/"+ $(document).find('#aspirante').val();
 
               $.ajax({
                 url:_url,
-                method: 'PUT',
+                method: 'POST',
                 headers : {
                   'X-API-KEY':'ANGLOKEY'
                 },
-                data: _d,
+                data: formData,
+                contentType: false,
+                processData: false,
                 success : function(_response){
                   response= JSON.stringify(_response);
                   if(_response.status == "error"){
+                    Swal.fire({
+                      title: 'NO!',
+                      text: 'Su no pasaporte Fue Guardado Correctamente',
+                      type: 'error',
+                      confirmButtonText: 'Ok'
+                    });
 
-                    tostada('error','Revise sus datos ');
-                      $.each(_response.validations, function(key,message){
-                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                       });
                   }else{
                     Swal.fire({
                       title: 'Buen trabajo!',
-                      text: 'El estatus del archivo se cambio correctamente',
+                      text: 'Su pasaporte Fue Guardado Correctamente',
                       type: 'success',
                       confirmButtonText: 'Ok'
                     }).then(function () {
-                      _ident =  $(document).find('#aspirante').val();
-                      console.log(_ident);
-                     window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+
+                     window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
                   });
                   }
 
@@ -411,76 +444,1444 @@
 
                 }
               });
-
+              }else{
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'Elija un archivo',
+                  type: 'error',
+                  confirmButtonText: 'Entendido'
+                });
+              }
           });
+        $(document).on('click','.btn-edit-file-veranoFormOne',function (event){
+            var $pdfInfo = $("#input-file-FormOne");
+            var archivo = $pdfInfo[0].files;
+              if(archivo.length > 0){
+                var formData = new FormData();
+                var pdfInfo = archivo[0];
+                var lector = new FileReader();
+                formData.append('formatoDeSolicitud', pdfInfo);
+                formData.append('fkAspirante', $(document).find('#aspirante').val());
 
-        });
-        $(document).on('click','.btn-aceptar',function (event){
-          var formData = new FormData();
-          formData.append('status', 'Aceptado');
-          _d = {
-            "status":"Rechazado"
-          };
-          Swal.fire({
-            title: 'Esta seguro de realizar esta operacion?',
-            text: 'El archivo sera rechazado',
-            type: 'warning',
-            confirmButtonText: 'Ok'
-            }).then(function () {
+                _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormOne').val();
 
+                $.ajax({
+                  url:_url,
+                  method: 'POST',
+                  headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                  },
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success : function(_response){
+                    response= JSON.stringify(_response);
+                    if(_response.status == "error"){
+                      Swal.fire({
+                        title: 'NO!',
+                        text: 'Su no pasaporte Fue Guardado Correctamente',
+                        type: 'error',
+                        confirmButtonText: 'Ok'
+                      });
 
-              _url = _principalURL()+"Ingles/api/inglesFile/"+ $(document).find('#aspirante').val();
+                    }else{
+                      Swal.fire({
+                        title: 'Buen trabajo!',
+                        text: 'Su pasaporte Fue Guardado Correctamente',
+                        type: 'success',
+                        confirmButtonText: 'Ok'
+                      }).then(function () {
 
-              $.ajax({
-                url:_url,
-                method: 'PUT',
-                headers : {
-                  'X-API-KEY':'ANGLOKEY'
-                },
-                data: _d,
-                success : function(_response){
-                  response= JSON.stringify(_response);
-                  if(_response.status == "error"){
+                       window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+                    });
+                    }
 
-                    tostada('error','Revise sus datos ');
-                      $.each(_response.validations, function(key,message){
-                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                       });
+                  },
+                  error : function(err){
+                      response= JSON.stringify(err.responseText);
+                      $(document).find('#responseText').html(
+                        '<div class="alert alert-success" role="alert">'
+                        +response+
+                        '</div>'
+                      );
+                      setTimeout(function(){
+                          $(document).find('#responseText').html('');
+                      }, 3000);
+
+                  }
+                });
+                }else{
+                  Swal.fire({
+                    title: 'Error!',
+                    text: 'Elija un archivo',
+                    type: 'error',
+                    confirmButtonText: 'Entendido'
+                  });
+                }
+            });
+        $(document).on('click','.btn-edit-file-veranoFormTwo',function (event){
+              var $pdfInfo = $("#input-file-FormTwo");
+              var archivo = $pdfInfo[0].files;
+                if(archivo.length > 0){
+                  var formData = new FormData();
+                  var pdfInfo = archivo[0];
+                  var lector = new FileReader();
+                  formData.append('formatoDeSolicitud', pdfInfo);
+                  formData.append('fkAspirante', $(document).find('#aspirante').val());
+
+                  _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormTwo').val();
+
+                  $.ajax({
+                    url:_url,
+                    method: 'POST',
+                    headers : {
+                      'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success : function(_response){
+                      response= JSON.stringify(_response);
+                      if(_response.status == "error"){
+                        Swal.fire({
+                          title: 'NO!',
+                          text: 'Su no pasaporte Fue Guardado Correctamente',
+                          type: 'error',
+                          confirmButtonText: 'Ok'
+                        });
+
+                      }else{
+                        Swal.fire({
+                          title: 'Buen trabajo!',
+                          text: 'Su pasaporte Fue Guardado Correctamente',
+                          type: 'success',
+                          confirmButtonText: 'Ok'
+                        }).then(function () {
+
+                         window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+                      });
+                      }
+
+                    },
+                    error : function(err){
+                        response= JSON.stringify(err.responseText);
+                        $(document).find('#responseText').html(
+                          '<div class="alert alert-success" role="alert">'
+                          +response+
+                          '</div>'
+                        );
+                        setTimeout(function(){
+                            $(document).find('#responseText').html('');
+                        }, 3000);
+
+                    }
+                  });
                   }else{
                     Swal.fire({
-                      title: 'Buen trabajo!',
-                      text: 'El estatus del archivo se cambio correctamente',
-                      type: 'success',
-                      confirmButtonText: 'Ok'
-                    }).then(function () {
-                      _ident =  $(document).find('#aspirante').val();
-                      console.log(_ident);
-                     window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
-                  });
+                      title: 'Error!',
+                      text: 'Elija un archivo',
+                      type: 'error',
+                      confirmButtonText: 'Entendido'
+                    });
                   }
-
-                },
-                error : function(err){
-                    response= JSON.stringify(err.responseText);
-                    $(document).find('#responseText').html(
-                      '<div class="alert alert-success" role="alert">'
-                      +response+
-                      '</div>'
-                    );
-                    setTimeout(function(){
-                        $(document).find('#responseText').html('');
-                    }, 3000);
-
-                }
               });
+        $(document).on('click','.btn-edit-file-veranoFormThree',function (event){
+                var $pdfInfo = $("#input-file-FormThree");
+                var archivo = $pdfInfo[0].files;
+                  if(archivo.length > 0){
+                    var formData = new FormData();
+                    var pdfInfo = archivo[0];
+                    var lector = new FileReader();
+                    formData.append('formatoDeSolicitud', pdfInfo);
+                    formData.append('fkAspirante', $(document).find('#aspirante').val());
 
+                    _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormThree').val();
+
+                    $.ajax({
+                      url:_url,
+                      method: 'POST',
+                      headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                      },
+                      data: formData,
+                      contentType: false,
+                      processData: false,
+                      success : function(_response){
+                        response= JSON.stringify(_response);
+                        if(_response.status == "error"){
+                          Swal.fire({
+                            title: 'NO!',
+                            text: 'Su no pasaporte Fue Guardado Correctamente',
+                            type: 'error',
+                            confirmButtonText: 'Ok'
+                          });
+
+                        }else{
+                          Swal.fire({
+                            title: 'Buen trabajo!',
+                            text: 'Su pasaporte Fue Guardado Correctamente',
+                            type: 'success',
+                            confirmButtonText: 'Ok'
+                          }).then(function () {
+
+                           window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+                        });
+                        }
+
+                      },
+                      error : function(err){
+                          response= JSON.stringify(err.responseText);
+                          $(document).find('#responseText').html(
+                            '<div class="alert alert-success" role="alert">'
+                            +response+
+                            '</div>'
+                          );
+                          setTimeout(function(){
+                              $(document).find('#responseText').html('');
+                          }, 3000);
+
+                      }
+                    });
+                    }else{
+                      Swal.fire({
+                        title: 'Error!',
+                        text: 'Elija un archivo',
+                        type: 'error',
+                        confirmButtonText: 'Entendido'
+                      });
+                    }
+                });
+        $(document).on('click','.btn-file-verano-formRegistrationOne',function (event){
+            var $pdfInfo = $("#input-file-FormOne");
+            var archivo = $pdfInfo[0].files;
+              if(archivo.length > 0){
+                var formData = new FormData();
+                var pdfInfo = archivo[0];
+                var lector = new FileReader();
+                formData.append('formatoDeSolicitud', pdfInfo);
+                formData.append('fkAspirante', $(document).find('#aspirante').val());
+
+                _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+
+                $.ajax({
+                  url:_url,
+                  method: 'POST',
+                  headers : {
+                    'X-API-KEY':'ANGLOKEY'
+                  },
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success : function(_response){
+                    response= JSON.stringify(_response);
+                    if(_response.status == "error"){
+
+                      tostada('error','Revise sus datos ');
+                        $.each(_response.validations, function(key,message){
+                          $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                         });
+                    }else{
+                      Swal.fire({
+                        title: 'Buen trabajo!',
+                        text: 'Su pasaporte Fue Guardado Correctamente',
+                        type: 'success',
+                        confirmButtonText: 'Ok'
+                      }).then(function () {
+
+
+                    });
+                    }
+
+                  },
+                  error : function(err){
+                      response= JSON.stringify(err.responseText);
+                      $(document).find('#responseText').html(
+                        '<div class="alert alert-success" role="alert">'
+                        +response+
+                        '</div>'
+                      );
+                      setTimeout(function(){
+                          $(document).find('#responseText').html('');
+                      }, 3000);
+
+                  }
+                });
+              }else{
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'Elija un archivo',
+                  type: 'error',
+                  confirmButtonText: 'Entendido'
+                });
+              }
           });
+        $(document).on('click','.btn-file-verano-formRegistrationTwo',function (event){
+              var $pdfInfo = $("#input-file-FormTwo");
+              var archivo = $pdfInfo[0].files;
+                if(archivo.length > 0){
+                  var formData = new FormData();
+                  var pdfInfo = archivo[0];
+                  var lector = new FileReader();
+                  formData.append('formatoDeSolicitud', pdfInfo);
+                  formData.append('fkAspirante', $(document).find('#aspirante').val());
 
-        });
+                  _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+
+                  $.ajax({
+                    url:_url,
+                    method: 'POST',
+                    headers : {
+                      'X-API-KEY':'ANGLOKEY'
+                    },
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success : function(_response){
+                      response= JSON.stringify(_response);
+                      if(_response.status == "error"){
+
+                        tostada('error','Revise sus datos ');
+                          $.each(_response.validations, function(key,message){
+                            $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                           });
+                      }else{
+                        Swal.fire({
+                          title: 'Buen trabajo!',
+                          text: 'Su pasaporte Fue Guardado Correctamente',
+                          type: 'success',
+                          confirmButtonText: 'Ok'
+                        }).then(function () {
+
+
+                      });
+                      }
+
+                    },
+                    error : function(err){
+                        response= JSON.stringify(err.responseText);
+                        $(document).find('#responseText').html(
+                          '<div class="alert alert-success" role="alert">'
+                          +response+
+                          '</div>'
+                        );
+                        setTimeout(function(){
+                            $(document).find('#responseText').html('');
+                        }, 3000);
+
+                    }
+                  });
+                }else{
+                  Swal.fire({
+                    title: 'Error!',
+                    text: 'Elija un archivo',
+                    type: 'error',
+                    confirmButtonText: 'Entendido'
+                  });
+                }
+            });
+        $(document).on('click','.btn-file-verano-formRegistrationThree',function (event){
+                  var $pdfInfo = $("#input-file-FormThree");
+                  var archivo = $pdfInfo[0].files;
+                    if(archivo.length > 0){
+                      var formData = new FormData();
+                      var pdfInfo = archivo[0];
+                      var lector = new FileReader();
+                      formData.append('formatoDeSolicitud', pdfInfo);
+                      formData.append('fkAspirante', $(document).find('#aspirante').val());
+
+                      _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+
+                      $.ajax({
+                        url:_url,
+                        method: 'POST',
+                        headers : {
+                          'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success : function(_response){
+                          response= JSON.stringify(_response);
+                          if(_response.status == "error"){
+
+                            tostada('error','Revise sus datos ');
+                              $.each(_response.validations, function(key,message){
+                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                               });
+                          }else{
+                            Swal.fire({
+                              title: 'Buen trabajo!',
+                              text: 'Su pasaporte Fue Guardado Correctamente',
+                              type: 'success',
+                              confirmButtonText: 'Ok'
+                            }).then(function () {
+
+
+                          });
+                          }
+
+                        },
+                        error : function(err){
+                            response= JSON.stringify(err.responseText);
+                            $(document).find('#responseText').html(
+                              '<div class="alert alert-success" role="alert">'
+                              +response+
+                              '</div>'
+                            );
+                            setTimeout(function(){
+                                $(document).find('#responseText').html('');
+                            }, 3000);
+
+                        }
+                      });
+                    }else{
+                      Swal.fire({
+                        title: 'Error!',
+                        text: 'Elija un archivo',
+                        type: 'error',
+                        confirmButtonText: 'Entendido'
+                      });
+                    }
+                });
+
+
+
   });
 
   </script>
+  <script type="text/javascript">
+    $(document).on('click','.btn-rechazar-verano',function (event){
+      var formData = new FormData();
 
+
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-animate btn-animate-side btn-success mb-20 ',
+          cancelButton: 'btn btn-animate btn-animate-side btn-danger mb-20'
+        },
+        buttonsStyling: true
+      });
+      swalWithBootstrapButtons.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: "El archivo sera rechazado!",
+        type: 'question',
+        showCancelButton: true,
+        cancelButtonColor: '#ff4c52',
+        cancelButtonText: '<span><i class="icon fa-remove " aria-hidden="true"></i>No!</span>',
+        confirmButtonText: '<span><i class="icon fa-check" aria-hidden="true"></i>Si!</span>'
+        }).then((result) => {
+          if (result.value) {
+            Swal.mixin({
+            input: 'text',
+            confirmButtonText: 'Next &rarr;',
+            showCancelButton: true,
+
+            progressSteps: ['1']
+            }).queue([
+            {
+              title: 'Razón',
+              text: '¿Por qué el documento fue rechazado?',
+              input: 'textarea',
+              inputPlaceholder: 'Type your message here...',
+              inputAttributes: {
+                'aria-label': 'Type your message here'
+              },
+            }
+            ]).then((result) => {
+            if (result.value) {
+              const answers = JSON.stringify(result.value[0])
+              console.log(result.value[0]);
+              _d = {
+                "status":"Rechazado",
+                "desc":result.value[0]
+              };
+              _url = _principalURL()+"Verano/api/veranoFile/"+ $(document).find('#aspirante').val();
+
+              $.ajax({
+                url:_url,
+                method: 'PUT',
+                headers : {
+                  'X-API-KEY':'ANGLOKEY'
+                },
+                data: _d,
+                success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+
+                    tostada('error','Revise sus datos ');
+                      $.each(_response.validations, function(key,message){
+                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                       });
+                  }else{
+                    Swal.fire({
+                      title: 'Buen trabajo!',
+                      text: 'El estatus del archivo se cambio correctamente',
+                      type: 'success',
+                      confirmButtonText: 'Ok'
+                    }).then(function () {
+                      _ident =  $(document).find('#aspirante').val();
+                      console.log(_ident);
+                     window.location.href = "<?php echo site_url('Dashboard/Verano/InfoAspirante/info/'); ?>"+_ident+"";
+                  });
+                  }
+
+                },
+                error : function(err){
+                    response= JSON.stringify(err.responseText);
+                    $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                      +response+
+                      '</div>'
+                    );
+                    setTimeout(function(){
+                        $(document).find('#responseText').html('');
+                    }, 3000);
+
+                }
+              });
+
+            }
+          });
+
+
+
+          } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+          ) {
+
+          }
+        })
+      // Swal.fire({
+      //   title: 'Esta seguro de realizar esta operacion?',
+      //   text: 'El archivo sera rechazado',
+      //   type: 'warning',
+      //   confirmButtonText: 'Ok'
+      //   }).then(function () {
+      //
+      //
+      //
+      // });
+
+    });
+    $(document).on('click','.btn-rechazar-veranoFormOne',function (event){
+      var formData = new FormData();
+
+
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-animate btn-animate-side btn-success mb-20 ',
+          cancelButton: 'btn btn-animate btn-animate-side btn-danger mb-20'
+        },
+        buttonsStyling: true
+      });
+      swalWithBootstrapButtons.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: "El archivo sera rechazado!",
+        type: 'question',
+        showCancelButton: true,
+        cancelButtonColor: '#ff4c52',
+        cancelButtonText: '<span><i class="icon fa-remove " aria-hidden="true"></i>No!</span>',
+        confirmButtonText: '<span><i class="icon fa-check" aria-hidden="true"></i>Si!</span>'
+        }).then((result) => {
+          if (result.value) {
+            Swal.mixin({
+            input: 'text',
+            confirmButtonText: 'Next &rarr;',
+            showCancelButton: true,
+
+            progressSteps: ['1']
+            }).queue([
+            {
+              title: 'Razón',
+              text: '¿Por qué el documento fue rechazado?',
+              input: 'textarea',
+              inputPlaceholder: 'Type your message here...',
+              inputAttributes: {
+                'aria-label': 'Type your message here'
+              },
+            }
+            ]).then((result) => {
+            if (result.value) {
+              const answers = JSON.stringify(result.value[0])
+              console.log(result.value[0]);
+              _d = {
+                "status":"Rechazado",
+                "desc":result.value[0]
+              };
+                _url = _principalURL()+"Verano/Ingles/api/inglesFormFile/id/"+ $(document).find('#aspirante').val()+"/idDocForm/"+$(document).find('#idDocFormOne').val();
+
+              $.ajax({
+                url:_url,
+                method: 'PUT',
+                headers : {
+                  'X-API-KEY':'ANGLOKEY'
+                },
+                data: _d,
+                success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+
+                    tostada('error','Revise sus datos ');
+                      $.each(_response.validations, function(key,message){
+                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                       });
+                  }else{
+                    Swal.fire({
+                      title: 'Buen trabajo!',
+                      text: 'El estatus del archivo se cambio correctamente',
+                      type: 'success',
+                      confirmButtonText: 'Ok'
+                    }).then(function () {
+                      _ident =  $(document).find('#aspirante').val();
+                      console.log(_ident);
+                     window.location.href = "<?php echo site_url('Dashboard/Verano/InfoAspirante/info/'); ?>"+_ident+"";
+                  });
+                  }
+
+                },
+                error : function(err){
+                    response= JSON.stringify(err.responseText);
+                    $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                      +response+
+                      '</div>'
+                    );
+                    setTimeout(function(){
+                        $(document).find('#responseText').html('');
+                    }, 3000);
+
+                }
+              });
+
+            }
+          });
+
+
+
+          } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+          ) {
+
+          }
+        })
+      // Swal.fire({
+      //   title: 'Esta seguro de realizar esta operacion?',
+      //   text: 'El archivo sera rechazado',
+      //   type: 'warning',
+      //   confirmButtonText: 'Ok'
+      //   }).then(function () {
+      //
+      //
+      //
+      // });
+
+    });
+    $(document).on('click','.btn-rechazar-veranoFormTwo',function (event){
+      var formData = new FormData();
+
+
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-animate btn-animate-side btn-success mb-20 ',
+          cancelButton: 'btn btn-animate btn-animate-side btn-danger mb-20'
+        },
+        buttonsStyling: true
+      });
+      swalWithBootstrapButtons.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: "El archivo sera rechazado!",
+        type: 'question',
+        showCancelButton: true,
+        cancelButtonColor: '#ff4c52',
+        cancelButtonText: '<span><i class="icon fa-remove " aria-hidden="true"></i>No!</span>',
+        confirmButtonText: '<span><i class="icon fa-check" aria-hidden="true"></i>Si!</span>'
+        }).then((result) => {
+          if (result.value) {
+            Swal.mixin({
+            input: 'text',
+            confirmButtonText: 'Next &rarr;',
+            showCancelButton: true,
+
+            progressSteps: ['1']
+            }).queue([
+            {
+              title: 'Razón',
+              text: '¿Por qué el documento fue rechazado?',
+              input: 'textarea',
+              inputPlaceholder: 'Type your message here...',
+              inputAttributes: {
+                'aria-label': 'Type your message here'
+              },
+            }
+            ]).then((result) => {
+            if (result.value) {
+              const answers = JSON.stringify(result.value[0])
+              console.log(result.value[0]);
+              _d = {
+                "status":"Rechazado",
+                "desc":result.value[0]
+              };
+
+              _url = _principalURL()+"Verano/Ingles/api/inglesFormFile/id/"+ $(document).find('#aspirante').val()+"/idDocForm/"+$(document).find('#idDocFormTwo').val()
+              $.ajax({
+                url:_url,
+                method: 'PUT',
+                headers : {
+                  'X-API-KEY':'ANGLOKEY'
+                },
+                data: _d,
+                success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+
+                    tostada('error','Revise sus datos ');
+                      $.each(_response.validations, function(key,message){
+                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                       });
+                  }else{
+                    Swal.fire({
+                      title: 'Buen trabajo!',
+                      text: 'El estatus del archivo se cambio correctamente',
+                      type: 'success',
+                      confirmButtonText: 'Ok'
+                    }).then(function () {
+                      _ident =  $(document).find('#aspirante').val();
+                      console.log(_ident);
+                     window.location.href = "<?php echo site_url('Dashboard/Verano/InfoAspirante/info/'); ?>"+_ident+"";
+                  });
+                  }
+
+                },
+                error : function(err){
+                    response= JSON.stringify(err.responseText);
+                    $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                      +response+
+                      '</div>'
+                    );
+                    setTimeout(function(){
+                        $(document).find('#responseText').html('');
+                    }, 3000);
+
+                }
+              });
+
+            }
+          });
+
+
+
+          } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+          ) {
+
+          }
+        })
+      // Swal.fire({
+      //   title: 'Esta seguro de realizar esta operacion?',
+      //   text: 'El archivo sera rechazado',
+      //   type: 'warning',
+      //   confirmButtonText: 'Ok'
+      //   }).then(function () {
+      //
+      //
+      //
+      // });
+
+    });
+    $(document).on('click','.btn-rechazar-veranoFormThree',function (event){
+      var formData = new FormData();
+
+
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-animate btn-animate-side btn-success mb-20 ',
+          cancelButton: 'btn btn-animate btn-animate-side btn-danger mb-20'
+        },
+        buttonsStyling: true
+      });
+      swalWithBootstrapButtons.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: "El archivo sera rechazado!",
+        type: 'question',
+        showCancelButton: true,
+        cancelButtonColor: '#ff4c52',
+        cancelButtonText: '<span><i class="icon fa-remove " aria-hidden="true"></i>No!</span>',
+        confirmButtonText: '<span><i class="icon fa-check" aria-hidden="true"></i>Si!</span>'
+        }).then((result) => {
+          if (result.value) {
+            Swal.mixin({
+            input: 'text',
+            confirmButtonText: 'Next &rarr;',
+            showCancelButton: true,
+
+            progressSteps: ['1']
+            }).queue([
+            {
+              title: 'Razón',
+              text: '¿Por qué el documento fue rechazado?',
+              input: 'textarea',
+              inputPlaceholder: 'Type your message here...',
+              inputAttributes: {
+                'aria-label': 'Type your message here'
+              },
+            }
+            ]).then((result) => {
+            if (result.value) {
+              const answers = JSON.stringify(result.value[0])
+              console.log(result.value[0]);
+              _d = {
+                "status":"Rechazado",
+                "desc":result.value[0]
+              };
+
+              _url = _principalURL()+"Verano/Ingles/api/inglesFormFile/id/"+ $(document).find('#aspirante').val()+"/idDocForm/"+$(document).find('#idDocFormThree').val()
+              $.ajax({
+                url:_url,
+                method: 'PUT',
+                headers : {
+                  'X-API-KEY':'ANGLOKEY'
+                },
+                data: _d,
+                success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+
+                    tostada('error','Revise sus datos ');
+                      $.each(_response.validations, function(key,message){
+                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                       });
+                  }else{
+                    Swal.fire({
+                      title: 'Buen trabajo!',
+                      text: 'El estatus del archivo se cambio correctamente',
+                      type: 'success',
+                      confirmButtonText: 'Ok'
+                    }).then(function () {
+                      _ident =  $(document).find('#aspirante').val();
+                      console.log(_ident);
+                     window.location.href = "<?php echo site_url('Dashboard/Verano/InfoAspirante/info/'); ?>"+_ident+"";
+                  });
+                  }
+
+                },
+                error : function(err){
+                    response= JSON.stringify(err.responseText);
+                    $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                      +response+
+                      '</div>'
+                    );
+                    setTimeout(function(){
+                        $(document).find('#responseText').html('');
+                    }, 3000);
+
+                }
+              });
+
+            }
+          });
+
+
+
+          } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+          ) {
+
+          }
+        })
+      // Swal.fire({
+      //   title: 'Esta seguro de realizar esta operacion?',
+      //   text: 'El archivo sera rechazado',
+      //   type: 'warning',
+      //   confirmButtonText: 'Ok'
+      //   }).then(function () {
+      //
+      //
+      //
+      // });
+
+    });
+    $(document).on('click','.btn-aceptar-verano',function (event){
+      var formData = new FormData();
+      formData.append('status', 'Aceptado');
+      _s = {
+        "status":"Aceptado"
+      };
+      Swal.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: 'El archivo sera aceptado',
+        type: 'warning',
+        confirmButtonText: 'Ok'
+        }).then(function () {
+
+
+          _url = _principalURL()+"Verano/api/veranoFile/"+ $(document).find('#aspirante').val();
+
+          $.ajax({
+            url:_url,
+            method: 'PUT',
+            headers : {
+              'X-API-KEY':'ANGLOKEY'
+            },
+            data: _s,
+            success : function(_response){
+              response= JSON.stringify(_response);
+              if(_response.status == "error"){
+
+                tostada('error','Revise sus datos ');
+                  $.each(_response.validations, function(key,message){
+                    $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                   });
+              }else{
+                Swal.fire({
+                  title: 'Buen trabajo!',
+                  text: 'El estatus del archivo se cambio correctamente',
+                  type: 'success',
+                  confirmButtonText: 'Ok'
+                }).then(function () {
+                  _ident =  $(document).find('#aspirante').val();
+                  console.log(_ident);
+                 window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+              });
+              }
+
+            },
+            error : function(err){
+                response= JSON.stringify(err.responseText);
+                $(document).find('#responseText').html(
+                  '<div class="alert alert-success" role="alert">'
+                  +response+
+                  '</div>'
+                );
+                setTimeout(function(){
+                    $(document).find('#responseText').html('');
+                }, 3000);
+
+            }
+          });
+
+      });
+
+    });
+
+    $(document).on('click','.btn-aceptar-veranoFormOne',function (event){
+      var formData = new FormData();
+      formData.append('status', 'Aceptado');
+      _s = {
+        "status":"Aceptado"
+      };
+      console.log($(document).find('#aspirante').val());
+      Swal.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: 'El archivo sera aceptado',
+        type: 'warning',
+        confirmButtonText: 'Ok'
+        }).then(function () {
+
+
+          _url = _principalURL()+"Verano/Ingles/api/inglesFormFile/id/"+ $(document).find('#aspirante').val()+"/idDocForm/"+$(document).find('#idDocFormOne').val();
+
+          $.ajax({
+            url:_url,
+            method: 'PUT',
+            headers : {
+              'X-API-KEY':'ANGLOKEY'
+            },
+            data: _s,
+            success : function(_response){
+              response= JSON.stringify(_response);
+              if(_response.status == "error"){
+
+                tostada('error','Revise sus datos ');
+                  $.each(_response.validations, function(key,message){
+                    $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                   });
+              }else{
+                Swal.fire({
+                  title: 'Buen trabajo!',
+                  text: 'El estatus del archivo se cambio correctamente',
+                  type: 'success',
+                  confirmButtonText: 'Ok'
+                }).then(function () {
+                  _ident =  $(document).find('#aspirante').val();
+                  console.log(_ident);
+                 window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+              });
+              }
+
+            },
+            error : function(err){
+                response= JSON.stringify(err.responseText);
+                $(document).find('#responseText').html(
+                  '<div class="alert alert-success" role="alert">'
+                  +response+
+                  '</div>'
+                );
+                setTimeout(function(){
+                    $(document).find('#responseText').html('');
+                }, 3000);
+
+            }
+          });
+
+      });
+
+    });
+    $(document).on('click','.btn-aceptar-veranoFormTwo',function (event){
+      var formData = new FormData();
+      formData.append('status', 'Aceptado');
+      _s = {
+        "status":"Aceptado"
+      };
+      Swal.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: 'El archivo sera aceptado',
+        type: 'warning',
+        confirmButtonText: 'Ok'
+        }).then(function () {
+
+
+          _url = _principalURL()+"Verano/Ingles/api/inglesFormFile/id/"+ $(document).find('#aspirante').val()+"/idDocForm/"+$(document).find('#idDocFormTwo').val();
+
+          $.ajax({
+            url:_url,
+            method: 'PUT',
+            headers : {
+              'X-API-KEY':'ANGLOKEY'
+            },
+            data: _s,
+            success : function(_response){
+              response= JSON.stringify(_response);
+              if(_response.status == "error"){
+
+                tostada('error','Revise sus datos ');
+                  $.each(_response.validations, function(key,message){
+                    $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                   });
+              }else{
+                Swal.fire({
+                  title: 'Buen trabajo!',
+                  text: 'El estatus del archivo se cambio correctamente',
+                  type: 'success',
+                  confirmButtonText: 'Ok'
+                }).then(function () {
+                  _ident =  $(document).find('#aspirante').val();
+                  console.log(_ident);
+                 window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+              });
+              }
+
+            },
+            error : function(err){
+                response= JSON.stringify(err.responseText);
+                $(document).find('#responseText').html(
+                  '<div class="alert alert-success" role="alert">'
+                  +response+
+                  '</div>'
+                );
+                setTimeout(function(){
+                    $(document).find('#responseText').html('');
+                }, 3000);
+
+            }
+          });
+
+      });
+
+    });
+
+    $(document).on('click','.btn-subir-veranoFormOne',function (event){
+      // alert($(document).find('#NameLastName').val());
+      var NameLastName = $(document).find('#NameLastName').val();
+      var data = new TextEncoder("utf-8").encode("Test");
+      // var $pdfInfo = $("#input-file-now");
+      var $pdfInfo = $("#input-file-now");
+      var archivo = $pdfInfo[0].files;
+          var formData = new FormData();
+          var pdfInfo = archivo[0];
+          var lector = new FileReader();
+          formData.append('FormDeSolicitud', pdfInfo);
+
+      $.ajax({
+          url: 'https://content.dropboxapi.com/2/files/upload',
+          type: 'post',
+          data: pdfInfo,
+          processData: false,
+          contentType: 'application/octet-stream',
+          headers: {
+              "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAYrIV8ThmzpE15vqajq8qb4zillW-KS5vjEP8aMw_hA3S",
+              "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/FormDeSolicitud.pdf","mode": "add","autorename": true,"mute": false}'
+          },
+          success: function (data) {
+              console.log(data);
+          },
+          error: function (data) {
+              console.error(data);
+          }
+      });
+      // var formData = new FormData();
+      //
+      //
+      // const swalWithBootstrapButtons = Swal.mixin({
+      //   customClass: {
+      //     confirmButton: 'btn btn-animate btn-animate-side btn-success mb-20 ',
+      //     cancelButton: 'btn btn-animate btn-animate-side btn-danger mb-20'
+      //   },
+      //   buttonsStyling: true
+      // });
+      // swalWithBootstrapButtons.fire({
+      //   title: 'Esta seguro de realizar esta operacion?',
+      //   text: "El archivo sera rechazado!",
+      //   type: 'question',
+      //   showCancelButton: true,
+      //   cancelButtonColor: '#ff4c52',
+      //   cancelButtonText: '<span><i class="icon fa-remove " aria-hidden="true"></i>No!</span>',
+      //   confirmButtonText: '<span><i class="icon fa-check" aria-hidden="true"></i>Si!</span>'
+      //   }).then((result) => {
+      //     if (result.value) {
+      //       Swal.mixin({
+      //       input: 'text',
+      //       confirmButtonText: 'Next &rarr;',
+      //       showCancelButton: true,
+      //
+      //       progressSteps: ['1']
+      //       }).queue([
+      //       {
+      //         title: 'Razón',
+      //         text: '¿Por qué el documento fue rechazado?',
+      //         input: 'textarea',
+      //         inputPlaceholder: 'Type your message here...',
+      //         inputAttributes: {
+      //           'aria-label': 'Type your message here'
+      //         },
+      //       }
+      //       ]).then((result) => {
+      //       if (result.value) {
+      //         const answers = JSON.stringify(result.value[0])
+      //         console.log(result.value[0]);
+      //         _d = {
+      //           "status":"Rechazado",
+      //           "desc":result.value[0]
+      //         };
+      //           _url = _principalURL()+"Verano/Ingles/api/inglesFormFile/id/"+ $(document).find('#aspirante').val()+"/idDocForm/"+$(document).find('#idDocFormOne').val();
+      //
+      //         $.ajax({
+      //           url:_url,
+      //           method: 'PUT',
+      //           headers : {
+      //             'X-API-KEY':'ANGLOKEY'
+      //           },
+      //           data: _d,
+      //           success : function(_response){
+      //             response= JSON.stringify(_response);
+      //             if(_response.status == "error"){
+      //
+      //               tostada('error','Revise sus datos ');
+      //                 $.each(_response.validations, function(key,message){
+      //                   $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+      //                  });
+      //             }else{
+      //               Swal.fire({
+      //                 title: 'Buen trabajo!',
+      //                 text: 'El estatus del archivo se cambio correctamente',
+      //                 type: 'success',
+      //                 confirmButtonText: 'Ok'
+      //               }).then(function () {
+      //                 _ident =  $(document).find('#aspirante').val();
+      //                 console.log(_ident);
+      //                window.location.href = "<?php echo site_url('Dashboard/Verano/InfoAspirante/info/'); ?>"+_ident+"";
+      //             });
+      //             }
+      //
+      //           },
+      //           error : function(err){
+      //               response= JSON.stringify(err.responseText);
+      //               $(document).find('#responseText').html(
+      //                 '<div class="alert alert-success" role="alert">'
+      //                 +response+
+      //                 '</div>'
+      //               );
+      //               setTimeout(function(){
+      //                   $(document).find('#responseText').html('');
+      //               }, 3000);
+      //
+      //           }
+      //         });
+      //
+      //       }
+      //     });
+      //
+      //
+      //
+      //     } else if (
+      //       /* Read more about handling dismissals below */
+      //       result.dismiss === Swal.DismissReason.cancel
+      //     ) {
+      //
+      //     }
+      //   })
+
+
+
+      // Swal.fire({
+      //   title: 'Esta seguro de realizar esta operacion?',
+      //   text: 'El archivo sera rechazado',
+      //   type: 'warning',
+      //   confirmButtonText: 'Ok'
+      //   }).then(function () {
+      //
+      //
+      //
+      // });
+
+    });
+
+    $(document).on('click','.btn-aceptar-veranoFormThree',function (event){
+      var formData = new FormData();
+      formData.append('status', 'Aceptado');
+      _s = {
+        "status":"Aceptado"
+      };
+      Swal.fire({
+        title: 'Esta seguro de realizar esta operacion?',
+        text: 'El archivo sera aceptadoo',
+        type: 'warning',
+        confirmButtonText: 'Ok'
+        }).then(function () {
+
+
+          _url = _principalURL()+"Verano/Ingles/api/inglesFormFile/id/"+ $(document).find('#aspirante').val()+"/idDocForm/"+$(document).find('#idDocFormThree').val();
+
+          $.ajax({
+            url:_url,
+            method: 'PUT',
+            headers : {
+              'X-API-KEY':'ANGLOKEY'
+            },
+            data: _s,
+            success : function(_response){
+              response= JSON.stringify(_response);
+              if(_response.status == "error"){
+
+                tostada('error','Revise sus datos ');
+                  $.each(_response.validations, function(key,message){
+                    $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                   });
+              }else{
+                Swal.fire({
+                  title: 'Buen trabajo!',
+                  text: 'El estatus del archivo se cambio correctamente',
+                  type: 'success',
+                  confirmButtonText: 'Ok'
+                }).then(function () {
+                  _ident =  $(document).find('#aspirante').val();
+                  console.log(_ident);
+                 window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+              });
+              }
+
+            },
+            error : function(err){
+                response= JSON.stringify(err.responseText);
+                $(document).find('#responseText').html(
+                  '<div class="alert alert-success" role="alert">'
+                  +response+
+                  '</div>'
+                );
+                setTimeout(function(){
+                    $(document).find('#responseText').html('');
+                }, 3000);
+
+            }
+          });
+
+      });
+
+    });
+  </script>
+<script type="text/javascript">
+  $(document).on('click','.btn-rechazar',function (event){
+    var formData = new FormData();
+
+
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: 'btn btn-animate btn-animate-side btn-success mb-20 ',
+        cancelButton: 'btn btn-animate btn-animate-side btn-danger mb-20'
+      },
+      buttonsStyling: true
+    });
+    swalWithBootstrapButtons.fire({
+      title: 'Esta seguro de realizar esta operacion?',
+      text: "El archivo sera rechazado!",
+      type: 'question',
+      showCancelButton: true,
+      cancelButtonColor: '#ff4c52',
+      cancelButtonText: '<span><i class="icon fa-remove " aria-hidden="true"></i>No!</span>',
+      confirmButtonText: '<span><i class="icon fa-check" aria-hidden="true"></i>Si!</span>'
+      }).then((result) => {
+        if (result.value) {
+          Swal.mixin({
+          input: 'text',
+          confirmButtonText: 'Next &rarr;',
+          showCancelButton: true,
+
+          progressSteps: ['1']
+          }).queue([
+          {
+            title: 'Razón',
+            text: '¿Por qué el documento fue rechazado?',
+            input: 'textarea',
+            inputPlaceholder: 'Type your message here...',
+            inputAttributes: {
+              'aria-label': 'Type your message here'
+            },
+          }
+          ]).then((result) => {
+          if (result.value) {
+            const answers = JSON.stringify(result.value[0])
+            console.log(result.value[0]);
+            _d = {
+              "status":"Rechazado",
+              "desc":result.value[0]
+            };
+            _url = _principalURL()+"Ingles/api/inglesFile/"+ $(document).find('#aspirante').val();
+
+            $.ajax({
+              url:_url,
+              method: 'PUT',
+              headers : {
+                'X-API-KEY':'ANGLOKEY'
+              },
+              data: _d,
+              success : function(_response){
+                response= JSON.stringify(_response);
+                if(_response.status == "error"){
+
+                  tostada('error','Revise sus datos ');
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                     });
+                }else{
+                  Swal.fire({
+                    title: 'Buen trabajo!',
+                    text: 'El estatus del archivo se cambio correctamente',
+                    type: 'success',
+                    confirmButtonText: 'Ok'
+                  }).then(function () {
+                    _ident =  $(document).find('#aspirante').val();
+                    console.log(_ident);
+                   window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+                });
+                }
+
+              },
+              error : function(err){
+                  response= JSON.stringify(err.responseText);
+                  $(document).find('#responseText').html(
+                    '<div class="alert alert-success" role="alert">'
+                    +response+
+                    '</div>'
+                  );
+                  setTimeout(function(){
+                      $(document).find('#responseText').html('');
+                  }, 3000);
+
+              }
+            });
+
+          }
+        });
+
+
+
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+
+        }
+      })
+    // Swal.fire({
+    //   title: 'Esta seguro de realizar esta operacion?',
+    //   text: 'El archivo sera rechazado',
+    //   type: 'warning',
+    //   confirmButtonText: 'Ok'
+    //   }).then(function () {
+    //
+    //
+    //
+    // });
+
+  });
+  $(document).on('click','.btn-aceptar',function (event){
+    var formData = new FormData();
+    formData.append('status', 'Aceptado');
+    _s = {
+      "status":"Aceptado"
+    };
+    Swal.fire({
+      title: 'Esta seguro de realizar esta operacion?',
+      text: 'El archivo sera aceptado',
+      type: 'warning',
+      confirmButtonText: 'Ok'
+      }).then(function () {
+
+
+        _url = _principalURL()+"Ingles/api/inglesFile/"+ $(document).find('#aspirante').val();
+
+        $.ajax({
+          url:_url,
+          method: 'PUT',
+          headers : {
+            'X-API-KEY':'ANGLOKEY'
+          },
+          data: _s,
+          success : function(_response){
+            response= JSON.stringify(_response);
+            if(_response.status == "error"){
+
+              tostada('error','Revise sus datos ');
+                $.each(_response.validations, function(key,message){
+                  $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                 });
+            }else{
+              Swal.fire({
+                title: 'Buen trabajo!',
+                text: 'El estatus del archivo se cambio correctamente',
+                type: 'success',
+                confirmButtonText: 'Ok'
+              }).then(function () {
+                _ident =  $(document).find('#aspirante').val();
+                console.log(_ident);
+               window.location.href = "<?php echo site_url('Dashboard/Ingles/AspiranteInfo/info/'); ?>"+_ident+"";
+            });
+            }
+
+          },
+          error : function(err){
+              response= JSON.stringify(err.responseText);
+              $(document).find('#responseText').html(
+                '<div class="alert alert-success" role="alert">'
+                +response+
+                '</div>'
+              );
+              setTimeout(function(){
+                  $(document).find('#responseText').html('');
+              }, 3000);
+
+          }
+        });
+
+    });
+
+  });
+</script>
 <script>
     $(document).ready(function()
     {

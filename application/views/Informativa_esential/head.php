@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/vendor/flag-icon-css/flag-icon.min599c.css?v4.0.2');?>">
      <!-- event timeline -->
      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-
+     <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/fonts/font-awesome/font-awesome.min599c.css?v4.0.2');?>">
     <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/button_animation.css');?>" />
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" />

@@ -49,7 +49,7 @@
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
-                  
+
                   <li class="site-menu-item">
                     <a href="Permisos">
                       <span class="site-menu-title">Agentes</span>
@@ -99,7 +99,7 @@
                 <a href="Eventos">
                   <i class="site-menu-icon fas fa-calendar" aria-hidden="true"></i>
                   <span class="site-menu-title">Eventos</span>
-                  
+
                 </a>
               </li>
             <?php } ?>
@@ -108,7 +108,7 @@
                 <a href="Escuelas">
                   <i class="site-menu-icon fas fa-graduation-cap" aria-hidden="true"></i>
                   <span class="site-menu-title">Oferta Educativa</span>
-                  
+
                 </a>
               </li>
             <?php } ?>
@@ -136,6 +136,68 @@
                 </a>
               </li>
             <?php } ?>
+
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon icon fa-university" aria-hidden="true" style="font-size: 20px;"></i>
+                <span class="site-menu-title">Ingles</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a href="StatusCero">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 0</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a href="StatusUno">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 1</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a href="StatusDos">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon icon fa-university" aria-hidden="true" style="font-size: 20px;"></i>
+                <span class="site-menu-title">Verano</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a href="StatusCero">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 0</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a href="StatusUno">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 1</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a href="StatusDos">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
             <li class="site-menu-item">
                 <a href="<?=base_url('Login/Login/logout')?>">
                   <i class="site-menu-icon icon wb-power" aria-hidden="true" style="font-size: 20px;"></i>
@@ -147,5 +209,3 @@
       </div>
     </div>
   </div>
-
-  

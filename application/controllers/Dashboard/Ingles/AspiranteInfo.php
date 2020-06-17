@@ -18,8 +18,11 @@ class AspiranteInfo extends MY_RootController {
 	}
 	public function info($idAspirante)
 	{
+		$idAspirante = base64_decode($idAspirante);
     $responseEnglish = $this->_callApiRest('Ingles/api/englishnewStudents/id/'.$idAspirante,null,"GET",null);
 		$responseInstSelect = $this->_callApiRest('Ingles/api/englishnewInstselected/id/'.$idAspirante,null,"GET",null);
+		$recomendation = $this->_callApiRest('Ingles/api/recomendtionPassport/id/'.$idAspirante,null,"GET",null);
+
 		$fkInstOne =$responseInstSelect['data']['fkInstitutoOne'];
 		$fkInstTwo =$responseInstSelect['data']['fkInstitutoTwo'];
 		$fkInstThree =$responseInstSelect['data']['fkInstitutoThree'];
@@ -29,17 +32,19 @@ class AspiranteInfo extends MY_RootController {
 		$responseInstThree = $this->_callApiRest('Ingles/api/englishnewInst/id/'.$fkInstThree,null,"GET",null);
 
 		$responseinfoSteps = $this->_callApiRest('Ingles/api/englishinfoSteps/id/'.$idAspirante,null,"GET",null);
-
-		$responseFile = $this->_callApiRest('Verano/api/fileinfo/id/'.$idAspirante,null,"GET",null);
-
+		$recomendation = '';
+		$responseFile = $this->_callApiRest('Ingles/api/fileinfo/id/'.$idAspirante,null,"GET",null);
+		$description = @$recomendation['data']['descripcion'];
 			$defaultfile = '';
 			$fileexists = '';
 			$enable = '';
+			$progreso = '';
 			if($responseFile['data'] == NULL){
 				$defaultfile = '';
 				$fileexists = FALSE;
 				$enable= '';
 				$statusDoc= "SinDocumento";
+				$progreso = '20%';
 			}else{
 				$defaultfile = $responseFile['data']['urlDocumento'];
 				$fileexists = TRUE;
@@ -47,27 +52,58 @@ class AspiranteInfo extends MY_RootController {
 				$statusDoc= $responseFile['data']['statusDocumento'];
 			}
 
+		$stepOne = '';
+		$stepTwo = '';
+		$stepThree = '';
 
 		if($statusDoc == "Revision"){
 			echo("Revicion");
+			$infoDoc = 'El documento esta en revisión';
+			$stepOne = 'current';
+			$stepTwo = 'current';
+			$progreso = '50%';
 		}else if($statusDoc == "Rechazado"){
+
 			echo("Rechazado Sorry");
 			$defaultfile = '';
-			$fileexists = FALSE;
+			$fileexists = True;
 			$enable= "disabled='disabled'";
 			$infoDoc = 'El documento fue rechazado';
+			$defaultfile = $responseFile['data']['urlDocumento'];
+			$stepOne = 'current';
+			$stepTwo = 'current';
+			$progreso = '20%';
+			$recomendationOne = $this->_callApiRest('Ingles/api/recomendtion/id/'.$identAspirante,null,"GET",null);
 		}else if($statusDoc == "Aceptado"){
-				echo("Aceptado");
+			$infoDoc = 'El documento fue aceptado';
+			$fileexists = True;
+			$enable= "disabled='disabled'";
+			$defaultfile = $responseFile['data']['urlDocumento'];
+			$stepOne = 'current';
+			$stepTwo = 'current';
+			$stepThree = 'current';
+			$progreso = '100%';
 		}else if($statusDoc =="SinDocumento"){
-			echo("SIn doc");
+			$infoDoc = 'Sin documento';
+			$stepOne = 'current';
+			$enable= "disabled='disabled'";
+			$progreso = '20%';
+
 		}
 		$data['defaultfile'] =$defaultfile;
 		$data['fileexists'] =$fileexists;
 		$data['fileInfo'] =$responseFile;
 		$data['enable'] =$enable;
 		$data['infoDoc'] =$infoDoc;
+		$data['statusDoc'] =$statusDoc;
+		$data['description'] =$description;
 		$data['fileInfo'] =$responseFile;
     $data['idAspirante'] = $idAspirante;
+		$data['stepOne'] =$stepOne;
+		$data['stepTwo'] =$stepTwo;
+		$data['stepThree'] =$stepThree;
+			$data['progreso'] =$progreso;
+
     $data['aspirante'] =$responseEnglish['data'];
 		$data['instOne'] =$responseInstOne['data'];
 		$data['instTwo'] =$responseInstTwo['data'];

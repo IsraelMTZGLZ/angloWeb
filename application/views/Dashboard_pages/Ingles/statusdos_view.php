@@ -2,40 +2,40 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/files.css');?>"/>
-  <style media="screen">
-  @media screen and (max-width: 600px) {
-       table {
-           width:100%;
-       }
-       thead {
-           display: none;
-       }
-       tr:nth-of-type(2n) {
-           background-color: inherit;
-       }
-       tr td:first-child {
-           background: #f0f0f0;
-           font-weight:bold;
-           font-size:1.3em;
-       }
-       tbody td {
-           display: block;
-           text-align:center;
-       }
-       tbody td:before {
-           content: attr(data-th);
-           display: block;
-           text-align:center;
-       }
-  }
+<style media="screen">
+@media screen and (max-width: 600px) {
+     table {
+         width:100%;
+     }
+     thead {
+         display: none;
+     }
+     tr:nth-of-type(2n) {
+         background-color: inherit;
+     }
+     tr td:first-child {
+         background: #f0f0f0;
+         font-weight:bold;
+         font-size:1.3em;
+     }
+     tbody td {
+         display: block;
+         text-align:center;
+     }
+     tbody td:before {
+         content: attr(data-th);
+         display: block;
+         text-align:center;
+     }
+}
 
-  </style>
+</style>
 
 
   <div class="page">
     <div class="page-header">
-      <h1 align="center" class="page-title">Escuela de Verano</h1>
-      <h1 class="page-title">Lista de estudiantes nuevos</h1>
+      <h1 align="center" class="page-title">Escuela de Inglés</h1>
+      <h1 class="page-title">Lista de estudiantes Status 2</h1>
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
@@ -56,7 +56,7 @@
         <div class="panel-body">
 
           <table class="table table-bordered table-hover table-striped" cellspacing="0" id="example">
-            <thead align="center">
+            <thead >
               <tr>
                 <th>Nombre</th>
                 <th>Apellidos</th>
@@ -74,6 +74,8 @@
         </div>
       </div>
       <!-- End Panel Table Add Row -->
+
+
 
 
 
@@ -160,12 +162,16 @@
 <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
 <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 <script>
 $(function(){
-    _url = _principalURL()+"/Verano/api/veranonewStudents";
+    _url = _principalURL()+"/Ingles/api/aspiranteDos";
 
     var _html ="";
     console.log("entra");
+
+
+
 
       $.ajax({
   			url:_url,
@@ -179,6 +185,7 @@ $(function(){
 
   				var _html ="";
   				for (var i = 0; i < response.data.length; i++) {
+            var hash=btoa(response.data[i].idAspirante);
   					_html +="<tr>";
 
   					        _html +="<td>"+response.data[i].firstNamePersona+"</td>";
@@ -187,7 +194,7 @@ $(function(){
   			    				_html +="<td>"+response.data[i].emailUsuario+"</td>";
   			    				_html +="<td>"+response.data[i].telefonoAspirante+"</td>";
   			    				_html +="<td>"+response.data[i].ciudadAspirante+"</td>";
-  			    				_html +="<td> <a href='<?=base_url('Dashboard/Verano/InfoAspirante/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' title='Information'> <i class='icon wb-plus'></i>Más Información</a>  </td>";
+  			    				_html +="<td> <a href='<?=base_url('Dashboard/Ingles/AspiranteInfo/info/')?>"+hash+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' > <i class='icon wb-plus'></i>Más Información</a> <button type='button' class='edit-control btn btn-warning btn-xs'  data-toggle='tooltip'><i class='icon fa-envelope'></i></button> </td>";
   			    				_html +="</tr>";
   				}
 
@@ -198,8 +205,11 @@ $(function(){
                 'copy', 'csv','excel', 'pdf', 'print'
             ]
           });
+
+
   				var table_admin = response.data;
           console.log(table_admin);
+
 
 
 
@@ -223,35 +233,7 @@ $(function(){
   			}
   		});
 
-      // var table=$(document).find('#example').DataTable({
-      //     dom: 'Bfrtip',
-      //     buttons: [
-      //         'copy', 'csv', 'excel', 'pdf', 'print'
-      //     ],
-      //   });
-      // console.log(table);
 
-    // _url = _principalURL()+"Preparatoria/api/preparatoria/";
-    // var table=$(document).find('#example').DataTable({
-    //   dom: 'Bfrtip',
-    //   buttons: [
-    //     'copy', 'csv', 'excel', 'pdf', 'print'
-    //   ],
-    //   ajax: {
-    //     url : _url,
-    //     method : 'get',
-    //     dataSrc : 'data',
-    //     headers : {
-    //       'X-API-KEY':'ANGLOKEY'
-    //     }
-    //   },
-    //   columns : [
-    //     {data: 'nombre_Preparatoria'},
-    //     {data: 'fundacion_Preparatoria'},
-    //     {data: 'status_Preparatoria'},
-    //     {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
-    //     ]
-    //   });
 
 
 

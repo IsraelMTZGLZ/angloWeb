@@ -73,7 +73,7 @@ class Login extends MY_RootController {
 						//ha llenado toda su informacion
 						redirect('Dashboard/HomeAgente');
 					}
-				
+
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Admin") {
 					redirect('Dashboard/Home');
 				}
@@ -171,8 +171,8 @@ class Login extends MY_RootController {
 				if ($response->data->statusU=="Activo") {
 					//usuario activo
 					//echo var_dump($response->data);
-				
-					
+
+
 					if ($response->data->typeUsuario) {
 						$this->session->set_userdata('user_sess',$response->data);
 						redirect('Login');

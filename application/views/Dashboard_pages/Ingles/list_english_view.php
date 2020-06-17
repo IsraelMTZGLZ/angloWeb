@@ -2,7 +2,34 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Informativa/css/files.css');?>"/>
+<style media="screen">
+@media screen and (max-width: 600px) {
+     table {
+         width:100%;
+     }
+     thead {
+         display: none;
+     }
+     tr:nth-of-type(2n) {
+         background-color: inherit;
+     }
+     tr td:first-child {
+         background: #f0f0f0;
+         font-weight:bold;
+         font-size:1.3em;
+     }
+     tbody td {
+         display: block;
+         text-align:center;
+     }
+     tbody td:before {
+         content: attr(data-th);
+         display: block;
+         text-align:center;
+     }
+}
 
+</style>
 
 
   <div class="page">
@@ -29,7 +56,7 @@
         <div class="panel-body">
 
           <table class="table table-bordered table-hover table-striped" cellspacing="0" id="example">
-            <thead align="center">
+            <thead >
               <tr>
                 <th>Nombre</th>
                 <th>Apellidos</th>
@@ -47,21 +74,7 @@
         </div>
       </div>
       <!-- End Panel Table Add Row -->
-      <h2>Contacto</h2>
-      <form action="<?=base_url("Dashboard/Ingles/ListEnglish/enviar")?>" method="post">
-          Correo electronico: <br/>
-          <input type="email" name="email" /><br/>
-          Asunto: <br/>
-          <input type="text" name="asunto" /><br/>
-          Mensaje:<br/>
-          <textarea name="mensaje"></textarea><br/>
-          <input type="submit" name="submit" value="Enviar"/>
-      </form>
-      <?php
-      if($this->session->flashdata('envio')){
-          echo $this->session->flashdata('envio');
-      }
-      ?>
+
 
 
 
@@ -149,12 +162,16 @@
 <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
 <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 <script>
 $(function(){
     _url = _principalURL()+"/Ingles/api/englishnewStudents";
 
     var _html ="";
     console.log("entra");
+
+
+
 
       $.ajax({
   			url:_url,
@@ -187,8 +204,11 @@ $(function(){
                 'copy', 'csv','excel', 'pdf', 'print'
             ]
           });
+
+
   				var table_admin = response.data;
           console.log(table_admin);
+
 
 
 

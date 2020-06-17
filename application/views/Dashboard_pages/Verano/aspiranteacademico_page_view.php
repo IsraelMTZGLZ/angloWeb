@@ -78,7 +78,7 @@
   <script>
     Breakpoints();
   </script>
-<style media="screen">
+  <style media="screen">
   :root {
     --border-radius-size: 14px;
     --barbarian: #EC9B3B;
@@ -480,7 +480,7 @@
   <input type="hidden" name="aspirante" id="aspirante" value="<?=$user->aspirante;?>">
   <div class="page">
     <div class="page-header">
-      <h1 align="center" class="page-title"> <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></h1>
+      <h1 align="center" class="page-title">Bienvenido <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></h1>
       <h1 class="page-title"></h1>
 
       <ol class="breadcrumb">
@@ -581,7 +581,7 @@
                 <div class="example example-buttons">
                   <?php if(@$fileexists == FALSE) { ;?>
                   <div class="float-left">
-                    <button type="button" class="btn btn-primary ladda-button btn-file" data-style="expand-left"
+                    <button type="button" class="btn btn-primary ladda-button btn-file-verano" data-style="expand-left"
                       data-plugin="ladda" data-type="progress" id="file">
                       <span class="ladda-label"><i class="icon wb-upload mr-10" aria-hidden="true"></i>Subir</span>
                     </button>
@@ -589,7 +589,7 @@
                   <?php } ;?>
                   <?php if(@$fileexists == TRUE and $fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
                   <div class="float-left">
-                    <button type="button" class="btn btn-warning ladda-button btn-edit-file" data-style="expand-left"
+                    <button type="button" class="btn btn-warning ladda-button btn-edit-file-verano" data-style="expand-left"
                       data-plugin="ladda" data-type="progress" id="file">
                       <span class="ladda-label"><i class="icon wb-upload " aria-hidden="true"></i>Volver a subir</span>
                     </button>
@@ -603,6 +603,249 @@
                       <div class="pearl <?=@$stepOne;?> col-4">
                         <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
                         <span class="pearl-title">Cargar Pasaporte</span>
+                      </div>
+                      <div class="pearl <?=@$stepTwo;?> col-4">
+                        <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                        <span class="pearl-title">Revisión</span>
+
+                        <?php if(@$fileInfo['data']['statusDocumento']== 'Revision') { ;?>
+                        <div class="reviciones example example-popover" align="center">
+                          <button type="button" class="btn btn-info sr-only">
+                            Documento en revisión
+                          </button>
+                          <div class="popover bs-popover-bottom popover-info ">
+                            <div class="arrow"></div>
+                            <h3 class="popover-header">Documento en revisión</h3>
+                            <div class="popover-body">
+                              <p><b><?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> Su documento está siendo revisado por el equipo de <b>Anglo Latino Education Partnership</b>, gracias!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <?php } ;?>
+                        <?php if(@$fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                        <div class="reviciones example example-popover" align="center">
+
+                          <div class="popover bs-popover-bottom popover-warning col-12">
+                            <div class="arrow"></div>
+                            <h3 class="popover-header">Documento rechazado</h3>
+                            <div class="popover-body  col-12">
+                              <p><b><?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b>su documento fue rechazado. </p>
+                              <p><b>razón: </b> <?=@$description;?></p>
+                            </div>
+                          </div>
+                        </div>
+                        <?php } ;?>
+                      </div>
+                      <div class="pearl <?=@$stepThree;?> col-4">
+                        <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                        <span class="pearl-title">Aceptado</span>
+                      </div>
+                    </div>
+                  </div>
+                    <!--  -->
+
+
+              </div>
+              </div>
+          </div>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">Transcripciones mas recientes  </h4>
+            </div>
+            <div class="card-block">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoDoc;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enable;?>   data-default-file="<?=$defaultfile;?>"
+                  />
+                </div>
+                <div class="example example-buttons">
+                  <?php if(@$fileexists == FALSE) { ;?>
+                  <div class="float-left">
+                    <button type="button" class="btn btn-primary ladda-button btn-file-verano" data-style="expand-left"
+                      data-plugin="ladda" data-type="progress" id="file">
+                      <span class="ladda-label"><i class="icon wb-upload mr-10" aria-hidden="true"></i>Subir</span>
+                    </button>
+                  </div>
+                  <?php } ;?>
+                  <?php if(@$fileexists == TRUE and $fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                  <div class="float-left">
+                    <button type="button" class="btn btn-warning ladda-button btn-edit-file-verano" data-style="expand-left"
+                      data-plugin="ladda" data-type="progress" id="file">
+                      <span class="ladda-label"><i class="icon wb-upload " aria-hidden="true"></i>Volver a subir</span>
+                    </button>
+                  </div>
+                  <?php } ;?>
+
+                </div>
+
+                  <div class="example">
+                    <div class="pearls row">
+                      <div class="pearl <?=@$stepOne;?> col-4">
+                        <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                        <span class="pearl-title">Cargar de documento</span>
+                      </div>
+                      <div class="pearl <?=@$stepTwo;?> col-4">
+                        <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                        <span class="pearl-title">Revisión</span>
+
+                        <?php if(@$fileInfo['data']['statusDocumento']== 'Revision') { ;?>
+                        <div class="reviciones example example-popover" align="center">
+                          <button type="button" class="btn btn-info sr-only">
+                            Documento en revisión
+                          </button>
+                          <div class="popover bs-popover-bottom popover-info ">
+                            <div class="arrow"></div>
+                            <h3 class="popover-header">Documento en revisión</h3>
+                            <div class="popover-body">
+                              <p><b><?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> Su documento está siendo revisado por el equipo de <b>Anglo Latino Education Partnership</b>, gracias!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <?php } ;?>
+                        <?php if(@$fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                        <div class="reviciones example example-popover" align="center">
+
+                          <div class="popover bs-popover-bottom popover-warning col-12">
+                            <div class="arrow"></div>
+                            <h3 class="popover-header">Documento rechazado</h3>
+                            <div class="popover-body  col-12">
+                              <p><b><?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b>su documento fue rechazado. </p>
+                              <p><b>razón: </b> <?=@$description;?></p>
+                            </div>
+                          </div>
+                        </div>
+                        <?php } ;?>
+                      </div>
+                      <div class="pearl <?=@$stepThree;?> col-4">
+                        <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                        <span class="pearl-title">Aceptado</span>
+                      </div>
+                    </div>
+                  </div>
+                    <!--  -->
+
+
+              </div>
+              </div>
+          </div>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">traduccion al ingles en su caso  </h4>
+            </div>
+            <div class="card-block">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoDoc;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enable;?>   data-default-file="<?=$defaultfile;?>"
+                  />
+                </div>
+                <div class="example example-buttons">
+                  <?php if(@$fileexists == FALSE) { ;?>
+                  <div class="float-left">
+                    <button type="button" class="btn btn-primary ladda-button btn-file-verano" data-style="expand-left"
+                      data-plugin="ladda" data-type="progress" id="file">
+                      <span class="ladda-label"><i class="icon wb-upload mr-10" aria-hidden="true"></i>Subir</span>
+                    </button>
+                  </div>
+                  <?php } ;?>
+                  <?php if(@$fileexists == TRUE and $fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                  <div class="float-left">
+                    <button type="button" class="btn btn-warning ladda-button btn-edit-file-verano" data-style="expand-left"
+                      data-plugin="ladda" data-type="progress" id="file">
+                      <span class="ladda-label"><i class="icon wb-upload " aria-hidden="true"></i>Volver a subir</span>
+                    </button>
+                  </div>
+                  <?php } ;?>
+
+                </div>
+
+                  <div class="example">
+                    <div class="pearls row">
+                      <div class="pearl <?=@$stepOne;?> col-4">
+                        <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                        <span class="pearl-title">Cargar de documento</span>
+                      </div>
+                      <div class="pearl <?=@$stepTwo;?> col-4">
+                        <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                        <span class="pearl-title">Revisión</span>
+
+                        <?php if(@$fileInfo['data']['statusDocumento']== 'Revision') { ;?>
+                        <div class="reviciones example example-popover" align="center">
+                          <button type="button" class="btn btn-info sr-only">
+                            Documento en revisión
+                          </button>
+                          <div class="popover bs-popover-bottom popover-info ">
+                            <div class="arrow"></div>
+                            <h3 class="popover-header">Documento en revisión</h3>
+                            <div class="popover-body">
+                              <p><b><?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> Su documento está siendo revisado por el equipo de <b>Anglo Latino Education Partnership</b>, gracias!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <?php } ;?>
+                        <?php if(@$fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                        <div class="reviciones example example-popover" align="center">
+
+                          <div class="popover bs-popover-bottom popover-warning col-12">
+                            <div class="arrow"></div>
+                            <h3 class="popover-header">Documento rechazado</h3>
+                            <div class="popover-body  col-12">
+                              <p><b><?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b>su documento fue rechazado. </p>
+                              <p><b>razón: </b> <?=@$description;?></p>
+                            </div>
+                          </div>
+                        </div>
+                        <?php } ;?>
+                      </div>
+                      <div class="pearl <?=@$stepThree;?> col-4">
+                        <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                        <span class="pearl-title">Aceptado</span>
+                      </div>
+                    </div>
+                  </div>
+                    <!--  -->
+
+
+              </div>
+              </div>
+          </div>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">formato de solicitud relleno en su caso</h4>
+            </div>
+            <div class="card-block">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoDoc;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enable;?>   data-default-file="<?=$defaultfile;?>"
+                  />
+                </div>
+                <div class="example example-buttons">
+                  <?php if(@$fileexists == FALSE) { ;?>
+                  <div class="float-left">
+                    <button type="button" class="btn btn-primary ladda-button btn-file-verano" data-style="expand-left"
+                      data-plugin="ladda" data-type="progress" id="file">
+                      <span class="ladda-label"><i class="icon wb-upload mr-10" aria-hidden="true"></i>Subir</span>
+                    </button>
+                  </div>
+                  <?php } ;?>
+                  <?php if(@$fileexists == TRUE and $fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                  <div class="float-left">
+                    <button type="button" class="btn btn-warning ladda-button btn-edit-file-verano" data-style="expand-left"
+                      data-plugin="ladda" data-type="progress" id="file">
+                      <span class="ladda-label"><i class="icon wb-upload " aria-hidden="true"></i>Volver a subir</span>
+                    </button>
+                  </div>
+                  <?php } ;?>
+
+                </div>
+
+                  <div class="example">
+                    <div class="pearls row">
+                      <div class="pearl <?=@$stepOne;?> col-4">
+                        <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                        <span class="pearl-title">Cargar de documento</span>
                       </div>
                       <div class="pearl <?=@$stepTwo;?> col-4">
                         <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
@@ -695,17 +938,37 @@
 
               <div class="card-block">
                 <h5 class="card-title">
+                  <i class="icon fa-child iconcheck"></i>
+                  <span>Edad</span>
+                </h5>
+
+                <ul class="user-skills list-unstyled" >
+                  <li class="skill " >
+
+                    <div class="skill-num col-2">
+                      <span class="badge badge-pill badge-dark badge-outline p-10"><?=@$infAspirante['abreviacionEdad'];?></span>
+                    </div>
+                    <div class="skill-name">
+                    <?=@$infAspirante['nombreEdad'];?> <?=@$infAspirante['edadEdad'];?>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="card-block">
+                <h5 class="card-title">
                   <i class="icon fa-university iconcheck"></i>
-                  <span>Curso</span>
+                  <span>Campamento</span>
                 </h5>
                 <ul class="user-skills list-unstyled">
 
                   <li class="skill">
                     <div class="skill-num col-2">
-                      <span class="badge badge-pill badge-primary badge-outline p-10"><?=@$infAspirante['abreviacionTipoCurso'];?></span>
+                      <span class="badge badge-pill badge-primary badge-outline p-10"><?=@$infAspirante['abreviacionCampamento'];?></span>
                     </div>
                     <div class="skill-name vertical-align-middle">
-                      <?=@$infAspirante['nombreTipoCurso'];?>
+                      <?=@$infAspirante['nombreCampamento'];?>
                     </div>
 
                   </li>
@@ -769,11 +1032,58 @@
         <div class="col-lg-6 col-xl-3 order-xl-3">
           <div class="card user-visitors">
             <div class="card-header card-header-transparent p-20">
-              <h4 class="card-title mb-0">Status</h4>
+              <h4 class="card-title mb-0">Documentos a descargar</h4>
             </div>
-
             <div class="card-block">
+              <ul class="list-group list-group-full">
+                <li class="list-group-item">
+                  <div class="media">
 
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-5 hover"><?=@$documentOne['data']['nombreDocumento'];?>
+                      </h5>
+
+                    </div>
+                    <div class="float-right">
+                      <a type="button" class="btn btn-primary btn-xs ladda-button "  href="<?=@$documentOne['data']['urlDocumento'];?>" download> <i class="icon icon-xs fa-download mr-0" aria-hidden="true"></i> </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media">
+
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-5 hover"><?=@$documentTwo['data']['nombreDocumento'];?></h5>
+
+                    </div>
+
+                      <div class="float-right">
+                        <a type="button" class="btn btn-primary btn-xs ladda-button "  href="<?=@$documentTwo['data']['urlDocumento'];?>" download> <i class="icon icon-xs fa-download mr-0" aria-hidden="true"></i> </a>
+                      </div>
+
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media">
+
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-5 hover"><?=@$documentThree['data']['nombreDocumento'];?></h5>
+
+                    </div>
+
+                      <div class="float-right">
+                        <a type="button" class="btn btn-primary btn-xs ladda-button "  href="<?=@$documentThree['data']['urlDocumento'];?>" download> <i class="icon icon-xs fa-download mr-0" aria-hidden="true"></i> </a>
+                      </div>
+
+                  </div>
+                </li>
+
+              </ul>
+              <div class="text-center">
+                <button class="btn btn-round btn-outline btn-primary" type="button" name="button">See all
+                  <span>(19)</span>
+                </button>
+              </div>
             </div>
           </div>
 

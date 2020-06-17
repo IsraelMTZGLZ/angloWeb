@@ -7740,6 +7740,18 @@ font-size: 18px;
                              <p><b>Llegada: </b>Domingo 5 Julio <b>Salida: </b>Sabado 25 Julio 2020</p>
                              <p><b>Llegada: </b>Domingo 2 Agosto <b>Salida: </b>Sábado 22 Agosto 2020</p>
                            </div>
+                           <div class="">
+
+
+                               <a type="button" class="btn  btn-warning" href="tel:4422609090"><i class="fa-phone " ></i> Contactar Agente</a>
+                          </div>
+                           <br>
+                           <div class="">
+
+
+                           <a type="button" class="btn  btn-info" href="<?= ($this->session->flashdata('blog')) ? '../Login' : 'Login' ;?>">Me interesa</a>
+                           </div>
+                           <br>
                            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
                              <div class="one-third">
                                <div class="stat-value">Edad:</div>

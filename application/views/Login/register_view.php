@@ -139,6 +139,7 @@
     </ul>
   </div>
   <!-- Page -->
+  <!-- This is the original  -->
   <div class="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
     <div class="page-content">
       <div class="page-brand-info">
@@ -156,7 +157,7 @@
         <h3 class="font-size-34 text-center"><?=$this->lang->line('registrate');?></h3>
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social_registro');?>:</p>
         <div class="social-btns">
-            <!--<a class="btn facebook" href="<?=@$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a>-->
+            <!-- <a class="btn facebook" href="<?=@$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a> -->
             <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="Registro/googleRegister"><i class="fa fa-google"></i></a>
         </div>
@@ -258,6 +259,136 @@
 
     </div>
   </div>
+  <!-- this is the new test -->
+  <!-- <div class="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
+    <div class="page-content">
+      <div class="page-brand-info">
+        <div class="brand">
+        <a href="Login" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
+        <a href="Login"><h2 class="brand-text font-size-20">Anglo Latino Education Partnership</h2></a>
+        </div>
+        <p class="font-size-20"><?=$this->lang->line('leyenda_registro_page');?></p>
+      </div>
+
+      <div class="page-login-main animation-slide-right animation-duration-1">
+      <div class="brand hidden-md-up">
+          <a href="Login"><img class="brand-img" style="display:block;margin:auto;width: 150px;margin-bottom: -30px;margin-top: -20px;" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" width="20%"></a>
+        </div>
+        <h3 class="font-size-34 text-center"><?=$this->lang->line('registrate');?></h3>
+        <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social_registro');?>:</p>
+        <div class="social-btns">
+            <a class="btn facebook" href="<?=@$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a>
+            <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
+            <a class="btn google" type="button"><i class="fa fa-google"></i></a>
+            <a class="btn google" href="Registro/googleRegister"><i class="fa fa-google"></i></a>
+        </div>
+        <?php if ($this->session->flashdata('facebook')=="Error" or $this->session->flashdata('google')=="Error") { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=$this->lang->line('problema_facebook_message')?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <?php if ($this->session->flashdata('error')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=$this->session->flashdata('error')['message']?>
+            <?php foreach ($this->session->flashdata('error')['validations'] as $value) { ;?>
+                <p> <?= $value ?></p>
+            <?php  } ;?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <div id="responseText" style="margin-top: 20px;margin-bottom: -5px;">
+        </div>
+        <form id="registroForm">
+          <input type="hidden" value="Registro" name="typeOauth" id="typeOauth">
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+                <span class="icon wb-envelope" aria-hidden="true" style="color: #0bb2d4"></span>
+              </span>
+              <input type="email" class="form-control" placeholder="<?=$this->lang->line('correo_registro')?>" id="email" name="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+                <span class="icon wb-lock" aria-hidden="true" style="color: #0bb2d4"></span>
+              </span>
+              <input type="password" class="form-control" placeholder="Contraseña" id="password" name="password" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+              <i class="fas fa-user" aria-hidden="true" style="color: #0bb2d4"></i>
+              </span>
+              <input type="text" class="form-control" placeholder="<?=$this->lang->line('nombre_registro')?>" id="nombres" name="nombres">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+              <i class="fas fa-user" aria-hidden="true" style="color: #0bb2d4"></i>
+              </span>
+              <input type="text" class="form-control" placeholder="<?=$this->lang->line('apellidos_registro')?>" id="apellidos" name="apellidos">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+              <i class="icon fa-mars-stroke " aria-hidden="true" style="color: #0bb2d4"></i>
+              </span>
+              <select id="genero" name="genero" class="form-control">
+                <option value="" disabled="disabled" selected="selected"><?=$this->lang->line('select_registro')?></option>
+                <option value="Masculino"><?=$this->lang->line('selectM_registro')?></option>
+                <option value="Femenino"><?=$this->lang->line('selectF_registro')?></option>
+              </select>
+            </div>
+          </div>
+          <div class="checkbox-custom checkbox-primary show-password-wrap"><input type="checkbox" class="strength-toggle" title="Show/Hide Password" id="show_password"><label for="show_password">Mostrar contraseña</label></div>
+          <div class="form-group clearfix">
+            <p class="ml-40"><?=$this->lang->line('leyenda_terminos');?><a href="<?=base_url('resources/assets/Anglo/Aviso de Privacidad para la Protección de Datos Personales.pdf')?>" target="_blank"><?=$this->lang->line('terminos_registro')?></a>.</p>
+          </div>
+          <div class="animation-example animation-hover hover">
+            <button type="submit" class="btn btn-info btn-block btn-round btn-registrar"><?=$this->lang->line('registrate')?></button>
+          </div>
+        </form>
+
+        <p><?=$this->lang->line('leyenda_registro_ya_existente')?> <a href="Login"><?=$this->lang->line('login')?></a></p>
+
+        <footer class="page-copyright">
+          <p><?=$this->lang->line('WEBSITE_BY')?> Maxei Code</p>
+          <div class="social d-none d-sm-block">
+            <a class="btn btn-icon btn-round btn-success mx-5" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-facebook mx-5" href="https://www.facebook.com/AngloLatino/" target="_blank">
+                <i class="icon bd-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-instagram mx-5" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                <i class="icon bd-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="social d-block d-sm-none">
+            <a class="btn btn-icon btn-round btn-success mx-5" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-facebook mx-5" href="fb://page/6623204789" target="_blank">
+                <i class="icon bd-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-instagram mx-5" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                <i class="icon bd-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+  </div> -->
 <!-- Example Basic Animation -->
 
 
@@ -408,8 +539,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
-  
-  
+
+
   <script type="text/javascript">
     $(function(){
 
@@ -422,7 +553,7 @@
         _url = _principalURL()+"User/api/registro/";
         _method = "POST";
         $(document).find('.btn-registrar').prop('disabled',true);
-      
+
         $.ajax({
           url: _url,
           method : _method,
@@ -440,7 +571,7 @@
             });
 
             setTimeout(function(){
-            
+
               $(document).find('#responseText').html('<div class="summary-errors alert alert-danger alert-dismissible fade show" role="alert">'+
                 '<strong>Error!</strong> '+_response.message+
                 '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
@@ -462,27 +593,52 @@
               '</div>'
             );
           }
-          
+          /* if (_response.status=="success") {
+            $(document).find('.btn-registrar').prop('disabled',false);
+            $(document).find('#responseText').html(
+              '<div class="alert alert-success fade show" role="alert">'+
+              '<h4 class="alert-heading">Felicidades!</h4>'+
+              'Sus datos han sido registrados correctamente, <br/>'+
+              'nos pondremos en contacto con usted tan pronto como sea posible,</br>'+
+              'Ya puedes iniciar sesión<br/>'+
+              'Ingrese su contraseña y correo gracias!<br/>'+
+              '</div>'
+            );
+          } */
+
           tostada(_response.status,_response.message);
-          
+
 
           },error : function(err){
-            
+
           }
         });
       });
     });
-    
+
   </script>
 <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
-  
+
 <script type="text/javascript">
   $(function(){
-    
+    var test = true;
     $(document).on('click','.facebook',function() {
       alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
-      
+
+    });
+    $(document).on('click','.google',function() {
+      alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
+
+    });
+    $(document).on('click','.show-password-wrap',function(){
+      if(test){
+        document.getElementById('password').type = 'text';
+        test = false;
+      }else{
+        document.getElementById('password').type = 'password';
+        test = true;
+      }
     });
 
   });

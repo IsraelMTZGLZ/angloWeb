@@ -6,13 +6,30 @@
 <!-- Bootstrap theme -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
 
+<style media="screen">
+  .btn-config{
+    margin: 2%;
+    width:auto;
+    text-align: center;
+  }
+  .card-config{
+    background: white;
+    width: auto;
+    -webkit-border-radius: 23px !important;
+    -moz-border-radius: 23px !important;
+    border-radius: 23px !important;
+    text-align: center;
+    box-shadow: -1px 15px 30px -20px black;
+  }
+</style>
+
 <div class="page">
     <div class="page-header">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="Home">Home</a></li>
         <li class="breadcrumb-item active">cursos de verano</li>
       </ol>
-      <h1 class="page-title">Configuracion de Cursos de Verano</h1>
+      <h1 class="page-title">Configuracion Documentos Cursos de Verano</h1>
 
     </div>
 
@@ -60,101 +77,8 @@
           </div>
 
         </div> -->
-        <div class="col-xxl-3 col-xl-3">
-          <div class="col-xxl-12 col-xl-12">
-            <div class="user-info card card-shadow ">
-              <div class="card-block bg-white p-38">
-                  <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#campamentoModal">Crear Campamento</button>
 
-                  </div>
-                  <hr>
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action list-group-item-info  active">Lista de Campamentos</li>
-                    <?php for ($i = 0; $i < count($campamentos); $i++) { ?>
-                      <li id="<?=@$campamentos[$i]['idCampamento'];?>" class="list-group-item facultad"><?=@$campamentos[$i]['nombreCampamento'];?><span class="badge badge-pill badge-info badge-lg"><?=@$campamentos[$i]['abreviacionCampamento'];?></span></li>
-
-                    <?php } ?>
-                  </ul>
-
-
-              </div>
-
-
-
-            </div>
-
-          </div>
-          <div class="col-xxl-12 col-xl-12">
-            <div class="user-info card card-shadow ">
-              <div class="card-block bg-white p-38">
-                  <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                      <button type="button" class="btn badge-warning btn-lg" data-toggle="modal" data-target="#edadModal">Crear edad</button>
-
-                  </div>
-                  <hr>
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action active">Lista de Edades</li>
-                    <?php for ($i = 0; $i < count($edades); $i++) { ?>
-                      <li id="<?=@$edades[$i]['idEdad'];?>" class="list-group-item edad"><?=@$edades[$i]['nombreEdad'];?><span class="badge badge-pill badge-warning badge-lg"><?=@$edades[$i]['abreviacionEdad'];?></span><span class="badge badge-pill badge-warning badge-lg"><?=@$edades[$i]['edadEdad'];?></span></li>
-
-                    <?php } ?>
-                  </ul>
-
-
-              </div>
-
-
-
-            </div>
-
-          </div>
-          <div class="col-xxl-12 col-xl-12">
-            <div class="user-info card card-shadow ">
-              <div class="card-block bg-white p-38">
-                  <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#alojamientoModal">Crear Alojamiento</button>
-
-                  </div>
-                  <hr>
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action active">Lista de Alojamientos</li>
-                    <?php for ($i = 0; $i < count($alojamientos); $i++) { ?>
-                      <li id="<?=@$alojamientos[$i]['idTipoAlojamiento'];?>" class="list-group-item alojamiento"><?=@$alojamientos[$i]['nombreTipoAlojamiento'];?><span class="badge badge-pill badge-success badge-lg"><?=@$alojamientos[$i]['abreviacionTipoAlojamiento'];?></span></li>
-
-                    <?php } ?>
-                  </ul>
-
-
-              </div>
-
-
-
-            </div>
-
-          </div>
-          <div class="col-xxl-12 col-xl-12">
-            <div class="user-info card card-shadow ">
-              <div class="card-block bg-white p-38">
-                  <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                      <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#TipoModal">Crear Tipo Campamento</button>
-
-                  </div>
-                  <hr>
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action list-group-item-info  active">Lista de tipos de Campamentos</li>
-                    <?php for ($i = 0; $i < count($tipos); $i++) { ?>
-                      <li id="<?=@$tipos[$i]['idTipoCampamento'];?>" class="list-group-item tipo"><?=@$tipos[$i]['nombreTipoCampamento'];?><span class="badge badge-pill badge-info badge-lg"><?=@$tipos[$i]['abreviacionTipoCampamento'];?></span></li>
-
-                    <?php } ?>
-                  </ul>
-              </div>
-            </div>
-
-          </div>
-      </div>
-
-        <div class="col-xxl-8 col-xl-8">
+        <div class="col-xxl-12 col-xl-8">
 
           <!-- Panel Traffic -->
           <div class="card card-shadow example-responsive border border-primary" id="widgetLinearea">
@@ -168,16 +92,15 @@
 
             <?php for ($i = 0; $i < count($instituciones); $i++) { ?>
               <div class="col-lg-4">
-                <div class="card card-shadow text-center">
+                <div class="card card-shadow text-center card-config">
                   <div class="card-block">
                     <img class="card-img-top" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion">
                     <h4 class="profile-user"><?=@$instituciones[$i]['nombreInstitucion'];?></h4>
                     <p class="profile-job"><?=@$instituciones[$i]['ubicacionInstitucion'];?></p>
 
-                    <button type="button" class="btn btn-round btn-outline btn-warning btn-add-edadInstitucion" id="<?=@$instituciones[$i]['idInstitucion'];?>">Añadir Edad</button>
-                    <button type="button" class="btn btn-round btn-outline btn-info btn-add-campamentoInstitucion" id="<?=@$instituciones[$i]['idInstitucion'];?>">Añadir Campamento</button>
-                    <button type="button" class="btn btn-round btn-outline btn-success btn-add-alojamientoInstitucion" id="<?=@$instituciones[$i]['idInstitucion'];?>">Añadir Alojamiento</button>
-                      <button type="button" class="btn btn-round btn-outline btn-danger btn-add-tipoCursoInstitucion" id="<?=@$instituciones[$i]['idInstitucion'];?>">Añadir Tipo de Campamento</button>
+                    <button type="button" class="btn btn-round btn-outline btn-warning btn-add-fileaddInstitucion btn-config" id="<?=@$instituciones[$i]['idInstitucion'];?>">Añadir formato de solicitud </button>
+                    <button type="button" class="btn btn-round btn-outline btn-info btn-add-campamentoInstitucion btn-config" id="<?=@$instituciones[$i]['idInstitucion'];?>">Añadir Campamento</button>
+                    <button type="button" class="btn btn-round btn-outline btn-success btn-add-alojamientoInstitucion btn-config" id="<?=@$instituciones[$i]['idInstitucion'];?>">Añadir Alojamiento</button>
                   </div>
                   <div class="card-footer">
                     <div class="row no-space">
@@ -437,17 +360,17 @@
   </div>
 </div>
 
-<div class="modal fade" id="addIEModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addFormatoSolicitud" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Agregar o borrar Permisos</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Files</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <ul class="list-group list-group-bordered">
-        <li class="list-group-item list-group-item-action active">Lista de Campamentos de: <span class="nombreInstitucion"></span></li>
+        <li class="list-group-item list-group-item-action active">Lista de Documentos de: <span class="nombreInstitucion"></span></li>
 
       </ul>
       <div class="nuev">
@@ -455,26 +378,29 @@
       </div>
       <hr style="background-color: red;height: 1px;">
       <h5 class="modal-title" id="exampleModalLabel" style="margin-left: 10px;color: blue;">Añadir Facultad</h5>
-      <form id="addEdadInsFormm">
+
         <div class="modal-body">
         <div class="form-group form-material" data-plugin="formMaterial">
-        <label class="form-control-label" for="inputText">Campamentos:</label>
+        <label class="form-control-label" for="inputText">Files:</label>
                 <input type="hidden" name="institucion" id="institucionn">
-                <select class="form-control" data-plugin="select2" name="edad" id="edad">
-                  <option value="" disabled selected>Elige una opcion</option>
-                  <?php for ($i = 0; $i < count($edades); $i++) { ?>
-                    <option value="<?=$edades[$i]['idEdad'];?>"><?=$edades[$i]['edadEdad'];?> <?=$edades[$i]['nombreEdad'];?></option>
-                  <?php } ;?>
-                </select>
+                <div class="col-xl-6 form-group">
+                  <label>Formato de solicitud</label>
+                  <input type="file" id="input-file-now" class="dropify-event"
+                  />
+
+                </div>
               </div>
 
 
         </div>
         <div class="modal-footer btnsFI">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Añadir Facultad</button>
+            <button type="button" class="btn btn-primary ladda-button btn-file-veranoAcademic" data-style="expand-left"
+              data-plugin="ladda" data-type="progress" id="file">
+              <span class="ladda-label"><i class="icon wb-upload mr-10" aria-hidden="true"></i>Subir</span>
+            </button>
         </div>
-      </form>
+
     </div>
   </div>
 </div>
@@ -1227,38 +1153,6 @@
           $('#addIFModal').modal('show');
         });
 
-        $(document).on('click','.btn-add-edadInstitucion',function(){
-          $(document).find('.nuev').empty();
-          idInstitucion = this.id;
-          $(document).find('#institucionn').val(idInstitucion);
-          /* alert(idInstitucion); */
-
-          _url = _principalURL()+"EdadesInstituciones/api/edadByInstituciones/id/"+idInstitucion;
-          $.ajax({
-                    url: _url,
-                    method : 'GET',
-                    headers : {
-                    'X-API-KEY':'ANGLOKEY'
-                    },
-                    data: null,
-                    success : function(_response){
-                      if(_response.data){
-                        console.info(1);
-                        $(document).find('.nombreInstitucion').html(_response.data[0].institucion);
-                        var edadInstitucion = _response.data;
-                        for (let j = 0; j < edadInstitucion.length; j++) {
-                          $(document).find('.nuev').append('<a type="button" class="list-group-item blue-grey-500 btn-editDeleteUniversidad" id="'+edadInstitucion[j]['idEdadInstitucion']+'" name="'+edadInstitucion[j]['idEdad']+'"><i class="icon wb-inbox" aria-hidden="true"></i>'+edadInstitucion[j]['nombre']+'</a>');
-                        }
-                      }else{
-                        $(document).find('.nombreInstitucion').html('');
-                      }
-
-                    },error : function(err){
-
-                    }
-          });
-          $('#addIEModal').modal('show');
-        });
 
         $(document).on('click','.btn-add-alojamientoInstitucion',function(){
           $(document).find('.nuevo').empty();
@@ -1368,9 +1262,9 @@
         });
 
 
-        $(document).on('submit','#addEdadInsFormm',function(event){
+        $(document).on('submit','#addFormatoSolicitudForm',function(event){
           event.preventDefault();
-          console.log($(document).find('#addEdadInsFormm').serialize());
+
           var _id=$(document).find('#idInstitucionFacultadKey').val();
             if(_id){
                 _url = _principalURL()+"EdadesInstituciones/api/edadesInstituciones/id/"+_id;
@@ -1385,7 +1279,7 @@
                     headers : {
                     'X-API-KEY':'ANGLOKEY'
                     },
-                    data: $(document).find('#addEdadInsFormm').serialize(),
+                    data: $(document).find('#addFormatoSolicitudForm').serialize(),
                     success : function(_response){
                         response = JSON.stringify(_response);
                         if (_response.status=="error") {

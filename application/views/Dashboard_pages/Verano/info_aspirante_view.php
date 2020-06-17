@@ -58,6 +58,11 @@
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/jquery-selective/jquery-selective.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap-datepicker/bootstrap-datepicker.min599c.css?v4.0.2');?>">
 
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/blueimp-file-upload/jquery.fileupload.min599c.css?v4.0.2');?>">
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/dropify/dropify.min599c.css?v4.0.2');?>">
+
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/ladda/ladda.min599c.css?v4.0.2');?>">
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/uikit/buttons.min599c.css?v4.0.2');?>">
 
   <!--[if lt IE 9]>
     <script src="../../global/vendor/html5shiv/html5shiv.min.js?v4.0.2"></script>
@@ -74,47 +79,113 @@
     Breakpoints();
   </script>
   <style media="screen">
-  .userDatos{
-    font-size: 16px;
-    color: black;
-    font-weight: 200;
-    margin-bottom: 5px;
-  }
-  .userName{
-    font-size: 19px;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 5px;
-  }
-  .emailicon{
+    :root {
+      --border-radius-size: 14px;
+      --barbarian: #EC9B3B;
+      --archer: #EE5487;
+      --giant: #F1C40F;
+      --goblin:   #11C26D;
+      --wizard:   #f2353c;
 
-    color: #4FACFF;
-    font-weight: 250;
-    margin-bottom: 5px;
-  }
-    .callicon{
-
-      color: #4FACFF;
-      font-weight: 250;
-      margin-bottom: 5px;
     }
 
-    .iconcheck{
-      font-size: 20px;
-      color: #4FACFF;
-      font-weight: 250;
+    .userDatos{
+      font-size: 16px;
+      color: black;
+      font-weight: 200;
       margin-bottom: 5px;
     }
-
-    .nationicon{
-
-      color: #4FACFF;
-      font-weight: 250;
+    .userName{
+      font-size: 19px;
+      color: black;
+      font-weight: 400;
       margin-bottom: 5px;
     }
+    .emailicon{
+      font-size: 16px;
+      color: #4FACFF;
+      font-weight: 250;clash-card__unit-stats--goblin
+      margin-bottom: 5px;
+    }
+      .callicon{
+        font-size: 18px;
+        color: #4FACFF;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
 
-  </style>
-</head>
+      .iconcheck{
+        font-size: 20px;
+        color: #4FACFF;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
+
+      .nationicon{
+        font-size: 18px;
+        color: #4FACFF;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
+
+      .resumen{
+
+        font-size: 22px;
+        color: #0bb2d4;
+        font-weight: 250;
+        margin-bottom: 5px;
+      }
+      .card-element{
+        background: white;
+        width: auto;
+        display: inline-block;
+
+        text-align: center;
+        box-shadow: -1px 1px 20px -12px #3e8ef7;
+      }
+      .clash-card__unit-stats--barbarian {
+        background:var(--barbarian);
+
+
+      }
+
+
+      .clash-card__unit-stats--archer {
+        background: var(--archer);
+
+
+      }
+
+      .clash-card__unit-stats--giant {
+        background: var(--giant);
+
+      }
+
+      .clash-card__unit-stats--goblin {
+        background: var(--goblin);
+
+      }
+
+      .clash-card__unit-stats--wizard {
+        background: var(--wizard);
+
+      }
+
+
+      .stat {
+      font-size: 18px;
+      color: white;
+      }
+
+      .reviciones{
+        align: center;
+      }
+      .upicon{
+        position:relative;
+        top: 5px;
+      }
+    </style>
+  </head>
 <body class="animsition  page-profile-v2  ">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -411,8 +482,15 @@
   <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 align="center" class="page-title">Escuela de Verano</h1>
+      <h1 align="center" class="page-title">Cursos de  Verano  </h1>
       <h1 class="page-title">Información de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></h1>
+      <input type="hidden" id="aspirante" value="<?=@$aspirante['idAspirante'];?>" name="fkAspirante">
+      <input type="hidden" id="idDocFormOne" value="<?=@$idDocFormOne;?>" name="idDocFormOne">
+      <input type="hidden" id="idDocFormTwo" value="<?=@$idDocFormTwo;?>" name="idDocFormTwo">
+      <input type="hidden" id="idDocFormThree" value="<?=@$idDocFormThree;?>" name="idDocFormThree">
+      <input type="hidden" id="NameLastName" value="<?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?>" name="NameLastName">
+      <input type="hidden" id="idinfDocment" value="<?=@$idinfDocment;?>" name="idinfDocment">
+
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../index.html">Cursos de Verano</a></li>
@@ -434,7 +512,7 @@
                 <div class="example">
 
                   <div class="progress progress-lg">
-                    <div class="progress-bar progress-bar-success" style="width: 50%;" role="progressbar">50%</div>
+                    <div class="progress-bar progress-bar-success" style="width: <?=$progreso;?>;" role="progressbar"><?=$progreso;?></div>
                   </div>
                 </div>
               </div>
@@ -445,33 +523,48 @@
           <!-- User Posts -->
           <div class="user-posts card card-shadow">
             <div class="card-block">
-              <h4 class="card-title mb-20">Instituciones elegidas</h4>
+              <h4 class="card-title mb-20">Mis instituciones elegidas</h4>
               <div class="card-deck">
-                <div class="card">
+                <div class="card card-element">
                   <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title" align="center"><?=@$instOne['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center"><?=@$instOne['statusInstitucion'];?></p>
+                    <p class="card-text" align="center"></p>
                     <p class="card-text hidden-md-down" align="center"><?=@$instOne['ubicacionInstitucion'] ? $instOne['ubicacionInstitucion'] : 'London' ;?>.</p>
 
                   </div>
+                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                    <div class="one-third">
+                      <div class="stat"><?=@$instOne['statusInstitucion'];?> </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
+                <div class="card card-element">
+                  <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title" align="center"><?=@$instTwo['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center"><?=@$instTwo['statusInstitucion'];?></p>
+                    <p class="card-text" align="center"></p>
                     <p class="card-text hidden-md-down" align="center"><?=@$instTwo['ubicacionInstitucion'] ? $instTwo['ubicacionInstitucion'] : 'London' ;?>.</p>
 
                   </div>
+                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                    <div class="one-third">
+                      <div class="stat"><?=@$instTwo['statusInstitucion'];?></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card">
+                <div class="card card-element">
                   <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title" align="center"><?=@$instThree['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center" ><?=@$instThree['statusInstitucion'];?></p>
+                    <p class="card-text" align="center" ></p>
                     <p class="card-text hidden-md-down" align="center"><?=@$instThree['ubicacionInstitucion'] ? $instThree['ubicacionInstitucion'] : 'London' ;?>.</p>
 
+                  </div>
+                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                    <div class="one-third">
+                      <div class="stat"><?=@$instThree['statusInstitucion'];?></div>
+                    </div>
                   </div>
                 </div>
 
@@ -484,110 +577,302 @@
           <!-- User Background -->
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
-              <h4 class="card-title mb-0">Resumen de seguimiento </h4>
-            </div>
+              <h4 class="card-title mb-0">Pasaporte </h4>
 
+            </div>
             <div class="card-block">
-              <h5 class="card-title">
-                <i class="icon wb-clipboard"></i>
-                <span></span>
-              </h5>
-              <p class="card-text">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoDoc;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enable;?>   data-default-file="<?=$defaultfile;?>"
+                  />
 
-              </p>
+                </div>
+                <div class="example example-buttons">
+
+                  <?php if(@$fileexists == TRUE) { ;?>
+
+                    <div class="float-left">
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar-verano" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar-verano" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+
+
+                    <div class="float-right">
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfile;?>" target="_blank"> </i>Ver </a>
+                    </div>
+
+                  <?php } ;?>
+
+                </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl <?=@$stepOne;?> col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar Pasaporte</span>
+                    </div>
+                    <div class="pearl <?=@$stepTwo;?> col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfo['data']['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning col-12">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b> <?=@$description;?></p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl  <?=@$stepThree;?>  col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Aceptado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">Formato de solicitud para <?=@$instOne['nombreInstitucion'];?> </h4>
+
             </div>
-
-
-
             <div class="card-block">
-              <h5 class="card-title">
-                <i class="icon fa-check-square iconcheck"></i>
-                <span>Edad</span>
-              </h5>
-              <ul class="user-skills list-unstyled">
-                <li class="skill">
-                  <ul class="skill-team list-unstyled">
-                    <li class="avatar">
-                      <img src="../../global/portraits/3.jpg" alt="">
-                    </li>
-                    <li class="avatar">
-                      <img src="../../global/portraits/4.jpg" alt="">
-                    </li>
-                    <li class="avatar">
-                      <img src="../../global/portraits/6.jpg" alt="">
-                    </li>
-                  </ul>
-                  <div class="skill-num">
-                    <span class="badge badge-pill badge-dark badge-outline p-10"><?=@$infAspirante['abreviacionEdad'];?></span>
-                  </div>
-                  <div class="skill-name">
-                  <?=@$infAspirante['nombreEdad'];?> <?=@$infAspirante['edadEdad'];?>
-                  </div>
-                </li>
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoFormOne;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enableFormOne;?>   data-default-file="<?=$defaultfileForOne;?>"
+                  />
 
-              </ul>
+                </div>
+                <div class="example example-buttons">
+
+                  <?php if(@$fileexistsFormOne == TRUE) { ;?>
+
+                    <div class="float-left">
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar-veranoFormOne" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar-veranoFormOne" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-info ladda-button btn-subir-veranoFormOne" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Subir</span>
+                      </button>
+                    </div>
+
+
+                    <div class="float-right">
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfileForOne;?>" target="_blank"> </i>Ver </a>
+                    </div>
+
+                  <?php } ;?>
+
+                </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl <?=@$stepOneFormOne;?> col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar formato de registro</span>
+                    </div>
+                    <div class="pearl <?=@$stepTwoFormOne;?> col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfoFormOne['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning col-12">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b> <?=@$recomendationFormOne['data']['descripcion'];?></p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl  <?=@$stepThreeFormOne;?>  col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Aceptado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">Formato de solicitud para <?=@$instTwo['nombreInstitucion'];?> </h4>
+
             </div>
-
             <div class="card-block">
-              <h5 class="card-title">
-                <i class="icon fa-check-square iconcheck"></i>
-                <span>Campamento</span>
-              </h5>
-              <ul class="user-skills list-unstyled">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoFormTwo;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enableFormTwo;?>   data-default-file="<?=$defaultfileFormTwo;?>"
+                  />
 
-                <li class="skill">
-                  <div class="skill-num">
-                    <span class="badge badge-pill badge-primary badge-outline p-10"><?=@$infAspirante['abreviacionCampamento'];?></span>
-                  </div>
-                  <div class="skill-name vertical-align-middle">
-                    <?=@$infAspirante['nombreCampamento'];?>
-                  </div>
-                  <ul class="skill-team list-unstyled">
-                    <li class="avatar">
-                      <img src="../../global/portraits/2.jpg" alt="">
-                    </li>
-                    <li class="avatar">
-                      <img src="../../global/portraits/4.jpg" alt="">
-                    </li>
-                    <li class="avatar">
-                      <img src="../../global/portraits/5.jpg" alt="">
-                    </li>
-                  </ul>
-                </li>
+                </div>
+                <div class="example example-buttons">
 
-              </ul>
+                  <?php if(@$fileexistsFormTwo == TRUE) { ;?>
+
+                    <div class="float-left">
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar-veranoFormTwo" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar-veranoFormTwo" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+
+
+                    <div class="float-right">
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfileFormTwo;?>" target="_blank"> </i>Ver </a>
+                    </div>
+
+                  <?php } ;?>
+
+                </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl <?=@$stepOneFormTwo;?> col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar formato de registro</span>
+                    </div>
+                    <div class="pearl <?=@$stepTwoFormTwo;?> col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfoFormTwo['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning col-12">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b><?=@$recomendationFormTwo['data']['descripcion'];?></p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl  <?=@$stepThreeFormTwo;?>  col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Aceptado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">Formato de solicitud para <?=@$instThree['nombreInstitucion'];?> </h4>
+
             </div>
-
             <div class="card-block">
-              <h5 class="card-title">
-                <i class="icon fa-check-square iconcheck"></i>
-                <span>Tipo Alojamiento</span>
-              </h5>
-              <ul class="user-skills list-unstyled">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoFormThree;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enableFormThree;?>   data-default-file="<?=$defaultfileFormThree;?>"
+                  />
 
-                <li class="skill">
-                  <div class="skill-num">
-                    <span class="badge badge-pill badge-success badge-outline p-10"><?=@$infAspirante['abreviacionTipoAlojamiento'];?></span>
+                </div>
+                <div class="example example-buttons">
+
+                  <?php if(@$fileexistsFormThree == TRUE) { ;?>
+
+                    <div class="float-left">
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar-veranoFormThree" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar-veranoFormThree" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+
+
+                    <div class="float-right">
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfileFormThree;?>" target="_blank"> </i>Ver </a>
+                    </div>
+
+                  <?php } ;?>
+
+                </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl <?=@$stepOneFormThree;?> col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar formato de registro</span>
+                    </div>
+                    <div class="pearl <?=@$stepTwoFormThree;?> col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfoFormThree['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning col-12">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b> <?=@$recomendationFormThree['data']['descripcion'];?></p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl  <?=@$stepThreeFormThree;?>  col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Aceptado</span>
+                    </div>
                   </div>
-                  <div class="skill-name vertical-align-middle">
-                    <?=@$infAspirante['nombreTipoAlojamiento'];?>
-                  </div>
-                  <ul class="skill-team list-unstyled">
-                    <li class="avatar">
-                      <img src="../../global/portraits/2.jpg" alt="">
-                    </li>
-                    <li class="avatar">
-                      <img src="../../global/portraits/4.jpg" alt="">
-                    </li>
-                    <li class="avatar">
-                      <img src="../../global/portraits/5.jpg" alt="">
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </div>
 
-
+              </div>
           </div>
           <!-- End User Background -->
 
@@ -825,15 +1110,73 @@
           <div class="user-friends card card-shadow">
             <div class="card-block">
               <h4 class="card-title mb-20">
-                Documento
-                <span></span>
+                <i class="icon wb-clipboard resumen"></i>
+                Resumen de seguimiento
               </h4>
 
+              <div class="card-block">
+                <h5 class="card-title">
+                  <i class="icon fa-check-square iconcheck"></i>
+                  <span>Edad</span>
+                </h5>
+                <ul class="user-skills list-unstyled">
+                  <li class="skill">
+
+                    <div class="skill-num">
+                      <span class="badge badge-pill badge-dark badge-outline p-10"><?=@$infAspirante['abreviacionEdad'];?></span>
+                    </div>
+                    <div class="skill-name">
+                    <?=@$infAspirante['nombreEdad'];?> <?=@$infAspirante['edadEdad'];?>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="card-block">
+                <h5 class="card-title">
+                  <i class="icon fa-check-square iconcheck"></i>
+                  <span>Campamento</span>
+                </h5>
+                <ul class="user-skills list-unstyled">
+
+                  <li class="skill">
+                    <div class="skill-num">
+                      <span class="badge badge-pill badge-primary badge-outline p-10"><?=@$infAspirante['abreviacionCampamento'];?></span>
+                    </div>
+                    <div class="skill-name vertical-align-middle">
+                      <?=@$infAspirante['nombreCampamento'];?>
+                    </div>
+
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="card-block">
+                <h5 class="card-title">
+                  <i class="icon fa-check-square iconcheck"></i>
+                  <span>Tipo Alojamiento</span>
+                </h5>
+                <ul class="user-skills list-unstyled">
+
+                  <li class="skill">
+                    <div class="skill-num">
+                      <span class="badge badge-pill badge-success badge-outline p-10"><?=@$infAspirante['abreviacionTipoAlojamiento'];?></span>
+                    </div>
+                    <div class="skill-name vertical-align-middle">
+                      <?=@$infAspirante['nombreTipoAlojamiento'];?>
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
 
 
 
             </div>
           </div>
+
           <!-- <div id="personalCompletedWidget" class="card card-shadow pb-20">
             <div class="card-header card-header-transparent cover overlay">
               <div class="card-block p-30">
@@ -882,99 +1225,3 @@
       </div>
     </div>
   </div>
-  </div>
-
-
-
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="site-footer-legal">© 2020 <a href="javascript:void(0);">Anglo Latino Education Partnership</a></div>
-    <div class="site-footer-right">
-      <i class="red-800 icon ti-desktop" aria-hidden="true" style="font-size: 16px;"></i> Created by <a href="javascript:void(0);">Maxei Code</a>
-    </div>
-  </footer>
-  <!-- Core  -->
-  <script data-cfasync="false" src="<?=base_url('resources/assets/Dashboard/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js');?>"></script><script src="<?=base_url('resources/assets/Dashboard/global/vendor/babel-external-helpers/babel-external-helpers599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery/jquery.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/popper-js/umd/popper.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/bootstrap/bootstrap.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/animsition/animsition.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/mousewheel/jquery.mousewheel599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/asscrollbar/jquery-asScrollbar.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/asscrollable/jquery-asScrollable.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/ashoverscroll/jquery-asHoverScroll.min599c.js?v4.0.2');?>"></script>
-
-  <!-- Plugins -->
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/switchery/switchery.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/intro-js/intro.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/screenfull/screenfull599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/slidepanel/jquery-slidePanel.min599c.js?v4.0.2');?>"></script>
-
-  <!-- Plugins For This Page -->
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/slick-carousel/slick.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/asprogress/jquery-asProgress.min599c.js?v4.0.2');?>"></script>
-
-  <!-- Scripts -->
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Component.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Base.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Config.min599c.js?v4.0.2');?>"></script>
-
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Section/Menubar.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Section/Sidebar.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Section/PageAside.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Plugin/menu.min599c.js?v4.0.2');?>"></script>
-
-  <!-- Config -->
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/config/colors.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/config/tour.min599c.js?v4.0.2');?>"></script>
-  <script>
-    Config.set('assets', '../assets');
-  </script>
-
-  <!-- Page -->
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Site.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/matchheight.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/aspieprogress.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/bootstrap-datepicker.min599c.js?v4.0.2');?>"></script>
-
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/pages/profile-v2.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/uikit/progress-bars.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/asprogress.min599c.js?v4.0.2');?>"></script>
-
-  <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/dashboard/team.min599c.js?v4.0.2');?>"></script>
-
-
-
-  <!-- Plugins For This Page -->
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/chartist/chartist.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/aspieprogress/jquery-asPieProgress.min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/matchheight/jquery.matchHeight-min599c.js?v4.0.2');?>"></script>
-  <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery-selective/jquery-selective.min599c.js?v4.0.2');?>"></script>
-
-
-  <!-- Google Analytics -->
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'http://localhost/angloWeb/resources/assets/Dashboard/www.google-analytics.com/analytics.js',
-      'ga');
-
-    ga('create', 'UA-65522665-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
-
-
-<!-- Mirrored from getbootstrapadmin.com/remark/center/pages/profile-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Feb 2020 06:27:41 GMT -->
-</html>

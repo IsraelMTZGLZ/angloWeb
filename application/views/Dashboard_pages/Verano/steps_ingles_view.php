@@ -545,7 +545,7 @@
                     <?php } ?>
                   </div>
 
-                  <input type="button" name="next" class="next action-button" value="Next" />
+                  <input type="button" name="next" class="next action-button" id="edadcheck" value="Next" />
                 </fieldset>
                 <fieldset>
                   <h2 class="fs-title">Tipo de campamento</h2>
@@ -555,7 +555,7 @@
                     <ul >
                         <?php if(1== 1) {?>
                         <input type="radio" id="tes<?=@$i+1;?>" name="campamento" value="<?=@$campamentos[$i]['idCampamento'];?>">
-                        <label for="tes<?=@$i+1;?>"><?=@$campamentos[$i]['nombreCampamento'];?></label>
+                        <label for="tes<?=@$i+1;?>" id="tesin<?=@$i+1;?>"><?=@$campamentos[$i]['nombreCampamento'];?></label>
                         <?php }?>
                     </ul>
 
@@ -875,6 +875,13 @@ $(".submit").click(function(){
            document.getElementById(message).style.display= "inline";
         }
 			});
+      $("#edadcheck").click(function () {
+
+        $edad =$('input:radio[name=edad]:checked').val();
+        console.log($edad);
+          document.getElementById("tesin1").style.display = 'none';
+
+      });
 
       $(document).on('submit','#msform',function(event){
         event.preventDefault();
@@ -887,21 +894,25 @@ $(".submit").click(function(){
       console.log($alojamiento);
 
     var formData = new FormData();
-    formData.append('aspirante', $(document).find('#aspirante').val());
+    /* formData.append('aspirante', $(document).find('#aspirante').val()); */
     formData.append('edad', $('input:radio[name=edad]:checked').val());
     formData.append('campamento',$('input:radio[name=campamento]:checked').val());
     formData.append('alojamiento',$('input:radio[name=alojamiento]:checked').val());
     console.log(0);
-    _url = _principalURL()+"Verano/api/aspirante_E_C_A/";
+    _url = _principalURL()+"Verano/api/aspiranteFirst_E_C_A/"+$(document).find('#aspirante').val();
+    _datos = {
+      "edad":$('input:radio[name=edad]:checked').val(),
+      "campamento":$('input:radio[name=campamento]:checked').val(),
+      "alojamiento":$('input:radio[name=alojamiento]:checked').val(),
+    }
+    console.log($(document).find('#aspirante').val());
     $.ajax({
         url: _url,
-        method : 'POST',
+        method : 'PUT',
         headers : {
         'X-API-KEY':'ANGLOKEY'
         },
-        data: formData,
-        contentType: false,
-        processData: false,
+        data: _datos,
         success : function(_response){
             response = JSON.stringify(_response);
             if (_response.status=="error") {

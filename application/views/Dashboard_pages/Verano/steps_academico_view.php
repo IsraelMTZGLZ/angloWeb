@@ -25,6 +25,9 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/bootstrap-extend.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/css/site.min599c.css?v4.0.2');?>">
 
+  <!-- Skin tools (demo site only) -->
+  <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/skintools.min599c.css?v4.0.2');?>">
+  <script src="<?=base_url('resources/assets/Dashboard/center/assets/js/Plugin/skintools.min599c.js?v4.0.2');?>"></script>
 
 
   <!--<link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/animsition/animsition.min599c.css?v4.0.2');?>">-->
@@ -253,122 +256,225 @@
   }
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+
+/*form styles*/
+#msform {
+	width: auto;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
 }
-h1 {
-  text-align: center;
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 20px;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+	padding: 80px 60px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 ;
+
+	/*stacking fieldsets above each other*/
+	position: relative;
 }
-.small-meta {
-  font-size: 12px;
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
 }
-.dim {
-  opacity: 0.4;
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
 }
-.image {
-  width: 180px;
-  height: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
+/*buttons*/
+#msform .action-button {
+	width: 200px;
+	background: #27AE60;
+	font-weight: bold;
+  font-size: 18px;
+	color: white;
+	border: 0 none;
+	border-radius: 20px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
 }
-.grid-wrapper {
-  margin: 0 auto;
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 
-.card{
-
-  background: white;
-  width: auto;
-  display: inline-block;
-  text-align: center;
-  box-shadow: -1px 15px 30px -12px black;
+#msform .action-buttonp {
+	width: 200px;
+	background: #EC9B3B;
+	font-weight: bold;
+  font-size: 18px;
+	color: white;
+	border: 0 none;
+	border-radius: 20px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
 }
-.card-content {
-    -webkit-box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
-    -moz-box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
-    box-shadow: 17px 14px 29px 8px rgba(3,3,3,1);
-    border-radius: 2px;
-    padding: 25px 25px 10px 25px;
+#msform .action-buttonp:hover, #msform .action-buttonp:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #EC9B3B;
 }
-.card-content * {
+.continuar{
+  width: 200px;
+  background: #00B6FF  ;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border: 0 none;
+  border-radius: 20px;
   cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+
 }
-.card-wrapper {
+.continuar:hover,.continuar:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #00B6FF ;
+}
+/*headings*/
+.fs-title {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #2C3E50;
   position: relative;
-  width: 284px;
-  height: 285px;
-  float: left;
-  margin-right: 50px;
-  margin-bottom: 70px;
+  top: -60px;
+	margin-bottom: 10px;
 }
-.c-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 16px;
+  position: relative;
+  top: -50px;
+	color: #666;
+	margin-bottom: 20px;
 }
-.c-card ~ .card-content {
-  transition: all 500ms ease-out;
+.container{
+    font-size: 18px;
+  position: relative;
+  top: -20px;
+  color:  #2C3E50;
+  margin-bottom: 20px;
+  margin: 0px 0px;
 }
-.c-card ~ .card-content .card-state-icon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  z-index: 2;
-  width: 20px;
-  height: 20px;
-  background-position: 0 0;
-  transition: all 100ms ease-out;
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
 }
-/* .card:before {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  width: 0;
-  height: 0;
-  border-top: 52px solid #47cf73;
-  border-left: 52px solid transparent;
-  transition: all 200ms ease-out;
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 13px;
+	width: 33.33%;
+	float: left;
+	position: relative;
 }
-.card:after {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 50px solid #FFF;
-  border-left: 50px solid transparent;
-  transition: all 200ms ease-out;
-} */
-.card:hover {
-  /* border: 4px solid #CCC; */
-  background: white;
-  width: auto;
-  display: inline-block;
-  text-align: center;
-  box-shadow: -1px 15px 30px -12px #0bb2d4;
-  z-index: 9999;
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
 }
 
 
-
-.checkA{
-  position: absolute;
-  top: -10px;
+/* New */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
 }
-
-
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 17px;
+    height: 17px;
+    background: #EC9B3B;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.stopli{}
   </style>
   <div id="nc-main" class="nc-main bg-cover bg-cc" >
 
@@ -385,118 +491,107 @@ h1 {
     </div>
   </div>
 
-  <div class="page text-center" >
-    <div class="page-content">
-      <input type="hidden" id="aspirante" value="<?=$user->aspirante;?>" name="fkAspirante">
-      <input type="hidden" id="veranoSelected" value="<?=$veranoSelected;?>" name="VeranoSelected">
+  <input type="hidden" name="namePerson" id="namePerson" value="<?=$user->names;?>">
+
+  <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">&gt;
+    <div class="page-content vertical-align-middle animation-slide-top animation-duration-1">
+      <input type="hidden" name="aspirante" id="aspirante" value="<?=$user->aspirante;?>">
     <div class="row">
-        <div class="col-12">
+
           <!-- Example Card Decks -->
           <div class="example-wrap">
-            <h4 class="example-title" style="color: white;font-size: 30px">Que te interesa estudiar?</h4>
+            <h4 class="example-title" style="color: white;font-size: 30px">completar los siguientes pasos</h4>
 
-            <div class="row">
-                <div class="col-lg-5">
+
+                <!-- <div class="col-lg-4">
                     <div class="example-col">
-                        <p style="color: white;font-size: 18px">Selecciona las universidades de tu interes ( Maximo 3 ):</p>
+                        <p style="color: white;font-size: 18px">Selecciona el programa que te gustaria estudiar:</p>
                     </div>
-                </div>
-                <div class="offset-lg-4">
+                </div> -->
+                <div class="col-lg-4 offset-lg-4">
                     <div class="example-col">
                         <div class="row" style="display: flex;justify-content: left;margin-left: 60%;">
-                            <p><a href="<?=base_url('Login/Login/logout')?>" class="btn btn-warning">Cerrar sesion</a></p>
+                            <!-- <p><a href="<?=base_url('Login/Login/logout')?>" class="btn btn-warning">Cerrar sesion</a></p> -->
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <div class="row" style="display: flex;justify-content: center;margin-top: -30px;">
-              <div class="animation-example animation-hover hover" >
-                      <div class="form-group">
-                          <label for="mes" style="color: white;">Elige el mes de ingreso en el que estas interesado</label>
-                          <select class="form-control" name="mes" id="mes">
-                              <option value="" disabled selected>selecciona una opcion</option>
-                              <option value="06">junio</option>
-                              <option value="07">julio</option>
-                              <option value="08">agosto</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="anio" style="color: white;">Elige el año de ingreso en el que estas interesado</label>
-                          <select class="form-control" name="anio" id="anio">
-                              <option value="" disabled selected>selecciona una opcion</option>
-                              <option value="2020">2020</option>
-                              <option value="2021">2021</option>
-                          </select>
-                      </div>
-                      <button type="button" class="btn btn-success animation-shake btn-lg btn-direction btn-left btn-continue">Continuar</button>
 
 
+            <div class="col-sm-12 col-lg-12  col-12">
+            <div class="card-deck">
 
-              </div>
+              <form id="msform" name="msform">
+                <!-- progressbar -->
 
-            </div>
-            <br>
-            <div class="example-wrap">
+                <ul id="progressbar">
+                  <li class="active">Edad</li>
+                  <li>Alojamiento</li>
+                </ul>
+                <!-- fieldsets -->
 
-              <div class="row">
-                  <?php for ($i = 0; $i < count($instituciones); $i++) { ?>
-                <div class="col-lg-3 col-md-12">
-                  <!-- <input class="c-card uni" type="checkbox"  id="<?=$i+1?>" value="<?=@$universidades[$i]['idInstitucion']?>"> -->
+                <fieldset>
+                  <h2 class="fs-title">Edades</h2>
+                  <h3 class="fs-subtitle">Indica tu edad</h3>
+                  <div class="container">
+                    <?php for ($i = 0; $i < count($edades); $i++) { ?>
+                    <ul  >
 
+                      <input type="radio" id="test<?=@$i+1;?>" name="edad" value="<?=@$edades[$i]['idEdad'];?>">
+                      <label  for="test<?=@$i+1;?>"><?=@$edades[$i]['nombreEdad'];?> <?=@$edades[$i]['edadEdad'];?></label>
 
-                  <div class="card">
+                  </ul>
+                  <br>
+                    <?php } ?>
+                  </div>
 
-                    <label for="<?=$i?>">
-
-                    <img class="card-img-top img-fluid w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>"
-                      alt="Card image cap">
-                      <div class="checkbox-custom checkbox-success checkbox-lg checkA">
-                        <input type="checkbox" class="selectable-item uni checkboxc"  id="<?=$i?>" value="<?=@$instituciones[$i]['idInstitucion']?>">
-                        <label for="media_1"></label>
-                      </div>
-                    <div class="card-block">
-                      <h4 class="card-title"><?=@$instituciones[$i]['nombreInstitucion'];?></h4>
-
-
-                          <!-- <h3 style="color: white"><?=@$instituciones[$i]['nombreInstitucion']?></h4>
-                          <h5 style="color: white"><?=@$instituciones[$i]['nombreFacultad']?></h5>
-                          <p class="small-meta dim" style="color: white">Gracias</p> -->
-
-
-                    </div>
-                    <ul class="list-group list-group-dividered px-20 mb-0">
-                      <li class="list-group-item px-0"><?=@$instituciones[$i]['abreviacionEdad'];?> <?=@$instituciones[$i]['nombreEdad'];?> <?=@$instituciones[$i]['edadEdad'];?></li>
-                      <li class="list-group-item px-0"><?=@$instituciones[$i]['abreviacionCampamento'];?> <?=@$instituciones[$i]['nombreCampamento'];?></li>
-                      <li class="list-group-item px-0"><?=@$instituciones[$i]['abreviacionTipoAlojamiento'];?> <?=@$instituciones[$i]['nombreTipoAlojamiento'];?></li>
+                  <input type="button" name="next" class="next action-button" id="edadcheck" value="Next" />
+                </fieldset>
+                <!-- <fieldset>
+                  <h2 class="fs-title">Tipo de campamento</h2>
+                  <h3 class="fs-subtitle">Indica el tipo de campamento</h3>
+                  <div class="container">
+                    <?php for ($i = 0; $i < count($campamentos); $i++) { ?>
+                    <ul >
+                        <?php if(1== 1) {?>
+                        <input type="radio" id="tes<?=@$i+1;?>" name="campamento" value="<?=@$campamentos[$i]['idCampamento'];?>">
+                        <label for="tes<?=@$i+1;?>" id="tesin<?=@$i+1;?>"><?=@$campamentos[$i]['nombreCampamento'];?></label>
+                        <?php }?>
                     </ul>
 
-                      </label>
+                    <?php } ?>
                   </div>
-                </div>
-              <?php } ?>
+                  <input type="button" name="previous" class="previous action-buttonp" value="Previous" />
+                  <input type="button" name="next" class="next action-button" id="campamentocheck" value="Next" />
+                </fieldset> -->
+                <fieldset>
+                  <h2 class="fs-title">Tipo de Alojamiento</h2>
+                  <h3 class="fs-subtitle">Indica el tipo de alojamiento</h3>
+                  <div class="container">
+                    <?php for ($i = 0; $i < count($alojamientos); $i++) { ?>
+                    <ul >
 
-              </div>
+                      <input type="radio" id="te<?=@$i+1;?>" name="alojamiento" value="<?=@$alojamientos[$i]['idTipoAlojamiento'];?>">
+                      <label  for="te<?=@$i+1;?>" id="ten<?=@$i+1;?>"><?=@$alojamientos[$i]['nombreTipoAlojamiento'];?></label>
+                    </ul>
+
+                    <br>
+                    <?php } ?>
+                  </div>
+                  <input type="button" name="previous" class="previous action-buttonp" value="Previous" />
+                  <!-- <input type="submit" class="submit action-button" value="Submit" /> -->
+                    <button type="submit" class="continuar ">Continuar</button>
+                </fieldset>
+
+              </form>
+
+
+
             </div>
-            <br>
-            <button type="button" class="btn btn-success animation-shake btn-lg btn-direction btn-left btn-continue">Continuar</button>
+          </div>
 
-            <!-- <div class="grid-wrapper">
-                <?php for($i=0; $i < count(@$instituciones);$i++) { ?>
-                <div class="card-wrapper">
-                    <input class="c-card uni" type="checkbox"  id="<?=$i+1?>" value="<?=@$universidades[$i]['idInstitucion']?>">
-                    <div class="card-content">
-                    <div class="card-state-icon"></div>
-
-                </div>
-                <?php } ?>
-
-
-            </div> -->
           </div>
 
           <!-- End Example Card Decks -->
-        </div>
 
       </div>
 
@@ -656,12 +751,10 @@ h1 {
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-strength.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/multi-select.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-placeholder.min599c.js?v4.0.2');?>"></script>
-
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/datatables.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/center/assets/examples/js/tables/datatable.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/formatter.min599c.js?v4.0.2');?>"></script>
-
-  <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/sweetalert2.js');?>"></script>
   <script>
     (function(document, window, $) {
       'use strict';
@@ -675,153 +768,178 @@ h1 {
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
+<script type="text/javascript">
+//jQuery time
+var current_fs, next_fs, previous_fs; //fieldsets
+var left, opacity, scale; //fieldset properties which we will animate
+var animating; //flag to prevent quick multi-click glitches
 
+$(".next").click(function(){
+	if(animating) return false;
+	animating = true;
+
+	current_fs = $(this).parent();
+	next_fs = $(this).parent().next();
+
+	//activate next step on progressbar using the index of next_fs
+	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+	//show the next fieldset
+	next_fs.show();
+	//hide the current fieldset with style
+	current_fs.animate({opacity: 0}, {
+		step: function(now, mx) {
+			//as the opacity of current_fs reduces to 0 - stored in "now"
+			//1. scale current_fs down to 80%
+			scale = 1 - (1 - now) * 0.2;
+			//2. bring next_fs from the right(50%)
+			left = (now * 50)+"%";
+			//3. increase opacity of next_fs to 1 as it moves in
+			opacity = 1 - now;
+			current_fs.css({
+        'transform': 'scale('+scale+')',
+        'position': 'absolute'
+      });
+			next_fs.css({'left': left, 'opacity': opacity});
+		},
+		duration: 800,
+		complete: function(){
+			current_fs.hide();
+			animating = false;
+		},
+		//this comes from the custom easing plugin
+		easing: 'easeInOutBack'
+	});
+});
+
+$(".previous").click(function(){
+	if(animating) return false;
+	animating = true;
+
+	current_fs = $(this).parent();
+	previous_fs = $(this).parent().prev();
+
+	//de-activate current step on progressbar
+	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+	//show the previous fieldset
+	previous_fs.show();
+	//hide the current fieldset with style
+	current_fs.animate({opacity: 0}, {
+		step: function(now, mx) {
+			//as the opacity of current_fs reduces to 0 - stored in "now"
+			//1. scale previous_fs from 80% to 100%
+			scale = 0.8 + (1 - now) * 0.2;
+			//2. take current_fs to the right(50%) - from 0%
+
+			//3. increase opacity of previous_fs to 1 as it moves in
+			opacity = 1 - now;
+			current_fs.css({'left': left});
+			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+		},
+		duration: 800,
+		complete: function(){
+			current_fs.hide();
+			animating = false;
+		},
+		//this comes from the custom easing plugin
+		easing: 'easeInOutBack'
+	});
+});
+
+$(".submit").click(function(){
+	return false;
+})
+
+
+
+
+</script>
   <script>
     $(function(){
-        var contador = 0;
-        $( '.uni' ).on( 'change', function() {
-            if( $(this).is(':checked') ){
-                contador++;
-            } else {
-                contador--;
+
+
+
+      $("#edadcheck").click(function () {
+        document.getElementById("ten1").style.display = 'none';
+        $campamentocheck =$('input:radio[name=campamento]:checked').val();
+
+        /* if($campamentocheck==2){
+          console.log($campamentocheck);
+          $h = $(document).find('#ten1');
+          console.log($h);
+
+          $some = $('input[type=hidden]').val();
+        }else{
+           document.getElementById(message).style.display= "inline";
+        } */
+			});
+      $("#edadcheck").click(function () {
+
+        $edad =$('input:radio[name=edad]:checked').val();
+        console.log($edad);
+          document.getElementById("tesin1").style.display = 'none';
+
+      });
+
+      $(document).on('submit','#msform',function(event){
+        event.preventDefault();
+
+      $edad = $('input:radio[name=edad]:checked').val();
+      $campamento =$('input:radio[name=campamento]:checked').val();
+      $alojamiento =$('input:radio[name=alojamiento]:checked').val();
+      console.log($edad);
+      console.log($campamento);
+      console.log($alojamiento);
+
+    var formData = new FormData();
+    /* formData.append('aspirante', $(document).find('#aspirante').val()); */
+    formData.append('edad', $('input:radio[name=edad]:checked').val());
+    formData.append('campamento',$('input:radio[name=campamento]:checked').val());
+    formData.append('alojamiento',$('input:radio[name=alojamiento]:checked').val());
+    console.log(0);
+    _url = _principalURL()+"Verano/api/aspiranteFirst_E_C_A/"+$(document).find('#aspirante').val();
+    _datos = {
+      "edad":$('input:radio[name=edad]:checked').val(),
+      "campamento":2,
+      "alojamiento":$('input:radio[name=alojamiento]:checked').val(),
+    }
+    console.log($(document).find('#aspirante').val());
+    $.ajax({
+        url: _url,
+        method : 'PUT',
+        headers : {
+        'X-API-KEY':'ANGLOKEY'
+        },
+        data: _datos,
+        success : function(_response){
+            response = JSON.stringify(_response);
+            if (_response.status=="error") {
+                $.each(_response.validations,function(key,message){
+                    $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
+                });
             }
-            if(contador==3){
-                $(".uni:not(:checked)").prop( "disabled", true );
-                tostada('info','Has seleccionado el maximo de universidades posibles');
+            if (_response.status=="success") {
+             window.location.href = "<?php echo site_url('Dashboard/Verano/TestThree');?>";
             }
-            if(contador<3){
-                $(".uni:not(:checked)").prop( "disabled", false );
-            }
-        });
-        $(document).on('click','.btn-continue',function (event){
-          event.preventDefault();
-          var formData = new FormData();
-            let unis = [];
-            $("input:checkbox:checked").each(
-                function() {
-                    unis.push(this.value);
-                }
-            );
-            if(unis.length >0){
-                var mes = $(document).find('#mes').val();
-                var anio = $(document).find('#anio').val();
-                var idAspirante = $(document).find('#aspirante').val();
 
-                var veranoSelect = $(document).find('#veranoSelected').val();
-
-                f = formData.append('campusone', unis[0]);
-                formData.append('campustwo', unis[1]);
-                formData.append('campusthree', unis[2]);
-                console.log(unis.length);
-                var d = anio+'-'+mes+'-01';
-                formData.append('mesanio', d);
-                 if( 1==1){
-                //   if(unis.length == 1){
-                //
-                //     console.log(unis[0]);
-                //     _params={
-                //         "campusone":unis[0],
-                //         "campustwo":null,
-                //         "campusthree":null,
-                //         "mesanio":d
-                //     };
-                //   }else if(unis.length == 2){
-                //
-                //     console.log(unis[0]);
-                //     console.log(unis[1]);
-                //     _params={
-                //         "campusone":unis[0],
-                //         "campustwo":unis[1],
-                //         "campusthree":null,
-                //         "mesanio":d
-                //     };
-                //   }else if(unis.length == 3){
-                //
-                //     console.log(unis[0]);
-                //     console.log(unis[1]);
-                //     console.log(unis[2]);
-                //     _params={
-                //         "campusone":unis[0],
-                //         "campustwo":unis[1],
-                //         "campusthree":unis[2],
-                //         "mesanio":d
-                //     };
-                //   }else{
-                //     alert(3);
-                //   }
-
-                    /* console.log */
-                    //var parts =d.split('-');
-                    //var mydate = new Date(parts[0], parts[1] - 1, parts[2]);
-                        _params={
-                            "institutoOne":unis[0],
-                            "institutoTwo":unis[1],
-                            "institutoThree":unis[2],
-                            "mesanio":d,
-                            "aspirante":idAspirante
-                        };
-                    _url = _principalURL()+"Verano/api/aspirante_Eleccion/";
-
-                    $.ajax({
-                        url: _url,
-                        method : 'POST',
-                        headers : {
-                        'X-API-KEY':'ANGLOKEY'
-                        },
-                        data:   _params,
-                        success : function(_response){
-                        if (_response.status=="error") {
-                            tostada("error",'Ocurrio un error intenta mas tarde');
-                        }
-
-                        if (_response.status=="success") {
-                          Swal.fire({
-                            title: 'Buen trabajo!',
-                            text: 'Sus Datos Fueron Guardados Correctamente',
-                            type: 'success',
-                            confirmButtonText: 'Siguiente'
-                            }).then(function () {
-                              if(veranoSelect == 'Verano Inglés'){
-                                window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
-                              }else if(veranoSelect == 'Verano Académico'){
-
-                                window.location.href = "<?php echo site_url('AspiranteInfoAcademic'); ?>";
-                              }else{
-                                window.location.href = "<?php echo site_url('Login'); ?>";
-                              }
-
-                          });
-                             $('#successMessage').empty().append(response.message);
-                        }
+            tostada(_response.status,_response.message);
 
 
+        },error : function(err){
 
+        }
+     });
 
-                        },error : function(err){
-
-                        }
-                    });
-                }else{
-                    if(!mes){
-                        $(document).find('#mes').addClass('is-invalid').after('<div class="invalid-feedback">El campo mes es requerido</div>');
-                    }
-                    else{
-                        $(document).find('#mes').removeClass('is-invalid');
-                    }
-                    if(!anio){
-                        $(document).find('#anio').addClass('is-invalid').after('<div class="invalid-feedback">El campo año es requerido</div>');
-                        tostada('error','Por favor selecciona el mes y año de ingreso al que estas interesado');
-                    }else{
-                        $(document).find('#anio').removeClass('is-invalid');
-                    }
-                }
-
-            }else{
-                tostada('error','Por favor selecciona al menos una universidad');
-            }
-        });
+      });
     });
 
+    function removerClase() {
+        $(document).find('.card-preparatoria').removeClass('bg-danger');
+        $(document).find('.card-verano').removeClass('bg-danger');
+        $(document).find('.card-ingles').removeClass('bg-danger');
+        $(document).find('.card-universidad').removeClass('bg-danger');
+    }
   </script>
 </body>
 </html>

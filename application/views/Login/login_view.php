@@ -2,11 +2,11 @@
 <html class="no-js css-menubar" lang="en">
 
 <head>
-  
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Anglo Latino Education Partnership</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta name="description" content="¿Te interesa estudiar en Reino Unido? Te asesoramos de manera GRATUITA y apoyamos en tu educación en instituciones y colegios británicos de excelencia." />
   <meta name="keywords" content="Anglo,Latino,Estudiar,Reino Unido,Asesores,Gratuita,Britanicos " />
@@ -24,7 +24,7 @@
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/bootstrap.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/global/css/bootstrap-extend.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/css/site.min599c.css?v4.0.2');?>">
-  
+
   <!-- Plugins -->
   <link rel="stylesheet"type="text/css" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/pages/login-v2.min599c.css?v4.0.2');?>">
 
@@ -155,7 +155,7 @@
         <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
         <div class="social-btns">
-            <!--<a class="btn facebook" href="<?=@$this->facebook->login_url('login');?>"><i class="fa fa-facebook"></i></a>-->
+            <!-- <a class="btn facebook" href="<?=@$this->facebook->login_url('login');?>"><i class="fa fa-facebook"></i></a> -->
             <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="Login/google_login"><i class="fa fa-google"></i></a>
         </div>
@@ -268,13 +268,146 @@
 
     </div>
   </div>
+  <!-- <div class="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
+    <div class="page-content">
+      <div class="page-brand-info">
+        <div class="brand">
+        <a href="Home" data-toggle="tooltip" data-placement="left" title="<?=$this->lang->line('ir_a_home');?>"><img class="brand-img" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" alt="..."></a>
+          <a href="Home"><h2 class="brand-text font-size-20">Anglo Latino Education Partnership</h2></a>
+        </div>
+        <p class="font-size-20"><?=$this->lang->line('te_interesa_estudiar');?></p>
+      </div>
+
+      <div class="page-login-main animation-slide-right animation-duration-1">
+        <div class="brand hidden-md-up">
+          <a href="Home"><img class="brand-img" style="display:block;margin:auto;width: 150px;margin-bottom: -30px;margin-top: -20px;" src="<?=base_url('resources/assets/Anglo/LOGOTIPO-AngloLatino.png');?>" width="20%"></a>
+        </div>
+        <h3 class="font-size-34 text-center"><?=$this->lang->line('login');?></h3>
+        <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
+        <div class="social-btns">
+            <a class="btn facebook" href="<?=@$this->facebook->login_url('login');?>"><i class="fa fa-facebook"></i></a>
+            <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
+            <a class="btn google" type="button"><i class="fa fa-google"></i></a>
+            <a class="btn google" href="Login/google_login"><i class="fa fa-google"></i></a>
+        </div>
+        <?php if ($this->session->flashdata('facebook')=="Error") { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=$this->lang->line('problema_facebook_message')?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <?php if ($this->session->flashdata('facebookRegistro')=="yes") { ;?>
+          <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Bienvenido!</strong> Ya tienes una cuenta ahora ingresa desde la red social que elegiste, por favor revisa tu correo, es posible que el correo se encuentre en tu carpeta de spam
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <?php if ($this->session->flashdata('message')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=@$this->session->flashdata('message')->message?>
+            <br>
+            <ul>
+            <?php foreach (isset($this->session->flashdata('message')->validations) ? $this->session->flashdata('message')->validations : array() as $value) { ;?>
+                <li type="circle"> <?= $value ?> </li>
+            <?php  } ;?>
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <?php if ($this->session->flashdata('messagePredeterminado')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=@$this->session->flashdata('messagePredeterminado');?>
+            <br>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <?php if ($this->session->flashdata('error')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
+            <strong>Error!</strong> <?=$this->session->flashdata('error')['message']?>
+            <ul>
+            <?php foreach (isset($this->session->flashdata('error')['validations']) ? $this->session->flashdata('message')->validations : array() as $value) { ;?>
+                <li type="circle"> <?= $value ?> </li>
+            <?php  } ;?>
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
+        <form action="<?=base_url('/Login/Login/autenticar');?>" method="post" id="formLogin">
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+                <span class="icon wb-envelope" aria-hidden="true" style="color: #0bb2d4"></span>
+              </span>
+              <input type="email" class="form-control <?=@ ($this->session->flashdata('message')->validations->email) ? 'is-invalid' : '';  ?>" placeholder="Correo" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-icon">
+              <span class="input-group-addon" style="background-color: white;">
+              <i class="icon fa-key" aria-hidden="true" style="color: #0bb2d4"></i>
+              </span>
+              <input type="password" class="form-control <?=@ ($this->session->flashdata('message')->validations->email) ? 'is-invalid' : '';  ?><?=@ ($this->session->flashdata('message')->validations->password) ? 'is-invalid' : '';  ?>" placeholder="Contraseña" id="password" name="password" required minlength="5">
+            </div>
+          </div>
+          <div class="checkbox-custom checkbox-primary show-password-wrap"><input type="checkbox" class="strength-toggle" title="Show/Hide Password" id="show_password"><label for="show_password">Mostrar contraseña</label></div>
+          <div class="form-group clearfix">
+            <a class="btn google" type="button"><i class="fa fa-google"></i></a>
+            <a class="float-right forgot" href="javascript:;"><?=$this->lang->line('forgot_password')?></a>
+            <a class="float-right" href="Login/forgotPassword"><?=$this->lang->line('forgot_password')?></a>
+          </div>
+          <div class="animation-example animation-hover hover">
+            <button class="btn btn-info btn-block btn-round animation-scale animation-scale-up animation-delay-200"><?=$this->lang->line('login')?></button>
+          </div>
+        </form>
+
+        <p><?=$this->lang->line('sin_cuenta')?> <a href="Registro"><?=$this->lang->line('registrate')?></a></p>
+
+        <footer class="page-copyright">
+          <p><?=$this->lang->line('WEBSITE_BY')?> Maxei Code</p>
+          <div class="social d-none d-sm-block">
+            <a class="btn btn-icon btn-round btn-success mx-5" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-facebook mx-5" href="https://www.facebook.com/AngloLatino/" target="_blank">
+                <i class="icon bd-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-instagram mx-5" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                <i class="icon bd-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="social d-block d-sm-none">
+            <a class="btn btn-icon btn-round btn-success mx-5" href="https://api.whatsapp.com/send?phone=524423645384&text=Quiero%20informacion%20para%20estudiar%20en%20Reino%20Unido" target="_blank">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-facebook mx-5" href="fb://page/6623204789" target="_blank">
+                <i class="icon bd-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-icon btn-round social-instagram mx-5" href="https://www.instagram.com/anglolatino__/?hl=es-la" target="_blank">
+                <i class="icon bd-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+  </div> -->
 <!-- Example Basic Animation -->
-                  
-                  
-                  
-                  
-                  
-              
+
+
+
+
+
+
               <!-- End Example Basic Animation -->
   <script data-cfasync="false" src="<?=base_url('resources/assets/Dashboard/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js');?>"></script><script src="<?=base_url('resources/assets/Dashboard/global/vendor/babel-external-helpers/babel-external-helpers599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/jquery/jquery.min599c.js?v4.0.2');?>"></script>
@@ -369,7 +502,7 @@
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/asscrollable.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/slidepanel.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/switchery.min599c.js?v4.0.2');?>"></script>
-  
+
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/matchheight.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jvectormap.min599c.js?v4.0.2');?>"></script>
   <script src="<?=base_url('resources/assets/Dashboard/global/js/Plugin/jquery-appear.min599c.js')?>"></script>
@@ -419,13 +552,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
-  
+
   <script type="text/javascript">
     $(function(){
       var test = true;
       $(document).on('click','.facebook',function() {
         alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
-        
+
+      });
+      $(document).on('click','.google',function() {
+        alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
+
+      });
+      $(document).on('click','.forgot',function() {
+        alertify.alert('Lo sentimos esta funcion no esta disponible por el momento ponte en contacto al número 442 260 9090 o al correo study@anglolatinoedu.com!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
+
       });
       $(document).on('click','.show-password-wrap',function(){
         if(test){
