@@ -362,90 +362,9 @@
                 }
             })
         });
-      
-        $(document).on('submit','#InstitucionForm',function(event){
-            event.preventDefault();
-            clearForm('InstitucionForm');
-            var _id=$(document).find('#idInstitucion').val();
-            if(_id){
-                _url = _principalURL()+"Institucion/api/Institucion/id/"+id;
-                _method = 'PUT';
-            }else{
-                _url = _principalURL()+"Institucion/api/Institucion/";
-                _method = 'POST';
-            }
-                $.ajax({
-                    url: _url,
-                    method : _method,
-                    headers : {
-                    'X-API-KEY':'ANGLOKEY'
-                    },
-                    data: $(document).find('#InstitucionForm').serialize(),
-                    success : function(_response){
-                        response = JSON.stringify(_response);
-                        if (_response.status=="error") {
-                            $.each(_response.validations,function(key,message){
-                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>')
-                            });
-                        }
-                        if (_response.status=="success") {
-                            setTimeout(function(){
-                                location.reload();
-                
-                            },2000);
-                        }
-                        
-                        tostada(_response.status,_response.message);
-                    
 
-                    },error : function(err){
-                    
-                    }
-            });
-        });
 
-        $(document).on('click','.editarInstitucion',function(){
-          id = this.id;
-          _url = _principalURL()+"Institucion/api/institucion/id/"+id;
-
-            $.ajax({
-                url : _url,
-                method : 'get',
-                headers : {
-                'X-API-KEY':'ANGLOKEY'
-                },
-                success : function(_response){
-                    
-                    $(document).find('#nombreI').val(_response.data.nombreInstitucion);
-                    $(document).find('#ubicacion').val(_response.data.ubicacionInstitucion);
-                    $(document).find('#url').val(_response.data.logoInstitucion);
-
-                        $(document).find('.btnsIns').html(
-                        '<div class="row">'+
-                            '<div class="col">'+
-                            '<button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal">Cancelar</button>'+
-                            '</div>'+
-                            '<div class="col">'+
-                            '<button type="submit" class="btn btn-primary btn-update">Update</button>'+
-                            '</div>'+
-                            '<div class="col">'+
-                            '<button type="button" class="btn btn-warning btn-delete-institucion">Delete</button>'+
-                            '</div>'+
-                        '</div>'
-                        );
-
-                        $(document).find('#InstitucionForm').append(
-                          '<input type="hidden" id="idInstitucion" value="'+
-                          _response.data.idInstitucion+'">'
-                        );
-
-                        $('#institucionModal').modal('show');
-                    
-                },error : function(error){
-                
-                }
-            });
-        });
+        
 
         $('#institucionModal').on('hidden.bs.modal', function (e) {
             $(document).find('#nombreI').val('');
@@ -462,32 +381,7 @@
             );
         });
 
-        $(document).on('click','.btn-delete-institucion',function(){
-            _url = _principalURL()+"Institucion/api/institucion/id/"+$(document).find('#idInstitucion').val();
-            $.ajax({
-                "url":_url,
-                "method":"DELETE",
-                headers :{
-                'X-API-KEY':'ANGLOKEY'
-                },
-                success : function(response){
-                if(response.status=="success"){
-                    
-                    setTimeout(function(){
-                            location.reload();
-              
-                        },2000);
-                    
-                }
-
-                tostada(response.status,response.message);
-                
-                }, 
-                error : function(error){
-
-                }
-            })
-        });
+        
 
         $(document).on('click','.btn-add-facultadInstitucion',function(){
           $(document).find('.nuevo').empty();

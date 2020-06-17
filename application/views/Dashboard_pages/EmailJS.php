@@ -2,7 +2,7 @@
     $(function(){
 
         let response="";
-        $(document).on('submit','#emailForm',function(event){
+        $(document).on('submit','#changeForm',function(event){
             event.preventDefault();
 
             clearForm('emailForm');

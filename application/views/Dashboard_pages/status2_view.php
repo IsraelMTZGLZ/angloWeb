@@ -73,7 +73,7 @@
           $(document).on('click','.seeMore',function(){
             var id= this.id;
             var hash=btoa(id);
-            window.location.href = "<?php echo site_url('Dashboard/DetailsAspirante/index/'); ?>"+hash;    
+            window.location.href = "<?php echo site_url('Dashboard/DetailsAspirante'); ?>"+hash;    
           });
         }
     );

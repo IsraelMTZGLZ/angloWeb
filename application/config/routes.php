@@ -82,7 +82,11 @@ $route['EnglishInst'] = 'Dashboard/Ingles/StepInst';
 $route['AspiranteInfo'] = 'Dashboard/Ingles/AspiranteInfo';
 $route['AspiranteEnglish'] = 'Dashboard/Ingles/AspirantePage';
 $route['AspirantesList'] = 'Dashboard/Ingles/ListEnglish';
+<<<<<<< HEAD
 $route['StatusUno'] = 'Dashboard/Ingles/StatusUno';
 $route['StatusDos'] = 'Dashboard/Ingles/StatusDos';
 $route['StatusCero'] = 'Dashboard/Ingles/StatusCero';
 $route['HomeAgente'] = 'Dashboard/HomeAgente';
+=======
+$route['Dashboard/DetailsAspirante(:any)'] = 'Dashboard/DetailsAspirante/index/$1';
+>>>>>>> 2e7c36db56dfc71b00797d1dadb043e0b9b27621
