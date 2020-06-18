@@ -96,7 +96,6 @@
 
       <!--Eligio universidad-->
         <div class="card card-shadow card-responsive" id="widgetLineareaColor">
-          
           <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Tus Documentos: &nbsp;</p>
           <input type="hidden" id="aspirante" value="<?=@$user->aspirante?>">
           <input type="hidden" id="nameAspirante" value="<?=@$carpetaName?>">
@@ -279,6 +278,63 @@
                 </div>
               </div>
             <?php } ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenForm">
+                        <div class="examenAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examen" name="examen" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examen">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$boletaFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Boleta de calificaciones finales.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="boletaFinalForm">
+                      <div class="boletaFinalAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="boletaFinal" name="boletaFinal" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boletaFinal">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaForm">
+                      <div class="visaAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visa" name="visa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visa">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } ?>
           <?php } ?>
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Masters") {?>
             <?php if(!$transcripcion || @!$transcripcionTraduccion) {?>
@@ -423,7 +479,99 @@
                 </div>
               </div>
             <?php } ?>
-              
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenMaestriaForm">
+                        <div class="examenMaestriaAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examenMaestria" name="examenMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examenMaestria">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$transFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Transcripcion Final.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="transFinalMaestriaForm">
+                        <div class="transFinalMaestriaAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="transFinalMaestria" name="transFinalMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-transFinalMaestria">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$titulo) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Titulo/ Acta de examen/ Carta Constancia.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="tituloForm">
+                        <div class="tituloAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="titulo" name="titulo" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-titulo">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$ATAS) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">4. ATAS.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="ATASForm">
+                        <div class="ATASAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="ATAS" name="ATAS" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-ATAS">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">5. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaMaestriaForm">
+                      <div class="visaMaestriaAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visaMaestria" name="visaMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visaMaestria">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } ?>
 
           <?php } ?>
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="PhD") {?>
@@ -577,6 +725,99 @@
                 </div>
               </div>
             <?php } ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenPHDForm">
+                        <div class="examenPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examenPHD" name="examenPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examenPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$transFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Transcripcion Final.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="transFinalPHDForm">
+                        <div class="transFinalPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="transFinalPHD" name="transFinalPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-transFinalPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$titulo) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Titulo/ Acta de examen/ Carta Constancia.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="tituloPHDForm">
+                        <div class="tituloPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="tituloPHD" name="tituloPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-tituloPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$ATAS) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">4. ATAS.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="ATASPHDForm">
+                        <div class="ATASPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="ATASPHD" name="ATASPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-ATASPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">5. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaPHDForm">
+                      <div class="visaPHDAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visaPHD" name="visaPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visaPHD">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } ?>
           <?php } ?>
           <?php if(@$infoAspirantePrepa) {?>
             <?php if (!$pasaporte) { ?>
@@ -699,29 +940,66 @@
                 </div>
               </div>
             <?php } ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenPrepaForm">
+                        <div class="examenPrepaAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examenPrepa" name="examenPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examenPrepa">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$boletaFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Boleta de calificaciones finales.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="boletaFinalPrepaForm">
+                      <div class="boletaFinalPrepaAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="boletaFinalPrepa" name="boletaFinalPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boletaFinalPrepa">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaPrepaForm">
+                      <div class="visaPrepaAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visaPrepa" name="visaPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visaPrepa">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } ?>
           <?php } ?>
           
           
-          <!--<?php for($i=0;$i < count($cartasRecomendacion);$i++) { ?>
-              
-              <div class="row">
-                <div class="col-sm-12 col-md-5" style="margin: 20px;">
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action active" style="font-size: 16px;">4. Carta Recomendacion de la <?=$cartasRecomendacion[$i]['nombreInstitucion']?> .</li>
-                  </ul>
-                </div>
-                <div class="col-sm-12 col-md-5">
-                    <form id="cartaRecomendacionForm-<?=@$cartasRecomendacion[$i]['idInstitucion']?>">
-                      <div class="cartaRecomendacionAlert-<?=@$cartasRecomendacion[$i]['idInstitucion']?>">
-                      </div>
-                      <label style="font-size: 16px;">Documento en formato PDF|WORD debera ser el de la  <?=$cartasRecomendacion[$i]['nombreInstitucion']?>.</label>
-                      <input type="file" data-plugin="dropify" id="cartaRecomendacion-<?=@$cartasRecomendacion[$i]['idInstitucion']?>" name="cartaRecomendacion-<?=@$cartasRecomendacion[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
-                      <button type="button" class="btn btn-block btn-info btn-cartaRecomendacion" style="margin-top:10%;margin-bottom: 10%;" id="<?=@$cartasRecomendacion[$i]['idInstitucion']?>" name="<?=$cartasRecomendacion[$i]['nombreInstitucion']?>">Subir</button>
-                    </form>
-                </div>
-              </div>
-          <?php } ;?>-->
-
 
         </div>
         <!---termino uni-->
@@ -731,6 +1009,30 @@
     <div class="col-xxl-5 col-lg-4" >
       <div class="card card-shadow" id="widgetStackedBar">
         <div class="card-block p-0">
+        <div class="p-30 h-150" style="margin-bottom: -30px;">
+              <p  class="font-size-20 blue-grey-700">Archivos necesarios subidos por un agente:</p>
+          </div>   
+          <ul class="list-group " >
+            <li class="list-group-item">
+                <?php for($i=0;$i<count(@$documentosAspirantes);$i++) { ?>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-9">
+                            <span style="font-size: 15px;color: #171A21;">                            
+                                <?=@$documentosAspirantes[$i]['nameDocumento']?>
+                            </span>
+                        </div>
+                        <div class="col-3">
+                            <a type="button" class="btn btn-block" style="background-color:#171A21;color:white;" href="http://localhost/angloApi<?=@$documentosAspirantes[$i]['urlDA']?>" download="<?=@$documentosAspirantes[$i]['nameDocumento']?>"><i class="icon fa-download" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12">
+                            <hr style="border-top: 3px solid red;">
+                        </div>
+                    </div>
+                <?php } ?>
+                
+                
+            </li>     
+          </ul>
           <div class="p-30 h-150">
               <p  class="font-size-20 blue-grey-700">Contactar:</p>
               <p  class="font-size-15 blue-grey-700">Si tienes dudas sobre el proceso de tus archivos o por algun tipo dde estado de tus archivos contactanos por los siguientes medios:</p>
@@ -757,6 +1059,7 @@
               <a type="button" class="btn btn-block social-facebook" href="fb://page/6623204789"><i class="icon bd-facebook" aria-hidden="true"></i>Facebook</a>
             </li>        
           </ul>
+          
         </div>
       </div>
     </div>

@@ -1,6 +1,1238 @@
 <script type="text/javascript">
   $(function(){
 
+    $(document).on('click','#btn-visaPrepa',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#visaPrepaForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('visaPrepa');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Visa.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Preparatoria',
+                        tipo : 'visa',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.visaPrepaAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-boletaFinalPrepa',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#boletaFinalPrepaForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('boletaFinalPrepa');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta Final.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Preparatoria',
+                        tipo : 'calificacionFinal',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.boletaFinalPrepaAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-examenPrepa',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#examenPrepaForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('examenPrepa');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Examen De Ingles.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Preparatoria',
+                        tipo : 'examenIngles',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.examenPrepaAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-visaPHD',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#visaPHDForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('visaPHD');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Visa.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'PhD',
+                        tipo : 'visa',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.visaPHDAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-ATASPHD',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#ATASPHDForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('ATASPHD');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/ATAS.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'PhD',
+                        tipo : 'ATAS',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.ATASPHDAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-tituloPHD',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#tituloPHDForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('tituloPHD');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Titulo, Acta o Constancia.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'PhD',
+                        tipo : 'Titulo',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.tituloPHDAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-transFinalPHD',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#transFinalPHDForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('transFinalPHD');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion Final.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'PhD',
+                        tipo : 'TranscripcionFinal',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.transFinalPHDAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-examenPHD',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#examenPHDForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('examenPHD');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Examen De Ingles.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'PhD',
+                        tipo : 'examenIngles',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.examenPHDAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-visaMaestria',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#visaMaestriaForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('visaMaestria');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Visa.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Masters',
+                        tipo : 'visa',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.visaMaestriaAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-ATAS',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#ATASForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('ATAS');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/ATAS.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Masters',
+                        tipo : 'ATAS',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.ATASAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-titulo',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#tituloForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('titulo');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Titulo, Acta o Constancia.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Masters',
+                        tipo : 'Titulo',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.tituloAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-transFinalMaestria',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#transFinalMaestriaForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('transFinalMaestria');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion Final.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Masters',
+                        tipo : 'TranscripcionFinal',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.transFinalMaestriaAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-examenMaestria',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#examenMaestriaForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('examenMaestria');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Examen De Ingles.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Masters',
+                        tipo : 'examenIngles',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.examenMaestriaAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-visa',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#visaForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('visa');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Visa.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Carrera',
+                        tipo : 'visa',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.visaAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-boletaFinal',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#boletaFinalForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('boletaFinal');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta Final.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Carrera',
+                        tipo : 'calificacionFinal',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.boletaFinalAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
+    $(document).on('click','#btn-examen',function(){
+        var aspirante = $(document).find('#aspirante').val();
+        var formData = new FormData($('#examenForm')[0]);
+        var name = $(document).find('#nameAspirante').val();
+        var validateForm = formData.get('examen');
+        if(validateForm['size']>0){
+            $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            res = validateForm['name'].split(".",-1).reverse()[0];
+            $.ajax({
+                url: 'https://content.dropboxapi.com/2/files/upload',
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: 'application/octet-stream',
+                headers: {
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
+                    "Dropbox-API-Arg": '{"path": "/'+name+'/Examen De Ingles.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
+                },
+                success: function (data) {
+                            
+                    parametros = {
+                        idDocumento : data['id'],
+                        nameDocumento : data['name'],
+                        sizeDocumento : data['size'],
+                        pathDisplayDocumento : data['path_display'],
+                        pathLowerDocumento : data['path_lower'],
+                        contentHashDocumento :data['content_hash'],
+                        clientModifiedDocumento : data['client_modified'],
+                        tipoDocumento : 'Carrera',
+                        tipo : 'examenIngles',
+                        fkAspirante : aspirante
+                    };
+
+                    _url = _principalURL()+"Documentos/Carrera/api/uploadDropboxSinCarpeta2R/";
+                    _method = "POST";
+                    $.ajax({
+                        url: _url,
+                        method : _method,
+                        headers : {
+                        'X-API-KEY':'ANGLOKEY'
+                        },
+                        data: parametros,
+                        success : function(_response){
+                        
+                        
+                            setTimeout(function(){
+                                window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                            },2000);
+                            tostada(_response.status,_response.message);
+                        
+
+                        },error : function(err){
+                        
+                        }
+                    });
+                            
+                            
+                },
+                error: function (data) {
+                }
+            });
+                
+        
+        }else{
+            $(document).find('.examenAlert').html(
+                '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
+                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                        '<span aria-hidden="true">×</span>'+
+                    '</button>'+
+                    '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado un archivo'+
+                '</div>'
+            );
+            tostada('error','No se ha seleccionado un archivo');
+        }
+        
+    });
+
     $(document).on('click','.btnReSubir',function(){
         var id = this.id;
         var name = this.name;
@@ -19,7 +1251,7 @@
                 processData: false,
                 contentType: 'application/octet-stream',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     "Dropbox-API-Arg": '{"path": "/'+carpeta+'/'+res[0]+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {
@@ -70,7 +1302,7 @@
     $(document).on('change','input[type="file"]',function (){
         var name = this.name;
         var res = name.split(".");
-        if(res[0]=='Boleta' || res[0]=='Pasaporte' || res[0]=='Carta Autorizacion' || res[0]=='Transcripcion'){
+        if(res[0]=='Boleta' || res[0]=='Pasaporte' || res[0]=='Carta Autorizacion' || res[0]=='Transcripcion' || res[0]=='Examen De Ingles' || res[0]=='Boleta Final' || res[0]=='Visa' || res[0]=='Transcripcion Final' || res[0]=='Titulo, Acta o Constancia' || res[0]=='ATAS'){
             var ext = $( this ).val().split('.').pop();
             if ($( this ).val() != '') {
                 if(ext != "pdf"){
@@ -122,7 +1354,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -146,7 +1378,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Formato De Solicitud.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -260,7 +1492,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -284,7 +1516,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -398,7 +1630,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -429,7 +1661,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Recomendacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -543,7 +1775,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -574,7 +1806,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Motivos.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -686,7 +1918,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -717,7 +1949,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -829,7 +2061,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -860,7 +2092,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -974,7 +2206,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1005,7 +2237,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1117,7 +2349,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1148,7 +2380,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1264,7 +2496,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1288,7 +2520,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Segunda Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1402,7 +2634,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1426,7 +2658,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Primera Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1538,7 +2770,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1569,7 +2801,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1681,7 +2913,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1712,7 +2944,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1824,7 +3056,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1855,7 +3087,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/CV.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1969,7 +3201,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2000,7 +3232,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2114,7 +3346,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2145,7 +3377,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2259,7 +3491,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2290,7 +3522,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Propuesta de Investigacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2404,7 +3636,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2435,7 +3667,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2551,7 +3783,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2575,7 +3807,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Segunda Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2689,7 +3921,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2713,7 +3945,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Primera Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2827,7 +4059,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2851,7 +4083,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Motivo de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2963,7 +4195,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2994,7 +4226,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3108,7 +4340,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3139,7 +4371,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3253,7 +4485,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3284,7 +4516,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3398,7 +4630,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3429,7 +4661,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3543,7 +4775,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3574,7 +4806,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Recomendacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3688,7 +4920,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3719,7 +4951,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3831,7 +5063,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3862,7 +5094,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Motivos.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3974,7 +5206,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -4005,7 +5237,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -4119,7 +5351,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -4150,7 +5382,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -4264,7 +5496,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -4295,7 +5527,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {

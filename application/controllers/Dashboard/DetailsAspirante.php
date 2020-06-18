@@ -46,6 +46,9 @@ class DetailsAspirante extends MY_RootController {
                     $response = $this->_callApiRest('Documentos/Carrera/api/carreraByAspiranteOnly/id/'.$data['aspirante']['aspirante'],null,"GET",null);
                     $data['documentos'] = $response['data'];
                 }
+
+                $responseDocs = $this->_callApiRest('Documentos/Carrera/api/documentosAgentesByAspirante/id/'.$data['aspirante']['aspirante'],null,"GET",null);
+                $data['documentosAspirantes'] = $responseDocs['data'];
                 
                 $this->_initialPage($data);
                 $this->load->view('Dashboard_pages/Aspirante/details',$data);

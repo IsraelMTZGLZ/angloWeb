@@ -148,7 +148,7 @@
                                 <div class="card-deck">
                                     <?php for($i=0;$i<count(@$universidades);$i++) {?>
                                         <div class="card card-element" style="border: 0;">
-                                            <img class="card-img-top w-full" src="<?=@$universidades[$i]['logoInstitucion'];?>" alt="Imagen Institucion">
+                                            <img class="card-img-top w-full" src="<?=@$universidades[$i]['logoInstitucion'];?>" alt="Imagen Institucion" style="height: 120px;">
                                             <div class="card-block">
                                                 <h4 class="card-title" align="center"><?=@$universidades[$i]['nombreInstitucion'];?>.</h4>
                                
@@ -158,11 +158,45 @@
                                                     <div class="stat"> </div>
                                                 </div>
                                             </div>
+                                            <?php if(!$universidades[$i]['numeroAceptacion']) {?>
+                                                <div class="row">
+                                                    <div class="alertSolicitud-<?=$universidades[$i]['idInstitucionAspiranteUniversidades']?>" style="margin: 10px;"></div>
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <input type="text" class="form-control empty" name="solicitud-<?=$universidades[$i]['idInstitucionAspiranteUniversidades']?>" placeholder="Numero de solicitud" id="solicitud-<?=$universidades[$i]['idInstitucionAspiranteUniversidades']?>">
+                                                        </div>                                              
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <input type="date" class="form-control empty" name="fechaSolicitud-<?=$universidades[$i]['idInstitucionAspiranteUniversidades']?>" id="fechaSolicitud-<?=$universidades[$i]['idInstitucionAspiranteUniversidades']?>">
+                                                        </div>                                              
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-outline btn-success btn-numeroAceptacion" id="<?=$universidades[$i]['idInstitucionAspiranteUniversidades']?>">Crear</button>
+                                                    </div>
+                                                </div>
+                                            <?php }else { ?>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <label style="color: black;">Numero de aceptacion:</label>
+                                                            <input type="text" class="form-control empty" value="<?=$universidades[$i]['numeroAceptacion'];?>" disabled>
+                                                        </div>                                              
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <label style="color: black;">Fecha del numero de aceptación:</label>
+                                                            <input type="date" class="form-control empty" value="<?=$universidades[$i]['fechaAceptacion'];?>" disabled>
+                                                        </div>                                              
+                                                    </div>
+                                                </div>
+                                            <?php } ?>
+                                            
                                         </div>
                                     <?php }?>
                                     <?php for($i=0;$i<count(@$preparatorias);$i++) {?>
                                         <div class="card card-element" style="border: 0;">
-                                            <img class="card-img-top w-full" src="<?=@$preparatorias[$i]['logoInstitucion'];?>" alt="Imagen Institucion">
+                                            <img class="card-img-top w-full" src="<?=@$preparatorias[$i]['logoInstitucion'];?>" alt="Imagen Institucion" style="height: 120px;">
                                             <div class="card-block">
                                                 <h4 class="card-title" align="center"><?=@$preparatorias[$i]['nombreInstitucion'];?>.</h4>
                                
@@ -172,6 +206,40 @@
                                                     <div class="stat"> </div>
                                                 </div>
                                             </div>
+                                            <?php if(!$preparatorias[$i]['numeroAceptacion']) {?>
+                                                <div class="row">
+                                                    <div class="alertSolicitudPrepa-<?=$preparatorias[$i]['idInstitucionAspirantePreparatorias']?>" style="margin: 10px;"></div>
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <input type="text" class="form-control empty" name="numeroSolicitudPrepa-<?=$preparatorias[$i]['idInstitucionAspirantePreparatorias']?>" id="numeroSolicitudPrepa-<?=$preparatorias[$i]['idInstitucionAspirantePreparatorias']?>" placeholder="Numero de solicitud">
+                                                        </div>                                              
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <input type="date" class="form-control empty" name="fechaSolicitudPrepa-<?=$preparatorias[$i]['idInstitucionAspirantePreparatorias']?>" id="fechaSolicitudPrepa-<?=$preparatorias[$i]['idInstitucionAspirantePreparatorias']?>">
+                                                        </div>                                              
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-outline btn-success btn-numeroAceptacionPrepa" id="<?=$preparatorias[$i]['idInstitucionAspirantePreparatorias']?>">Crear</button>
+                                                    </div>
+                                                </div>
+                                            <?php }else { ?>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <label style="color: black;">Numero de aceptacion:</label>
+                                                            <input type="text" class="form-control empty" value="<?=$preparatorias[$i]['numeroAceptacion'];?>" disabled>
+                                                        </div>                                              
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group form-material floating" data-plugin="formMaterial">
+                                                            <label style="color: black;">Fecha del numero de aceptación:</label>
+                                                            <input type="date" class="form-control empty" value="<?=$preparatorias[$i]['fechaAceptacion'];?>" disabled>
+                                                        </div>                                              
+                                                    </div>
+                                                </div>
+                                            <?php } ?>
+                                            
                                         </div>
                                     <?php }?>
                                 </div>
@@ -183,14 +251,30 @@
             <div class="col-xxl-3 col-xl-3">
                 <div class="row">
                         <div class="col-12" >
-                            <div class="card" style="height: 50%">
+                            <div class="card" style="height: 70%">
                                 <div class="card-block ">
                                     <h4 class="card-title mb-0">Status</h4>
                                     <div class="example-wrap">
                                         <div class="example">
                                             <ul class="list-group">
-                                                <li class="bg-red-600 list-group-item text-center">
-                                                    <span style="color:white"><?=$aspirante['statusAspirante']?></span>
+                                                <li class="list-group-item text-center">
+                                                    <div class="row">
+                                                        <div class="col-2" style="background-color: #db4437;height: 50%;">
+                                                            <span style="color:white;font-size: 20px;"><?=$aspirante['statusAspirante']?></span>
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" value="Cambiar estatus" disabled>
+                                                                <hr>
+                                                                <select class="form-control" name="statusNew" id="statusNew">
+                                                                    <option value="" disabled selected>Selecciona Una Opcion</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="2R">2R</option>
+                                                                </select>
+                                                            </div>
+                                                            <button type="button" class="btn btn-success btn-changeStatus">Cambiar Estatus</button>
+                                                        </div>
+                                                    </div>
                                                 </li>
                                         
                                             </ul>
@@ -372,6 +456,40 @@
               <a type="button" class="btn btn-block" style="background-color:#db4437;color:white;"><i class="icon far fa-envelope" aria-hidden="true" target="_blank"></i>Correo</a>
             </li>      
           </ul>
+          <div class="p-30 h-150" style="margin-bottom: -10px;">
+              <p  class="font-size-20 blue-grey-700">Archivos a subir:</p>
+          </div>
+          <input type="hidden" value="<?=$aspirante['aspirante']?>" name="aspiranteKey" id="aspiranteKey">
+            <form style="margin: 20px;margin-top: -50px;" id="formUpload">
+                <div class="alert"></div>
+                <input type="file" data-plugin="dropify" id="archivo" name="archivo" data-errors-position="outside">  
+                <button type="button" class="btn btn-success btn-block" id="btn-form"><i class="icon fa-send" aria-hidden="true"></i>Subir</button>            
+            </form>
+        <div class="p-30 h-150" style="margin-bottom: -30px;">
+              <p  class="font-size-20 blue-grey-700">Archivos subidos al usuario:</p>
+          </div>   
+          <ul class="list-group " >
+            <li class="list-group-item">
+                <?php for($i=0;$i<count(@$documentosAspirantes);$i++) { ?>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-9">
+                            <span style="font-size: 15px;color: #171A21;">                            
+                                <?=@$documentosAspirantes[$i]['nameDocumento']?>
+                            </span>
+                        </div>
+                        <div class="col-3">
+                            <a type="button" class="btn btn-block" style="background-color:#171A21;color:white;" href="http://localhost/angloApi<?=@$documentosAspirantes[$i]['urlDA']?>" download="<?=@$documentosAspirantes[$i]['nameDocumento']?>"><i class="icon fa-download" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12">
+                            <hr style="border-top: 3px solid red;">
+                        </div>
+                    </div>
+                <?php } ?>
+                
+                
+            </li>     
+          </ul>
+                 
         </div>
       </div>
     </div>

@@ -52,6 +52,15 @@ class MisArchivos extends MY_RootController {
                 $data['pasaporte'] = $pasaporte['data'];
                 $data['cartasRecomendacion'] = $cartasRecomendacion['data'];
                 $data['cartasAutorizacon'] = $cartasAutorizacon['data'];
+
+                $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['examenIngles'] = $examen['data'];
+
+                $boletaFinal = $this->_callApiRest('Documentos/Carrera/api/boletaFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['boletaFinal'] = $boletaFinal['data'];
+
+                $visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['visa'] = $visa['data'];
             
             }else if($data['infoAspiranteUni']['estudiosAspiranteUniversidad']=="Masters"){
                 $transcripcon = $this->_callApiRest('Documentos/Maestria/api/maestriaByAspiranteTRansc/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
@@ -80,6 +89,21 @@ class MisArchivos extends MY_RootController {
                 $data['cartasRecomendacionSegundas'] = $cartasRecomendacionSegunda['data'];
                 $data['cartasAutorizacon'] = $cartasAutorizacon['data'];
                 $data['pasaporte'] = $pasaporte['data'];
+
+                $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['examenIngles'] = $examen['data'];
+
+                $transfinal = $this->_callApiRest('Documentos/Maestria/api/transcripcionFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['transFinal'] = $transfinal['data'];
+
+                $titulo = $this->_callApiRest('Documentos/Maestria/api/titulo/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['titulo'] = $titulo['data'];
+
+                $ATAS = $this->_callApiRest('Documentos/Maestria/api/ATAS/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['ATAS'] = $ATAS['data'];
+
+                $visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['visa'] = $visa['data'];
 
             }else{
                 $propuesta = $this->_callApiRest('Documentos/PhD/api/propuesta/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
@@ -113,6 +137,21 @@ class MisArchivos extends MY_RootController {
 
                 $cartasAutorizacon = $this->_callApiRest('Documentos/Carrera/api/cartaAuto/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 $data['cartasAutorizacon'] = $cartasAutorizacon['data'];
+
+                $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['examenIngles'] = $examen['data'];
+
+                $transfinal = $this->_callApiRest('Documentos/Maestria/api/transcripcionFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['transFinal'] = $transfinal['data'];
+
+                $titulo = $this->_callApiRest('Documentos/Maestria/api/titulo/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['titulo'] = $titulo['data'];
+
+                $ATAS = $this->_callApiRest('Documentos/Maestria/api/ATAS/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['ATAS'] = $ATAS['data'];
+
+                $visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['visa'] = $visa['data'];
 
             }
 
@@ -166,6 +205,18 @@ class MisArchivos extends MY_RootController {
             $n = $this->eliminar_acentos($this->session->userdata('user_sess')->aspiranteIdCarpeta);
             $data['carpetaName'] = $n;
         }
+
+        $responseDocs = $this->_callApiRest('Documentos/Carrera/api/documentosAgentesByAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['documentosAspirantes'] = $responseDocs['data'];
+
+        $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['examenIngles'] = $examen['data'];
+
+        $boletaFinal = $this->_callApiRest('Documentos/Carrera/api/boletaFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['boletaFinal'] = $boletaFinal['data'];
+
+        $visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['visa'] = $visa['data'];
 
         $this->_initialPage($data);
 		$this->load->view('Dashboard_pages/Archivos/view',$data);
