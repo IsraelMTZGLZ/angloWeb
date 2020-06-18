@@ -17,19 +17,25 @@ class AspirantePage extends MY_RootController {
 		//testing
 
 		$responseInstSelect = $this->_callApiRest('Verano/Ingles/api/instSelected/id/'.$identAspirante,null,"GET",null);
-		echo var_dump($responseInstSelect['data']);
+		$aux_selec_one  = @$responseInstSelect['data'][0];
+
+		$aux_selec_two  = @$responseInstSelect['data'][1];
+
+		$aux_selec_three  = @$responseInstSelect['data'][2];
+
 		//
 
 
-		$recomendation = $this->_callApiRest('Ingles/api/recomendtion/id/'.$identAspirante,null,"GET",null);
 
-
+		$recomendation = $this->_callApiRest('Ingles/api/recomendtionPassport/id/'.$identAspirante,null,"GET",null);
 
 		$description = $recomendation['data']['descripcion'];
-    $fkInstOne =$responseInstSelect['data']['fkInstitutoOne'];
-    $fkInstTwo =$responseInstSelect['data']['fkInstitutoTwo'];
-    $fkInstThree =$responseInstSelect['data']['fkInstitutoThree'];
- 
+    $fkInstOne =$aux_selec_one['fkInstituto'];
+    $fkInstTwo =$aux_selec_two['fkInstituto'];
+    $fkInstThree =$aux_selec_three['fkInstituto'];
+		 // NEW TODAY 12
+
+
     $responseInstOne= $this->_callApiRest('Verano/api/veranonewInst/id/'.$fkInstOne,null,"GET",null);
     $responseInstTwo = $this->_callApiRest('Verano/api/veranonewInst/id/'.$fkInstTwo,null,"GET",null);
     $responseInstThree = $this->_callApiRest('Verano/api/veranonewInst/id/'.$fkInstThree,null,"GET",null);
@@ -73,6 +79,7 @@ class AspirantePage extends MY_RootController {
 		if(@$responseForm['data'][0]){
 			$r = $responseForm['data'][0];
 			$fileInfoFormOne = $responseForm['data'][0];
+
 			$statusDocFormOne = $r['statusDocumento'];
 			$idDocFormOne = $r['idDocumento'];
 			$responseFileFormOne =$responseForm['data'][0];
@@ -194,7 +201,7 @@ class AspirantePage extends MY_RootController {
 			$statusDocFormThree = $r['statusDocumento'];
 			$responseFileFormThree =$responseForm['data'][2];
 			$idDocFormThree = $r['idDocumento'];
-			echo($idDocFormThree);
+
 			if($r['statusDocumento'] == 'Activo'){
 				$infoFormThree = 'El documento esta en revisión';
 				$stepOneFormThree = 'current';
@@ -246,7 +253,6 @@ class AspirantePage extends MY_RootController {
 
 
 		//new
-
 
 
 
@@ -354,6 +360,7 @@ class AspirantePage extends MY_RootController {
 		// $data['enableFormOne'] =$enableFormOne;
 		 $data['defaultfileFormOne'] =$defaultfileFormOne;
 		// $data['recomendationFormOne'] = $recomendationFormOne;
+		$data['infoDocDropBox'] =  @$fileInfoFormOne;
 
 		$data['stepOneFormTwo'] =$stepOneFormTwo;
 		$data['stepTwoFormTwo'] =$stepTwoFormTwo;
@@ -398,7 +405,9 @@ class AspirantePage extends MY_RootController {
 		$data['idDocFormTwo']	=$idDocFormTwo;
 		$data['idDocFormThree']	=$idDocFormThree;
 		$data['recomendationFormThree'] = $recomendationFormThree;
-
+		$data['InstOneInfo']	=$fkInstOne;
+		$data['InstTwoInfo']	=$fkInstTwo;
+		$data['InstThreeInfo']	=$fkInstThree;
 
 		$data['enable'] =$enable;
     $data['infAspirante'] =$responseinfoSteps['data'];

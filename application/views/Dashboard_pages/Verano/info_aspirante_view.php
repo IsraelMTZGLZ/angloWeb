@@ -525,49 +525,54 @@
             <div class="card-block">
               <h4 class="card-title mb-20">Mis instituciones elegidas</h4>
               <div class="card-deck">
+                <?php if( @$InstOneInfo!= NULL ) { ;?>
                 <div class="card card-element">
-                  <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title" align="center"><?=@$instOne['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center"></p>
-                    <p class="card-text hidden-md-down" align="center"><?=@$instOne['ubicacionInstitucion'] ? $instOne['ubicacionInstitucion'] : 'London' ;?>.</p>
+                    <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title" align="center"><?=@$instOne['nombreInstitucion'];?></h4>
+                      <p class="card-text" align="center"></p>
+                      <p class="card-text hidden-md-down" align="center"><?=@$instOne['ubicacionInstitucion'] ? $instOne['ubicacionInstitucion'] : 'London' ;?>.</p>
 
-                  </div>
-                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
-                    <div class="one-third">
-                      <div class="stat"><?=@$instOne['statusInstitucion'];?> </div>
+                    </div>
+                    <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                      <div class="one-third">
+                        <div class="stat"><?=@$instOne['statusInstitucion'];?> </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card card-element">
-                  <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt="Imagen Institucion" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title" align="center"><?=@$instTwo['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center"></p>
-                    <p class="card-text hidden-md-down" align="center"><?=@$instTwo['ubicacionInstitucion'] ? $instTwo['ubicacionInstitucion'] : 'London' ;?>.</p>
+                  <?php } ?>
+                  <?php if( @$InstTwoInfo!= NULL ) { ;?>
+                  <div class="card card-element">
+                    <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt="Imagen Institucion" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title" align="center"><?=@$instTwo['nombreInstitucion'];?></h4>
+                      <p class="card-text" align="center"></p>
+                      <p class="card-text hidden-md-down" align="center"><?=@$instTwo['ubicacionInstitucion'] ? $instTwo['ubicacionInstitucion'] : 'London' ;?>.</p>
 
-                  </div>
-                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
-                    <div class="one-third">
-                      <div class="stat"><?=@$instTwo['statusInstitucion'];?></div>
+                    </div>
+                    <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                      <div class="one-third">
+                        <div class="stat"><?=@$instTwo['statusInstitucion'];?></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card card-element">
-                  <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title" align="center"><?=@$instThree['nombreInstitucion'];?></h4>
-                    <p class="card-text" align="center" ></p>
-                    <p class="card-text hidden-md-down" align="center"><?=@$instThree['ubicacionInstitucion'] ? $instThree['ubicacionInstitucion'] : 'London' ;?>.</p>
+                  <?php } ?>
+                  <?php if( @$InstThreeInfo!= NULL ) { ;?>
+                  <div class="card card-element">
+                    <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title" align="center"><?=@$instThree['nombreInstitucion'];?></h4>
+                      <p class="card-text" align="center" ></p>
+                      <p class="card-text hidden-md-down" align="center"><?=@$instThree['ubicacionInstitucion'] ? $instThree['ubicacionInstitucion'] : 'London' ;?>.</p>
 
-                  </div>
-                  <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
-                    <div class="one-third">
-                      <div class="stat"><?=@$instThree['statusInstitucion'];?></div>
+                    </div>
+                    <div class="clash-card__unit-stats <?='clash-card__unit-stats--goblin' ;?> clearfix">
+                      <div class="one-third">
+                        <div class="stat"><?=@$instThree['statusInstitucion'];?></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-
+                  <?php } ?>
               </div>
 
             </div>
@@ -648,7 +653,7 @@
 
               </div>
           </div>
-
+          <?php if( @$InstOneInfo!= NULL ) { ;?>
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Formato de solicitud para <?=@$instOne['nombreInstitucion'];?> </h4>
@@ -679,10 +684,10 @@
                       </button>
                     </div>
                     <div class="float-left">
-                      <button type="button" class="btn btn-info ladda-button btn-subir-veranoFormOne" data-style="expand-left"
+                      <!-- <button type="button" class="btn btn-info ladda-button btn-subir-veranoFormOne" data-style="expand-left"
                         data-plugin="ladda" data-type="progress" id="file">
                         <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Subir</span>
-                      </button>
+                      </button> -->
                     </div>
 
 
@@ -728,6 +733,8 @@
 
               </div>
           </div>
+          <?php } ;?>
+          <?php if( @$InstTwoInfo!= NULL ) { ;?>
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Formato de solicitud para <?=@$instTwo['nombreInstitucion'];?> </h4>
@@ -801,6 +808,8 @@
 
               </div>
           </div>
+          <?php } ;?>
+          <?php if( @$InstThreeInfo!= NULL ) { ;?>
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Formato de solicitud para <?=@$instThree['nombreInstitucion'];?> </h4>
@@ -874,6 +883,7 @@
 
               </div>
           </div>
+          <?php } ;?>
           <!-- End User Background -->
 
           <!-- User Recomenfations -->

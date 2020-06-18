@@ -186,10 +186,10 @@
     .reviciones{
       align: center;
     }
-    /* .upicon{
+    .upicon{
       position:relative;
       top: 5px;
-    } */
+    }
   </style>
 </head>
 <body class="animsition  page-profile-v2  ">
@@ -487,6 +487,7 @@
   <input type="hidden" id="idDocFormOne" value="<?=@$idDocFormOne;?>" name="idDocFormOne">
   <input type="hidden" id="idDocFormTwo" value="<?=@$idDocFormTwo;?>" name="idDocFormTwo">
   <input type="hidden" id="idDocFormThree" value="<?=@$idDocFormThree;?>" name="idDocFormThree">
+  <input type="hidden" id="NameLastName" value="<?=@$aspirante['firstNamePersona'];?><?=@$aspirante['lastNamePersona'];?>" name="NameLastName">
   <div class="page">
     <div class="page-header">
       <h1 align="center" class="page-title">Bienvenido <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></h1>
@@ -526,21 +527,15 @@
             <div class="card-block">
               <h4 class="card-title mb-20">Mis instituciones elegidas</h4>
               <div class="card-deck">
-                <?php if(!@$instOne== NULL) { ;?>
+                <?php if(!@$InstOneInfo== NULL) { ;?>
                 <div class="card card-element">
                   <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
                     <h4 class="card-title" align="center"><?=@$instOne['nombreInstitucion'];?></h4>
                     <p class="card-text" align="center"></p>
                     <p class="card-text hidden-md-down" align="center"><?=@$instOne['ubicacionInstitucion'] ? $instOne['ubicacionInstitucion'] : 'London' ;?>.</p>
-
                   </div>
-
-                  <!-- <div class="float-right">
-                    <a type="button" class="btn btn-primary btn-xs ladda-button "  href="<?=@$documentTwo['data']['urlDocumento'];?>" download> <i class="icon icon-xs fa-info mr-0" aria-hidden="true"></i> Información</a>
-                  </div> -->
                   <div class="text-center">
-
                       <!-- <a type="button" class="btn btn-round btn-warning" href="tel:4422609090"><i class="icon icon-xs fa-info mr-0" aria-hidden="true"></i>Información</a> -->
                       <button class="btn btn-outline btn-success" data-target="#exampleNifty3dSlit" data-toggle="modal"
                         type="button"> <i class="icon icon-xs fa-info mr-0" aria-hidden="true"></i> Información</button>
@@ -553,7 +548,7 @@
                   </div>
                 </div>
                 <?php } ;?>
-                <?php if(!@$instTwo== NULL) { ;?>
+                <?php if(!@$InstTwoInfo== NULL) { ;?>
                 <div class="card card-element">
                   <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/vv_Eastbourne.png');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
@@ -576,7 +571,7 @@
                   </div>
                 </div>
                   <?php } ;?>
-                  <?php if(!@$instThree== NULL) { ;?>
+                  <?php if(!@$InstThreeInfo== NULL) { ;?>
                 <div class="card card-element">
                   <img class="card-img-top w-full" src="<?=base_url('resources/assets/Informativa/images/uk_universities.jpg');?>" alt="Imagen Institucion" alt="Card image cap">
                   <div class="card-block">
@@ -615,8 +610,9 @@
               <div class="example-wrap">
                 <h4 class="example-title"><?=$infoDoc;?></h4>
                 <div class="example">
-                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enable;?>   data-default-file="<?=$defaultfile;?>"
-                  />
+                  <form id="formDocPassport">                  
+                    <input type="file" id="input-file-now" name="formatoDeSolicitud.pdf" data-plugin="dropify" <?=$enable;?>   data-default-file="<?=$defaultfile;?>" />
+                  </form>
                 </div>
                 <div class="example example-buttons">
                   <?php if(@$fileexists == FALSE) { ;?>
@@ -688,7 +684,8 @@
               </div>
               </div>
           </div>
-          <?php if(!@$documentOne['data']== NULL) { ;?>
+
+          <?php if(@$documentOne['data']!= NULL  && @$InstOneInfo!= NULL ) { ;?>
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Alta de Formato de Registro para  <?=@$instOne['nombreInstitucion'];?></h4>
@@ -697,8 +694,9 @@
               <div class="example-wrap">
                 <h4 class="example-title"><?=$infoFormOne;?></h4>
                 <div class="example">
-                  <input type="file" id="input-file-FormOne" data-plugin="dropify" <?=$enableFormOne;?>   data-default-file="<?=$defaultfileFormOne;?>"
-                  />
+                  <form id="formDocModi">
+                    <input type="file" id="input-file-FormOne" name="formatoDeSolicitud.pdf" data-plugin="dropify" <?=$enableFormOne;?>   data-default-file="<?=$defaultfileFormOne;?>"/>
+                  </form>
                 </div>
                 <div class="example example-buttons">
                   <?php if(@$fileexistsFormOne == FALSE) { ;?>
@@ -771,7 +769,7 @@
               </div>
           </div>
           <?php } ?>
-          <?php if(!@$documentTwo['data']== NULL) { ;?>
+          <?php if(@$documentTwo['data']!= NULL  && @$InstTwoInfo!= NULL ) { ;?>
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Alta de Formato de Registro Para  <?=@$instTwo['nombreInstitucion'];?></h4>
@@ -780,8 +778,9 @@
               <div class="example-wrap">
                 <h4 class="example-title"><?=$infoFormTwo;?></h4>
                 <div class="example">
-                  <input type="file" id="input-file-FormTwo" data-plugin="dropify" <?=$enableFormTwo;?>   data-default-file="<?=$defaultfileFormTwo;?>"
-                  />
+                  <form id="formDocTwo">
+                    <input type="file" id="input-file-FormTwo" name="formatoDeSolicitud.pdf" data-plugin="dropify" <?=$enableFormTwo;?>   data-default-file="<?=$defaultfileFormTwo;?>"/>
+                  </form>
                 </div>
                 <div class="example example-buttons">
                   <?php if(@$fileexistsFormTwo == FALSE) { ;?>
@@ -854,7 +853,7 @@
               </div>
           </div>
           <?php } ?>
-          <?php if(!@$documentThree['data']== NULL) { ;?>
+          <?php if(@$documentThree['data']!= NULL  && @$InstThreeInfo!= NULL ) { ;?>
           <div class="user-background card card-shadow">
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Alta de Formato de Registro Para  <?=@$instThree['nombreInstitucion'];?> </h4>
@@ -863,8 +862,9 @@
               <div class="example-wrap">
                 <h4 class="example-title"><?=$infoFormThree;?></h4>
                 <div class="example">
-                  <input type="file" id="input-file-FormThree" data-plugin="dropify" <?=$enableFormThree;?>   data-default-file="<?=$defaultfileFormThree;?>"
-                  />
+                  <form id="formDocThree">
+                    <input type="file" id="input-file-FormThree" name="formatoDeSolicitud.pdf" data-plugin="dropify" <?=$enableFormThree;?>   data-default-file="<?=$defaultfileFormThree;?>"/>
+                  </form>
                 </div>
                 <div class="example example-buttons">
                   <?php if(@$fileexistsFormThree == FALSE) { ;?>
@@ -1129,7 +1129,7 @@
               </table> -->
               <ul class="list-group list-group-full">
 
-              <?php if(!@$documentOne['data']== NULL) { ;?>
+              <?php if(@$documentOne['data']!= NULL  && @$InstOneInfo!= NULL ) { ;?>
                 <li class="list-group-item">
                   <div class="media">
                     <img src="<?=base_url('resources/assets/Informativa/images/pdf.png');?>" title="Chrome" alt="Chrome">
@@ -1144,7 +1144,7 @@
                   </div>
                 </li>
                 <?php } ;?>
-                <?php if(!@$documentTwo['data']== NULL) { ;?>
+                <?php if(@$documentTwo['data']!= NULL  && @$InstTwoInfo!= NULL ) { ;?>
                 <li class="list-group-item">
                   <div class="media">
                     <img src="<?=base_url('resources/assets/Informativa/images/pdf.png');?>" title="Chrome" alt="Chrome">
@@ -1160,7 +1160,7 @@
                   </div>
                 </li>
                   <?php } ;?>
-                  <?php if(!@$documentThree['data']== NULL) { ;?>
+                  <?php if(@$documentThree['data']!= NULL  && @$InstThreeInfo!= NULL ) { ;?>
                 <li class="list-group-item">
                   <div class="media">
                     <img src="<?=base_url('resources/assets/Informativa/images/pdf.png');?>" title="Chrome" alt="Chrome">

@@ -23,7 +23,7 @@
                     "Dropbox-API-Arg": '{"path": "/'+carpeta+'/'+res[0]+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {
-                    
+
                     parametros = {
                         idDocumento : data['id'],
                         nameDocumento : data['name'],
@@ -44,29 +44,29 @@
                         },
                         data: parametros,
                         success : function(_response){
-                        
-                        
+
+
                             setTimeout(function(){
                                 window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                             },2000);
                             tostada(_response.status,_response.message);
-                        
+
 
                         },error : function(err){
-                        
+
                         }
                     });
-                                  
+
                 },
                 error: function (data) {
-                    console.log(data); 
+                    console.log(data);
                 }
             });
         }else{
             tostada('error','No se ha seleccionado un archivo');
         }
     });
-    
+
     $(document).on('change','input[type="file"]',function (){
         var name = this.name;
         var res = name.split(".");
@@ -106,7 +106,7 @@
                 }
             }
         }
-        
+
     });
 
     $(document).on('click','#btn-formatoSolicitud',function(){
@@ -123,7 +123,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -138,7 +138,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         url: 'https://content.dropboxapi.com/2/files/upload',
                         type: 'post',
@@ -173,16 +173,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -210,20 +210,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -244,7 +244,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-autoPrepa',function(){
@@ -261,7 +261,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -276,7 +276,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         url: 'https://content.dropboxapi.com/2/files/upload',
                         type: 'post',
@@ -311,16 +311,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -348,20 +348,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -382,7 +382,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-recomendPrepa',function(){
@@ -399,7 +399,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -414,7 +414,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -456,16 +456,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -493,20 +493,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -527,7 +527,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-cartaMotivosPrepa',function(){
@@ -544,7 +544,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -559,7 +559,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -601,16 +601,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -638,18 +638,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -670,7 +670,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-boletaTraduccionPrepa',function(){
@@ -687,7 +687,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -702,7 +702,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -744,16 +744,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -781,18 +781,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -813,7 +813,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-boletaPrepa',function(){
@@ -830,7 +830,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -845,7 +845,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -887,16 +887,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -924,20 +924,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -958,7 +958,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-pasaportePrepa',function(){
@@ -975,7 +975,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -990,7 +990,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -1032,16 +1032,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -1069,18 +1069,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -1101,7 +1101,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-autoCartaPHD',function(){
@@ -1118,7 +1118,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -1133,7 +1133,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -1175,16 +1175,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -1212,20 +1212,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -1246,7 +1246,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','.btn-cartasReSPHD',function(){
@@ -1265,7 +1265,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -1280,7 +1280,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         url: 'https://content.dropboxapi.com/2/files/upload',
                         type: 'post',
@@ -1315,16 +1315,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -1352,18 +1352,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -1384,7 +1384,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','.btn-cartasRePPHD',function(){
@@ -1403,7 +1403,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -1418,7 +1418,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         url: 'https://content.dropboxapi.com/2/files/upload',
                         type: 'post',
@@ -1453,16 +1453,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -1490,18 +1490,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -1522,7 +1522,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-pasaportePHD',function(){
@@ -1539,7 +1539,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -1554,7 +1554,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -1596,16 +1596,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -1633,18 +1633,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -1665,7 +1665,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-pasaporteMaestria',function(){
@@ -1682,7 +1682,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -1697,7 +1697,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -1739,16 +1739,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -1776,18 +1776,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -1808,7 +1808,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-cv',function(){
@@ -1825,7 +1825,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -1840,7 +1840,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -1882,16 +1882,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -1919,20 +1919,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -1953,7 +1953,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-transTraduccionPHD',function(){
@@ -1970,7 +1970,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -1985,7 +1985,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -2027,16 +2027,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -2064,20 +2064,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -2098,7 +2098,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-transPHD',function(){
@@ -2115,7 +2115,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -2130,7 +2130,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -2172,16 +2172,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -2209,20 +2209,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -2243,7 +2243,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-propuesta',function(){
@@ -2260,7 +2260,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -2275,7 +2275,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -2317,16 +2317,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -2354,20 +2354,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -2388,7 +2388,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-autoCarta',function(){
@@ -2405,7 +2405,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -2420,7 +2420,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -2462,16 +2462,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -2499,20 +2499,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -2533,7 +2533,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','.btn-cartasReS',function(){
@@ -2552,7 +2552,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -2567,7 +2567,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         url: 'https://content.dropboxapi.com/2/files/upload',
                         type: 'post',
@@ -2602,16 +2602,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -2639,18 +2639,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -2671,7 +2671,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','.btn-cartasReP',function(){
@@ -2690,7 +2690,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -2705,7 +2705,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         url: 'https://content.dropboxapi.com/2/files/upload',
                         type: 'post',
@@ -2740,16 +2740,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -2777,18 +2777,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -2809,7 +2809,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','.btn-cartasMotivos',function(){
@@ -2828,7 +2828,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -2843,7 +2843,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         url: 'https://content.dropboxapi.com/2/files/upload',
                         type: 'post',
@@ -2878,16 +2878,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -2915,18 +2915,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -2947,7 +2947,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-transTraduccion',function(){
@@ -2964,7 +2964,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -2979,7 +2979,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -3021,16 +3021,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -3058,20 +3058,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -3092,7 +3092,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-trans',function(){
@@ -3109,7 +3109,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -3124,7 +3124,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -3166,16 +3166,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -3203,20 +3203,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -3237,7 +3237,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-auto',function(){
@@ -3254,7 +3254,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -3269,7 +3269,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -3311,16 +3311,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -3348,20 +3348,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -3382,9 +3382,9 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
-    
+
     $(document).on('click','#btn-boleta',function(){
         var aspirante = $(document).find('#aspirante').val();
         var formData = new FormData($('#boletaForm')[0]);
@@ -3399,7 +3399,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -3414,7 +3414,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -3456,16 +3456,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -3493,20 +3493,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -3527,7 +3527,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-recomend',function(){
@@ -3544,7 +3544,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -3559,7 +3559,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -3601,16 +3601,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -3638,20 +3638,20 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -3672,7 +3672,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-boletaTraduccion',function(){
@@ -3689,7 +3689,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -3704,7 +3704,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -3746,16 +3746,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -3783,18 +3783,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -3815,7 +3815,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-cartaMotivos',function(){
@@ -3832,7 +3832,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -3847,7 +3847,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -3889,16 +3889,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -3926,18 +3926,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -3958,7 +3958,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','#btn-pasaporte',function(){
@@ -3975,7 +3975,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -3990,7 +3990,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -4032,16 +4032,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -4069,18 +4069,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -4101,7 +4101,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','.btn-cartaRecomendacion',function(){
@@ -4120,7 +4120,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -4135,7 +4135,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -4177,16 +4177,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -4214,18 +4214,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -4246,7 +4246,7 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
     $(document).on('click','.btn-cartaAutorizacion',function(){
@@ -4265,7 +4265,7 @@
                 contentType: 'application/json',
                 headers: {
                     "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
-                    
+
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
                 success: function (response) {
@@ -4280,7 +4280,7 @@
                     }else{
                         parametros = null;
                     }
-                    
+
                     $.ajax({
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
@@ -4322,16 +4322,16 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
-                                    
+
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
-                                    
+
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
 
@@ -4359,18 +4359,18 @@
                                     },
                                     data: parametros,
                                     success : function(_response){
-                                    
+
                                         setTimeout(function(){
                                             window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
                                         },2000);
                                         tostada(_response.status,_response.message);
 
                                     },error : function(err){
-                                    
+
                                     }
                                 });
                             }
-                            
+
                         },
                         error: function (data) {
                         }
@@ -4391,10 +4391,10 @@
             );
             tostada('error','No se ha seleccionado un archivo');
         }
-        
+
     });
 
   });
 
-  
+
 </script>

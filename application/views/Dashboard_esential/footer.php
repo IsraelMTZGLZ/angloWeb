@@ -224,68 +224,145 @@
   <script type="text/javascript">
   $(document).ready(function(){
         $(document).on('click','.btn-file-verano',function (event){
+          var id = this.id;
+          var name = this.name;
+          var res = name.split(".");
+          var formData = new FormData($('#formDocPassport')[0]);
+          var validateForm = $(document).find('#input-file-now').val() ;
+          var NameLastName = $(document).find('#NameLastName').val();
+          console.log(name);
           var $pdfInfo = $("#input-file-now");
           var archivo = $pdfInfo[0].files;
-            if(archivo.length > 0){
-              var formData = new FormData();
-              var pdfInfo = archivo[0];
-              var lector = new FileReader();
+          var pdfInfo = archivo[0];
+          if(validateForm){
+            // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            var ext = $( document ).find('#input-file-now').val().split('.').pop();
+            $.ajax({
+              url: 'https://content.dropboxapi.com/2/files/upload',
+              type: 'post',
+              data: formData,
+              processData: false,
+              contentType: 'application/octet-stream',
+              headers: {
+                "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/Pasaporte-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+              },
+              success: function (data) {
               formData.append('Pasaporte', pdfInfo);
               formData.append('aspirante', $(document).find('#aspirante').val());
-
               _url = _principalURL()+"Verano/api/pasaporte/id/"+$(document).find('#aspirante').val();
-
-              $.ajax({
-                url:_url,
-                method: 'POST',
-                headers : {
-                  'X-API-KEY':'ANGLOKEY'
-                },
-                data: formData,
-                contentType: false,
-                processData: false,
-                success : function(_response){
+                $.ajax({
+                  url:_url,
+                  method: 'POST',
+                  headers : {
+                   'X-API-KEY':'ANGLOKEY'
+                  },
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success : function(_response){
                   response= JSON.stringify(_response);
                   if(_response.status == "error"){
-
                     tostada('error','Revise sus datos ');
-                      $.each(_response.validations, function(key,message){
-                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                       });
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                    });
                   }else{
-                    Swal.fire({
-                      title: 'Buen trabajo!',
-                      text: 'Su pasaporte Fue Guardado Correctamente',
-                      type: 'success',
-                      confirmButtonText: 'Ok'
-                    }).then(function () {
-
-
-                  });
-                  }
-
-                },
-                error : function(err){
-                    response= JSON.stringify(err.responseText);
-                    $(document).find('#responseText').html(
+                     Swal.fire({
+                     title: 'Buen trabajo!',
+                     text: 'Su pasaporte Fue Guardado Correctamente',
+                     type: 'success',
+                     confirmButtonText: 'Ok'
+                     }).then(function () {
+                     });
+                     }
+                  },
+                  error : function(err){
+                   response= JSON.stringify(err.responseText);
+                   $(document).find('#responseText').html(
                       '<div class="alert alert-success" role="alert">'
-                      +response+
+                       +response+
                       '</div>'
                     );
-                    setTimeout(function(){
-                        $(document).find('#responseText').html('');
-                    }, 3000);
-
+                   setTimeout(function(){
+                  $(document).find('#responseText').html('');
+                  }, 3000);
+                  }
+                });
+                },
+                error: function (data) {
+                  console.log(data);
                 }
               });
-            }else{
-              Swal.fire({
-                title: 'Error!',
-                text: 'Elija un archivo',
-                type: 'error',
-                confirmButtonText: 'Entendido'
-              });
-            }
+              }else{
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'Elija un archivo',
+                  type: 'error',
+                  confirmButtonText: 'Entendido'
+                });
+              }
+
+            // if(archivo.length > 0){
+            //   var formData = new FormData();
+            //   var pdfInfo = archivo[0];
+            //   var lector = new FileReader();
+            //   formData.append('Pasaporte', pdfInfo);
+            //   formData.append('aspirante', $(document).find('#aspirante').val());
+            //
+            //
+            //
+            //   $.ajax({
+            //     url:_url,
+            //     method: 'POST',
+            //     headers : {
+            //       'X-API-KEY':'ANGLOKEY'
+            //     },
+            //     data: formData,
+            //     contentType: false,
+            //     processData: false,
+            //     success : function(_response){
+            //       response= JSON.stringify(_response);
+            //       if(_response.status == "error"){
+            //
+            //         tostada('error','Revise sus datos ');
+            //           $.each(_response.validations, function(key,message){
+            //             $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+            //            });
+            //       }else{
+            //         Swal.fire({
+            //           title: 'Buen trabajo!',
+            //           text: 'Su pasaporte Fue Guardado Correctamente',
+            //           type: 'success',
+            //           confirmButtonText: 'Ok'
+            //         }).then(function () {
+            //
+            //
+            //       });
+            //       }
+            //
+            //     },
+            //     error : function(err){
+            //         response= JSON.stringify(err.responseText);
+            //         $(document).find('#responseText').html(
+            //           '<div class="alert alert-success" role="alert">'
+            //           +response+
+            //           '</div>'
+            //         );
+            //         setTimeout(function(){
+            //             $(document).find('#responseText').html('');
+            //         }, 3000);
+            //
+            //     }
+            //   });
+            // }else{
+            //   Swal.fire({
+            //     title: 'Error!',
+            //     text: 'Elija un archivo',
+            //     type: 'error',
+            //     confirmButtonText: 'Entendido'
+            //   });
+            // }
         });
         $(document).on('click','.btn-add-fileaddInstitucion',function(){
           $(document).find('.nuev').empty();
@@ -388,60 +465,74 @@
           });
           /* // */
         $(document).on('click','.btn-edit-file-verano',function (event){
+          var id = this.id;
+          var name = this.name;
+          var res = name.split(".");
+          var formData = new FormData($('#formDocPassport')[0]);
+          var validateForm = $(document).find('#input-file-now').val() ;
+          var NameLastName = $(document).find('#NameLastName').val();
+          console.log(name);
           var $pdfInfo = $("#input-file-now");
           var archivo = $pdfInfo[0].files;
-            if(archivo.length > 0){
-              var formData = new FormData();
-              var pdfInfo = archivo[0];
-              var lector = new FileReader();
+          var pdfInfo = archivo[0];
+          if(validateForm){
+            // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            var ext = $( document ).find('#input-file-now').val().split('.').pop();
+            $.ajax({
+              url: 'https://content.dropboxapi.com/2/files/upload',
+              type: 'post',
+              data: formData,
+              processData: false,
+              contentType: 'application/octet-stream',
+              headers: {
+                "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/Pasaporte-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+              },
+              success: function (data) {
               formData.append('Pasaporte', pdfInfo);
               formData.append('aspirante', $(document).find('#aspirante').val());
-
               _url = _principalURL()+"Verano/api/pasaporteUpdate/id/"+ $(document).find('#aspirante').val();
-
-              $.ajax({
-                url:_url,
-                method: 'POST',
-                headers : {
-                  'X-API-KEY':'ANGLOKEY'
-                },
-                data: formData,
-                contentType: false,
-                processData: false,
-                success : function(_response){
+                $.ajax({
+                  url:_url,
+                  method: 'POST',
+                  headers : {
+                   'X-API-KEY':'ANGLOKEY'
+                  },
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success : function(_response){
                   response= JSON.stringify(_response);
                   if(_response.status == "error"){
-                    Swal.fire({
-                      title: 'NO!',
-                      text: 'Su no pasaporte Fue Guardado Correctamente',
-                      type: 'error',
-                      confirmButtonText: 'Ok'
+                    tostada('error','Revise sus datos ');
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
                     });
-
                   }else{
-                    Swal.fire({
-                      title: 'Buen trabajo!',
-                      text: 'Su pasaporte Fue Guardado Correctamente',
-                      type: 'success',
-                      confirmButtonText: 'Ok'
-                    }).then(function () {
-
-                     window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
-                  });
-                  }
-
-                },
-                error : function(err){
-                    response= JSON.stringify(err.responseText);
-                    $(document).find('#responseText').html(
+                     Swal.fire({
+                     title: 'Buen trabajo!',
+                     text: 'Su pasaporte Fue Guardado Correctamente',
+                     type: 'success',
+                     confirmButtonText: 'Ok'
+                     }).then(function () {
+                     });
+                     }
+                  },
+                  error : function(err){
+                   response= JSON.stringify(err.responseText);
+                   $(document).find('#responseText').html(
                       '<div class="alert alert-success" role="alert">'
-                      +response+
+                       +response+
                       '</div>'
                     );
-                    setTimeout(function(){
-                        $(document).find('#responseText').html('');
-                    }, 3000);
-
+                   setTimeout(function(){
+                  $(document).find('#responseText').html('');
+                  }, 3000);
+                  }
+                });
+                },
+                error: function (data) {
+                  console.log(data);
                 }
               });
               }else{
@@ -452,128 +543,286 @@
                   confirmButtonText: 'Entendido'
                 });
               }
+          // var $pdfInfo = $("#input-file-now");
+          // var archivo = $pdfInfo[0].files;
+          //   if(archivo.length > 0){
+          //     var formData = new FormData();
+          //     var pdfInfo = archivo[0];
+          //     var lector = new FileReader();
+          //     formData.append('Pasaporte', pdfInfo);
+          //     formData.append('aspirante', $(document).find('#aspirante').val());
+          //
+          //     _url = _principalURL()+"Verano/api/pasaporteUpdate/id/"+ $(document).find('#aspirante').val();
+          //
+          //     $.ajax({
+          //       url:_url,
+          //       method: 'POST',
+          //       headers : {
+          //         'X-API-KEY':'ANGLOKEY'
+          //       },
+          //       data: formData,
+          //       contentType: false,
+          //       processData: false,
+          //       success : function(_response){
+          //         response= JSON.stringify(_response);
+          //         if(_response.status == "error"){
+          //           Swal.fire({
+          //             title: 'NO!',
+          //             text: 'Su no pasaporte Fue Guardado Correctamente',
+          //             type: 'error',
+          //             confirmButtonText: 'Ok'
+          //           });
+          //
+          //         }else{
+          //           Swal.fire({
+          //             title: 'Buen trabajo!',
+          //             text: 'Su pasaporte Fue Guardado Correctamente',
+          //             type: 'success',
+          //             confirmButtonText: 'Ok'
+          //           }).then(function () {
+          //
+          //            window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+          //         });
+          //         }
+          //
+          //       },
+          //       error : function(err){
+          //           response= JSON.stringify(err.responseText);
+          //           $(document).find('#responseText').html(
+          //             '<div class="alert alert-success" role="alert">'
+          //             +response+
+          //             '</div>'
+          //           );
+          //           setTimeout(function(){
+          //               $(document).find('#responseText').html('');
+          //           }, 3000);
+          //
+          //       }
+          //     });
+          //     }else{
+          //       Swal.fire({
+          //         title: 'Error!',
+          //         text: 'Elija un archivo',
+          //         type: 'error',
+          //         confirmButtonText: 'Entendido'
+          //       });
+          //     }
           });
         $(document).on('click','.btn-edit-file-veranoFormOne',function (event){
+
+
+            var id = this.id;
+            var name = this.name;
+            var res = name.split(".");
+            var formData = new FormData($('#formDocModi')[0]);
+            var validateForm = $(document).find('#input-file-FormOne').val() ;
+            var NameLastName = $(document).find('#NameLastName').val();
+            console.log(name);
             var $pdfInfo = $("#input-file-FormOne");
             var archivo = $pdfInfo[0].files;
-              if(archivo.length > 0){
-                var formData = new FormData();
-                var pdfInfo = archivo[0];
-                var lector = new FileReader();
-                formData.append('formatoDeSolicitud', pdfInfo);
-                formData.append('fkAspirante', $(document).find('#aspirante').val());
+            var pdfInfo = archivo[0];
+            _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormOne').val();
+              if(validateForm){
+                      // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+                      var ext = $( document ).find('#input-file-FormOne').val().split('.').pop();
+                      $.ajax({
+                          url: 'https://content.dropboxapi.com/2/files/upload',
+                          type: 'post',
+                          data: formData,
+                          processData: false,
+                          contentType: 'application/octet-stream',
+                          headers: {
+                              "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                              "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/formato-Solicitud-Uno-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+                          },
+                          success: function (data) {
+                            formData.append('formatoDeSolicitud', pdfInfo);
+                            formData.append('fkAspirante', $(document).find('#aspirante').val());
 
-                _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormOne').val();
+                              $.ajax({
+                                url:_url,
+                                method: 'POST',
+                                headers : {
+                                 'X-API-KEY':'ANGLOKEY'
+                                },
+                                data: formData,
+                                contentType: false,
+                                processData: false,
+                                success : function(_response){
+                                 response= JSON.stringify(_response);
+                                  if(_response.status == "error"){
+                                    tostada('error','Revise sus datos ');
+                                      $.each(_response.validations, function(key,message){
+                                        $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                                     });
+                                  }else{
+                                    Swal.fire({
+                                     title: 'Buen trabajo!',
+                                     text: 'Su pasaporte Fue Guardado Correctamente',
+                                     type: 'success',
+                                     confirmButtonText: 'Ok'
+                                    }).then(function () {
+                                    });
+                                  }
+                                },
+                                error : function(err){
+                                 response= JSON.stringify(err.responseText);
+                                  $(document).find('#responseText').html(
+                                    '<div class="alert alert-success" role="alert">'
+                                      +response+
+                                    '</div>'
+                                    );
+                                     setTimeout(function(){
+                                      $(document).find('#responseText').html('');
+                                    }, 3000);
+                                  }
+                              });
 
-                $.ajax({
-                  url:_url,
-                  method: 'POST',
-                  headers : {
-                    'X-API-KEY':'ANGLOKEY'
-                  },
-                  data: formData,
-                  contentType: false,
-                  processData: false,
-                  success : function(_response){
-                    response= JSON.stringify(_response);
-                    if(_response.status == "error"){
-                      Swal.fire({
-                        title: 'NO!',
-                        text: 'Su no pasaporte Fue Guardado Correctamente',
-                        type: 'error',
-                        confirmButtonText: 'Ok'
+                          },
+                          error: function (data) {
+                              console.log(data);
+                          }
                       });
-
-                    }else{
-                      Swal.fire({
-                        title: 'Buen trabajo!',
-                        text: 'Su pasaporte Fue Guardado Correctamente',
-                        type: 'success',
-                        confirmButtonText: 'Ok'
-                      }).then(function () {
-
-                       window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+                  }else{
+                    Swal.fire({
+                      title: 'Error!',
+                      text: 'Elija un archivo',
+                      type: 'error',
+                      confirmButtonText: 'Entendido'
                     });
-                    }
-
-                  },
-                  error : function(err){
-                      response= JSON.stringify(err.responseText);
-                      $(document).find('#responseText').html(
-                        '<div class="alert alert-success" role="alert">'
-                        +response+
-                        '</div>'
-                      );
-                      setTimeout(function(){
-                          $(document).find('#responseText').html('');
-                      }, 3000);
-
                   }
-                });
-                }else{
-                  Swal.fire({
-                    title: 'Error!',
-                    text: 'Elija un archivo',
-                    type: 'error',
-                    confirmButtonText: 'Entendido'
-                  });
-                }
+              // if(archivo.length > 0){
+              //   var formData = new FormData();
+              //   var pdfInfo = archivo[0];
+              //   var lector = new FileReader();
+              //   formData.append('formatoDeSolicitud', pdfInfo);
+              //   formData.append('fkAspirante', $(document).find('#aspirante').val());
+              //
+              //
+              //
+              //   $.ajax({
+              //     url:_url,
+              //     method: 'POST',
+              //     headers : {
+              //       'X-API-KEY':'ANGLOKEY'
+              //     },
+              //     data: formData,
+              //     contentType: false,
+              //     processData: false,
+              //     success : function(_response){
+              //       response= JSON.stringify(_response);
+              //       if(_response.status == "error"){
+              //         Swal.fire({
+              //           title: 'NO!',
+              //           text: 'Su no pasaporte Fue Guardado Correctamente',
+              //           type: 'error',
+              //           confirmButtonText: 'Ok'
+              //         });
+              //
+              //       }else{
+              //         Swal.fire({
+              //           title: 'Buen trabajo!',
+              //           text: 'Su pasaporte Fue Guardado Correctamente',
+              //           type: 'success',
+              //           confirmButtonText: 'Ok'
+              //         }).then(function () {
+              //
+              //          window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+              //       });
+              //       }
+              //
+              //     },
+              //     error : function(err){
+              //         response= JSON.stringify(err.responseText);
+              //         $(document).find('#responseText').html(
+              //           '<div class="alert alert-success" role="alert">'
+              //           +response+
+              //           '</div>'
+              //         );
+              //         setTimeout(function(){
+              //             $(document).find('#responseText').html('');
+              //         }, 3000);
+              //
+              //     }
+              //   });
+              //   }else{
+              //     Swal.fire({
+              //       title: 'Error!',
+              //       text: 'Elija un archivo',
+              //       type: 'error',
+              //       confirmButtonText: 'Entendido'
+              //     });
+              //   }
             });
         $(document).on('click','.btn-edit-file-veranoFormTwo',function (event){
+              var id = this.id;
+              var name = this.name;
+              var res = name.split(".");
+              var formData = new FormData($('#formDocTwo')[0]);
+              var validateForm = $(document).find('#input-file-FormTwo').val() ;
+              var NameLastName = $(document).find('#NameLastName').val();
+              console.log(name);
               var $pdfInfo = $("#input-file-FormTwo");
               var archivo = $pdfInfo[0].files;
-                if(archivo.length > 0){
-                  var formData = new FormData();
-                  var pdfInfo = archivo[0];
-                  var lector = new FileReader();
+              var pdfInfo = archivo[0];
+              if(validateForm){
+                // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+                var ext = $( document ).find('#input-file-FormTwo').val().split('.').pop();
+                $.ajax({
+                  url: 'https://content.dropboxapi.com/2/files/upload',
+                  type: 'post',
+                  data: formData,
+                  processData: false,
+                  contentType: 'application/octet-stream',
+                  headers: {
+                    "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                    "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/formato-Solicitud-Dos-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+                  },
+                  success: function (data) {
                   formData.append('formatoDeSolicitud', pdfInfo);
                   formData.append('fkAspirante', $(document).find('#aspirante').val());
-
                   _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormTwo').val();
-
-                  $.ajax({
-                    url:_url,
-                    method: 'POST',
-                    headers : {
-                      'X-API-KEY':'ANGLOKEY'
-                    },
-                    data: formData,
-                    contentType: false,
-                    processData: false,
-                    success : function(_response){
+                    $.ajax({
+                      url:_url,
+                      method: 'POST',
+                      headers : {
+                       'X-API-KEY':'ANGLOKEY'
+                      },
+                      data: formData,
+                      contentType: false,
+                      processData: false,
+                      success : function(_response){
                       response= JSON.stringify(_response);
                       if(_response.status == "error"){
-                        Swal.fire({
-                          title: 'NO!',
-                          text: 'Su no pasaporte Fue Guardado Correctamente',
-                          type: 'error',
-                          confirmButtonText: 'Ok'
+                        tostada('error','Revise sus datos ');
+                        $.each(_response.validations, function(key,message){
+                          $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
                         });
-
                       }else{
-                        Swal.fire({
-                          title: 'Buen trabajo!',
-                          text: 'Su pasaporte Fue Guardado Correctamente',
-                          type: 'success',
-                          confirmButtonText: 'Ok'
-                        }).then(function () {
-
-                         window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
-                      });
-                      }
-
-                    },
-                    error : function(err){
-                        response= JSON.stringify(err.responseText);
-                        $(document).find('#responseText').html(
+                         Swal.fire({
+                         title: 'Buen trabajo!',
+                         text: 'Su pasaporte Fue Guardado Correctamente',
+                         type: 'success',
+                         confirmButtonText: 'Ok'
+                         }).then(function () {
+                         });
+                         }
+                      },
+                      error : function(err){
+                       response= JSON.stringify(err.responseText);
+                       $(document).find('#responseText').html(
                           '<div class="alert alert-success" role="alert">'
-                          +response+
+                           +response+
                           '</div>'
                         );
-                        setTimeout(function(){
-                            $(document).find('#responseText').html('');
-                        }, 3000);
-
+                       setTimeout(function(){
+                      $(document).find('#responseText').html('');
+                      }, 3000);
+                      }
+                    });
+                    },
+                    error: function (data) {
+                      console.log(data);
                     }
                   });
                   }else{
@@ -584,128 +833,140 @@
                       confirmButtonText: 'Entendido'
                     });
                   }
+                // if(archivo.length > 0){
+                //   var formData = new FormData();
+                //   var pdfInfo = archivo[0];
+                //   var lector = new FileReader();
+                //   formData.append('formatoDeSolicitud', pdfInfo);
+                //   formData.append('fkAspirante', $(document).find('#aspirante').val());
+                //
+                //   _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormTwo').val();
+                //
+                //   $.ajax({
+                //     url:_url,
+                //     method: 'POST',
+                //     headers : {
+                //       'X-API-KEY':'ANGLOKEY'
+                //     },
+                //     data: formData,
+                //     contentType: false,
+                //     processData: false,
+                //     success : function(_response){
+                //       response= JSON.stringify(_response);
+                //       if(_response.status == "error"){
+                //         Swal.fire({
+                //           title: 'NO!',
+                //           text: 'Su no pasaporte Fue Guardado Correctamente',
+                //           type: 'error',
+                //           confirmButtonText: 'Ok'
+                //         });
+                //
+                //       }else{
+                //         Swal.fire({
+                //           title: 'Buen trabajo!',
+                //           text: 'Su pasaporte Fue Guardado Correctamente',
+                //           type: 'success',
+                //           confirmButtonText: 'Ok'
+                //         }).then(function () {
+                //
+                //          window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+                //       });
+                //       }
+                //
+                //     },
+                //     error : function(err){
+                //         response= JSON.stringify(err.responseText);
+                //         $(document).find('#responseText').html(
+                //           '<div class="alert alert-success" role="alert">'
+                //           +response+
+                //           '</div>'
+                //         );
+                //         setTimeout(function(){
+                //             $(document).find('#responseText').html('');
+                //         }, 3000);
+                //
+                //     }
+                //   });
+                //   }else{
+                //     Swal.fire({
+                //       title: 'Error!',
+                //       text: 'Elija un archivo',
+                //       type: 'error',
+                //       confirmButtonText: 'Entendido'
+                //     });
+                //   }
               });
         $(document).on('click','.btn-edit-file-veranoFormThree',function (event){
-                var $pdfInfo = $("#input-file-FormThree");
-                var archivo = $pdfInfo[0].files;
-                  if(archivo.length > 0){
-                    var formData = new FormData();
-                    var pdfInfo = archivo[0];
-                    var lector = new FileReader();
-                    formData.append('formatoDeSolicitud', pdfInfo);
-                    formData.append('fkAspirante', $(document).find('#aspirante').val());
-
-                    _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormThree').val();
-
-                    $.ajax({
-                      url:_url,
-                      method: 'POST',
-                      headers : {
-                        'X-API-KEY':'ANGLOKEY'
-                      },
-                      data: formData,
-                      contentType: false,
-                      processData: false,
-                      success : function(_response){
-                        response= JSON.stringify(_response);
-                        if(_response.status == "error"){
-                          Swal.fire({
-                            title: 'NO!',
-                            text: 'Su no pasaporte Fue Guardado Correctamente',
-                            type: 'error',
-                            confirmButtonText: 'Ok'
-                          });
-
-                        }else{
-                          Swal.fire({
-                            title: 'Buen trabajo!',
-                            text: 'Su pasaporte Fue Guardado Correctamente',
-                            type: 'success',
-                            confirmButtonText: 'Ok'
-                          }).then(function () {
-
-                           window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
-                        });
-                        }
-
-                      },
-                      error : function(err){
-                          response= JSON.stringify(err.responseText);
-                          $(document).find('#responseText').html(
-                            '<div class="alert alert-success" role="alert">'
-                            +response+
-                            '</div>'
-                          );
-                          setTimeout(function(){
-                              $(document).find('#responseText').html('');
-                          }, 3000);
-
-                      }
-                    });
-                    }else{
-                      Swal.fire({
-                        title: 'Error!',
-                        text: 'Elija un archivo',
-                        type: 'error',
-                        confirmButtonText: 'Entendido'
-                      });
-                    }
-                });
-        $(document).on('click','.btn-file-verano-formRegistrationOne',function (event){
-            var $pdfInfo = $("#input-file-FormOne");
-            var archivo = $pdfInfo[0].files;
-              if(archivo.length > 0){
-                var formData = new FormData();
-                var pdfInfo = archivo[0];
-                var lector = new FileReader();
-                formData.append('formatoDeSolicitud', pdfInfo);
-                formData.append('fkAspirante', $(document).find('#aspirante').val());
-
-                _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
-
+          var id = this.id;
+          var name = this.name;
+          var res = name.split(".");
+          var formData = new FormData($('#formDocThree')[0]);
+          var validateForm = $(document).find('#input-file-FormThree').val() ;
+          var NameLastName = $(document).find('#NameLastName').val();
+          console.log(name);
+          var $pdfInfo = $("#input-file-FormThree");
+          var archivo = $pdfInfo[0].files;
+          var pdfInfo = archivo[0];
+          if(validateForm){
+            // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            var ext = $( document ).find('#input-file-FormThree').val().split('.').pop();
+            $.ajax({
+              url: 'https://content.dropboxapi.com/2/files/upload',
+              type: 'post',
+              data: formData,
+              processData: false,
+              contentType: 'application/octet-stream',
+              headers: {
+                "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/formato-Solicitud-Tres-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+              },
+              success: function (data) {
+              formData.append('formatoDeSolicitud', pdfInfo);
+              formData.append('fkAspirante', $(document).find('#aspirante').val());
+              _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormThree').val();
                 $.ajax({
                   url:_url,
                   method: 'POST',
                   headers : {
-                    'X-API-KEY':'ANGLOKEY'
+                   'X-API-KEY':'ANGLOKEY'
                   },
                   data: formData,
                   contentType: false,
                   processData: false,
                   success : function(_response){
-                    response= JSON.stringify(_response);
-                    if(_response.status == "error"){
-
-                      tostada('error','Revise sus datos ');
-                        $.each(_response.validations, function(key,message){
-                          $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                         });
-                    }else{
-                      Swal.fire({
-                        title: 'Buen trabajo!',
-                        text: 'Su pasaporte Fue Guardado Correctamente',
-                        type: 'success',
-                        confirmButtonText: 'Ok'
-                      }).then(function () {
-
-
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+                    tostada('error','Revise sus datos ');
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
                     });
-                    }
-
+                  }else{
+                     Swal.fire({
+                     title: 'Buen trabajo!',
+                     text: 'Su pasaporte Fue Guardado Correctamente',
+                     type: 'success',
+                     confirmButtonText: 'Ok'
+                     }).then(function () {
+                     });
+                     }
                   },
                   error : function(err){
-                      response= JSON.stringify(err.responseText);
-                      $(document).find('#responseText').html(
-                        '<div class="alert alert-success" role="alert">'
-                        +response+
-                        '</div>'
-                      );
-                      setTimeout(function(){
-                          $(document).find('#responseText').html('');
-                      }, 3000);
-
+                   response= JSON.stringify(err.responseText);
+                   $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                       +response+
+                      '</div>'
+                    );
+                   setTimeout(function(){
+                  $(document).find('#responseText').html('');
+                  }, 3000);
                   }
                 });
+                },
+                error: function (data) {
+                  console.log(data);
+                }
+              });
               }else{
                 Swal.fire({
                   title: 'Error!',
@@ -714,62 +975,144 @@
                   confirmButtonText: 'Entendido'
                 });
               }
-          });
-        $(document).on('click','.btn-file-verano-formRegistrationTwo',function (event){
-              var $pdfInfo = $("#input-file-FormTwo");
-              var archivo = $pdfInfo[0].files;
-                if(archivo.length > 0){
-                  var formData = new FormData();
-                  var pdfInfo = archivo[0];
-                  var lector = new FileReader();
-                  formData.append('formatoDeSolicitud', pdfInfo);
-                  formData.append('fkAspirante', $(document).find('#aspirante').val());
+                // var $pdfInfo = $("#input-file-FormThree");
+                // var archivo = $pdfInfo[0].files;
+                //   if(archivo.length > 0){
+                //     var formData = new FormData();
+                //     var pdfInfo = archivo[0];
+                //     var lector = new FileReader();
+                //     formData.append('formatoDeSolicitud', pdfInfo);
+                //     formData.append('fkAspirante', $(document).find('#aspirante').val());
+                //
+                //     _url = _principalURL()+"Verano/Ingles/api/formatoSolicitudUpdate/id/"+ $(document).find('#aspirante').val()+'/idDocForm/'+$(document).find('#idDocFormThree').val();
+                //
+                //     $.ajax({
+                //       url:_url,
+                //       method: 'POST',
+                //       headers : {
+                //         'X-API-KEY':'ANGLOKEY'
+                //       },
+                //       data: formData,
+                //       contentType: false,
+                //       processData: false,
+                //       success : function(_response){
+                //         response= JSON.stringify(_response);
+                //         if(_response.status == "error"){
+                //           Swal.fire({
+                //             title: 'NO!',
+                //             text: 'Su no pasaporte Fue Guardado Correctamente',
+                //             type: 'error',
+                //             confirmButtonText: 'Ok'
+                //           });
+                //
+                //         }else{
+                //           Swal.fire({
+                //             title: 'Buen trabajo!',
+                //             text: 'Su pasaporte Fue Guardado Correctamente',
+                //             type: 'success',
+                //             confirmButtonText: 'Ok'
+                //           }).then(function () {
+                //
+                //            window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
+                //         });
+                //         }
+                //
+                //       },
+                //       error : function(err){
+                //           response= JSON.stringify(err.responseText);
+                //           $(document).find('#responseText').html(
+                //             '<div class="alert alert-success" role="alert">'
+                //             +response+
+                //             '</div>'
+                //           );
+                //           setTimeout(function(){
+                //               $(document).find('#responseText').html('');
+                //           }, 3000);
+                //
+                //       }
+                //     });
+                //     }else{
+                //       Swal.fire({
+                //         title: 'Error!',
+                //         text: 'Elija un archivo',
+                //         type: 'error',
+                //         confirmButtonText: 'Entendido'
+                //       });
+                //     }
+        });
+        $(document).on('click','.btn-file-verano-formRegistrationOne',function (event){
+          var id = this.id;
+          var name = this.name;
+          var res = name.split(".");
+          var formData = new FormData($('#formDocModi')[0]);
+          var validateForm = $(document).find('#input-file-FormOne').val() ;
+          var NameLastName = $(document).find('#NameLastName').val();
+          console.log(name);
+          var $pdfInfo = $("#input-file-FormOne");
+          var archivo = $pdfInfo[0].files;
+          var pdfInfo = archivo[0];
+         _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+            if(validateForm){
+                    // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+                    var ext = $( document ).find('#input-file-FormOne').val().split('.').pop();
+                    $.ajax({
+                        url: 'https://content.dropboxapi.com/2/files/upload',
+                        type: 'post',
+                        data: formData,
+                        processData: false,
+                        contentType: 'application/octet-stream',
+                        headers: {
+                            "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                            "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/formato-Solicitud-Uno-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+                        },
+                        success: function (data) {
+                          formData.append('formatoDeSolicitud', pdfInfo);
+                          formData.append('fkAspirante', $(document).find('#aspirante').val());
 
-                  _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+                            $.ajax({
+                              url:_url,
+                              method: 'POST',
+                              headers : {
+                               'X-API-KEY':'ANGLOKEY'
+                              },
+                              data: formData,
+                              contentType: false,
+                              processData: false,
+                              success : function(_response){
+                               response= JSON.stringify(_response);
+                                if(_response.status == "error"){
+                                  tostada('error','Revise sus datos ');
+                                    $.each(_response.validations, function(key,message){
+                                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                                   });
+                                }else{
+                                  Swal.fire({
+                                   title: 'Buen trabajo!',
+                                   text: 'Su pasaporte Fue Guardado Correctamente',
+                                   type: 'success',
+                                   confirmButtonText: 'Ok'
+                                  }).then(function () {
+                                  });
+                                }
+                              },
+                              error : function(err){
+                               response= JSON.stringify(err.responseText);
+                                $(document).find('#responseText').html(
+                                  '<div class="alert alert-success" role="alert">'
+                                    +response+
+                                  '</div>'
+                                  );
+                                   setTimeout(function(){
+                                    $(document).find('#responseText').html('');
+                                  }, 3000);
+                                }
+                            });
 
-                  $.ajax({
-                    url:_url,
-                    method: 'POST',
-                    headers : {
-                      'X-API-KEY':'ANGLOKEY'
-                    },
-                    data: formData,
-                    contentType: false,
-                    processData: false,
-                    success : function(_response){
-                      response= JSON.stringify(_response);
-                      if(_response.status == "error"){
-
-                        tostada('error','Revise sus datos ');
-                          $.each(_response.validations, function(key,message){
-                            $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                           });
-                      }else{
-                        Swal.fire({
-                          title: 'Buen trabajo!',
-                          text: 'Su pasaporte Fue Guardado Correctamente',
-                          type: 'success',
-                          confirmButtonText: 'Ok'
-                        }).then(function () {
-
-
-                      });
-                      }
-
-                    },
-                    error : function(err){
-                        response= JSON.stringify(err.responseText);
-                        $(document).find('#responseText').html(
-                          '<div class="alert alert-success" role="alert">'
-                          +response+
-                          '</div>'
-                        );
-                        setTimeout(function(){
-                            $(document).find('#responseText').html('');
-                        }, 3000);
-
-                    }
-                  });
+                        },
+                        error: function (data) {
+                            console.log(data);
+                        }
+                    });
                 }else{
                   Swal.fire({
                     title: 'Error!',
@@ -778,70 +1121,334 @@
                     confirmButtonText: 'Entendido'
                   });
                 }
+
+                // $.ajax({
+                //   url:_url,
+                //   method: 'POST',
+                //   headers : {
+                //     'X-API-KEY':'ANGLOKEY'
+                //   },
+                //   data: formData,
+                //   contentType: false,
+                //   processData: false,
+                //   success : function(_response){
+                //     response= JSON.stringify(_response);
+                //     if(_response.status == "error"){
+                //
+                //       tostada('error','Revise sus datos ');
+                //         $.each(_response.validations, function(key,message){
+                //           $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                //          });
+                //     }else{
+                //       Swal.fire({
+                //         title: 'Buen trabajo!',
+                //         text: 'Su pasaporte Fue Guardado Correctamente',
+                //         type: 'success',
+                //         confirmButtonText: 'Ok'
+                //       }).then(function () {
+                //
+                //
+                //     });
+                //     }
+                //
+                //   },
+                //   error : function(err){
+                //       response= JSON.stringify(err.responseText);
+                //       $(document).find('#responseText').html(
+                //         '<div class="alert alert-success" role="alert">'
+                //         +response+
+                //         '</div>'
+                //       );
+                //       setTimeout(function(){
+                //           $(document).find('#responseText').html('');
+                //       }, 3000);
+                //
+                //   }
+                // });
+
+          });
+        $(document).on('click','.btn-file-verano-formRegistrationTwo',function (event){
+          var id = this.id;
+          var name = this.name;
+          var res = name.split(".");
+          var formData = new FormData($('#formDocTwo')[0]);
+          var validateForm = $(document).find('#input-file-FormTwo').val() ;
+          var NameLastName = $(document).find('#NameLastName').val();
+          console.log(name);
+          var $pdfInfo = $("#input-file-FormTwo");
+          var archivo = $pdfInfo[0].files;
+          var pdfInfo = archivo[0];
+          if(validateForm){
+            // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            var ext = $( document ).find('#input-file-FormTwo').val().split('.').pop();
+            $.ajax({
+              url: 'https://content.dropboxapi.com/2/files/upload',
+              type: 'post',
+              data: formData,
+              processData: false,
+              contentType: 'application/octet-stream',
+              headers: {
+                "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/formato-Solicitud-Dos-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+              },
+              success: function (data) {
+              formData.append('formatoDeSolicitud', pdfInfo);
+              formData.append('fkAspirante', $(document).find('#aspirante').val());
+              _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+                $.ajax({
+                  url:_url,
+                  method: 'POST',
+                  headers : {
+                   'X-API-KEY':'ANGLOKEY'
+                  },
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+                    tostada('error','Revise sus datos ');
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                    });
+                  }else{
+                     Swal.fire({
+                     title: 'Buen trabajo!',
+                     text: 'Su pasaporte Fue Guardado Correctamente',
+                     type: 'success',
+                     confirmButtonText: 'Ok'
+                     }).then(function () {
+                     });
+                     }
+                  },
+                  error : function(err){
+                   response= JSON.stringify(err.responseText);
+                   $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                       +response+
+                      '</div>'
+                    );
+                   setTimeout(function(){
+                  $(document).find('#responseText').html('');
+                  }, 3000);
+                  }
+                });
+                },
+                error: function (data) {
+                  console.log(data);
+                }
+              });
+              }else{
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'Elija un archivo',
+                  type: 'error',
+                  confirmButtonText: 'Entendido'
+                });
+              }
+
+                // if(archivo.length > 0){
+                //   var formData = new FormData();
+                //   var pdfInfo = archivo[0];
+                //   var lector = new FileReader();
+                //   formData.append('formatoDeSolicitud', pdfInfo);
+                //   formData.append('fkAspirante', $(document).find('#aspirante').val());
+                //
+                //   _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+                //
+                //   $.ajax({
+                //     url:_url,
+                //     method: 'POST',
+                //     headers : {
+                //       'X-API-KEY':'ANGLOKEY'
+                //     },
+                //     data: formData,
+                //     contentType: false,
+                //     processData: false,
+                //     success : function(_response){
+                //       response= JSON.stringify(_response);
+                //       if(_response.status == "error"){
+                //
+                //         tostada('error','Revise sus datos ');
+                //           $.each(_response.validations, function(key,message){
+                //             $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                //            });
+                //       }else{
+                //         Swal.fire({
+                //           title: 'Buen trabajo!',
+                //           text: 'Su pasaporte Fue Guardado Correctamente',
+                //           type: 'success',
+                //           confirmButtonText: 'Ok'
+                //         }).then(function () {
+                //
+                //
+                //       });
+                //       }
+                //
+                //     },
+                //     error : function(err){
+                //         response= JSON.stringify(err.responseText);
+                //         $(document).find('#responseText').html(
+                //           '<div class="alert alert-success" role="alert">'
+                //           +response+
+                //           '</div>'
+                //         );
+                //         setTimeout(function(){
+                //             $(document).find('#responseText').html('');
+                //         }, 3000);
+                //
+                //     }
+                //   });
+                // }else{
+                //   Swal.fire({
+                //     title: 'Error!',
+                //     text: 'Elija un archivo',
+                //     type: 'error',
+                //     confirmButtonText: 'Entendido'
+                //   });
+                // }
             });
         $(document).on('click','.btn-file-verano-formRegistrationThree',function (event){
-                  var $pdfInfo = $("#input-file-FormThree");
-                  var archivo = $pdfInfo[0].files;
-                    if(archivo.length > 0){
-                      var formData = new FormData();
-                      var pdfInfo = archivo[0];
-                      var lector = new FileReader();
-                      formData.append('formatoDeSolicitud', pdfInfo);
-                      formData.append('fkAspirante', $(document).find('#aspirante').val());
+          var id = this.id;
+          var name = this.name;
+          var res = name.split(".");
+          var formData = new FormData($('#formDocThree')[0]);
+          var validateForm = $(document).find('#input-file-FormThree').val() ;
+          var NameLastName = $(document).find('#NameLastName').val();
+          console.log(name);
+          var $pdfInfo = $("#input-file-FormThree");
+          var archivo = $pdfInfo[0].files;
+          var pdfInfo = archivo[0];
+          if(validateForm){
+            // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+            var ext = $( document ).find('#input-file-FormThree').val().split('.').pop();
+            $.ajax({
+              url: 'https://content.dropboxapi.com/2/files/upload',
+              type: 'post',
+              data: formData,
+              processData: false,
+              contentType: 'application/octet-stream',
+              headers: {
+                "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/formato-Solicitud-Tres-'+NameLastName+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+              },
+              success: function (data) {
+              formData.append('formatoDeSolicitud', pdfInfo);
+              formData.append('fkAspirante', $(document).find('#aspirante').val());
+              _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+                $.ajax({
+                  url:_url,
+                  method: 'POST',
+                  headers : {
+                   'X-API-KEY':'ANGLOKEY'
+                  },
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success : function(_response){
+                  response= JSON.stringify(_response);
+                  if(_response.status == "error"){
+                    tostada('error','Revise sus datos ');
+                    $.each(_response.validations, function(key,message){
+                      $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                    });
+                  }else{
+                     Swal.fire({
+                     title: 'Buen trabajo!',
+                     text: 'Su pasaporte Fue Guardado Correctamente',
+                     type: 'success',
+                     confirmButtonText: 'Ok'
+                     }).then(function () {
+                     });
+                     }
+                  },
+                  error : function(err){
+                   response= JSON.stringify(err.responseText);
+                   $(document).find('#responseText').html(
+                      '<div class="alert alert-success" role="alert">'
+                       +response+
+                      '</div>'
+                    );
+                   setTimeout(function(){
+                  $(document).find('#responseText').html('');
+                  }, 3000);
+                  }
+                });
+                },
+                error: function (data) {
+                  console.log(data);
+                }
+              });
+              }else{
+                Swal.fire({
+                  title: 'Error!',
+                  text: 'Elija un archivo',
+                  type: 'error',
+                  confirmButtonText: 'Entendido'
+                });
+              }
 
-                      _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
 
-                      $.ajax({
-                        url:_url,
-                        method: 'POST',
-                        headers : {
-                          'X-API-KEY':'ANGLOKEY'
-                        },
-                        data: formData,
-                        contentType: false,
-                        processData: false,
-                        success : function(_response){
-                          response= JSON.stringify(_response);
-                          if(_response.status == "error"){
-
-                            tostada('error','Revise sus datos ');
-                              $.each(_response.validations, function(key,message){
-                                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-                               });
-                          }else{
-                            Swal.fire({
-                              title: 'Buen trabajo!',
-                              text: 'Su pasaporte Fue Guardado Correctamente',
-                              type: 'success',
-                              confirmButtonText: 'Ok'
-                            }).then(function () {
-
-
-                          });
-                          }
-
-                        },
-                        error : function(err){
-                            response= JSON.stringify(err.responseText);
-                            $(document).find('#responseText').html(
-                              '<div class="alert alert-success" role="alert">'
-                              +response+
-                              '</div>'
-                            );
-                            setTimeout(function(){
-                                $(document).find('#responseText').html('');
-                            }, 3000);
-
-                        }
-                      });
-                    }else{
-                      Swal.fire({
-                        title: 'Error!',
-                        text: 'Elija un archivo',
-                        type: 'error',
-                        confirmButtonText: 'Entendido'
-                      });
-                    }
+                    // if(archivo.length > 0){
+                    //   var formData = new FormData();
+                    //   var pdfInfo = archivo[0];
+                    //   var lector = new FileReader();
+                    //   formData.append('formatoDeSolicitud', pdfInfo);
+                    //   formData.append('fkAspirante', $(document).find('#aspirante').val());
+                    //
+                    //   _url = _principalURL()+"Verano/Ingles/api/formatoSolicitud/id/"+$(document).find('#aspirante').val();
+                    //
+                    //   $.ajax({
+                    //     url:_url,
+                    //     method: 'POST',
+                    //     headers : {
+                    //       'X-API-KEY':'ANGLOKEY'
+                    //     },
+                    //     data: formData,
+                    //     contentType: false,
+                    //     processData: false,
+                    //     success : function(_response){
+                    //       response= JSON.stringify(_response);
+                    //       if(_response.status == "error"){
+                    //
+                    //         tostada('error','Revise sus datos ');
+                    //           $.each(_response.validations, function(key,message){
+                    //             $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+                    //            });
+                    //       }else{
+                    //         Swal.fire({
+                    //           title: 'Buen trabajo!',
+                    //           text: 'Su pasaporte Fue Guardado Correctamente',
+                    //           type: 'success',
+                    //           confirmButtonText: 'Ok'
+                    //         }).then(function () {
+                    //
+                    //
+                    //       });
+                    //       }
+                    //
+                    //     },
+                    //     error : function(err){
+                    //         response= JSON.stringify(err.responseText);
+                    //         $(document).find('#responseText').html(
+                    //           '<div class="alert alert-success" role="alert">'
+                    //           +response+
+                    //           '</div>'
+                    //         );
+                    //         setTimeout(function(){
+                    //             $(document).find('#responseText').html('');
+                    //         }, 3000);
+                    //
+                    //     }
+                    //   });
+                    // }else{
+                    //   Swal.fire({
+                    //     title: 'Error!',
+                    //     text: 'Elija un archivo',
+                    //     type: 'error',
+                    //     confirmButtonText: 'Entendido'
+                    //   });
+                    // }
                 });
 
 
@@ -1494,19 +2101,154 @@
       });
 
     });
+    $(document).on('click','.btn-subir-veranoFormOneTest',function (event){
+      var id = this.id;
+      var name = this.name;
+      var res = name.split(".");
+      var formData = new FormData($('#formDocModi')[0]);
+      var validateForm = $(document).find('#files').val() ;
+      var NameLastName = $(document).find('#NameLastName').val();
+      console.log(name);
+      // $.ajax({
+      //     url: 'https://content.dropboxapi.com/2/files/upload',
+      //     type: 'post',
+      //     data: pdfInfo,
+      //     processData: false,
+      //     contentType: 'application/octet-stream',
+      //     headers: {
+      //         "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAYrIV8ThmzpE15vqajq8qb4zillW-KS5vjEP8aMw_hA3S",
+      //         "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/FormDeSolicitud.pdf","mode": "add","autorename": true,"mute": false}'
+      //     },
+      //     success: function (data) {
+      //         console.log(data);
+      //     },
+      //     error: function (data) {
+      //         console.error(data);
+      //     }
+      // });
+
+      if(validateForm){
+          // $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+          var ext = $( document ).find('#files').val().split('.').pop();
+          $.ajax({
+              url: 'https://content.dropboxapi.com/2/files/upload',
+              type: 'post',
+              data: formData,
+              processData: false,
+              contentType: 'application/octet-stream',
+              headers: {
+                  "Authorization": "Bearer lcve-ybRU8AAAAAAAAAAZgBNb_nv8g6mEc6SQoDVei_5qtGLE0SAfscCmFHZDV8O",
+                  "Dropbox-API-Arg": '{"path": "/'+NameLastName+'/file.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+              },
+              success: function (data) {
+
+                  // parametros = {
+                  //     idDocumento : data['id'],
+                  //     nameDocumento : data['name'],
+                  //     sizeDocumento : data['size'],
+                  //     pathDisplayDocumento : data['path_display'],
+                  //     pathLowerDocumento : data['path_lower'],
+                  //     contentHashDocumento :data['content_hash'],
+                  //     clientModifiedDocumento : data['client_modified'],
+                  // };
+                                Swal.fire({
+                                  title: 'Buen trabajo!',
+                                  text: 'El estatus del archivo se cambio correctamente',
+                                  type: 'success',
+                                  confirmButtonText: 'Ok'
+                                }).then(function () {
+                                  _ident =  $(document).find('#aspirante').val();
+                                  console.log(_ident);
+                                 window.location.href = "<?php echo site_url('Dashboard/Verano/InfoAspirante/info/'); ?>"+_ident+"";
+                              });
+
+
+              },
+              error: function (data) {
+                  console.log(data);
+              }
+          });
+      }else{
+          console.log("no se puede");
+      }
+
+    });
 
     $(document).on('click','.btn-subir-veranoFormOne',function (event){
       // alert($(document).find('#NameLastName').val());
-      var NameLastName = $(document).find('#NameLastName').val();
-      var data = new TextEncoder("utf-8").encode("Test");
-      // var $pdfInfo = $("#input-file-now");
-      var $pdfInfo = $("#input-file-now");
-      var archivo = $pdfInfo[0].files;
-          var formData = new FormData();
-          var pdfInfo = archivo[0];
-          var lector = new FileReader();
-          formData.append('FormDeSolicitud', pdfInfo);
+      // var NameLastName = $(document).find('#NameLastName').val();
+      // var data = new TextEncoder("utf-8").encode("Test");
 
+      // var $pdfInfo = $("#input-file-now");
+      // var archivo = $pdfInfo[0].files;
+      //     var formData = new FormData();
+      //     var pdfInfo = archivo[0];
+      //     var lector = new FileReader();
+      //     formData.append('FormDeSolicitud', pdfInfo);
+
+        var id = this.id;
+          var name = this.name;
+          var res = name.split(".");
+          //console.info(res[0]);
+          // var formData = new FormData($('#formDocModi')[0]);
+          var validateForm = $( document ).find('#input-file-now').val() != '';
+          // var carpeta = $(document).find('#pathCarpeta-'+id).val();
+            /* if(validateForm){
+              $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+              var ext = $( document ).find('#files-'+id).val().split('.').pop();
+              $.ajax({
+                  url: 'https://content.dropboxapi.com/2/files/upload',
+                  type: 'post',
+                  data: formData,
+                  processData: false,
+                  contentType: 'application/octet-stream',
+                  headers: {
+                      "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                      "Dropbox-API-Arg": '{"path": "/'+carpeta+'/'+res[0]+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
+                  },
+                  success: function (data) {
+
+                      parametros = {
+                          idDocumento : data['id'],
+                          nameDocumento : data['name'],
+                          sizeDocumento : data['size'],
+                          pathDisplayDocumento : data['path_display'],
+                          pathLowerDocumento : data['path_lower'],
+                          contentHashDocumento :data['content_hash'],
+                          clientModifiedDocumento : data['client_modified'],
+                      };
+
+                      _url = _principalURL()+"Documentos/Carrera/api/resubirDocDropbox/id/"+id;
+                      _method = "PUT";
+                      $.ajax({
+                          url: _url,
+                          method : _method,
+                          headers : {
+                          'X-API-KEY':'ANGLOKEY'
+                          },
+                          data: parametros,
+                          success : function(_response){
+
+
+                              setTimeout(function(){
+                                  window.location.href = "<?php echo site_url('Dashboard/MisArchivos'); ?>";
+                              },2000);
+                              tostada(_response.status,_response.message);
+
+
+                          },error : function(err){
+
+                          }
+                      });
+
+                  },
+                  error: function (data) {
+                      console.log(data);
+                  }
+              });
+          }else{
+              tostada('error','No se ha seleccionado un archivo');
+          } */
       $.ajax({
           url: 'https://content.dropboxapi.com/2/files/upload',
           type: 'post',

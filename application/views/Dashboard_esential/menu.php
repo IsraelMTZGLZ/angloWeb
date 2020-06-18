@@ -136,7 +136,7 @@
                 </a>
               </li>
             <?php } ?>
-
+            <?php if($user->typeUsuario=="Admin") { ?>
             <li class="site-menu-item has-sub">
               <a href="javascript:void(0)">
                 <i class="site-menu-icon icon fa-university" aria-hidden="true" style="font-size: 20px;"></i>
@@ -167,37 +167,47 @@
                 </li>
               </ul>
             </li>
-            <li class="site-menu-item has-sub">
+          <?php } ?>
+          <?php if($user->typeUsuario=="Admin") { ?>
+            <li class="site-menu-item has-sub active open">
               <a href="javascript:void(0)">
-                <i class="site-menu-icon icon fa-university" aria-hidden="true" style="font-size: 20px;"></i>
+                <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
                 <span class="site-menu-title">Verano</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a href="StatusCero">
-                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
-                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
-                    <span class="badge badge-pill badge-primary">Status 0</span>
+                <li class="site-menu-item has-sub">
+                  <a href="javascript:void(0)">
+                    <span class="site-menu-title">Verano Ingles</span>
+                    <span class="site-menu-arrow"></span>
                   </a>
-                </li>
-                <li class="site-menu-item">
-                  <a href="StatusUno">
-                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
-                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
-                    <span class="badge badge-pill badge-primary">Status 1</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a href="StatusDos">
-                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
-                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
-                    <span class="badge badge-pill badge-primary">Status 2</span>
-                  </a>
+                  <ul class="site-menu-sub">
+                    <li class="site-menu-item">
+                      <a href="StatusCero">
+
+                        <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                        <span class="badge badge-pill badge-primary">Status 0</span>
+                      </a>
+                    </li>
+                    <li class="site-menu-item">
+                      <a href="StatusUno">
+
+                        <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                        <span class="badge badge-pill badge-primary">Status 1</span>
+                      </a>
+                    </li>
+                    <li class="site-menu-item">
+                      <a href="StatusDos">
+
+                        <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                        <span class="badge badge-pill badge-primary">Status 2</span>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
-
+            <?php } ?>
             <li class="site-menu-item">
                 <a href="<?=base_url('Login/Login/logout')?>">
                   <i class="site-menu-icon icon wb-power" aria-hidden="true" style="font-size: 20px;"></i>

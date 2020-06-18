@@ -19,10 +19,18 @@ class InfoAspirante extends MY_RootController {
 	public function info($idAspirante)
 	{
     $responseVerano = $this->_callApiRest('Verano/api/veranonewStudents/id/'.$idAspirante,null,"GET",null);
-		$responseInstSelect = $this->_callApiRest('Verano/api/veranonewInstselected/id/'.$idAspirante,null,"GET",null);
-		$fkInstOne =$responseInstSelect['data']['fkInstitutoOne'];
-		$fkInstTwo =$responseInstSelect['data']['fkInstitutoTwo'];
-		$fkInstThree =$responseInstSelect['data']['fkInstitutoThree'];
+		// $responseInstSelect = $this->_callApiRest('Verano/api/veranonewInstselected/id/'.$idAspirante,null,"GET",null);
+
+		//testing
+
+		$responseInstSelect = $this->_callApiRest('Verano/Ingles/api/instSelected/id/'.$idAspirante,null,"GET",null);
+		$aux_selec_one  = @$responseInstSelect['data'][0];
+		$aux_selec_two  = @$responseInstSelect['data'][1];
+		$aux_selec_three  = @$responseInstSelect['data'][2];
+
+		$fkInstOne =$aux_selec_one['fkInstituto'];
+    $fkInstTwo =$aux_selec_two['fkInstituto'];
+    $fkInstThree =$aux_selec_three['fkInstituto'];
 
 		$responseInstOne= $this->_callApiRest('Verano/api/veranonewInst/id/'.$fkInstOne,null,"GET",null);
 		$responseInstTwo = $this->_callApiRest('Verano/api/veranonewInst/id/'.$fkInstTwo,null,"GET",null);
@@ -346,6 +354,7 @@ $responseFileFormThree = '';
 		$data['infoFormOne'] =$infoFormOne;
 		$data['statusDocFormOne'] =@$statusDocFormOne;
 		$data['recomendationFormOne'] = $recomendationFormOne;
+		$data['infoDocDropBox'] =  @$fileInfoFormOne;
 
 
 		$data['stepOneFormTwo'] =$stepOneFormTwo;
@@ -380,6 +389,11 @@ $responseFileFormThree = '';
 		$data['instThree'] =$responseInstThree['data'];
 		$data['infAspirante'] =$responseinfoSteps['data'];
     $data['user']=$this->session->userdata('user_sess');
+
+
+		$data['InstOneInfo']	=$fkInstOne;
+		$data['InstTwoInfo']	=$fkInstTwo;
+		$data['InstThreeInfo']	=$fkInstThree;
 
     $this->load->view('Dashboard_pages/Verano/info_aspirante_view',$data);
 		$this->_finalPage();
