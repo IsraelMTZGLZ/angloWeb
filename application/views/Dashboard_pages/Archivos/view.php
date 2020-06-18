@@ -96,11 +96,11 @@
 
       <!--Eligio universidad-->
         <div class="card card-shadow card-responsive" id="widgetLineareaColor">
-
           <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Tus Documentos: &nbsp;</p>
           <input type="hidden" id="aspirante" value="<?=@$user->aspirante?>">
           <input type="hidden" id="nameAspirante" value="<?=@$carpetaName?>">
           <div class="list-group" style="margin: 20px;">
+          <?php if(@$documentos) { ?>
             <?php for( $i=0; $i < count(@$documentos); $i++) { ?>
               <?php if($documentos[$i]['statusDocumento']=='Pendiente'){?>
               <a class="list-group-item list-group-item-warning" href="javascript:void(0)" style="font-size: 18px;">
@@ -113,7 +113,7 @@
                 <br>
                 <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <?php
-                    $new = explode(' ',$documentos[$i]['lastUpdate']);
+                    $new = explode(' ',$documentos[$i]['lastUpdate']); 
                     echo $new[0];
                   ;?>
                 <span class="badge badge-pill badge-warning">Status: <?=$documentos[$i]['statusDocumento']?></span>
@@ -130,7 +130,7 @@
                 <br>
                 <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <?php
-                    $new = explode(' ',$documentos[$i]['lastUpdate']);
+                    $new = explode(' ',$documentos[$i]['lastUpdate']); 
                     echo $new[0];
                   ;?>
                 <span class="badge badge-pill badge-success">Status: <?=$documentos[$i]['statusDocumento']?></span>
@@ -147,7 +147,7 @@
                 <br>
                 <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <?php
-                    $new = explode(' ',$documentos[$i]['lastUpdate']);
+                    $new = explode(' ',$documentos[$i]['lastUpdate']); 
                     echo $new[0];
                   ;?>
                 <span class="badge badge-pill badge-danger">Status: <?=$documentos[$i]['statusDocumento']?></span>
@@ -162,7 +162,7 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-6" style="margin-bottom: 15px;">
                     <form id="formDocModi-<?=$documentos[$i]['idReal'];?>">
-                        <input type="file" class="form-control btn btn-danger" name="<?=$documentos[$i]['nameDocumento'];?>" id="files-<?=$documentos[$i]['idReal'];?>">
+                      <input type="file" class="form-control btn btn-danger" name="<?=$documentos[$i]['nameDocumento'];?>" id="files-<?=$documentos[$i]['idReal'];?>">
                     </form>
                   </div>
                   <br>
@@ -173,9 +173,10 @@
               </a>
               <?php } ?>
             <?php } ?>
+            <?php } ?>
           </div>
           <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes por subir: &nbsp;</p>
-
+          
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Carrera") {?>
             <?php if(!$boleta || @!$boletaTraduccion) {?>
               <div class="row">
@@ -190,17 +191,17 @@
                       <div class="boletaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="Boleta" name="Boleta" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="Boleta" name="Boleta" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boleta">Subir</button>
                     </form>
                   <?php } ?>
-
+                  
                   <?php if(@!$boletaTraduccion){ ?>
                     <form id="boletaTraduccionForm">
                       <div class="boletaTraduccionAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en ingles en formato PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="BoletaTraduccion" name="BoletaTraduccion" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="BoletaTraduccion" name="BoletaTraduccion" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boletaTraduccion">Subir</button>
                     </form>
                   <?php } ?>
@@ -219,7 +220,7 @@
                       <div class="cartaMotivosAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="cartaMotivos" name="cartaMotivos" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="cartaMotivos" name="cartaMotivos" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-cartaMotivos">Subir</button>
                     </form>
                 </div>
@@ -237,7 +238,7 @@
                       <div class="pasaporteAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="pasaporte" name="pasaporte" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="pasaporte" name="pasaporte" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-pasaporte">Subir</button>
                     </form>
                 </div>
@@ -255,7 +256,7 @@
                       <div class="recomendAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="recomend" name="recomend" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="recomend" name="recomend" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-recomend">Subir</button>
                     </form>
                 </div>
@@ -273,11 +274,68 @@
                       <div class="autoAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF</label>
-                      <input type="file" data-plugin="dropify" id="auto" name="auto" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="auto" name="auto" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-auto">Subir</button>
                     </form>
                 </div>
               </div>
+            <?php } ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenForm">
+                        <div class="examenAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examen" name="examen" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examen">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$boletaFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Boleta de calificaciones finales.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="boletaFinalForm">
+                      <div class="boletaFinalAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="boletaFinal" name="boletaFinal" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boletaFinal">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaForm">
+                      <div class="visaAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visa" name="visa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visa">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
             <?php } ?>
           <?php } ?>
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Masters") {?>
@@ -294,17 +352,17 @@
                       <div class="transAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="trans" name="trans" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="trans" name="trans" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-trans">Subir</button>
                     </form>
                   <?php } ?>
-
+                  
                   <?php if(@!$transcripcionTraduccion){ ?>
                     <form id="transTraduccionForm">
                       <div class="transTraduccionAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en ingles en formato PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="transTraduccion" name="transTraduccion" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="transTraduccion" name="transTraduccion" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-transTraduccion">Subir</button>
                     </form>
                   <?php } ?>
@@ -322,7 +380,7 @@
               </div>
             <?php } ?>
             <?php for($i=0;$i < count($cartasMotivos);$i++) { ?>
-
+              
               <div class="row">
                 <div class="col-sm-12 col-md-5" style="margin: 20px;">
                   <ul class="list-group list-group-bordered">
@@ -334,7 +392,7 @@
                       <div class="cartasMotivosAlert-<?=@$cartasMotivos[$i]['idInstitucion']?>">
                       </div>
                       <label style="font-size: 16px;">Documento en formato PDF|WORD debera ser el de la  <?=$cartasMotivos[$i]['nombreInstitucion']?>.</label>
-                      <input type="file" data-plugin="dropify" id="cartasMotivos-<?=@$cartasMotivos[$i]['idInstitucion']?>" name="cartasMotivos-<?=@$cartasMotivos[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="cartasMotivos-<?=@$cartasMotivos[$i]['idInstitucion']?>" name="cartasMotivos-<?=@$cartasMotivos[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info btn-cartasMotivos" style="margin-top:10%;margin-bottom: 10%;" id="<?=@$cartasMotivos[$i]['idInstitucion']?>" name="<?=$cartasMotivos[$i]['nombreInstitucion']?>">Subir</button>
                     </form>
                 </div>
@@ -350,7 +408,7 @@
               </div>
             <?php } ?>
             <?php for($i=0;$i < count($cartasRecomendacionPrimeras);$i++) { ?>
-
+              
               <div class="row">
                 <div class="col-sm-12 col-md-5" style="margin: 20px;">
                   <ul class="list-group list-group-bordered">
@@ -362,12 +420,12 @@
                       <div class="cartasRePAlert-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>">
                       </div>
                       <label style="font-size: 16px;">Documento en formato PDF debera ser el de la  <?=$cartasRecomendacionPrimeras[$i]['nombreInstitucion']?>.</label>
-                      <input type="file" data-plugin="dropify" id="cartasReP-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" name="cartasReP-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="cartasReP-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" name="cartasReP-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info btn-cartasReP" style="margin-top:10%;margin-bottom: 10%;" id="<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" name="<?=$cartasRecomendacionPrimeras[$i]['nombreInstitucion']?>">Subir</button>
                     </form>
                 </div>
               </div>
-
+              
             <?php } ;?>
             <?php for($i=0;$i < count($cartasRecomendacionSegundas);$i++) { ?>
                   <div class="row">
@@ -381,7 +439,7 @@
                           <div class="cartasReSAlert-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>">
                           </div>
                           <label style="font-size: 16px;">Documento en formato PDF debera ser el de la  <?=$cartasRecomendacionSegundas[$i]['nombreInstitucion']?>.</label>
-                          <input type="file" data-plugin="dropify" id="cartasReS-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" name="cartasReS-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                          <input type="file" data-plugin="dropify" id="cartasReS-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" name="cartasReS-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                           <button type="button" class="btn btn-block btn-info btn-cartasReS" style="margin-top:10%;margin-bottom: 10%;" id="<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" name="<?=$cartasRecomendacionSegundas[$i]['nombreInstitucion']?>">Subir</button>
                         </form>
                     </div>
@@ -399,7 +457,7 @@
                       <div class="autoCartaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF</label>
-                      <input type="file" data-plugin="dropify" id="autoCarta" name="autoCarta" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="autoCarta" name="autoCarta" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-autoCarta">Subir</button>
                     </form>
                 </div>
@@ -417,13 +475,105 @@
                       <div class="pasaporteMaestriaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="pasaporteMaestria" name="pasaporteMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="pasaporteMaestria" name="pasaporteMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-pasaporteMaestria">Subir</button>
                     </form>
                 </div>
               </div>
             <?php } ?>
-
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenMaestriaForm">
+                        <div class="examenMaestriaAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examenMaestria" name="examenMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examenMaestria">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$transFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Transcripcion Final.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="transFinalMaestriaForm">
+                        <div class="transFinalMaestriaAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="transFinalMaestria" name="transFinalMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-transFinalMaestria">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$titulo) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Titulo/ Acta de examen/ Carta Constancia.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="tituloForm">
+                        <div class="tituloAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="titulo" name="titulo" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-titulo">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$ATAS) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">4. ATAS.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="ATASForm">
+                        <div class="ATASAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="ATAS" name="ATAS" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-ATAS">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">5. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaMaestriaForm">
+                      <div class="visaMaestriaAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visaMaestria" name="visaMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visaMaestria">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } ?>
 
           <?php } ?>
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="PhD") {?>
@@ -439,7 +589,7 @@
                       <div class="propuestaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF o WORD</label>
-                      <input type="file" data-plugin="dropify" id="propuesta" name="propuesta" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="propuesta" name="propuesta" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-propuesta">Subir</button>
                     </form>
                 </div>
@@ -458,17 +608,17 @@
                       <div class="transPHDAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="transPHD" name="transPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="transPHD" name="transPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-transPHD">Subir</button>
                     </form>
                   <?php } ?>
-
+                  
                   <?php if(@!$transcripcionTraduccion){ ?>
                     <form id="transTraduccionPHDForm">
                       <div class="transTraduccionPHDAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en ingles en formato PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="transTraduccionPHD" name="transTraduccionPHD" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="transTraduccionPHD" name="transTraduccionPHD" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-transTraduccionPHD">Subir</button>
                     </form>
                   <?php } ?>
@@ -488,7 +638,7 @@
                       <div class="cvAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF o WORD</label>
-                      <input type="file" data-plugin="dropify" id="cv" name="cv" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="cv" name="cv" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-cv">Subir</button>
                     </form>
                 </div>
@@ -506,7 +656,7 @@
                       <div class="pasaportePHDAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="pasaportePHD" name="pasaportePHD" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="pasaportePHD" name="pasaportePHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-pasaportePHD">Subir</button>
                     </form>
                 </div>
@@ -522,7 +672,7 @@
               </div>
             <?php } ?>
             <?php for($i=0;$i < count($cartasRecomendacionPrimeras);$i++) { ?>
-
+              
               <div class="row">
                 <div class="col-sm-12 col-md-5" style="margin: 20px;">
                   <ul class="list-group list-group-bordered">
@@ -534,12 +684,12 @@
                       <div class="cartasRePPHDAlert-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>">
                       </div>
                       <label style="font-size: 16px;">Documento en formato PDF debera ser el de la universidad:  <?=$cartasRecomendacionPrimeras[$i]['nombreInstitucion']?>.</label>
-                      <input type="file" data-plugin="dropify" id="cartasRePPHD-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" name="cartasRePPHD-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="cartasRePPHD-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" name="cartasRePPHD-<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info btn-cartasRePPHD" style="margin-top:10%;margin-bottom: 10%;" id="<?=@$cartasRecomendacionPrimeras[$i]['idInstitucion']?>" name="<?=$cartasRecomendacionPrimeras[$i]['nombreInstitucion']?>">Subir</button>
                     </form>
                 </div>
               </div>
-
+              
             <?php } ;?>
             <?php for($i=0;$i < count($cartasRecomendacionSegundas);$i++) { ?>
                   <div class="row">
@@ -553,7 +703,7 @@
                           <div class="cartasReSPHDAlert-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>">
                           </div>
                           <label style="font-size: 16px;">Documento en formato PDF debera ser el de la universidad: <?=$cartasRecomendacionSegundas[$i]['nombreInstitucion']?>.</label>
-                          <input type="file" data-plugin="dropify" id="cartasReSPHD-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" name="cartasReSPHD-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                          <input type="file" data-plugin="dropify" id="cartasReSPHD-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" name="cartasReSPHD-<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                           <button type="button" class="btn btn-block btn-info btn-cartasReSPHD" style="margin-top:10%;margin-bottom: 10%;" id="<?=@$cartasRecomendacionSegundas[$i]['idInstitucion']?>" name="<?=$cartasRecomendacionSegundas[$i]['nombreInstitucion']?>">Subir</button>
                         </form>
                     </div>
@@ -571,11 +721,104 @@
                       <div class="autoCartaPHDAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF</label>
-                      <input type="file" data-plugin="dropify" id="autoCartaPHD" name="autoCartaPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="autoCartaPHD" name="autoCartaPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-autoCartaPHD">Subir</button>
                     </form>
                 </div>
               </div>
+            <?php } ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenPHDForm">
+                        <div class="examenPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examenPHD" name="examenPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examenPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$transFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Transcripcion Final.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="transFinalPHDForm">
+                        <div class="transFinalPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="transFinalPHD" name="transFinalPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-transFinalPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$titulo) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Titulo/ Acta de examen/ Carta Constancia.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="tituloPHDForm">
+                        <div class="tituloPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="tituloPHD" name="tituloPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-tituloPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$ATAS) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">4. ATAS.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="ATASPHDForm">
+                        <div class="ATASPHDAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="ATASPHD" name="ATASPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-ATASPHD">Subir</button>
+                      </form>
+                  </div>
+                </div>
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">5. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaPHDForm">
+                      <div class="visaPHDAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visaPHD" name="visaPHD" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visaPHD">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
             <?php } ?>
           <?php } ?>
           <?php if(@$infoAspirantePrepa) {?>
@@ -591,7 +834,7 @@
                       <div class="pasaportePrepaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="pasaportePrepa" name="pasaportePrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="pasaportePrepa" name="pasaportePrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-pasaportePrepa">Subir</button>
                     </form>
                 </div>
@@ -610,17 +853,17 @@
                       <div class="boletaPrepaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento original en PDF</label>
-                      <input type="file" data-plugin="dropify" id="boletaPrepa" name="boletaPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="boletaPrepa" name="boletaPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boletaPrepa">Subir</button>
                     </form>
                   <?php } ?>
-
+                  
                   <?php if(@!$boletaTraduccion){ ?>
                     <form id="boletaTraduccionPrepaForm">
                       <div class="boletaTraduccionPrepaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en ingles en formato PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="BoletaTraduccionPrepa" name="BoletaTraduccionPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="BoletaTraduccionPrepa" name="BoletaTraduccionPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boletaTraduccionPrepa">Subir</button>
                     </form>
                   <?php } ?>
@@ -639,7 +882,7 @@
                       <div class="cartaMotivosPrepaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="cartaMotivosPrepa" name="cartaMotivosPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="cartaMotivosPrepa" name="cartaMotivosPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-cartaMotivosPrepa">Subir</button>
                     </form>
                 </div>
@@ -657,7 +900,7 @@
                       <div class="recomendPrepaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="recomendPrepa" name="recomendPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="recomendPrepa" name="recomendPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-recomendPrepa">Subir</button>
                     </form>
                 </div>
@@ -675,7 +918,7 @@
                       <div class="autoPrepaAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF</label>
-                      <input type="file" data-plugin="dropify" id="autoPrepa" name="autoPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="autoPrepa" name="autoPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-autoPrepa">Subir</button>
                     </form>
                 </div>
@@ -693,35 +936,72 @@
                       <div class="formatoSolicitudAlert">
                       </div>
                       <label style="font-size: 16px;">Documento en PDF|WORD</label>
-                      <input type="file" data-plugin="dropify" id="formatoSolicitud" name="formatoSolicitud" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
+                      <input type="file" data-plugin="dropify" id="formatoSolicitud" name="formatoSolicitud" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
                       <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-formatoSolicitud">Subir</button>
                     </form>
                 </div>
               </div>
             <?php } ?>
-          <?php } ?>
-
-
-          <!--<?php for($i=0;$i < count($cartasRecomendacion);$i++) { ?>
-
-              <div class="row">
-                <div class="col-sm-12 col-md-5" style="margin: 20px;">
-                  <ul class="list-group list-group-bordered">
-                    <li class="list-group-item list-group-item-action active" style="font-size: 16px;">4. Carta Recomendacion de la <?=$cartasRecomendacion[$i]['nombreInstitucion']?> .</li>
-                  </ul>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+              <?php if (!$examenIngles) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">1. Examen de ingles vigente.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                      <form id="examenPrepaForm">
+                        <div class="examenPrepaAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento en PDF</label>
+                        <input type="file" data-plugin="dropify" id="examenPrepa" name="examenPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-examenPrepa">Subir</button>
+                      </form>
+                  </div>
                 </div>
-                <div class="col-sm-12 col-md-5">
-                    <form id="cartaRecomendacionForm-<?=@$cartasRecomendacion[$i]['idInstitucion']?>">
-                      <div class="cartaRecomendacionAlert-<?=@$cartasRecomendacion[$i]['idInstitucion']?>">
+              <?php } ?>
+              <?php if (!$boletaFinal) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">2. Boleta de calificaciones finales.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="boletaFinalPrepaForm">
+                      <div class="boletaFinalPrepaAlert">
                       </div>
-                      <label style="font-size: 16px;">Documento en formato PDF|WORD debera ser el de la  <?=$cartasRecomendacion[$i]['nombreInstitucion']?>.</label>
-                      <input type="file" data-plugin="dropify" id="cartaRecomendacion-<?=@$cartasRecomendacion[$i]['idInstitucion']?>" name="cartaRecomendacion-<?=@$cartasRecomendacion[$i]['idInstitucion']?>" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">
-                      <button type="button" class="btn btn-block btn-info btn-cartaRecomendacion" style="margin-top:10%;margin-bottom: 10%;" id="<?=@$cartasRecomendacion[$i]['idInstitucion']?>" name="<?=$cartasRecomendacion[$i]['nombreInstitucion']?>">Subir</button>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="boletaFinalPrepa" name="boletaFinalPrepa" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-boletaFinalPrepa">Subir</button>
                     </form>
+                  </div>
                 </div>
-              </div>
-          <?php } ;?>-->
-
+              <?php } ?>
+              <?php if (!$visa) { ?>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
+                    <ul class="list-group list-group-bordered">
+                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">3. Visa.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <form id="visaPrepaForm">
+                      <div class="visaPrepaAlert">
+                      </div>
+                      <label style="font-size: 16px;">Documento en PDF</label>
+                      <input type="file" data-plugin="dropify" id="visaPrepa" name="visaPrepa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visaPrepa">Subir</button>
+                    </form>
+                  </div>
+                </div>
+              <?php } ?>
+            <?php } ?>
+          <?php } ?>
+          
+          
 
         </div>
         <!---termino uni-->
@@ -731,6 +1011,30 @@
     <div class="col-xxl-5 col-lg-4" >
       <div class="card card-shadow" id="widgetStackedBar">
         <div class="card-block p-0">
+        <div class="p-30 h-150" style="margin-bottom: -30px;">
+              <p  class="font-size-20 blue-grey-700">Archivos necesarios subidos por un agente:</p>
+          </div>   
+          <ul class="list-group " >
+            <li class="list-group-item">
+                <?php for($i=0;$i<count(@$documentosAspirantes);$i++) { ?>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-9">
+                            <span style="font-size: 15px;color: #171A21;">                            
+                                <?=@$documentosAspirantes[$i]['nameDocumento']?>
+                            </span>
+                        </div>
+                        <div class="col-3">
+                            <a type="button" class="btn btn-block" style="background-color:#171A21;color:white;" href="http://localhost/angloApi<?=@$documentosAspirantes[$i]['urlDA']?>" download="<?=@$documentosAspirantes[$i]['nameDocumento']?>"><i class="icon fa-download" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12">
+                            <hr style="border-top: 3px solid red;">
+                        </div>
+                    </div>
+                <?php } ?>
+                
+                
+            </li>     
+          </ul>
           <div class="p-30 h-150">
               <p  class="font-size-20 blue-grey-700">Contactar:</p>
               <p  class="font-size-15 blue-grey-700">Si tienes dudas sobre el proceso de tus archivos o por algun tipo dde estado de tus archivos contactanos por los siguientes medios:</p>
@@ -752,11 +1056,12 @@
             </li>
             <li class="list-group-item d-none d-sm-block">
               <a type="button" class="btn btn-block social-facebook" href="https://www.facebook.com/AngloLatino/" target="_blank"><i class="icon bd-facebook" aria-hidden="true"></i>Facebook</a>
-            </li>
+            </li> 
             <li class="list-group-item d-block d-sm-none">
               <a type="button" class="btn btn-block social-facebook" href="fb://page/6623204789"><i class="icon bd-facebook" aria-hidden="true"></i>Facebook</a>
-            </li>
+            </li>        
           </ul>
+          
         </div>
       </div>
     </div>
@@ -768,12 +1073,12 @@
   <div class="modal-dialog modal-simple">
     <div class="modal-content">
       <div class="modal-header">
-
+       
         <h1 class="modal-title" id="exampleFillInModalTitle" style="color: red;">Tu documento se esta subiendo.</h1>
       </div>
       <div class="modal-body">
         <h4>Espera a que tu documento se suba.Cuando este se suba seras redirecionado a la pagina.</h4>
-
+        
         <div class="wrapper">
         <div class="circle"></div>
         <div class="circle"></div>

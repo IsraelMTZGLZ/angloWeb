@@ -582,18 +582,13 @@ header .footer-wave {
                 <div class="containerC" style="margin: 15px">
                   <div class="card">
                     <div class="img-box">
-                      <img src="<?=@$universidades[$i]['logoInstitucion']?>" alt="Universidad" title="Universidad">
+                      <img src="<?=@$universidades[$i]['logoInstitucion']?>" alt="Universidad">
                     </div>
                     <div class="content-box">
                       <h2><?=@$universidades[$i]['nombreInstitucion']?></h2>
-                      <div class="color">
-                        <h3>Color :</h3>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>            
+                               
                       <a href="javascript:void(0);">
-                          Buy Now
+                        Conocer
                       </a>
                     </div>
                   </div>
