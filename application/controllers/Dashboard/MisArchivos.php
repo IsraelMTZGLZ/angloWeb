@@ -36,8 +36,8 @@ class MisArchivos extends MY_RootController {
                 //$cartasRecomendacion = $this->_callApiRest('Documentos/Carrera/api/test/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 //$cartasAutorizacon = $this->_callApiRest('Documentos/Carrera/api/carreraCartaAutorizacion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
 
-                if (@$boletatraduccion) {
-                    for($i=0;$i<count(@$boletatraduccion['data']);$i++){
+                if ($boletatraduccion['data']) {
+                    for($i=0;$i<count($boletatraduccion['data']);$i++){
                         $test = $boletatraduccion['data'][$i]['nameDocumento'];
                         $new = explode('.',$test); 
                         if($new[0]=='Boleta Traducida'){

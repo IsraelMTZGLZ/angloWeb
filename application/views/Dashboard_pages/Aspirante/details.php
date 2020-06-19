@@ -146,6 +146,7 @@
                                 <br>
                                 <br>
                                 <div class="card-deck">
+                                <?php if(@$universidades) { ?>
                                     <?php for($i=0;$i<count(@$universidades);$i++) {?>
                                         <div class="card card-element" style="border: 0;">
                                             <img class="card-img-top w-full" src="<?=@$universidades[$i]['logoInstitucion'];?>" alt="Imagen Institucion" style="height: 120px;">
@@ -194,6 +195,8 @@
                                             
                                         </div>
                                     <?php }?>
+                                    <?php }?>
+                                    <?php if(@$preparatorias) { ?>
                                     <?php for($i=0;$i<count(@$preparatorias);$i++) {?>
                                         <div class="card card-element" style="border: 0;">
                                             <img class="card-img-top w-full" src="<?=@$preparatorias[$i]['logoInstitucion'];?>" alt="Imagen Institucion" style="height: 120px;">
@@ -241,6 +244,7 @@
                                             <?php } ?>
                                             
                                         </div>
+                                    <?php }?>
                                     <?php }?>
                                 </div>
                             </div>
@@ -470,6 +474,7 @@
           </div>   
           <ul class="list-group " >
             <li class="list-group-item">
+            <?php if($documentosAspirantes) { ?>
                 <?php for($i=0;$i<count(@$documentosAspirantes);$i++) { ?>
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-9">
@@ -486,7 +491,7 @@
                     </div>
                 <?php } ?>
                 
-                
+            <?php } ?>   
             </li>     
           </ul>
                  

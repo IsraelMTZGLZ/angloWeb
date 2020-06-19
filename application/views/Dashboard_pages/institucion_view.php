@@ -481,32 +481,7 @@
                         );
         });
 
-        $(document).on('click','.btn-delete-institucionFacultadKey',function(){
-            _url = _principalURL()+"Universidad/api/universidad/id/"+$(document).find('#idInstitucionFacultadKey').val();
-            $.ajax({
-                "url":_url,
-                "method":"DELETE",
-                headers :{
-                'X-API-KEY':'ANGLOKEY'
-                },
-                success : function(response){
-                if(response.status=="success"){
-                    
-                    setTimeout(function(){
-                            location.reload();
-              
-                        },2000);
-                    
-                }
-
-                tostada(response.status,response.message);
-                
-                }, 
-                error : function(error){
-
-                }
-            })
-        });
+        
 
         $('#addIFModal').on('hidden.bs.modal', function (e) {
             $('#facultad').val('').trigger('change');

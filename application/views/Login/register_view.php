@@ -622,10 +622,6 @@
       alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
 
     });
-    $(document).on('click','.google',function() {
-      alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
-
-    });
     $(document).on('click','.show-password-wrap',function(){
       if(test){
         document.getElementById('password').type = 'text';

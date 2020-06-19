@@ -95,7 +95,9 @@
                 success : function(_response){
                 console.info(_response);
                 if(_response.status=="success"){
-
+                    setTimeout(function(){
+                        location.reload();
+                    },2000);
                 }else{
                     $(document).find('.alert').html(
                         '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">'+
@@ -136,7 +138,7 @@
                     url: 'https://api.dropboxapi.com/2/files/delete_v2',
                     type: 'post',
                     headers: {
-                        "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAY7v0wh_r5MBwWZCCwoXeeIBdDcWxmHw2OmFELx7MugfF"
+                        "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4"
                     },
                     data:'{\"path\": \"'+path+'\"}',
                     contentType: 'application/json',

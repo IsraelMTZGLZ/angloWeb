@@ -1016,6 +1016,7 @@
           </div>   
           <ul class="list-group " >
             <li class="list-group-item">
+              <?php if($documentosAspirantes) {?>
                 <?php for($i=0;$i<count(@$documentosAspirantes);$i++) { ?>
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-9">
@@ -1031,7 +1032,7 @@
                         </div>
                     </div>
                 <?php } ?>
-                
+                <?php } ?>
                 
             </li>     
           </ul>

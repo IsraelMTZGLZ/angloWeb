@@ -55,18 +55,7 @@
                       <span class="site-menu-title">Agentes</span>
                     </a>
                   </li>
-                  <li class="site-menu-item">
-                <a href="TablaDescarga">
-                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
-                  <span class="badge badge-pill badge-primary">Status 0</span>
-                </a>
-              </li>
-              <li class="site-menu-item">
-                <a href="AspiranteStatus1">
-                  <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
-                  <span class="badge badge-pill badge-primary">Status 1</span>
-                </a>
-              </li>
+                  
                 </ul>
               </li>
             <?php } ?>
@@ -112,6 +101,39 @@
                 </a>
               </li>
             <?php } ?>
+            <?php if($user->typeUsuario=="Admin" || $user->typeUsuario=="Agente") { ?>
+            <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)">
+                <i class="site-menu-icon icon fa-graduation-cap" aria-hidden="true" style="font-size: 20px;"></i>
+                <span class="site-menu-title">Universidades/Preparatorias</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a href="TablaDescarga">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 0</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a href="AspiranteStatus1">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 1</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a href="AspiranteStatus2">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          <?php } ?>
+            
             <li class="site-menu-item">
               <?php if($user->typeUsuario=="Aspirante") { ;?>
                 <a href="MisArchivos">
@@ -169,7 +191,7 @@
             </li>
           <?php } ?>
           <?php if($user->typeUsuario=="Admin") { ?>
-            <li class="site-menu-item has-sub active open">
+            <li class="site-menu-item has-sub open">
               <a href="javascript:void(0)">
                 <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
                 <span class="site-menu-title">Verano</span>

@@ -34,6 +34,7 @@
               </tr>
             </tfoot>
             <tbody>
+              <?php if ($aspirantes) { ?>
                 <?php for($i=0;$i < count(@$aspirantes); $i++) {?>
                     <tr>
                         <td><?=@$aspirantes[$i]['fullname'];?></td>
@@ -68,7 +69,7 @@
                         </td>
                     </tr>
                 <?php } ?>
-                
+              <?php } ?> 
             </tbody>
           </table>
         </div>
