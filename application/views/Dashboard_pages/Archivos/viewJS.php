@@ -19,7 +19,7 @@
                 processData: false,
                 contentType: 'application/octet-stream',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                     "Dropbox-API-Arg": '{"path": "/'+carpeta+'/'+res[0]+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {
@@ -122,7 +122,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -146,7 +146,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Formato De Solicitud.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -260,7 +260,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -284,7 +284,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -398,7 +398,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -429,7 +429,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Recomendacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -543,7 +543,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -574,7 +574,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Motivos.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -686,7 +686,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -717,7 +717,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -829,7 +829,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -860,7 +860,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -974,7 +974,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1005,7 +1005,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1117,7 +1117,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1148,7 +1148,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1264,7 +1264,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1288,7 +1288,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Segunda Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1402,7 +1402,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1426,7 +1426,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Primera Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1538,7 +1538,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1569,7 +1569,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1681,7 +1681,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1712,7 +1712,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1824,7 +1824,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -1855,7 +1855,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/CV.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1969,7 +1969,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2000,7 +2000,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2114,7 +2114,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2145,7 +2145,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2259,7 +2259,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2290,7 +2290,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Propuesta de Investigacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2404,7 +2404,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2435,7 +2435,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2551,7 +2551,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2575,7 +2575,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Segunda Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2689,7 +2689,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2713,7 +2713,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Primera Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2827,7 +2827,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2851,7 +2851,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Motivo de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -2963,7 +2963,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -2994,7 +2994,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3108,7 +3108,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3139,7 +3139,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Transcripcion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3253,7 +3253,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3284,7 +3284,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3398,7 +3398,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3429,7 +3429,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3543,7 +3543,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3574,7 +3574,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Recomendacion.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3688,7 +3688,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3719,7 +3719,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta Traducida.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3831,7 +3831,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -3862,7 +3862,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Motivos.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -3974,7 +3974,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -4005,7 +4005,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Pasaporte.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -4119,7 +4119,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -4150,7 +4150,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Recomendacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -4264,7 +4264,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
 
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -4295,7 +4295,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4",
+                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Carta Autorizacion de la '+nombreUniversidad+'.'+res+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {

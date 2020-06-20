@@ -138,7 +138,7 @@
                     url: 'https://api.dropboxapi.com/2/files/delete_v2',
                     type: 'post',
                     headers: {
-                        "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZXUdAQGwhKQXEtyQncORJUkuIO8afrLXrRd43_0ns-_4"
+                        "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAZoq8P8GRgiey6CrsFJ71YidRR7FtYQ-CBNWWl2_k1TpQ"
                     },
                     data:'{\"path\": \"'+path+'\"}',
                     contentType: 'application/json',
