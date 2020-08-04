@@ -17,7 +17,7 @@
         <i class="icon wb-more-horizontal" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-        <img class="navbar-brand-logo" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" title="Anglo Latino Education Partnership" style="height: 40px;">
+        <img class="navbar-brand-logo" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>" style="height: 40px;">
       </div>
     </div>
 
@@ -66,7 +66,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Notifications"
+            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" 
               aria-expanded="false" data-animation="scale-up" role="button">
                 <i class="icon wb-bell" aria-hidden="true"></i>
                 <span class="badge badge-pill badge-danger up">0</span>
@@ -154,9 +154,9 @@
         <div class="navbar-brand navbar-brand-center">
           <a href="Home">
             <img class="navbar-brand-logo navbar-brand-logo-normal" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>"
-              title="Anglo Latino Education Partnership" style="height: 80px;margin-top: -13px;">
+               style="height: 80px;margin-top: -13px;">
             <img class="navbar-brand-logo navbar-brand-logo-special" src="<?=base_url('resources/assets/Anglo/AngloLatino-sintexto.png');?>"
-              title="Anglo Latino Education Partnership">
+              >
           </a>
         </div>
       </div>

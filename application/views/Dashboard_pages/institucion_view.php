@@ -21,7 +21,7 @@
     
     <div class="row" data-plugin="matchHeight" data-by-row="true">
         
-        <div class="col-xxl-3 col-xl-4">
+        <div class="col-xxl-4 col-xl-4">
           <!-- Panel Web Designer -->
           <div class="card card-shadow">
             <div class="card-block bg-white p-40">
@@ -43,7 +43,7 @@
           <!-- End Panel Web Designer -->
         </div>
 
-        <div class="col-xxl-6 col-xl-8">
+        <div class="col-xxl-8 col-xl-8">
             
           <!-- Panel Traffic -->
           <div class="card card-shadow example-responsive border border-primary" id="widgetLinearea">

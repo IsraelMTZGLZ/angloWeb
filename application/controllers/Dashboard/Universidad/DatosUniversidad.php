@@ -33,4 +33,3 @@ class DatosUniversidad extends MY_RootController {
 	}
 	
 }
- 

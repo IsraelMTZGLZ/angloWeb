@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class DetailsAspirante extends MY_RootController {
+class ApiranteProfileFinal extends MY_RootController {
 
 	public function __construct() {
         parent::__construct();
@@ -19,7 +19,7 @@ class DetailsAspirante extends MY_RootController {
         if($id){
             $idAspirante = base64_decode($id);
             $data['user']=$this->session->userdata('user_sess');
-            $aspirante = $this->_callApiRest('Aspirante/api/aspiranteByStatus2/id/'.$idAspirante,null,"GET",null);
+            $aspirante = $this->_callApiRest('Aspirante/api/aspiranteByStatus5/id/'.$idAspirante,null,"GET",null);
             $data['aspirante'] = $aspirante['data'];
             if($data['aspirante']){
                 if($data['aspirante']['programaDeInteres']=="Universidad"){
@@ -36,11 +36,17 @@ class DetailsAspirante extends MY_RootController {
                     $response = $this->_callApiRest('Documentos/Carrera/api/carreraByAspiranteOnly/id/'.$data['aspirante']['aspirante'],null,"GET",null);
                     $data['documentos'] = $response['data'];
 
+                    $primerCarta = $this->_callApiRest('Reportes/api/primerNumero3/'.$data['infoAspiranteUni']['idAspiranteUniversidad'],null,"GET",null);
+                    $data['primerCarta'] = $primerCarta['data'];
+
+                    $primeraOferta = $this->_callApiRest('Reportes/api/primeraCarta4/'.$data['aspirante']['aspirante'],null,"GET",null);
+                    $data['primeraOferta'] = $primeraOferta['data'];
+
                     $responseAspiranteUni = $this->_callApiRest('AspiranteUniversidades/api/aspiranteUniversidadesBYAspirante/id/'.$data['aspirante']['aspirante'],null,"GET",null);
 		    	    $responseUnis = $this->_callApiRest('Universidad/api/universidadByFacultad/id/'.$responseAspiranteUni['data']['idFacultad'],null,"GET",null);
                     
                     $data['unisAdd'] = $responseUnis['data'];
-                    //echo var_dump($data['documentos'][0]);
+
                 }if($data['aspirante']['programaDeInteres']=="Preparatoria"){
                     
                     $response = $this->_callApiRest('AspirantePreparatorias/api/aspirantePreparatoriasBYAspirante/id/'.$data['aspirante']['aspirante'],null,"GET",null);
@@ -84,28 +90,32 @@ class DetailsAspirante extends MY_RootController {
                 $ATASSelecion = $this->_callApiRest('Aspirante/api/ATASSeleccion/id/'.$data['aspirante']['aspirante'],null,"GET",null);
                 $data['ATASSELECION'] = $ATASSelecion['data'];
 
-                $DeferalRequest = $this->_callApiRest('Aspirante/api/aspiranteDocDeferal/id/'.$data['aspirante']['aspirante'],null,"GET",null);
-                $data['DeferalRequest'] = $DeferalRequest['data'];
-               
-                $BECASSELECION = $this->_callApiRest('Aspirante/api/BECASSeleccion/id/'.$data['aspirante']['aspirante'],null,"GET",null);
-                $data['BECASSELECION'] = $BECASSELECION['data'];
+                //linea del tiempo
+                $hoy = getdate();
+                $data['hoy'] = $hoy;
 
-                $BecasDocs = $this->_callApiRest('Documentos/BecasUP/api/becas/id/'.$data['aspirante']['aspirante'],null,"GET",null);
-                $data['BecasDocs'] = $BecasDocs['data'];
+                $primerRegistro = $this->_callApiRest('Reportes/api/primerRegistro/'.$data['aspirante']['usuario'],null,"GET",null);
+                $data['primerRegistro'] = $primerRegistro['data'];
 
-                $BecasDisponibles = $this->_callApiRest('BecasAdd/api/becas/',null,"GET",null);
-                $data['BecasDisponibles'] = $BecasDisponibles['data'];
-                
+                $primerRegistroA = $this->_callApiRest('Reportes/api/primerRegistroAspirante/'.$data['aspirante']['aspirante'],null,"GET",null);
+                $data['primerRegistroA'] = $primerRegistroA['data'];
+
+                $primerDocumentos = $this->_callApiRest('Reportes/api/primerDocumentos/'.$data['aspirante']['aspirante'],null,"GET",null);
+                $data['primerDocumentos'] = $primerDocumentos['data'];
+
+                $primeraVisa = $this->_callApiRest('Reportes/api/primeraVisa/'.$data['aspirante']['aspirante'],null,"GET",null);
+                $data['primeraVisa'] = $primeraVisa['data'];
+
                 $this->_initialPage($data);
-                $this->load->view('Dashboard_pages/Aspirante/details',$data);
+                $this->load->view('Dashboard_pages/Aspirante/details5',$data);
                 $this->_finalPage();
                 $this->load->view('Dashboard_pages/Aspirante/detailsJS');
             }else{
-                redirect('Dashboard/AspiranteStatus2');
+                redirect('Dashboard/AspiranteStatus5');
             }
             
         }else{
-            redirect('Dashboard/AspiranteStatus2');
+            redirect('Dashboard/AspiranteStatus5');
         }
         
     }

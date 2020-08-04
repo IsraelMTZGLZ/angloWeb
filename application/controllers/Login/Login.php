@@ -27,38 +27,43 @@ class Login extends MY_RootController {
 						//selecionar el programa
 						redirect('Dashboard/EleccionUniversidad');
 					}else{
-						//ha llenado toda su informacion
-						if($this->session->userdata('user_sess')->programaDeInteres == "Universidad"){
-							$response = $this->_callApiRest('AspiranteUniversidades/api/aspiranteUniversidadesBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
-							//echo var_dump($response['data']);
-							if($response['data']){
-								//ya acompleto el tipo de estudio y eligio facultad
-								if($response['data']['anioMesIngreso']){
-									//ya selecciono las universidades que le interesan
-									redirect('Dashboard/HomeAspirante');
+						if(@$this->session->userdata('user_sess')->statusAspiranteControl=='Inactivo'){
+							redirect('CallAgents');
+						}else{
+							//ha llenado toda su informacion
+							if($this->session->userdata('user_sess')->programaDeInteres == "Universidad"){
+								$response = $this->_callApiRest('AspiranteUniversidades/api/aspiranteUniversidadesBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+								//echo var_dump($response['data']);
+								if($response['data']){
+									//ya acompleto el tipo de estudio y eligio facultad
+									if($response['data']['anioMesIngreso']){
+										//ya selecciono las universidades que le interesan
+										redirect('Dashboard/HomeAspirante');
+									}else{
+										redirect('Dashboard/Universidad/UniversidadesFacultad');
+									}
 								}else{
-									redirect('Dashboard/Universidad/UniversidadesFacultad');
+									//no ha llenado los campos nesesarios de la universidad
+									redirect('Dashboard/Universidad/DatosUniversidad');
 								}
-							}else{
-								//no ha llenado los campos nesesarios de la universidad
-								redirect('Dashboard/Universidad/DatosUniversidad');
-							}
-						}elseif ($this->session->userdata('user_sess')->programaDeInteres == "Preparatoria") {
-							$response = $this->_callApiRest('AspirantePreparatorias/api/aspirantePreparatoriasBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
-							//echo var_dump($response['data']);
-							if($response['data']){
-								//ya acompleto el tipo de estudio y eligio tipo de alojamiento
-								if($response['data']['anioMesIngreso']){
-									//ya selecciono las preparatorias que le interesan
-									redirect('Dashboard/HomeAspirante');
+							}elseif ($this->session->userdata('user_sess')->programaDeInteres == "Preparatoria") {
+								$response = $this->_callApiRest('AspirantePreparatorias/api/aspirantePreparatoriasBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+								//echo var_dump($response['data']);
+								if($response['data']){
+									//ya acompleto el tipo de estudio y eligio tipo de alojamiento
+									if($response['data']['anioMesIngreso']){
+										//ya selecciono las preparatorias que le interesan
+										redirect('Dashboard/HomeAspirante');
+									}else{
+										redirect('Dashboard/Preparatoria/PreparatoriasFacultad');
+									}
 								}else{
-									redirect('Dashboard/Preparatoria/PreparatoriasFacultad');
+									//no ha llenado los campos nesesarios de la universidad
+									redirect('Dashboard/Preparatoria/DatosPreparatoria');
 								}
-							}else{
-								//no ha llenado los campos nesesarios de la universidad
-								redirect('Dashboard/Preparatoria/DatosPreparatoria');
-							}
+							}	
 						}
+						
 						redirect('ComingSoon');
 					}
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Agente") {

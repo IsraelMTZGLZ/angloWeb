@@ -22,7 +22,7 @@
     <div class="row" data-plugin="matchHeight" data-by-row="true">
         
 
-        <div class="col-xxl-6 col-xl-12">
+        <div class="col-xxl-12 col-xl-12">
             
           <!-- Panel Traffic -->
           <div class="card card-shadow example-responsive" id="widgetLinearea">

@@ -89,9 +89,8 @@
     left:15%;
 }
 </style>
-
 <div class="page-content containerC-fluid" >
-  <div class="row" data-plugin="matchHeight" data-by-row="true" style="">
+  <div class="row" data-plugin="matchHeight" data-by-row="true" >
     <div class="col-xxl-7 col-lg-8">
 
       <!--Eligio universidad-->
@@ -174,9 +173,168 @@
               <?php } ?>
             <?php } ?>
             <?php } ?>
+            <?php if ($user->statusAspirante=="4U") { ?>
+              <p class="font-size-20 blue-grey-700" style="margin-top: 20px;">Tus Documentos para aplicacion de la visa: &nbsp;</p>
+              <?php if ($aplicaionVisa) { ?>
+                <?php for( $i=0; $i < count(@$aplicaionVisa); $i++) { ?>
+                  <?php if($aplicaionVisa[$i]['statusDocumento']=='Pendiente'){ ?>
+                    <a class="list-group-item list-group-item-warning" href="javascript:void(0)" style="font-size: 18px;">
+                      <?php $new = explode('.',$aplicaionVisa[$i]['nameDocumento']);$salida =array_reverse($new);?>
+                      <?php if($salida[0]=='pdf') { ?>
+                        <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$aplicaionVisa[$i]['nameDocumento']?>
+                      <?php }else {?>
+                        <i class="icon fa-file-word-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$aplicaionVisa[$i]['nameDocumento']?>
+                      <?php } ?>
+                      <br>
+                      <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <?php
+                          $new = explode(' ',$aplicaionVisa[$i]['lastUpdate']); 
+                          echo $new[0];
+                        ;?>
+                      <span class="badge badge-pill badge-warning">Status: <?=$aplicaionVisa[$i]['statusDocumento']?></span>
+                    </a>
+                  <?php } ?>
+                  <?php if($aplicaionVisa[$i]['statusDocumento']=='Aceptado'){?>
+                    <a class="list-group-item list-group-item-success" href="javascript:void(0)" style="font-size: 18px;">
+                      <?php $new = explode('.',$aplicaionVisa[$i]['nameDocumento']);$salida =array_reverse($new);?>
+                      <?php if($salida[0]=='pdf') { ?>
+                        <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$aplicaionVisa[$i]['nameDocumento']?>
+                      <?php }else {?>
+                        <i class="icon fa-file-word-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$aplicaionVisa[$i]['nameDocumento']?>
+                      <?php } ?>
+                      <br>
+                      <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <?php
+                          $new = explode(' ',$aplicaionVisa[$i]['lastUpdate']); 
+                          echo $new[0];
+                        ;?>
+                      <span class="badge badge-pill badge-success">Status: <?=$aplicaionVisa[$i]['statusDocumento']?></span>
+                    </a>
+                  <?php } ?>
+                <?php } ?>
+              <?php } ?>
+              <p class="font-size-20 blue-grey-700" style="margin-top: 20px;">Visa: &nbsp;</p>
+              <?php if ($visa) { ?>
+                  <?php if($visa['statusDocumento']=='Pendiente'){ ?>
+                    <a class="list-group-item list-group-item-warning" href="javascript:void(0)" style="font-size: 18px;">
+                      <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$visa['nameDocumento']?>
+                      <br>
+                      <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <?php
+                          $new = explode(' ',$visa['lastUpdate']); 
+                          echo $new[0];
+                        ;?>
+                      <span class="badge badge-pill badge-warning">Status: <?=$visa['statusDocumento']?></span>
+                    </a>
+                  <?php } ?>
+                  <?php if($visa['statusDocumento']=='Aceptado'){?>
+                    <a class="list-group-item list-group-item-success" href="javascript:void(0)" style="font-size: 18px;">
+                      <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$visa['nameDocumento']?>
+                      
+                      <br>
+                      <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <?php
+                          $new = explode(' ',$visa['lastUpdate']); 
+                          echo $new[0];
+                        ;?>
+                      <span class="badge badge-pill badge-success">Status: <?=$visa['statusDocumento']?></span>
+                    </a>
+                  <?php } ?>
+                  <?php if($visa['statusDocumento']=='Rechazado'){?>
+                    <a class="list-group-item list-group-item-danger" href="javascript:void(0)" style="font-size: 18px;">
+                    <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$visa['nameDocumento']?>
+                
+                    <br>
+                    <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <?php
+                        $new = explode(' ',$visa['lastUpdate']); 
+                        echo $new[0];
+                      ;?>
+                    <span class="badge badge-pill badge-danger">Status: <?=$visa['statusDocumento']?></span>
+                    <br>
+                    <br>
+                    <div style="text-align: center;color: black;">Tu archivo fue rechazado por lo siguiente:</div>
+                    <div style="text-align: justify;"><?=$visa['descDocumento']?></div>
+                    <br>
+                    <div style="text-align: center;color: black;">Sube de nuevo tu archivo con las modificaciones necesarias ya mencionadas:</div>
+                    <br>
+                    <input type="hidden" id="pathCarpetaVisa-<?=$visa['idReal'];?>" value="<?=$visa['nameCarpeta'];?>">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6" style="margin-bottom: 15px;">
+                        <form id="formDocModiVisa-<?=$visa['idReal'];?>">
+                          <input type="file" class="form-control btn btn-danger" name="<?=$visa['nameDocumento'];?>" id="files-<?=$visa['idReal'];?>">
+                        </form>
+                      </div>
+                      <br>
+                      <div class="col-sm-12 col-md-6">
+                        <button type="button" class="btn btn-block btn-info btnReSubirVisa" id="<?=$visa['idReal'];?>" name="<?=$visa['nameDocumento'];?>">Subir</button>
+                      </div>
+                    </div>
+              </a>
+              <?php } ?>
+              <?php } ?>
+              <?php if ($ATAS) { ?>
+                  <?php if($ATAS['statusDocumento']=='Pendiente'){ ?>
+                    <a class="list-group-item list-group-item-warning" href="javascript:void(0)" style="font-size: 18px;">
+                      <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$ATAS['nameDocumento']?>
+                      <br>
+                      <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <?php
+                          $new = explode(' ',$ATAS['lastUpdate']); 
+                          echo $new[0];
+                        ;?>
+                      <span class="badge badge-pill badge-warning">Status: <?=$ATAS['statusDocumento']?></span>
+                    </a>
+                  <?php } ?>
+                  <?php if($ATAS['statusDocumento']=='Aceptado'){?>
+                    <a class="list-group-item list-group-item-success" href="javascript:void(0)" style="font-size: 18px;">
+                      <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$ATAS['nameDocumento']?>
+                      
+                      <br>
+                      <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <?php
+                          $new = explode(' ',$ATAS['lastUpdate']); 
+                          echo $new[0];
+                        ;?>
+                      <span class="badge badge-pill badge-success">Status: <?=$ATAS['statusDocumento']?></span>
+                    </a>
+                  <?php } ?>
+                  <?php if($ATAS['statusDocumento']=='Rechazado'){?>
+                    <a class="list-group-item list-group-item-danger" href="javascript:void(0)" style="font-size: 18px;">
+                    <i class="icon fa-file-pdf-o" aria-hidden="true" style="color: #000000;font-size: 25px;"></i> <?=$ATAS['nameDocumento']?>
+                
+                    <br>
+                    <span style="font-weight: normal;">Ultima fecha de modificacion:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <?php
+                        $new = explode(' ',$ATAS['lastUpdate']); 
+                        echo $new[0];
+                      ;?>
+                    <span class="badge badge-pill badge-danger">Status: <?=$ATAS['statusDocumento']?></span>
+                    <br>
+                    <br>
+                    <div style="text-align: center;color: black;">Tu archivo fue rechazado por lo siguiente:</div>
+                    <div style="text-align: justify;"><?=$ATAS['descDocumento']?></div>
+                    <br>
+                    <div style="text-align: center;color: black;">Sube de nuevo tu archivo con las modificaciones necesarias ya mencionadas:</div>
+                    <br>
+                    <input type="hidden" id="pathCarpetaATAS-<?=$ATAS['idReal'];?>" value="<?=$ATAS['nameCarpeta'];?>">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6" style="margin-bottom: 15px;">
+                        <form id="formDocModiATAS-<?=$ATAS['idReal'];?>">
+                          <input type="file" class="form-control btn btn-danger" name="<?=$ATAS['nameDocumento'];?>" id="files-<?=$ATAS['idReal'];?>">
+                        </form>
+                      </div>
+                      <br>
+                      <div class="col-sm-12 col-md-6">
+                        <button type="button" class="btn btn-block btn-info btnReSubirATAS" id="<?=$ATAS['idReal'];?>" name="<?=$ATAS['nameDocumento'];?>">Subir</button>
+                      </div>
+                    </div>
+              </a>
+              <?php } ?>
+              <?php } ?>
+            <?php } ?>
           </div>
-          <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes por subir: &nbsp;</p>
-          
+          <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos: &nbsp;</p>
           <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Carrera") {?>
             <?php if(!$boleta || @!$boletaTraduccion) {?>
               <div class="row">
@@ -280,8 +438,8 @@
                 </div>
               </div>
             <?php } ?>
-            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
-              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3" || $user->statusAspirante=="2" || $user->statusAspirante=="0" || $user->statusAspirante=="4U" || $user->statusAspirante=="4C") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>              
               <?php if (!$examenIngles) { ?>
                 <div class="row">
                   <div class="col-sm-12 col-md-5" style="margin: 20px;">
@@ -300,7 +458,7 @@
                   </div>
                 </div>
               <?php } ?>
-              <?php if (!$boletaFinal) { ?>
+              <?php if (!$boletaFinal && @$boleta['BoletaTipo']!='Final') { ?>
                 <div class="row">
                   <div class="col-sm-12 col-md-5" style="margin: 20px;">
                     <ul class="list-group list-group-bordered">
@@ -318,7 +476,7 @@
                   </div>
                 </div>
               <?php } ?>
-              <?php if (!$visa) { ?>
+              <!--
                 <div class="row">
                   <div class="col-sm-12 col-md-5" style="margin: 20px;">
                     <ul class="list-group list-group-bordered">
@@ -335,10 +493,10 @@
                     </form>
                   </div>
                 </div>
-              <?php } ?>
+              -->
             <?php } ?>
           <?php } ?>
-          <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Masters") {?>
+          <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="Masters") { ?>
             <?php if(!$transcripcion || @!$transcripcionTraduccion) {?>
               <div class="row">
                 <div class="col-sm-12 col-md-5" style="margin: 20px;">
@@ -481,7 +639,7 @@
                 </div>
               </div>
             <?php } ?>
-            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3" || $user->statusAspirante=="2" || $user->statusAspirante=="0" || $user->statusAspirante=="4U" || $user->statusAspirante=="4C") { ?>
               <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
               <?php if (!$examenIngles) { ?>
                 <div class="row">
@@ -537,46 +695,11 @@
                   </div>
                 </div>
               <?php } ?>
-              <?php if (!$ATAS) { ?>
-                <div class="row">
-                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
-                    <ul class="list-group list-group-bordered">
-                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">4. ATAS.</li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                      <form id="ATASForm">
-                        <div class="ATASAlert">
-                        </div>
-                        <label style="font-size: 16px;">Documento en PDF</label>
-                        <input type="file" data-plugin="dropify" id="ATAS" name="ATAS" data-allowed-file-extensions="pdf" data-errors-position="outside">  
-                        <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-ATAS">Subir</button>
-                      </form>
-                  </div>
-                </div>
-              <?php } ?>
-              <?php if (!$visa) { ?>
-                <div class="row">
-                  <div class="col-sm-12 col-md-5" style="margin: 20px;">
-                    <ul class="list-group list-group-bordered">
-                      <li class="list-group-item list-group-item-action active" style="font-size: 16px;">5. Visa.</li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <form id="visaMaestriaForm">
-                      <div class="visaMaestriaAlert">
-                      </div>
-                      <label style="font-size: 16px;">Documento en PDF</label>
-                      <input type="file" data-plugin="dropify" id="visaMaestria" name="visaMaestria" data-allowed-file-extensions="pdf" data-errors-position="outside">  
-                      <button type="button" class="btn btn-block btn-info" style="margin-top:10%;margin-bottom: 10%;" id="btn-visaMaestria">Subir</button>
-                    </form>
-                  </div>
-                </div>
-              <?php } ?>
+              
             <?php } ?>
 
           <?php } ?>
-          <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="PhD") {?>
+          <?php if(@$infoAspiranteUni['estudiosAspiranteUniversidad']=="PhD") { ?>
             <?php if (!$propuesta) { ?>
               <div class="row">
                 <div class="col-sm-12 col-md-5" style="margin: 20px;">
@@ -727,7 +850,7 @@
                 </div>
               </div>
             <?php } ?>
-            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3" || $user->statusAspirante=="2" || $user->statusAspirante=="0" || $user->statusAspirante=="4U" || $user->statusAspirante=="4C") { ?>
               <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
               <?php if (!$examenIngles) { ?>
                 <div class="row">
@@ -783,7 +906,7 @@
                   </div>
                 </div>
               <?php } ?>
-              <?php if (!$ATAS) { ?>
+              <!--<?php if (!$ATAS) { ?>
                 <div class="row">
                   <div class="col-sm-12 col-md-5" style="margin: 20px;">
                     <ul class="list-group list-group-bordered">
@@ -818,7 +941,7 @@
                     </form>
                   </div>
                 </div>
-              <?php } ?>
+              <?php } ?>-->
             <?php } ?>
           <?php } ?>
           <?php if(@$infoAspirantePrepa) {?>
@@ -942,7 +1065,7 @@
                 </div>
               </div>
             <?php } ?>
-            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3") { ?>
+            <?php if ($user->statusAspirante=="2R" || $user->statusAspirante=="3" || $user->statusAspirante=="2" || $user->statusAspirante=="0" || $user->statusAspirante=="4U" || $user->statusAspirante=="4C") { ?>
               <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos Faltantes para terminar tu proceso: &nbsp;</p>
               <?php if (!$examenIngles) { ?>
                 <div class="row">
@@ -962,7 +1085,7 @@
                   </div>
                 </div>
               <?php } ?>
-              <?php if (!$boletaFinal) { ?>
+              <?php if (!$boletaFinal && @$boleta['BoletaTipo']!='Final') { ?>
                 <div class="row">
                   <div class="col-sm-12 col-md-5" style="margin: 20px;">
                     <ul class="list-group list-group-bordered">
@@ -980,7 +1103,7 @@
                   </div>
                 </div>
               <?php } ?>
-              <?php if (!$visa) { ?>
+              <!--<?php if (!$visa) { ?>
                 <div class="row">
                   <div class="col-sm-12 col-md-5" style="margin: 20px;">
                     <ul class="list-group list-group-bordered">
@@ -997,9 +1120,85 @@
                     </form>
                   </div>
                 </div>
-              <?php } ?>
+              <?php } ?>-->
             <?php } ?>
+            
           <?php } ?>
+          <?php if ($user->statusAspirante=="4U") { ?>
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Documentos aplicacion de la visa: &nbsp;</p>
+              <p class="font-size-15" style="color: #B53F00;margin-left:30px;font-size: 18px;">Sube los siguientes documentos para tu proceso de aplicacion de la visa, por favor sube un documento de uno en uno: &nbsp;</p>
+              <p class="font-size-15" style="color: black;margin-left:30px;font-size: 18px;">La siguiente leyenda: <span class="badge badge-dark">status</span> indica el status de cada uno de los archivos que se le solicito. &nbsp;</p>
+                <?php if ($necesidadesBecas) { ?>
+                  <?php for ($i=0; $i < count($necesidadesBecas); $i++) { ?>
+                    <br>
+                    <?php if ($necesidadesBecas[$i]['statusNB']=='Pendiente') { ?>
+                      <div class="alert dark alert-icon alert-primary alert-dismissible" role="alert" style="margin-left: 30px;margin-right: 30px;font-size: 17px;">
+                        <span class="badge badge-dark"><?=$necesidadesBecas[$i]['statusNB']?></span>
+                        <i class="icon wb-bell" aria-hidden="true" style="font-size: 17px;"></i> <?=$necesidadesBecas[$i]['idNB']?>. <?=$necesidadesBecas[$i]['descNB']?>.
+                      </div>
+                    <?php }elseif ($necesidadesBecas[$i]['statusNB']=='Aceptado') { ?>
+                      <div class="alert dark alert-icon alert-success alert-dismissible" role="alert" style="margin-left: 30px;margin-right: 30px;font-size: 17px;">
+                        <span class="badge badge-dark"><?=$necesidadesBecas[$i]['statusNB']?></span>
+                        <i class="icon wb-check" aria-hidden="true" style="font-size: 17px;"></i> <?=$necesidadesBecas[$i]['idNB']?>. <?=$necesidadesBecas[$i]['descNB']?>.
+                      </div>
+                    <?php }else{ ?>
+                      <div class="alert dark alert-icon alert-danger alert-dismissible" role="alert" style="margin-left: 30px;margin-right: 30px;font-size: 17px;">
+                        <span class="badge badge-dark"><?=$necesidadesBecas[$i]['statusNB']?></span>
+                        <i class="icon wb-close" aria-hidden="true" style="font-size: 17px;"></i> <?=$necesidadesBecas[$i]['idNB']?>. <?=$necesidadesBecas[$i]['descNB']?>.
+                      </div>
+                    <?php } ?>
+                  <?php } ?>
+                <?php } ?>
+                
+              
+              <div class="row" style="margin: 10px;">
+                  
+                  <div class="col-sm-12 col-md-12">
+                      <form id="aplicacionForm">
+                        <div class="aplicacionAlert">
+                        </div>
+                        <label style="font-size: 16px;">Documento:</label>
+                        <input type="file" data-plugin="dropify" id="aplicacion" name="aplicacion" data-allowed-file-extensions="pdf doc docx" data-errors-position="outside">  
+                        <button type="button" class="btn btn-block btn-info" style="margin-bottom: 10%;" id="btn-aplicacion">Subir</button>
+                      </form>
+                  </div>
+                </div>
+                
+                <input type="hidden" id="aspiranteKey" value="<?=@$user->aspirante?>">
+                <input type="hidden" id="nameAspiranteKey" value="<?=@$carpetaName?>">
+                <?php if(@!$visa) { ?>
+                  <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">Visa: &nbsp;</p>
+                  <p class="font-size-15" style="color: #B53F00;margin-left:30px;font-size: 18px;">Sube la visa: &nbsp;</p>
+                  
+                  <div class="row" style="margin: 10px;">
+                    <div class="col-sm-12 col-md-12">
+                        <form id="visaForm">
+                          <div class="visaAlert">
+                          </div>
+                          <label style="font-size: 16px;">Documento:</label>
+                          <input type="file" data-plugin="dropify" id="visa" name="visa" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                          <button type="button" class="btn btn-block btn-info" style="margin-bottom: 10%;" id="btn-visa">Subir</button>
+                        </form>
+                    </div>
+                  </div>
+                <?php } ?>
+                <?php if(@$ATASSELECION['aplicaATAS']=='Si' && !@$ATAS) { ?>
+                  <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:30px;">ATAS: &nbsp;</p>
+                  <p class="font-size-15" style="color: #B53F00;margin-left:30px;font-size: 18px;">Sube el ATAS: &nbsp;</p>
+                  <div class="row" style="margin: 10px;">
+                    <div class="col-sm-12 col-md-12">
+                        <form id="ATASForm">
+                          <div class="ATASAlert">
+                          </div>
+                          <label style="font-size: 16px;">Documento:</label>
+                          <input type="file" data-plugin="dropify" id="ATAS" name="ATAS" data-allowed-file-extensions="pdf" data-errors-position="outside">  
+                          <button type="button" class="btn btn-block btn-info" style="margin-bottom: 10%;" id="btn-ATAS">Subir</button>
+                        </form>
+                    </div>
+                  </div>
+                <?php } ?>
+                
+            <?php } ?>
           
           
 
@@ -1007,7 +1206,7 @@
         <!---termino uni-->
 
     </div>
-
+    
     <div class="col-xxl-5 col-lg-4" >
       <div class="card card-shadow" id="widgetStackedBar">
         <div class="card-block p-0">
@@ -1042,7 +1241,7 @@
           </div>
           <ul class="list-group list-group-bordered" style="margin:15px">
             <li class="list-group-item">
-              <a type="button" class="btn btn-block" style="background-color:#171A21;color:white;" href="tel:4422609090"><i class="icon fas fa-phone" aria-hidden="true"></i>Llamar</a>
+              <a type="button" class="btn btn-block" style="background-color:#171A21;color:white;" href="tel:+524422609090"><i class="icon fas fa-phone" aria-hidden="true"></i>Llamar</a>
             </li>
             <li class="list-group-item">
               <a type="button" class="btn btn-block" style="background-color:#25d366;color:white;" href="https://api.whatsapp.com/send?phone=524423645384&text=Dudas%20de%20la%20documentacion%20entregada" target="_blank"  rel="noopener" aria-label="Mandar mensaje whatsapp anglo"><i class="icon fab fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
@@ -1055,12 +1254,9 @@
               <a type="button" class="btn btn-block" style="background-color:#db4437;color:white;" href=" https://mail.google.com/mail/?view=cm&fs=1&to=study@anglolatinoedu.com&su=Dudas%20de%20la%20documentacion%20entregada&body=Mi%20nombre%20es:%20<?=$user->fullname;?>%20y%20Mi%20Correo%20es%20:<?=$user->email;?>" target="_blank"><i class="icon far fa-envelope" aria-hidden="true" target="_blank"></i>Correo</a>
               <span style="margin-left:20px">study@anglolatinoedu.com</span>
             </li>
-            <li class="list-group-item d-none d-sm-block">
-              <a type="button" class="btn btn-block social-facebook" href="https://www.facebook.com/AngloLatino/" target="_blank"><i class="icon bd-facebook" aria-hidden="true"></i>Facebook</a>
-            </li> 
-            <li class="list-group-item d-block d-sm-none">
-              <a type="button" class="btn btn-block social-facebook" href="fb://page/6623204789"><i class="icon bd-facebook" aria-hidden="true"></i>Facebook</a>
-            </li>        
+            <li class="list-group-item">
+              <a type="button" class="btn btn-block social-facebook" href="https://m.me/AngloLatino/" target="_blank"><i class="icon bd-facebook" aria-hidden="true"></i>Messenger facebook</a>
+            </li>       
           </ul>
           
         </div>

@@ -127,7 +127,14 @@
                   <a href="AspiranteStatus2">
                     <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
                     <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
-                    <span class="badge badge-pill badge-primary">Status 2</span>
+                    <span class="badge badge-pill badge-primary">Status 2-4</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a href="AspiranteStatus5">
+                    <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
+                    <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-primary">Status 5</span>
                   </a>
                 </li>
               </ul>
@@ -139,6 +146,14 @@
                 <a href="MisArchivos">
                   <i class="site-menu-icon far fa-file" aria-hidden="true" style="font-size: 20px;"></i>
                   <span class="site-menu-title">Mis Archivos</span>
+                </a>
+              <?php } ;?>
+            </li>
+            <li class="site-menu-item">
+              <?php if($user->typeUsuario=="Aspirante") { ;?>
+                <a href="MisInstituciones">
+                  <i class="site-menu-icon fas fa-graduation-cap" aria-hidden="true" style="font-size: 20px;"></i>
+                  <span class="site-menu-title">Mis Instituciones</span>
                 </a>
               <?php } ;?>
             </li>
@@ -184,7 +199,7 @@
                   <a href="StatusDos">
                     <i class="site-menu-icon fas fa-users" aria-hidden="true"></i>
                     <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
-                    <span class="badge badge-pill badge-primary">Status 2</span>
+                    <span class="badge badge-pill badge-primary">Status 2/3/4</span>
                   </a>
                 </li>
               </ul>
@@ -229,6 +244,16 @@
                 </li>
               </ul>
             </li>
+            <?php } ?>
+            <?php if($user->typeUsuario=="Aspirante") { ;?>
+              <?php if ($BECASSELECION['aplicaBecas']=='Si') { ?>
+                <li class="site-menu-item">
+                  <a href="BecasUP">
+                    <i class="site-menu-icon icon fa-institution" aria-hidden="true" style="font-size: 20px;"></i>
+                    <span class="site-menu-title">Becas</span>
+                  </a>
+                </li>
+              <?php } ?>
             <?php } ?>
             <li class="site-menu-item">
                 <a href="<?=base_url('Login/Login/logout')?>">

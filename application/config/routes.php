@@ -89,3 +89,11 @@ $route['StatusCero'] = 'Dashboard/Ingles/StatusCero';
 $route['HomeAgente'] = 'Dashboard/HomeAgente';
 
 $route['Dashboard/DetailsAspirante(:any)'] = 'Dashboard/DetailsAspirante/index/$1';
+$route['Dashboard/ApiranteProfileFinal(:any)'] = 'Dashboard/ApiranteProfileFinal/index/$1';
+
+$route['RedirectInfoPUT(:any)'] = 'RedirectInfoPUT/index/$1';
+$route['DatosUniversidad(:any)'] = 'Dashboard/Universidad/DatosUniversidad/index/$1';
+$route['UniversidadesFacultad(:any)'] = 'Dashboard/Universidad/UniversidadesFacultad/index/$1';
+
+$route['DatosPreparatoria(:any)'] = 'Dashboard/Preparatoria/DatosPreparatoria/index/$1';
+$route['PreparatoriasFacultad(:any)'] = 'Dashboard/Preparatoria/PreparatoriasFacultad/index/$1';

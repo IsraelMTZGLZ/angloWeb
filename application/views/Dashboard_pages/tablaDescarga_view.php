@@ -15,6 +15,7 @@
                 <th>Correo</th>
                 <th>Mes</th>
                 <th>Año</th>
+                <th>Lugar de creacion</th>
                 <th>Accion</th>
             </tr>
         </thead>
@@ -28,6 +29,8 @@
                 <th>Correo</th>
                 <th>Mes</th>
                 <th>Año</th>
+                <th>Lugar de creacion</th>
+                <th>Accion</th>
             </tr>
         </tfoot>
     </table>
@@ -77,6 +80,7 @@
                     {data: 'email'},
                     {data: 'mesCreation'},
                     {data: 'yearCreation'},
+                    {data: 'tipoRegistro'},
                     {data: 'usuario',
                         render:function(data, type, row)
                         {
