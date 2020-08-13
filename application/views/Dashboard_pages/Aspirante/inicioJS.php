@@ -59,7 +59,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                    "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -90,7 +90,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                            "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta.pdf","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {

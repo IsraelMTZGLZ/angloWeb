@@ -51,7 +51,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                            "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                             "Dropbox-API-Arg": '{"path": "/'+carpeta+'/Becas/'+nombreDocumento+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {

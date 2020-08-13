@@ -1339,7 +1339,7 @@
                                         <button type="button" class="btn btn-success btn-aceptarDefeatRequest" id="<?=$DeferalRequest[$i]['keyDocumentoEliminar']?>" name="<?=$DeferalRequest[$i]['idReal']?>">Aceptar</button>
                                     </div>
                                     <div class="col-6">
-                                        <button type="button" class="btn btn-danger">Rechazar</button>
+                                        <button type="button" class="btn btn-danger btn-rechazarDefeatRequest" id="<?=$DeferalRequest[$i]['idReal']?>" name="<?=$DeferalRequest[$i]['pathDisplayDocumento']?>">Rechazar</button>
                                     </div>
                                 </div>
                             <?php } ?>

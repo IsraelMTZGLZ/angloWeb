@@ -40,7 +40,7 @@
                 processData: false,
                 contentType: 'application/octet-stream',
                 headers: {
-                    "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                    "Authorization": "Bearer OI8jtgxlYiAAAAAAAAAAAYVp8xrfpbYYmZ-_LBmL39oi1qeEZbC008G63TE3yrk6",
                     "Dropbox-API-Arg": '{"path": "/'+carpeta+'/Email deferral request '+intitucionNombre+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {
@@ -143,7 +143,7 @@
                 processData: false,
                 contentType: 'application/octet-stream',
                 headers: {
-                    "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                    "Authorization": "Bearer OI8jtgxlYiAAAAAAAAAAAYVp8xrfpbYYmZ-_LBmL39oi1qeEZbC008G63TE3yrk6",
                     "Dropbox-API-Arg": '{"path": "/'+name+'/Ofeta '+uniname+'.pdf","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {
@@ -224,7 +224,7 @@
                 processData: false,
                 contentType: 'application/octet-stream',
                 headers: {
-                    "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                    "Authorization": "Bearer OI8jtgxlYiAAAAAAAAAAAYVp8xrfpbYYmZ-_LBmL39oi1qeEZbC008G63TE3yrk6",
                     "Dropbox-API-Arg": '{"path": "/'+name+'/Ofeta '+uniname+'.pdf","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {

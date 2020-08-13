@@ -2,6 +2,65 @@
 <script>
      $(function(){
 
+        $(document).on('click','.btn-rechazarDefeatRequest',function (){
+            var id = this.id;
+            var name = this.name;
+            bootbox.confirm({
+                message: "Estas seguro que quieres eliminar la oferta que te mando el aspirante, revisa que sea el documento antes de hacer esta operacion.",
+                size : 'small',
+                centerVertical: true,
+                buttons: {
+                    confirm: {
+                        label: 'Si',
+                        className: 'btn-success'
+                    },
+                    cancel: {
+                        label: 'No',
+                        className: 'btn-danger'
+                    }
+                },
+                callback: function (result) {
+                    if(result==true){
+                        $('#exampleFillIn').modal({backdrop: 'static', keyboard: false});
+                        $.ajax({
+                            url: 'https://api.dropboxapi.com/2/files/delete_v2',
+                            type: 'post',
+                            headers: {
+                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                            },
+                            data:'{\"path\": \"'+name+'\"}',
+                            contentType: 'application/json',
+                            success: function (response) {
+                                $.ajax({
+                                    url: _principalURL()+"BecasAdd/api/defeatQuitar/id/"+id,
+                                    method : 'DELETE',
+                                    headers : {
+                                    'X-API-KEY':'ANGLOKEY'
+                                    },
+                                    data: null,
+                                    success : function(_response){
+                                        if(_response['status']=="success"){
+                                            setTimeout(function(){
+                                                location.reload();
+                                            },2000);
+                                        }
+                                        tostada(_response.status,_response.message);
+
+                                    }
+                                });  
+                                
+                            },
+                            error: function (response) {
+                                console.error(response);
+                            }
+                        });
+                    }else{
+                        tostada('info','Operacion cancelada');
+                    }
+                }
+            });
+        });
+
         $(document).on('click','.btn-aceptarDefeatRequest',function (){
             var id = this.id;
             var name = this.name;
@@ -123,7 +182,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv"
+                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
                             },
                             data:'{\"path\": \"'+path+'\"}',
                             contentType: 'application/json',
@@ -184,7 +243,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv"
+                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
                             },
                             data:'{\"path\": \"'+path+'\"}',
                             contentType: 'application/json',
@@ -239,7 +298,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv"
+                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
                             },
                             data:'{\"path\": \"'+carpeta+'\"}',
                             contentType: 'application/json',
@@ -514,7 +573,7 @@
                 processData: false,
                 contentType: 'application/octet-stream',
                 headers: {
-                    "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                    "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                     "Dropbox-API-Arg": '{"path": "/'+carpeta+'/Email deferral request '+intitucionNombre+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {
@@ -646,7 +705,7 @@
                     url: 'https://api.dropboxapi.com/2/files/delete_v2',
                     type: 'post',
                     headers: {
-                        "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv"
+                        "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
                     },
                     data:'{\"path\": \"'+path+'\"}',
                     contentType: 'application/json',
@@ -1142,7 +1201,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv"
+                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
                             },
                             data:'{\"path\": \"'+path+'\"}',
                             contentType: 'application/json',
@@ -1269,7 +1328,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                            "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Ofeta '+uniname+'.pdf","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1416,7 +1475,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv",
+                            "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Ofeta '+uniname+'.pdf","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1708,7 +1767,7 @@
                     url: 'https://api.dropboxapi.com/2/files/delete_v2',
                     type: 'post',
                     headers: {
-                        "Authorization": "Bearer Yw6OUnBO0lAAAAAAAAAAIn7BVI50aQuBCUahP_bylfNJDVOqtX3UgjwVd4o7ChKv"
+                        "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
                     },
                     data:'{\"path\": \"'+path+'\"}',
                     contentType: 'application/json',

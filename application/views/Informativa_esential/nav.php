@@ -1,11 +1,41 @@
 <body>
+    
+<!-- Load Facebook SDK for JavaScript -->
+<!--<div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="6623204789"
+  logged_in_greeting="Hola! C贸mo puedo ayudarte?"
+  logged_out_greeting="Hola! C贸mo puedo ayudarte?">
+      </div>-->
+<!-- Load Facebook SDK for JavaScript -->    
+      
+      
+      
+      
     <!-- preloader Start -->
     <!-- preloader Start -->
-    <div id="preloader" style="background-color: #30a3f0;">
+    <!--<div id="preloader" style="background-color: #30a3f0;">
         <div id="status">
             <img src="https://pa1.narvii.com/6557/19b849c62b3f8e6ef9413f4fe9ac214ae6b99657_hq.gif" id="preloader_image" alt="loader">
         </div>
-    </div>
+    </div>-->
     <div  class="cursor"></div>
     <!-- Top Scroll Start -->
 <a href="javascript:" id="return-to-top"><img src="<?=base_url('resources/assets/Informativa/images/scroll.png');?>" alt="img"></a>
@@ -62,7 +92,7 @@
 <!--
 <div class="">
   <div id="iframeHolder"></div>
-	 <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a>
+	 <a href="https://wa.me/5211234567890?text=Me%20gustar铆a%20saber%20el%20precio%20del%20coche"  id="postYourAdd"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img"></a>
     <button id="button"  class="whatsapp" target="_blank"><img src="<?=base_url('resources/assets/Informativa/images/england.png');?>" alt="img">OPEN</button> 
 <button type="button" aria-label="Abrir chat agente anglo" class="chat-open-dialog" data-toggle="popover" data-content="<?=$this->lang->line('ayudar')?> </br><?=$this->lang->line('escribenos')?>"> <span class="fa fa-question"></span> </button>
 <button class="chat-button-destroy" aria-label="Cerrar chat agente anglo"> <span class="fas fa-window-close fa-2x" style="color: white;"></span> </button>
@@ -76,7 +106,6 @@
             <a href="#0" class="cd-close"><?=$this->lang->line('close');?></a>
               <ul class="cd-dropdown-content">
                   <li>
-                     <script async src="https://cse.google.com/cse.js?cx=001441891157965034420:8s6jgmwz23k"></script>
 <div class="gcse-search"></div>
                </li>
             <li class="javascript:;">
@@ -118,7 +147,8 @@
                 </ul>
             </li>
             <li class="javascript:;">
-                <a href="<?= ($this->session->flashdata('blog')) ? '../Login' : 'Login' ;?>"><?=$this->lang->line('ingresar');?></a>
+           
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScXKymXmif3b0vRBkumJA6MB23-szR1VoZTTijvzw-BviQsFw/viewform" target="_blank"><?=$this->lang->line('ingresar');?></a>
             </li>
 
         </ul>
@@ -168,24 +198,12 @@
             </header>
             <div class="header_btn top_btn float_left">
 
+              
                 <a href="<?= ($this->session->flashdata('blog')) ? '../Login' : 'Login' ;?>"><?=$this->lang->line('ingresar');?></a>
 
             </div>
 
-            <div class="jen_search_btn_wrapper d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                <!-- extra nav -->
-                <div class="extra-nav">
-                    <div class="extra-cell">
-                        <button id="quik-search-btn" type="button" class="site-button radius-xl"><i class="flaticon-magnifying-glass"></i></button>
-                    </div>
-                </div>
-
-                <!-- Quik search -->
-                <div class="dez-quik-search bg-primary-dark">
-                     <script async src="https://cse.google.com/cse.js?cx=001441891157965034420:8s6jgmwz23k"></script>
-<div class="gcse-search"></div>
-                </div>
-            </div>
+            
 
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
@@ -208,16 +226,11 @@
 
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'becas') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Becas' : 'Becas' ;?>" class="gc_main_navigation"><?=$this->lang->line('becasy_apoyos');?></a>
                         </li>
-                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'blog') ? 'active' : '';?>"><a href="javascript:;" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
-                            <ul class="navi_2_dropdown">
-                                <li>
-                                   <a href="<?= ($this->session->flashdata('blog')) ? '../Blog' : 'Blog' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('blog');?></a>
-                                </li>
-                                <li class="parent">
-                                    <a href="<?= ($this->session->flashdata('blog')) ? '../Event' : 'Event' ;?>"> <i class="fas fa-caret-right"></i><?=$this->lang->line('event_nav');?></a>
-                                </li>
-                            </ul>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'blog') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Blog' : 'Blog' ;?>" class="gc_main_navigation"><?=$this->lang->line('blog');?></a>
                         </li>
+                        <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'event') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Event' : 'Event' ;?>" class="gc_main_navigation"><?=$this->lang->line('event_nav');?></a>
+                        </li>
+                        
                         <li class="has-mega gc_main_navigation <?=($this->session->userdata('nav_active') == 'contacto') ? 'active' : '';?>"><a href="<?= ($this->session->flashdata('blog')) ? '../Contacto' : 'Contacto' ;?>" class="gc_main_navigation"><?=$this->lang->line('contacto');?></a>
                         </li>
 

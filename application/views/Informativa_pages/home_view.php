@@ -184,7 +184,7 @@
 
                     <div class="service_cntnt de float_left">
                         <div class="service_main">
-                            <i class="fas fa-headset"></i>
+                            <i class="fas fa-briefcase"></i>
                             <h2> <a href="Services"><?=$this->lang->line('servicio');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>
@@ -200,7 +200,7 @@
 
                     <div class="service_cntnt de resp_boerder float_left">
                         <div class="service_main">
-                            <i class="fas fa-user-check"></i>
+                            <i class="fas fa-diamond"></i>
                             <h2> <a href="Services"><?=$this->lang->line('eficacia');?></a></h2>
                         </div>
                         <div class="service_overlay"></div>

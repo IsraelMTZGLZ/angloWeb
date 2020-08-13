@@ -106,6 +106,12 @@ class ApiranteProfileFinal extends MY_RootController {
                 $primeraVisa = $this->_callApiRest('Reportes/api/primeraVisa/'.$data['aspirante']['aspirante'],null,"GET",null);
                 $data['primeraVisa'] = $primeraVisa['data'];
 
+                $BecasDocs = $this->_callApiRest('Documentos/BecasUP/api/becas/id/'.$data['aspirante']['aspirante'],null,"GET",null);
+                $data['BecasDocs'] = $BecasDocs['data'];
+
+                $BecasDisponibles = $this->_callApiRest('BecasAdd/api/becas/',null,"GET",null);
+                $data['BecasDisponibles'] = $BecasDisponibles['data'];
+
                 $this->_initialPage($data);
                 $this->load->view('Dashboard_pages/Aspirante/details5',$data);
                 $this->_finalPage();

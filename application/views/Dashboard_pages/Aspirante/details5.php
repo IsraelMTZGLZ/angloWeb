@@ -341,10 +341,6 @@
                             <label class="form-control-label" for="inputBasicEmail">Mes y año de ingreso:</label>
                             <input type="text" class="form-control" value="<?=@$infoAspiranteUni['mes']?>, <?=@$infoAspiranteUni['anio']?>" disabled>
                         </div>
-                        <div class="form-group">
-                            <label class="form-control-label" for="inputBasicEmail">Carrera elegida:</label>
-                            <input type="text" class="form-control" value="<?=@$infoAspiranteUni['carrera']?>" disabled>
-                        </div>
                         <?php } ?>
                         <?php if(@$infoAspirantePrepa){ ?>
                             <div class="form-group">
@@ -879,15 +875,46 @@
             </div>
                     </div>
                     <div class="tab-pane" id="exampleTabsLeftThree" role="tabpanel">
-                      Chrysippe rebus institutionem utrisque dixisset manus quippiam ignorare defatigatio
-                      doctiores, essent doctus ipsam tamquam complexiones corporisque,
-                      ars umbram sentiri venandi. Ipsam. Reprehenderit tantum debent
-                      sicine assumenda comprobavit, assumenda primos fuerit atomos
-                      amicorum inducitur quaedam miserum, potitur numquid effluere
-                      haeret ipsos consuetudine, munere putet fugiendis orationis
-                      quantumcumque. Perferendis attento saluti liberatione contra,
-                      constituam efficeret quaeso accusamus quieti petat rem nisi
-                      amicum.
+                      <div class="row">
+                        <div class="col-xl-8">
+                          <?php for ($i=0; $i < count($BecasDocs); $i++) { ?>
+                            <?php 
+                            if ($BecasDocs[$i]['statusDocumento']=='Pendiente') {
+                                $color = 'text-white bg-warning';
+                            }else if($BecasDocs[$i]['statusDocumento']=='Rechazado'){
+                                $color = 'text-white bg-danger';
+                            }else{
+                                $color = 'text-white bg-success';
+                            }
+                            ?>
+                            <?php if ($BecasDocs[$i]['statusDocumento']=='Pendiente' || $BecasDocs[$i]['statusDocumento']=='Aceptado') { ?>
+                                <div class="col-xl-6" style="margin: 10px;">
+                                    <div class="card <?=$color?>" style="box-shadow: 0 0 5px 1px rgba(52, 52, 52, 0.224);border-radius: 20px;">
+                                        <img class="card-img-top" src="https://www.cori.cinvestav.mx/portals/cori/img/becas.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title" style="margin-left: 20px;"><?=@$BecasDocs[$i]['nameDocumento']?></h4>
+                                            <p class="card-text" style="color: black;">Descripcion: <br></p>
+                                            <p><?=@$BecasDocs[$i]['descDocumento']?></p>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button class="btn btn-success btn-becasAceptar" id="<?=@$BecasDocs[$i]['idReal']?>" name="<?=@$BecasDocs[$i]['idReal']?>">Aceptar</button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button class="btn btn-danger btn-becasRechazar" id="<?=@$BecasDocs[$i]['idReal']?>" name="<?=@$BecasDocs[$i]['pathDisplayDocumento']?>">Rechazar</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                                
+                          <?php } ?>
+                        </div>
+                        <div class="col-xl-4">
+
+                        </div>
+                      </div>
                     </div>
                     <div class="tab-pane" id="subidosTabs" role="tabpanel">
                     <input type="hidden" value="<?=$aspirante['aspirante']?>" name="aspiranteKey" id="aspiranteKey">
