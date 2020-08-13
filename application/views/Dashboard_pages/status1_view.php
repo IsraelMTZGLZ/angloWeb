@@ -1,10 +1,20 @@
-
+<div class="page">
 <div class="page-content">
+<?php if ($this->session->flashdata('messagePredeterminado')) { ;?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error!</strong> <?=@$this->session->flashdata('messagePredeterminado');?>
+            <br>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <?php } ;?>
       <!-- Panel Basic -->
       <div class="panel">
         <div class="card-header" style="margin-top: 2%;text-align: center">
             Aspirantes Interesados
         </div>
+       
         <div class="panel-body">
           <table id="example" class="table table-hover dataTable table-striped w-full" data-plugin="dataTable" id="example">
             <thead>
@@ -17,6 +27,8 @@
                 <th>Ciudad</th>
                 <th>Programa de interes</th>
                 <th>Fecha de creacion</th>
+                <th>Lugar de creacion</th>
+
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -30,10 +42,13 @@
                 <th>Ciudad</th>
                 <th>Programa de interes</th>
                 <th>Fecha de creacion</th>
+                <th>Lugar de creacion</th>
+
                 <th>Acciones</th>
               </tr>
             </tfoot>
             <tbody>
+              <?php if ($aspirantes) { ?>
                 <?php for($i=0;$i < count(@$aspirantes); $i++) {?>
                     <tr>
                         <td><?=@$aspirantes[$i]['fullname'];?></td>
@@ -44,6 +59,8 @@
                         <td><?=@$aspirantes[$i]['ciudad'];?></td>
                         <td><?=@$aspirantes[$i]['programaDeInteres'];?></td>
                         <td><?=@$aspirantes[$i]['completeFecha'];?></td>
+                        <td><?=@$aspirantes[$i]['tipoRegistro'];?></td>
+
                         <td>
                           <a type="button" class="btn btn-icon btn-danger" href="tel:<?=@$aspirantes[$i]['telefono'];?>">
                             <i class="icon fa-phone" aria-hidden="true" style="color: white">
@@ -59,7 +76,7 @@
                             <i class="icon fa-envelope" aria-hidden="true" style="color: white">
                             </i>
                           </button>
-                          &nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;
                           <button type="button" class="btn btn-icon btn-warning seeMore" id="<?=@$aspirantes[$i]['usuario'];?>">
                             <i class="icon fa-eye" aria-hidden="true" style="color: white">
                             </i>
@@ -68,7 +85,7 @@
                         </td>
                     </tr>
                 <?php } ?>
-                
+              <?php } ?> 
             </tbody>
           </table>
         </div>
@@ -113,6 +130,13 @@
 <script>
     $(document).ready(function()
         {
+
+          $(document).on('click','.editUser',function(){
+            var id = this.id;
+            var hash=btoa(id);
+            window.location.href = "<?php echo site_url('RedirectInfoPUT'); ?>"+hash;  
+          });
+
           $(document).on('click','.sendEmail',function(){
             var id = this.id;
             _url = _principalURL()+"Status/api/sendEmailStatus1/id/"+id;

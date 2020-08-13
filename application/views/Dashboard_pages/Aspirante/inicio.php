@@ -542,7 +542,6 @@ header .footer-wave {
 <div class="page-content containerC-fluid" >
   <div class="row" data-plugin="matchHeight" data-by-row="true">
     <div class="col-xxl-7 col-lg-7">
-
       <!--Eligio universidad-->
       <?php if(@$infoAspiranteUni) { ;?>
         <div class="card card-shadow card-responsive" id="widgetLineareaColor">
@@ -565,6 +564,9 @@ header .footer-wave {
                     <li class="mb-5 text-truncate">
                         <i class="icon wb-medium-point green-600 mr-5" aria-hidden="true"></i>Año: <?=$infoAspiranteUni['anio'];?>
                     </li>
+                    <li class="mb-5 text-truncate">
+                        <i class="icon wb-medium-point green-600 mr-5" aria-hidden="true"></i>Carrera: <?=$infoAspiranteUni['carrera'];?>
+                    </li>
                     </ul>
                   </div>
                 </div>
@@ -582,18 +584,13 @@ header .footer-wave {
                 <div class="containerC" style="margin: 15px">
                   <div class="card">
                     <div class="img-box">
-                      <img src="<?=@$universidades[$i]['logoInstitucion']?>" alt="Universidad" title="Universidad">
+                      <img src="<?=@$universidades[$i]['logoInstitucion']?>" alt="Universidad">
                     </div>
                     <div class="content-box">
                       <h2><?=@$universidades[$i]['nombreInstitucion']?></h2>
-                      <div class="color">
-                        <h3>Color :</h3>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>            
-                      <a href="javascript:void(0);">
-                          Buy Now
+                               
+                      <a href="MisInstituciones">
+                        Mas
                       </a>
                     </div>
                   </div>
@@ -614,6 +611,7 @@ header .footer-wave {
                 <div class="col-7">
                   <p class="font-size-20 blue-grey-700" style="color: #B53F00;display:inline;">Tipo de estudio elegido: &nbsp;</p>
                   <p class="font-size-20" style="color: #B53F00;display:inline;"><?=@$infoAspirantePrepa['nombreTipoEstudio'];?></p>
+                  <br>
                   <p class="font-size-20 blue-grey-700" style="color: #B53F00;display:inline;">Tipo de alojamiento elegido: &nbsp;</p>
                   <p class="font-size-20" style="color: #B53F00;display:inline;"><?=@$infoAspirantePrepa['nombreTipoAlojamiento'];?></p>      
                 </div>
@@ -626,6 +624,9 @@ header .footer-wave {
                       <li class="mb-5 text-truncate">
                           <i class="icon wb-medium-point green-600 mr-5" aria-hidden="true"></i>Año: <?=@$infoAspirantePrepa['anio'];?>
                       </li>
+                      <li class="mb-5 text-truncate">
+                        <i class="icon wb-medium-point red-600 mr-5" aria-hidden="true"></i>Carrera: <?=$infoAspirantePrepa['carrera'];?>
+                    </li>
                     </ul>
                   </div>
                 </div>
@@ -647,20 +648,73 @@ header .footer-wave {
                     </div>
                     <div class="content-box">
                       <h2 style="font-size: 20px;"><?=@$preparatorias[$i]['nombreInstitucion']?></h2>
-                      <div class="color">
-                        <h3>Color :</h3>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>            
-                      <a href="javascript:void(0);">
-                          Buy Now
+                               
+                      <a href="MisInstituciones">
+                        Mas
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             <?php } ;?>     
+          </div>
+
+          <div class="row" style="margin: 10PX;margin-left: 30PX;">
+            <?php if ($user->statusAspirante=='3' || $user->statusAspirante=='4U' || $user->statusAspirante=='4C' || $user->statusAspirante=='5') { ?>
+              <div class="row">
+              <p class="font-size-20 blue-grey-700" style="color: #B53F00;margin:25px;">Becas: &nbsp;</p>
+
+              </div>
+
+              <input type="hidden" name="becasAspiranteKey" id="becasAspiranteKey" value="<?=$user->aspirante?>">
+              <br>
+              <br>
+              <div class="card" style="width: 18rem;box-shadow: 0 0 5px 1px rgba(52, 52, 52, 0.224);border-radius: 20px;">
+                <img src="https://www.cori.cinvestav.mx/portals/cori/img/becas.jpg" class="card-img-top">
+                <?php if ($BECASSELECION) { ?>
+                  <div class="card-body">
+                    <h5 class="card-title">Aplicas para una beca ?</h5>
+                    <div class="row" style="margin-left: 10PX;">
+                          <div class="col-6">
+                              <div class="radio-custom radio-danger">
+                                  <input type="radio" id="radio1" <?php echo ($BECASSELECION['aplicaBecas'] == 'Si') ? 'checked' : '';  ?> disabled>
+                                  <label for="inputRadiosUnchecked">SI</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="radio-custom radio-danger">
+                                  <input type="radio" id="radio2" <?php echo ($BECASSELECION['aplicaBecas'] == 'No') ? 'checked' : '';  ?> disabled>
+                                  <label for="inputRadiosChecked">NO</label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                <?php }else { ?>
+                  <div class="becaAlert"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Aplicas para una beca ?</h5>
+                    <div class="row" style="margin-left: 10PX;">
+                          <div class="col-6">
+                              <div class="radio-custom radio-danger">
+                                  <input type="radio" id="radio1" name="radioBecas" value="si">
+                                  <label for="inputRadiosUnchecked">SI</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="radio-custom radio-danger">
+                                  <input type="radio" id="radio2" name="radioBecas" value="no">
+                                  <label for="inputRadiosChecked">NO</label>
+                              </div>
+                          </div>
+                      </div>
+                    <br>
+                    <a type="button" class="btn btn-primary btn-putBecas" style="color: white;">Aplicar</a>
+                  </div>
+                <?php } ?> 
+                
+              </div>
+            <?php } ?>
           </div>
         </div>
       <?php } ;?>
@@ -671,9 +725,6 @@ header .footer-wave {
     <div class="col-xxl-5 col-lg-5" >
       <div class="card card-shadow" id="widgetStackedBar">
         <div class="card-block p-0">
-          <div class="p-30 h-150">
-            <p  class="font-size-20 blue-grey-700">Documentos:</p>
-          </div>
           
                 <div role="alert" class="alert dark alert-danger alert-avatar alert-dismissible" style="margin: 15px;">
                   
@@ -690,7 +741,164 @@ header .footer-wave {
                 </div>
               
           <!--termina preparatoria -->
-
+            <p  class="font-size-20 blue-grey-700" style="margin-left: 20px;">Progreso y pasos por acompletar:</p>
+            <ul class="timeline timeline-icon">
+                      <li class="timeline-period"><?=$hoy['month'],' ' ,$hoy['year']?></li>
+                      <li class="timeline-item "">
+                        <div class="timeline-dot bg-orange-500">
+                          <i class="wb-quote-right"></i>
+                        </div>
+                        <div class="timeline-content">
+                          <div class="card card-shadow">
+                            <div class="card-header cover">
+                              <div class="cover-background p-30" style="background-image: url(https://www.atlanticcouncil.org/wp-content/uploads/2019/12/Westminister-large-1024x683.jpg)">
+                                <blockquote class="blockquote cover-quote white card-blockquote">
+                                  Terminaste tu proceso con anglo latino.
+                                </blockquote>
+                                
+                              </div>
+                              <p class="card-text">
+                                Has subido tu Visa <?=@$primeraVisa['lastUpdate']?>
+                              </p>
+                              <?php if ($user->statusAspirante=='2' || $user->statusAspirante=='1' || $user->statusAspirante=='0' || $user->statusAspirante=='3' || $user->statusAspirante=='4U' || $user->statusAspirante=='4C') { ?>
+                                <div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">
+                                  <i class="icon wb-close" aria-hidden="true"></i> Aun no has completado este paso, por favor revisa tu proceso con un acesor.
+                                </div>
+                              <?php }else { ?>
+                                <div class="alert dark alert-icon alert-success alert-dismissible" role="alert">
+                                  <i class="icon wb-check" aria-hidden="true"></i> Has completado este paso.
+                                </div>
+                              <?php } ?>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item timeline-reverse">
+                        <div class="timeline-dot bg-green-500">
+                          <i class="icon wb-file" aria-hidden="true"></i>
+                        </div>
+                        <div class="timeline-content ">
+                          <div class="card card-article card-shadow">
+                            
+                            <div class="card-block">
+                              <h3 class="card-title">Carta de oferta</h3>
+                              <p class="card-text" style="font-size: 18px;">
+                                <small><?=@$primeraOferta['creationDate']?></small>
+                              </p>
+                              <p>
+                                Se subio la oferta condicional o incondicional de una de tus instituciones seleccionadas. </p>
+                                <?php if ($user->statusAspirante=='2' || $user->statusAspirante=='1' || $user->statusAspirante=='0' || $user->statusAspirante=='3') { ?>
+                                <div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">
+                                  <i class="icon wb-close" aria-hidden="true"></i> Aun no has completado este paso, por favor revisa tu proceso con un acesor.
+                                </div>
+                              <?php }else { ?>
+                                <div class="alert dark alert-icon alert-success alert-dismissible" role="alert">
+                                  <i class="icon wb-check" aria-hidden="true"></i> Has completado este paso.
+                                </div>
+                              <?php } ?>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item">
+                        <div class="timeline-dot bg-green-500">
+                          <i class="icon wb-file" aria-hidden="true"></i>
+                        </div>
+                        <div class="timeline-content">
+                          <div class="card card-article card-shadow">
+                            
+                            <div class="card-block">
+                              <h3 class="card-title">Numero de aplicacion</h3>
+                              <p class="card-text" style="font-size: 18px;">
+                                <small><?=@$primerCarta['fechaAceptacion']?></small>
+                              </p>
+                              <p>
+                                Se subio el numero de aplicante de una de tus instituciones seleccionadas. </p>
+                              <?php if ($user->statusAspirante=='2' || $user->statusAspirante=='1' || $user->statusAspirante=='0') { ?>
+                                <div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">
+                                  <i class="icon wb-close" aria-hidden="true"></i> Aun no has completado este paso, por favor revisa tu proceso con un acesor.
+                                </div>
+                              <?php }else { ?>
+                                <div class="alert dark alert-icon alert-success alert-dismissible" role="alert">
+                                  <i class="icon wb-check" aria-hidden="true"></i> Has completado este paso.
+                                </div>
+                              <?php } ?>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item timeline-reverse">
+                        <div class="timeline-dot bg-green-500">
+                          <i class="icon wb-file" aria-hidden="true"></i>
+                        </div>
+                        <div class="timeline-content">
+                          <div class="card card-article card-shadow">
+                            
+                            <div class="card-block">
+                              <h3 class="card-title">Sube todos tus documentos necesarios para tu aplicacion.</h3>
+                              
+                              <?php if ($user->statusAspirante=='2' || $user->statusAspirante=='1' || $user->statusAspirante=='0') { ?>
+                                <div class="alert dark alert-icon alert-danger alert-dismissible" role="alert">
+                                  <i class="icon wb-close" aria-hidden="true"></i> Aun no has completado este paso, por favor revisa tu proceso con un acesor.
+                                </div>
+                              <?php }else { ?>
+                                <div class="alert dark alert-icon alert-success alert-dismissible" role="alert">
+                                  <i class="icon wb-check" aria-hidden="true"></i> Has completado este paso.
+                                </div>
+                              <?php } ?>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <br>
+                      <li class="timeline-item"">
+                        <div class="timeline-dot bg-orange-500">
+                          <i class="wb-quote-right"></i>
+                        </div>
+                        <div class="timeline-content">
+                          <div class="card card-shadow">
+                            <div class="card-header cover">
+                              <div class="cover-background p-30" style="background-image: url(https://www.atlanticcouncil.org/wp-content/uploads/2019/12/Westminister-large-1024x683.jpg)">
+                                <blockquote class="blockquote cover-quote white card-blockquote">
+                                  Terminaste tu preproceso con nostros.
+                                </blockquote>
+                                
+                              </div>
+                              <p class="card-text" style="font-size: 18px;">
+                                <small><?=@$primerRegistroA['creationDateAspirante']?></small>
+                              </p>
+                              <div class="alert dark alert-icon alert-success alert-dismissible" role="alert">
+                                <i class="icon wb-check" aria-hidden="true"></i> Has completado este paso.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item timeline-reverse"">
+                        <div class="timeline-dot bg-orange-500">
+                          <i class="wb-quote-right"></i>
+                        </div>
+                        <div class="timeline-content">
+                          <div class="card card-shadow">
+                            <div class="card-header cover">
+                              <div class="cover-background p-30" style="background-image: url(https://www.atlanticcouncil.org/wp-content/uploads/2019/12/Westminister-large-1024x683.jpg)">
+                                <blockquote class="blockquote cover-quote white card-blockquote">
+                                   Iniciaste tu proceso con nostros !Gracias!
+                                </blockquote>
+                                
+                              </div>
+                              <p class="card-text" style="font-size: 18px;">
+                                <small><?=@$primerRegistro['creationDateUsuario']?></small>
+                              </p>
+                              <div class="alert dark alert-icon alert-success alert-dismissible" role="alert">
+                                <i class="icon wb-check" aria-hidden="true"></i> Has completado este paso.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+          
         </div>
       </div>
     </div>

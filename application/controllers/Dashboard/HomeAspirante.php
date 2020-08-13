@@ -26,6 +26,12 @@ class HomeAspirante extends MY_RootController {
             $responseUnis = $this->_callApiRest('AspiranteUniversidades/api/aspiranteInstitucionesBYAspiranteUni/id/'.$response['data']['idAspiranteUniversidad'],null,"GET",null);
             $data['universidades'] = $responseUnis['data'];
 
+            $primerCarta = $this->_callApiRest('Reportes/api/primerNumero3/'.$data['infoAspiranteUni']['idAspiranteUniversidad'],null,"GET",null);
+            $data['primerCarta'] = $primerCarta['data'];
+
+            $primeraOferta = $this->_callApiRest('Reportes/api/primeraCarta4/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+            $data['primeraOferta'] = $primeraOferta['data'];
+
             
         }else if($data['user']->programaDeInteres=="Preparatoria"){
 
@@ -37,6 +43,25 @@ class HomeAspirante extends MY_RootController {
 
             
         }
+
+        //linea del tiempo
+        $hoy = getdate();
+        $data['hoy'] = $hoy;
+
+        $primerRegistro = $this->_callApiRest('Reportes/api/primerRegistro/'.$this->session->userdata('user_sess')->usuario,null,"GET",null);
+        $data['primerRegistro'] = $primerRegistro['data'];
+
+        $primerRegistroA = $this->_callApiRest('Reportes/api/primerRegistroAspirante/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['primerRegistroA'] = $primerRegistroA['data'];
+
+        $primerDocumentos = $this->_callApiRest('Reportes/api/primerDocumentos/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['primerDocumentos'] = $primerDocumentos['data'];
+
+        $primeraVisa = $this->_callApiRest('Reportes/api/primeraVisa/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['primeraVisa'] = $primeraVisa['data'];
+
+        $BECASSELECION = $this->_callApiRest('Aspirante/api/BECASSeleccion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['BECASSELECION'] = $BECASSELECION['data'];
 
         //echo var_dump($data['infoAspirantePrepa']);
 		$this->_initialPage($data);

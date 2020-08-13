@@ -10,11 +10,9 @@ class Event extends MY_RootController {
 	public function index()
 	{
 		unset($_SESSION['blog']);
-		$response =  $this->_callApiRest('Eventos/api/eventos/',null,"GET",null);
-		$data['eventos'] = $response['data'];
-		$this->session->set_flashdata('nav_active','blog');
+		$this->session->set_flashdata('nav_active','event');
 		$this->_initialInformativa();
-		$this->load->view('Informativa_pages/event_view',$data);
+		$this->load->view('Informativa_pages/event_view');
 		$this->_finalInformativa();
 	}
 

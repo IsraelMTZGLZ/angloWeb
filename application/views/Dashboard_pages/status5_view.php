@@ -1,4 +1,5 @@
 <div class="page">
+
 <div class="page-content">
       <!-- Panel Basic -->
       <div class="panel">
@@ -30,24 +31,27 @@
               </tr>
             </tfoot>
             <tbody>
-                <?php for($i=0;$i < count(@$aspirantes); $i++) {?>
-                    <tr>
-                        <td><?=@$aspirantes[$i]['fullname'];?></td>
-                        <td><?=@$aspirantes[$i]['email'];?></td>
-                        <td><?=@$aspirantes[$i]['telefono'];?></td>
-                        <td><?=@$aspirantes[$i]['programaDeInteres'];?></td>
-                        <td><?=@$aspirantes[$i]['completeFecha'];?></td>
-                        <td><?=@$aspirantes[$i]['tipoRegistro'];?></td>
-                        <td>
-                          
-                          <button type="button" class="btn btn-icon btn-warning seeMore" id="<?=@$aspirantes[$i]['aspirante'];?>">
-                            <i class="icon fa-eye" aria-hidden="true" style="color: white">
-                            </i>
-                          </button>
-                          &nbsp;&nbsp;
-                        </td>
-                    </tr>
+                <?php if ($aspirantes) { ?>
+                    <?php for($i=0;$i < count(@$aspirantes); $i++) {?>
+                        <tr>
+                            <td><?=@$aspirantes[$i]['fullname'];?></td>
+                            <td><?=@$aspirantes[$i]['email'];?></td>
+                            <td><?=@$aspirantes[$i]['telefono'];?></td>
+                            <td><?=@$aspirantes[$i]['programaDeInteres'];?></td>
+                            <td><?=@$aspirantes[$i]['completeFecha'];?></td>
+                            <td><?=@$aspirantes[$i]['tipoRegistro'];?></td>
+                            <td>
+                            
+                            <button type="button" class="btn btn-icon btn-warning seeMore" id="<?=@$aspirantes[$i]['aspirante'];?>">
+                                <i class="icon fa-eye" aria-hidden="true" style="color: white">
+                                </i>
+                            </button>
+                            &nbsp;&nbsp;
+                            </td>
+                        </tr>
+                    <?php } ?>
                 <?php } ?>
+                
                 
             </tbody>
           </table>
@@ -76,7 +80,7 @@
           $(document).on('click','.seeMore',function(){
             var id= this.id;
             var hash=btoa(id);
-            window.location.href = "<?php echo site_url('Dashboard/DetailsAspirante'); ?>"+hash;    
+            window.location.href = "<?php echo site_url('Dashboard/ApiranteProfileFinal'); ?>"+hash;    
           });
         }
     );

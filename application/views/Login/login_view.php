@@ -560,10 +560,6 @@
         alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
 
       });
-      $(document).on('click','.google',function() {
-        alertify.alert('Lo sentimos esta funcion no esta disponible por el momento!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
-
-      });
       $(document).on('click','.forgot',function() {
         alertify.alert('Lo sentimos esta funcion no esta disponible por el momento ponte en contacto al número 442 260 9090 o al correo study@anglolatinoedu.com!', function(){  alertify.set('notifier','position', 'top-left');alertify.warning('Intenta mas tarde'); }).set('basic', true).set('movable', false);
 

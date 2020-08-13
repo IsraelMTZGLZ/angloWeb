@@ -36,35 +36,48 @@ class MisArchivos extends MY_RootController {
                 //$cartasRecomendacion = $this->_callApiRest('Documentos/Carrera/api/test/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 //$cartasAutorizacon = $this->_callApiRest('Documentos/Carrera/api/carreraCartaAutorizacion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
 
-
-                for($i=0;$i<count($boletatraduccion['data']);$i++){
-                    $test = $boletatraduccion['data'][$i]['nameDocumento'];
-                    $new = explode('.',$test); 
-                    if($new[0]=='Boleta Traducida'){
-                        $data['boletaTraduccion'] = true;
-                        break;
+                if ($boletatraduccion['data']) {
+                    for($i=0;$i<count($boletatraduccion['data']);$i++){
+                        $test = $boletatraduccion['data'][$i]['nameDocumento'];
+                        $new = explode('.',$test); 
+                        if($new[0]=='Boleta Traducida'){
+                            $data['boletaTraduccion'] = true;
+                            break;
+                        }
+                        
                     }
-                    
                 }
+                
 
                 $data['boleta'] = $boleta['data'];
                 $data['cartaMotivo'] = $cartaMotivo['data'];
                 $data['pasaporte'] = $pasaporte['data'];
                 $data['cartasRecomendacion'] = $cartasRecomendacion['data'];
                 $data['cartasAutorizacon'] = $cartasAutorizacon['data'];
+
+                $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['examenIngles'] = $examen['data'];
+
+                $boletaFinal = $this->_callApiRest('Documentos/Carrera/api/boletaFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['boletaFinal'] = $boletaFinal['data'];
+
+                //$visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                //$data['visa'] = $visa['data'];
             
             }else if($data['infoAspiranteUni']['estudiosAspiranteUniversidad']=="Masters"){
                 $transcripcon = $this->_callApiRest('Documentos/Maestria/api/maestriaByAspiranteTRansc/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 $transTraduccion = $this->_callApiRest('Documentos/Maestria/api/carreraByAspiranteTransRaduccion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 
-                for($i=0;$i<count($transTraduccion['data']);$i++){
-                    $test = $transTraduccion['data'][$i]['nameDocumento'];
-                    $new = explode('.',$test); 
-                    if($new[0]=='Transcripcion Traducida'){
-                        $data['transcripcionTraduccion'] = true;
-                        break;
+                if ($transTraduccion['data']) {
+                    for($i=0;$i<count($transTraduccion['data']);$i++){
+                        $test = $transTraduccion['data'][$i]['nameDocumento'];
+                        $new = explode('.',$test); 
+                        if($new[0]=='Transcripcion Traducida'){
+                            $data['transcripcionTraduccion'] = true;
+                            break;
+                        }
+                        
                     }
-                    
                 }
 
                 $cartasMotivos = $this->_callApiRest('Documentos/Maestria/api/cartasMotivosUnis/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
@@ -81,6 +94,21 @@ class MisArchivos extends MY_RootController {
                 $data['cartasAutorizacon'] = $cartasAutorizacon['data'];
                 $data['pasaporte'] = $pasaporte['data'];
 
+                $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['examenIngles'] = $examen['data'];
+
+                $transfinal = $this->_callApiRest('Documentos/Maestria/api/transcripcionFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['transFinal'] = $transfinal['data'];
+
+                $titulo = $this->_callApiRest('Documentos/Maestria/api/titulo/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['titulo'] = $titulo['data'];
+
+                $ATAS = $this->_callApiRest('Documentos/Maestria/api/ATAS/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['ATAS'] = $ATAS['data'];
+
+                //$visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                //$data['visa'] = $visa['data'];
+
             }else{
                 $propuesta = $this->_callApiRest('Documentos/PhD/api/propuesta/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 $data['propuesta'] = $propuesta['data'];
@@ -88,15 +116,18 @@ class MisArchivos extends MY_RootController {
                 $transcripcon = $this->_callApiRest('Documentos/Maestria/api/maestriaByAspiranteTRansc/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 $transTraduccion = $this->_callApiRest('Documentos/Maestria/api/carreraByAspiranteTransRaduccion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 
-                for($i=0;$i<count($transTraduccion['data']);$i++){
-                    $test = $transTraduccion['data'][$i]['nameDocumento'];
-                    $new = explode('.',$test); 
-                    if($new[0]=='Transcripcion Traducida'){
-                        $data['transcripcionTraduccion'] = true;
-                        break;
+                if ($transTraduccion['data']) {
+                    for($i=0;$i<count($transTraduccion['data']);$i++){
+                        $test = $transTraduccion['data'][$i]['nameDocumento'];
+                        $new = explode('.',$test); 
+                        if($new[0]=='Transcripcion Traducida'){
+                            $data['transcripcionTraduccion'] = true;
+                            break;
+                        }
+                        
                     }
-                    
                 }
+                
                 $data['transcripcion'] = $transcripcon['data'];
 
                 $cv = $this->_callApiRest('Documentos/PhD/api/cv/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
@@ -113,6 +144,21 @@ class MisArchivos extends MY_RootController {
 
                 $cartasAutorizacon = $this->_callApiRest('Documentos/Carrera/api/cartaAuto/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
                 $data['cartasAutorizacon'] = $cartasAutorizacon['data'];
+
+                $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['examenIngles'] = $examen['data'];
+
+                $transfinal = $this->_callApiRest('Documentos/Maestria/api/transcripcionFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['transFinal'] = $transfinal['data'];
+
+                $titulo = $this->_callApiRest('Documentos/Maestria/api/titulo/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['titulo'] = $titulo['data'];
+
+                $ATAS = $this->_callApiRest('Documentos/Maestria/api/ATAS/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                $data['ATAS'] = $ATAS['data'];
+
+                //$visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+                //$data['visa'] = $visa['data'];
 
             }
 
@@ -136,15 +182,18 @@ class MisArchivos extends MY_RootController {
             $boleta = $this->_callApiRest('Documentos/Carrera/api/carreraByAspiranteBoleta/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
             $boletatraduccion = $this->_callApiRest('Documentos/Carrera/api/carreraByAspiranteBoletaTRaduccion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
             
-            for($i=0;$i<count($boletatraduccion['data']);$i++){
-                $test = $boletatraduccion['data'][$i]['nameDocumento'];
-                $new = explode('.',$test); 
-                if($new[0]=='Boleta Traducida'){
-                    $data['boletaTraduccion'] = true;
-                    break;
+            if ($boletatraduccion['data']) {
+                for($i=0;$i<count($boletatraduccion['data']);$i++){
+                    $test = $boletatraduccion['data'][$i]['nameDocumento'];
+                    $new = explode('.',$test); 
+                    if($new[0]=='Boleta Traducida'){
+                        $data['boletaTraduccion'] = true;
+                        break;
+                    }
+                    
                 }
-                
             }
+            
 
             $data['boleta'] = $boleta['data'];
 
@@ -166,6 +215,40 @@ class MisArchivos extends MY_RootController {
             $n = $this->eliminar_acentos($this->session->userdata('user_sess')->aspiranteIdCarpeta);
             $data['carpetaName'] = $n;
         }
+
+        $responseDocs = $this->_callApiRest('Documentos/Carrera/api/documentosAgentesByAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['documentosAspirantes'] = $responseDocs['data'];
+
+        $examen = $this->_callApiRest('Documentos/Carrera/api/examenIngles/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['examenIngles'] = $examen['data'];
+
+        $boletaFinal = $this->_callApiRest('Documentos/Carrera/api/boletaFinal/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['boletaFinal'] = $boletaFinal['data'];
+
+        //$visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        //$data['visa'] = $visa['data'];
+
+        $aV = $this->_callApiRest('Documentos/Carrera/api/aplicacionVisa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['aplicaionVisa'] = $aV['data'];
+        
+        if($data['user']->statusAspirante=="4U"){
+
+        }
+        
+        $responseNBA = $this->_callApiRest('Aspirante/api/generarBecasNecesidades/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['necesidadesBecas'] = $responseNBA['data'];
+
+        $visa = $this->_callApiRest('Documentos/Carrera/api/visa/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['visa'] = $visa['data'];
+
+        $ATASSelecion = $this->_callApiRest('Aspirante/api/ATASSeleccion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['ATASSELECION'] = $ATASSelecion['data'];
+
+        $ATAS = $this->_callApiRest('Documentos/Carrera/api/ATAS/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['ATAS'] = $ATAS['data'];
+
+        $BECASSELECION = $this->_callApiRest('Aspirante/api/BECASSeleccion/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+        $data['BECASSELECION'] = $BECASSELECION['data'];
 
         $this->_initialPage($data);
 		$this->load->view('Dashboard_pages/Archivos/view',$data);

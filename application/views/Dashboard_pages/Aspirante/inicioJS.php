@@ -1,5 +1,50 @@
 <script type="text/javascript">
   $(function(){
+
+    $(document).on('click','.btn-putBecas',function(){
+        var aspirante = $(document).find('#becasAspiranteKey').val();
+        var rd = $('input:radio[name=radioBecas]:checked').val();
+        if(rd=='si'){
+            status = 'Si';
+        }else if(rd=='no'){
+            status = 'No';
+        }else{
+            status = '';
+        }
+        data = {
+            "status":status
+        }
+        $.ajax({
+            url: _principalURL()+"Aspirante/api/BECASPONER/id/"+aspirante,
+            method : 'POST',
+            headers : {
+            'X-API-KEY':'ANGLOKEY'
+            },
+            data: data,
+            success : function(_response){
+                if(_response['status']=="success"){
+                    setTimeout(function(){
+                    location.reload();
+                    },2000);
+                    
+                }
+                if(_response['status']=="error"){
+                    $(document).find('.becaAlert').html(
+                        '<div class="alert dark alert-icon alert-danger alert-dismissible" role="alert" style="margin:10px">'+
+                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                                '<span aria-hidden="true">×</span>'+
+                            '</button>'+
+                            '<i class="icon wb-close" aria-hidden="true"></i>No se ha seleccionado una opcion'+
+                        '</div>'
+                    );
+                    
+                }
+                
+                tostada(_response.status,_response.message);
+
+            }
+        });
+    });
     
     $(document).on('click','#btn-boleta',function(){
         var aspirante = $(document).find('#aspirante').val();
@@ -14,7 +59,7 @@
                 type: 'post',
                 contentType: 'application/json',
                 headers: {
-                    "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                    "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                     
                 },
                 data:'{\"paths\": [\"/'+name+'\"],\"autorename\": false,\"force_async\": false}',
@@ -45,7 +90,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer Cgp9TLRy8iAAAAAAAAAAWIKcxqC-ZjRM6KdgHwmg5T3CJ1RoQGW5ISZ9arS5HSR-",
+                            "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Boleta.pdf","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {

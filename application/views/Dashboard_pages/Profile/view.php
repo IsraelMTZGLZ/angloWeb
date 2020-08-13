@@ -104,7 +104,7 @@
                 <img src="<?=@($user->photoUrl!='NULL') ? @$user->photoUrl : base_url("resources/assets/Anglo/AngloLatino-sintexto.png") ;?>" alt="profile-sample1" class="background"/>
                 <img src="<?=@($user->photoUrl!='NULL') ? @$user->photoUrl : base_url("resources/assets/Anglo/AngloLatino-sintexto.png") ;?>" alt="profile-sample1" class="profile"/>
                 <div class="middle" style="margin-top: -15%">
-                    <div class="text"><a type="button" class="add-foto" alt="Cambiar Foto" title="Cambiar Foto"><i class="fas fa-plus-circle"></i></a></div>
+                    <div class="text"><a type="button" class="add-foto" alt="Cambiar Foto"><i class="fas fa-plus-circle"></i></a></div>
                 </div>
                 <figcaption>
                     <h3 style="color: white"><?=$user->fullname?><span><?=$user->email?></span></h3>
@@ -414,11 +414,15 @@
             <div class="responseIText"></div>            
                 <div class="form-group form-material" data-plugin="formMaterial">
                   <label class="form-control-label" for="nombre">Nombre (s):</label>
-                  <input type="text" class="form-control" id="nombre" name="nombre" value="<?=$user->names?>">
+                  <input type="text" class="form-control" value="<?=$user->names?>" disabled>
+
+                  <input type="hidden" id="nombre" name="nombre" value="<?=$user->names?>">
                 </div>
                 <div class="form-group form-material" data-plugin="formMaterial">
                   <label class="form-control-label" for="apellido">Apellido (s):</label>
-                  <input type="text" class="form-control" id="apellido" name="apellido" value="<?=$user->paterns?>">
+                  <input type="text" class="form-control" value="<?=$user->paterns?>" disabled>
+
+                  <input type="hidden"  id="apellido" name="apellido" value="<?=$user->paterns?>">
                 </div>
                 <div class="form-group form-material" data-plugin="formMaterial">
                   <label class="form-control-label" for="gender">Genero :</label>

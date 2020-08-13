@@ -24,7 +24,7 @@
     
     <div class="row" data-plugin="matchHeight" data-by-row="true">
 
-        <div class="col-xxl-6 col-xl-12">
+        <div class="col-xxl-12 col-xl-12">
             
           <!-- Panel Traffic -->
           <div class="card card-shadow example-responsive" id="widgetLinearea">
@@ -32,7 +32,7 @@
             
             <div class="row">
                   
-              <div class="col-lg-3">
+              <div class="col-lg-5"  style="margin-right: 100px;">
                 <div class="card card-shadow text-center">
                   <div class="card-block">
                     <img class="card-img-top" src="<?=base_url('resources/assets/Anglo/universidades.jpg');?>" alt="Imagen Institucion">
@@ -49,7 +49,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-5">
                 <div class="card card-shadow text-center">
                   <div class="card-block">
                     <img class="card-img-top" src="<?=base_url('resources/assets/Anglo/preparatorias.jpg');?>" alt="Imagen Institucion" >
@@ -66,40 +66,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
-                <div class="card card-shadow text-center">
-                  <div class="card-block">
-                    <img class="card-img-top" src="<?=base_url('resources/assets/Anglo/cursos_ingles.jpg');?>" alt="Imagen Institucion" >
-                    <h4 class="profile-user">Cursos De Ingles</h4>
-                    <p class="profile-job">Da click para ver todas los cursos de ingles disponibles</p>
-                  </div>
-                  <div class="card-footer">
-                    <div class="row no-space">
-                      <div class="col-12">
-                        <button type="button" class="btn btn-primary cursosIngles">Ver</button>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="card card-shadow text-center">
-                  <div class="card-block">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6IENJxwZKfhFLBPGXx1YPGJ4qkdn6t3miftYdTrlgntWf3szh&usqp=CAU" alt="Imagen Institucion">
-                    <h4 class="profile-user">Cursos De Verano</h4>
-                    <p class="profile-job">Da click para ver todas los cursos de verano disponibles</p>
-                  </div>
-                  <div class="card-footer">
-                    <div class="row no-space">
-                      <div class="col-12">
-                        <button type="button" class="btn btn-primary cursoVerano">Ver</button>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
               
 
             </div>
@@ -112,7 +79,7 @@
 
 <div class="row uni" style="visibility: hidden;display: none">
 
-<div class="col-xxl-6 col-xl-12">
+<div class="col-xxl-12 col-xl-12">
     
   <!-- Panel Traffic -->
   <div class="card card-shadow example-responsive">
@@ -173,7 +140,7 @@
 
 <div class="row prepa" style="visibility: hidden;display: none;">
 
-<div class="col-xxl-6 col-xl-12">
+<div class="col-xxl-12 col-xl-12">
     
   <!-- Panel Traffic -->
   <div class="card card-shadow example-responsive">
