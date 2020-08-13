@@ -61,12 +61,14 @@ class Login extends MY_RootController {
 									//no ha llenado los campos nesesarios de la universidad
 									redirect('Dashboard/Preparatoria/DatosPreparatoria');
 								}
-<<<<<<< HEAD
-							}else{
-								//no ha llenado los campos nesesarios de la universidad
-								redirect('Dashboard/Preparatoria/DatosPreparatoria');
+
 							}
-						}else if($this->session->userdata('user_sess')->programaDeInteres == "CursoIngles"){
+						// 	else{
+						// 		//no ha llenado los campos nesesarios de la universidad
+						// 		redirect('Dashboard/Preparatoria/DatosPreparatoria');
+						// 	}
+						// }
+						else if($this->session->userdata('user_sess')->programaDeInteres == "CursoIngles"){
 							$response = $this->_callApiRest('Verano/Ingles/api/aspiranteVerInglesBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
 							//echo var_dump($response['data']);
 							if($response['data']){
@@ -112,11 +114,11 @@ class Login extends MY_RootController {
 								//no ha llenado los campos nesesarios de la universidad
 								redirect('VeranoSteps');
 							}
-=======
-							}	
->>>>>>> 269b12679298ba2de77ad02e57da55c643728c6e
+
+							}
+
 						}
-						
+
 						redirect('ComingSoon');
 					}
 				}else if (@$this->session->userdata('user_sess')->typeUsuario=="Agente") {

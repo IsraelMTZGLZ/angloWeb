@@ -672,12 +672,12 @@
               response = JSON.stringify(_response);
 
               if (_response.status=="success") {
-<<<<<<< HEAD
-                window.location.href = "<?php echo site_url('VeranoEleccion'); ?>";
+
+                /* window.location.href = "<?php echo site_url('VeranoEleccion'); ?>"; */
                 /* window.location.href = "<?php echo site_url('EnglishSteps'); ?>"; */
-=======
+ 
                 window.location.href = "<?php echo site_url('Login'); ?>";
->>>>>>> 269b12679298ba2de77ad02e57da55c643728c6e
+
               }
 
 
