@@ -63,7 +63,7 @@
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/datatables.net-responsive-bs4/dataTables.responsive.bootstrap4.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/datatables.net-buttons-bs4/dataTables.buttons.bootstrap4.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/magnific-popup/magnific-popup.min.css?v4.0.2');?>">
-  
+
   <!-- Page -->
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/dashboard/v1.min599c.css?v4.0.2');?>">
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/uikit/icon.min599c.css?v4.0.2');?>">
@@ -94,6 +94,8 @@
     <![endif]-->
 
   <!-- Scripts -->
+  <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/aspieprogress/asPieProgress.min599c.css?v4.0.2');?>">
+
   <script src="<?=base_url('resources/assets/Dashboard/global/vendor/breakpoints/breakpoints.min599c.js?v4.0.2');?>"></script>
   <script>
     Breakpoints();
@@ -106,4 +108,5 @@
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/global/vendor/slick-carousel/slick.min.css?v4.0.2');?>">
 
   <link rel="stylesheet" href="<?=base_url('resources/assets/Dashboard/center/assets/examples/css/pages/profile-v2.min.css?v4.0.2');?>">
+
 </head>

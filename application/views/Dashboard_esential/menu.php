@@ -120,6 +120,220 @@
                 </a>
               <?php } ;?>
             </li>
+
+              <?php if($user->typeUsuario=="Aspirante") { ;?>
+                <li class="site-menu-item has-sub active open">
+                  <a href="javascript:void(0)">
+                    <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
+                    <span class="site-menu-title">Verano</span>
+                    <span class="site-menu-arrow"></span>
+                  </a>
+                  <ul class="site-menu-sub">
+                    <li class="site-menu-item has-sub">
+                      <a href="javascript:void(0)">
+                        <span class="site-menu-title">Verano Inglés</span>
+                        <span class="site-menu-arrow"></span>
+                      </a>
+                      <ul class="site-menu-sub">
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusCero')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 0</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusUno')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 1</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusDos')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 2</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusDosR')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 2R</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusTres')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 3</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusCuatroC')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 4C</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusCuatroU')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 4U</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusCinco')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 5</span>
+                          </a>
+                        </li>
+
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="site-menu-sub">
+                    <li class="site-menu-item has-sub">
+                      <a href="javascript:void(0)">
+                        <span class="site-menu-title">Verano Académico</span>
+                        <span class="site-menu-arrow"></span>
+                      </a>
+                      <ul class="site-menu-sub">
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusCero')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 0</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusUno')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 1</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusDos')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 2</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusDosR')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 2R</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusTres')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 3</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusCuatroC')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 4C</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusCuatroU')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 4U</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoAcademico/StatusCinco')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 5</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-menu-item has-sub active ">
+                  <a href="javascript:void(0)">
+                    <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
+                    <span class="site-menu-title">Inglés</span>
+                    <span class="site-menu-arrow"></span>
+                  </a>
+                  
+
+                      <ul class="site-menu-sub">
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusCero')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 0</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusIngles/StatusUno')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 1</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusIngles/StatusDos')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 2</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusIngles/StatusDosR')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 2R</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusIngles/StatusTres')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 3</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusIngles/StatusCuatroC')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 4C</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusIngles/StatusCuatroU')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 4U</span>
+                          </a>
+                        </li>
+                        <li class="site-menu-item">
+                          <a href="<?=base_url('Dashboard/StatusIngles/StatusCinco')?>">
+
+                            <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                            <span class="badge badge-pill badge-primary">Status 5</span>
+                          </a>
+                        </li>
+                      </ul>
+
+
+
+                </li>
+              <?php } ;?>
+
             <?php if($user->typeUsuario=="Agente") { ?>
               <li class="site-menu-item">
                 <a href="TablaDescarga">
@@ -136,7 +350,7 @@
                 </a>
               </li>
             <?php } ?>
-            <?php if($user->typeUsuario=="Admin") { ?>
+            <!-- <?php if($user->typeUsuario=="Admin") { ?> -->
             <li class="site-menu-item has-sub">
               <a href="javascript:void(0)">
                 <i class="site-menu-icon icon fa-university" aria-hidden="true" style="font-size: 20px;"></i>
@@ -167,9 +381,9 @@
                 </li>
               </ul>
             </li>
-          <?php } ?>
-          <?php if($user->typeUsuario=="Admin") { ?>
-            <li class="site-menu-item has-sub active open">
+          <!-- <?php } ?> -->
+          <!-- <?php if($user->typeUsuario=="Admin") { ?> -->
+            <!-- <li class="site-menu-item has-sub active open">
               <a href="javascript:void(0)">
                 <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
                 <span class="site-menu-title">Verano</span>
@@ -183,7 +397,7 @@
                   </a>
                   <ul class="site-menu-sub">
                     <li class="site-menu-item">
-                      <a href="StatusCero">
+                      <a href="<?=base_url('Dashboard/StatusVeranoIngles/StatusCero')?>">
 
                         <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
                         <span class="badge badge-pill badge-primary">Status 0</span>
@@ -203,11 +417,18 @@
                         <span class="badge badge-pill badge-primary">Status 2</span>
                       </a>
                     </li>
+                    <li class="site-menu-item">
+                      <a href="StatusDos">
+
+                        <span class="site-menu-title">Aspirantes</span>&nbsp;&nbsp;&nbsp;
+                        <span class="badge badge-pill badge-primary">Status 2R</span>
+                      </a>
+                    </li>
                   </ul>
                 </li>
               </ul>
-            </li>
-            <?php } ?>
+            </li> -->
+            <!-- <?php } ?> -->
             <li class="site-menu-item">
                 <a href="<?=base_url('Login/Login/logout')?>">
                   <i class="site-menu-icon icon wb-power" aria-hidden="true" style="font-size: 20px;"></i>

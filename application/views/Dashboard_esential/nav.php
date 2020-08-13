@@ -1,4 +1,4 @@
-<body class="animsition dashboard">
+<body class="animsition page-profile-v2 dashboard">
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -57,10 +57,10 @@
               <?php if($user->typeUsuario=="Aspirante") { ;?>
                 <a class="dropdown-item" href="ProfileAspirante" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a>
                 <a class="dropdown-item" href="../Contacto" role="menuitem" target="_blank"><i class="icon wb-help-circle" aria-hidden="true"></i> Ayuda</a>
-              <?php } ?> 
+              <?php } ?>
               <?php if($user->typeUsuario=="Agente") { ;?>
-                <a class="dropdown-item" href="ProfileAgente" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a> 
-              <?php } ?> 
+                <a class="dropdown-item" href="ProfileAgente" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Perfil</a>
+              <?php } ?>
               <div class="dropdown-divider" role="presentation"></div>
               <a class="dropdown-item" href="<?=base_url('Login/Login/logout')?>" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Cerrar Sesión</a>
             </div>

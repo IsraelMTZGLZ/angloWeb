@@ -180,10 +180,10 @@
       .reviciones{
         align: center;
       }
-      /* .upicon{
+      .upicon{
         position:relative;
-        top: 1px;
-      } */
+        top: 5px;
+      }
     </style>
   </head>
 <body class="animsition  page-profile-v2  ">
@@ -485,6 +485,18 @@
       <h1 align="center" class="page-title">Cursos de  inglés  </h1>
       <h1 class="page-title">Información de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></h1>
       <input type="hidden" id="aspirante" value="<?=@$aspirante['idAspirante'];?>" name="fkAspirante">
+      <input type="hidden" id="idDocIngFormOne" value="<?=@$idDocFormOne;?>" name="idDocIngFormOne">
+      <input type="hidden" id="idDocIngFormTwo" value="<?=@$idDocFormTwo;?>" name="idDocIngFormTwo">
+      <input type="hidden" id="idDocIngFormThree" value="<?=@$idDocFormThree;?>" name="idDocIngFormThree">
+
+      <input type="hidden" id="idFormOne" value="<?=@$idFormOne;?>" name="idFormOne">
+      <input type="hidden" id="idFormTwo" value="<?=@$idFormTwo;?>" name="idFormTwo">
+      <input type="hidden" id="idFormThree" value="<?=@$idFormThree;?>" name="idFormThree">
+
+      <input type="hidden" id="idInstitucionOne" value="<?=@$InstOneInfo;?>" name="idInstitucionOne">
+      <input type="hidden" id="idInstitucionTwo" value="<?=@$InstTwoInfo;?>" name="idInstitucionTwo">
+      <input type="hidden" id="idInstitucionThree" value="<?=@$InstThreeInfo;?>" name="idInstitucionThree">
+
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../index.html">Cursos de Verano</a></li>
         <li class="breadcrumb-item"><a href="javascript:void(0)">Información</a></li>
@@ -600,7 +612,8 @@
                       <?php } ;?>
 
                     <div class="float-right">
-                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfile;?>" download> <i class="icon fa-download " aria-hidden="true"></i>Descargar </a>
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfile;?>" target="_blank"> </i>Ver </a>
                     </div>
 
                   <?php } ;?>
@@ -640,6 +653,237 @@
 
               </div>
           </div>
+          <?php if( @$InstOneInfo!= NULL ) { ;?>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">Formato de solicitud para <?=@$instOne['nombreInstitucion'];?> </h4>
+
+            </div>
+            <div class="card-block">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoFormOne;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enableFormOne;?>   data-default-file="<?=$defaultfileForOne;?>"
+                  />
+
+                </div>
+                <div class="example example-buttons">
+
+                  <?php if(@$fileexistsFormOne == TRUE) { ;?>
+
+                    <div class="float-left">
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar-inglesFormOne" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar-inglesFormOne" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <!-- <button type="button" class="btn btn-info ladda-button btn-subir-veranoFormOne" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Subir</span>
+                      </button> -->
+                    </div>
+
+
+                    <div class="float-right">
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfileForOne;?>" target="_blank"> </i>Ver </a>
+                    </div>
+
+                  <?php } ;?>
+
+                </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl <?=@$stepOneFormOne;?> col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar formato de registro</span>
+                    </div>
+                    <div class="pearl <?=@$stepTwoFormOne;?> col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfoFormOne['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning col-12">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b> <?=@$recomendationFormOne;?></p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl  <?=@$stepThreeFormOne;?>  col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Aceptado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+          <?php } ;?>
+          <?php if( @$InstTwoInfo!= NULL ) { ;?>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">Formato de solicitud para <?=@$instTwo['nombreInstitucion'];?> </h4>
+
+            </div>
+            <div class="card-block">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoFormTwo;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enableFormTwo;?>   data-default-file="<?=$defaultfileFormTwo;?>"
+                  />
+
+                </div>
+                <div class="example example-buttons">
+
+                  <?php if(@$fileexistsFormTwo == TRUE) { ;?>
+
+                    <div class="float-left">
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar-inglesFormTwo" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar-inglesFormTwo" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+
+
+                    <div class="float-right">
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfileFormTwo;?>" target="_blank"> </i>Ver </a>
+                    </div>
+
+                  <?php } ;?>
+
+                </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl <?=@$stepOneFormTwo;?> col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar formato de registro</span>
+                    </div>
+                    <div class="pearl <?=@$stepTwoFormTwo;?> col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfoFormTwo['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning col-12">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b><?=@$recomendationFormTwo;?></p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl  <?=@$stepThreeFormTwo;?>  col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Aceptado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+          <?php } ;?>
+          <?php if( @$InstThreeInfo!= NULL ) { ;?>
+          <div class="user-background card card-shadow">
+            <div class="card-header card-header-transparent p-20">
+              <h4 class="card-title mb-0">Formato de solicitud para <?=@$instThree['nombreInstitucion'];?> </h4>
+
+            </div>
+            <div class="card-block">
+              <div class="example-wrap">
+                <h4 class="example-title"><?=$infoFormThree;?></h4>
+                <div class="example">
+                  <input type="file" id="input-file-now" data-plugin="dropify" <?=$enableFormThree;?>   data-default-file="<?=$defaultfileFormThree;?>"
+                  />
+
+                </div>
+                <div class="example example-buttons">
+
+                  <?php if(@$fileexistsFormThree == TRUE) { ;?>
+
+                    <div class="float-left">
+                      <button type="button" class="btn btn-primary ladda-button btn-aceptar-inglesFormThree" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-check" aria-hidden="true"></i>Aceptar</span>
+                      </button>
+                    </div>
+                    <div class="float-left">
+                      <button type="button" class="btn btn-warning ladda-button btn-rechazar-inglesFormThree" data-style="expand-left"
+                        data-plugin="ladda" data-type="progress" id="file">
+                        <span class="ladda-label"><i class="icon fa-times " aria-hidden="true"></i>Rechazar</span>
+                      </button>
+                    </div>
+
+
+                    <div class="float-right">
+
+                      <a type="button" class="btn btn-primary ladda-button "  href="<?=$defaultfileFormThree;?>" target="_blank"> </i>Ver </a>
+                    </div>
+
+                  <?php } ;?>
+
+                </div>
+                <div class="example">
+                  <div class="pearls row">
+                    <div class="pearl <?=@$stepOneFormThree;?> col-4">
+                      <div class="pearl-icon"><i class="icon wb-upload  upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Cargar formato de registro</span>
+                    </div>
+                    <div class="pearl <?=@$stepTwoFormThree;?> col-4">
+                      <div class="pearl-icon"><i class="icon fa-spinner upicon " aria-hidden="true"></i></div>
+                      <span class="pearl-title">Revisión</span>
+
+                      <?php if(@$fileInfoFormThree['statusDocumento']== 'Rechazado') { ;?>
+                      <div class="reviciones example example-popover" align="center">
+
+                        <div class="popover bs-popover-bottom popover-warning col-12">
+                          <div class="arrow"></div>
+                          <h3 class="popover-header">Documento rechazado</h3>
+                          <div class="popover-body  col-12">
+                            <p><b>El pasaporte de <?=@$aspirante['firstNamePersona'];?> <?=@$aspirante['lastNamePersona'];?></b> fue rechazado! </p>
+                            <p><b>razón: </b> <?=@$recomendationFormThree;?></p>
+                          </div>
+                        </div>
+                      </div>
+                      <?php } ;?>
+                    </div>
+                    <div class="pearl  <?=@$stepThreeFormThree;?>  col-4">
+                      <div class="pearl-icon"><i class="icon wb-check upicon" aria-hidden="true"></i></div>
+                      <span class="pearl-title">Aceptado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+          <?php } ;?>
           <!-- End User Background -->
 
           <!-- User Recomenfations -->
@@ -960,14 +1204,26 @@
             <div class="card-header card-header-transparent p-20">
               <h4 class="card-title mb-0">Status</h4>
             </div>
+            <div class="card-block px-30">
 
-            <div class="card-block">
-
+              <ul class="list-group list-group-full">
+                <div class="text-center">
+                <div class="col-12" style="background-color: #db4437;height: 50%;">
+                    <span style="color:white; font-size: 20px;" ><?=@$aspirante['statusAspirante'];?></span>
+                </div>
+                </div>
+              </ul>
+              <div class="text-center">
+                <h4 class="example-title">Cambiar Estatus</h4>
+                <p>Selecciona una opción</p>
+                <div class="example">
+                  <select class="form-control"
+                     id="statusAspirante" name="statusAspirante">
+                    <option></option>
+                    <option  value="2R">2R</option>
+                  </select>
+                </div>
+                  <button class="btn btn-primary btn-round btn-cambio-statusDosR"  type="button" name="follow">Cambiar</button>
+              </div>
             </div>
           </div>
-
-        </div>
-        <!-- End Right Column -->
-      </div>
-    </div>
-  </div>

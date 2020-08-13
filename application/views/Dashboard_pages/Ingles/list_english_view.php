@@ -185,6 +185,8 @@ $(function(){
 
   				var _html ="";
   				for (var i = 0; i < response.data.length; i++) {
+            var id= response.data[i].idAspirante;
+            var hash=btoa(id);
   					_html +="<tr>";
 
   					        _html +="<td>"+response.data[i].firstNamePersona+"</td>";
@@ -193,7 +195,7 @@ $(function(){
   			    				_html +="<td>"+response.data[i].emailUsuario+"</td>";
   			    				_html +="<td>"+response.data[i].telefonoAspirante+"</td>";
   			    				_html +="<td>"+response.data[i].ciudadAspirante+"</td>";
-  			    				_html +="<td> <a href='<?=base_url('Dashboard/Ingles/AspiranteInfo/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' > <i class='icon wb-plus'></i>Más Información</a>  </td>";
+  			    				_html +="<td> <a href='<?=base_url('Dashboard/Ingles/AspiranteInfo/info/')?>"+hash+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' > <i class='icon wb-plus'></i>Más Información</a>  </td>";
   			    				_html +="</tr>";
   				}
 

@@ -160,327 +160,363 @@
 <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
 <script src="<?=base_url('resources/assets/JS/ServicesJS.js');?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script>
-$(function(){
-    _url = _principalURL()+"/Verano/Ingles/api/statusUno";
 
-    var _html ="";
-    console.log("entra");
+<script src="<?=base_url('resources/assets/Dashboard/global/js/statusUnoVeranoIngles.js');?>"></script>
 
-      $.ajax({
-  			url:_url,
-  			method: "GET",
-  			headers : {
-  				'X-API-KEY':'ANGLOKEY'
-  			},
-  			dataSrc : $('#example').find('tbody').empty().append(_html),
-  			success : function(response){
-  			if (response.status=="success") {
-
-  				var _html ="";
-  				for (var i = 0; i < response.data.length; i++) {
-  					_html +="<tr>";
-
-  					        _html +="<td>"+response.data[i].firstNamePersona+"</td>";
-  			    				_html +="<td>"+response.data[i].lastNamePersona+"</td>";
-  									_html +="<td>"+response.data[i].generoPersona+"</td>";
-  			    				_html +="<td>"+response.data[i].emailUsuario+"</td>";
-  			    				_html +="<td>"+response.data[i].telefonoAspirante+"</td>";
-  			    				_html +="<td>"+response.data[i].ciudadAspirante+"</td>";
-  			    				_html +="<td> <a href='<?=base_url('Dashboard/Verano/InfoAspirante/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' title='Information'> <i class='icon wb-plus'></i>Más Información</a>  </td>";
-  			    				_html +="</tr>";
-  				}
-
-  				$('#example').find('tbody').empty().append(_html); //para localizar
-  				$('#example').DataTable({
-            dom: 'Bfrtip',
-            buttons: [
-                'copy', 'csv','excel', 'pdf', 'print'
-            ]
-          });
-  				var table_admin = response.data;
-          console.log(table_admin);
-
-
-
-
-  			}else{
-  				alert(response.message);
-  			}
-
-  			},
-  			error : function(err){
-  					response= JSON.stringify(err.responseText);
-  					$(document).find('#responseText').html(
-  						'<div class="alert alert-success" role="alert">'
-  						+response+
-  						'</div>'
-  					);
-  					setTimeout(function(){
-  							$(document).find('#responseText').html('');
-  					}, 3000);
-
-  			}
-  		});
-
-      // var table=$(document).find('#example').DataTable({
-      //     dom: 'Bfrtip',
-      //     buttons: [
-      //         'copy', 'csv', 'excel', 'pdf', 'print'
-      //     ],
-      //   });
-      // console.log(table);
-
-    // _url = _principalURL()+"Preparatoria/api/preparatoria/";
-    // var table=$(document).find('#example').DataTable({
-    //   dom: 'Bfrtip',
-    //   buttons: [
-    //     'copy', 'csv', 'excel', 'pdf', 'print'
-    //   ],
-    //   ajax: {
-    //     url : _url,
-    //     method : 'get',
-    //     dataSrc : 'data',
-    //     headers : {
-    //       'X-API-KEY':'ANGLOKEY'
-    //     }
-    //   },
-    //   columns : [
-    //     {data: 'nombre_Preparatoria'},
-    //     {data: 'fundacion_Preparatoria'},
-    //     {data: 'status_Preparatoria'},
-    //     {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
-    //     ]
-    //   });
-
-
-
-    // this me tethod is implemented to submit or delete information to the table
-    $(document).find('#example tbody').on('click','tr',function(){
-      _url = _principalURL()+"Preparatoria/api/preparatoria/id/";
-      var _prepa = table.row(this).data();
-      $.ajax({
-        url:_url+_prepa.idPreparatoria,
-        method: 'get',
-        headers: {
-          'X-API-KEY':'ANGLOKEY'
-        },
-        success : function(_response){
-          if(_response.status=="error"){
-            tostada('error','Los datos  no fueron cargados correctamente ');
-          }else if(_response.status == "success"){
-
-            $.each(_response.data,function(key,value){
-               $(document).find('#'+key).val(value);
-            });
-						$('#exampleModalPrimary').modal('show')
-            $(document).find('.btns').html(
-              '<div class="row ">'+
-                '<div class="col">'+
-                  '<button type="button" class="btn btn-warning btn-cancel">Cancel</button>'+
-
-              '</div>'+
-
-                '<div class="col">'+
-                  '<button class="btn btn-primary">Update</button>'+
-
-              '</div>'+
-
-                '<div class="col">'+
-                  '<button class="btn  btn-danger btn-delete">Delete</button>'+
-                '</div>'+
-              '</div>'
-
-            );
-            $(document).find('#campusForm').append(
-              '<input type="hidden" id="id" name="id" value="'+_response.data.idPreparatoria+'">'
-            );
-          }
-
-
-        },
-        error: function(error){
-          tostada('error','Los datos  no fueron cargados correctamente ');
-        }
-
-      });
-    });
-    /* This method is implemented to submit information to the DATA BASE */
-    $(document).on('submit','#campusForm',function(event){
-
-        var $fotoCampus = $("#fotoCampus");
-        var $fotoLogo = $("#fotoLogo");
-        var $nombre = $("#nombrePreparatoria");
-        var formData = new FormData();
-        var archivosCampu = $fotoCampus[0].files;
-        var archivosLogo = $fotoLogo[0].files;
-      if (archivosCampu.length >= 0 && archivosLogo.length >= 0 ) {
-        var fotoCampus = archivosCampu[0]; //Sólo queremos la primera imagen, ya que el usuario pudo seleccionar más
-        var fotoLogo = archivosLogo[0];
-        var lector = new FileReader();
-        formData.append('my_file', fotoCampus);
-        formData.append('my_logo', fotoLogo);
-        formData.append('nombreCampus', $("#nombreCampus").val());
-        formData.append('ubicacionCampus', $("#ubicacionCampus").val());
-        formData.append('tipoCampus', $("#tipoCampus").val());
-        formData.append('alojamientoCampus', $("#alojamientoCampus").val());
-        formData.append('descripcionCampus', $("#descripcionCampus").val());
-        formData.append('nombreCampus', $("#nombreCampus").val());
-        formData.append('statusCampus', $("#statusCampus").val());
-        formData.append('preparatoria', 1);
-        var  l = $("#nombreCampus").val();
-
-        if(_id>0){
-           console.info("llego Put");
-           _url = _principalURL()+"Preparatoria/api/preparatoria/"+$(document).find('#id').val();
-          _method = "PUT";
-          _text = 'Los datos fueron editados correctamente';
-        }else{
-            console.info("llego Post");
-            _url = _principalURL()+"Preparatoria/api/preparatoria/";
-          _method = "POST";
-            _text = 'Los datos fueron guardados correctamente';
-
-        }
-
-      }else{
-
-      }
-
-
-
-      event.preventDefault();
-      clearForm('campusForm');
-      _url = "";
-      _method = "";
-      var _id = $(document).find('#id').val();
-      console.info($(document).find("#campusForm").serialize());
-      if(_id>0){
-         console.info("llego Put");
-         _url = _principalURL()+"PreparatoriaCampus/api/preparatoriacampusfhoto/"+$(document).find('#id').val();
-        _method = "PUT";
-        _text = 'Los datos fueron editados correctamente';
-      }else{
-          console.info("llego Post");
-          _url = _principalURL()+"PreparatoriaCampus/api/preparatoriacampusfhoto/";
-        _method = "POST";
-          _text = 'Los datos fueron guardados correctamente';
-
-      }
-      $.ajax({
-        url:_url,
-        method: _method,
-        headers : {
-          'X-API-KEY':'ANGLOKEY'
-        },
-        data: formData,
-        contentType: false,
-        processData: false,
-        success : function(_response){
-          response= JSON.stringify(_response);
-          if(_response.status == "error"){
-
-            tostada('error','Revise sus datos ');
-              $.each(_response.validations, function(key,message){
-                $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-               });
-          }else{
-            clearForm('campusForm');
-            tostada('success','Los datos se an guardado correctamente ');
-          }
-
-        },
-        error : function(err){
-            response= JSON.stringify(err.responseText);
-            $(document).find('#responseText').html(
-              '<div class="alert alert-success" role="alert">'
-              +response+
-              '</div>'
-            );
-            setTimeout(function(){
-                $(document).find('#responseText').html('');
-            }, 3000);
-
-        }
-      });
-      // $.ajax({
-      //   url:_url,
-      //   method: _method,
-      //   headers : {
-      //     'X-API-KEY':'ANGLOKEY'
-      //   },
-      //   data: $(document).find("#campusForm").serialize(),
-      //   success : function(_response){
-      //     response= JSON.stringify(_response);
-      //     if(_response.status == "error"){
-      //       console.log(_response);
-      //       tostada('error','Revise sus datos ');
-      //         $.each(_response.validations, function(key,message){
-      //           $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
-      //          });
-      //     }else{
-      //       clearForm('campusForm');
-      //       tostada('success','Los datos se an guardado correctamente ');
-      //     }
-      //
-      //   },
-      //   error : function(err){
-      //       response= JSON.stringify(err.responseText);
-      //       $(document).find('#responseText').html(
-      //         '<div class="alert alert-success" role="alert">'
-      //         +response+
-      //         '</div>'
-      //       );
-      //       setTimeout(function(){
-      //           $(document).find('#responseText').html('');
-      //       }, 3000);
-      //
-      //   }
-      // });
-    });
-
-    $(document).on('click','.btn-delete',function(){
-      console.info("llego delete");
-      $.ajax({
-        "url" : _principalURL()+"Preparatoria/api/preparatoria/id/"+$(document).find('#id').val(),
-        "method" : "DELETE",
-        headers : {
-          'X-API-KEY':'ANGLOKEY'
-        },
-        success : function(_response){
-
-          if(_response.status == "error"){
-            clearForm('campusForm');
-            tostada('error','Los datos no se an borrado correctamente ');
-
-
-          }else{
-            clearForm('campusForm');
-           tostada('success','Los datos se an borrado correctamente ');
-
-
-          }
-        },
-        error : function(){
-
-        }
-
-      });
-    });
-    $(document).on('click','.btn-cancel',function(){
-      clearForm('campusForm');
-    $('#exampleModalPrimary').modal('hide');
-    });
-
-  /*this method is implemented to clear the modal */
-
-  function clearForm(_id){
-    console.info("llamaron");
-    $(document).find('#'+_id).find('input,select').each(function(e){
-        $(this).removeClass('is-invalid');
-        $(this).next('div').remove();
-
-    });
-  }
-  });
+<script type="text/javascript" src="">
+// $(function(){
+//     _url = _principalURL()+"/Verano/Ingles/api/statusUno";
+//
+//     var _html ="";
+//     console.log("entra");
+//
+//       $.ajax({
+//   			url:_url,
+//   			method: "GET",
+//   			headers : {
+//   				'X-API-KEY':'ANGLOKEY'
+//   			},
+//   			dataSrc : $('#example').find('tbody').empty().append(_html),
+//   			success : function(response){
+//   			if (response.status=="success") {
+//
+//   				var _html ="";
+//   				for (var i = 0; i < response.data.length; i++) {
+//   					_html +="<tr >";
+//
+//   					        _html +="<td >"+response.data[i].firstNamePersona+"</td>";
+//   			    				_html +="<td>"+response.data[i].lastNamePersona+"</td>";
+//   									_html +="<td>"+response.data[i].generoPersona+"</td>";
+//   			    				_html +="<td>"+response.data[i].emailUsuario+"</td>";
+//   			    				_html +="<td>"+response.data[i].telefonoAspirante+"</td>";
+//   			    				_html +="<td>"+response.data[i].ciudadAspirante+"</td>";
+//   			    				_html +="<td>  <a href='tel:"+response.data[i].telefonoAspirante+"'  class='btn btn-icon btn-danger'  data-toggle='tooltip' title='Information'> <i class='icon fa-phone'></i></a> <a href='<?=base_url('Dashboard/Verano/InfoAspirante/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='btn btn-icon btn-warning'  data-toggle='tooltip' title='Information'> <i class='icon fa-eye'></i></a> <a href='https://api.whatsapp.com/send?phone="+response.data[i].telefonoAspirante+"&text=No%subiste%20ningun%20documento'  target='_blank'  class='btn btn-icon btn-success'  data-toggle='tooltip' title='Information'> <i class='icon fa-whatsapp'></i></a> <button  class='btn btn-icon btn-info sendEmail' id='"+response.data[i].idAspirante+""+'.'+""+response.data[i].emailUsuario+"'  data-toggle='tooltip' title='Information'> <i class='icon fa-envelope'></i></button> <a href='<?=base_url('Dashboard/Verano/InfoAspirante/info/')?>"+response.data[i].idAspirante+"' id='"+response.data[i].id+"' class='btn btn-icon btn-primary'  data-toggle='tooltip' title='Information'> <i class='icon fa-edit'></i></a></td> ";
+//   			    				_html +="</tr>";
+//   				}
+//
+//   				$('#example').find('tbody').empty().append(_html); //para localizar
+//   				$('#example').DataTable({
+//             dom: 'Bfrtip',
+//             buttons: [
+//                 'copy', 'csv','excel', 'pdf', 'print'
+//             ]
+//           });
+//   				var table_admin = response.data;
+//           console.log(table_admin);
+//
+//
+//
+//
+//   			}else{
+//   				alert(response.message);
+//   			}
+//
+//   			},
+//   			error : function(err){
+//   					response= JSON.stringify(err.responseText);
+//   					$(document).find('#responseText').html(
+//   						'<div class="alert alert-success" role="alert">'
+//   						+response+
+//   						'</div>'
+//   					);
+//   					setTimeout(function(){
+//   							$(document).find('#responseText').html('');
+//   					}, 3000);
+//
+//   			}
+//   		});
+//
+//       $(document).on('click','.sendEmail',function(){
+//
+//         var id = this.id;
+//         console.info(id);
+//         _email = {
+//           'emailAspirante':'israelmg250598@gmail.com'
+//         }
+//         _url = _principalURL()+"Verano/Ingles/api/correoStatusUno/id/"+id;
+//         _method = "POST";
+//
+//
+//         $.ajax({
+//           url: _url,
+//           method : _method,
+//           headers : {
+//           'X-API-KEY':'ANGLOKEY'
+//           },
+//           data: _email,
+//           success : function(_response){
+//               if(!_response){
+//                   tostada('success','Enviado');
+//               }else{
+//                   tostada('error','Error');
+//
+//
+//               }
+//           },error : function(err){
+//
+//           }
+//         });
+//
+//       });
+//
+//       // var table=$(document).find('#example').DataTable({
+//       //     dom: 'Bfrtip',
+//       //     buttons: [
+//       //         'copy', 'csv', 'excel', 'pdf', 'print'
+//       //     ],
+//       //   });
+//       // console.log(table);
+//
+//     // _url = _principalURL()+"Preparatoria/api/preparatoria/";
+//     // var table=$(document).find('#example').DataTable({
+//     //   dom: 'Bfrtip',
+//     //   buttons: [
+//     //     'copy', 'csv', 'excel', 'pdf', 'print'
+//     //   ],
+//     //   ajax: {
+//     //     url : _url,
+//     //     method : 'get',
+//     //     dataSrc : 'data',
+//     //     headers : {
+//     //       'X-API-KEY':'ANGLOKEY'
+//     //     }
+//     //   },
+//     //   columns : [
+//     //     {data: 'nombre_Preparatoria'},
+//     //     {data: 'fundacion_Preparatoria'},
+//     //     {data: 'status_Preparatoria'},
+//     //     {data: '',defaultContent:'<a href="<?=base_url("Admin/edit_Admin/add/")?>"+response.data[i].idAdmin+" id="btnE"+response.data[i].idAdmin+"" class="edit-control btn btn-success btn-xs"  data-toggle="tooltip" title="Edit"> <i class="icon wb-plus"> </i>Campus</a> ' }
+//     //     ]
+//     //   });
+//
+//
+//
+//     // this me tethod is implemented to submit or delete information to the table
+//     $(document).find('#example tbody').on('click','tr',function(){
+//       _url = _principalURL()+"Preparatoria/api/preparatoria/id/";
+//       var _prepa = table.row(this).data();
+//       $.ajax({
+//         url:_url+_prepa.idPreparatoria,
+//         method: 'get',
+//         headers: {
+//           'X-API-KEY':'ANGLOKEY'
+//         },
+//         success : function(_response){
+//           if(_response.status=="error"){
+//             tostada('error','Los datos  no fueron cargados correctamente ');
+//           }else if(_response.status == "success"){
+//
+//             $.each(_response.data,function(key,value){
+//                $(document).find('#'+key).val(value);
+//             });
+// 						$('#exampleModalPrimary').modal('show')
+//             $(document).find('.btns').html(
+//               '<div class="row ">'+
+//                 '<div class="col">'+
+//                   '<button type="button" class="btn btn-warning btn-cancel">Cancel</button>'+
+//
+//               '</div>'+
+//
+//                 '<div class="col">'+
+//                   '<button class="btn btn-primary">Update</button>'+
+//
+//               '</div>'+
+//
+//                 '<div class="col">'+
+//                   '<button class="btn  btn-danger btn-delete">Delete</button>'+
+//                 '</div>'+
+//               '</div>'
+//
+//             );
+//             $(document).find('#campusForm').append(
+//               '<input type="hidden" id="id" name="id" value="'+_response.data.idPreparatoria+'">'
+//             );
+//           }
+//
+//
+//         },
+//         error: function(error){
+//           tostada('error','Los datos  no fueron cargados correctamente ');
+//         }
+//
+//       });
+//     });
+//     /* This method is implemented to submit information to the DATA BASE */
+//     $(document).on('submit','#campusForm',function(event){
+//
+//         var $fotoCampus = $("#fotoCampus");
+//         var $fotoLogo = $("#fotoLogo");
+//         var $nombre = $("#nombrePreparatoria");
+//         var formData = new FormData();
+//         var archivosCampu = $fotoCampus[0].files;
+//         var archivosLogo = $fotoLogo[0].files;
+//       if (archivosCampu.length >= 0 && archivosLogo.length >= 0 ) {
+//         var fotoCampus = archivosCampu[0]; //Sólo queremos la primera imagen, ya que el usuario pudo seleccionar más
+//         var fotoLogo = archivosLogo[0];
+//         var lector = new FileReader();
+//         formData.append('my_file', fotoCampus);
+//         formData.append('my_logo', fotoLogo);
+//         formData.append('nombreCampus', $("#nombreCampus").val());
+//         formData.append('ubicacionCampus', $("#ubicacionCampus").val());
+//         formData.append('tipoCampus', $("#tipoCampus").val());
+//         formData.append('alojamientoCampus', $("#alojamientoCampus").val());
+//         formData.append('descripcionCampus', $("#descripcionCampus").val());
+//         formData.append('nombreCampus', $("#nombreCampus").val());
+//         formData.append('statusCampus', $("#statusCampus").val());
+//         formData.append('preparatoria', 1);
+//         var  l = $("#nombreCampus").val();
+//
+//         if(_id>0){
+//            console.info("llego Put");
+//            _url = _principalURL()+"Preparatoria/api/preparatoria/"+$(document).find('#id').val();
+//           _method = "PUT";
+//           _text = 'Los datos fueron editados correctamente';
+//         }else{
+//             console.info("llego Post");
+//             _url = _principalURL()+"Preparatoria/api/preparatoria/";
+//           _method = "POST";
+//             _text = 'Los datos fueron guardados correctamente';
+//
+//         }
+//
+//       }else{
+//
+//       }
+//
+//
+//
+//       event.preventDefault();
+//       clearForm('campusForm');
+//       _url = "";
+//       _method = "";
+//       var _id = $(document).find('#id').val();
+//       console.info($(document).find("#campusForm").serialize());
+//       if(_id>0){
+//          console.info("llego Put");
+//          _url = _principalURL()+"PreparatoriaCampus/api/preparatoriacampusfhoto/"+$(document).find('#id').val();
+//         _method = "PUT";
+//         _text = 'Los datos fueron editados correctamente';
+//       }else{
+//           console.info("llego Post");
+//           _url = _principalURL()+"PreparatoriaCampus/api/preparatoriacampusfhoto/";
+//         _method = "POST";
+//           _text = 'Los datos fueron guardados correctamente';
+//
+//       }
+//       $.ajax({
+//         url:_url,
+//         method: _method,
+//         headers : {
+//           'X-API-KEY':'ANGLOKEY'
+//         },
+//         data: formData,
+//         contentType: false,
+//         processData: false,
+//         success : function(_response){
+//           response= JSON.stringify(_response);
+//           if(_response.status == "error"){
+//
+//             tostada('error','Revise sus datos ');
+//               $.each(_response.validations, function(key,message){
+//                 $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+//                });
+//           }else{
+//             clearForm('campusForm');
+//             tostada('success','Los datos se an guardado correctamente ');
+//           }
+//
+//         },
+//         error : function(err){
+//             response= JSON.stringify(err.responseText);
+//             $(document).find('#responseText').html(
+//               '<div class="alert alert-success" role="alert">'
+//               +response+
+//               '</div>'
+//             );
+//             setTimeout(function(){
+//                 $(document).find('#responseText').html('');
+//             }, 3000);
+//
+//         }
+//       });
+//       // $.ajax({
+//       //   url:_url,
+//       //   method: _method,
+//       //   headers : {
+//       //     'X-API-KEY':'ANGLOKEY'
+//       //   },
+//       //   data: $(document).find("#campusForm").serialize(),
+//       //   success : function(_response){
+//       //     response= JSON.stringify(_response);
+//       //     if(_response.status == "error"){
+//       //       console.log(_response);
+//       //       tostada('error','Revise sus datos ');
+//       //         $.each(_response.validations, function(key,message){
+//       //           $(document).find('#'+key).addClass('is-invalid').after('<div class="invalid-feedback">'+message+'</div>');
+//       //          });
+//       //     }else{
+//       //       clearForm('campusForm');
+//       //       tostada('success','Los datos se an guardado correctamente ');
+//       //     }
+//       //
+//       //   },
+//       //   error : function(err){
+//       //       response= JSON.stringify(err.responseText);
+//       //       $(document).find('#responseText').html(
+//       //         '<div class="alert alert-success" role="alert">'
+//       //         +response+
+//       //         '</div>'
+//       //       );
+//       //       setTimeout(function(){
+//       //           $(document).find('#responseText').html('');
+//       //       }, 3000);
+//       //
+//       //   }
+//       // });
+//     });
+//
+//     $(document).on('click','.btn-delete',function(){
+//       console.info("llego delete");
+//       $.ajax({
+//         "url" : _principalURL()+"Preparatoria/api/preparatoria/id/"+$(document).find('#id').val(),
+//         "method" : "DELETE",
+//         headers : {
+//           'X-API-KEY':'ANGLOKEY'
+//         },
+//         success : function(_response){
+//
+//           if(_response.status == "error"){
+//             clearForm('campusForm');
+//             tostada('error','Los datos no se an borrado correctamente ');
+//
+//
+//           }else{
+//             clearForm('campusForm');
+//            tostada('success','Los datos se an borrado correctamente ');
+//
+//
+//           }
+//         },
+//         error : function(){
+//
+//         }
+//
+//       });
+//     });
+//     $(document).on('click','.btn-cancel',function(){
+//       clearForm('campusForm');
+//     $('#exampleModalPrimary').modal('hide');
+//     });
+//
+//   /*this method is implemented to clear the modal */
+//
+//   function clearForm(_id){
+//     console.info("llamaron");
+//     $(document).find('#'+_id).find('input,select').each(function(e){
+//         $(this).removeClass('is-invalid');
+//         $(this).next('div').remove();
+//
+//     });
+//   }
+//   });
 </script>

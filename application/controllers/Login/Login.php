@@ -58,6 +58,52 @@ class Login extends MY_RootController {
 								//no ha llenado los campos nesesarios de la universidad
 								redirect('Dashboard/Preparatoria/DatosPreparatoria');
 							}
+						}else if($this->session->userdata('user_sess')->programaDeInteres == "CursoIngles"){
+							$response = $this->_callApiRest('Verano/Ingles/api/aspiranteVerInglesBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+							//echo var_dump($response['data']);
+							if($response['data']){
+								//ya acompleto el tipo de estudio y eligio tipo de alojamiento
+								if($response['data']['anioMesIngreso']){
+									//ya selecciono las preparatorias que le interesan
+										redirect('Dashboard/Verano/HomeAspiranteVI');
+								}else{
+								redirect('Dashboard/Verano/HomeAspiranteVI');
+								}
+							}else{
+								//no ha llenado los campos nesesarios de la universidad
+								redirect('Dashboard/Verano/HomeAspiranteVI');
+							}
+						}else if($this->session->userdata('user_sess')->programaDeInteres == "CursoVeranoIngles"){
+							$response = $this->_callApiRest('Verano/Ingles/api/aspiranteVerInglesBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+							//echo var_dump($response['data']);
+							if($response['data']){
+								//ya acompleto el tipo de estudio y eligio tipo de alojamiento
+								if($response['data']['anioMesIngreso']){
+									//ya selecciono las preparatorias que le interesan
+									redirect('Dashboard/Verano/HomeAspiranteVI');
+								}else{
+									redirect('Dashboard/Verano/TestThree');
+								}
+							}else{
+								//no ha llenado los campos nesesarios de la universidad
+								redirect('VeranoSteps');
+							}
+
+						}else if($this->session->userdata('user_sess')->programaDeInteres == "CursoVeranoAcademico"){
+							$response = $this->_callApiRest('Verano/Ingles/api/aspiranteVerInglesBYAspirante/id/'.$this->session->userdata('user_sess')->aspirante,null,"GET",null);
+							//echo var_dump($response['data']);
+							if($response['data']){
+								//ya acompleto el tipo de estudio y eligio tipo de alojamiento
+								if($response['data']['anioMesIngreso']){
+									//ya selecciono las preparatorias que le interesan
+									redirect('Dashboard/Verano/HomeAspiranteVI');
+								}else{
+									redirect('Dashboard/Verano/TestThree');
+								}
+							}else{
+								//no ha llenado los campos nesesarios de la universidad
+								redirect('VeranoSteps');
+							}
 						}
 						redirect('ComingSoon');
 					}

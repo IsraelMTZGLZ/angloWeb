@@ -673,6 +673,7 @@
 
               if (_response.status=="success") {
                 window.location.href = "<?php echo site_url('VeranoEleccion'); ?>";
+                /* window.location.href = "<?php echo site_url('EnglishSteps'); ?>"; */
               }
 
 

@@ -427,8 +427,6 @@ h1 {
                               <option value="" disabled selected>selecciona una opcion</option>
                               <option value="2020">2020</option>
                               <option value="2021">2021</option>
-                              <option value="2022">2022</option>
-                              <option value="2023">2023</option>
                           </select>
                       </div>
                       <button type="button" class="btn btn-success animation-shake btn-lg btn-direction btn-left btn-continue">Continuar</button>
@@ -720,16 +718,18 @@ h1 {
                     //var parts =d.split('-');
                     //var mydate = new Date(parts[0], parts[1] - 1, parts[2]);
                     _params={
-                        "campusone":unis[0],
-                        "campustwo":unis[1],
-                        "campusthree":unis[2],
-                        "mesanio":d
+                        "institutoOne":unis[0],
+                        "institutoTwo":unis[1],
+                        "institutoThree":unis[2],
+                        "mesanio":d,
+                        "aspirante":idAspirante
                     };
-                    _url = _principalURL()+"Ingles/api/aspiranteIngles_C_A/"+idAspirante;
+                  _url = _principalURL()+"Ingles/api/aspirante_Eleccion/";
+
 
                     $.ajax({
                         url: _url,
-                        method : 'PUT',
+                        method : 'POST',
                         headers : {
                         'X-API-KEY':'ANGLOKEY'
                         },
@@ -747,7 +747,7 @@ h1 {
                             confirmButtonText: 'Siguiente'
                             }).then(function () {
 
-                             window.location.href = "<?php echo site_url('AspiranteEnglish'); ?>";
+                            window.location.href = "<?php echo site_url('Dashboard/Verano/HomeAspiranteVI'); ?>";
                           });
                              $('#successMessage').empty().append(response.message);
                         }

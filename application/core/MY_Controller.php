@@ -3,7 +3,7 @@ if (! defined ( 'BASEPATH' ))
 	exit ( 'No direct script access allowed' );
 
 class MY_RootController extends CI_Controller {
-	
+
     public function __construct() {
         parent::__construct();
     }
@@ -14,9 +14,39 @@ class MY_RootController extends CI_Controller {
         $this->load->view('Dashboard_esential/menu',$data);
     }
 
+
     public function _finalPage(){
         $this->load->view('Dashboard_esential/footer');
     }
+		public function _initialAspirante($data=null) {
+			$this->load->view('Aspirante_esential/head');
+			$this->load->view('Dashboard_esential/nav',$data);
+			$this->load->view('Dashboard_esential/menu',$data);
+		}
+
+		public function _headerAdmin($data=null) {
+			$this->load->view('Aspirante_esential/headerpage',$data);
+		}
+		public function _headerAspirante($data=null) {
+			$this->load->view('Aspirante_esential/headerpageaspirante',$data);
+		}
+		public function _headerIngles($data=null) {
+			$this->load->view('Aspirante_esential/headeringles',$data);
+		}
+
+		public function _finalPageAspirante(){
+        $this->load->view('Aspirante_esential/footerpage');
+    }
+		public function _finalPageAdmin(){
+        $this->load->view('Aspirante_esential/footeradmin');
+    }
+		public function _finalPageAdminAcademico(){
+        $this->load->view('Aspirante_esential/footeradminacademico');
+    }
+		public function _finalPageAspiranteAcademico(){
+				$this->load->view('Aspirante_esential/footeraspiranteacademico');
+		}
+
 
     public function _initialInformativa($data=null)
     {

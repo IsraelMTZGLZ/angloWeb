@@ -618,7 +618,7 @@ label {
         var idAspirante = $(document).find('#aspirante').val();
 
         if (veranoSelected) {
-            //console.info($(document).find('#escuelaSelecionada').serialize());
+            console.info(veranoSelected);
             _params={
                 "tipoCampamento":veranoSelected,
                 "aspirante":idAspirante
@@ -639,7 +639,7 @@ label {
               success : function(_response){
               response = JSON.stringify(_response);
 
-              
+
                 window.location.href = "<?php echo site_url('VeranoSteps'); ?>";
 
 

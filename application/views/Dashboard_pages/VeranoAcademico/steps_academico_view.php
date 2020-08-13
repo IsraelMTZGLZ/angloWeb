@@ -526,6 +526,7 @@
                 <ul id="progressbar">
                   <li class="active">Edad</li>
                   <li>Alojamiento</li>
+                  <li>Finalizar</li>
                 </ul>
                 <!-- fieldsets -->
 
@@ -546,41 +547,31 @@
 
                   <input type="button" name="next" class="next action-button" id="edadcheck" value="Next" />
                 </fieldset>
-                <!-- <fieldset>
-                  <h2 class="fs-title">Tipo de campamento</h2>
-                  <h3 class="fs-subtitle">Indica el tipo de campamento</h3>
-                  <div class="container">
-                    <?php for ($i = 0; $i < count($campamentos); $i++) { ?>
-                    <ul >
-                        <?php if(1== 1) {?>
-                        <input type="radio" id="tes<?=@$i+1;?>" name="campamento" value="<?=@$campamentos[$i]['idCampamento'];?>">
-                        <label for="tes<?=@$i+1;?>" id="tesin<?=@$i+1;?>"><?=@$campamentos[$i]['nombreCampamento'];?></label>
-                        <?php }?>
-                    </ul>
-
-                    <?php } ?>
-                  </div>
-                  <input type="button" name="previous" class="previous action-buttonp" value="Previous" />
-                  <input type="button" name="next" class="next action-button" id="campamentocheck" value="Next" />
-                </fieldset> -->
                 <fieldset>
-                  <h2 class="fs-title">Tipo de Alojamiento</h2>
-                  <h3 class="fs-subtitle">Indica el tipo de alojamiento</h3>
-                  <div class="container">
-                    <?php for ($i = 0; $i < count($alojamientos); $i++) { ?>
-                    <ul >
+                <h2 class="fs-title">Tipo de Alojamiento</h2>
+                <h3 class="fs-subtitle">Indica el tipo de alojamiento</h3>
+                <div class="container">
+                  <?php for ($i = 0; $i < count($alojamientos); $i++) { ?>
+                  <ul >
 
-                      <input type="radio" id="te<?=@$i+1;?>" name="alojamiento" value="<?=@$alojamientos[$i]['idTipoAlojamiento'];?>">
-                      <label  for="te<?=@$i+1;?>" id="ten<?=@$i+1;?>"><?=@$alojamientos[$i]['nombreTipoAlojamiento'];?></label>
-                    </ul>
+                    <input type="radio" id="te<?=@$i+1;?>" name="alojamiento" value="<?=@$alojamientos[$i]['idTipoAlojamiento'];?>">
+                    <label  for="te<?=@$i+1;?>" id="ten<?=@$i+1;?>"><?=@$alojamientos[$i]['nombreTipoAlojamiento'];?></label>
+                  </ul>
 
-                    <br>
-                    <?php } ?>
-                  </div>
+                  <br>
+                  <?php } ?>
+                </div>
+                <!-- <input type="button" name="previous" class="previous action-buttonp" value="Previous" /> -->
+
+                  <input type="button" name="next" class="next action-button" id="campamentocheck" value="Next" />
+                </fieldset>
+                <fieldset>
+                              <!-- <input type="submit" class="submit action-button" value="Submit" /> -->
                   <input type="button" name="previous" class="previous action-buttonp" value="Previous" />
-                  <!-- <input type="submit" class="submit action-button" value="Submit" /> -->
+
                     <button type="submit" class="continuar ">Continuar</button>
                 </fieldset>
+
 
               </form>
 
@@ -920,7 +911,7 @@ $(".submit").click(function(){
                 });
             }
             if (_response.status=="success") {
-             window.location.href = "<?php echo site_url('Dashboard/Verano/TestThree');?>";
+             window.location.href = "<?php echo site_url('Dashboard/VeranoAcademico/AcademicoEleccion');?>";
             }
 
             tostada(_response.status,_response.message);

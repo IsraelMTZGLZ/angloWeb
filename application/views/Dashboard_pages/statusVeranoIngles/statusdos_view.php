@@ -179,6 +179,8 @@ $(function(){
 
   				var _html ="";
   				for (var i = 0; i < response.data.length; i++) {
+            var id= response.data[i].idAspirante;
+            var hash=btoa(id);
   					_html +="<tr>";
 
   					        _html +="<td>"+response.data[i].firstNamePersona+"</td>";
@@ -187,7 +189,7 @@ $(function(){
   			    				_html +="<td>"+response.data[i].emailUsuario+"</td>";
   			    				_html +="<td>"+response.data[i].telefonoAspirante+"</td>";
   			    				_html +="<td>"+response.data[i].ciudadAspirante+"</td>";
-  			    				_html +="<td> <a href='<?=base_url('Dashboard/Verano/InfoAspirante/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='edit-control btn btn-success btn-xs'  data-toggle='tooltip' title='Information'> <i class='icon wb-plus'></i>Más Información</a>  </td>";
+  			    				_html +="<td>  <a href='tel:"+response.data[i].telefonoAspirante+"'  class='btn btn-icon btn-danger'  data-toggle='tooltip' title='Information'> <i class='icon fa-phone'></i></a> <a href='<?=base_url('Dashboard/Verano/InfoAspirante/info/')?>"+hash+"' id='btnE"+response.data[i].id+"' class='btn btn-icon btn-warning'  data-toggle='tooltip' title='Information'> <i class='icon fa-eye'></i></a> <a href='https://api.whatsapp.com/send?phone="+response.data[i].telefonoAspirante+"&text=No%subiste%20ningun%20documento'  target='_blank'  class='btn btn-icon btn-success'  data-toggle='tooltip' title='Information'> <i class='icon fa-whatsapp'></i></a> <button  class='btn btn-icon btn-info sendEmail'  data-toggle='tooltip' title='Information'> <i class='icon fa-envelope'></i></button> <a href='<?=base_url('Dashboard/Verano/InfoAspirante/info/')?>"+response.data[i].idAspirante+"' id='btnE"+response.data[i].id+"' class='btn btn-icon btn-primary'  data-toggle='tooltip' title='Information'> <i class='icon fa-edit'></i></a></td>";
   			    				_html +="</tr>";
   				}
 

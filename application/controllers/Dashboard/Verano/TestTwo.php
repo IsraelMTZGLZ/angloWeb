@@ -12,8 +12,10 @@ class TestTwo extends MY_RootController {
 	{
 		$identAspirante  = $this->session->userdata('user_sess')->aspirante;
 		$responseElecciones = $this->_callApiRest('Verano/api/veranoGeneral/id/'.$identAspirante,null,"GET",null);
+
 		$tipoId = $responseElecciones['data']['fkTipoCampamento'];
 		$responseTipo = $this->_callApiRest('TipoCampamento/api/tipoCampamentoselected/id/'.$tipoId,null,"GET",null);
+
 		$veranoSelected =$responseTipo['data']['nombreTipoCampamento'];
 
 		$response = $this->_callApiRest('Campamento/api/campamento/',null,"GET",null);
@@ -31,7 +33,7 @@ class TestTwo extends MY_RootController {
 		if($veranoSelected == 'Verano Inglés'){
 			$this->load->view('Dashboard_pages/Verano/steps_ingles_view',$data);
 		}else if($veranoSelected == 'Verano Académico'){
-			$this->load->view('Dashboard_pages/Verano/steps_academico_view',$data);
+			$this->load->view('Dashboard_pages/VeranoAcademico/steps_academico_view',$data);
 		}else{
 
 		}

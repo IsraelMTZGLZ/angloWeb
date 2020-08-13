@@ -86,6 +86,10 @@ $route['AspirantesList'] = 'Dashboard/Ingles/ListEnglish';
 $route['StatusUno'] = 'Dashboard/Ingles/StatusUno';
 $route['StatusDos'] = 'Dashboard/Ingles/StatusDos';
 $route['StatusCero'] = 'Dashboard/Ingles/StatusCero';
+
+
+$route['Verano_Ingles_StatusDR'] = 'Dashboard/Verano/infoAspirante2R/info/';
+
 $route['HomeAgente'] = 'Dashboard/HomeAgente';
 
 $route['Dashboard/DetailsAspirante(:any)'] = 'Dashboard/DetailsAspirante/index/$1';

@@ -457,13 +457,6 @@ h1 {
                       </div>
                     <div class="card-block">
                       <h4 class="card-title"><?=@$instituciones[$i]['nombreInstitucion'];?></h4>
-
-
-                          <!-- <h3 style="color: white"><?=@$instituciones[$i]['nombreInstitucion']?></h4>
-                          <h5 style="color: white"><?=@$instituciones[$i]['nombreFacultad']?></h5>
-                          <p class="small-meta dim" style="color: white">Gracias</p> -->
-
-
                     </div>
                     <ul class="list-group list-group-dividered px-20 mb-0">
                       <li class="list-group-item px-0"><?=@$instituciones[$i]['abreviacionEdad'];?> <?=@$instituciones[$i]['nombreEdad'];?> <?=@$instituciones[$i]['edadEdad'];?></li>
@@ -781,14 +774,9 @@ h1 {
                             type: 'success',
                             confirmButtonText: 'Siguiente'
                             }).then(function () {
-                              if(veranoSelect == 'Verano Inglés'){
-                                window.location.href = "<?php echo site_url('VeranoInfo'); ?>";
-                              }else if(veranoSelect == 'Verano Académico'){
 
-                                window.location.href = "<?php echo site_url('AspiranteInfoAcademic'); ?>";
-                              }else{
-                                window.location.href = "<?php echo site_url('Login'); ?>";
-                              }
+                                window.location.href = "<?php echo site_url('Dashboard/Verano/HomeAspiranteVI'); ?>";
+
 
                           });
                              $('#successMessage').empty().append(response.message);
