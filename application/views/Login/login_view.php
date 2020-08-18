@@ -156,9 +156,10 @@
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social');?>:</p>
         <div class="social-btns">
             <!-- <a class="btn facebook" href="<?=@$this->facebook->login_url('login');?>"><i class="fa fa-facebook"></i></a> -->
-            <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
+           
             <a class="btn google" href="Login/google_login"><i class="fa fa-google"></i></a>
         </div>
+        <p style="margin-top:10px;"><?=$this->lang->line('sin_cuenta')?> <a href="Registro"><?=$this->lang->line('registrate')?></a></p>
         <?php if ($this->session->flashdata('facebook')=="Error") { ;?>
           <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 18px;width: 350px;">
             <strong>Error!</strong> <?=$this->lang->line('problema_facebook_message')?>
@@ -237,7 +238,7 @@
           </div>
         </form>
 
-        <p><?=$this->lang->line('sin_cuenta')?> <a href="Registro"><?=$this->lang->line('registrate')?></a></p>
+        
 
         <footer class="page-copyright">
           <p><?=$this->lang->line('WEBSITE_BY')?> Maxei Code</p>

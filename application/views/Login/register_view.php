@@ -158,7 +158,6 @@
         <p class="text-center mt-2"><?=$this->lang->line('leyenda_red_social_registro');?>:</p>
         <div class="social-btns">
             <!-- <a class="btn facebook" href="<?=@$this->facebook->login_url('registro');?>"><i class="fa fa-facebook"></i></a> -->
-            <a class="btn facebook" type="button"><i class="fa fa-facebook"></i></a>
             <a class="btn google" href="Registro/googleRegister"><i class="fa fa-google"></i></a>
         </div>
         <?php if ($this->session->flashdata('facebook')=="Error") { ;?>

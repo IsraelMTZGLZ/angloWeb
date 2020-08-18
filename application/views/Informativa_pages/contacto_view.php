@@ -173,7 +173,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="contact_main">
                         <a ><div class="contact_rotate">
-                            <i class="fas fa-robot"></i>
+                            <i class="fas fa-android"></i>
                         </div></a>
                         <h4><a ><?=$this->lang->line('formas_contacto_bot')?></a></h4>
                         <p><?=$this->lang->line('formas_contacto_bot_leyenda')?></p>

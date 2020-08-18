@@ -43,7 +43,7 @@ $lang['becas_desc_home'] = "Te asesoramos en todo el proceso";
 $lang['bienvenido_home'] = "Bienvenido";
 $lang['leer_mas_home'] = "Leer Mas";
 $lang['next_home'] = "sig";
-$lang['proximamente_home'] = "Proximamente";
+$lang['proximamente_home'] = "Ve a la sección de eventos para ver más....";
 //becas
 $lang['initial_beca_message'] = "Becas y Apoyos Financieros";
 $lang['initial_beca_paises'] = "Otras becas en otros pa&iacute;ses.";
