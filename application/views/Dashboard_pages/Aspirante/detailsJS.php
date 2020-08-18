@@ -26,7 +26,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                                "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL"
                             },
                             data:'{\"path\": \"'+name+'\"}',
                             contentType: 'application/json',
@@ -182,7 +182,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                                "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL"
                             },
                             data:'{\"path\": \"'+path+'\"}',
                             contentType: 'application/json',
@@ -243,7 +243,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                                "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL"
                             },
                             data:'{\"path\": \"'+path+'\"}',
                             contentType: 'application/json',
@@ -298,7 +298,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                                "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL"
                             },
                             data:'{\"path\": \"'+carpeta+'\"}',
                             contentType: 'application/json',
@@ -573,7 +573,7 @@
                 processData: false,
                 contentType: 'application/octet-stream',
                 headers: {
-                    "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
+                    "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL",
                     "Dropbox-API-Arg": '{"path": "/'+carpeta+'/Email deferral request '+intitucionNombre+'.'+ext+'","mode": "overwrite","autorename": true,"mute": false}'
                 },
                 success: function (data) {
@@ -705,7 +705,7 @@
                     url: 'https://api.dropboxapi.com/2/files/delete_v2',
                     type: 'post',
                     headers: {
-                        "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                        "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL"
                     },
                     data:'{\"path\": \"'+path+'\"}',
                     contentType: 'application/json',
@@ -1201,7 +1201,7 @@
                             url: 'https://api.dropboxapi.com/2/files/delete_v2',
                             type: 'post',
                             headers: {
-                                "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                                "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL"
                             },
                             data:'{\"path\": \"'+path+'\"}',
                             contentType: 'application/json',
@@ -1328,7 +1328,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
+                            "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Ofeta '+uniname+'.pdf","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1475,7 +1475,7 @@
                         processData: false,
                         contentType: 'application/octet-stream',
                         headers: {
-                            "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7",
+                            "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL",
                             "Dropbox-API-Arg": '{"path": "/'+name+'/Ofeta '+uniname+'.pdf","mode": "overwrite","autorename": true,"mute": false}'
                         },
                         success: function (data) {
@@ -1767,7 +1767,7 @@
                     url: 'https://api.dropboxapi.com/2/files/delete_v2',
                     type: 'post',
                     headers: {
-                        "Authorization": "Bearer TfBSKFdGB1AAAAAAAAAAARRClfF7Ltjf0PJ6NqdqWm6lxbBnz6Ht7YJaIZoIvAv7"
+                        "Authorization": "Bearer gv_-25LIyu4AAAAAAAAAAdKa71wqu5STIEWlrueT4Eu3V-xcrl9AwQh6DE9iB2IL"
                     },
                     data:'{\"path\": \"'+path+'\"}',
                     contentType: 'application/json',
